@@ -1,7 +1,7 @@
 import os
 from bs4 import BeautifulSoup
 
-folder_path = r"C:\Users\willo\OneDrive\Documents\GitHub\fics"
+folder_path = r"C:\Users\willo\OneDrive\Documents\GitHub\fics\ficArchive"
 output_file = "index.html"
 
 html_links = []
