@@ -24,7 +24,10 @@ index_content = f"""
     <link rel="stylesheet" href="assets/darkMode.css">
 </head>
 <body>
-    <h1>Index of HTML Files</h1>
+    <h1>Fanfic Archive</h1>
+    <center>
+        <p>These are not my fics. These are just some I don't want to lose.</p>
+    </center>
     <ul>
         {''.join(html_links)}
     </ul>
