@@ -15,19 +15,22 @@ for filename in os.listdir(folder_path):
             title = soup.title.string.strip() if soup.title and soup.title.string else filename
             author_tag = soup.find("meta", attrs={"name": "author"})
             ship_tag = soup.find("meta", attrs={"name": "ship"})
+            rating_tag = soup.find("meta", attrs={"name": "rating"})
 
             author = author_tag["content"].strip() if author_tag and "content" in author_tag.attrs else "Unknown"
             ship = ship_tag["content"].strip() if ship_tag and "content" in ship_tag.attrs else "Unknown"
+            rating = rating_tag["content"].strip() if rating_tag and "content" in rating_tag.attrs else "Unknown"
 
             rows.append(f"""
                 <tr>
                     <td><a href="{filename}">{title}</a></td>
                     <td>{author}</td>
                     <td>{ship}</td>
+                    <td>{rating}</td>
                 </tr>
             """)
 
-# Sortable table JavaScript (basic)
+# Sortable table JavaScript
 sortable_script = """
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -87,6 +90,7 @@ index_content = f"""
                 <th class="sortable">Title</th>
                 <th class="sortable">Author</th>
                 <th class="sortable">Ship</th>
+                <th class="sortable">Rating</th>
             </tr>
         </thead>
         <tbody>

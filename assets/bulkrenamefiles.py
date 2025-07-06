@@ -19,5 +19,5 @@ def rename_files_in_directory(directory):
                 os.rename(old_path, new_path)
 
 # Set the target directory here
-target_directory = ".."
+target_directory = "./staging"
 rename_files_in_directory(target_directory)
