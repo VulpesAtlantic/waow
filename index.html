@@ -6,1111 +6,2517 @@
     <title>Fanfic Archive Index</title>
     <link rel="stylesheet" href="assets/darkMode.css">
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        body {
+            font-family: sans-serif;
+            padding: 1rem;
+            max-width: 1200px;
+            margin: auto;
         }
-        th, td {
-            padding: 8px;
-            border: 1px solid #666;
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
         }
-        th.sortable {
-            cursor: pointer;
-            text-decoration: underline;
+        .filters input, .filters select {
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        @media (max-width: 600px) {
+            .card-container { grid-template-columns: 1fr; }
+        }
+        .card {
+            background-color: #1e1e1e;
+            border: 1px solid #444;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: scale(1.02); }
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+        .card a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+        .card a:hover { text-decoration: underline; }
+        .summary {
+            margin-top: 0.5rem;
+            color: #aaa;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
     <h1>Fanfic Archive</h1>
-    <center>
-        <p>These are not my fics. These are just some I don't want to lose.</p>
-    </center>
-    <table>
-        <thead>
-            <tr>
-                <th class="sortable">Title</th>
-                <th class="sortable">Author</th>
-                <th class="sortable">Ship</th>
-                <th class="sortable">Rating</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    <td><a href="accidentalAdd.html">Accidental Add</a></td>
-                    <td>Agatharioxoxo</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>General Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="adagietto.html">Adagietto</a></td>
-                    <td>Queerenough</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="agathaAllAlongWeek.html">Agatha All Along Week 2025</a></td>
-                    <td>QueerPinks</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="agatharioFakeDatingAu.html">Agathario Fake Dating Au</a></td>
-                    <td>wonderful_anarchy</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Teen And Up Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="aKingdomByTheNight.html">A Kingdom By the Night</a></td>
-                    <td>visadero</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="albatross.html">albatross</a></td>
-                    <td>324b2fun</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="allRoadsLeadToThis.html">All Roads Lead to This</a></td>
-                    <td>vicwritesometimes</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Teen And Up Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="allthethingswecould.html">All the Things We Could Do</a></td>
-                    <td>How_Deep_the_Grave</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="amorProhibido.html">Amor Prohibido</a></td>
-                    <td>Cassie_Bones</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Teen And Up Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="andFillMyBlankPage.html">And Fill My Blank Page</a></td>
-                    <td>Unknown</td>
-                    <td>Unknown</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="andWellBeTogether.html">And We'll Be Together (Forever &amp; Ever More)</a></td>
-                    <td>DeadSeaSoul</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="anUnexpectedVisitor.html">An Unexpected Visitor</a></td>
-                    <td>ZimEyebright</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="atTheStillPointOf.html">At the Still Point of the Turning World</a></td>
-                    <td>LilaLuna</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Teen And Up Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="aWitchInSalem.html">A Witch in Salem</a></td>
-                    <td>culturevampire</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="babyItsFateNotLuck.html">baby, it's fate, not luck</a></td>
-                    <td>quinnking</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="banAllTheMusic.html">Ban All the Music</a></td>
-                    <td>originofrios</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="beneathTheStars.html">beneath the stars</a></td>
-                    <td>vwoolf</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="bewitched.html">Bewitched</a></td>
-                    <td>annadelamico</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="bitchesIDontTrust.html">bitches i don't trust them (but they give me what i want for the night)</a></td>
-                    <td>agatharioluvr</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="bladeOfGrass.html">blade of grass</a></td>
-                    <td>gclddrush</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="bloodyandraw.html">It's bloody and raw, but I swear it is sweet</a></td>
-                    <td>YellowFog</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="boundByOathUndoneBy.html">Bound By Oath, Undone by You</a></td>
-                    <td>rhaenicent21</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="brokenDeal.html">Broken Deal</a></td>
-                    <td>deathwives</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="butILoveYouJustThe.html">But I Love You Just the Same</a></td>
-                    <td>callipoicepole</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Teen And Up Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="butWeCant.html">But We Can't</a></td>
-                    <td>forestgreentrees</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="candlelightWhispersMe.html">Candlelight Whispers Me Where to Go</a></td>
-                    <td>wariangle</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="catchMeWhenIFallFor.html">Catch Me When I Fall for You</a></td>
-                    <td>How_Deep_the_Grave</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="checkmate.html">Checkmate!</a></td>
-                    <td>fqrcefields (sqyyadina)</td>
-                    <td>April Ludgate/Jen Barkley</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="closeenoughforlove.html">Close Enough for Love</a></td>
-                    <td>Cthulhus_Curse</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="closeToYou.html">Close to You</a></td>
-                    <td>luckytheepizzadog_13</td>
-                    <td>April Ludgate/Jen Barkley</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="coolAboutIt.html">Cool About it</a></td>
-                    <td>damischmam</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="creatorYouDestroyMe.html">Creator, You Destroy Me</a></td>
-                    <td>velvetprayer</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="crescendo.html">Crescendo</a></td>
-                    <td>Magnolie</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="dearestagatha.html">Dearest Agatha</a></td>
-                    <td>gabisafica</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Not Rated</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="deathsEcho.html">Death's Echo</a></td>
-                    <td>EchoesInTheMargins</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Teen And Up Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="devotionIsForFools.html">Devotion Is for Fools</a></td>
-                    <td>RunRig_Folklore</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Teen And Up Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="disdainfullyHers.html">Disdainfully Hers</a></td>
-                    <td>hpprofessor1</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="dontBeAfraidOfMeIm.html">Don't Be Afraid of Me (I'm What You Need)</a></td>
-                    <td>hpprofessor1</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="everythinglooksbetter.html">Everything Looks Better (In Hindsight)</a></td>
-                    <td>insanetwin</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="exceptions.html">Exceptions</a></td>
-                    <td>Cassie_Bones</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Teen And Up Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="fallingForTheEnemy.html">Falling for the Enemy</a></td>
-                    <td>deathwives</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="familyLine.html">family line</a></td>
-                    <td>thetroublewithwanting</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="figuredYouOut.html">Figured You Out</a></td>
-                    <td>OfEndlessWonder</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="fiveSeconds.html">Five Seconds</a></td>
-                    <td>visadero</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="foldYourWings.html">Fold Your Wings</a></td>
-                    <td>kayniiine</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="forTheLoveOfSpring.html">For the Love of Spring</a></td>
-                    <td>FleetingFriend</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="givingMyHeartOverTo.html">Giving My Heart Over to You</a></td>
-                    <td>rosecoloredmac</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>General Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="godKnowsYouNeedIt.html">God Knows You Need It</a></td>
-                    <td>midwestprincess_01</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="greenIsTheColourOf.html">Green Is the Colour of Her Kind</a></td>
-                    <td>quinnking</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="guiltyAsSin.html">Guilty As Sin</a></td>
-                    <td>sobercatnip</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="happiestSeason.html">Happiest Season</a></td>
-                    <td>324b2fun</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="harkness.html">Harkness</a></td>
-                    <td>Agatharioxoxo</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="heartBeatsLikeA.html">Heart Beats Like a Drummer</a></td>
-                    <td>Cassie_Bones</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Teen And Up Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="hereWithYouNow.html">Here With You Now</a></td>
-                    <td>kayniiine</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="howManyCornersDoI.html">how many corners do i have to turn? (how many times do i have to learn?)</a></td>
-                    <td>empathyhoodie</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="iCouldNotStopFor.html">I Could Not Stop for Death</a></td>
-                    <td>Helpbutton95</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="ifThisWasAMovie.html">If This Was a Movie</a></td>
-                    <td>AgathaLovesRio</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="illHearYouEvenWhen.html">I’ll hear you even when you can’t speak</a></td>
-                    <td>Agatharioxoxo</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>General Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="illicitAffairs.html">Illicit Affairs</a></td>
-                    <td>folksmore</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="imLeavingHereWithYou.html">I'm Leaving Here With You</a></td>
-                    <td>rockwetman</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="imSorryILoveYou.html">I'm Sorry, I Love You</a></td>
-                    <td>bellalinguista</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="inTheDeepEnd.html">In The Deep End</a></td>
-                    <td>visadero</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="inTheShadowsOfThe.html">In the Shadows of the Pines</a></td>
-                    <td>rios_dagger</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="isItCasualNow.html">Is It Casual Now?</a></td>
-                    <td>Ree_all_along</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="iToreYouApartInMy.html">I Tore You Apart In My Head</a></td>
-                    <td>Anonymous</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="itsBloodyAndRawButI.html">It’s Bloody and Raw (But I Swear it is Sweet)</a></td>
-                    <td>Adimnos</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="itsJustInMyNature.html">It's Just in My Nature</a></td>
-                    <td>saturnreturn</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="itsNeverQuiteAsIt.html">It's Never Quite As It Seems (Hi—You'Ve Got Mail)</a></td>
-                    <td>0hroosje</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="iwasyourstarryeyed.html">I Was Your Starry Eyed Lover and the One That You Saw</a></td>
-                    <td>acovenlesswitch, lovurain</td>
-                    <td>April Ludgate/Jen Barkley</td>
-                    <td>General Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="iwillwaitupforyou.html">I Will Wait Up for You, Dear</a></td>
-                    <td>rockwetman</td>
-                    <td>April Ludgate/Jen Barkley</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="iWonderWhichCupYoull.html">I Wonder Which Cup You'Ll Drink From (I Hope It's Mine)</a></td>
-                    <td>empathyhoodie</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="justBetweenUsDidThe.html">Just Between Us, Did the Love Affair Maim You Too</a></td>
-                    <td>Magnolie</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="letGo.html">Let Go</a></td>
-                    <td>bratassly</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="letMeWrapMyTeeth.html">Let me wrap my teeth around the world</a></td>
-                    <td>YellowFog</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="lifeAfterLoveCanWe.html">Life after love (Can we find it again?)</a></td>
-                    <td>Olivertheunknown</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="likeAHurricane.html">like a hurricane</a></td>
-                    <td>tunemyart</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="loveisafourletter.html">Love Is a Four Letter Word</a></td>
-                    <td>Adlerre</td>
-                    <td>April Ludgate/Jen Barkley</td>
-                    <td>Teen And Up Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="loveIsAWitch.html">Love Is a Witch</a></td>
-                    <td>EchoesInTheMargins</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="loveMeTender.html">Love me tender</a></td>
-                    <td>Queerenough</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="lovePersevering.html">Love Persevering</a></td>
-                    <td>charmed4lifekaren</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="lovePolitics.html">Love &Amp; Politics</a></td>
-                    <td>Cassie_Bones</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="luminous.html">Luminous</a></td>
-                    <td>trappedinamatchbox</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="mandevillas.html">Mandevillas</a></td>
-                    <td>Cassie_Bones</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>General Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="meetcute.html">Meetcute</a></td>
-                    <td>Cassie_Bones</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Teen And Up Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="myboybuildscoffins.html">My Boy Builds Coffins</a></td>
-                    <td>1e_r_x1</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="myCriesAndYour.html">My Cries and Your Whispers</a></td>
-                    <td>Holy_dyke</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="mysafewordissafeword.html">my safeword is safeword</a></td>
-                    <td>AnonFandomBandit, orphan_account</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="naughtyNice.html">Naughty &Amp; Nice</a></td>
-                    <td>324b2fun</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="nightShift.html">night shift</a></td>
-                    <td>1e_r_x1</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="notMyType.html">Not My Type</a></td>
-                    <td>Hexdealer</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="notoverdramaticiknow.html">Not Over Dramatic, I Know What I Want.</a></td>
-                    <td>rockwetman</td>
-                    <td>April Ludgate/Jen Barkley</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="number13.html">Number 13</a></td>
-                    <td>originofrios</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="powerPlay.html">Power Play</a></td>
-                    <td>SapphicWitch94</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="purpleAndGreen.html">Purple and Green</a></td>
-                    <td>Becks475</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="redInClawRedInLove.html">Red in Claw, Red in Love</a></td>
-                    <td>wariangle</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="redThreadOfFate.html">Red Thread of Fate</a></td>
-                    <td>WitchyJulia</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>General Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="rentedHearts.html">Rented Hearts</a></td>
-                    <td>Salong4</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="riostoxicembrace.html">Rio’S Toxic Embrace</a></td>
-                    <td>AgathaLovesRio</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="rioVidalDoesNotGive.html">Rio Vidal Does Not Give a Damn</a></td>
-                    <td>spreadingmylegsforlexa</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="roommatesOfDestruction.html">Roommates of Destruction</a></td>
-                    <td>Karmyal</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="rosesAreRedOrchids.html">Roses Are Red, Orchids Are...Purple?</a></td>
-                    <td>carlotta22</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Teen And Up Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="roster.html">Roster</a></td>
-                    <td>324b2fun</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="scherzo.html">Scherzo</a></td>
-                    <td>Queerenough</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Not Rated</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="sheDrivesMeCrazy.html">She Drives Me Crazy</a></td>
-                    <td>haetonin</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="sheGetsTheJobDone.html">She Gets the Job Done</a></td>
-                    <td>juliabaccari</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="silverSprings.html">Silver Springs</a></td>
-                    <td>annadelamico</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="stuckInOrbit.html">Stuck in Orbit</a></td>
-                    <td>kayniiine</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="sugarAndHoney.html">Sugar and Honey</a></td>
-                    <td>visadero</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="summaCumLaude.html">Summa Cum Laude</a></td>
-                    <td>advilrio</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theArtOfKeepingA.html">The Art of Keeping a Secret</a></td>
-                    <td>onzeque</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theBadThing.html">The Bad Thing</a></td>
-                    <td>midwestprincess_01</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theBeachHouse.html">The Beach House</a></td>
-                    <td>Coven_crafted</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Teen And Up Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theDare.html">The Dare</a></td>
-                    <td>Cassie_Bones</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theDevilYouKnow.html">the devil you know</a></td>
-                    <td>324b2fun</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theEthicsOfAttraction.html">The Ethics of Attraction</a></td>
-                    <td>Sunshinesongbird</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theGoldAndTheRust.html">The gold and the rust, the color erupts</a></td>
-                    <td>wherethesunmeatsthesea</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theHeartOfDeath.html">The Heart of Death</a></td>
-                    <td>AWildWriter</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theHeatIsOn.html">The Heat Is On</a></td>
-                    <td>deathwives</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theHoliday.html">The Holiday</a></td>
-                    <td>gclddrush</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theNeutralGround.html">The Neutral Ground</a></td>
-                    <td>lilfinch</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="thePeculiarPatient.html">The Peculiar Patient</a></td>
-                    <td>ricxio</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="thereIsNoDeathFor.html">There Is No Death for Witches (Only Transformation)</a></td>
-                    <td>firecrackerroot</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Teen And Up Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theresnooneelsewho.html">There's No One Else Who Could, the Only One Is You</a></td>
-                    <td>rockwetman</td>
-                    <td>April Ludgate/Jen Barkley</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theRoadTwistsAnd.html">The Road Twists and Turns</a></td>
-                    <td>CaptainVoyager</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Teen And Up Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theScientificMethodOf.html">The Scientific Method of Falling Apart</a></td>
-                    <td>ememalia</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Not Rated</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theSpaceBetweenNotes.html">The Space Between Notes</a></td>
-                    <td>trappedinamatchbox</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theTalesOfNewSalem.html">The Tales of New Salem</a></td>
-                    <td>DeathWhisper</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theWayIFeelAboutYou.html">The Way I Feel About You Baby Can’t Explain It</a></td>
-                    <td>seabiscuit</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="theWorldReversed.html">The World Reversed</a></td>
-                    <td>lyrcse</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="thirstTrap.html">Thirst (Trap)</a></td>
-                    <td>pinkpillow19</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="timeWarp.html">Time Warp</a></td>
-                    <td>324b2fun</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Teen And Up Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="underneaththetree.html">Underneath the Tree</a></td>
-                    <td>Cthulhus_Curse</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="unlockThyHiddenGate.html">Unlock Thy Hidden Gate</a></td>
-                    <td>WitchHeartsRunFree</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="unraveled.html">Unraveled</a></td>
-                    <td>EchoesInTheMargins</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="unsatisfiedISkipMy.html">Unsatisfied, I Skip My Pride</a></td>
-                    <td>rockwetman</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="velvetRing.html">Velvet Ring</a></td>
-                    <td>daniandjamie</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="wellIWonder.html">Well I Wonder</a></td>
-                    <td>midwestprincess_01</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="whatanight.html">What a Night</a></td>
-                    <td>How_Deep_the_Grave</td>
-                    <td>April Ludgate/Jen Barkley</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="whatIfItsNotMeant.html">What If It's Not Meant for Me?</a></td>
-                    <td>seasalttears</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="whenHeartbreakMeets.html">When Heartbreak Meets Jealousy</a></td>
-                    <td>deathwives</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="whenWeKissIHave.html">When We Kiss (I Have Anger Issues)</a></td>
-                    <td>lgbtimelord</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="whereWeBelong.html">Where We Belong</a></td>
-                    <td>Agatharioxoxo</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>General Audiences</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="whyDontYouWantMe.html">why don't you want me?</a></td>
-                    <td>theyliveinourstories</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="wickedWitchcraft.html">Wicked Witchcraft</a></td>
-                    <td>creativelyblind</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="witchcraftFillingYour.html">Witchcraft Filling Your Void</a></td>
-                    <td>wariangle</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="withinReach.html">Within Reach</a></td>
-                    <td>324b2fun</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Mature</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="wrongNumber.html">Wrong Number</a></td>
-                    <td>3v1lb4byh4g</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="youdHaveToStopThe.html">You'd have to stop the world</a></td>
-                    <td>Echolux</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="youllJustHaveToTaste.html">You'll Just Have to Taste Me (When She's Kissin' You)</a></td>
-                    <td>agatharioluvr</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-                <tr>
-                    <td><a href="youMakeLovingFun.html">You Make Loving Fun</a></td>
-                    <td>YellowFog</td>
-                    <td>Agatha Harkness/Rio Vidal</td>
-                    <td>Explicit</td>
-                </tr>
-            
-        </tbody>
-    </table>
-    
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+    <center><p>These are not my fics. These are just some I don't want to lose.</p></center>
 
-    const comparer = (idx, asc) => (a, b) => 
-        ((v1, v2) => 
-            v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) 
-                ? v1 - v2 
-                : v1.toString().localeCompare(v2)
-        )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+    <div class="filters">
+        <input type="text" id="searchBox" placeholder="Search title or summary...">
+        <select id="authorFilter"><option value="">All Authors</option></select>
+        <select id="shipFilter"><option value="">All Ships</option></select>
+        <select id="ratingFilter"><option value="">All Ratings</option></select>
+        <select id="statusFilter"><option value="">All Statuses</option></select>
+    </div>
 
-    document.querySelectorAll('th.sortable').forEach(th => {
-        th.addEventListener('click', () => {
-            const table = th.closest('table');
-            const tbody = table.querySelector('tbody');
-            Array.from(tbody.querySelectorAll('tr'))
-                .sort(comparer(Array.from(th.parentNode.children).indexOf(th), th.asc = !th.asc))
-                .forEach(tr => tbody.appendChild(tr));
-        });
+    <div class="card-container">
+        
+                    <div class="card" 
+                         data-author="midwestprincess_01" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="1111.html">11:11</a></h2>
+                        <p><strong>Author:</strong> midwestprincess_01</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="agatharioxoxo" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="general audiences" 
+                         data-status="incomplete">
+                        <h2><a href="accidental_add.html">Accidental Add</a></h2>
+                        <p><strong>Author:</strong> Agatharioxoxo</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> General Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="queerenough" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="adagietto.html">Adagietto</a></h2>
+                        <p><strong>Author:</strong> Queerenough</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="wonderful_anarchy" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="agathario_fake_dating_au.html">Agathario Fake Dating Au</a></h2>
+                        <p><strong>Author:</strong> wonderful_anarchy</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="queerpinks" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="agatha_all_along_week_2025.html">Agatha All Along Week 2025</a></h2>
+                        <p><strong>Author:</strong> QueerPinks</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="advilrio" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="alambre_pua.html">alambre púa</a></h2>
+                        <p><strong>Author:</strong> advilrio</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="324b2fun" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="albatross.html">albatross</a></h2>
+                        <p><strong>Author:</strong> 324b2fun</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="vicwritesometimes" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="all_roads_lead_to_this.html">All Roads Lead to This</a></h2>
+                        <p><strong>Author:</strong> vicwritesometimes</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="how_deep_the_grave" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="all_the_things_we_could_do.html">All the Things We Could Do</a></h2>
+                        <p><strong>Author:</strong> How_Deep_the_Grave</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="cassie_bones" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="amor_prohibido.html">Amor Prohibido</a></h2>
+                        <p><strong>Author:</strong> Cassie_Bones</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="unknown" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="and_fill_my_blank_page.html">And Fill My Blank Page</a></h2>
+                        <p><strong>Author:</strong> Unknown</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="deadseasoul" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="and_well_be_together_forever_and_amp_ever_more.html">And We'll Be Together (Forever &amp; Ever More)</a></h2>
+                        <p><strong>Author:</strong> DeadSeaSoul</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="zimeyebright" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="an_unexpected_visitor.html">An Unexpected Visitor</a></h2>
+                        <p><strong>Author:</strong> ZimEyebright</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="lilaluna" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="at_the_still_point_of_the_turning_world.html">At the Still Point of the Turning World</a></h2>
+                        <p><strong>Author:</strong> LilaLuna</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="agatharioxoxo" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="general audiences" 
+                         data-status="incomplete">
+                        <h2><a href="a_drunken_menace.html">A drunken menace</a></h2>
+                        <p><strong>Author:</strong> Agatharioxoxo</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> General Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="visadero" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="a_kingdom_by_the_night.html">A Kingdom By the Night</a></h2>
+                        <p><strong>Author:</strong> visadero</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="culturevampire" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="a_witch_in_salem.html">A Witch in Salem</a></h2>
+                        <p><strong>Author:</strong> culturevampire</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="quinnking" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="baby_its_fate_not_luck.html">baby, it's fate, not luck</a></h2>
+                        <p><strong>Author:</strong> quinnking</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="originofrios" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="ban_all_the_music.html">Ban All the Music</a></h2>
+                        <p><strong>Author:</strong> originofrios</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="lunalwitch08" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="beneath_the_scars.html">Beneath the scars</a></h2>
+                        <p><strong>Author:</strong> lunalwitch08</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="vwoolf" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="beneath_the_stars.html">beneath the stars</a></h2>
+                        <p><strong>Author:</strong> vwoolf</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="sapphicspiral" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="between_the_flames_and_her_eyes.html">Between the Flames and Her Eyes</a></h2>
+                        <p><strong>Author:</strong> sapphicspiral</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="annadelamico" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="bewitched.html">Bewitched</a></h2>
+                        <p><strong>Author:</strong> annadelamico</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="agatharioluvr" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="bitches_i_dont_trust_them_but_they_give_me_what_i_want_for_the_night.html">bitches i don't trust them (but they give me what i want for the night)</a></h2>
+                        <p><strong>Author:</strong> agatharioluvr</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="gclddrush" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="blade_of_grass.html">blade of grass</a></h2>
+                        <p><strong>Author:</strong> gclddrush</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="rhaenicent21" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="bound_by_oath_undone_by_you.html">Bound By Oath, Undone by You</a></h2>
+                        <p><strong>Author:</strong> rhaenicent21</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="deathwives" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="broken_deal.html">Broken Deal</a></h2>
+                        <p><strong>Author:</strong> deathwives</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="damischmam" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="bush_league.html">Bush League</a></h2>
+                        <p><strong>Author:</strong> damischmam</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="callipoicepole" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="but_i_love_you_just_the_same.html">But I Love You Just the Same</a></h2>
+                        <p><strong>Author:</strong> callipoicepole</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="forestgreentrees" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="but_we_cant.html">But We Can't</a></h2>
+                        <p><strong>Author:</strong> forestgreentrees</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="wariangle" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="candlelight_whispers_me_where_to_go.html">Candlelight Whispers Me Where to Go</a></h2>
+                        <p><strong>Author:</strong> wariangle</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="winged_mammal" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="catalysis.html">Catalysis</a></h2>
+                        <p><strong>Author:</strong> winged_mammal</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="how_deep_the_grave" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="catch_me_when_i_fall_for_you.html">Catch Me When I Fall for You</a></h2>
+                        <p><strong>Author:</strong> How_Deep_the_Grave</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="fqrcefields (sqyyadina)" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="checkmate.html">Checkmate!</a></h2>
+                        <p><strong>Author:</strong> fqrcefields (sqyyadina)</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="cthulhus_curse" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="close_enough_for_love.html">Close Enough for Love</a></h2>
+                        <p><strong>Author:</strong> Cthulhus_Curse</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="luckytheepizzadog_13" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="close_to_you.html">Close to You</a></h2>
+                        <p><strong>Author:</strong> luckytheepizzadog_13</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="damischmam" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="cool_about_it.html">Cool About it</a></h2>
+                        <p><strong>Author:</strong> damischmam</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="velvetprayer" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="creator_you_destroy_me.html">Creator, You Destroy Me</a></h2>
+                        <p><strong>Author:</strong> velvetprayer</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="magnolie" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="crescendo.html">Crescendo</a></h2>
+                        <p><strong>Author:</strong> Magnolie</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="gabisafica" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="not rated" 
+                         data-status="incomplete">
+                        <h2><a href="dearest_agatha.html">Dearest Agatha</a></h2>
+                        <p><strong>Author:</strong> gabisafica</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Not Rated</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="echoesinthemargins" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="deaths_echo.html">Death's Echo</a></h2>
+                        <p><strong>Author:</strong> EchoesInTheMargins</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="runrig_folklore" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="devotion_is_for_fools.html">Devotion Is for Fools</a></h2>
+                        <p><strong>Author:</strong> RunRig_Folklore</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="hpprofessor1" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="disdainfully_hers.html">Disdainfully Hers</a></h2>
+                        <p><strong>Author:</strong> hpprofessor1</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="hpprofessor1" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="dont_be_afraid_of_me_im_what_you_need.html">Don't Be Afraid of Me (I'm What You Need)</a></h2>
+                        <p><strong>Author:</strong> hpprofessor1</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="insanetwin" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="everything_looks_better_in_hindsight.html">Everything Looks Better (In Hindsight)</a></h2>
+                        <p><strong>Author:</strong> insanetwin</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="cassie_bones" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="exceptions.html">Exceptions</a></h2>
+                        <p><strong>Author:</strong> Cassie_Bones</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="deathwives" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="falling_for_the_enemy.html">Falling for the Enemy</a></h2>
+                        <p><strong>Author:</strong> deathwives</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="thetroublewithwanting" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="family_line.html">family line</a></h2>
+                        <p><strong>Author:</strong> thetroublewithwanting</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="ofendlesswonder" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="figured_you_out.html">Figured You Out</a></h2>
+                        <p><strong>Author:</strong> OfEndlessWonder</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="visadero" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="five_seconds.html">Five Seconds</a></h2>
+                        <p><strong>Author:</strong> visadero</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="kayniiine" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="fold_your_wings.html">Fold Your Wings</a></h2>
+                        <p><strong>Author:</strong> kayniiine</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="fleetingfriend" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="for_the_love_of_spring.html">For the Love of Spring</a></h2>
+                        <p><strong>Author:</strong> FleetingFriend</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="salong3" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="for_your_consideration.html">For Your Consideration</a></h2>
+                        <p><strong>Author:</strong> Salong3</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="rosecoloredmac" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="general audiences" 
+                         data-status="incomplete">
+                        <h2><a href="giving_my_heart_over_to_you.html">Giving My Heart Over to You</a></h2>
+                        <p><strong>Author:</strong> rosecoloredmac</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> General Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="turtlebass" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="glitter_glue_and_signs_of_life.html">Glitter, Glue, and Signs of Life</a></h2>
+                        <p><strong>Author:</strong> turtlebass</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="midwestprincess_01" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="god_knows_you_need_it.html">God Knows You Need It</a></h2>
+                        <p><strong>Author:</strong> midwestprincess_01</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="agatharioxoxo" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="going_viral.html">Going Viral</a></h2>
+                        <p><strong>Author:</strong> Agatharioxoxo</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="quinnking" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="green_is_the_colour_of_her_kind.html">green is the colour of her kind</a></h2>
+                        <p><strong>Author:</strong> quinnking</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="sobercatnip" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="guilty_as_sin.html">guilty as sin</a></h2>
+                        <p><strong>Author:</strong> sobercatnip</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="324b2fun" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="happiest_season.html">Happiest Season</a></h2>
+                        <p><strong>Author:</strong> 324b2fun</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="agatharioxoxo" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="harkness.html">Harkness</a></h2>
+                        <p><strong>Author:</strong> Agatharioxoxo</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="meanlesbian (iamvfsm)" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="harkness_pathology.html">Harkness Pathology</a></h2>
+                        <p><strong>Author:</strong> meanlesbian (iamvfsm)</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="cassie_bones" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="heart_beats_like_a_drummer.html">Heart Beats Like a Drummer</a></h2>
+                        <p><strong>Author:</strong> Cassie_Bones</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="kayniiine" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="here_with_you_now.html">Here With You Now</a></h2>
+                        <p><strong>Author:</strong> kayniiine</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="emilia_rowan" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="honey_youre_familiar.html">honey, you're familiar</a></h2>
+                        <p><strong>Author:</strong> Emilia_Rowan</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="theshylucifer" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="how_it_started.html">How It Started</a></h2>
+                        <p><strong>Author:</strong> theshylucifer</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="empathyhoodie" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="how_many_corners_do_i_have_to_turn_how_many_times_do_i_have_to_learn.html">how many corners do i have to turn? (how many times do i have to learn?)</a></h2>
+                        <p><strong>Author:</strong> empathyhoodie</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="agathalovesrio" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="if_this_was_a_movie.html">If This Was a Movie</a></h2>
+                        <p><strong>Author:</strong> AgathaLovesRio</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="folksmore" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="illicit_affairs.html">illicit affairs</a></h2>
+                        <p><strong>Author:</strong> folksmore</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="marniemichaelsapologist" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="ill_be_your_garbage_man.html">I'll Be Your Garbage Man</a></h2>
+                        <p><strong>Author:</strong> MarnieMichaelsApologist</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="agatharioxoxo" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="general audiences" 
+                         data-status="incomplete">
+                        <h2><a href="ill_hear_you_even_when_you_cant_speak.html">I’ll hear you even when you can’t speak</a></h2>
+                        <p><strong>Author:</strong> Agatharioxoxo</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> General Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="rockwetman" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="im_leaving_here_with_you.html">I'm Leaving Here With You</a></h2>
+                        <p><strong>Author:</strong> rockwetman</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="bellalinguista" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="im_sorry_i_love_you.html">I'm Sorry, I Love You</a></h2>
+                        <p><strong>Author:</strong> bellalinguista</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="visadero" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="in_the_deep_end.html">In The Deep End</a></h2>
+                        <p><strong>Author:</strong> visadero</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="rios_dagger" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="in_the_shadows_of_the_pines.html">In The Shadows of the Pines</a></h2>
+                        <p><strong>Author:</strong> rios_dagger</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="ree_all_along" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="is_it_casual_now.html">Is It Casual Now?</a></h2>
+                        <p><strong>Author:</strong> Ree_all_along</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="riverofsouls" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="itll_all_work_out.html">It'll All Work Out</a></h2>
+                        <p><strong>Author:</strong> riverofsouls</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="adimnos" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="its_bloody_and_raw_but_i_swear_it_is_sweet.html">It’s Bloody and Raw (But I Swear it is Sweet)</a></h2>
+                        <p><strong>Author:</strong> Adimnos</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="yellowfog" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="its_bloody_and_raw_but_i_swear_it_is_sweet_1.html">It's bloody and raw, but I swear it is sweet</a></h2>
+                        <p><strong>Author:</strong> YellowFog</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="saturnreturn" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="its_just_in_my_nature.html">It's Just in My Nature</a></h2>
+                        <p><strong>Author:</strong> saturnreturn</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="0hroosje" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="its_never_quite_as_it_seems_hiyouve_got_mail.html">It's Never Quite As It Seems (Hi—You'Ve Got Mail)</a></h2>
+                        <p><strong>Author:</strong> 0hroosje</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="helpbutton95" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="i_could_not_stop_for_death.html">I Could Not Stop for Death</a></h2>
+                        <p><strong>Author:</strong> Helpbutton95</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="anonymous" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="i_tore_you_apart_in_my_head.html">I Tore You Apart In My Head</a></h2>
+                        <p><strong>Author:</strong> Anonymous</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="acovenlesswitch, lovurain" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="general audiences" 
+                         data-status="incomplete">
+                        <h2><a href="i_was_your_starry_eyed_lover_and_the_one_that_you_saw.html">I Was Your Starry Eyed Lover and the One That You Saw</a></h2>
+                        <p><strong>Author:</strong> acovenlesswitch, lovurain</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> General Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="rockwetman" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="i_will_wait_up_for_you_dear.html">I Will Wait Up for You, Dear</a></h2>
+                        <p><strong>Author:</strong> rockwetman</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="empathyhoodie" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="i_wonder_which_cup_youll_drink_from_i_hope_its_mine.html">i wonder which cup you'll drink from (i hope it's mine)</a></h2>
+                        <p><strong>Author:</strong> empathyhoodie</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="magnolie" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="just_between_us_did_the_love_affair_maim_you_too.html">Just Between Us, Did the Love Affair Maim You Too</a></h2>
+                        <p><strong>Author:</strong> Magnolie</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="bratassly" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="let_go.html">Let Go</a></h2>
+                        <p><strong>Author:</strong> bratassly</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="yellowfog" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="let_me_wrap_my_teeth_around_the_world.html">Let me wrap my teeth around the world</a></h2>
+                        <p><strong>Author:</strong> YellowFog</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="olivertheunknown" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="life_after_love_can_we_find_it_again.html">Life after love (Can we find it again?)</a></h2>
+                        <p><strong>Author:</strong> Olivertheunknown</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="tunemyart" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="like_a_hurricane.html">like a hurricane</a></h2>
+                        <p><strong>Author:</strong> tunemyart</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="cassie_bones" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="love_and_amp_politics.html">Love &Amp; Politics</a></h2>
+                        <p><strong>Author:</strong> Cassie_Bones</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="adlerre" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="love_is_a_four_letter_word.html">Love Is a Four Letter Word</a></h2>
+                        <p><strong>Author:</strong> Adlerre</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="echoesinthemargins" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="love_is_a_witch.html">Love Is a Witch</a></h2>
+                        <p><strong>Author:</strong> EchoesInTheMargins</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="queerenough" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="love_me_tender.html">Love me tender</a></h2>
+                        <p><strong>Author:</strong> Queerenough</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="charmed4lifekaren" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="love_persevering.html">Love Persevering</a></h2>
+                        <p><strong>Author:</strong> charmed4lifekaren</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="trappedinamatchbox" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="luminous.html">Luminous</a></h2>
+                        <p><strong>Author:</strong> trappedinamatchbox</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="cassie_bones" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="general audiences" 
+                         data-status="incomplete">
+                        <h2><a href="mandevillas.html">Mandevillas</a></h2>
+                        <p><strong>Author:</strong> Cassie_Bones</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> General Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="cassie_bones" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="meetcute.html">Meetcute</a></h2>
+                        <p><strong>Author:</strong> Cassie_Bones</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="coven_crafted" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="meet_me_at_the_end.html">Meet Me At The End</a></h2>
+                        <p><strong>Author:</strong> Coven_crafted</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="1e_r_x1" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="my_boy_builds_coffins.html">my boy builds coffins</a></h2>
+                        <p><strong>Author:</strong> 1e_r_x1</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="holy_dyke" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="my_cries_and_your_whispers.html">My Cries and Your Whispers</a></h2>
+                        <p><strong>Author:</strong> Holy_dyke</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="sapphospecs" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="my_love_mine_all_mine.html">my love, mine, all mine</a></h2>
+                        <p><strong>Author:</strong> sapphospecs</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="anonfandombandit, orphan_account" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="my_safeword_is_safeword.html">my safeword is safeword</a></h2>
+                        <p><strong>Author:</strong> AnonFandomBandit, orphan_account</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="324b2fun" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="naughty_and_amp_nice.html">Naughty &Amp; Nice</a></h2>
+                        <p><strong>Author:</strong> 324b2fun</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="1e_r_x1" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="night_shift.html">night shift</a></h2>
+                        <p><strong>Author:</strong> 1e_r_x1</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="hexdealer" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="not_my_type.html">Not My Type</a></h2>
+                        <p><strong>Author:</strong> Hexdealer</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="rockwetman" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="not_over_dramatic_i_know_what_i_want.html">Not Over Dramatic, I Know What I Want.</a></h2>
+                        <p><strong>Author:</strong> rockwetman</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="originofrios" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="number_13.html">Number 13</a></h2>
+                        <p><strong>Author:</strong> originofrios</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="agatharioxoxo" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="obsessed.html">Obsessed</a></h2>
+                        <p><strong>Author:</strong> Agatharioxoxo</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="sapphicwitch94" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="power_play.html">Power Play</a></h2>
+                        <p><strong>Author:</strong> SapphicWitch94</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="becks475" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="purple_and_green.html">Purple and Green</a></h2>
+                        <p><strong>Author:</strong> Becks475</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="anonfandombandit, midwestprincess_01, saturnreturn" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="put_it_on_the_line.html">Put It On The Line</a></h2>
+                        <p><strong>Author:</strong> AnonFandomBandit, midwestprincess_01, saturnreturn</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="how_deep_the_grave" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="reaching_out_for_more.html">Reaching Out For More</a></h2>
+                        <p><strong>Author:</strong> How_Deep_the_Grave</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="wariangle" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="red_in_claw_red_in_love.html">Red in Claw, Red in Love</a></h2>
+                        <p><strong>Author:</strong> wariangle</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="witchyjulia" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="general audiences" 
+                         data-status="incomplete">
+                        <h2><a href="red_thread_of_fate.html">Red Thread of Fate</a></h2>
+                        <p><strong>Author:</strong> WitchyJulia</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> General Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="salong4" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="rented_hearts.html">Rented Hearts</a></h2>
+                        <p><strong>Author:</strong> Salong4</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="agathalovesrio" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="rios_toxic_embrace.html">Rio’S Toxic Embrace</a></h2>
+                        <p><strong>Author:</strong> AgathaLovesRio</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="spreadingmylegsforlexa" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="rio_vidal_does_not_give_a_damn.html">Rio Vidal Does Not Give a Damn</a></h2>
+                        <p><strong>Author:</strong> spreadingmylegsforlexa</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="karmyal" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="roommates_of_destruction.html">Roommates of Destruction</a></h2>
+                        <p><strong>Author:</strong> Karmyal</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="carlotta22" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="roses_are_red_orchids_arepurple.html">Roses Are Red, Orchids Are...Purple?</a></h2>
+                        <p><strong>Author:</strong> carlotta22</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="324b2fun" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="roster.html">Roster</a></h2>
+                        <p><strong>Author:</strong> 324b2fun</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="paperairplanesopenwindows" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="rules_for_co-parenting_with_your_witch_of_an_ex.html">Rules for Co-Parenting With Your Witch of an Ex</a></h2>
+                        <p><strong>Author:</strong> paperairplanesopenwindows</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="queerenough" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="not rated" 
+                         data-status="incomplete">
+                        <h2><a href="scherzo.html">Scherzo</a></h2>
+                        <p><strong>Author:</strong> Queerenough</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Not Rated</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="magnolie" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="secrets_and_amp_suspenders.html">Secrets &amp; Suspenders</a></h2>
+                        <p><strong>Author:</strong> Magnolie</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="cozmicblues" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="shatter_your_illusions.html">Shatter Your Illusions</a></h2>
+                        <p><strong>Author:</strong> cozmicblues</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="haetonin" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="she_drives_me_crazy.html">She Drives Me Crazy</a></h2>
+                        <p><strong>Author:</strong> haetonin</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="juliabaccari" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="she_gets_the_job_done.html">She Gets the Job Done</a></h2>
+                        <p><strong>Author:</strong> juliabaccari</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="agatharioluvr" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="she_looks_like_the_real_thing_she_tastes_like_the_real_thing.html">she looks like the real thing (she tastes like the real thing)</a></h2>
+                        <p><strong>Author:</strong> agatharioluvr</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="annadelamico" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="silver_springs.html">Silver Springs</a></h2>
+                        <p><strong>Author:</strong> annadelamico</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="kayniiine" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="stuck_in_orbit.html">Stuck in Orbit</a></h2>
+                        <p><strong>Author:</strong> kayniiine</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="visadero" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="sugar_and_honey.html">Sugar and Honey</a></h2>
+                        <p><strong>Author:</strong> visadero</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="advilrio" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="summa_cum_laude.html">summa cum laude</a></h2>
+                        <p><strong>Author:</strong> advilrio</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="echolux" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="take_it_from_the_top_you_are_a_bottom.html">Take it from the top (you are a bottom)</a></h2>
+                        <p><strong>Author:</strong> Echolux</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="echolux" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="tempus_voluntas_spatium.html">Tempus, Voluntas, Spatium</a></h2>
+                        <p><strong>Author:</strong> Echolux</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="rockwetman" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="theres_no_one_else_who_could_the_only_one_is_you.html">There's No One Else Who Could, the Only One Is You</a></h2>
+                        <p><strong>Author:</strong> rockwetman</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="firecrackerroot" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="there_is_no_death_for_witches_only_transformation.html">There Is No Death for Witches (Only Transformation)</a></h2>
+                        <p><strong>Author:</strong> firecrackerroot</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="onzeque" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="the_art_of_keeping_a_secret.html">The Art of Keeping a Secret</a></h2>
+                        <p><strong>Author:</strong> onzeque</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="midwestprincess_01" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="the_bad_thing.html">The Bad Thing</a></h2>
+                        <p><strong>Author:</strong> midwestprincess_01</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="coven_crafted" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="the_beach_house.html">The Beach House</a></h2>
+                        <p><strong>Author:</strong> Coven_crafted</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="cassie_bones" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="the_dare.html">The Dare</a></h2>
+                        <p><strong>Author:</strong> Cassie_Bones</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="324b2fun" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="the_devil_you_know.html">the devil you know</a></h2>
+                        <p><strong>Author:</strong> 324b2fun</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="sunshinesongbird" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="the_ethics_of_attraction.html">The Ethics of Attraction</a></h2>
+                        <p><strong>Author:</strong> Sunshinesongbird</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="wherethesunmeatsthesea" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="the_gold_and_the_rust_the_color_erupts.html">The gold and the rust, the color erupts</a></h2>
+                        <p><strong>Author:</strong> wherethesunmeatsthesea</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="awildwriter" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="the_heart_of_death.html">The Heart of Death</a></h2>
+                        <p><strong>Author:</strong> AWildWriter</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="deathwives" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="the_heat_is_on.html">The Heat Is On</a></h2>
+                        <p><strong>Author:</strong> deathwives</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="gclddrush" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="the_holiday.html">The Holiday</a></h2>
+                        <p><strong>Author:</strong> gclddrush</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="lilfinch" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="the_neutral_ground.html">The Neutral Ground</a></h2>
+                        <p><strong>Author:</strong> lilfinch</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="ricxio" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="the_peculiar_patient.html">the peculiar patient</a></h2>
+                        <p><strong>Author:</strong> ricxio</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="captainvoyager" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="the_road_twists_and_turns.html">The Road Twists and Turns</a></h2>
+                        <p><strong>Author:</strong> CaptainVoyager</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="ememalia" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="not rated" 
+                         data-status="incomplete">
+                        <h2><a href="the_scientific_method_of_falling_apart.html">The Scientific Method of Falling Apart</a></h2>
+                        <p><strong>Author:</strong> ememalia</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Not Rated</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="trappedinamatchbox" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="the_space_between_notes.html">The Space Between Notes</a></h2>
+                        <p><strong>Author:</strong> trappedinamatchbox</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="deathwhisper" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="the_tales_of_new_salem.html">The Tales of New Salem</a></h2>
+                        <p><strong>Author:</strong> DeathWhisper</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="paravato" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="the_thread_of_fate.html">The Thread Of Fate</a></h2>
+                        <p><strong>Author:</strong> Paravato</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="seabiscuit" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="the_way_i_feel_about_you_baby_cant_explain_it.html">The Way I Feel About You Baby Can’t Explain It</a></h2>
+                        <p><strong>Author:</strong> seabiscuit</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="lyrcse" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="the_world_reversed.html">The World Reversed</a></h2>
+                        <p><strong>Author:</strong> lyrcse</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="pinkpillow19" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="thirst_trap.html">Thirst (Trap)</a></h2>
+                        <p><strong>Author:</strong> pinkpillow19</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="annadelamico" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="time_in_a_bottle.html">Time in a Bottle</a></h2>
+                        <p><strong>Author:</strong> annadelamico</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="324b2fun" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="time_warp.html">Time Warp</a></h2>
+                        <p><strong>Author:</strong> 324b2fun</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="cthulhus_curse" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="underneath_the_tree.html">Underneath the Tree</a></h2>
+                        <p><strong>Author:</strong> Cthulhus_Curse</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="witchheartsrunfree" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="unlock_thy_hidden_gate.html">Unlock Thy Hidden Gate</a></h2>
+                        <p><strong>Author:</strong> WitchHeartsRunFree</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="a_dreamer_dreams_everyday" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="unmoored_by_your_presence.html">Unmoored by your Presence</a></h2>
+                        <p><strong>Author:</strong> a_dreamer_dreams_everyday</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="echoesinthemargins" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="unraveled.html">Unraveled</a></h2>
+                        <p><strong>Author:</strong> EchoesInTheMargins</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="rockwetman" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="unsatisfied_i_skip_my_pride.html">Unsatisfied, I Skip My Pride</a></h2>
+                        <p><strong>Author:</strong> rockwetman</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="daniandjamie" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="velvet_ring.html">Velvet Ring</a></h2>
+                        <p><strong>Author:</strong> daniandjamie</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="midwestprincess_01" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="well_i_wonder.html">Well I Wonder</a></h2>
+                        <p><strong>Author:</strong> midwestprincess_01</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="forestgreentrees" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="were_never_done.html">We're Never Done</a></h2>
+                        <p><strong>Author:</strong> forestgreentrees</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="mychellio" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="we_found_each_other_in_the_dark.html">We Found Each Other in the Dark</a></h2>
+                        <p><strong>Author:</strong> mychellio</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="how_deep_the_grave" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="what_a_night.html">What a Night</a></h2>
+                        <p><strong>Author:</strong> How_Deep_the_Grave</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="saturnreturn" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="what_a_terrifying_work_of_art.html">what a terrifying work of art</a></h2>
+                        <p><strong>Author:</strong> saturnreturn</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="seasalttears" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="what_if_its_not_meant_for_me.html">What If It's Not Meant for Me?</a></h2>
+                        <p><strong>Author:</strong> seasalttears</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="deathwives" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="when_heartbreak_meets_jealousy.html">When Heartbreak Meets Jealousy</a></h2>
+                        <p><strong>Author:</strong> deathwives</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="lgbtimelord" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="when_we_kiss_i_have_anger_issues.html">When We Kiss (I Have Anger Issues)</a></h2>
+                        <p><strong>Author:</strong> lgbtimelord</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="agatharioxoxo" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="general audiences" 
+                         data-status="incomplete">
+                        <h2><a href="where_we_belong.html">Where we belong</a></h2>
+                        <p><strong>Author:</strong> Agatharioxoxo</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> General Audiences</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="rivive" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="why_dont_you_want_me.html">why don't you want me?</a></h2>
+                        <p><strong>Author:</strong> rivive</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="creativelyblind" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="wicked_witchcraft.html">Wicked Witchcraft</a></h2>
+                        <p><strong>Author:</strong> creativelyblind</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="wariangle" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="witchcraft_filling_your_void.html">Witchcraft Filling Your Void</a></h2>
+                        <p><strong>Author:</strong> wariangle</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="324b2fun" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="within_reach.html">Within Reach</a></h2>
+                        <p><strong>Author:</strong> 324b2fun</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="3v1lb4byh4g" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="wrong_number.html">Wrong Number</a></h2>
+                        <p><strong>Author:</strong> 3v1lb4byh4g</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="echolux" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="youd_have_to_stop_the_world.html">You'd have to stop the world</a></h2>
+                        <p><strong>Author:</strong> Echolux</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="agatharioluvr" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="youll_just_have_to_taste_me_when_shes_kissin_you.html">You'll Just Have to Taste Me (When She's Kissin' You)</a></h2>
+                        <p><strong>Author:</strong> agatharioluvr</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="lovelovelies, plazadehahn2" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="you_arent_mine_for_the_taking.html">you aren’t mine for the taking</a></h2>
+                        <p><strong>Author:</strong> lovelovelies, plazadehahn2</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="rhaenicent21" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="you_got_me_looking_so_crazy_right_now.html">you got me looking so crazy right now</a></h2>
+                        <p><strong>Author:</strong> rhaenicent21</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="yellowfog" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="you_make_loving_fun.html">You Make Loving Fun</a></h2>
+                        <p><strong>Author:</strong> YellowFog</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const searchBox = document.getElementById('searchBox');
+        const authorFilter = document.getElementById('authorFilter');
+        const shipFilter = document.getElementById('shipFilter');
+        const ratingFilter = document.getElementById('ratingFilter');
+        const statusFilter = document.getElementById('statusFilter');
+        const cards = document.querySelectorAll('.card');
+
+        function populateFilter(filter, attr) {
+            const values = Array.from(new Set(Array.from(cards).map(card => card.dataset[attr])))
+                .filter(v => v && v !== 'unknown')
+                .sort();
+            values.forEach(v => {
+                const opt = document.createElement('option');
+                opt.value = v;
+                opt.textContent = v.charAt(0).toUpperCase() + v.slice(1);
+                filter.appendChild(opt);
+            });
+        }
+
+        populateFilter(authorFilter, 'author');
+        populateFilter(shipFilter, 'ship');
+        populateFilter(ratingFilter, 'rating');
+        populateFilter(statusFilter, 'status');
+
+        function filterCards() {
+            const search = searchBox.value.toLowerCase();
+            const author = authorFilter.value;
+            const ship = shipFilter.value;
+            const rating = ratingFilter.value;
+            const status = statusFilter.value;
+
+            cards.forEach(card => {
+                const matchesSearch = card.innerText.toLowerCase().includes(search);
+                const matchesAuthor = !author || card.dataset.author === author;
+                const matchesShip = !ship || card.dataset.ship === ship;
+                const matchesRating = !rating || card.dataset.rating === rating;
+                const matchesStatus = !status || card.dataset.status === status;
+
+                if (matchesSearch && matchesAuthor && matchesShip && matchesRating && matchesStatus) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        searchBox.addEventListener('input', filterCards);
+        authorFilter.addEventListener('change', filterCards);
+        shipFilter.addEventListener('change', filterCards);
+        ratingFilter.addEventListener('change', filterCards);
+        statusFilter.addEventListener('change', filterCards);
     });
-});
-</script>
-
+    </script>
 </body>
 </html>
