@@ -4,7 +4,75 @@
 <head>
     <meta charset="utf-8">
     <title>Fanfic Archive Index</title>
-    <link rel="stylesheet" href="assets/darkMode.css">
+    <!-- <link rel="stylesheet" href="assets/darkMode.css"> -->
+    <style>
+body {
+    font-family: sans-serif;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #121212; /* dark mode background */
+    color: #e0e0e0; /* light gray body text */
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.filters input,
+.filters select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media (max-width: 600px) {
+    .card-container { grid-template-columns: 1fr; }
+}
+
+.card {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
+}
+
+.card:hover { transform: scale(1.02); }
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #bb86fc; /* purple headings */
+}
+
+.card a {
+    color: #bb86fc;
+    text-decoration: none;
+}
+
+.card a:hover { text-decoration: underline; }
+
+.summary {
+    margin-top: 0.5rem;
+    color: #aaa;
+    font-style: italic;
+}
+
+    </style>
 </head>
 <body>
     <h1>Fanfic Archive</h1>
