@@ -42,6 +42,13 @@ body {
     .card-container { grid-template-columns: 1fr; }
 }
 
+@media (min-width: 1024px) {
+    body {
+        max-width: var(--measure);
+        margin-inline: auto;
+    }
+}
+
 .card {
     background-color: #1e1e1e;
     border: 1px solid #444;
