@@ -4,81 +4,56 @@
 <head>
     <meta charset="utf-8">
     <title>Fanfic Archive Index</title>
-    <!-- <link rel="stylesheet" href="assets/darkMode.css"> -->
+    <link rel="stylesheet" href="assets/darkMode.css">
     <style>
-body {
-    font-family: sans-serif;
-    padding: 1rem;
-    max-width: 1200px;
-    margin: auto;
-    background-color: #121212; /* dark mode background */
-    color: #e0e0e0; /* light gray body text */
-}
-
-.filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.filters input,
-.filters select {
-    padding: 0.5rem;
-    font-size: 1rem;
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-    border: 1px solid #444;
-    border-radius: 5px;
-}
-
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-}
-
-@media (max-width: 600px) {
-    .card-container { grid-template-columns: 1fr; }
-}
-
-@media (min-width: 1024px) {
-    body {
-        max-width: var(--measure);
-        margin-inline: auto;
-    }
-}
-
-.card {
-    background-color: #1e1e1e;
-    border: 1px solid #444;
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-    transition: transform 0.2s;
-}
-
-.card:hover { transform: scale(1.02); }
-
-.card h2 {
-    margin-top: 0;
-    font-size: 1.2rem;
-    color: #bb86fc; /* purple headings */
-}
-
-.card a {
-    color: #bb86fc;
-    text-decoration: none;
-}
-
-.card a:hover { text-decoration: underline; }
-
-.summary {
-    margin-top: 0.5rem;
-    color: #aaa;
-    font-style: italic;
-}
-
+        body {
+            font-family: sans-serif;
+            padding: 1rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .filters input, .filters select {
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 1rem;
+        }
+        @media (max-width: 1090px) {
+            .card-container { grid-template-columns: 1fr; }
+        }
+        .card {
+            background-color: #222;
+            border: 1px solid #444;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            transition: transform 0.2s;
+            line-height: 0.75;
+        }
+        .card:hover { transform: scale(1.02); }
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+        .card a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+        .card a:hover { text-decoration: underline; }
+        .summary {
+            margin-top: 0.5rem;
+            color: #aaa;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -105,32 +80,32 @@ body {
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
                         <p><strong>Status:</strong> Incomplete</p>
-                        <p class="summary"></p>
+                        <p class="summary">This is a test summary</p>
                     </div>
                 
                     <div class="card" 
                          data-author="agatharioxoxo" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="general audiences" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="accidental_add.html">Accidental Add</a></h2>
                         <p><strong>Author:</strong> Agatharioxoxo</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> General Audiences</p>
-                        <p><strong>Status:</strong> Incomplete</p>
-                        <p class="summary"></p>
+                        <p><strong>Status:</strong> Completed</p>
+                        <p class="summary">This is a test summary. Boo they deleted their fics.</p>
                     </div>
                 
                     <div class="card" 
                          data-author="queerenough" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="adagietto.html">Adagietto</a></h2>
                         <p><strong>Author:</strong> Queerenough</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -138,12 +113,12 @@ body {
                          data-author="wonderful_anarchy" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="teen and up audiences" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="agathario_fake_dating_au.html">Agathario Fake Dating Au</a></h2>
                         <p><strong>Author:</strong> wonderful_anarchy</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Teen And Up Audiences</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -151,12 +126,12 @@ body {
                          data-author="queerpinks" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="agatha_all_along_week_2025.html">Agatha All Along Week 2025</a></h2>
                         <p><strong>Author:</strong> QueerPinks</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -164,12 +139,12 @@ body {
                          data-author="advilrio" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="alambre_pua.html">alambre púa</a></h2>
                         <p><strong>Author:</strong> advilrio</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -177,12 +152,12 @@ body {
                          data-author="324b2fun" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="albatross.html">albatross</a></h2>
                         <p><strong>Author:</strong> 324b2fun</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -203,12 +178,12 @@ body {
                          data-author="how_deep_the_grave" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="all_the_things_we_could_do.html">All the Things We Could Do</a></h2>
                         <p><strong>Author:</strong> How_Deep_the_Grave</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -255,12 +230,12 @@ body {
                          data-author="zimeyebright" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="an_unexpected_visitor.html">An Unexpected Visitor</a></h2>
                         <p><strong>Author:</strong> ZimEyebright</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -268,12 +243,12 @@ body {
                          data-author="lilaluna" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="teen and up audiences" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="at_the_still_point_of_the_turning_world.html">At the Still Point of the Turning World</a></h2>
                         <p><strong>Author:</strong> LilaLuna</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Teen And Up Audiences</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -281,12 +256,12 @@ body {
                          data-author="agatharioxoxo" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="general audiences" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="a_drunken_menace.html">A drunken menace</a></h2>
                         <p><strong>Author:</strong> Agatharioxoxo</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> General Audiences</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -294,11 +269,24 @@ body {
                          data-author="visadero" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="a_kingdom_by_the_night.html">A Kingdom By the Night</a></h2>
                         <p><strong>Author:</strong> visadero</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Completed</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="sweetmidnights" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="a_tentative_ellipsis_the_parting_of_your_lips_and_the_ache_in_your_eyes.html">A Tentative Ellipsis (the parting of your lips and the ache in your eyes)</a></h2>
+                        <p><strong>Author:</strong> sweetmidnights</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
                         <p><strong>Status:</strong> Incomplete</p>
                         <p class="summary"></p>
                     </div>
@@ -333,12 +321,12 @@ body {
                          data-author="originofrios" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="ban_all_the_music.html">Ban All the Music</a></h2>
                         <p><strong>Author:</strong> originofrios</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -346,12 +334,12 @@ body {
                          data-author="lunalwitch08" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="beneath_the_scars.html">Beneath the scars</a></h2>
                         <p><strong>Author:</strong> lunalwitch08</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -359,12 +347,12 @@ body {
                          data-author="vwoolf" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="beneath_the_stars.html">beneath the stars</a></h2>
                         <p><strong>Author:</strong> vwoolf</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -372,12 +360,12 @@ body {
                          data-author="sapphicspiral" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="between_the_flames_and_her_eyes.html">Between the Flames and Her Eyes</a></h2>
                         <p><strong>Author:</strong> sapphicspiral</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -463,12 +451,12 @@ body {
                          data-author="callipoicepole" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="teen and up audiences" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="but_i_love_you_just_the_same.html">But I Love You Just the Same</a></h2>
                         <p><strong>Author:</strong> callipoicepole</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Teen And Up Audiences</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -499,6 +487,19 @@ body {
                     </div>
                 
                     <div class="card" 
+                         data-author="rhodiumdark" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="cant_be_a_good_girl_even_if_i_tried.html">Can't Be a Good Girl, Even If I Tried</a></h2>
+                        <p><strong>Author:</strong> RhodiumDark</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
                          data-author="winged_mammal" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
@@ -515,12 +516,12 @@ body {
                          data-author="how_deep_the_grave" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="catch_me_when_i_fall_for_you.html">Catch Me When I Fall for You</a></h2>
                         <p><strong>Author:</strong> How_Deep_the_Grave</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -528,12 +529,12 @@ body {
                          data-author="fqrcefields (sqyyadina)" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="checkmate.html">Checkmate!</a></h2>
                         <p><strong>Author:</strong> fqrcefields (sqyyadina)</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -541,12 +542,12 @@ body {
                          data-author="cthulhus_curse" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="close_enough_for_love.html">Close Enough for Love</a></h2>
                         <p><strong>Author:</strong> Cthulhus_Curse</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -567,12 +568,12 @@ body {
                          data-author="damischmam" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="cool_about_it.html">Cool About it</a></h2>
                         <p><strong>Author:</strong> damischmam</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -593,12 +594,12 @@ body {
                          data-author="magnolie" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="crescendo.html">Crescendo</a></h2>
                         <p><strong>Author:</strong> Magnolie</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -606,12 +607,12 @@ body {
                          data-author="gabisafica" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="not rated" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="dearest_agatha.html">Dearest Agatha</a></h2>
                         <p><strong>Author:</strong> gabisafica</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Not Rated</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -619,12 +620,12 @@ body {
                          data-author="echoesinthemargins" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="teen and up audiences" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="deaths_echo.html">Death's Echo</a></h2>
                         <p><strong>Author:</strong> EchoesInTheMargins</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Teen And Up Audiences</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -645,12 +646,12 @@ body {
                          data-author="hpprofessor1" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="disdainfully_hers.html">Disdainfully Hers</a></h2>
                         <p><strong>Author:</strong> hpprofessor1</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -658,12 +659,12 @@ body {
                          data-author="hpprofessor1" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="dont_be_afraid_of_me_im_what_you_need.html">Don't Be Afraid of Me (I'm What You Need)</a></h2>
                         <p><strong>Author:</strong> hpprofessor1</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -723,12 +724,12 @@ body {
                          data-author="ofendlesswonder" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="figured_you_out.html">Figured You Out</a></h2>
                         <p><strong>Author:</strong> OfEndlessWonder</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -736,12 +737,12 @@ body {
                          data-author="visadero" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="five_seconds.html">Five Seconds</a></h2>
                         <p><strong>Author:</strong> visadero</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -801,12 +802,12 @@ body {
                          data-author="turtlebass" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="glitter_glue_and_signs_of_life.html">Glitter, Glue, and Signs of Life</a></h2>
                         <p><strong>Author:</strong> turtlebass</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -866,12 +867,12 @@ body {
                          data-author="324b2fun" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="happiest_season.html">Happiest Season</a></h2>
                         <p><strong>Author:</strong> 324b2fun</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -879,12 +880,12 @@ body {
                          data-author="agatharioxoxo" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="harkness.html">Harkness</a></h2>
                         <p><strong>Author:</strong> Agatharioxoxo</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -919,7 +920,7 @@ body {
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
                          data-status="incomplete">
-                        <h2><a href="here_with_you_now.html">Here With You Now</a></h2>
+                        <h2><a href="Here_With_You_Now.html">Here With You Now</a></h2>
                         <p><strong>Author:</strong> kayniiine</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
@@ -944,12 +945,12 @@ body {
                          data-author="theshylucifer" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="how_it_started.html">How It Started</a></h2>
                         <p><strong>Author:</strong> theshylucifer</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -957,12 +958,12 @@ body {
                          data-author="empathyhoodie" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="how_many_corners_do_i_have_to_turn_how_many_times_do_i_have_to_learn.html">how many corners do i have to turn? (how many times do i have to learn?)</a></h2>
                         <p><strong>Author:</strong> empathyhoodie</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -970,12 +971,12 @@ body {
                          data-author="agathalovesrio" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="if_this_was_a_movie.html">If This Was a Movie</a></h2>
                         <p><strong>Author:</strong> AgathaLovesRio</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -996,12 +997,12 @@ body {
                          data-author="marniemichaelsapologist" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="ill_be_your_garbage_man.html">I'll Be Your Garbage Man</a></h2>
                         <p><strong>Author:</strong> MarnieMichaelsApologist</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1009,12 +1010,12 @@ body {
                          data-author="agatharioxoxo" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="general audiences" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="ill_hear_you_even_when_you_cant_speak.html">I’ll hear you even when you can’t speak</a></h2>
                         <p><strong>Author:</strong> Agatharioxoxo</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> General Audiences</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1048,12 +1049,12 @@ body {
                          data-author="visadero" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="in_the_deep_end.html">In The Deep End</a></h2>
                         <p><strong>Author:</strong> visadero</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1087,12 +1088,12 @@ body {
                          data-author="riverofsouls" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="itll_all_work_out.html">It'll All Work Out</a></h2>
                         <p><strong>Author:</strong> riverofsouls</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1101,7 +1102,7 @@ body {
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
                          data-status="incomplete">
-                        <h2><a href="its_bloody_and_raw_but_i_swear_it_is_sweet.html">It’s Bloody and Raw (But I Swear it is Sweet)</a></h2>
+                        <h2><a href="its_bloody_and_raw_but_i_swear_its_sweet.html">It’s Bloody and Raw (But I Swear it's Sweet)</a></h2>
                         <p><strong>Author:</strong> Adimnos</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
@@ -1114,7 +1115,7 @@ body {
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
                          data-status="incomplete">
-                        <h2><a href="its_bloody_and_raw_but_i_swear_it_is_sweet_1.html">It's bloody and raw, but I swear it is sweet</a></h2>
+                        <h2><a href="its_bloody_and_raw_but_i_swear_it_is_sweet.html">It's bloody and raw, but I swear it is sweet</a></h2>
                         <p><strong>Author:</strong> YellowFog</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
@@ -1126,12 +1127,12 @@ body {
                          data-author="saturnreturn" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="its_just_in_my_nature.html">It's Just in My Nature</a></h2>
                         <p><strong>Author:</strong> saturnreturn</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1139,9 +1140,22 @@ body {
                          data-author="0hroosje" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="its_never_quite_as_it_seems_hiyouve_got_mail.html">It's Never Quite As It Seems (Hi—You'Ve Got Mail)</a></h2>
                         <p><strong>Author:</strong> 0hroosje</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Completed</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="wefwar" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="mature" 
+                         data-status="incomplete">
+                        <h2><a href="Its_strictly_business.html">It's strictly business</a></h2>
+                        <p><strong>Author:</strong> Wefwar</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
                         <p><strong>Status:</strong> Incomplete</p>
@@ -1204,12 +1218,12 @@ body {
                          data-author="empathyhoodie" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="i_wonder_which_cup_youll_drink_from_i_hope_its_mine.html">i wonder which cup you'll drink from (i hope it's mine)</a></h2>
                         <p><strong>Author:</strong> empathyhoodie</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1217,12 +1231,12 @@ body {
                          data-author="magnolie" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="just_between_us_did_the_love_affair_maim_you_too.html">Just Between Us, Did the Love Affair Maim You Too</a></h2>
                         <p><strong>Author:</strong> Magnolie</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1230,12 +1244,12 @@ body {
                          data-author="bratassly" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="let_go.html">Let Go</a></h2>
                         <p><strong>Author:</strong> bratassly</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1334,12 +1348,12 @@ body {
                          data-author="charmed4lifekaren" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="love_persevering.html">Love Persevering</a></h2>
                         <p><strong>Author:</strong> charmed4lifekaren</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1386,12 +1400,25 @@ body {
                          data-author="coven_crafted" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="teen and up audiences" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="meet_me_at_the_end.html">Meet Me At The End</a></h2>
                         <p><strong>Author:</strong> Coven_crafted</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Teen And Up Audiences</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="forestgreentrees" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="completed">
+                        <h2><a href="mrs_and_amp_mrs_harkness-vidal.html">Mrs &amp; Mrs Harkness-Vidal</a></h2>
+                        <p><strong>Author:</strong> forestgreentrees</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1399,12 +1426,12 @@ body {
                          data-author="1e_r_x1" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="my_boy_builds_coffins.html">my boy builds coffins</a></h2>
                         <p><strong>Author:</strong> 1e_r_x1</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1451,12 +1478,12 @@ body {
                          data-author="324b2fun" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="naughty_and_amp_nice.html">Naughty &Amp; Nice</a></h2>
                         <p><strong>Author:</strong> 324b2fun</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1477,12 +1504,12 @@ body {
                          data-author="hexdealer" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="not_my_type.html">Not My Type</a></h2>
                         <p><strong>Author:</strong> Hexdealer</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1503,12 +1530,12 @@ body {
                          data-author="originofrios" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="number_13.html">Number 13</a></h2>
                         <p><strong>Author:</strong> originofrios</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1521,6 +1548,19 @@ body {
                         <p><strong>Author:</strong> Agatharioxoxo</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="advilrio" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="one_way_or_another.html">one way or another</a></h2>
+                        <p><strong>Author:</strong> advilrio</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
                         <p><strong>Status:</strong> Incomplete</p>
                         <p class="summary"></p>
                     </div>
@@ -1555,12 +1595,12 @@ body {
                          data-author="anonfandombandit, midwestprincess_01, saturnreturn" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="put_it_on_the_line.html">Put It On The Line</a></h2>
                         <p><strong>Author:</strong> AnonFandomBandit, midwestprincess_01, saturnreturn</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1568,12 +1608,12 @@ body {
                          data-author="how_deep_the_grave" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="reaching_out_for_more.html">Reaching Out For More</a></h2>
                         <p><strong>Author:</strong> How_Deep_the_Grave</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1581,12 +1621,12 @@ body {
                          data-author="wariangle" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="red_in_claw_red_in_love.html">Red in Claw, Red in Love</a></h2>
                         <p><strong>Author:</strong> wariangle</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1620,12 +1660,12 @@ body {
                          data-author="agathalovesrio" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="rios_toxic_embrace.html">Rio’S Toxic Embrace</a></h2>
                         <p><strong>Author:</strong> AgathaLovesRio</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1646,12 +1686,12 @@ body {
                          data-author="karmyal" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="roommates_of_destruction.html">Roommates of Destruction</a></h2>
                         <p><strong>Author:</strong> Karmyal</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1659,12 +1699,12 @@ body {
                          data-author="carlotta22" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="teen and up audiences" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="roses_are_red_orchids_arepurple.html">Roses Are Red, Orchids Are...Purple?</a></h2>
                         <p><strong>Author:</strong> carlotta22</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Teen And Up Audiences</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1685,12 +1725,12 @@ body {
                          data-author="paperairplanesopenwindows" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="rules_for_co-parenting_with_your_witch_of_an_ex.html">Rules for Co-Parenting With Your Witch of an Ex</a></h2>
                         <p><strong>Author:</strong> paperairplanesopenwindows</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1698,12 +1738,12 @@ body {
                          data-author="queerenough" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="not rated" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="scherzo.html">Scherzo</a></h2>
                         <p><strong>Author:</strong> Queerenough</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Not Rated</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1711,12 +1751,12 @@ body {
                          data-author="magnolie" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="secrets_and_amp_suspenders.html">Secrets &amp; Suspenders</a></h2>
                         <p><strong>Author:</strong> Magnolie</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1724,12 +1764,12 @@ body {
                          data-author="cozmicblues" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="shatter_your_illusions.html">Shatter Your Illusions</a></h2>
                         <p><strong>Author:</strong> cozmicblues</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1750,12 +1790,12 @@ body {
                          data-author="juliabaccari" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="she_gets_the_job_done.html">She Gets the Job Done</a></h2>
                         <p><strong>Author:</strong> juliabaccari</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1776,9 +1816,22 @@ body {
                          data-author="annadelamico" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="silver_springs.html">Silver Springs</a></h2>
                         <p><strong>Author:</strong> annadelamico</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Completed</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="how_deep_the_grave" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="Somebody_to_Hold.html">Somebody to Hold</a></h2>
+                        <p><strong>Author:</strong> How_Deep_the_Grave</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
                         <p><strong>Status:</strong> Incomplete</p>
@@ -1789,12 +1842,12 @@ body {
                          data-author="kayniiine" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="stuck_in_orbit.html">Stuck in Orbit</a></h2>
                         <p><strong>Author:</strong> kayniiine</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1802,12 +1855,12 @@ body {
                          data-author="visadero" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="sugar_and_honey.html">Sugar and Honey</a></h2>
                         <p><strong>Author:</strong> visadero</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1854,12 +1907,12 @@ body {
                          data-author="rockwetman" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="theres_no_one_else_who_could_the_only_one_is_you.html">There's No One Else Who Could, the Only One Is You</a></h2>
                         <p><strong>Author:</strong> rockwetman</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1867,12 +1920,12 @@ body {
                          data-author="firecrackerroot" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="teen and up audiences" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="there_is_no_death_for_witches_only_transformation.html">There Is No Death for Witches (Only Transformation)</a></h2>
                         <p><strong>Author:</strong> firecrackerroot</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Teen And Up Audiences</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1880,12 +1933,12 @@ body {
                          data-author="onzeque" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="the_art_of_keeping_a_secret.html">The Art of Keeping a Secret</a></h2>
                         <p><strong>Author:</strong> onzeque</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1893,12 +1946,12 @@ body {
                          data-author="midwestprincess_01" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="the_bad_thing.html">The Bad Thing</a></h2>
                         <p><strong>Author:</strong> midwestprincess_01</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1906,12 +1959,38 @@ body {
                          data-author="coven_crafted" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="teen and up audiences" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="the_beach_house.html">The Beach House</a></h2>
                         <p><strong>Author:</strong> Coven_crafted</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Teen And Up Audiences</p>
+                        <p><strong>Status:</strong> Completed</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="cassie_bones" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="teen and up audiences" 
+                         data-status="incomplete">
+                        <h2><a href="The_Best_Medicine.html">The Best Medicine</a></h2>
+                        <p><strong>Author:</strong> Cassie_Bones</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Teen And Up Audiences</p>
                         <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="ifanyonehurtyou" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="completed">
+                        <h2><a href="the_case_of_the_robbery_gone_wrong.html">the case of the robbery gone wrong</a></h2>
+                        <p><strong>Author:</strong> ifanyonehurtyou</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -1945,11 +2024,24 @@ body {
                          data-author="sunshinesongbird" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="the_ethics_of_attraction.html">The Ethics of Attraction</a></h2>
                         <p><strong>Author:</strong> Sunshinesongbird</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
+                        <p><strong>Status:</strong> Completed</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="willowphile" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="the_gift.html">The Gift</a></h2>
+                        <p><strong>Author:</strong> willowphile</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
                         <p><strong>Status:</strong> Incomplete</p>
                         <p class="summary"></p>
                     </div>
@@ -1997,12 +2089,12 @@ body {
                          data-author="gclddrush" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="the_holiday.html">The Holiday</a></h2>
                         <p><strong>Author:</strong> gclddrush</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2010,12 +2102,12 @@ body {
                          data-author="lilfinch" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="the_neutral_ground.html">The Neutral Ground</a></h2>
                         <p><strong>Author:</strong> lilfinch</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2023,12 +2115,12 @@ body {
                          data-author="ricxio" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="the_peculiar_patient.html">the peculiar patient</a></h2>
                         <p><strong>Author:</strong> ricxio</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2036,12 +2128,12 @@ body {
                          data-author="captainvoyager" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="teen and up audiences" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="the_road_twists_and_turns.html">The Road Twists and Turns</a></h2>
                         <p><strong>Author:</strong> CaptainVoyager</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Teen And Up Audiences</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2075,12 +2167,12 @@ body {
                          data-author="deathwhisper" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="the_tales_of_new_salem.html">The Tales of New Salem</a></h2>
                         <p><strong>Author:</strong> DeathWhisper</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2101,12 +2193,25 @@ body {
                          data-author="seabiscuit" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="the_way_i_feel_about_you_baby_cant_explain_it.html">The Way I Feel About You Baby Can’t Explain It</a></h2>
                         <p><strong>Author:</strong> seabiscuit</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="coven_crafted" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="completed">
+                        <h2><a href="The_Witch_and_The_Wolf.html">The Witch and The Wolf</a></h2>
+                        <p><strong>Author:</strong> Coven_crafted</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2114,12 +2219,12 @@ body {
                          data-author="lyrcse" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="the_world_reversed.html">The World Reversed</a></h2>
                         <p><strong>Author:</strong> lyrcse</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2127,12 +2232,12 @@ body {
                          data-author="pinkpillow19" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="thirst_trap.html">Thirst (Trap)</a></h2>
                         <p><strong>Author:</strong> pinkpillow19</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2153,12 +2258,12 @@ body {
                          data-author="324b2fun" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="teen and up audiences" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="time_warp.html">Time Warp</a></h2>
                         <p><strong>Author:</strong> 324b2fun</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Teen And Up Audiences</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2166,12 +2271,12 @@ body {
                          data-author="cthulhus_curse" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="underneath_the_tree.html">Underneath the Tree</a></h2>
                         <p><strong>Author:</strong> Cthulhus_Curse</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2179,12 +2284,12 @@ body {
                          data-author="witchheartsrunfree" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="unlock_thy_hidden_gate.html">Unlock Thy Hidden Gate</a></h2>
                         <p><strong>Author:</strong> WitchHeartsRunFree</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2205,12 +2310,12 @@ body {
                          data-author="echoesinthemargins" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="unraveled.html">Unraveled</a></h2>
                         <p><strong>Author:</strong> EchoesInTheMargins</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2218,12 +2323,12 @@ body {
                          data-author="rockwetman" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="unsatisfied_i_skip_my_pride.html">Unsatisfied, I Skip My Pride</a></h2>
                         <p><strong>Author:</strong> rockwetman</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2231,12 +2336,12 @@ body {
                          data-author="daniandjamie" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="velvet_ring.html">Velvet Ring</a></h2>
                         <p><strong>Author:</strong> daniandjamie</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2244,12 +2349,12 @@ body {
                          data-author="midwestprincess_01" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="well_i_wonder.html">Well I Wonder</a></h2>
                         <p><strong>Author:</strong> midwestprincess_01</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2257,12 +2362,12 @@ body {
                          data-author="forestgreentrees" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="were_never_done.html">We're Never Done</a></h2>
                         <p><strong>Author:</strong> forestgreentrees</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2296,12 +2401,12 @@ body {
                          data-author="saturnreturn" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="what_a_terrifying_work_of_art.html">what a terrifying work of art</a></h2>
                         <p><strong>Author:</strong> saturnreturn</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2309,12 +2414,12 @@ body {
                          data-author="seasalttears" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="what_if_its_not_meant_for_me.html">What If It's Not Meant for Me?</a></h2>
                         <p><strong>Author:</strong> seasalttears</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2322,12 +2427,12 @@ body {
                          data-author="deathwives" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="when_heartbreak_meets_jealousy.html">When Heartbreak Meets Jealousy</a></h2>
                         <p><strong>Author:</strong> deathwives</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2348,12 +2453,12 @@ body {
                          data-author="agatharioxoxo" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="general audiences" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="where_we_belong.html">Where we belong</a></h2>
                         <p><strong>Author:</strong> Agatharioxoxo</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> General Audiences</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2374,12 +2479,12 @@ body {
                          data-author="creativelyblind" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="mature" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="wicked_witchcraft.html">Wicked Witchcraft</a></h2>
                         <p><strong>Author:</strong> creativelyblind</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Mature</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2387,12 +2492,12 @@ body {
                          data-author="wariangle" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="witchcraft_filling_your_void.html">Witchcraft Filling Your Void</a></h2>
                         <p><strong>Author:</strong> wariangle</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2426,12 +2531,12 @@ body {
                          data-author="echolux" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="youd_have_to_stop_the_world.html">You'd have to stop the world</a></h2>
                         <p><strong>Author:</strong> Echolux</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2452,12 +2557,12 @@ body {
                          data-author="lovelovelies, plazadehahn2" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="you_arent_mine_for_the_taking.html">you aren’t mine for the taking</a></h2>
                         <p><strong>Author:</strong> lovelovelies, plazadehahn2</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2465,12 +2570,12 @@ body {
                          data-author="rhaenicent21" 
                          data-ship="agatha harkness/rio vidal" 
                          data-rating="explicit" 
-                         data-status="incomplete">
+                         data-status="completed">
                         <h2><a href="you_got_me_looking_so_crazy_right_now.html">you got me looking so crazy right now</a></h2>
                         <p><strong>Author:</strong> rhaenicent21</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
-                        <p><strong>Status:</strong> Incomplete</p>
+                        <p><strong>Status:</strong> Completed</p>
                         <p class="summary"></p>
                     </div>
                 
@@ -2481,6 +2586,19 @@ body {
                          data-status="incomplete">
                         <h2><a href="you_make_loving_fun.html">You Make Loving Fun</a></h2>
                         <p><strong>Author:</strong> YellowFog</p>
+                        <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
+                        <p><strong>Rating:</strong> Explicit</p>
+                        <p><strong>Status:</strong> Incomplete</p>
+                        <p class="summary"></p>
+                    </div>
+                
+                    <div class="card" 
+                         data-author="spicymargz" 
+                         data-ship="agatha harkness/rio vidal" 
+                         data-rating="explicit" 
+                         data-status="incomplete">
+                        <h2><a href="you_may_not_be_mine_but_i_could_be_yours.html">you may not be mine (but i could be yours)</a></h2>
+                        <p><strong>Author:</strong> SpicyMargz</p>
                         <p><strong>Ship:</strong> Agatha Harkness/Rio Vidal</p>
                         <p><strong>Rating:</strong> Explicit</p>
                         <p><strong>Status:</strong> Incomplete</p>

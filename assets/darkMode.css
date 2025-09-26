@@ -13,11 +13,11 @@
    2) Tokens
    ========================= */
 :root {
-    --bg: #121212;
+    --bg: #333;
     --text: #e0e0e0;
     --muted: #c7c7c7;
     --accent: #bb86fc;
-    --card: #1a1a1a;
+    --card: #404040;
 
     --space-1: 0.25rem;
     --space-2: 0.5rem;
@@ -35,7 +35,7 @@
    ========================= */
 html {
     box-sizing: border-box;
-    font-size: 0.875rem; /* ~14px like reading mode */
+    font-size: 0.85rem; /* ~14px like reading mode */
 }
 
 *, *::before, *::after {

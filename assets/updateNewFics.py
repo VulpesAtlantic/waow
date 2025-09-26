@@ -3,14 +3,22 @@ import re
 import unicodedata
 import logging
 from bs4 import BeautifulSoup
+from pathlib import Path
+import hashlib
+from datetime import date
 
 # =========================
 # Logging setup
 # =========================
+
+log_path = Path("logs/renamer.log")
+log_path.parent.mkdir(parents=True, exist_ok=True)  # ensure folder exists
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[logging.StreamHandler()]
+    handlers=[logging.FileHandler(log_path, mode="a", encoding="utf-8")],
+    force=True,  # reconfigure if logging was already set up earlier
 )
 
 # =========================
@@ -21,10 +29,30 @@ OUTPUT_FILE = "index.html"
 
 # Windows reserved base names to avoid
 _RESERVED = {
-    "con","prn","aux","nul",
-    "com1","com2","com3","com4","com5","com6","com7","com8","com9",
-    "lpt1","lpt2","lpt3","lpt4","lpt5","lpt6","lpt7","lpt8","lpt9"
+    "con",
+    "prn",
+    "aux",
+    "nul",
+    "com1",
+    "com2",
+    "com3",
+    "com4",
+    "com5",
+    "com6",
+    "com7",
+    "com8",
+    "com9",
+    "lpt1",
+    "lpt2",
+    "lpt3",
+    "lpt4",
+    "lpt5",
+    "lpt6",
+    "lpt7",
+    "lpt8",
+    "lpt9",
 }
+
 
 # =========================
 # Filename helpers
@@ -45,15 +73,16 @@ def slugify_underscores(s: str) -> str:
 
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode("ascii")
     s = s.lower().replace("&", " and ")
-    s = re.sub(r"[^\w\s\-]", "", s)         # keep word chars, whitespace, hyphen
-    s = re.sub(r"\s+", "_", s)              # spaces -> underscore
-    s = re.sub(r"_+", "_", s)               # collapse ___ -> _
+    s = re.sub(r"[^\w\s\-]", "", s)  # keep word chars, whitespace, hyphen
+    s = re.sub(r"\s+", "_", s)  # spaces -> underscore
+    s = re.sub(r"_+", "_", s)  # collapse ___ -> _
     s = s.strip("_-")
     if not s:
         s = "untitled"
     if s in _RESERVED:
         s = f"file_{s}"
     return s
+
 
 def ensure_unique_path(directory: str, base_slug: str, ext: str = ".html") -> str:
     """Return a unique path by appending _2, _3, ... if needed."""
@@ -66,6 +95,7 @@ def ensure_unique_path(directory: str, base_slug: str, ext: str = ".html") -> st
         if not os.path.exists(candidate):
             return candidate
         i += 1
+
 
 # =========================
 # HTML processing
@@ -85,7 +115,9 @@ def update_html_metadata(file_path: str):
 
     head = soup.head
     if not head:
-        logging.warning(f"{os.path.basename(file_path)}: no <head>; skipping meta update")
+        logging.warning(
+            f"{os.path.basename(file_path)}: no <head>; skipping meta update"
+        )
         return None
 
     # ---- Title & (optional) author/universe extraction
@@ -108,16 +140,25 @@ def update_html_metadata(file_path: str):
             if author_meta:
                 author_meta["content"] = author
             else:
-                head.append(soup.new_tag("meta", attrs={"name": "author", "content": author}))
+                head.append(
+                    soup.new_tag("meta", attrs={"name": "author", "content": author})
+                )
 
         # Meta: ship (static, as in your script)
         ship_meta = head.find("meta", attrs={"name": "ship"})
         if ship_meta:
             ship_meta["content"] = "Agatha Harkness/Rio Vidal"
         else:
-            head.append(soup.new_tag("meta", attrs={"name": "ship", "content": "Agatha Harkness/Rio Vidal"}))
+            head.append(
+                soup.new_tag(
+                    "meta",
+                    attrs={"name": "ship", "content": "Agatha Harkness/Rio Vidal"},
+                )
+            )
     else:
-        logging.warning(f"{os.path.basename(file_path)}: no <title>; will fall back to filename for rename")
+        logging.warning(
+            f"{os.path.basename(file_path)}: no <title>; will fall back to filename for rename"
+        )
 
     # ---- Styles: remove inline <style>, ensure darkMode.css link
     for style_tag in head.find_all("style"):
@@ -125,6 +166,14 @@ def update_html_metadata(file_path: str):
     if not head.find("link", href="assets/darkMode.css"):
         head.append(soup.new_tag("link", rel="stylesheet", href="assets/darkMode.css"))
 
+    # ---- lastUpdated meta (YYYYMMDD; today's date)
+        last_updated = date.today().strftime("%Y%m%d")
+        lu_meta = head.find("meta", attrs={"name": "lastUpdated"})
+        if lu_meta:
+            lu_meta["content"] = last_updated
+        else:
+            head.append(soup.new_tag("meta", attrs={"name": "lastUpdated", "content": last_updated}))
+            
     # ---- Rating extraction
     rating_dt = soup.find("dt", string="Rating:")
     if rating_dt:
@@ -137,15 +186,21 @@ def update_html_metadata(file_path: str):
                 if rating_meta:
                     rating_meta["content"] = rating_text
                 else:
-                    head.append(soup.new_tag("meta", attrs={"name": "rating", "content": rating_text}))
+                    head.append(
+                        soup.new_tag(
+                            "meta", attrs={"name": "rating", "content": rating_text}
+                        )
+                    )
 
     # ---- Status extraction (your heuristic)
-    status_text = "Completed" if "Complete: 20" in soup.get_text() else "Incomplete"
+    status_text = "Completed" if "Completed: 20" in soup.get_text() else "Incomplete"
     status_meta = head.find("meta", attrs={"name": "status"})
     if status_meta:
         status_meta["content"] = status_text
     else:
-        head.append(soup.new_tag("meta", attrs={"name": "status", "content": status_text}))
+        head.append(
+            soup.new_tag("meta", attrs={"name": "status", "content": status_text})
+        )
 
     # Save file
     try:
@@ -153,30 +208,112 @@ def update_html_metadata(file_path: str):
             f.write(str(soup))
         logging.info(f"Updated metadata: {os.path.basename(file_path)}")
     except Exception as e:
-        logging.error(f"{os.path.basename(file_path)}: failed to write updated HTML: {e}")
+        logging.error(
+            f"{os.path.basename(file_path)}: failed to write updated HTML: {e}"
+        )
 
     return story_title
 
-def rename_file_using_title(file_path: str, story_title: str):
+
+def _file_sha256(path: str, chunk_size: int = 1024 * 1024) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(chunk_size), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def rename_file_using_title(
+    file_path: str, story_title: str, *, overwrite=True, keep_backup=False
+):
     """
-    Rename file based on story_title (underscores).
-    If story_title is None, use the current base filename (minus extension).
+    Rename/move file to a deterministic '{slug}.html' name derived from story_title.
+    If a file with that name already exists:
+      - If identical content: delete the source (dedupe) and keep the existing target.
+      - If different content:
+          * overwrite=True   -> replace the existing target (atomic via os.replace)
+          * overwrite=False  -> fall back to suffixing (_2, _3, ...)
+    Optional: keep a timestamped backup of the target before overwriting.
     """
     directory, old_name = os.path.split(file_path)
     base_title = story_title if story_title else os.path.splitext(old_name)[0]
-    slug = slugify_underscores(base_title)
-    new_path = ensure_unique_path(directory, slug, ext=".html")
+    slug = slugify_underscores(base_title)  # your existing helper
+    target = os.path.join(directory, f"{slug}.html")
 
-    if file_path == new_path:
-        return file_path  # nothing to do
+    # Normalize for Windows case-insensitive paths
+    src_abs = os.path.normcase(os.path.abspath(file_path))
+    tgt_abs = os.path.normcase(os.path.abspath(target))
 
+    # 1) Nothing to do if already the canonical name
+    if src_abs == tgt_abs:
+        return file_path
+
+    # 2) If the target doesn't exist, do a straight rename
+    if not os.path.exists(target):
+        os.rename(file_path, target)
+        logging.info(f"Renamed {old_name} -> {os.path.basename(target)}")
+        return target
+
+    # 3) Target exists: compare contents
     try:
-        os.rename(file_path, new_path)
-        logging.info(f"Renamed {old_name} -> {os.path.basename(new_path)}")
-        return new_path
+        src_hash = _file_sha256(file_path)
+        tgt_hash = _file_sha256(target)
     except Exception as e:
-        logging.error(f"{old_name}: failed to rename: {e}")
-        return file_path  # keep original path on failure
+        logging.warning(
+            f"Hash compare failed ({old_name} vs {os.path.basename(target)}): {e}"
+        )
+        src_hash = tgt_hash = None
+
+    if src_hash and tgt_hash and src_hash == tgt_hash:
+        # Identical: remove the duplicate source and keep canonical target
+        try:
+            os.remove(file_path)
+            logging.info(
+                f"Duplicate detected. Removed {old_name}; kept {os.path.basename(target)}"
+            )
+        except Exception as e:
+            logging.error(f"Failed to remove duplicate {old_name}: {e}")
+            return file_path
+        return target
+
+    # 4) Different content but same slug: either overwrite or suffix
+    if overwrite:
+        # Optional backup
+        if keep_backup:
+            import time
+
+            name, ext = os.path.splitext(target)
+            backup = f"{name}.backup_{time.strftime('%Y%m%d-%H%M%S')}{ext}"
+            try:
+                os.replace(target, backup)
+                logging.info(f"Backed up existing to {os.path.basename(backup)}")
+            except Exception as e:
+                logging.error(f"Backup failed for {os.path.basename(target)}: {e}")
+                # If backup fails, proceed with overwrite anyway (or bail out if you prefer)
+
+        # Atomic overwrite on same filesystem
+        try:
+            os.replace(file_path, target)
+            logging.info(
+                f"Overwrote {os.path.basename(target)} with updated {old_name}"
+            )
+            return target
+        except Exception as e:
+            logging.error(f"Failed to overwrite {os.path.basename(target)}: {e}")
+            return file_path
+    else:
+        # Fall back to suffixing behavior
+        new_path = ensure_unique_path(directory, slug, ext=".html")
+        try:
+            os.rename(file_path, new_path)
+            logging.info(
+                f"Collision kept both: {old_name} -> {os.path.basename(new_path)}"
+            )
+            return new_path
+        except Exception as e:
+            logging.error(f"{old_name}: failed to rename on collision: {e}")
+            return file_path
+
 
 # =========================
 # Index build
@@ -191,20 +328,47 @@ def build_index(directory: str, output_file: str):
                 with open(full_path, "r", encoding="utf-8") as f:
                     soup = BeautifulSoup(f, "html.parser")
 
-                title = soup.title.string.strip() if soup.title and soup.title.string else filename
+                title = (
+                    soup.title.string.strip()
+                    if soup.title and soup.title.string
+                    else filename
+                )
                 author_tag = soup.find("meta", attrs={"name": "author"})
                 ship_tag = soup.find("meta", attrs={"name": "ship"})
                 rating_tag = soup.find("meta", attrs={"name": "rating"})
                 status_tag = soup.find("meta", attrs={"name": "status"})
-                summary_tag = soup.find("meta", attrs={"name": "summary"}) or soup.find("meta", attrs={"name": "description"})
+                summary_tag = soup.find("meta", attrs={"name": "summary"}) or soup.find(
+                    "meta", attrs={"name": "description"}
+                )
 
-                author = author_tag["content"].strip() if author_tag and "content" in author_tag.attrs else "Unknown"
-                ship = ship_tag["content"].strip() if ship_tag and "content" in ship_tag.attrs else "Unknown"
-                rating = rating_tag["content"].strip() if rating_tag and "content" in rating_tag.attrs else "Unknown"
-                status = status_tag["content"].strip() if status_tag and "content" in status_tag.attrs else "Unknown"
-                summary = summary_tag["content"].strip() if summary_tag and "content" in summary_tag.attrs else ""
+                author = (
+                    author_tag["content"].strip()
+                    if author_tag and "content" in author_tag.attrs
+                    else "Unknown"
+                )
+                ship = (
+                    ship_tag["content"].strip()
+                    if ship_tag and "content" in ship_tag.attrs
+                    else "Unknown"
+                )
+                rating = (
+                    rating_tag["content"].strip()
+                    if rating_tag and "content" in rating_tag.attrs
+                    else "Unknown"
+                )
+                status = (
+                    status_tag["content"].strip()
+                    if status_tag and "content" in status_tag.attrs
+                    else "Unknown"
+                )
+                summary = (
+                    summary_tag["content"].strip()
+                    if summary_tag and "content" in summary_tag.attrs
+                    else ""
+                )
 
-                cards.append(f"""
+                cards.append(
+                    f"""
                     <div class="card" 
                          data-author="{author.lower()}" 
                          data-ship="{ship.lower()}" 
@@ -217,13 +381,13 @@ def build_index(directory: str, output_file: str):
                         <p><strong>Status:</strong> {status}</p>
                         <p class="summary">{summary}</p>
                     </div>
-                """)
+                """
+                )
 
             except Exception as e:
                 logging.error(f"Failed to add {filename} to index: {e}")
 
     # (index_content creation and writing stays the same as in the last script)
-
 
     index_content = f"""
 <!DOCTYPE html>
@@ -251,19 +415,20 @@ def build_index(directory: str, output_file: str):
         }}
         .card-container {{
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr); 
             gap: 1rem;
         }}
-        @media (max-width: 600px) {{
+        @media (max-width: 1090px) {{
             .card-container {{ grid-template-columns: 1fr; }}
         }}
         .card {{
-            background-color: #1e1e1e;
+            background-color: #222;
             border: 1px solid #444;
             border-radius: 10px;
             padding: 1rem;
             box-shadow: 0 2px 5px rgba(0,0,0,0.5);
             transition: transform 0.2s;
+            line-height: 0.75;
         }}
         .card:hover {{ transform: scale(1.02); }}
         .card h2 {{
@@ -362,6 +527,7 @@ def build_index(directory: str, output_file: str):
         f.write(index_content)
     logging.info(f"Index created: {out_path}")
 
+
 # =========================
 # Master runner
 # =========================
@@ -376,6 +542,7 @@ def process_fics(folder_path: str, output_file: str = "index.html"):
 
     # Pass 2: build index
     build_index(folder_path, output_file)
+
 
 if __name__ == "__main__":
     process_fics(FOLDER_PATH, OUTPUT_FILE)
