@@ -2,8 +2,8 @@ import markdown
 import os
 
 # Input and output file paths
-input_file = "./theGift.md"
-output_file = "./theGift.html"
+input_file = "UntitledDSSFic.md"
+output_file = "UntitledDSSFic.html"
 
 # Read Markdown content
 with open(input_file, "r", encoding="utf-8") as f:
