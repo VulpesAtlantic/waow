@@ -87,7 +87,6 @@ p, ul, ol, blockquote, pre, table {
 
 p, li {
     overflow-wrap: break-word;
-    hyphens: auto;
 }
 
 /* =========================
