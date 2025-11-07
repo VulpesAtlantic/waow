@@ -369,158 +369,277 @@ def build_index(directory: str, output_file: str):
 
                 cards.append(
                     f"""
-                    <div class="card" 
-                         data-author="{author.lower()}" 
-                         data-ship="{ship.lower()}" 
-                         data-rating="{rating.lower()}" 
-                         data-status="{status.lower()}">
-                        <h2><a href="{filename}">{title}</a></h2>
-                        <p><strong>Author:</strong> {author}</p>
-                        <p><strong>Ship:</strong> {ship}</p>
-                        <p><strong>Rating:</strong> {rating}</p>
-                        <p><strong>Status:</strong> {status}</p>
-                        <p class="summary">{summary}</p>
-                    </div>
-                """
+        <div class="card"
+             data-author="{author.lower()}"
+             data-ship="{ship.lower()}"
+             data-rating="{rating.lower()}"
+             data-status="{status.lower()}">
+            <h2><a href="{filename}">{title}</a></h2>
+            <div class="meta">
+                <span class="pill label-pill">Author: {author}</span>
+                <span class="pill">{ship}</span>
+                <span class="pill">{rating}</span>
+                <span class="pill">{status}</span>
+            </div>
+            <p class="summary">{summary}</p>
+        </div>
+                    """
                 )
 
             except Exception as e:
                 logging.error(f"Failed to add {filename} to index: {e}")
 
-    # (index_content creation and writing stays the same as in the last script)
-
-    index_content = f"""
-<!DOCTYPE html>
+    index_content = f"""<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <title>Fanfic Archive Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/darkMode.css">
     <style>
-        body {{
-            font-family: sans-serif;
-            padding: 1rem;
-            max-width: 1200px;
-            margin: auto;
+        :root {{
+            --bg: #020308;
+            --bg-soft: #0b0f19;
+            --bg-card: #111827;
+            --border-subtle: #1f2937;
+            --accent: #bb86fc;
+            --accent-soft: rgba(187,134,252,0.1);
+            --text-main: #f9fafb;
+            --text-soft: #9ca3af;
+            --radius-xl: 18px;
+            --radius-pill: 999px;
+            --shadow-soft: 0 8px 20px rgba(0,0,0,0.6);
+            --transition-fast: 0.18s ease-out;
+            --font-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         }}
+
+        * {{
+            box-sizing: border-box;
+        }}
+
+        body {{
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-base);
+            background-color: var(--bg);
+            color: var(--text-main);
+        }}
+
+        .page-wrap {{
+            padding: 0.75rem 0.75rem 1.25rem;
+        }}
+
+        h1 {{
+            font-size: 1.4rem;
+            margin: 0 0 0.15rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }}
+
+        .subtitle {{
+            margin: 0 0 0.75rem;
+            font-size: 0.75rem;
+            color: var(--text-soft);
+        }}
+
+        .filters-wrap {{
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            padding-bottom: 0.5rem;
+            margin: 0 -0.75rem 0.5rem;
+            background: linear-gradient(to bottom,
+                        rgba(2,3,8,0.98),
+                        rgba(2,3,8,0.96),
+                        rgba(2,3,8,0.9));
+            backdrop-filter: blur(12px);
+        }}
+
         .filters {{
             display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-bottom: 1rem;
+            flex-direction: column;
+            gap: 0.35rem;
+            padding: 0.5rem 0.75rem 0.25rem;
         }}
-        .filters input, .filters select {{
-            padding: 0.5rem;
-            font-size: 1rem;
+
+        .filters input,
+        .filters select {{
+            width: 100%;
+            padding: 0.6rem 0.9rem;
+            font-size: 0.82rem;
+            border-radius: var(--radius-pill);
+            border: 1px solid var(--border-subtle);
+            background-color: var(--bg-soft);
+            color: var(--text-main);
+            outline: none;
+            -webkit-appearance: none;
+            appearance: none;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.35);
         }}
+
+        .filters input::placeholder {{
+            color: var(--text-soft);
+        }}
+
+        .filters-row-label {{
+            font-size: 0.7rem;
+            color: var(--text-soft);
+            margin-top: 0.15rem;
+        }}
+
         .card-container {{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); 
-            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            margin-top: 0.35rem;
         }}
-        @media (max-width: 1090px) {{
-            .card-container {{ grid-template-columns: 1fr; }}
-        }}
+
         .card {{
-            background-color: #222;
-            border: 1px solid #444;
-            border-radius: 10px;
-            padding: 1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-            transition: transform 0.2s;
-            line-height: 0.75;
+            background-color: var(--bg-card);
+            border-radius: var(--radius-xl);
+            padding: 0.7rem 0.8rem 0.65rem;
+            border: 1px solid var(--border-subtle);
+            box-shadow: var(--shadow-soft);
+            transition:
+                transform var(--transition-fast),
+                box-shadow var(--transition-fast),
+                border-color var(--transition-fast),
+                background-color var(--transition-fast);
         }}
-        .card:hover {{ transform: scale(1.02); }}
+
+        .card:active {{
+            transform: scale(0.98);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+            border-color: var(--accent);
+            background-color: #0f172a;
+        }}
+
         .card h2 {{
-            margin-top: 0;
-            font-size: 1.2rem;
+            margin: 0 0 0.15rem;
+            font-size: 0.98rem;
+            font-weight: 500;
+            line-height: 1.2;
         }}
+
         .card a {{
-            color: #bb86fc;
+            color: var(--accent);
             text-decoration: none;
         }}
-        .card a:hover {{ text-decoration: underline; }}
+
+        .card a:hover {{
+            text-decoration: underline;
+        }}
+
+        .meta {{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+            margin: 0 0 0.25rem;
+            font-size: 0.64rem;
+        }}
+
+        .pill {{
+            padding: 0.18rem 0.5rem;
+            border-radius: var(--radius-pill);
+            background-color: var(--accent-soft);
+            color: var(--accent);
+            border: 1px solid rgba(187,134,252,0.22);
+            white-space: nowrap;
+        }}
+
+        .label-pill {{
+            background-color: #111827;
+            color: var(--text-soft);
+            border-color: #111827;
+        }}
+
         .summary {{
-            margin-top: 0.5rem;
-            color: #aaa;
-            font-style: italic;
+            margin: 0;
+            margin-top: 0.15rem;
+            font-size: 0.74rem;
+            color: var(--text-soft);
+            line-height: 1.35;
         }}
     </style>
 </head>
 <body>
+<div class="page-wrap">
     <h1>Fanfic Archive</h1>
-    <center><p>These are not my fics. These are just some I don't want to lose.</p></center>
+    <p class="subtitle">Not my fics. Just ones I refuse to lose.</p>
 
-    <div class="filters">
-        <input type="text" id="searchBox" placeholder="Search title or summary...">
-        <select id="authorFilter"><option value="">All Authors</option></select>
-        <select id="shipFilter"><option value="">All Ships</option></select>
-        <select id="ratingFilter"><option value="">All Ratings</option></select>
-        <select id="statusFilter"><option value="">All Statuses</option></select>
+    <div class="filters-wrap">
+        <div class="filters">
+            <input type="text" id="searchBox" placeholder="Search by title or summary...">
+            <div class="filters-row-label">Filter by:</div>
+            <select id="authorFilter"><option value="">All authors</option></select>
+            <select id="shipFilter"><option value="">All ships</option></select>
+            <select id="ratingFilter"><option value="">All ratings</option></select>
+            <select id="statusFilter"><option value="">All statuses</option></select>
+        </div>
     </div>
 
     <div class="card-container">
         {''.join(cards)}
     </div>
+</div>
 
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {{
-        const searchBox = document.getElementById('searchBox');
-        const authorFilter = document.getElementById('authorFilter');
-        const shipFilter = document.getElementById('shipFilter');
-        const ratingFilter = document.getElementById('ratingFilter');
-        const statusFilter = document.getElementById('statusFilter');
-        const cards = document.querySelectorAll('.card');
+<script>
+document.addEventListener('DOMContentLoaded', function () {{
+    const searchBox = document.getElementById('searchBox');
+    const authorFilter = document.getElementById('authorFilter');
+    const shipFilter = document.getElementById('shipFilter');
+    const ratingFilter = document.getElementById('ratingFilter');
+    const statusFilter = document.getElementById('statusFilter');
+    const cards = document.querySelectorAll('.card');
 
-        function populateFilter(filter, attr) {{
-            const values = Array.from(new Set(Array.from(cards).map(card => card.dataset[attr])))
-                .filter(v => v && v !== 'unknown')
-                .sort();
-            values.forEach(v => {{
-                const opt = document.createElement('option');
-                opt.value = v;
-                opt.textContent = v.charAt(0).toUpperCase() + v.slice(1);
-                filter.appendChild(opt);
-            }});
-        }}
+    function populateFilter(filter, attr) {{
+        const values = Array.from(new Set(Array.from(cards).map(card => card.dataset[attr])))
+            .filter(v => v && v !== 'unknown')
+            .sort();
+        values.forEach(v => {{
+            const opt = document.createElement('option');
+            opt.value = v;
+            opt.textContent = v;
+            filter.appendChild(opt);
+        }});
+    }}
 
-        populateFilter(authorFilter, 'author');
-        populateFilter(shipFilter, 'ship');
-        populateFilter(ratingFilter, 'rating');
-        populateFilter(statusFilter, 'status');
+    populateFilter(authorFilter, 'author');
+    populateFilter(shipFilter, 'ship');
+    populateFilter(ratingFilter, 'rating');
+    populateFilter(statusFilter, 'status');
 
-        function filterCards() {{
-            const search = searchBox.value.toLowerCase();
-            const author = authorFilter.value;
-            const ship = shipFilter.value;
-            const rating = ratingFilter.value;
-            const status = statusFilter.value;
+    function filterCards() {{
+        const search = searchBox.value.toLowerCase();
+        const author = authorFilter.value;
+        const ship = shipFilter.value;
+        const rating = ratingFilter.value;
+        const status = statusFilter.value;
 
-            cards.forEach(card => {{
-                const matchesSearch = card.innerText.toLowerCase().includes(search);
-                const matchesAuthor = !author || card.dataset.author === author;
-                const matchesShip = !ship || card.dataset.ship === ship;
-                const matchesRating = !rating || card.dataset.rating === rating;
-                const matchesStatus = !status || card.dataset.status === status;
+        cards.forEach(card => {{
+            const matchesSearch = card.innerText.toLowerCase().includes(search);
+            const matchesAuthor = !author || card.dataset.author === author;
+            const matchesShip = !ship || card.dataset.ship === ship;
+            const matchesRating = !rating || card.dataset.rating === rating;
+            const matchesStatus = !status || card.dataset.status === status;
 
-                if (matchesSearch && matchesAuthor && matchesShip && matchesRating && matchesStatus) {{
-                    card.style.display = '';
-                }} else {{
-                    card.style.display = 'none';
-                }}
-            }});
-        }}
+            if (matchesSearch && matchesAuthor && matchesShip && matchesRating && matchesStatus) {{
+                card.style.display = '';
+            }} else {{
+                card.style.display = 'none';
+            }}
+        }});
+    }}
 
-        searchBox.addEventListener('input', filterCards);
-        authorFilter.addEventListener('change', filterCards);
-        shipFilter.addEventListener('change', filterCards);
-        ratingFilter.addEventListener('change', filterCards);
-        statusFilter.addEventListener('change', filterCards);
-    }});
-    </script>
+    searchBox.addEventListener('input', filterCards);
+    authorFilter.addEventListener('change', filterCards);
+    shipFilter.addEventListener('change', filterCards);
+    ratingFilter.addEventListener('change', filterCards);
+    statusFilter.addEventListener('change', filterCards);
+}});
+</script>
 </body>
-</html>
-"""
+</html>"""
 
     out_path = os.path.join(directory, output_file)
     with open(out_path, "w", encoding="utf-8") as f:
