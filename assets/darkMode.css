@@ -44,9 +44,10 @@
    3) Base
    ========================= */
 html {
-    box-sizing: border-box;
-    font-size: 16px; /* comfortable mobile default */
-    -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  font-size: 18px; /* bump base size for mobile */
+  -webkit-text-size-adjust: 100%; /* prevents Chrome from auto-shrinking */
+  text-size-adjust: 100%;
 }
 
 *, *::before, *::after {
@@ -63,7 +64,8 @@ body {
     font-family: "Lucida", "Lucida Grande", system-ui, -apple-system,
         "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
         "Liberation Sans", sans-serif;
-    line-height: 1.7;
+     line-height: 1.7;
+     font-size: 1rem; /* equals 18px now */
     text-rendering: optimizeLegibility;
 }
 
