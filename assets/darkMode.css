@@ -13,13 +13,13 @@
    2) Tokens (mobile-first, match index)
    ========================= */
 :root {
-    --bg: #020308;
+    --bg: #121212;
     --bg-soft: #0b0f19;
-    --bg-card: #111827;
-    --border-subtle: #1f2937;
-    --accent: #bb86fc;
+    --bg-card: #221f29;
+    --border-subtle: #2f3640;
+    --accent: #bb87fa;
     --accent-soft: rgba(187, 134, 252, 0.1);
-    --text: #f9fafb;
+    --text: #f9fafbd9;
     --muted: #9ca3af;
 
     --radius-sm: 6px;
@@ -45,7 +45,7 @@
    ========================= */
 html {
   box-sizing: border-box;
-  font-size: 18px; /* bump base size for mobile */
+  font-size: 16px; /* bump base size for mobile */
   -webkit-text-size-adjust: 100%; /* prevents Chrome from auto-shrinking */
   text-size-adjust: 100%;
 }
@@ -76,11 +76,12 @@ body {
    4) Headings
    ========================= */
 h1, h2, h3 {
-    color: #ffffff;
+    color: #c8f0c2;
     line-height: 1.3;
     margin-block: var(--space-4) var(--space-2);
     font-weight: 600;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
 h1 {
