@@ -13,11 +13,11 @@
    2) Tokens (mobile-first, match index)
    ========================= */
 :root {
-    --bg: #121212;
+    --bg: rgb(19, 21, 22);
     --bg-soft: #0b0f19;
     --bg-card: #221f29;
     --border-subtle: #2f3640;
-    --accent: #bb87fa;
+    --accent: #bb86fc;
     --accent-soft: rgba(187, 134, 252, 0.1);
     --text: #f9fafbd9;
     --muted: #9ca3af;
