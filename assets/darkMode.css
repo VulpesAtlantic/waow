@@ -13,11 +13,11 @@
    2) Tokens (mobile-first, match index)
    ========================= */
 :root {
-    --bg: rgb(19, 21, 22);
+    --bg: #333;
     --bg-soft: #0b0f19;
-    --bg-card: #221f29;
+    --bg-card: #363842;
     --border-subtle: #2f3640;
-    --accent: #bb86fc;
+    --accent: #b67ff9;
     --accent-soft: rgba(187, 134, 252, 0.1);
     --text: #f9fafbd9;
     --muted: #9ca3af;
@@ -45,7 +45,7 @@
    ========================= */
 html {
   box-sizing: border-box;
-  font-size: 16px; /* bump base size for mobile */
+  font-size: 14px; /* bump base size for mobile */
   -webkit-text-size-adjust: 100%; /* prevents Chrome from auto-shrinking */
   text-size-adjust: 100%;
 }
