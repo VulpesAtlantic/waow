@@ -425,6 +425,7 @@ def build_index(directory: str, output_file: str):
 <head>
     <meta charset="utf-8">
     <title>Fanfic Archive Index</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/darkMode.css">
     <style>
