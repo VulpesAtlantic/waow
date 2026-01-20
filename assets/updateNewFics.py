@@ -1,3 +1,34 @@
+"""
+Fanfic Archive Processor & Index Builder
+
+This script normalizes, deduplicates, and indexes a local HTML fanfic archive.
+
+What it does, end to end:
+- Iterates over all HTML files in the target folder (excluding index.html).
+- Parses each file with BeautifulSoup to clean up and standardize metadata:
+    * Trims <title> to just the story title (everything before the first " - ").
+    * Extracts author (when present), rating, and completion status.
+    * Injects or updates meta tags for: author, ship, rating, status, lastUpdated.
+    * Removes inline <style> tags and enforces a shared darkMode.css stylesheet.
+- Renames each HTML file to a deterministic, filesystem-safe filename derived
+  from the story title (slugified with underscores).
+    * Avoids Windows-reserved filenames.
+    * Detects true duplicates via SHA-256 hashing and removes redundant copies.
+    * Handles filename collisions by overwriting or suffixing as needed.
+- Logs all actions (renames, updates, dedupes, errors) to logs/renamer.log.
+- Builds a responsive, filterable index.html:
+    * One “card” per fic with title, author, ship, rating, status, and summary.
+    * Client-side filtering by author, ship, rating, status, and text search.
+    * Uses a dark-mode-first UI optimized for long-term local browsing.
+
+Intended use:
+- Run whenever new AO3 downloads are added or metadata conventions change.
+- Keeps the archive tidy, consistently named, deduplicated, and browseable
+  without relying on external tools or AO3 itself.
+
+In short: this script is the librarian, archivist, and interior designer
+for your fanfic hoard.
+"""
 import os
 import re
 import unicodedata
