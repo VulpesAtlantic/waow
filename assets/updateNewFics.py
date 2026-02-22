@@ -29,6 +29,7 @@ Intended use:
 In short: this script is the librarian, archivist, and interior designer
 for your fanfic hoard.
 """
+
 import os
 import re
 import unicodedata
@@ -36,21 +37,51 @@ import logging
 from bs4 import BeautifulSoup
 from pathlib import Path
 import hashlib
-from datetime import date
+from datetime import date, datetime
+import time
 
 # =========================
 # Logging setup
 # =========================
+def setup_logging(log_dir: str = "logs") -> Path:
+    """
+    Creates a timestamped log file per run and configures:
+      - File handler: INFO+ (full detail)
+      - Console handler: INFO+ (or WARNING+ if you prefer)
+    Returns the log file path for reference.
+    """
+    log_dir = Path(log_dir)
+    log_dir.mkdir(parents=True, exist_ok=True)
 
-log_path = Path("logs/renamer.log")
-log_path.parent.mkdir(parents=True, exist_ok=True)  # ensure folder exists
+    run_id = datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_path = log_dir / f"renamer_{run_id}.log"
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[logging.FileHandler(log_path, mode="a", encoding="utf-8")],
-    force=True,  # reconfigure if logging was already set up earlier
-)
+    logger = logging.getLogger()
+    logger.setLevel(logging.INFO)
+
+    # Clear existing handlers if re-running in same interpreter (e.g., notebook)
+    logger.handlers.clear()
+
+    fmt = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
+
+    # File: keep everything
+    file_handler = logging.FileHandler(log_path, mode="w", encoding="utf-8")
+    file_handler.setLevel(logging.INFO)
+    file_handler.setFormatter(fmt)
+
+    # Console: show progress + important stuff
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO)   # change to logging.WARNING if you only want warnings/errors
+    console_handler.setFormatter(fmt)
+
+    logger.addHandler(file_handler)
+    logger.addHandler(console_handler)
+
+    logging.info(f"Logging to: {log_path}")
+    return log_path
+
+
+LOG_FILE = setup_logging()
 
 # =========================
 # Config
@@ -153,6 +184,7 @@ def update_html_metadata(file_path: str):
 
     # ---- Title & (optional) author/universe extraction
     story_title = None
+    author = None
     if soup.title and soup.title.string:
         full_title = soup.title.string.strip()
         # Everything before the first " - " is the story title for both display and filename
@@ -197,14 +229,18 @@ def update_html_metadata(file_path: str):
     if not head.find("link", href="assets/darkMode.css"):
         head.append(soup.new_tag("link", rel="stylesheet", href="assets/darkMode.css"))
 
-    # ---- lastUpdated meta (YYYYMMDD; today's date)
+        # ---- lastUpdated meta (YYYYMMDD; today's date)
         last_updated = date.today().strftime("%Y%m%d")
         lu_meta = head.find("meta", attrs={"name": "lastUpdated"})
         if lu_meta:
             lu_meta["content"] = last_updated
         else:
-            head.append(soup.new_tag("meta", attrs={"name": "lastUpdated", "content": last_updated}))
-            
+            head.append(
+                soup.new_tag(
+                    "meta", attrs={"name": "lastUpdated", "content": last_updated}
+                )
+            )
+
     # ---- Rating extraction
     rating_dt = soup.find("dt", string="Rating:")
     if rating_dt:
@@ -223,7 +259,24 @@ def update_html_metadata(file_path: str):
                         )
                     )
 
-    # ---- Status extraction (your heuristic)
+    # ---- Words extraction from Stats block
+    stats_dt = soup.find("dt", string=lambda s: s and s.strip() == "Stats:")
+    if stats_dt:
+        stats_dd = stats_dt.find_next_sibling("dd")
+        if stats_dd:
+            stats_text = stats_dd.get_text(" ", strip=True)
+            m = re.search(r"\bWords:\s*([\d,]+)\b", stats_text)
+            if m:
+                words = m.group(1).replace(",", "")
+                words_meta = head.find("meta", attrs={"name": "words"})
+                if words_meta:
+                    words_meta["content"] = words
+                else:
+                    head.append(
+                        soup.new_tag("meta", attrs={"name": "words", "content": words})
+                    )
+
+    # ---- Status extraction
     status_text = "Completed" if "Completed: 20" in soup.get_text() else "Incomplete"
     status_meta = head.find("meta", attrs={"name": "status"})
     if status_meta:
@@ -243,7 +296,7 @@ def update_html_metadata(file_path: str):
             f"{os.path.basename(file_path)}: failed to write updated HTML: {e}"
         )
 
-    return story_title
+    return story_title, author
 
 
 def _file_sha256(path: str, chunk_size: int = 1024 * 1024) -> str:
@@ -255,7 +308,12 @@ def _file_sha256(path: str, chunk_size: int = 1024 * 1024) -> str:
 
 
 def rename_file_using_title(
-    file_path: str, story_title: str, *, overwrite=True, keep_backup=False
+    file_path: str,
+    story_title: str,
+    author: str = None,
+    *,
+    overwrite=True,
+    keep_backup=False,
 ):
     """
     Rename/move file to a deterministic '{slug}.html' name derived from story_title.
@@ -268,7 +326,13 @@ def rename_file_using_title(
     """
     directory, old_name = os.path.split(file_path)
     base_title = story_title if story_title else os.path.splitext(old_name)[0]
-    slug = slugify_underscores(base_title)  # your existing helper
+
+    if author:
+        base = f"{base_title}__{author}"
+    else:
+        base = base_title
+
+    slug = slugify_underscores(base)
     target = os.path.join(directory, f"{slug}.html")
 
     # Normalize for Windows case-insensitive paths
@@ -368,6 +432,7 @@ def build_index(directory: str, output_file: str):
                 ship_tag = soup.find("meta", attrs={"name": "ship"})
                 rating_tag = soup.find("meta", attrs={"name": "rating"})
                 status_tag = soup.find("meta", attrs={"name": "status"})
+                words_tag = soup.find("meta", attrs={"name": "words"})
                 summary_tag = soup.find("meta", attrs={"name": "summary"}) or soup.find(
                     "meta", attrs={"name": "description"}
                 )
@@ -392,29 +457,40 @@ def build_index(directory: str, output_file: str):
                     if status_tag and "content" in status_tag.attrs
                     else "Unknown"
                 )
+                words = (
+                    words_tag["content"].strip()
+                    if words_tag and "content" in words_tag.attrs
+                    else ""
+                )
+
                 summary = (
                     summary_tag["content"].strip()
                     if summary_tag and "content" in summary_tag.attrs
                     else ""
                 )
-
+                
+                words_pill = ""
+                if words.isdigit():
+                    words_pill = f'<span class="pill">Words: {int(words):,}</span>'
+                    
                 cards.append(
                     f"""
-        <div class="card"
-             data-author="{author.lower()}"
-             data-ship="{ship.lower()}"
-             data-rating="{rating.lower()}"
-             data-status="{status.lower()}">
-            <h2><a href="{filename}">{title}</a></h2>
-            <div class="meta">
-                <span class="pill label-pill">Author: {author}</span>
-                <span class="pill">{ship}</span>
-                <span class="pill">{rating}</span>
-                <span class="pill">{status}</span>
-            </div>
-            <p class="summary">{summary}</p>
-        </div>
-                    """
+                <div class="card"
+                    data-href="{filename}"
+                    data-author="{author.lower()}"
+                    data-ship="{ship.lower()}"
+                    data-rating="{rating.lower()}"
+                    data-status="{status.lower()}">
+                    <h2><a class="title-link" href="{filename}">{title}</a></h2>
+                    <div class="meta">
+                        <span class="pill label-pill">Author: {author}</span>
+                        <span class="pill">{ship}</span>
+                        <span class="pill">{rating}</span>
+                        <span class="pill">{status}</span>
+                        {words_pill}
+                    </div><p class="summary">{summary}</p>
+                </div>
+                """
                 )
 
             except Exception as e:
@@ -467,6 +543,14 @@ def build_index(directory: str, output_file: str):
             font-weight: 600;
             letter-spacing: 0.02em;
         }}
+        .card {{
+            cursor: pointer;
+            }}
+
+            .card:focus-within,
+            .card:hover {{
+            transform: scale(1.02);
+            }}
 
         .subtitle {{
             margin: 0 0 0.75rem;
@@ -485,6 +569,29 @@ def build_index(directory: str, output_file: str):
                         rgba(2,3,8,0.96),
                         rgba(2,3,8,0.9));
             backdrop-filter: blur(12px);
+        }}
+
+        .filter-panel {{
+        border: 1px solid #444;
+        border-radius: 10px;
+        padding: 0.5rem 0.75rem;
+        margin-bottom: 1rem;
+        background: rgba(255,255,255,0.02);
+        position: sticky;
+  top: 0.75rem;
+  z-index: 10;
+  backdrop-filter: blur(6px);
+        }}
+
+        .filter-panel > summary {{
+        cursor: pointer;
+        font-weight: 600;
+        padding: 0.25rem 0;
+        user-select: none;
+        }}
+
+        .filter-panel[open] > summary {{
+        margin-bottom: 0.75rem;
         }}
 
         .filters {{
@@ -518,6 +625,75 @@ def build_index(directory: str, output_file: str):
             color: var(--text-soft);
             margin-top: 0.15rem;
         }}
+        
+        .filter-toggle {{
+            position: sticky;
+            top: 0.5rem;
+            z-index: 40;
+            width: 100%;
+            padding: 0.65rem 0.9rem;
+            border-radius: var(--radius-pill);
+            border: 1px solid var(--border-subtle);
+            background: rgba(17,24,39,0.92);
+            color: var(--text-main);
+            backdrop-filter: blur(10px);
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: var(--shadow-soft);
+            }}
+
+        .filter-drawer {{
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: 60;
+            transform: translateY(-110%);
+            transition: transform 0.22s ease-out;
+            padding: 0.75rem;
+            }}
+
+        .filter-drawer.open {{
+            transform: translateY(0);
+            }}
+
+        .filter-drawer-inner {{
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-xl);
+            background: rgba(2,3,8,0.96);
+            backdrop-filter: blur(14px);
+            box-shadow: var(--shadow-soft);
+            padding: 0.75rem;
+            }}
+
+        .filter-drawer-header {{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+            }}
+
+        .filter-drawer-title {{
+            font-weight: 700;
+            font-size: 0.95rem;
+            }}
+
+        .filter-close {{
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-pill);
+            background: var(--bg-soft);
+            color: var(--text-main);
+            padding: 0.35rem 0.6rem;
+            font-size: 0.95rem;
+            }}
+
+        .drawer-backdrop {{
+            position: fixed;
+            inset: 0;
+            z-index: 55;
+            background: rgba(0,0,0,0.55);
+            }}
 
         .card-container {{
             display: flex;
@@ -598,7 +774,8 @@ def build_index(directory: str, output_file: str):
 <div class="page-wrap">
     <h1>Fanfic Archive</h1>
     <p class="subtitle">Not my fics. Just ones I refuse to lose.</p>
-
+<details class="filter-panel" open>
+  <summary>Search & Filters</summary>
     <div class="filters-wrap">
         <div class="filters">
             <input type="text" id="searchBox" placeholder="Search by title or summary...">
@@ -609,7 +786,7 @@ def build_index(directory: str, output_file: str):
             <select id="statusFilter"><option value="">All statuses</option></select>
         </div>
     </div>
-
+</details>
     <div class="card-container">
         {''.join(cards)}
     </div>
@@ -617,57 +794,115 @@ def build_index(directory: str, output_file: str):
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {{
-    const searchBox = document.getElementById('searchBox');
-    const authorFilter = document.getElementById('authorFilter');
-    const shipFilter = document.getElementById('shipFilter');
-    const ratingFilter = document.getElementById('ratingFilter');
-    const statusFilter = document.getElementById('statusFilter');
-    const cards = document.querySelectorAll('.card');
+  const searchBox = document.getElementById('searchBox');
+  const authorFilter = document.getElementById('authorFilter');
+  const shipFilter = document.getElementById('shipFilter');
+  const ratingFilter = document.getElementById('ratingFilter');
+  const statusFilter = document.getElementById('statusFilter');
+  const cards = Array.from(document.querySelectorAll('.card'));
 
-    function populateFilter(filter, attr) {{
-        const values = Array.from(new Set(Array.from(cards).map(card => card.dataset[attr])))
-            .filter(v => v && v !== 'unknown')
-            .sort();
-        values.forEach(v => {{
-            const opt = document.createElement('option');
-            opt.value = v;
-            opt.textContent = v;
-            filter.appendChild(opt);
-        }});
-    }}
+  // Drawer controls
+  const drawer = document.getElementById('filterDrawer');
+  const backdrop = document.getElementById('drawerBackdrop');
+  const toggleBtn = document.getElementById('filterToggle');
+  const closeBtn = document.getElementById('filterClose');
 
-    populateFilter(authorFilter, 'author');
-    populateFilter(shipFilter, 'ship');
-    populateFilter(ratingFilter, 'rating');
-    populateFilter(statusFilter, 'status');
+  function openDrawer() {{
+    drawer.classList.add('open');
+    drawer.setAttribute('aria-hidden', 'false');
+    toggleBtn.setAttribute('aria-expanded', 'true');
+    backdrop.hidden = false;
+  }}
 
-    function filterCards() {{
-        const search = searchBox.value.toLowerCase();
-        const author = authorFilter.value;
-        const ship = shipFilter.value;
-        const rating = ratingFilter.value;
-        const status = statusFilter.value;
+  function closeDrawer() {{
+    drawer.classList.remove('open');
+    drawer.setAttribute('aria-hidden', 'true');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    backdrop.hidden = true;
+  }}
 
-        cards.forEach(card => {{
-            const matchesSearch = card.innerText.toLowerCase().includes(search);
-            const matchesAuthor = !author || card.dataset.author === author;
-            const matchesShip = !ship || card.dataset.ship === ship;
-            const matchesRating = !rating || card.dataset.rating === rating;
-            const matchesStatus = !status || card.dataset.status === status;
+  toggleBtn.addEventListener('click', () => {{
+    const isOpen = drawer.classList.contains('open');
+    isOpen ? closeDrawer() : openDrawer();
+  }});
 
-            if (matchesSearch && matchesAuthor && matchesShip && matchesRating && matchesStatus) {{
-                card.style.display = '';
-            }} else {{
-                card.style.display = 'none';
-            }}
-        }});
-    }}
+  closeBtn.addEventListener('click', closeDrawer);
+  backdrop.addEventListener('click', closeDrawer);
 
-    searchBox.addEventListener('input', filterCards);
-    authorFilter.addEventListener('change', filterCards);
-    shipFilter.addEventListener('change', filterCards);
-    ratingFilter.addEventListener('change', filterCards);
-    statusFilter.addEventListener('change', filterCards);
+  // Make entire card clickable + keyboard accessible
+  cards.forEach(card => {{
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'link');
+
+    card.addEventListener('click', (e) => {{
+      // If they tapped a real interactive element, don't hijack it
+      const interactive = e.target.closest('a, button, input, select, textarea, summary');
+      if (interactive) return;
+
+      const href = card.dataset.href;
+      if (href) window.location.href = href;
+    }});
+
+    card.addEventListener('keydown', (e) => {{
+      if (e.key === 'Enter' || e.key === ' ') {{
+        e.preventDefault();
+        const href = card.dataset.href;
+        if (href) window.location.href = href;
+      }}
+      if (e.key === 'Escape') closeDrawer();
+    }});
+  }});
+
+  function populateFilter(filter, attr) {{
+    const values = Array.from(new Set(cards.map(c => c.dataset[attr])))
+      .filter(v => v && v !== 'unknown')
+      .sort();
+
+    values.forEach(v => {{
+      const opt = document.createElement('option');
+      opt.value = v;
+      opt.textContent = v;
+      filter.appendChild(opt);
+    }});
+  }}
+
+  populateFilter(authorFilter, 'author');
+  populateFilter(shipFilter, 'ship');
+  populateFilter(ratingFilter, 'rating');
+  populateFilter(statusFilter, 'status');
+
+  function filterCards() {{
+    const search = (searchBox.value || '').toLowerCase();
+    const author = authorFilter.value;
+    const ship = shipFilter.value;
+    const rating = ratingFilter.value;
+    const status = statusFilter.value;
+
+    cards.forEach(card => {{
+      // Search only title + summary for a cleaner “mobile mental model”
+      const titleText = (card.querySelector('h2')?.innerText || '').toLowerCase();
+      const summaryText = (card.querySelector('.summary')?.innerText || '').toLowerCase();
+      const matchesSearch = !search || titleText.includes(search) || summaryText.includes(search);
+
+      const matchesAuthor = !author || card.dataset.author === author;
+      const matchesShip = !ship || card.dataset.ship === ship;
+      const matchesRating = !rating || card.dataset.rating === rating;
+      const matchesStatus = !status || card.dataset.status === status;
+
+      card.style.display = (matchesSearch && matchesAuthor && matchesShip && matchesRating && matchesStatus) ? '' : 'none';
+    }});
+  }}
+
+  searchBox.addEventListener('input', filterCards);
+  authorFilter.addEventListener('change', filterCards);
+  shipFilter.addEventListener('change', filterCards);
+  ratingFilter.addEventListener('change', filterCards);
+  statusFilter.addEventListener('change', filterCards);
+
+  // Optional: auto-close drawer after changing filters on mobile
+  [authorFilter, shipFilter, ratingFilter, statusFilter].forEach(el => {{
+    el.addEventListener('change', () => closeDrawer());
+  }});
 }});
 </script>
 </body>
@@ -683,16 +918,57 @@ document.addEventListener('DOMContentLoaded', function () {{
 # Master runner
 # =========================
 def process_fics(folder_path: str, output_file: str = "index.html"):
-    # Pass 1: update metadata & rename each file using the *first* dash-separated segment of <title>
+    t0 = time.time()
+    logging.info("=== Fanfic archive processing: START ===")
+    logging.info(f"Folder: {folder_path}")
+
+    processed = 0
+    updated = 0
+    renamed = 0
+    deduped = 0
+    failed = 0
+
+    # Pass 1: update metadata & rename
+    logging.info("Phase 1/2: Updating metadata + renaming files...")
     for filename in os.listdir(folder_path):
-        if filename.endswith(".html") and filename != output_file:
-            old_path = os.path.join(folder_path, filename)
-            story_title = update_html_metadata(old_path)
-            new_path = rename_file_using_title(old_path, story_title)
-            # (optional) you could re-parse here to propagate title change immediately for index
+        if not (filename.endswith(".html") and filename != output_file):
+            continue
+
+        processed += 1
+        old_path = os.path.join(folder_path, filename)
+
+        try:
+            story_title, author = update_html_metadata(old_path)
+            updated += 1  # if update_html_metadata returns without raising, count it
+
+            new_path = rename_file_using_title(old_path, story_title, author)
+
+            # crude but useful: infer action types
+            if os.path.normcase(os.path.abspath(new_path)) != os.path.normcase(os.path.abspath(old_path)):
+                # It either renamed or deduped; check if old still exists
+                if not os.path.exists(old_path):
+                    deduped += 1
+                else:
+                    renamed += 1
+
+        except Exception as e:
+            failed += 1
+            logging.exception(f"Failed processing {filename}: {e}")
+
+    logging.info(
+        f"Phase 1 complete. Files seen={processed}, updated={updated}, renamed={renamed}, deduped={deduped}, failed={failed}"
+    )
 
     # Pass 2: build index
-    build_index(folder_path, output_file)
+    logging.info("Phase 2/2: Building index.html...")
+    try:
+        build_index(folder_path, output_file)
+        logging.info("Phase 2 complete. Index built successfully.")
+    except Exception as e:
+        logging.exception(f"Index build failed: {e}")
+
+    dt = time.time() - t0
+    logging.info(f"=== Fanfic archive processing: END ({dt:.2f}s) ===")
 
 
 if __name__ == "__main__":
