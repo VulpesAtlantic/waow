@@ -229,17 +229,17 @@ def update_html_metadata(file_path: str):
     if not head.find("link", href="assets/darkMode.css"):
         head.append(soup.new_tag("link", rel="stylesheet", href="assets/darkMode.css"))
 
-        # ---- lastUpdated meta (YYYYMMDD; today's date)
-        last_updated = date.today().strftime("%Y%m%d")
-        lu_meta = head.find("meta", attrs={"name": "lastUpdated"})
-        if lu_meta:
-            lu_meta["content"] = last_updated
-        else:
-            head.append(
-                soup.new_tag(
-                    "meta", attrs={"name": "lastUpdated", "content": last_updated}
-                )
+    # ---- lastUpdated meta (YYYYMMDD; today's date)
+    last_updated = date.today().strftime("%Y%m%d")
+    lu_meta = head.find("meta", attrs={"name": "lastUpdated"})
+    if lu_meta:
+        lu_meta["content"] = last_updated
+    else:
+        head.append(
+            soup.new_tag(
+                "meta", attrs={"name": "lastUpdated", "content": last_updated}
             )
+        )
 
     # ---- Rating extraction
     rating_dt = soup.find("dt", string="Rating:")
@@ -501,7 +501,6 @@ def build_index(directory: str, output_file: str):
 <head>
     <meta charset="utf-8">
     <title>Fanfic Archive Index</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/darkMode.css">
     <style>
@@ -626,75 +625,6 @@ def build_index(directory: str, output_file: str):
             margin-top: 0.15rem;
         }}
         
-        .filter-toggle {{
-            position: sticky;
-            top: 0.5rem;
-            z-index: 40;
-            width: 100%;
-            padding: 0.65rem 0.9rem;
-            border-radius: var(--radius-pill);
-            border: 1px solid var(--border-subtle);
-            background: rgba(17,24,39,0.92);
-            color: var(--text-main);
-            backdrop-filter: blur(10px);
-            font-size: 0.9rem;
-            font-weight: 600;
-            box-shadow: var(--shadow-soft);
-            }}
-
-        .filter-drawer {{
-            position: fixed;
-            left: 0;
-            right: 0;
-            top: 0;
-            z-index: 60;
-            transform: translateY(-110%);
-            transition: transform 0.22s ease-out;
-            padding: 0.75rem;
-            }}
-
-        .filter-drawer.open {{
-            transform: translateY(0);
-            }}
-
-        .filter-drawer-inner {{
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-xl);
-            background: rgba(2,3,8,0.96);
-            backdrop-filter: blur(14px);
-            box-shadow: var(--shadow-soft);
-            padding: 0.75rem;
-            }}
-
-        .filter-drawer-header {{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 0.75rem;
-            margin-bottom: 0.5rem;
-            }}
-
-        .filter-drawer-title {{
-            font-weight: 700;
-            font-size: 0.95rem;
-            }}
-
-        .filter-close {{
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-pill);
-            background: var(--bg-soft);
-            color: var(--text-main);
-            padding: 0.35rem 0.6rem;
-            font-size: 0.95rem;
-            }}
-
-        .drawer-backdrop {{
-            position: fixed;
-            inset: 0;
-            z-index: 55;
-            background: rgba(0,0,0,0.55);
-            }}
-
         .card-container {{
             display: flex;
             flex-direction: column;
@@ -801,34 +731,6 @@ document.addEventListener('DOMContentLoaded', function () {{
   const statusFilter = document.getElementById('statusFilter');
   const cards = Array.from(document.querySelectorAll('.card'));
 
-  // Drawer controls
-  const drawer = document.getElementById('filterDrawer');
-  const backdrop = document.getElementById('drawerBackdrop');
-  const toggleBtn = document.getElementById('filterToggle');
-  const closeBtn = document.getElementById('filterClose');
-
-  function openDrawer() {{
-    drawer.classList.add('open');
-    drawer.setAttribute('aria-hidden', 'false');
-    toggleBtn.setAttribute('aria-expanded', 'true');
-    backdrop.hidden = false;
-  }}
-
-  function closeDrawer() {{
-    drawer.classList.remove('open');
-    drawer.setAttribute('aria-hidden', 'true');
-    toggleBtn.setAttribute('aria-expanded', 'false');
-    backdrop.hidden = true;
-  }}
-
-  toggleBtn.addEventListener('click', () => {{
-    const isOpen = drawer.classList.contains('open');
-    isOpen ? closeDrawer() : openDrawer();
-  }});
-
-  closeBtn.addEventListener('click', closeDrawer);
-  backdrop.addEventListener('click', closeDrawer);
-
   // Make entire card clickable + keyboard accessible
   cards.forEach(card => {{
     card.setAttribute('tabindex', '0');
@@ -849,7 +751,6 @@ document.addEventListener('DOMContentLoaded', function () {{
         const href = card.dataset.href;
         if (href) window.location.href = href;
       }}
-      if (e.key === 'Escape') closeDrawer();
     }});
   }});
 
@@ -899,10 +800,6 @@ document.addEventListener('DOMContentLoaded', function () {{
   ratingFilter.addEventListener('change', filterCards);
   statusFilter.addEventListener('change', filterCards);
 
-  // Optional: auto-close drawer after changing filters on mobile
-  [authorFilter, shipFilter, ratingFilter, statusFilter].forEach(el => {{
-    el.addEventListener('change', () => closeDrawer());
-  }});
 }});
 </script>
 </body>
@@ -938,8 +835,13 @@ def process_fics(folder_path: str, output_file: str = "index.html"):
         old_path = os.path.join(folder_path, filename)
 
         try:
-            story_title, author = update_html_metadata(old_path)
-            updated += 1  # if update_html_metadata returns without raising, count it
+            result = update_html_metadata(old_path)
+            if result is None:
+                failed += 1
+                logging.warning(f"Skipped {filename}: no head or parse error")
+                continue
+            story_title, author = result
+            updated += 1
 
             new_path = rename_file_using_title(old_path, story_title, author)
 
