@@ -73,6 +73,7 @@ def build_index(directory: str, output_file: str):
     <meta charset="utf-8">
     <title>Fanfic Archive Index</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
     <link rel="stylesheet" href="assets/darkMode.css">
     <style>
         body {{
