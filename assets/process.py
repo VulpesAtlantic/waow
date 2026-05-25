@@ -199,6 +199,14 @@ def extract_metadata(soup: BeautifulSoup, source_filename: str) -> dict:
 
     # --- Ship (Relationships) ---
     ship_tag = soup.select_one("dd.relationship")
+    # Fallback: find the <dd> after a <dt> containing "Relationship"
+    # (some AO3 downloads omit the class attribute on the dd)
+    if not ship_tag:
+        for dt in soup.find_all("dt"):
+            if "relationship" in dt.get_text(strip=True).lower():
+                ship_tag = dt.find_next_sibling("dd")
+                if ship_tag:
+                    break
     meta["ship"] = _pick_ship(ship_tag)
 
     # --- Stats block: status, dates, word count ---
@@ -493,6 +501,11 @@ INDEX_TEMPLATE = """\
       font-size: 0.8rem;
       color: #6a5e8a;
     }}
+    .last-updated {{
+      font-size: 0.72rem;
+      color: #3d3560;
+      margin-top: 0.2rem;
+    }}
 
     /* ---- Collapsible filter/search ---- */
     .filter-section {{
@@ -677,6 +690,7 @@ INDEX_TEMPLATE = """\
 <div class="archive-header">
   <h1>✦ fic archive</h1>
   <p id="fic-count"></p>
+  <p class="last-updated">last updated {last_updated}</p>
 </div>
 
 <details class="filter-section">
@@ -697,7 +711,8 @@ INDEX_TEMPLATE = """\
   <span class="chip-label">Sort:</span>
   <button class="chip active" data-sort="default">Default</button>
   <button class="chip" data-sort="wc_desc">Most words</button>
-  <button class="chip" data-sort="wc_asc">Fewest words</button>
+  <button class="chip" data-sort="updated">Last updated</button>
+  <button class="chip" data-sort="alpha">A–Z</button>
 </div>
 
 <div class="count-label" id="visible-count"></div>
@@ -721,8 +736,9 @@ function fmtWordCount(wc) {{
 }}
 
 function getSortedFics() {{
-  if (sortMode === "wc_desc") return [...FICS].sort((a, b) => parseWordCount(b.word_count) - parseWordCount(a.word_count));
-  if (sortMode === "wc_asc")  return [...FICS].sort((a, b) => parseWordCount(a.word_count) - parseWordCount(b.word_count));
+  if (sortMode === "wc_desc")  return [...FICS].sort((a, b) => parseWordCount(b.word_count) - parseWordCount(a.word_count));
+  if (sortMode === "updated")  return [...FICS].sort((a, b) => (b.lastUpdated || "").localeCompare(a.lastUpdated || ""));
+  if (sortMode === "alpha")    return [...FICS].sort((a, b) => (a.title || "").toLowerCase().localeCompare((b.title || "").toLowerCase()));
   return FICS;
 }}
 
@@ -837,7 +853,12 @@ render();
 def build_index(manifest: dict):
     """Generate index.html from the fic manifest."""
     fics_json = json.dumps(manifest["fics"], ensure_ascii=False)
-    html = INDEX_TEMPLATE.format(fics_json=fics_json)
+    try:
+        dt = datetime.fromisoformat(manifest.get("last_updated", ""))
+        last_updated = dt.strftime(f"%B {dt.day}, %Y")
+    except ValueError:
+        last_updated = "unknown"
+    html = INDEX_TEMPLATE.format(fics_json=fics_json, last_updated=last_updated)
     with open(INDEX_FILE, "w", encoding="utf-8") as f:
         f.write(html)
     log.info(f"index.html rebuilt ({len(manifest['fics'])} fics)")

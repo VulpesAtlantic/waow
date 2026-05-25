@@ -2369,3 +2369,1363 @@
 2026-05-24 23:56:07,905 [INFO] Added manifest entry: 84752066_Wouldnt_You_Love_to_Love.html
 2026-05-24 23:56:07,907 [INFO] Manifest saved to fic_data.json
 2026-05-24 23:56:07,908 [INFO] index.html rebuilt (339 fics)
+2026-05-25 00:05:56,324 [WARNING] 26070184_everything_looks_better_in_hindsight.html: could not parse author from <title>: 'Everything Looks Better (In Hindsight)'
+2026-05-25 00:05:56,393 [INFO] Added manifest entry: 26070184_everything_looks_better_in_hindsight.html
+2026-05-25 00:05:56,404 [WARNING] 376520_catalysis.html: could not parse author from <title>: 'Catalysis'
+2026-05-25 00:05:56,414 [INFO] Added manifest entry: 376520_catalysis.html
+2026-05-25 00:05:56,427 [WARNING] 59315482_underneath_the_tree.html: could not parse author from <title>: 'Underneath the Tree'
+2026-05-25 00:05:56,443 [INFO] Added manifest entry: 59315482_underneath_the_tree.html
+2026-05-25 00:05:56,573 [WARNING] 59672419_its_bloody_and_raw_but_i_swear_its_sweet.html: could not parse author from <title>: 'It’s Bloody and Raw (But I Swear it's Sweet)'
+2026-05-25 00:05:56,721 [INFO] Added manifest entry: 59672419_its_bloody_and_raw_but_i_swear_its_sweet.html
+2026-05-25 00:05:56,777 [WARNING] 59719738_an_unexpected_visitor.html: could not parse author from <title>: 'An Unexpected Visitor'
+2026-05-25 00:05:56,853 [INFO] Added manifest entry: 59719738_an_unexpected_visitor.html
+2026-05-25 00:05:56,856 [WARNING] 59730688_checkmate.html: could not parse author from <title>: 'Checkmate!'
+2026-05-25 00:05:56,862 [INFO] Added manifest entry: 59730688_checkmate.html
+2026-05-25 00:05:56,876 [WARNING] 59746492_time_warp.html: could not parse author from <title>: 'Time Warp'
+2026-05-25 00:05:56,896 [INFO] Added manifest entry: 59746492_time_warp.html
+2026-05-25 00:05:56,899 [WARNING] 59761162_bitches_i_dont_trust_them_but_they_give_me_what_i.html: could not parse author from <title>: 'bitches i don't trust them (but they give me what i want for the night)'
+2026-05-25 00:05:56,903 [INFO] Added manifest entry: 59761162_bitches_i_dont_trust_them_but_they_give_me_what_i.html
+2026-05-25 00:05:56,926 [WARNING] 59763247_deaths_echo.html: could not parse author from <title>: 'Death's Echo'
+2026-05-25 00:05:56,956 [INFO] Added manifest entry: 59763247_deaths_echo.html
+2026-05-25 00:05:56,988 [WARNING] 59774080_roses_are_red_orchids_arepurple.html: could not parse author from <title>: 'Roses Are Red, Orchids Are...Purple?'
+2026-05-25 00:05:57,009 [INFO] Added manifest entry: 59774080_roses_are_red_orchids_arepurple.html
+2026-05-25 00:05:57,058 [WARNING] 59823169_love_persevering.html: could not parse author from <title>: 'Love Persevering'
+2026-05-25 00:05:57,126 [INFO] Added manifest entry: 59823169_love_persevering.html
+2026-05-25 00:05:57,149 [WARNING] 59841808_close_enough_for_love.html: could not parse author from <title>: 'Close Enough for Love'
+2026-05-25 00:05:57,180 [INFO] Added manifest entry: 59841808_close_enough_for_love.html
+2026-05-25 00:05:57,197 [WARNING] 59884564_the_ethics_of_attraction.html: could not parse author from <title>: 'The Ethics of Attraction'
+2026-05-25 00:05:57,222 [INFO] Added manifest entry: 59884564_the_ethics_of_attraction.html
+2026-05-25 00:05:57,342 [WARNING] 59939713_silver_springs.html: could not parse author from <title>: 'Silver Springs'
+2026-05-25 00:05:57,497 [INFO] Added manifest entry: 59939713_silver_springs.html
+2026-05-25 00:05:57,630 [WARNING] 59941591_unraveled.html: could not parse author from <title>: 'Unraveled'
+2026-05-25 00:05:57,808 [INFO] Added manifest entry: 59941591_unraveled.html
+2026-05-25 00:05:57,815 [WARNING] 59965684_witchcraft_filling_your_void.html: could not parse author from <title>: 'Witchcraft Filling Your Void'
+2026-05-25 00:05:57,825 [INFO] Added manifest entry: 59965684_witchcraft_filling_your_void.html
+2026-05-25 00:05:57,882 [WARNING] 59970673_dearest_agatha.html: could not parse author from <title>: 'Dearest Agatha'
+2026-05-25 00:05:57,934 [INFO] Added manifest entry: 59970673_dearest_agatha.html
+2026-05-25 00:05:57,967 [WARNING] 60017602_the_witchy_ceo.html: could not parse author from <title>: 'the witchy CEO'
+2026-05-25 00:05:58,007 [INFO] Added manifest entry: 60017602_the_witchy_ceo.html
+2026-05-25 00:05:58,047 [WARNING] 60045475_a_kingdom_by_the_night.html: could not parse author from <title>: 'A Kingdom By the Night'
+2026-05-25 00:05:58,102 [INFO] Added manifest entry: 60045475_a_kingdom_by_the_night.html
+2026-05-25 00:05:58,151 [WARNING] 60055312_youll_just_have_to_taste_me_when_shes_kissin_you.html: could not parse author from <title>: 'You'll Just Have to Taste Me (When She's Kissin' You)'
+2026-05-25 00:05:58,210 [INFO] Added manifest entry: 60055312_youll_just_have_to_taste_me_when_shes_kissin_you.html
+2026-05-25 00:05:58,299 [WARNING] 60137950_all_roads_lead_to_this.html: could not parse author from <title>: 'All Roads Lead to This'
+2026-05-25 00:05:58,412 [INFO] Added manifest entry: 60137950_all_roads_lead_to_this.html
+2026-05-25 00:05:58,433 [WARNING] 60165511_dont_be_afraid_of_me_im_what_you_need.html: could not parse author from <title>: 'Don't Be Afraid of Me (I'm What You Need)'
+2026-05-25 00:05:58,464 [INFO] Added manifest entry: 60165511_dont_be_afraid_of_me_im_what_you_need.html
+2026-05-25 00:05:58,468 [WARNING] 60190921_devotion_is_for_fools.html: could not parse author from <title>: 'Devotion Is for Fools'
+2026-05-25 00:05:58,475 [INFO] Added manifest entry: 60190921_devotion_is_for_fools.html
+2026-05-25 00:05:58,479 [WARNING] 60208747_i_looked_to_the_children.html: could not parse author from <title>: 'i looked to the children (i drank from the fountains)'
+2026-05-25 00:05:58,485 [INFO] Added manifest entry: 60208747_i_looked_to_the_children.html
+2026-05-25 00:05:58,511 [WARNING] 60223375_there_is_no_death_for_witches_only_transformation.html: could not parse author from <title>: 'There Is No Death for Witches (Only Transformation)'
+2026-05-25 00:05:58,547 [INFO] Added manifest entry: 60223375_there_is_no_death_for_witches_only_transformation.html
+2026-05-25 00:05:58,568 [WARNING] 60229678_the_neutral_ground.html: could not parse author from <title>: 'The Neutral Ground'
+2026-05-25 00:05:58,598 [INFO] Added manifest entry: 60229678_the_neutral_ground.html
+2026-05-25 00:05:58,626 [WARNING] 60245707_i_could_not_stop_for_death.html: could not parse author from <title>: 'I Could Not Stop for Death'
+2026-05-25 00:05:58,665 [INFO] Added manifest entry: 60245707_i_could_not_stop_for_death.html
+2026-05-25 00:05:58,677 [WARNING] 60263902_creator_you_destroy_me.html: could not parse author from <title>: 'Creator, You Destroy Me'
+2026-05-25 00:05:58,694 [INFO] Added manifest entry: 60263902_creator_you_destroy_me.html
+2026-05-25 00:05:58,715 [WARNING] 60284353_rios_toxic_embrace.html: could not parse author from <title>: 'Rio’S Toxic Embrace'
+2026-05-25 00:05:58,719 [INFO] Added manifest entry: 60284353_rios_toxic_embrace.html
+2026-05-25 00:05:58,727 [WARNING] 60293302_happiest_season.html: could not parse author from <title>: 'Happiest Season'
+2026-05-25 00:05:58,738 [INFO] Added manifest entry: 60293302_happiest_season.html
+2026-05-25 00:05:58,748 [WARNING] 60307105_when_we_kiss_i_have_anger_issues.html: could not parse author from <title>: 'When We Kiss (I Have Anger Issues)'
+2026-05-25 00:05:58,761 [INFO] Added manifest entry: 60307105_when_we_kiss_i_have_anger_issues.html
+2026-05-25 00:05:58,775 [WARNING] 60315637_the_road_twists_and_turns.html: could not parse author from <title>: 'The Road Twists and Turns'
+2026-05-25 00:05:58,793 [INFO] Added manifest entry: 60315637_the_road_twists_and_turns.html
+2026-05-25 00:05:58,816 [WARNING] 60318415_but_i_love_you_just_the_same.html: could not parse author from <title>: 'But I Love You Just the Same'
+2026-05-25 00:05:58,849 [INFO] Added manifest entry: 60318415_but_i_love_you_just_the_same.html
+2026-05-25 00:05:58,907 [WARNING] 60328030_the_art_of_keeping_a_secret.html: could not parse author from <title>: 'The Art of Keeping a Secret'
+2026-05-25 00:05:58,988 [INFO] Added manifest entry: 60328030_the_art_of_keeping_a_secret.html
+2026-05-25 00:05:58,991 [WARNING] 60369481_and_fill_my_blank_page.html: could not parse author from <title>: 'And Fill My Blank Page'
+2026-05-25 00:05:58,996 [INFO] Added manifest entry: 60369481_and_fill_my_blank_page.html
+2026-05-25 00:05:59,045 [WARNING] 60392944_unmoored_by_your_presence.html: could not parse author from <title>: 'Unmoored by your Presence'
+2026-05-25 00:05:59,092 [INFO] Added manifest entry: 60392944_unmoored_by_your_presence.html
+2026-05-25 00:05:59,097 [WARNING] 60415315_im_leaving_here_with_you.html: could not parse author from <title>: 'I'm Leaving Here With You'
+2026-05-25 00:05:59,106 [INFO] Added manifest entry: 60415315_im_leaving_here_with_you.html
+2026-05-25 00:05:59,114 [WARNING] 60415588_broken_deal.html: could not parse author from <title>: 'Broken Deal'
+2026-05-25 00:05:59,127 [INFO] Added manifest entry: 60415588_broken_deal.html
+2026-05-25 00:05:59,143 [WARNING] 60416161_she_gets_the_job_done.html: could not parse author from <title>: 'She Gets the Job Done'
+2026-05-25 00:05:59,165 [INFO] Added manifest entry: 60416161_she_gets_the_job_done.html
+2026-05-25 00:05:59,191 [WARNING] 60417100_the_scientific_method_of_falling_apart.html: could not parse author from <title>: 'The Scientific Method of Falling Apart'
+2026-05-25 00:05:59,228 [INFO] Added manifest entry: 60417100_the_scientific_method_of_falling_apart.html
+2026-05-25 00:05:59,252 [WARNING] 60437284_hopeless_breathless.html: could not parse author from <title>: 'hopeless (breathless) burning slow'
+2026-05-25 00:05:59,283 [INFO] Added manifest entry: 60437284_hopeless_breathless.html
+2026-05-25 00:05:59,321 [WARNING] 60439222_ill_follow_you_down_til_the_sound_of_my_voice.html: could not parse author from <title>: 'I'll follow you down til' the sound of my voice will haunt you'
+2026-05-25 00:05:59,358 [INFO] Added manifest entry: 60439222_ill_follow_you_down_til_the_sound_of_my_voice.html
+2026-05-25 00:05:59,362 [WARNING] 60444544_giving_my_heart_over_to_you.html: could not parse author from <title>: 'Giving My Heart Over to You'
+2026-05-25 00:05:59,366 [INFO] Added manifest entry: 60444544_giving_my_heart_over_to_you.html
+2026-05-25 00:05:59,370 [WARNING] 60465982_not_over_dramatic_i_know_what_i_want.html: could not parse author from <title>: 'Not Over Dramatic, I Know What I Want.'
+2026-05-25 00:05:59,375 [INFO] Added manifest entry: 60465982_not_over_dramatic_i_know_what_i_want.html
+2026-05-25 00:05:59,393 [WARNING] 60466387_in_the_deep_end.html: could not parse author from <title>: 'In The Deep End'
+2026-05-25 00:05:59,414 [INFO] Added manifest entry: 60466387_in_the_deep_end.html
+2026-05-25 00:05:59,432 [WARNING] 60468748_fold_your_wings.html: could not parse author from <title>: 'Fold Your Wings'
+2026-05-25 00:05:59,453 [INFO] Added manifest entry: 60468748_fold_your_wings.html
+2026-05-25 00:05:59,600 [WARNING] 60469915_here_with_you_now.html: could not parse author from <title>: 'Here With You Now'
+2026-05-25 00:05:59,765 [INFO] Added manifest entry: 60469915_here_with_you_now.html
+2026-05-25 00:05:59,796 [WARNING] 60521194_a_witch_in_salem.html: could not parse author from <title>: 'A Witch in Salem'
+2026-05-25 00:05:59,839 [INFO] Added manifest entry: 60521194_a_witch_in_salem.html
+2026-05-25 00:05:59,843 [WARNING] 60532861_she_drives_me_crazy.html: could not parse author from <title>: 'She Drives Me Crazy'
+2026-05-25 00:05:59,848 [INFO] Added manifest entry: 60532861_she_drives_me_crazy.html
+2026-05-25 00:05:59,873 [WARNING] 60538387_disdainfully_hers.html: could not parse author from <title>: 'Disdainfully Hers'
+2026-05-25 00:05:59,888 [INFO] Added manifest entry: 60538387_disdainfully_hers.html
+2026-05-25 00:05:59,942 [WARNING] 60550129_beneath_the_stars.html: could not parse author from <title>: 'beneath the stars'
+2026-05-25 00:06:00,004 [INFO] Added manifest entry: 60550129_beneath_the_stars.html
+2026-05-25 00:06:00,015 [WARNING] 60563395_the_way_i_feel_about_you_baby_cant_explain_it.html: could not parse author from <title>: 'The Way I Feel About You Baby Can’t Explain It'
+2026-05-25 00:06:00,030 [INFO] Added manifest entry: 60563395_the_way_i_feel_about_you_baby_cant_explain_it.html
+2026-05-25 00:06:00,098 [WARNING] 60596422_sugar_and_honey.html: could not parse author from <title>: 'Sugar and Honey'
+2026-05-25 00:06:00,181 [INFO] Added manifest entry: 60596422_sugar_and_honey.html
+2026-05-25 00:06:00,212 [WARNING] 60612217_the_peculiar_patient.html: could not parse author from <title>: 'the peculiar patient'
+2026-05-25 00:06:00,249 [INFO] Added manifest entry: 60612217_the_peculiar_patient.html
+2026-05-25 00:06:00,259 [WARNING] 60617758_life_after_love_can_we_find_it_again.html: could not parse author from <title>: 'Life after love (Can we find it again?)'
+2026-05-25 00:06:00,272 [INFO] Added manifest entry: 60617758_life_after_love_can_we_find_it_again.html
+2026-05-25 00:06:00,275 [WARNING] 60631114_candlelight_whispers_me_where_to_go.html: could not parse author from <title>: 'Candlelight Whispers Me Where to Go'
+2026-05-25 00:06:00,280 [INFO] Added manifest entry: 60631114_candlelight_whispers_me_where_to_go.html
+2026-05-25 00:06:00,284 [WARNING] 60667915_you_look_so_pretty_when_youre_on_your_knees.html: could not parse author from <title>: 'you look so pretty when you're on your knees'
+2026-05-25 00:06:00,289 [INFO] Added manifest entry: 60667915_you_look_so_pretty_when_youre_on_your_knees.html
+2026-05-25 00:06:00,294 [WARNING] 60682354_close_to_you.html: could not parse author from <title>: 'Close to You'
+2026-05-25 00:06:00,299 [INFO] Added manifest entry: 60682354_close_to_you.html
+2026-05-25 00:06:00,325 [WARNING] 60700522_purple_and_green.html: could not parse author from <title>: 'Purple and Green'
+2026-05-25 00:06:00,360 [INFO] Added manifest entry: 60700522_purple_and_green.html
+2026-05-25 00:06:00,465 [WARNING] 60723781_its_never_quite_as_it_seems_hiyouve_got_mail.html: could not parse author from <title>: 'It's Never Quite As It Seems (Hi—You'Ve Got Mail)'
+2026-05-25 00:06:00,557 [INFO] Added manifest entry: 60723781_its_never_quite_as_it_seems_hiyouve_got_mail.html
+2026-05-25 00:06:00,562 [WARNING] 60736594_red_in_claw_red_in_love.html: could not parse author from <title>: 'Red in Claw, Red in Love'
+2026-05-25 00:06:00,569 [INFO] Added manifest entry: 60736594_red_in_claw_red_in_love.html
+2026-05-25 00:06:00,635 [WARNING] 60738175_youd_have_to_stop_the_world.html: could not parse author from <title>: 'You'd have to stop the world'
+2026-05-25 00:06:00,727 [INFO] Added manifest entry: 60738175_youd_have_to_stop_the_world.html
+2026-05-25 00:06:00,746 [WARNING] 60738349_theres_no_one_else_who_could_the_only_one_is_you.html: could not parse author from <title>: 'There's No One Else Who Could, the Only One Is You'
+2026-05-25 00:06:00,759 [INFO] Added manifest entry: 60738349_theres_no_one_else_who_could_the_only_one_is_you.html
+2026-05-25 00:06:00,781 [WARNING] 60739120_for_you_to_be_still.html: could not parse author from <title>: 'For You To Be Still'
+2026-05-25 00:06:00,807 [INFO] Added manifest entry: 60739120_for_you_to_be_still.html
+2026-05-25 00:06:00,838 [WARNING] 60742324_figured_you_out.html: could not parse author from <title>: 'Figured You Out'
+2026-05-25 00:06:00,876 [INFO] Added manifest entry: 60742324_figured_you_out.html
+2026-05-25 00:06:00,885 [WARNING] 60768184_someday_we_will_all_be.html: could not parse author from <title>: 'someday we will all be lying on our backs (free at last from income tax)'
+2026-05-25 00:06:00,895 [INFO] Added manifest entry: 60768184_someday_we_will_all_be.html
+2026-05-25 00:06:00,984 [WARNING] 60780265_vidal_books.html: could not parse author from <title>: 'Vidal Books'
+2026-05-25 00:06:01,076 [INFO] Added manifest entry: 60780265_vidal_books.html
+2026-05-25 00:06:01,100 [WARNING] 60792286_velvet_ring.html: could not parse author from <title>: 'Velvet Ring'
+2026-05-25 00:06:01,132 [INFO] Added manifest entry: 60792286_velvet_ring.html
+2026-05-25 00:06:01,156 [WARNING] 60796456_agathario_fake_dating_au.html: could not parse author from <title>: 'Agathario Fake Dating Au'
+2026-05-25 00:06:01,190 [INFO] Added manifest entry: 60796456_agathario_fake_dating_au.html
+2026-05-25 00:06:01,204 [WARNING] 60810751_within_reach.html: could not parse author from <title>: 'Within Reach'
+2026-05-25 00:06:01,223 [INFO] Added manifest entry: 60810751_within_reach.html
+2026-05-25 00:06:01,248 [WARNING] 60824317_let_loose_your_longing.html: could not parse author from <title>: 'let loose your longing'
+2026-05-25 00:06:01,281 [INFO] Added manifest entry: 60824317_let_loose_your_longing.html
+2026-05-25 00:06:01,293 [WARNING] 60858487_the_heart_of_death.html: could not parse author from <title>: 'The Heart of Death'
+2026-05-25 00:06:01,309 [INFO] Added manifest entry: 60858487_the_heart_of_death.html
+2026-05-25 00:06:01,339 [WARNING] 60865297_just_between_us_did_the_love_affair_maim_you_too.html: could not parse author from <title>: 'Just Between Us, Did the Love Affair Maim You Too'
+2026-05-25 00:06:01,361 [INFO] Added manifest entry: 60865297_just_between_us_did_the_love_affair_maim_you_too.html
+2026-05-25 00:06:01,370 [WARNING] 60901915_naughty_ampamp_nice.html: could not parse author from <title>: 'Naughty &Amp; Nice'
+2026-05-25 00:06:01,383 [INFO] Added manifest entry: 60901915_naughty_ampamp_nice.html
+2026-05-25 00:06:01,396 [WARNING] 60984145_my_side_of_the_story.html: could not parse author from <title>: 'My Side of the Story'
+2026-05-25 00:06:01,411 [INFO] Added manifest entry: 60984145_my_side_of_the_story.html
+2026-05-25 00:06:01,447 [WARNING] 61063744_my_love_mine_all_mine.html: could not parse author from <title>: 'my love, mine, all mine'
+2026-05-25 00:06:01,491 [INFO] Added manifest entry: 61063744_my_love_mine_all_mine.html
+2026-05-25 00:06:01,500 [WARNING] 61077781_unsatisfied_i_skip_my_pride.html: could not parse author from <title>: 'Unsatisfied, I Skip My Pride'
+2026-05-25 00:06:01,513 [INFO] Added manifest entry: 61077781_unsatisfied_i_skip_my_pride.html
+2026-05-25 00:06:01,613 [WARNING] 61081831_roommates_of_destruction.html: could not parse author from <title>: 'Roommates of Destruction'
+2026-05-25 00:06:01,723 [INFO] Added manifest entry: 61081831_roommates_of_destruction.html
+2026-05-25 00:06:01,969 [WARNING] 61125523_at_the_still_point_of_the_turning_world.html: could not parse author from <title>: 'At the Still Point of the Turning World'
+2026-05-25 00:06:02,232 [INFO] Added manifest entry: 61125523_at_the_still_point_of_the_turning_world.html
+2026-05-25 00:06:02,449 [WARNING] 61126990_my_boy_builds_coffins.html: could not parse author from <title>: 'my boy builds coffins'
+2026-05-25 00:06:02,677 [INFO] Added manifest entry: 61126990_my_boy_builds_coffins.html
+2026-05-25 00:06:02,680 [WARNING] 61154881_roster.html: could not parse author from <title>: 'Roster'
+2026-05-25 00:06:02,685 [INFO] Added manifest entry: 61154881_roster.html
+2026-05-25 00:06:02,690 [WARNING] 61180354_decemberism.html: could not parse author from <title>: 'Decemberism'
+2026-05-25 00:06:02,697 [INFO] Added manifest entry: 61180354_decemberism.html
+2026-05-25 00:06:02,714 [WARNING] 61208161_exceptions.html: could not parse author from <title>: 'Exceptions'
+2026-05-25 00:06:02,738 [INFO] Added manifest entry: 61208161_exceptions.html
+2026-05-25 00:06:02,780 [WARNING] 61208620_five_seconds.html: could not parse author from <title>: 'Five Seconds'
+2026-05-25 00:06:02,790 [INFO] Added manifest entry: 61208620_five_seconds.html
+2026-05-25 00:06:02,898 [WARNING] 61209526_the_gold_and_the_rust_the_color_erupts.html: could not parse author from <title>: 'The gold and the rust, the color erupts'
+2026-05-25 00:06:03,028 [INFO] Added manifest entry: 61209526_the_gold_and_the_rust_the_color_erupts.html
+2026-05-25 00:06:03,105 [WARNING] 61245343_unlock_thy_hidden_gate.html: could not parse author from <title>: 'Unlock Thy Hidden Gate'
+2026-05-25 00:06:03,201 [INFO] Added manifest entry: 61245343_unlock_thy_hidden_gate.html
+2026-05-25 00:06:03,213 [WARNING] 61254514_itll_all_work_out.html: could not parse author from <title>: 'It'll All Work Out'
+2026-05-25 00:06:03,229 [INFO] Added manifest entry: 61254514_itll_all_work_out.html
+2026-05-25 00:06:03,236 [WARNING] 61259392_heart_beats_like_a_drummer.html: could not parse author from <title>: 'Heart Beats Like a Drummer'
+2026-05-25 00:06:03,247 [INFO] Added manifest entry: 61259392_heart_beats_like_a_drummer.html
+2026-05-25 00:06:03,269 [WARNING] 61263814_the_world_reversed.html: could not parse author from <title>: 'The World Reversed'
+2026-05-25 00:06:03,294 [INFO] Added manifest entry: 61263814_the_world_reversed.html
+2026-05-25 00:06:03,302 [WARNING] 61280764_love_ampamp_politics.html: could not parse author from <title>: 'Love &Amp; Politics'
+2026-05-25 00:06:03,313 [INFO] Added manifest entry: 61280764_love_ampamp_politics.html
+2026-05-25 00:06:03,341 [WARNING] 61345132_meetcute.html: could not parse author from <title>: 'Meetcute'
+2026-05-25 00:06:03,354 [INFO] Added manifest entry: 61345132_meetcute.html
+2026-05-25 00:06:03,361 [WARNING] 61373383_mandevillas.html: could not parse author from <title>: 'Mandevillas'
+2026-05-25 00:06:03,372 [INFO] Added manifest entry: 61373383_mandevillas.html
+2026-05-25 00:06:03,381 [WARNING] 61401928_amor_prohibido.html: could not parse author from <title>: 'Amor Prohibido'
+2026-05-25 00:06:03,394 [INFO] Added manifest entry: 61401928_amor_prohibido.html
+2026-05-25 00:06:03,403 [WARNING] 61403194_kaleidoscope.html: could not parse author from <title>: 'kaleidoscope'
+2026-05-25 00:06:03,414 [INFO] Added manifest entry: 61403194_kaleidoscope.html
+2026-05-25 00:06:03,418 [WARNING] 61419481_merry_christmas_i_think_ill_miss_this_one_this.html: could not parse author from <title>: 'merry christmas (i think i'll miss this one this year)'
+2026-05-25 00:06:03,423 [INFO] Added manifest entry: 61419481_merry_christmas_i_think_ill_miss_this_one_this.html
+2026-05-25 00:06:03,443 [WARNING] 61474507_the_holiday.html: could not parse author from <title>: 'The Holiday'
+2026-05-25 00:06:03,470 [INFO] Added manifest entry: 61474507_the_holiday.html
+2026-05-25 00:06:03,487 [WARNING] 61496449_let_go.html: could not parse author from <title>: 'Let Go'
+2026-05-25 00:06:03,510 [INFO] Added manifest entry: 61496449_let_go.html
+2026-05-25 00:06:03,550 [WARNING] 61554538_my_safeword_is_safeword.html: could not parse author from <title>: 'my safeword is safeword'
+2026-05-25 00:06:03,598 [INFO] Added manifest entry: 61554538_my_safeword_is_safeword.html
+2026-05-25 00:06:03,626 [WARNING] 61598443_what_if_its_not_meant_for_me.html: could not parse author from <title>: 'What If It's Not Meant for Me?'
+2026-05-25 00:06:03,653 [INFO] Added manifest entry: 61598443_what_if_its_not_meant_for_me.html
+2026-05-25 00:06:03,871 [WARNING] 61599598_if_this_was_a_movie.html: could not parse author from <title>: 'If This Was a Movie'
+2026-05-25 00:06:04,159 [INFO] Added manifest entry: 61599598_if_this_was_a_movie.html
+2026-05-25 00:06:04,163 [WARNING] 61614124_i_will_wait_up_for_you_dear.html: could not parse author from <title>: 'I Will Wait Up for You, Dear'
+2026-05-25 00:06:04,167 [INFO] Added manifest entry: 61614124_i_will_wait_up_for_you_dear.html
+2026-05-25 00:06:04,172 [WARNING] 61642021_red_thread_of_fate.html: could not parse author from <title>: 'Red Thread of Fate'
+2026-05-25 00:06:04,179 [INFO] Added manifest entry: 61642021_red_thread_of_fate.html
+2026-05-25 00:06:04,191 [WARNING] 61650106_for_you_i_would_cross.html: could not parse author from <title>: 'for you, i would cross the line'
+2026-05-25 00:06:04,207 [INFO] Added manifest entry: 61650106_for_you_i_would_cross.html
+2026-05-25 00:06:04,321 [WARNING] 61712359_thirst_trap.html: could not parse author from <title>: 'Thirst (Trap)'
+2026-05-25 00:06:04,452 [INFO] Added manifest entry: 61712359_thirst_trap.html
+2026-05-25 00:06:04,459 [WARNING] 61733836_i_was_your_starry_eyed_lover_and_the_one_that_you.html: could not parse author from <title>: 'I Was Your Starry Eyed Lover and the One That You Saw'
+2026-05-25 00:06:04,470 [INFO] Added manifest entry: 61733836_i_was_your_starry_eyed_lover_and_the_one_that_you.html
+2026-05-25 00:06:04,478 [WARNING] 61800187_care_of.html: could not parse author from <title>: 'care of'
+2026-05-25 00:06:04,491 [INFO] Added manifest entry: 61800187_care_of.html
+2026-05-25 00:06:04,719 [WARNING] 61814836_the_thread_of_fate.html: could not parse author from <title>: 'The Thread Of Fate'
+2026-05-25 00:06:04,964 [INFO] Added manifest entry: 61814836_the_thread_of_fate.html
+2026-05-25 00:06:05,016 [WARNING] 61820164_summa_cum_laude.html: could not parse author from <title>: 'summa cum laude'
+2026-05-25 00:06:05,064 [INFO] Added manifest entry: 61820164_summa_cum_laude.html
+2026-05-25 00:06:05,132 [WARNING] 61850398_high_infidelity.html: could not parse author from <title>: 'High Infidelity'
+2026-05-25 00:06:05,213 [INFO] Added manifest entry: 61850398_high_infidelity.html
+2026-05-25 00:06:05,235 [WARNING] 61917550_the_bad_thing.html: could not parse author from <title>: 'The Bad Thing'
+2026-05-25 00:06:05,265 [INFO] Added manifest entry: 61917550_the_bad_thing.html
+2026-05-25 00:06:05,438 [WARNING] 62024398_somewhere_only_we_know_a_professor_au.html: could not parse author from <title>: 'Somewhere Only We Know ~ A Professor AU'
+2026-05-25 00:06:05,608 [INFO] Added manifest entry: 62024398_somewhere_only_we_know_a_professor_au.html
+2026-05-25 00:06:05,638 [WARNING] 62082778_scherzo.html: could not parse author from <title>: 'Scherzo'
+2026-05-25 00:06:05,668 [INFO] Added manifest entry: 62082778_scherzo.html
+2026-05-25 00:06:05,676 [WARNING] 62107414_Crimson.html: could not parse author from <title>: 'Crimson'
+2026-05-25 00:06:05,686 [INFO] Added manifest entry: 62107414_Crimson.html
+2026-05-25 00:06:05,712 [WARNING] 62134987_love_is_a_witch.html: could not parse author from <title>: 'Love Is a Witch'
+2026-05-25 00:06:05,748 [INFO] Added manifest entry: 62134987_love_is_a_witch.html
+2026-05-25 00:06:05,768 [WARNING] 62152813_where_we_belong.html: could not parse author from <title>: 'Where we belong'
+2026-05-25 00:06:05,792 [INFO] Added manifest entry: 62152813_where_we_belong.html
+2026-05-25 00:06:05,821 [WARNING] 62180950_crescendo.html: could not parse author from <title>: 'Crescendo'
+2026-05-25 00:06:05,856 [INFO] Added manifest entry: 62180950_crescendo.html
+2026-05-25 00:06:05,943 [WARNING] 62195077_im_sorry_i_love_you.html: could not parse author from <title>: 'I'm Sorry, I Love You'
+2026-05-25 00:06:06,025 [INFO] Added manifest entry: 62195077_im_sorry_i_love_you.html
+2026-05-25 00:06:06,031 [WARNING] 62248085_so_my_mother-in-law_is.html: could not parse author from <title>: 'so, my mother-in-law is god?'
+2026-05-25 00:06:06,039 [INFO] Added manifest entry: 62248085_so_my_mother-in-law_is.html
+2026-05-25 00:06:06,042 [WARNING] 62255211_what_a_night.html: could not parse author from <title>: 'What a Night'
+2026-05-25 00:06:06,047 [INFO] Added manifest entry: 62255211_what_a_night.html
+2026-05-25 00:06:06,055 [WARNING] 62265849_all_half_things.html: could not parse author from <title>: 'all half things'
+2026-05-25 00:06:06,066 [INFO] Added manifest entry: 62265849_all_half_things.html
+2026-05-25 00:06:06,133 [WARNING] 62267089_one_way_or_another.html: could not parse author from <title>: 'one way or another'
+2026-05-25 00:06:06,200 [INFO] Added manifest entry: 62267089_one_way_or_another.html
+2026-05-25 00:06:06,246 [WARNING] 62269809_Youre_awful_I_love_you.html: could not parse author from <title>: 'You're awful. I love you!'
+2026-05-25 00:06:06,308 [INFO] Added manifest entry: 62269809_Youre_awful_I_love_you.html
+2026-05-25 00:06:06,313 [WARNING] 62291035_blood_in_the_water_everyone_wants_her.html: could not parse author from <title>: 'blood in the water, everyone wants her'
+2026-05-25 00:06:06,319 [INFO] Added manifest entry: 62291035_blood_in_the_water_everyone_wants_her.html
+2026-05-25 00:06:06,327 [WARNING] 62313307_adagietto.html: could not parse author from <title>: 'Adagietto'
+2026-05-25 00:06:06,337 [INFO] Added manifest entry: 62313307_adagietto.html
+2026-05-25 00:06:06,361 [WARNING] 62325949_like_a_hurricane.html: could not parse author from <title>: 'like a hurricane'
+2026-05-25 00:06:06,389 [INFO] Added manifest entry: 62325949_like_a_hurricane.html
+2026-05-25 00:06:06,408 [WARNING] 62356414_if_youre_not_falling_youre_not_trying.html: could not parse author from <title>: 'If you’re not falling, you’re not trying'
+2026-05-25 00:06:06,467 [INFO] Added manifest entry: 62356414_if_youre_not_falling_youre_not_trying.html
+2026-05-25 00:06:06,475 [WARNING] 62385640_want_take_have.html: could not parse author from <title>: 'want, take, have'
+2026-05-25 00:06:06,484 [INFO] Added manifest entry: 62385640_want_take_have.html
+2026-05-25 00:06:06,540 [WARNING] 62417317_albatross.html: could not parse author from <title>: 'albatross'
+2026-05-25 00:06:06,590 [INFO] Added manifest entry: 62417317_albatross.html
+2026-05-25 00:06:06,598 [WARNING] 62421946_sex_love_unholy_truth.html: could not parse author from <title>: 'sex, love, unholy truth'
+2026-05-25 00:06:06,607 [INFO] Added manifest entry: 62421946_sex_love_unholy_truth.html
+2026-05-25 00:06:06,716 [WARNING] 62503864_well_i_wonder.html: could not parse author from <title>: 'Well I Wonder'
+2026-05-25 00:06:06,853 [INFO] Added manifest entry: 62503864_well_i_wonder.html
+2026-05-25 00:06:06,922 [WARNING] 62507077_put_your_fangs_in_me.html: could not parse author from <title>: 'put your fangs in me'
+2026-05-25 00:06:07,005 [INFO] Added manifest entry: 62507077_put_your_fangs_in_me.html
+2026-05-25 00:06:07,088 [WARNING] 62535538_glitter_glue_and_signs_of_life.html: could not parse author from <title>: 'Glitter, Glue, and Signs of Life'
+2026-05-25 00:06:07,176 [INFO] Added manifest entry: 62535538_glitter_glue_and_signs_of_life.html
+2026-05-25 00:06:07,224 [WARNING] 62546668_wicked_witchcraft.html: could not parse author from <title>: 'Wicked Witchcraft'
+2026-05-25 00:06:07,279 [INFO] Added manifest entry: 62546668_wicked_witchcraft.html
+2026-05-25 00:06:07,445 [WARNING] 62585464_mrs_ampamp_mrs_harknessvidal.html: could not parse author from <title>: 'Mrs &amp; Mrs Harkness-Vidal'
+2026-05-25 00:06:07,611 [INFO] Added manifest entry: 62585464_mrs_ampamp_mrs_harknessvidal.html
+2026-05-25 00:06:07,640 [WARNING] 62589532_harkness.html: could not parse author from <title>: 'Harkness'
+2026-05-25 00:06:07,663 [INFO] Added manifest entry: 62589532_harkness.html
+2026-05-25 00:06:07,694 [WARNING] 62591797_time_in_a_bottle.html: could not parse author from <title>: 'Time in a Bottle'
+2026-05-25 00:06:07,731 [INFO] Added manifest entry: 62591797_time_in_a_bottle.html
+2026-05-25 00:06:07,778 [WARNING] 62592292_take_it_from_the_top_you_are_a_bottom.html: could not parse author from <title>: 'Take it from the top (you are a bottom)'
+2026-05-25 00:06:07,833 [INFO] Added manifest entry: 62592292_take_it_from_the_top_you_are_a_bottom.html
+2026-05-25 00:06:07,845 [WARNING] 62615323_questions.html: could not parse author from <title>: 'Questions'
+2026-05-25 00:06:07,860 [INFO] Added manifest entry: 62615323_questions.html
+2026-05-25 00:06:07,902 [WARNING] 62675485_get_you_where_you_wanna.html: could not parse author from <title>: 'get you where you wanna go, if you know what i mean'
+2026-05-25 00:06:07,930 [INFO] Added manifest entry: 62675485_get_you_where_you_wanna.html
+2026-05-25 00:06:07,936 [WARNING] 62682502_love_is_a_four_letter_word.html: could not parse author from <title>: 'Love Is a Four Letter Word'
+2026-05-25 00:06:07,945 [INFO] Added manifest entry: 62682502_love_is_a_four_letter_word.html
+2026-05-25 00:06:08,006 [WARNING] 62737456_not_my_type.html: could not parse author from <title>: 'Not My Type'
+2026-05-25 00:06:08,076 [INFO] Added manifest entry: 62737456_not_my_type.html
+2026-05-25 00:06:08,191 [WARNING] 62739748_luminous.html: could not parse author from <title>: 'Luminous'
+2026-05-25 00:06:08,339 [INFO] Added manifest entry: 62739748_luminous.html
+2026-05-25 00:06:08,343 [WARNING] 62837335_the_time_it_takes_to_let_go.html: could not parse author from <title>: 'The Time It Takes To Let Go'
+2026-05-25 00:06:08,349 [INFO] Added manifest entry: 62837335_the_time_it_takes_to_let_go.html
+2026-05-25 00:06:08,354 [WARNING] 62841521_for_the_love_of_spring.html: could not parse author from <title>: 'For the Love of Spring'
+2026-05-25 00:06:08,360 [INFO] Added manifest entry: 62841521_for_the_love_of_spring.html
+2026-05-25 00:06:08,465 [WARNING] 62861993_my_cries_and_your_whispers.html: could not parse author from <title>: 'My Cries and Your Whispers'
+2026-05-25 00:06:08,571 [INFO] Added manifest entry: 62861993_my_cries_and_your_whispers.html
+2026-05-25 00:06:08,671 [WARNING] 62925352_is_it_casual_now.html: could not parse author from <title>: 'Is It Casual Now?'
+2026-05-25 00:06:08,779 [INFO] Added manifest entry: 62925352_is_it_casual_now.html
+2026-05-25 00:06:08,785 [WARNING] 62935369_love_offline.html: could not parse author from <title>: 'love, offline'
+2026-05-25 00:06:08,793 [INFO] Added manifest entry: 62935369_love_offline.html
+2026-05-25 00:06:08,825 [WARNING] 62959210_power_play.html: could not parse author from <title>: 'Power Play'
+2026-05-25 00:06:08,869 [INFO] Added manifest entry: 62959210_power_play.html
+2026-05-25 00:06:08,884 [WARNING] 62975017_how_many_corners_do_i_have_to_turn_how_many_times.html: could not parse author from <title>: 'how many corners do i have to turn? (how many times do i have to learn?)'
+2026-05-25 00:06:08,900 [INFO] Added manifest entry: 62975017_how_many_corners_do_i_have_to_turn_how_many_times.html
+2026-05-25 00:06:09,008 [WARNING] 63026209_ban_all_the_music.html: could not parse author from <title>: 'Ban All the Music'
+2026-05-25 00:06:09,134 [INFO] Added manifest entry: 63026209_ban_all_the_music.html
+2026-05-25 00:06:09,140 [WARNING] 63046258_talk_some_sense_to_me.html: could not parse author from <title>: 'Talk Some Sense to Me'
+2026-05-25 00:06:09,146 [INFO] Added manifest entry: 63046258_talk_some_sense_to_me.html
+2026-05-25 00:06:09,148 [WARNING] 63144823_night_verses.html: could not parse author from <title>: 'Night Verses'
+2026-05-25 00:06:09,151 [INFO] Added manifest entry: 63144823_night_verses.html
+2026-05-25 00:06:09,311 [WARNING] 63145963_its_strictly_business.html: could not parse author from <title>: 'It's strictly business'
+2026-05-25 00:06:09,491 [INFO] Added manifest entry: 63145963_its_strictly_business.html
+2026-05-25 00:06:09,495 [WARNING] 63196099_take_it_easy.html: could not parse author from <title>: 'Take It Easy'
+2026-05-25 00:06:09,499 [INFO] Added manifest entry: 63196099_take_it_easy.html
+2026-05-25 00:06:09,539 [WARNING] 63244063_catch_me_when_i_fall_for_you.html: could not parse author from <title>: 'Catch Me When I Fall for You'
+2026-05-25 00:06:09,585 [INFO] Added manifest entry: 63244063_catch_me_when_i_fall_for_you.html
+2026-05-25 00:06:09,637 [WARNING] 63309742_guilty_as_sin.html: could not parse author from <title>: 'guilty as sin'
+2026-05-25 00:06:09,683 [INFO] Added manifest entry: 63309742_guilty_as_sin.html
+2026-05-25 00:06:09,735 [WARNING] 63343102_wicked_game.html: could not parse author from <title>: 'Wicked Game'
+2026-05-25 00:06:09,798 [INFO] Added manifest entry: 63343102_wicked_game.html
+2026-05-25 00:06:09,803 [WARNING] 63349309_now_we_drop_our_composure.html: could not parse author from <title>: 'Now We Drop Our Composure'
+2026-05-25 00:06:09,810 [INFO] Added manifest entry: 63349309_now_we_drop_our_composure.html
+2026-05-25 00:06:09,832 [WARNING] 63360778_all_the_things_we_could_do.html: could not parse author from <title>: 'All the Things We Could Do'
+2026-05-25 00:06:09,864 [INFO] Added manifest entry: 63360778_all_the_things_we_could_do.html
+2026-05-25 00:06:09,962 [WARNING] 63384415_rio_vidal_does_not_give_a_damn.html: could not parse author from <title>: 'Rio Vidal Does Not Give a Damn'
+2026-05-25 00:06:10,067 [INFO] Added manifest entry: 63384415_rio_vidal_does_not_give_a_damn.html
+2026-05-25 00:06:10,082 [WARNING] 63423910_its_just_in_my_nature.html: could not parse author from <title>: 'It's Just in My Nature'
+2026-05-25 00:06:10,104 [INFO] Added manifest entry: 63423910_its_just_in_my_nature.html
+2026-05-25 00:06:10,124 [WARNING] 63442861_what_if_my_heart_belongs_to_you.html: could not parse author from <title>: 'what if my heart belongs to you?'
+2026-05-25 00:06:10,148 [INFO] Added manifest entry: 63442861_what_if_my_heart_belongs_to_you.html
+2026-05-25 00:06:10,192 [WARNING] 63473356_accidental_add.html: could not parse author from <title>: 'Accidental Add'
+2026-05-25 00:06:10,231 [INFO] Added manifest entry: 63473356_accidental_add.html
+2026-05-25 00:06:10,364 [WARNING] 63543898_a_tentative_ellipsis_the_parting_of_your_lips_and.html: could not parse author from <title>: 'A Tentative'
+2026-05-25 00:06:10,511 [INFO] Added manifest entry: 63543898_a_tentative_ellipsis_the_parting_of_your_lips_and.html
+2026-05-25 00:06:10,766 [WARNING] 63598684_second_chances.html: could not parse author from <title>: 'Second Chances'
+2026-05-25 00:06:11,038 [INFO] Added manifest entry: 63598684_second_chances.html
+2026-05-25 00:06:11,153 [WARNING] 63616156_when_heartbreak_meets_jealousy.html: could not parse author from <title>: 'When Heartbreak Meets Jealousy'
+2026-05-25 00:06:11,281 [INFO] Added manifest entry: 63616156_when_heartbreak_meets_jealousy.html
+2026-05-25 00:06:11,384 [WARNING] 63637597_the_space_between_notes.html: could not parse author from <title>: 'The Space Between Notes'
+2026-05-25 00:06:11,505 [INFO] Added manifest entry: 63637597_the_space_between_notes.html
+2026-05-25 00:06:11,618 [WARNING] 63638671_number_13.html: could not parse author from <title>: 'Number 13'
+2026-05-25 00:06:11,696 [INFO] Added manifest entry: 63638671_number_13.html
+2026-05-25 00:06:11,797 [WARNING] 63639295_the_best_medicine.html: could not parse author from <title>: 'The Best Medicine'
+2026-05-25 00:06:11,900 [INFO] Added manifest entry: 63639295_the_best_medicine.html
+2026-05-25 00:06:11,905 [WARNING] 63647167_all_the_time_in_the_world.html: could not parse author from <title>: 'All The Time In The World'
+2026-05-25 00:06:11,912 [INFO] Added manifest entry: 63647167_all_the_time_in_the_world.html
+2026-05-25 00:06:11,931 [WARNING] 63694918_i_wonder_which_cup_youll_drink_from_i_hope_its.html: could not parse author from <title>: 'i wonder which cup you'll drink from (i hope it's mine)'
+2026-05-25 00:06:11,954 [INFO] Added manifest entry: 63694918_i_wonder_which_cup_youll_drink_from_i_hope_its.html
+2026-05-25 00:06:11,987 [WARNING] 63772108_i_still_shut_my_eyes.html: could not parse author from <title>: 'I Still Shut My Eyes'
+2026-05-25 00:06:12,025 [INFO] Added manifest entry: 63772108_i_still_shut_my_eyes.html
+2026-05-25 00:06:12,190 [WARNING] 63813619_we_found_each_other_in_the_dark.html: could not parse author from <title>: 'We Found Each Other in the Dark'
+2026-05-25 00:06:12,363 [INFO] Added manifest entry: 63813619_we_found_each_other_in_the_dark.html
+2026-05-25 00:06:12,395 [WARNING] 63873262_the_tales_of_new_salem.html: could not parse author from <title>: 'The Tales of New Salem'
+2026-05-25 00:06:12,421 [INFO] Added manifest entry: 63873262_the_tales_of_new_salem.html
+2026-05-25 00:06:12,483 [WARNING] 63879877_why_dont_you_want_me.html: could not parse author from <title>: 'why don't you want me?'
+2026-05-25 00:06:12,558 [INFO] Added manifest entry: 63879877_why_dont_you_want_me.html
+2026-05-25 00:06:12,561 [WARNING] 63911329_we_dont_fit_in_the_grand_design.html: could not parse author from <title>: 'We Don't Fit In The Grand Design'
+2026-05-25 00:06:12,566 [INFO] Added manifest entry: 63911329_we_dont_fit_in_the_grand_design.html
+2026-05-25 00:06:12,570 [WARNING] 63967093_ask_me_nicely_from_your_knees.html: could not parse author from <title>: 'ask me nicely from your knees'
+2026-05-25 00:06:12,575 [INFO] Added manifest entry: 63967093_ask_me_nicely_from_your_knees.html
+2026-05-25 00:06:12,763 [WARNING] 63986338_chance_to_fix.html: could not parse author from <title>: 'Chance to Fix'
+2026-05-25 00:06:12,952 [INFO] Added manifest entry: 63986338_chance_to_fix.html
+2026-05-25 00:06:13,010 [WARNING] 63999277_reaching_out_for_more.html: could not parse author from <title>: 'Reaching Out For More'
+2026-05-25 00:06:13,076 [INFO] Added manifest entry: 63999277_reaching_out_for_more.html
+2026-05-25 00:06:13,174 [WARNING] 64036210_cant_be_a_good_girl_even_if_i_tried.html: could not parse author from <title>: 'Can't Be a Good Girl, Even If I Tried'
+2026-05-25 00:06:13,269 [INFO] Added manifest entry: 64036210_cant_be_a_good_girl_even_if_i_tried.html
+2026-05-25 00:06:13,272 [WARNING] 64068667_cause_nobody_knows_you_better.html: could not parse author from <title>: ''Cause Nobody Knows You Better'
+2026-05-25 00:06:13,276 [INFO] Added manifest entry: 64068667_cause_nobody_knows_you_better.html
+2026-05-25 00:06:13,330 [WARNING] 64133626_honey_youre_familiar.html: could not parse author from <title>: 'honey, you're familiar'
+2026-05-25 00:06:13,394 [INFO] Added manifest entry: 64133626_honey_youre_familiar.html
+2026-05-25 00:06:13,463 [WARNING] 64167130_illicit_affairs.html: could not parse author from <title>: 'illicit affairs'
+2026-05-25 00:06:13,527 [INFO] Added manifest entry: 64167130_illicit_affairs.html
+2026-05-25 00:06:13,530 [WARNING] 64176607_whos_going_to_tell_me_no.html: could not parse author from <title>: 'who's going to tell me no?'
+2026-05-25 00:06:13,534 [INFO] Added manifest entry: 64176607_whos_going_to_tell_me_no.html
+2026-05-25 00:06:13,580 [WARNING] 64272802_feel_the_love_of_her.html: could not parse author from <title>: 'feel the love of her caress (she will be your living end)'
+2026-05-25 00:06:13,637 [INFO] Added manifest entry: 64272802_feel_the_love_of_her.html
+2026-05-25 00:06:13,665 [WARNING] 64291306_pushing_it_down_and_praying.html: could not parse author from <title>: 'Pushing It Down and Praying'
+2026-05-25 00:06:13,699 [INFO] Added manifest entry: 64291306_pushing_it_down_and_praying.html
+2026-05-25 00:06:13,703 [WARNING] 64491997_ill_be_your_distraction.html: could not parse author from <title>: 'I'll Be Your Distraction'
+2026-05-25 00:06:13,707 [INFO] Added manifest entry: 64491997_ill_be_your_distraction.html
+2026-05-25 00:06:13,865 [WARNING] 64539574_god_knows_you_need_it.html: could not parse author from <title>: 'God Knows You Need It'
+2026-05-25 00:06:13,982 [INFO] Added manifest entry: 64539574_god_knows_you_need_it.html
+2026-05-25 00:06:14,033 [WARNING] 64543360_she_looks_like_the_real_thing_she_tastes_like_the.html: could not parse author from <title>: 'she looks like the real thing (she tastes like the real thing)'
+2026-05-25 00:06:14,094 [INFO] Added manifest entry: 64543360_she_looks_like_the_real_thing_she_tastes_like_the.html
+2026-05-25 00:06:14,244 [WARNING] 64573144_i_tore_you_apart_in_my_head.html: could not parse author from <title>: 'I Tore You Apart In My Head'
+2026-05-25 00:06:14,399 [INFO] Added manifest entry: 64573144_i_tore_you_apart_in_my_head.html
+2026-05-25 00:06:14,471 [WARNING] 64578517_how_it_started.html: could not parse author from <title>: 'How It Started'
+2026-05-25 00:06:14,557 [INFO] Added manifest entry: 64578517_how_it_started.html
+2026-05-25 00:06:14,767 [WARNING] 64589716_but_we_cant.html: could not parse author from <title>: 'But We Can't'
+2026-05-25 00:06:14,982 [INFO] Added manifest entry: 64589716_but_we_cant.html
+2026-05-25 00:06:15,056 [WARNING] 64606348_god_is_a_woman.html: could not parse author from <title>: 'God is a woman'
+2026-05-25 00:06:15,144 [INFO] Added manifest entry: 64606348_god_is_a_woman.html
+2026-05-25 00:06:15,162 [WARNING] 64617655_beneath_the_scars.html: could not parse author from <title>: 'Beneath the scars'
+2026-05-25 00:06:15,183 [INFO] Added manifest entry: 64617655_beneath_the_scars.html
+2026-05-25 00:06:15,227 [WARNING] 64656664_the_case_of_the_robbery_gone_wrong.html: could not parse author from <title>: 'the case of the robbery gone wrong'
+2026-05-25 00:06:15,249 [INFO] Added manifest entry: 64656664_the_case_of_the_robbery_gone_wrong.html
+2026-05-25 00:06:15,293 [WARNING] 64663663_tempus_voluntas_spatium.html: could not parse author from <title>: 'Tempus, Voluntas, Spatium'
+2026-05-25 00:06:15,343 [INFO] Added manifest entry: 64663663_tempus_voluntas_spatium.html
+2026-05-25 00:06:15,512 [WARNING] 64684756_falling_for_the_enemy.html: could not parse author from <title>: 'Falling for the Enemy'
+2026-05-25 00:06:15,704 [INFO] Added manifest entry: 64684756_falling_for_the_enemy.html
+2026-05-25 00:06:15,712 [WARNING] 64714843_five_days_four_nights.html: could not parse author from <title>: 'Five Days, Four Nights'
+2026-05-25 00:06:15,721 [INFO] Added manifest entry: 64714843_five_days_four_nights.html
+2026-05-25 00:06:15,832 [WARNING] 64778476_by_blood_and_bloom.html: could not parse author from <title>: 'By Blood and Bloom'
+2026-05-25 00:06:15,957 [INFO] Added manifest entry: 64778476_by_blood_and_bloom.html
+2026-05-25 00:06:15,970 [WARNING] 64803190_astonishment_and_joy.html: could not parse author from <title>: 'astonishment and joy'
+2026-05-25 00:06:15,985 [INFO] Added manifest entry: 64803190_astonishment_and_joy.html
+2026-05-25 00:06:16,078 [WARNING] 64807855_in_the_shadows_of_the_pines.html: could not parse author from <title>: 'In The Shadows of the Pines'
+2026-05-25 00:06:16,178 [INFO] Added manifest entry: 64807855_in_the_shadows_of_the_pines.html
+2026-05-25 00:06:16,196 [WARNING] 64835218_udon_know_how_much_i_crave_you.html: could not parse author from <title>: 'udon know how much I crave you'
+2026-05-25 00:06:16,215 [INFO] Added manifest entry: 64835218_udon_know_how_much_i_crave_you.html
+2026-05-25 00:06:16,221 [WARNING] 64844032_garden_of_eden.html: could not parse author from <title>: 'garden of eden'
+2026-05-25 00:06:16,228 [INFO] Added manifest entry: 64844032_garden_of_eden.html
+2026-05-25 00:06:16,329 [WARNING] 64941802_work_and_play_ball.html: could not parse author from <title>: 'Work and (Play Ball)'
+2026-05-25 00:06:16,436 [INFO] Added manifest entry: 64941802_work_and_play_ball.html
+2026-05-25 00:06:16,454 [WARNING] 64985122_the_heat_is_on.html: could not parse author from <title>: 'The Heat Is On'
+2026-05-25 00:06:16,476 [INFO] Added manifest entry: 64985122_the_heat_is_on.html
+2026-05-25 00:06:16,484 [WARNING] 65003722_i_dont_care_that_youre_a_stoner_fall_right_into_me.html: could not parse author from <title>: 'i don’t care that you’re a stoner (fall right into me)'
+2026-05-25 00:06:16,493 [INFO] Added manifest entry: 65003722_i_dont_care_that_youre_a_stoner_fall_right_into_me.html
+2026-05-25 00:06:16,511 [WARNING] 65056900_ill_be_your_garbage_man.html: could not parse author from <title>: 'I'll Be Your Garbage Man'
+2026-05-25 00:06:16,533 [INFO] Added manifest entry: 65056900_ill_be_your_garbage_man.html
+2026-05-25 00:06:16,649 [WARNING] 65129329_rented_hearts.html: could not parse author from <title>: 'Rented Hearts'
+2026-05-25 00:06:16,774 [INFO] Added manifest entry: 65129329_rented_hearts.html
+2026-05-25 00:06:16,777 [WARNING] 65243767_green_is_the_colour_of_her_kind.html: could not parse author from <title>: 'green is the colour of her kind'
+2026-05-25 00:06:16,781 [INFO] Added manifest entry: 65243767_green_is_the_colour_of_her_kind.html
+2026-05-25 00:06:16,980 [WARNING] 65268397_night_shift.html: could not parse author from <title>: 'night shift'
+2026-05-25 00:06:17,195 [INFO] Added manifest entry: 65268397_night_shift.html
+2026-05-25 00:06:17,208 [WARNING] 65301250_obsessed.html: could not parse author from <title>: 'Obsessed'
+2026-05-25 00:06:17,224 [INFO] Added manifest entry: 65301250_obsessed.html
+2026-05-25 00:06:17,228 [WARNING] 65426791_baby_its_fate_not_luck.html: could not parse author from <title>: 'baby, it's fate, not luck'
+2026-05-25 00:06:17,232 [INFO] Added manifest entry: 65426791_baby_its_fate_not_luck.html
+2026-05-25 00:06:17,237 [WARNING] 65451649_she_depends_on_you.html: could not parse author from <title>: 'She Depends on You'
+2026-05-25 00:06:17,243 [INFO] Added manifest entry: 65451649_she_depends_on_you.html
+2026-05-25 00:06:17,314 [WARNING] 65476798_family_line.html: could not parse author from <title>: 'family line'
+2026-05-25 00:06:17,351 [INFO] Added manifest entry: 65476798_family_line.html
+2026-05-25 00:06:17,365 [WARNING] 65557984_ill_hear_you_even_when_you_cant_speak.html: could not parse author from <title>: 'I’ll hear you even when you can’t speak'
+2026-05-25 00:06:17,383 [INFO] Added manifest entry: 65557984_ill_hear_you_even_when_you_cant_speak.html
+2026-05-25 00:06:17,393 [WARNING] 65671351_the_devil_you_know.html: could not parse author from <title>: 'the devil you know'
+2026-05-25 00:06:17,405 [INFO] Added manifest entry: 65671351_the_devil_you_know.html
+2026-05-25 00:06:17,450 [WARNING] 65671972_agatha_all_along_week_2025.html: could not parse author from <title>: 'Agatha All Along Week 2025'
+2026-05-25 00:06:17,481 [INFO] Added manifest entry: 65671972_agatha_all_along_week_2025.html
+2026-05-25 00:06:17,485 [WARNING] 65679964_and_well_be_together_forever_ampamp_ever_more.html: could not parse author from <title>: 'And We'll Be Together (Forever &amp; Ever More)'
+2026-05-25 00:06:17,491 [INFO] Added manifest entry: 65679964_and_well_be_together_forever_ampamp_ever_more.html
+2026-05-25 00:06:17,496 [WARNING] 65690266_certified_preowned.html: could not parse author from <title>: 'Certified Pre-Owned'
+2026-05-25 00:06:17,502 [INFO] Added manifest entry: 65690266_certified_preowned.html
+2026-05-25 00:06:17,507 [WARNING] 65706430_you_make_loving_fun.html: could not parse author from <title>: 'You Make Loving Fun'
+2026-05-25 00:06:17,513 [INFO] Added manifest entry: 65706430_you_make_loving_fun.html
+2026-05-25 00:06:17,541 [WARNING] 65710069_cool_about_it.html: could not parse author from <title>: 'Cool About it'
+2026-05-25 00:06:17,575 [INFO] Added manifest entry: 65710069_cool_about_it.html
+2026-05-25 00:06:17,586 [WARNING] 65733055_blade_of_grass.html: could not parse author from <title>: 'blade of grass'
+2026-05-25 00:06:17,599 [INFO] Added manifest entry: 65733055_blade_of_grass.html
+2026-05-25 00:06:17,607 [WARNING] 65733829_juxtaposition_in_fate.html: could not parse author from <title>: 'juxtaposition in fate'
+2026-05-25 00:06:17,616 [INFO] Added manifest entry: 65733829_juxtaposition_in_fate.html
+2026-05-25 00:06:17,625 [WARNING] 65740978_let_me_wrap_my_teeth_around_the_world.html: could not parse author from <title>: 'Let me wrap my teeth around the world'
+2026-05-25 00:06:17,636 [INFO] Added manifest entry: 65740978_let_me_wrap_my_teeth_around_the_world.html
+2026-05-25 00:06:17,674 [WARNING] 65761876_love_me_tender.html: could not parse author from <title>: 'Love me tender'
+2026-05-25 00:06:17,720 [INFO] Added manifest entry: 65761876_love_me_tender.html
+2026-05-25 00:06:17,751 [WARNING] 65764210_The_Teacher_Trap.html: could not parse author from <title>: 'The Teacher Trap'
+2026-05-25 00:06:17,777 [INFO] Added manifest entry: 65764210_The_Teacher_Trap.html
+2026-05-25 00:06:17,785 [WARNING] 65781208_this_time_you_wont_leave.html: could not parse author from <title>: 'this time you won’t leave me sinking'
+2026-05-25 00:06:17,795 [INFO] Added manifest entry: 65781208_this_time_you_wont_leave.html
+2026-05-25 00:06:17,808 [WARNING] 65781856_just_hold_on.html: could not parse author from <title>: 'just hold on'
+2026-05-25 00:06:17,823 [INFO] Added manifest entry: 65781856_just_hold_on.html
+2026-05-25 00:06:17,842 [WARNING] 65811607_ill_give_what_i_get.html: could not parse author from <title>: 'I'll Give What I Get'
+2026-05-25 00:06:17,863 [INFO] Added manifest entry: 65811607_ill_give_what_i_get.html
+2026-05-25 00:06:17,870 [WARNING] 65819008_kiss_my_petals_weave_me_through_a_dream.html: could not parse author from <title>: 'kiss my petals, weave me through a dream'
+2026-05-25 00:06:17,878 [INFO] Added manifest entry: 65819008_kiss_my_petals_weave_me_through_a_dream.html
+2026-05-25 00:06:17,885 [WARNING] 65824672_Nightmare_of_a_Dream.html: could not parse author from <title>: 'Nightmare of a Dream Girl'
+2026-05-25 00:06:17,893 [INFO] Added manifest entry: 65824672_Nightmare_of_a_Dream.html
+2026-05-25 00:06:17,897 [WARNING] 65825197_its_bloody_and_raw_but_i_swear_it_is_sweet.html: could not parse author from <title>: 'It's bloody and raw, but I swear it is sweet'
+2026-05-25 00:06:17,902 [INFO] Added manifest entry: 65825197_its_bloody_and_raw_but_i_swear_it_is_sweet.html
+2026-05-25 00:06:17,909 [WARNING] 65827327_bewitched.html: could not parse author from <title>: 'Bewitched'
+2026-05-25 00:06:17,916 [INFO] Added manifest entry: 65827327_bewitched.html
+2026-05-25 00:06:17,924 [WARNING] 65829805_dea_pascit_corvos.html: could not parse author from <title>: 'dea pascit corvos'
+2026-05-25 00:06:17,935 [INFO] Added manifest entry: 65829805_dea_pascit_corvos.html
+2026-05-25 00:06:17,943 [WARNING] 65873035_im_yours.html: could not parse author from <title>: 'I'm Yours'
+2026-05-25 00:06:17,952 [INFO] Added manifest entry: 65873035_im_yours.html
+2026-05-25 00:06:17,961 [WARNING] 65882953_a_drunken_menace.html: could not parse author from <title>: 'A drunken menace'
+2026-05-25 00:06:17,971 [INFO] Added manifest entry: 65882953_a_drunken_menace.html
+2026-05-25 00:06:17,979 [WARNING] 65895589_the_dare.html: could not parse author from <title>: 'The Dare'
+2026-05-25 00:06:17,989 [INFO] Added manifest entry: 65895589_the_dare.html
+2026-05-25 00:06:17,993 [WARNING] 66081787_oh_the_sunlit_haze.html: could not parse author from <title>: 'Oh, The Sunlit Haze'
+2026-05-25 00:06:17,998 [INFO] Added manifest entry: 66081787_oh_the_sunlit_haze.html
+2026-05-25 00:06:18,062 [WARNING] 66087052_you_may_not_be_mine_but_i_could_be_yours.html: could not parse author from <title>: 'you may not be mine (but i could be yours)'
+2026-05-25 00:06:18,121 [INFO] Added manifest entry: 66087052_you_may_not_be_mine_but_i_could_be_yours.html
+2026-05-25 00:06:18,144 [WARNING] 66106753_bound_by_oath_undone_by_you.html: could not parse author from <title>: 'Bound By Oath, Undone by You'
+2026-05-25 00:06:18,171 [INFO] Added manifest entry: 66106753_bound_by_oath_undone_by_you.html
+2026-05-25 00:06:18,210 [WARNING] 66114247_bush_league.html: could not parse author from <title>: 'Bush League'
+2026-05-25 00:06:18,256 [INFO] Added manifest entry: 66114247_bush_league.html
+2026-05-25 00:06:18,276 [WARNING] 66234415_where_art_thou_why_not.html: could not parse author from <title>: 'where art thou, why not uponeth me?'
+2026-05-25 00:06:18,302 [INFO] Added manifest entry: 66234415_where_art_thou_why_not.html
+2026-05-25 00:06:18,330 [WARNING] 66257017_the_beach_house.html: could not parse author from <title>: 'The Beach House'
+2026-05-25 00:06:18,351 [INFO] Added manifest entry: 66257017_the_beach_house.html
+2026-05-25 00:06:18,365 [WARNING] 66258856_i_follow_your_perfume.html: could not parse author from <title>: 'I follow your perfume'
+2026-05-25 00:06:18,381 [INFO] Added manifest entry: 66258856_i_follow_your_perfume.html
+2026-05-25 00:06:18,416 [WARNING] 66314887_wrong_number.html: could not parse author from <title>: 'Wrong Number'
+2026-05-25 00:06:18,458 [INFO] Added manifest entry: 66314887_wrong_number.html
+2026-05-25 00:06:18,500 [WARNING] 66586843_eight.html: could not parse author from <title>: 'Eight'
+2026-05-25 00:06:18,550 [INFO] Added manifest entry: 66586843_eight.html
+2026-05-25 00:06:18,588 [WARNING] 66656089_The_Poison_Im_Drawn_to.html: could not parse author from <title>: 'The Poison I'm Drawn to'
+2026-05-25 00:06:18,624 [INFO] Added manifest entry: 66656089_The_Poison_Im_Drawn_to.html
+2026-05-25 00:06:18,667 [WARNING] 66675667_youll_find_me_on_my_tallest_tiptoes.html: could not parse author from <title>: 'you’ll find me on my tallest tiptoes'
+2026-05-25 00:06:18,717 [INFO] Added manifest entry: 66675667_youll_find_me_on_my_tallest_tiptoes.html
+2026-05-25 00:06:18,725 [WARNING] 66676834_what_to_do_when_you_are_dead.html: could not parse author from <title>: 'What to Do When You Are Dead'
+2026-05-25 00:06:18,733 [INFO] Added manifest entry: 66676834_what_to_do_when_you_are_dead.html
+2026-05-25 00:06:18,763 [WARNING] 66783133_that_which_is_not_common.html: could not parse author from <title>: 'That Which is Not Common'
+2026-05-25 00:06:18,800 [INFO] Added manifest entry: 66783133_that_which_is_not_common.html
+2026-05-25 00:06:18,908 [WARNING] 66895519_harkness_pathology.html: could not parse author from <title>: 'Harkness Pathology'
+2026-05-25 00:06:19,023 [INFO] Added manifest entry: 66895519_harkness_pathology.html
+2026-05-25 00:06:19,036 [WARNING] 66930835_theres_something_just_a_little_more_than_ecstasy.html: could not parse author from <title>: 'There's Something Just a Little More Than Ecstasy'
+2026-05-25 00:06:19,051 [INFO] Added manifest entry: 66930835_theres_something_just_a_little_more_than_ecstasy.html
+2026-05-25 00:06:19,078 [WARNING] 66937096_what_a_terrifying_work_of_art.html: could not parse author from <title>: 'what a terrifying work of art'
+2026-05-25 00:06:19,114 [INFO] Added manifest entry: 66937096_what_a_terrifying_work_of_art.html
+2026-05-25 00:06:19,154 [WARNING] 67054015_you_got_me_looking_so_crazy_right_now.html: could not parse author from <title>: 'you got me looking so crazy right now'
+2026-05-25 00:06:19,186 [INFO] Added manifest entry: 67054015_you_got_me_looking_so_crazy_right_now.html
+2026-05-25 00:06:19,188 [WARNING] 67106170_over_a_bridge_and_into_love.html: could not parse author from <title>: 'Over a Bridge and Into Love'
+2026-05-25 00:06:19,191 [INFO] Added manifest entry: 67106170_over_a_bridge_and_into_love.html
+2026-05-25 00:06:19,193 [WARNING] 67106680_stay_small.html: could not parse author from <title>: 'Stay Small'
+2026-05-25 00:06:19,196 [INFO] Added manifest entry: 67106680_stay_small.html
+2026-05-25 00:06:19,257 [WARNING] 67126099_going_viral.html: could not parse author from <title>: 'Going Viral'
+2026-05-25 00:06:19,328 [INFO] Added manifest entry: 67126099_going_viral.html
+2026-05-25 00:06:19,341 [WARNING] 67155280_start_me_up.html: could not parse author from <title>: 'start me up'
+2026-05-25 00:06:19,356 [INFO] Added manifest entry: 67155280_start_me_up.html
+2026-05-25 00:06:19,415 [WARNING] 67222777_oh_but_she_burns.html: could not parse author from <title>: 'oh, but she burns'
+2026-05-25 00:06:19,476 [INFO] Added manifest entry: 67222777_oh_but_she_burns.html
+2026-05-25 00:06:19,514 [WARNING] 67250692_you_arent_mine_for_the_taking.html: could not parse author from <title>: 'you aren’t mine for the taking'
+2026-05-25 00:06:19,559 [INFO] Added manifest entry: 67250692_you_arent_mine_for_the_taking.html
+2026-05-25 00:06:19,581 [WARNING] 67291498_meet_me_at_the_end.html: could not parse author from <title>: 'Meet Me At The End'
+2026-05-25 00:06:19,609 [INFO] Added manifest entry: 67291498_meet_me_at_the_end.html
+2026-05-25 00:06:19,613 [WARNING] 67383873_secrets_ampamp_suspenders.html: could not parse author from <title>: 'Secrets &amp; Suspenders'
+2026-05-25 00:06:19,618 [INFO] Added manifest entry: 67383873_secrets_ampamp_suspenders.html
+2026-05-25 00:06:19,662 [WARNING] 67661881_the_road_not_taken_among.html: could not parse author from <title>: 'the road not taken (among the wildflowers)'
+2026-05-25 00:06:19,718 [INFO] Added manifest entry: 67661881_the_road_not_taken_among.html
+2026-05-25 00:06:19,751 [WARNING] 67739596_between_the_flames_and_her_eyes.html: could not parse author from <title>: 'Between the Flames and Her Eyes'
+2026-05-25 00:06:19,773 [INFO] Added manifest entry: 67739596_between_the_flames_and_her_eyes.html
+2026-05-25 00:06:19,817 [WARNING] 67757766_were_never_done.html: could not parse author from <title>: 'We're Never Done'
+2026-05-25 00:06:19,870 [INFO] Added manifest entry: 67757766_were_never_done.html
+2026-05-25 00:06:19,874 [WARNING] 67826836_wanna_take_a_chance.html: could not parse author from <title>: 'Wanna Take a Chance?'
+2026-05-25 00:06:19,878 [INFO] Added manifest entry: 67826836_wanna_take_a_chance.html
+2026-05-25 00:06:19,919 [WARNING] 67969351_alambre_púa.html: could not parse author from <title>: 'alambre púa'
+2026-05-25 00:06:19,967 [INFO] Added manifest entry: 67969351_alambre_púa.html
+2026-05-25 00:06:19,978 [WARNING] 67991716_Do_I_Cross_Your_Mind.html: could not parse author from <title>: 'Do I Cross Your Mind? ('Cause You've Always Been  On Mine)'
+2026-05-25 00:06:19,993 [INFO] Added manifest entry: 67991716_Do_I_Cross_Your_Mind.html
+2026-05-25 00:06:20,028 [WARNING] 68063521_what_the_body_knows.html: could not parse author from <title>: 'What the Body Knows'
+2026-05-25 00:06:20,054 [INFO] Added manifest entry: 68063521_what_the_body_knows.html
+2026-05-25 00:06:20,115 [WARNING] 68695086_the_witch_and_the_wolf.html: could not parse author from <title>: 'The Witch and The Wolf'
+2026-05-25 00:06:20,190 [INFO] Added manifest entry: 68695086_the_witch_and_the_wolf.html
+2026-05-25 00:06:20,226 [WARNING] 68905561_put_it_on_the_line.html: could not parse author from <title>: 'Put It On The Line'
+2026-05-25 00:06:20,268 [INFO] Added manifest entry: 68905561_put_it_on_the_line.html
+2026-05-25 00:06:20,277 [WARNING] 68983171_Would_You_Stay_By_My.html: could not parse author from <title>: 'Would You Stay By My Side...'
+2026-05-25 00:06:20,291 [INFO] Added manifest entry: 68983171_Would_You_Stay_By_My.html
+2026-05-25 00:06:20,301 [WARNING] 68983746_when_im_working_on_me.html: could not parse author from <title>: '...When I'm Working On Me'
+2026-05-25 00:06:20,316 [INFO] Added manifest entry: 68983746_when_im_working_on_me.html
+2026-05-25 00:06:20,465 [WARNING] 69039461_Rawr_Means_I_Love_You_in.html: could not parse author from <title>: 'Rawr! Means I Love You in Dinosaur'
+2026-05-25 00:06:20,630 [INFO] Added manifest entry: 69039461_Rawr_Means_I_Love_You_in.html
+2026-05-25 00:06:20,670 [WARNING] 69117076_the_winner_takes_it_all.html: could not parse author from <title>: 'the winner takes it all'
+2026-05-25 00:06:20,722 [INFO] Added manifest entry: 69117076_the_winner_takes_it_all.html
+2026-05-25 00:06:20,745 [WARNING] 69250446_I_Wanna_Be_YoursYoure.html: could not parse author from <title>: 'I Wanna Be Yours///You're All I Want'
+2026-05-25 00:06:20,773 [INFO] Added manifest entry: 69250446_I_Wanna_Be_YoursYoure.html
+2026-05-25 00:06:20,808 [WARNING] 69317051_i_let_my_head_spin_take_all_the_weight_off_my.html: could not parse author from <title>: 'i let my head spin (take all the weight off my shoulders)'
+2026-05-25 00:06:20,850 [INFO] Added manifest entry: 69317051_i_let_my_head_spin_take_all_the_weight_off_my.html
+2026-05-25 00:06:20,865 [WARNING] 69409446_rules_for_coparenting_with_your_witch_of_an_ex.html: could not parse author from <title>: 'Rules for Co-Parenting With Your Witch of an Ex'
+2026-05-25 00:06:20,884 [INFO] Added manifest entry: 69409446_rules_for_coparenting_with_your_witch_of_an_ex.html
+2026-05-25 00:06:21,024 [WARNING] 69689251_1111.html: could not parse author from <title>: '11:11'
+2026-05-25 00:06:21,120 [INFO] Added manifest entry: 69689251_1111.html
+2026-05-25 00:06:21,161 [WARNING] 69922756_Mirrorball.html: could not parse author from <title>: 'Mirrorball'
+2026-05-25 00:06:21,214 [INFO] Added manifest entry: 69922756_Mirrorball.html
+2026-05-25 00:06:21,467 [WARNING] 69930041_for_your_consideration.html: could not parse author from <title>: 'For Your Consideration'
+2026-05-25 00:06:21,748 [INFO] Added manifest entry: 69930041_for_your_consideration.html
+2026-05-25 00:06:21,777 [WARNING] 70115376_shatter_your_illusions.html: could not parse author from <title>: 'Shatter Your Illusions'
+2026-05-25 00:06:21,796 [INFO] Added manifest entry: 70115376_shatter_your_illusions.html
+2026-05-25 00:06:21,826 [WARNING] 70120581_one_happy_camper.html: could not parse author from <title>: 'One Happy Camper'
+2026-05-25 00:06:21,862 [INFO] Added manifest entry: 70120581_one_happy_camper.html
+2026-05-25 00:06:21,946 [WARNING] 70415451_the_witches_bodyguard.html: could not parse author from <title>: 'The Witches Bodyguard'
+2026-05-25 00:06:22,045 [INFO] Added manifest entry: 70415451_the_witches_bodyguard.html
+2026-05-25 00:06:22,100 [WARNING] 70538266_Rented_Hearts_Keep.html: could not parse author from <title>: 'Rented Hearts (Keep Beating)'
+2026-05-25 00:06:22,134 [INFO] Added manifest entry: 70538266_Rented_Hearts_Keep.html
+2026-05-25 00:06:22,164 [WARNING] 70550446_We_Go_Again.html: could not parse author from <title>: 'We Go Again'
+2026-05-25 00:06:22,200 [INFO] Added manifest entry: 70550446_We_Go_Again.html
+2026-05-25 00:06:22,296 [WARNING] 70740846_softballs_a_witch.html: could not parse author from <title>: 'Softball's A Witch'
+2026-05-25 00:06:22,393 [INFO] Added manifest entry: 70740846_softballs_a_witch.html
+2026-05-25 00:06:22,434 [WARNING] 71054176_somebody_to_hold.html: could not parse author from <title>: 'Somebody to Hold'
+2026-05-25 00:06:22,483 [INFO] Added manifest entry: 71054176_somebody_to_hold.html
+2026-05-25 00:06:22,493 [WARNING] 71416136_the_strawberry_thief.html: could not parse author from <title>: 'The Strawberry Thief'
+2026-05-25 00:06:22,506 [INFO] Added manifest entry: 71416136_the_strawberry_thief.html
+2026-05-25 00:06:22,512 [WARNING] 72357056_the_birthday_gift.html: could not parse author from <title>: 'The Birthday Gift'
+2026-05-25 00:06:22,519 [INFO] Added manifest entry: 72357056_the_birthday_gift.html
+2026-05-25 00:06:22,576 [WARNING] 72701616_war_of_hearts.html: could not parse author from <title>: 'War of Hearts'
+2026-05-25 00:06:22,643 [INFO] Added manifest entry: 72701616_war_of_hearts.html
+2026-05-25 00:06:22,675 [WARNING] 73047636_everlong.html: could not parse author from <title>: 'Everlong'
+2026-05-25 00:06:22,696 [INFO] Added manifest entry: 73047636_everlong.html
+2026-05-25 00:06:22,742 [WARNING] 73152711_youre_welcome_to_try_you_wouldnt_be_the_first_one.html: could not parse author from <title>: 'You're Welcome to Try (You Wouldn't Be the First One to Fail)'
+2026-05-25 00:06:22,798 [INFO] Added manifest entry: 73152711_youre_welcome_to_try_you_wouldnt_be_the_first_one.html
+2026-05-25 00:06:22,945 [WARNING] 73212906_Triage_of_the_Heart.html: could not parse author from <title>: 'Triage of the Heart'
+2026-05-25 00:06:23,123 [INFO] Added manifest entry: 73212906_Triage_of_the_Heart.html
+2026-05-25 00:06:23,136 [WARNING] 73680001_feel_it_burnwatch_it_glow.html: could not parse author from <title>: 'Feel it Burn//Watch it Glow'
+2026-05-25 00:06:23,152 [INFO] Added manifest entry: 73680001_feel_it_burnwatch_it_glow.html
+2026-05-25 00:06:23,155 [WARNING] 73728966_i_want_you_on_me_with_both_your_hands.html: could not parse author from <title>: 'I Want You on Me With Both Your Hands'
+2026-05-25 00:06:23,159 [INFO] Added manifest entry: 73728966_i_want_you_on_me_with_both_your_hands.html
+2026-05-25 00:06:23,259 [WARNING] 73783561_stuck_in_orbit.html: could not parse author from <title>: 'Stuck In Orbit'
+2026-05-25 00:06:23,355 [INFO] Added manifest entry: 73783561_stuck_in_orbit.html
+2026-05-25 00:06:23,369 [WARNING] 73832301_the_bartender_and_the_nerd.html: could not parse author from <title>: 'The bartender and the nerd.'
+2026-05-25 00:06:23,386 [INFO] Added manifest entry: 73832301_the_bartender_and_the_nerd.html
+2026-05-25 00:06:23,433 [WARNING] 74505286_nothing_shameful.html: could not parse author from <title>: 'Nothing Shameful'
+2026-05-25 00:06:23,488 [INFO] Added manifest entry: 74505286_nothing_shameful.html
+2026-05-25 00:06:23,520 [WARNING] 74518501_it_had_to_be_you.html: could not parse author from <title>: 'it had to be you'
+2026-05-25 00:06:23,546 [INFO] Added manifest entry: 74518501_it_had_to_be_you.html
+2026-05-25 00:06:23,569 [WARNING] 74682496_a_decade_between_us.html: could not parse author from <title>: 'a decade between us'
+2026-05-25 00:06:23,596 [INFO] Added manifest entry: 74682496_a_decade_between_us.html
+2026-05-25 00:06:23,655 [WARNING] 74999331_in_the_mirror_of_your_eyes.html: could not parse author from <title>: 'in the mirror of your eyes'
+2026-05-25 00:06:23,728 [INFO] Added manifest entry: 74999331_in_the_mirror_of_your_eyes.html
+2026-05-25 00:06:23,750 [WARNING] 75050276_next_time_you_call_ill_be_your_girl.html: could not parse author from <title>: 'Next time you call, I'll be your girl'
+2026-05-25 00:06:23,773 [INFO] Added manifest entry: 75050276_next_time_you_call_ill_be_your_girl.html
+2026-05-25 00:06:23,854 [WARNING] 75076376_the_happiest_season.html: could not parse author from <title>: 'The Happiest Season'
+2026-05-25 00:06:23,934 [INFO] Added manifest entry: 75076376_the_happiest_season.html
+2026-05-25 00:06:23,941 [WARNING] 75155551_circling_around_the_same.html: could not parse author from <title>: 'circling around the same star'
+2026-05-25 00:06:23,950 [INFO] Added manifest entry: 75155551_circling_around_the_same.html
+2026-05-25 00:06:23,968 [WARNING] 75201581_lost_for_words.html: could not parse author from <title>: 'lost for words'
+2026-05-25 00:06:23,991 [INFO] Added manifest entry: 75201581_lost_for_words.html
+2026-05-25 00:06:23,998 [WARNING] 75396556_dont_handle_me_with_care.html: could not parse author from <title>: 'Don't Handle Me with Care'
+2026-05-25 00:06:24,008 [INFO] Added manifest entry: 75396556_dont_handle_me_with_care.html
+2026-05-25 00:06:24,021 [WARNING] 75614091_i_see_you_youre_walking_cross_the_campus.html: could not parse author from <title>: 'I see you, you're walking 'cross the campus'
+2026-05-25 00:06:24,038 [INFO] Added manifest entry: 75614091_i_see_you_youre_walking_cross_the_campus.html
+2026-05-25 00:06:24,086 [WARNING] 75907071_Late_Night_with_the.html: could not parse author from <title>: 'Late Night with the Devil'
+2026-05-25 00:06:24,134 [INFO] Added manifest entry: 75907071_Late_Night_with_the.html
+2026-05-25 00:06:24,171 [WARNING] 76014136_material_substance.html: could not parse author from <title>: 'material substance'
+2026-05-25 00:06:24,219 [INFO] Added manifest entry: 76014136_material_substance.html
+2026-05-25 00:06:24,237 [WARNING] 76093411_a_different_way_to_be.html: could not parse author from <title>: 'a different way to be'
+2026-05-25 00:06:24,261 [INFO] Added manifest entry: 76093411_a_different_way_to_be.html
+2026-05-25 00:06:24,266 [WARNING] 76260996_its_clichéd_to_be_cynical_at_christmas.html: could not parse author from <title>: 'It's Clichéd to be Cynical at Christmas'
+2026-05-25 00:06:24,272 [INFO] Added manifest entry: 76260996_its_clichéd_to_be_cynical_at_christmas.html
+2026-05-25 00:06:24,297 [WARNING] 76775496_breathe_into_me_and_make.html: could not parse author from <title>: 'breathe into me and make me real'
+2026-05-25 00:06:24,333 [INFO] Added manifest entry: 76775496_breathe_into_me_and_make.html
+2026-05-25 00:06:24,336 [WARNING] 76893881_all_in_paradise.html: could not parse author from <title>: 'All In Paradise'
+2026-05-25 00:06:24,340 [INFO] Added manifest entry: 76893881_all_in_paradise.html
+2026-05-25 00:06:24,388 [WARNING] 77249811_i_didnt_ask_for_this.html: could not parse author from <title>: 'I Didn't Ask For This'
+2026-05-25 00:06:24,429 [INFO] Added manifest entry: 77249811_i_didnt_ask_for_this.html
+2026-05-25 00:06:24,435 [WARNING] 77303721_to_be_known_well.html: could not parse author from <title>: 'to be known well'
+2026-05-25 00:06:24,442 [INFO] Added manifest entry: 77303721_to_be_known_well.html
+2026-05-25 00:06:24,487 [WARNING] 77737251_Primadonna.html: could not parse author from <title>: 'Primadonna'
+2026-05-25 00:06:24,544 [INFO] Added manifest entry: 77737251_Primadonna.html
+2026-05-25 00:06:24,579 [WARNING] 77936761_Ill_keep_you_safe_you.html: could not parse author from <title>: 'I'll keep you safe, you have my word'
+2026-05-25 00:06:24,624 [INFO] Added manifest entry: 77936761_Ill_keep_you_safe_you.html
+2026-05-25 00:06:24,634 [WARNING] 78965396_youre_my_burial_ground.html: could not parse author from <title>: 'You're My Burial Ground'
+2026-05-25 00:06:24,646 [INFO] Added manifest entry: 78965396_youre_my_burial_ground.html
+2026-05-25 00:06:24,661 [WARNING] 79316676_serpents_stone.html: could not parse author from <title>: 'Serpent's Stone'
+2026-05-25 00:06:24,678 [INFO] Added manifest entry: 79316676_serpents_stone.html
+2026-05-25 00:06:24,682 [WARNING] 79317116_you_dont_need_a_revelation_youll_be_fine_with.html: could not parse author from <title>: 'you don't need a revelation (you'll be fine with being lost)'
+2026-05-25 00:06:24,686 [INFO] Added manifest entry: 79317116_you_dont_need_a_revelation_youll_be_fine_with.html
+2026-05-25 00:06:24,705 [WARNING] 79671146_Perfect_Catch.html: could not parse author from <title>: 'Perfect Catch'
+2026-05-25 00:06:24,713 [INFO] Added manifest entry: 79671146_Perfect_Catch.html
+2026-05-25 00:06:24,743 [WARNING] 79774441_I_Am_No_Mother_I_Am_No.html: could not parse author from <title>: 'I Am No Mother, I Am No Bride'
+2026-05-25 00:06:24,782 [INFO] Added manifest entry: 79774441_I_Am_No_Mother_I_Am_No.html
+2026-05-25 00:06:24,792 [WARNING] 80139521_love_poetry_biology.html: could not parse author from <title>: 'love = poetry + biology'
+2026-05-25 00:06:24,805 [INFO] Added manifest entry: 80139521_love_poetry_biology.html
+2026-05-25 00:06:24,818 [WARNING] 80219316_cake_by_the_pound.html: could not parse author from <title>: 'cake by the pound'
+2026-05-25 00:06:24,834 [INFO] Added manifest entry: 80219316_cake_by_the_pound.html
+2026-05-25 00:06:24,854 [WARNING] 80258711_Ri-0.html: could not parse author from <title>: 'Ri-0'
+2026-05-25 00:06:24,880 [INFO] Added manifest entry: 80258711_Ri-0.html
+2026-05-25 00:06:24,886 [WARNING] 80271671_Help_Im_Alive.html: could not parse author from <title>: 'Help I’m Alive'
+2026-05-25 00:06:24,894 [INFO] Added manifest entry: 80271671_Help_Im_Alive.html
+2026-05-25 00:06:24,901 [WARNING] 80705996_Too_Sweet.html: could not parse author from <title>: 'Too Sweet'
+2026-05-25 00:06:24,911 [INFO] Added manifest entry: 80705996_Too_Sweet.html
+2026-05-25 00:06:25,035 [WARNING] 80975496_Ibiza.html: could not parse author from <title>: 'Ibiza'
+2026-05-25 00:06:25,180 [INFO] Added manifest entry: 80975496_Ibiza.html
+2026-05-25 00:06:25,294 [WARNING] 81450586_Talk_Me_Through_It.html: could not parse author from <title>: 'Talk Me Through It'
+2026-05-25 00:06:25,423 [INFO] Added manifest entry: 81450586_Talk_Me_Through_It.html
+2026-05-25 00:06:25,450 [WARNING] 82204656_life_as_we_know_it.html: could not parse author from <title>: 'Life As We Know It'
+2026-05-25 00:06:25,483 [INFO] Added manifest entry: 82204656_life_as_we_know_it.html
+2026-05-25 00:06:25,503 [WARNING] 82208311_Women_Like_You_Women.html: could not parse author from <title>: 'Women Like You / Women Like Me'
+2026-05-25 00:06:25,528 [INFO] Added manifest entry: 82208311_Women_Like_You_Women.html
+2026-05-25 00:06:25,536 [WARNING] 82835526_The_Promise_of_Always.html: could not parse author from <title>: 'The Promise of Always'
+2026-05-25 00:06:25,546 [INFO] Added manifest entry: 82835526_The_Promise_of_Always.html
+2026-05-25 00:06:25,594 [WARNING] 82934246_when_i_kissed_the.html: could not parse author from <title>: 'when i kissed the teacher'
+2026-05-25 00:06:25,624 [INFO] Added manifest entry: 82934246_when_i_kissed_the.html
+2026-05-25 00:06:25,626 [WARNING] 83001466_Turn_Them_In_Turn_Them.html: could not parse author from <title>: 'Turn Them In, Turn Them In Now! (You're A Traitor!)'
+2026-05-25 00:06:25,630 [INFO] Added manifest entry: 83001466_Turn_Them_In_Turn_Them.html
+2026-05-25 00:06:25,653 [WARNING] 83643571_Lost_Time.html: could not parse author from <title>: 'Lost Time'
+2026-05-25 00:06:25,682 [INFO] Added manifest entry: 83643571_Lost_Time.html
+2026-05-25 00:06:25,704 [WARNING] 83988876_Ill_Bring_Out_The_Worst.html: could not parse author from <title>: 'I'll Bring Out The Worst In You... Promise'
+2026-05-25 00:06:25,733 [INFO] Added manifest entry: 83988876_Ill_Bring_Out_The_Worst.html
+2026-05-25 00:06:25,749 [WARNING] 84248671_All_The_Time_In_The.html: could not parse author from <title>: 'All The Time In The World'
+2026-05-25 00:06:25,768 [INFO] Added manifest entry: 84248671_All_The_Time_In_The.html
+2026-05-25 00:06:25,782 [WARNING] 84752066_Wouldnt_You_Love_to_Love.html: could not parse author from <title>: 'Wouldn't You Love to Love Her'
+2026-05-25 00:06:25,801 [INFO] Added manifest entry: 84752066_Wouldnt_You_Love_to_Love.html
+2026-05-25 00:06:25,804 [INFO] Manifest saved to fic_data.json
+2026-05-25 00:06:25,805 [INFO] index.html rebuilt (339 fics)
+2026-05-25 00:10:46,140 [WARNING] 26070184_everything_looks_better_in_hindsight.html: could not parse author from <title>: 'Everything Looks Better (In Hindsight)'
+2026-05-25 00:10:46,215 [INFO] Added manifest entry: 26070184_everything_looks_better_in_hindsight.html
+2026-05-25 00:10:46,227 [WARNING] 376520_catalysis.html: could not parse author from <title>: 'Catalysis'
+2026-05-25 00:10:46,238 [INFO] Added manifest entry: 376520_catalysis.html
+2026-05-25 00:10:46,257 [WARNING] 59315482_underneath_the_tree.html: could not parse author from <title>: 'Underneath the Tree'
+2026-05-25 00:10:46,275 [INFO] Added manifest entry: 59315482_underneath_the_tree.html
+2026-05-25 00:10:46,407 [WARNING] 59672419_its_bloody_and_raw_but_i_swear_its_sweet.html: could not parse author from <title>: 'It’s Bloody and Raw (But I Swear it's Sweet)'
+2026-05-25 00:10:46,557 [INFO] Added manifest entry: 59672419_its_bloody_and_raw_but_i_swear_its_sweet.html
+2026-05-25 00:10:46,614 [WARNING] 59719738_an_unexpected_visitor.html: could not parse author from <title>: 'An Unexpected Visitor'
+2026-05-25 00:10:46,691 [INFO] Added manifest entry: 59719738_an_unexpected_visitor.html
+2026-05-25 00:10:46,695 [WARNING] 59730688_checkmate.html: could not parse author from <title>: 'Checkmate!'
+2026-05-25 00:10:46,700 [INFO] Added manifest entry: 59730688_checkmate.html
+2026-05-25 00:10:46,715 [WARNING] 59746492_time_warp.html: could not parse author from <title>: 'Time Warp'
+2026-05-25 00:10:46,734 [INFO] Added manifest entry: 59746492_time_warp.html
+2026-05-25 00:10:46,737 [WARNING] 59761162_bitches_i_dont_trust_them_but_they_give_me_what_i.html: could not parse author from <title>: 'bitches i don't trust them (but they give me what i want for the night)'
+2026-05-25 00:10:46,741 [INFO] Added manifest entry: 59761162_bitches_i_dont_trust_them_but_they_give_me_what_i.html
+2026-05-25 00:10:46,765 [WARNING] 59763247_deaths_echo.html: could not parse author from <title>: 'Death's Echo'
+2026-05-25 00:10:46,796 [INFO] Added manifest entry: 59763247_deaths_echo.html
+2026-05-25 00:10:46,828 [WARNING] 59774080_roses_are_red_orchids_arepurple.html: could not parse author from <title>: 'Roses Are Red, Orchids Are...Purple?'
+2026-05-25 00:10:46,849 [INFO] Added manifest entry: 59774080_roses_are_red_orchids_arepurple.html
+2026-05-25 00:10:46,899 [WARNING] 59823169_love_persevering.html: could not parse author from <title>: 'Love Persevering'
+2026-05-25 00:10:46,968 [INFO] Added manifest entry: 59823169_love_persevering.html
+2026-05-25 00:10:46,991 [WARNING] 59841808_close_enough_for_love.html: could not parse author from <title>: 'Close Enough for Love'
+2026-05-25 00:10:47,022 [INFO] Added manifest entry: 59841808_close_enough_for_love.html
+2026-05-25 00:10:47,039 [WARNING] 59884564_the_ethics_of_attraction.html: could not parse author from <title>: 'The Ethics of Attraction'
+2026-05-25 00:10:47,064 [INFO] Added manifest entry: 59884564_the_ethics_of_attraction.html
+2026-05-25 00:10:47,188 [WARNING] 59939713_silver_springs.html: could not parse author from <title>: 'Silver Springs'
+2026-05-25 00:10:47,346 [INFO] Added manifest entry: 59939713_silver_springs.html
+2026-05-25 00:10:47,482 [WARNING] 59941591_unraveled.html: could not parse author from <title>: 'Unraveled'
+2026-05-25 00:10:47,663 [INFO] Added manifest entry: 59941591_unraveled.html
+2026-05-25 00:10:47,669 [WARNING] 59965684_witchcraft_filling_your_void.html: could not parse author from <title>: 'Witchcraft Filling Your Void'
+2026-05-25 00:10:47,680 [INFO] Added manifest entry: 59965684_witchcraft_filling_your_void.html
+2026-05-25 00:10:47,737 [WARNING] 59970673_dearest_agatha.html: could not parse author from <title>: 'Dearest Agatha'
+2026-05-25 00:10:47,790 [INFO] Added manifest entry: 59970673_dearest_agatha.html
+2026-05-25 00:10:47,824 [WARNING] 60017602_the_witchy_ceo.html: could not parse author from <title>: 'the witchy CEO'
+2026-05-25 00:10:47,864 [INFO] Added manifest entry: 60017602_the_witchy_ceo.html
+2026-05-25 00:10:47,905 [WARNING] 60045475_a_kingdom_by_the_night.html: could not parse author from <title>: 'A Kingdom By the Night'
+2026-05-25 00:10:47,962 [INFO] Added manifest entry: 60045475_a_kingdom_by_the_night.html
+2026-05-25 00:10:48,012 [WARNING] 60055312_youll_just_have_to_taste_me_when_shes_kissin_you.html: could not parse author from <title>: 'You'll Just Have to Taste Me (When She's Kissin' You)'
+2026-05-25 00:10:48,072 [INFO] Added manifest entry: 60055312_youll_just_have_to_taste_me_when_shes_kissin_you.html
+2026-05-25 00:10:48,160 [WARNING] 60137950_all_roads_lead_to_this.html: could not parse author from <title>: 'All Roads Lead to This'
+2026-05-25 00:10:48,275 [INFO] Added manifest entry: 60137950_all_roads_lead_to_this.html
+2026-05-25 00:10:48,297 [WARNING] 60165511_dont_be_afraid_of_me_im_what_you_need.html: could not parse author from <title>: 'Don't Be Afraid of Me (I'm What You Need)'
+2026-05-25 00:10:48,327 [INFO] Added manifest entry: 60165511_dont_be_afraid_of_me_im_what_you_need.html
+2026-05-25 00:10:48,332 [WARNING] 60190921_devotion_is_for_fools.html: could not parse author from <title>: 'Devotion Is for Fools'
+2026-05-25 00:10:48,338 [INFO] Added manifest entry: 60190921_devotion_is_for_fools.html
+2026-05-25 00:10:48,342 [WARNING] 60208747_i_looked_to_the_children.html: could not parse author from <title>: 'i looked to the children (i drank from the fountains)'
+2026-05-25 00:10:48,347 [INFO] Added manifest entry: 60208747_i_looked_to_the_children.html
+2026-05-25 00:10:48,374 [WARNING] 60223375_there_is_no_death_for_witches_only_transformation.html: could not parse author from <title>: 'There Is No Death for Witches (Only Transformation)'
+2026-05-25 00:10:48,411 [INFO] Added manifest entry: 60223375_there_is_no_death_for_witches_only_transformation.html
+2026-05-25 00:10:48,432 [WARNING] 60229678_the_neutral_ground.html: could not parse author from <title>: 'The Neutral Ground'
+2026-05-25 00:10:48,462 [INFO] Added manifest entry: 60229678_the_neutral_ground.html
+2026-05-25 00:10:48,490 [WARNING] 60245707_i_could_not_stop_for_death.html: could not parse author from <title>: 'I Could Not Stop for Death'
+2026-05-25 00:10:48,529 [INFO] Added manifest entry: 60245707_i_could_not_stop_for_death.html
+2026-05-25 00:10:48,541 [WARNING] 60263902_creator_you_destroy_me.html: could not parse author from <title>: 'Creator, You Destroy Me'
+2026-05-25 00:10:48,559 [INFO] Added manifest entry: 60263902_creator_you_destroy_me.html
+2026-05-25 00:10:48,579 [WARNING] 60284353_rios_toxic_embrace.html: could not parse author from <title>: 'Rio’S Toxic Embrace'
+2026-05-25 00:10:48,584 [INFO] Added manifest entry: 60284353_rios_toxic_embrace.html
+2026-05-25 00:10:48,592 [WARNING] 60293302_happiest_season.html: could not parse author from <title>: 'Happiest Season'
+2026-05-25 00:10:48,603 [INFO] Added manifest entry: 60293302_happiest_season.html
+2026-05-25 00:10:48,613 [WARNING] 60307105_when_we_kiss_i_have_anger_issues.html: could not parse author from <title>: 'When We Kiss (I Have Anger Issues)'
+2026-05-25 00:10:48,627 [INFO] Added manifest entry: 60307105_when_we_kiss_i_have_anger_issues.html
+2026-05-25 00:10:48,641 [WARNING] 60315637_the_road_twists_and_turns.html: could not parse author from <title>: 'The Road Twists and Turns'
+2026-05-25 00:10:48,660 [INFO] Added manifest entry: 60315637_the_road_twists_and_turns.html
+2026-05-25 00:10:48,683 [WARNING] 60318415_but_i_love_you_just_the_same.html: could not parse author from <title>: 'But I Love You Just the Same'
+2026-05-25 00:10:48,716 [INFO] Added manifest entry: 60318415_but_i_love_you_just_the_same.html
+2026-05-25 00:10:48,775 [WARNING] 60328030_the_art_of_keeping_a_secret.html: could not parse author from <title>: 'The Art of Keeping a Secret'
+2026-05-25 00:10:48,856 [INFO] Added manifest entry: 60328030_the_art_of_keeping_a_secret.html
+2026-05-25 00:10:48,860 [WARNING] 60369481_and_fill_my_blank_page.html: could not parse author from <title>: 'And Fill My Blank Page'
+2026-05-25 00:10:48,865 [INFO] Added manifest entry: 60369481_and_fill_my_blank_page.html
+2026-05-25 00:10:48,914 [WARNING] 60392944_unmoored_by_your_presence.html: could not parse author from <title>: 'Unmoored by your Presence'
+2026-05-25 00:10:48,961 [INFO] Added manifest entry: 60392944_unmoored_by_your_presence.html
+2026-05-25 00:10:48,967 [WARNING] 60415315_im_leaving_here_with_you.html: could not parse author from <title>: 'I'm Leaving Here With You'
+2026-05-25 00:10:48,975 [INFO] Added manifest entry: 60415315_im_leaving_here_with_you.html
+2026-05-25 00:10:48,984 [WARNING] 60415588_broken_deal.html: could not parse author from <title>: 'Broken Deal'
+2026-05-25 00:10:48,996 [INFO] Added manifest entry: 60415588_broken_deal.html
+2026-05-25 00:10:49,012 [WARNING] 60416161_she_gets_the_job_done.html: could not parse author from <title>: 'She Gets the Job Done'
+2026-05-25 00:10:49,034 [INFO] Added manifest entry: 60416161_she_gets_the_job_done.html
+2026-05-25 00:10:49,061 [WARNING] 60417100_the_scientific_method_of_falling_apart.html: could not parse author from <title>: 'The Scientific Method of Falling Apart'
+2026-05-25 00:10:49,098 [INFO] Added manifest entry: 60417100_the_scientific_method_of_falling_apart.html
+2026-05-25 00:10:49,122 [WARNING] 60437284_hopeless_breathless.html: could not parse author from <title>: 'hopeless (breathless) burning slow'
+2026-05-25 00:10:49,153 [INFO] Added manifest entry: 60437284_hopeless_breathless.html
+2026-05-25 00:10:49,192 [WARNING] 60439222_ill_follow_you_down_til_the_sound_of_my_voice.html: could not parse author from <title>: 'I'll follow you down til' the sound of my voice will haunt you'
+2026-05-25 00:10:49,229 [INFO] Added manifest entry: 60439222_ill_follow_you_down_til_the_sound_of_my_voice.html
+2026-05-25 00:10:49,232 [WARNING] 60444544_giving_my_heart_over_to_you.html: could not parse author from <title>: 'Giving My Heart Over to You'
+2026-05-25 00:10:49,237 [INFO] Added manifest entry: 60444544_giving_my_heart_over_to_you.html
+2026-05-25 00:10:49,240 [WARNING] 60465982_not_over_dramatic_i_know_what_i_want.html: could not parse author from <title>: 'Not Over Dramatic, I Know What I Want.'
+2026-05-25 00:10:49,245 [INFO] Added manifest entry: 60465982_not_over_dramatic_i_know_what_i_want.html
+2026-05-25 00:10:49,263 [WARNING] 60466387_in_the_deep_end.html: could not parse author from <title>: 'In The Deep End'
+2026-05-25 00:10:49,285 [INFO] Added manifest entry: 60466387_in_the_deep_end.html
+2026-05-25 00:10:49,303 [WARNING] 60468748_fold_your_wings.html: could not parse author from <title>: 'Fold Your Wings'
+2026-05-25 00:10:49,324 [INFO] Added manifest entry: 60468748_fold_your_wings.html
+2026-05-25 00:10:49,471 [WARNING] 60469915_here_with_you_now.html: could not parse author from <title>: 'Here With You Now'
+2026-05-25 00:10:49,635 [INFO] Added manifest entry: 60469915_here_with_you_now.html
+2026-05-25 00:10:49,667 [WARNING] 60521194_a_witch_in_salem.html: could not parse author from <title>: 'A Witch in Salem'
+2026-05-25 00:10:49,710 [INFO] Added manifest entry: 60521194_a_witch_in_salem.html
+2026-05-25 00:10:49,713 [WARNING] 60532861_she_drives_me_crazy.html: could not parse author from <title>: 'She Drives Me Crazy'
+2026-05-25 00:10:49,718 [INFO] Added manifest entry: 60532861_she_drives_me_crazy.html
+2026-05-25 00:10:49,743 [WARNING] 60538387_disdainfully_hers.html: could not parse author from <title>: 'Disdainfully Hers'
+2026-05-25 00:10:49,757 [INFO] Added manifest entry: 60538387_disdainfully_hers.html
+2026-05-25 00:10:49,810 [WARNING] 60550129_beneath_the_stars.html: could not parse author from <title>: 'beneath the stars'
+2026-05-25 00:10:49,873 [INFO] Added manifest entry: 60550129_beneath_the_stars.html
+2026-05-25 00:10:49,884 [WARNING] 60563395_the_way_i_feel_about_you_baby_cant_explain_it.html: could not parse author from <title>: 'The Way I Feel About You Baby Can’t Explain It'
+2026-05-25 00:10:49,899 [INFO] Added manifest entry: 60563395_the_way_i_feel_about_you_baby_cant_explain_it.html
+2026-05-25 00:10:49,967 [WARNING] 60596422_sugar_and_honey.html: could not parse author from <title>: 'Sugar and Honey'
+2026-05-25 00:10:50,049 [INFO] Added manifest entry: 60596422_sugar_and_honey.html
+2026-05-25 00:10:50,081 [WARNING] 60612217_the_peculiar_patient.html: could not parse author from <title>: 'the peculiar patient'
+2026-05-25 00:10:50,119 [INFO] Added manifest entry: 60612217_the_peculiar_patient.html
+2026-05-25 00:10:50,129 [WARNING] 60617758_life_after_love_can_we_find_it_again.html: could not parse author from <title>: 'Life after love (Can we find it again?)'
+2026-05-25 00:10:50,142 [INFO] Added manifest entry: 60617758_life_after_love_can_we_find_it_again.html
+2026-05-25 00:10:50,146 [WARNING] 60631114_candlelight_whispers_me_where_to_go.html: could not parse author from <title>: 'Candlelight Whispers Me Where to Go'
+2026-05-25 00:10:50,151 [INFO] Added manifest entry: 60631114_candlelight_whispers_me_where_to_go.html
+2026-05-25 00:10:50,155 [WARNING] 60667915_you_look_so_pretty_when_youre_on_your_knees.html: could not parse author from <title>: 'you look so pretty when you're on your knees'
+2026-05-25 00:10:50,160 [INFO] Added manifest entry: 60667915_you_look_so_pretty_when_youre_on_your_knees.html
+2026-05-25 00:10:50,164 [WARNING] 60682354_close_to_you.html: could not parse author from <title>: 'Close to You'
+2026-05-25 00:10:50,170 [INFO] Added manifest entry: 60682354_close_to_you.html
+2026-05-25 00:10:50,195 [WARNING] 60700522_purple_and_green.html: could not parse author from <title>: 'Purple and Green'
+2026-05-25 00:10:50,231 [INFO] Added manifest entry: 60700522_purple_and_green.html
+2026-05-25 00:10:50,308 [WARNING] 60723781_its_never_quite_as_it_seems_hiyouve_got_mail.html: could not parse author from <title>: 'It's Never Quite As It Seems (Hi—You'Ve Got Mail)'
+2026-05-25 00:10:50,399 [INFO] Added manifest entry: 60723781_its_never_quite_as_it_seems_hiyouve_got_mail.html
+2026-05-25 00:10:50,404 [WARNING] 60736594_red_in_claw_red_in_love.html: could not parse author from <title>: 'Red in Claw, Red in Love'
+2026-05-25 00:10:50,412 [INFO] Added manifest entry: 60736594_red_in_claw_red_in_love.html
+2026-05-25 00:10:50,478 [WARNING] 60738175_youd_have_to_stop_the_world.html: could not parse author from <title>: 'You'd have to stop the world'
+2026-05-25 00:10:50,573 [INFO] Added manifest entry: 60738175_youd_have_to_stop_the_world.html
+2026-05-25 00:10:50,582 [WARNING] 60738349_theres_no_one_else_who_could_the_only_one_is_you.html: could not parse author from <title>: 'There's No One Else Who Could, the Only One Is You'
+2026-05-25 00:10:50,595 [INFO] Added manifest entry: 60738349_theres_no_one_else_who_could_the_only_one_is_you.html
+2026-05-25 00:10:50,632 [WARNING] 60739120_for_you_to_be_still.html: could not parse author from <title>: 'For You To Be Still'
+2026-05-25 00:10:50,660 [INFO] Added manifest entry: 60739120_for_you_to_be_still.html
+2026-05-25 00:10:50,696 [WARNING] 60742324_figured_you_out.html: could not parse author from <title>: 'Figured You Out'
+2026-05-25 00:10:50,736 [INFO] Added manifest entry: 60742324_figured_you_out.html
+2026-05-25 00:10:50,744 [WARNING] 60768184_someday_we_will_all_be.html: could not parse author from <title>: 'someday we will all be lying on our backs (free at last from income tax)'
+2026-05-25 00:10:50,753 [INFO] Added manifest entry: 60768184_someday_we_will_all_be.html
+2026-05-25 00:10:50,839 [WARNING] 60780265_vidal_books.html: could not parse author from <title>: 'Vidal Books'
+2026-05-25 00:10:50,932 [INFO] Added manifest entry: 60780265_vidal_books.html
+2026-05-25 00:10:50,956 [WARNING] 60792286_velvet_ring.html: could not parse author from <title>: 'Velvet Ring'
+2026-05-25 00:10:50,989 [INFO] Added manifest entry: 60792286_velvet_ring.html
+2026-05-25 00:10:51,014 [WARNING] 60796456_agathario_fake_dating_au.html: could not parse author from <title>: 'Agathario Fake Dating Au'
+2026-05-25 00:10:51,047 [INFO] Added manifest entry: 60796456_agathario_fake_dating_au.html
+2026-05-25 00:10:51,060 [WARNING] 60810751_within_reach.html: could not parse author from <title>: 'Within Reach'
+2026-05-25 00:10:51,079 [INFO] Added manifest entry: 60810751_within_reach.html
+2026-05-25 00:10:51,105 [WARNING] 60824317_let_loose_your_longing.html: could not parse author from <title>: 'let loose your longing'
+2026-05-25 00:10:51,136 [INFO] Added manifest entry: 60824317_let_loose_your_longing.html
+2026-05-25 00:10:51,149 [WARNING] 60858487_the_heart_of_death.html: could not parse author from <title>: 'The Heart of Death'
+2026-05-25 00:10:51,164 [INFO] Added manifest entry: 60858487_the_heart_of_death.html
+2026-05-25 00:10:51,194 [WARNING] 60865297_just_between_us_did_the_love_affair_maim_you_too.html: could not parse author from <title>: 'Just Between Us, Did the Love Affair Maim You Too'
+2026-05-25 00:10:51,216 [INFO] Added manifest entry: 60865297_just_between_us_did_the_love_affair_maim_you_too.html
+2026-05-25 00:10:51,225 [WARNING] 60901915_naughty_ampamp_nice.html: could not parse author from <title>: 'Naughty &Amp; Nice'
+2026-05-25 00:10:51,239 [INFO] Added manifest entry: 60901915_naughty_ampamp_nice.html
+2026-05-25 00:10:51,252 [WARNING] 60984145_my_side_of_the_story.html: could not parse author from <title>: 'My Side of the Story'
+2026-05-25 00:10:51,267 [INFO] Added manifest entry: 60984145_my_side_of_the_story.html
+2026-05-25 00:10:51,304 [WARNING] 61063744_my_love_mine_all_mine.html: could not parse author from <title>: 'my love, mine, all mine'
+2026-05-25 00:10:51,348 [INFO] Added manifest entry: 61063744_my_love_mine_all_mine.html
+2026-05-25 00:10:51,357 [WARNING] 61077781_unsatisfied_i_skip_my_pride.html: could not parse author from <title>: 'Unsatisfied, I Skip My Pride'
+2026-05-25 00:10:51,370 [INFO] Added manifest entry: 61077781_unsatisfied_i_skip_my_pride.html
+2026-05-25 00:10:51,472 [WARNING] 61081831_roommates_of_destruction.html: could not parse author from <title>: 'Roommates of Destruction'
+2026-05-25 00:10:51,583 [INFO] Added manifest entry: 61081831_roommates_of_destruction.html
+2026-05-25 00:10:51,834 [WARNING] 61125523_at_the_still_point_of_the_turning_world.html: could not parse author from <title>: 'At the Still Point of the Turning World'
+2026-05-25 00:10:52,103 [INFO] Added manifest entry: 61125523_at_the_still_point_of_the_turning_world.html
+2026-05-25 00:10:52,328 [WARNING] 61126990_my_boy_builds_coffins.html: could not parse author from <title>: 'my boy builds coffins'
+2026-05-25 00:10:52,554 [INFO] Added manifest entry: 61126990_my_boy_builds_coffins.html
+2026-05-25 00:10:52,557 [WARNING] 61154881_roster.html: could not parse author from <title>: 'Roster'
+2026-05-25 00:10:52,562 [INFO] Added manifest entry: 61154881_roster.html
+2026-05-25 00:10:52,568 [WARNING] 61180354_decemberism.html: could not parse author from <title>: 'Decemberism'
+2026-05-25 00:10:52,575 [INFO] Added manifest entry: 61180354_decemberism.html
+2026-05-25 00:10:52,592 [WARNING] 61208161_exceptions.html: could not parse author from <title>: 'Exceptions'
+2026-05-25 00:10:52,616 [INFO] Added manifest entry: 61208161_exceptions.html
+2026-05-25 00:10:52,660 [WARNING] 61208620_five_seconds.html: could not parse author from <title>: 'Five Seconds'
+2026-05-25 00:10:52,669 [INFO] Added manifest entry: 61208620_five_seconds.html
+2026-05-25 00:10:52,778 [WARNING] 61209526_the_gold_and_the_rust_the_color_erupts.html: could not parse author from <title>: 'The gold and the rust, the color erupts'
+2026-05-25 00:10:52,906 [INFO] Added manifest entry: 61209526_the_gold_and_the_rust_the_color_erupts.html
+2026-05-25 00:10:52,982 [WARNING] 61245343_unlock_thy_hidden_gate.html: could not parse author from <title>: 'Unlock Thy Hidden Gate'
+2026-05-25 00:10:53,078 [INFO] Added manifest entry: 61245343_unlock_thy_hidden_gate.html
+2026-05-25 00:10:53,090 [WARNING] 61254514_itll_all_work_out.html: could not parse author from <title>: 'It'll All Work Out'
+2026-05-25 00:10:53,105 [INFO] Added manifest entry: 61254514_itll_all_work_out.html
+2026-05-25 00:10:53,113 [WARNING] 61259392_heart_beats_like_a_drummer.html: could not parse author from <title>: 'Heart Beats Like a Drummer'
+2026-05-25 00:10:53,124 [INFO] Added manifest entry: 61259392_heart_beats_like_a_drummer.html
+2026-05-25 00:10:53,146 [WARNING] 61263814_the_world_reversed.html: could not parse author from <title>: 'The World Reversed'
+2026-05-25 00:10:53,171 [INFO] Added manifest entry: 61263814_the_world_reversed.html
+2026-05-25 00:10:53,179 [WARNING] 61280764_love_ampamp_politics.html: could not parse author from <title>: 'Love &Amp; Politics'
+2026-05-25 00:10:53,190 [INFO] Added manifest entry: 61280764_love_ampamp_politics.html
+2026-05-25 00:10:53,216 [WARNING] 61345132_meetcute.html: could not parse author from <title>: 'Meetcute'
+2026-05-25 00:10:53,228 [INFO] Added manifest entry: 61345132_meetcute.html
+2026-05-25 00:10:53,236 [WARNING] 61373383_mandevillas.html: could not parse author from <title>: 'Mandevillas'
+2026-05-25 00:10:53,246 [INFO] Added manifest entry: 61373383_mandevillas.html
+2026-05-25 00:10:53,256 [WARNING] 61401928_amor_prohibido.html: could not parse author from <title>: 'Amor Prohibido'
+2026-05-25 00:10:53,269 [INFO] Added manifest entry: 61401928_amor_prohibido.html
+2026-05-25 00:10:53,278 [WARNING] 61403194_kaleidoscope.html: could not parse author from <title>: 'kaleidoscope'
+2026-05-25 00:10:53,288 [INFO] Added manifest entry: 61403194_kaleidoscope.html
+2026-05-25 00:10:53,292 [WARNING] 61419481_merry_christmas_i_think_ill_miss_this_one_this.html: could not parse author from <title>: 'merry christmas (i think i'll miss this one this year)'
+2026-05-25 00:10:53,297 [INFO] Added manifest entry: 61419481_merry_christmas_i_think_ill_miss_this_one_this.html
+2026-05-25 00:10:53,317 [WARNING] 61474507_the_holiday.html: could not parse author from <title>: 'The Holiday'
+2026-05-25 00:10:53,344 [INFO] Added manifest entry: 61474507_the_holiday.html
+2026-05-25 00:10:53,361 [WARNING] 61496449_let_go.html: could not parse author from <title>: 'Let Go'
+2026-05-25 00:10:53,384 [INFO] Added manifest entry: 61496449_let_go.html
+2026-05-25 00:10:53,425 [WARNING] 61554538_my_safeword_is_safeword.html: could not parse author from <title>: 'my safeword is safeword'
+2026-05-25 00:10:53,473 [INFO] Added manifest entry: 61554538_my_safeword_is_safeword.html
+2026-05-25 00:10:53,500 [WARNING] 61598443_what_if_its_not_meant_for_me.html: could not parse author from <title>: 'What If It's Not Meant for Me?'
+2026-05-25 00:10:53,527 [INFO] Added manifest entry: 61598443_what_if_its_not_meant_for_me.html
+2026-05-25 00:10:53,744 [WARNING] 61599598_if_this_was_a_movie.html: could not parse author from <title>: 'If This Was a Movie'
+2026-05-25 00:10:54,032 [INFO] Added manifest entry: 61599598_if_this_was_a_movie.html
+2026-05-25 00:10:54,035 [WARNING] 61614124_i_will_wait_up_for_you_dear.html: could not parse author from <title>: 'I Will Wait Up for You, Dear'
+2026-05-25 00:10:54,040 [INFO] Added manifest entry: 61614124_i_will_wait_up_for_you_dear.html
+2026-05-25 00:10:54,045 [WARNING] 61642021_red_thread_of_fate.html: could not parse author from <title>: 'Red Thread of Fate'
+2026-05-25 00:10:54,051 [INFO] Added manifest entry: 61642021_red_thread_of_fate.html
+2026-05-25 00:10:54,064 [WARNING] 61650106_for_you_i_would_cross.html: could not parse author from <title>: 'for you, i would cross the line'
+2026-05-25 00:10:54,079 [INFO] Added manifest entry: 61650106_for_you_i_would_cross.html
+2026-05-25 00:10:54,192 [WARNING] 61712359_thirst_trap.html: could not parse author from <title>: 'Thirst (Trap)'
+2026-05-25 00:10:54,305 [INFO] Added manifest entry: 61712359_thirst_trap.html
+2026-05-25 00:10:54,313 [WARNING] 61733836_i_was_your_starry_eyed_lover_and_the_one_that_you.html: could not parse author from <title>: 'I Was Your Starry Eyed Lover and the One That You Saw'
+2026-05-25 00:10:54,323 [INFO] Added manifest entry: 61733836_i_was_your_starry_eyed_lover_and_the_one_that_you.html
+2026-05-25 00:10:54,331 [WARNING] 61800187_care_of.html: could not parse author from <title>: 'care of'
+2026-05-25 00:10:54,341 [INFO] Added manifest entry: 61800187_care_of.html
+2026-05-25 00:10:54,565 [WARNING] 61814836_the_thread_of_fate.html: could not parse author from <title>: 'The Thread Of Fate'
+2026-05-25 00:10:54,843 [INFO] Added manifest entry: 61814836_the_thread_of_fate.html
+2026-05-25 00:10:54,896 [WARNING] 61820164_summa_cum_laude.html: could not parse author from <title>: 'summa cum laude'
+2026-05-25 00:10:54,945 [INFO] Added manifest entry: 61820164_summa_cum_laude.html
+2026-05-25 00:10:55,012 [WARNING] 61850398_high_infidelity.html: could not parse author from <title>: 'High Infidelity'
+2026-05-25 00:10:55,093 [INFO] Added manifest entry: 61850398_high_infidelity.html
+2026-05-25 00:10:55,115 [WARNING] 61917550_the_bad_thing.html: could not parse author from <title>: 'The Bad Thing'
+2026-05-25 00:10:55,145 [INFO] Added manifest entry: 61917550_the_bad_thing.html
+2026-05-25 00:10:55,318 [WARNING] 62024398_somewhere_only_we_know_a_professor_au.html: could not parse author from <title>: 'Somewhere Only We Know ~ A Professor AU'
+2026-05-25 00:10:55,491 [INFO] Added manifest entry: 62024398_somewhere_only_we_know_a_professor_au.html
+2026-05-25 00:10:55,521 [WARNING] 62082778_scherzo.html: could not parse author from <title>: 'Scherzo'
+2026-05-25 00:10:55,551 [INFO] Added manifest entry: 62082778_scherzo.html
+2026-05-25 00:10:55,559 [WARNING] 62107414_Crimson.html: could not parse author from <title>: 'Crimson'
+2026-05-25 00:10:55,569 [INFO] Added manifest entry: 62107414_Crimson.html
+2026-05-25 00:10:55,595 [WARNING] 62134987_love_is_a_witch.html: could not parse author from <title>: 'Love Is a Witch'
+2026-05-25 00:10:55,632 [INFO] Added manifest entry: 62134987_love_is_a_witch.html
+2026-05-25 00:10:55,653 [WARNING] 62152813_where_we_belong.html: could not parse author from <title>: 'Where we belong'
+2026-05-25 00:10:55,679 [INFO] Added manifest entry: 62152813_where_we_belong.html
+2026-05-25 00:10:55,709 [WARNING] 62180950_crescendo.html: could not parse author from <title>: 'Crescendo'
+2026-05-25 00:10:55,745 [INFO] Added manifest entry: 62180950_crescendo.html
+2026-05-25 00:10:55,835 [WARNING] 62195077_im_sorry_i_love_you.html: could not parse author from <title>: 'I'm Sorry, I Love You'
+2026-05-25 00:10:55,918 [INFO] Added manifest entry: 62195077_im_sorry_i_love_you.html
+2026-05-25 00:10:55,925 [WARNING] 62248085_so_my_mother-in-law_is.html: could not parse author from <title>: 'so, my mother-in-law is god?'
+2026-05-25 00:10:55,933 [INFO] Added manifest entry: 62248085_so_my_mother-in-law_is.html
+2026-05-25 00:10:55,936 [WARNING] 62255211_what_a_night.html: could not parse author from <title>: 'What a Night'
+2026-05-25 00:10:55,941 [INFO] Added manifest entry: 62255211_what_a_night.html
+2026-05-25 00:10:55,950 [WARNING] 62265849_all_half_things.html: could not parse author from <title>: 'all half things'
+2026-05-25 00:10:55,960 [INFO] Added manifest entry: 62265849_all_half_things.html
+2026-05-25 00:10:56,030 [WARNING] 62267089_one_way_or_another.html: could not parse author from <title>: 'one way or another'
+2026-05-25 00:10:56,100 [INFO] Added manifest entry: 62267089_one_way_or_another.html
+2026-05-25 00:10:56,147 [WARNING] 62269809_Youre_awful_I_love_you.html: could not parse author from <title>: 'You're awful. I love you!'
+2026-05-25 00:10:56,205 [INFO] Added manifest entry: 62269809_Youre_awful_I_love_you.html
+2026-05-25 00:10:56,211 [WARNING] 62291035_blood_in_the_water_everyone_wants_her.html: could not parse author from <title>: 'blood in the water, everyone wants her'
+2026-05-25 00:10:56,218 [INFO] Added manifest entry: 62291035_blood_in_the_water_everyone_wants_her.html
+2026-05-25 00:10:56,226 [WARNING] 62313307_adagietto.html: could not parse author from <title>: 'Adagietto'
+2026-05-25 00:10:56,236 [INFO] Added manifest entry: 62313307_adagietto.html
+2026-05-25 00:10:56,260 [WARNING] 62325949_like_a_hurricane.html: could not parse author from <title>: 'like a hurricane'
+2026-05-25 00:10:56,289 [INFO] Added manifest entry: 62325949_like_a_hurricane.html
+2026-05-25 00:10:56,308 [WARNING] 62356414_if_youre_not_falling_youre_not_trying.html: could not parse author from <title>: 'If you’re not falling, you’re not trying'
+2026-05-25 00:10:56,332 [INFO] Added manifest entry: 62356414_if_youre_not_falling_youre_not_trying.html
+2026-05-25 00:10:56,340 [WARNING] 62385640_want_take_have.html: could not parse author from <title>: 'want, take, have'
+2026-05-25 00:10:56,349 [INFO] Added manifest entry: 62385640_want_take_have.html
+2026-05-25 00:10:56,407 [WARNING] 62417317_albatross.html: could not parse author from <title>: 'albatross'
+2026-05-25 00:10:56,459 [INFO] Added manifest entry: 62417317_albatross.html
+2026-05-25 00:10:56,466 [WARNING] 62421946_sex_love_unholy_truth.html: could not parse author from <title>: 'sex, love, unholy truth'
+2026-05-25 00:10:56,476 [INFO] Added manifest entry: 62421946_sex_love_unholy_truth.html
+2026-05-25 00:10:56,588 [WARNING] 62503864_well_i_wonder.html: could not parse author from <title>: 'Well I Wonder'
+2026-05-25 00:10:56,729 [INFO] Added manifest entry: 62503864_well_i_wonder.html
+2026-05-25 00:10:56,801 [WARNING] 62507077_put_your_fangs_in_me.html: could not parse author from <title>: 'put your fangs in me'
+2026-05-25 00:10:56,886 [INFO] Added manifest entry: 62507077_put_your_fangs_in_me.html
+2026-05-25 00:10:56,975 [WARNING] 62535538_glitter_glue_and_signs_of_life.html: could not parse author from <title>: 'Glitter, Glue, and Signs of Life'
+2026-05-25 00:10:57,071 [INFO] Added manifest entry: 62535538_glitter_glue_and_signs_of_life.html
+2026-05-25 00:10:57,121 [WARNING] 62546668_wicked_witchcraft.html: could not parse author from <title>: 'Wicked Witchcraft'
+2026-05-25 00:10:57,179 [INFO] Added manifest entry: 62546668_wicked_witchcraft.html
+2026-05-25 00:10:57,342 [WARNING] 62585464_mrs_ampamp_mrs_harknessvidal.html: could not parse author from <title>: 'Mrs &amp; Mrs Harkness-Vidal'
+2026-05-25 00:10:57,516 [INFO] Added manifest entry: 62585464_mrs_ampamp_mrs_harknessvidal.html
+2026-05-25 00:10:57,548 [WARNING] 62589532_harkness.html: could not parse author from <title>: 'Harkness'
+2026-05-25 00:10:57,572 [INFO] Added manifest entry: 62589532_harkness.html
+2026-05-25 00:10:57,605 [WARNING] 62591797_time_in_a_bottle.html: could not parse author from <title>: 'Time in a Bottle'
+2026-05-25 00:10:57,644 [INFO] Added manifest entry: 62591797_time_in_a_bottle.html
+2026-05-25 00:10:57,693 [WARNING] 62592292_take_it_from_the_top_you_are_a_bottom.html: could not parse author from <title>: 'Take it from the top (you are a bottom)'
+2026-05-25 00:10:57,751 [INFO] Added manifest entry: 62592292_take_it_from_the_top_you_are_a_bottom.html
+2026-05-25 00:10:57,763 [WARNING] 62615323_questions.html: could not parse author from <title>: 'Questions'
+2026-05-25 00:10:57,779 [INFO] Added manifest entry: 62615323_questions.html
+2026-05-25 00:10:57,825 [WARNING] 62675485_get_you_where_you_wanna.html: could not parse author from <title>: 'get you where you wanna go, if you know what i mean'
+2026-05-25 00:10:57,854 [INFO] Added manifest entry: 62675485_get_you_where_you_wanna.html
+2026-05-25 00:10:57,861 [WARNING] 62682502_love_is_a_four_letter_word.html: could not parse author from <title>: 'Love Is a Four Letter Word'
+2026-05-25 00:10:57,870 [INFO] Added manifest entry: 62682502_love_is_a_four_letter_word.html
+2026-05-25 00:10:57,931 [WARNING] 62737456_not_my_type.html: could not parse author from <title>: 'Not My Type'
+2026-05-25 00:10:58,005 [INFO] Added manifest entry: 62737456_not_my_type.html
+2026-05-25 00:10:58,125 [WARNING] 62739748_luminous.html: could not parse author from <title>: 'Luminous'
+2026-05-25 00:10:58,280 [INFO] Added manifest entry: 62739748_luminous.html
+2026-05-25 00:10:58,285 [WARNING] 62837335_the_time_it_takes_to_let_go.html: could not parse author from <title>: 'The Time It Takes To Let Go'
+2026-05-25 00:10:58,290 [INFO] Added manifest entry: 62837335_the_time_it_takes_to_let_go.html
+2026-05-25 00:10:58,296 [WARNING] 62841521_for_the_love_of_spring.html: could not parse author from <title>: 'For the Love of Spring'
+2026-05-25 00:10:58,303 [INFO] Added manifest entry: 62841521_for_the_love_of_spring.html
+2026-05-25 00:10:58,416 [WARNING] 62861993_my_cries_and_your_whispers.html: could not parse author from <title>: 'My Cries and Your Whispers'
+2026-05-25 00:10:58,536 [INFO] Added manifest entry: 62861993_my_cries_and_your_whispers.html
+2026-05-25 00:10:58,641 [WARNING] 62925352_is_it_casual_now.html: could not parse author from <title>: 'Is It Casual Now?'
+2026-05-25 00:10:58,754 [INFO] Added manifest entry: 62925352_is_it_casual_now.html
+2026-05-25 00:10:58,760 [WARNING] 62935369_love_offline.html: could not parse author from <title>: 'love, offline'
+2026-05-25 00:10:58,768 [INFO] Added manifest entry: 62935369_love_offline.html
+2026-05-25 00:10:58,801 [WARNING] 62959210_power_play.html: could not parse author from <title>: 'Power Play'
+2026-05-25 00:10:58,845 [INFO] Added manifest entry: 62959210_power_play.html
+2026-05-25 00:10:58,859 [WARNING] 62975017_how_many_corners_do_i_have_to_turn_how_many_times.html: could not parse author from <title>: 'how many corners do i have to turn? (how many times do i have to learn?)'
+2026-05-25 00:10:58,881 [INFO] Added manifest entry: 62975017_how_many_corners_do_i_have_to_turn_how_many_times.html
+2026-05-25 00:10:59,002 [WARNING] 63026209_ban_all_the_music.html: could not parse author from <title>: 'Ban All the Music'
+2026-05-25 00:10:59,130 [INFO] Added manifest entry: 63026209_ban_all_the_music.html
+2026-05-25 00:10:59,135 [WARNING] 63046258_talk_some_sense_to_me.html: could not parse author from <title>: 'Talk Some Sense to Me'
+2026-05-25 00:10:59,141 [INFO] Added manifest entry: 63046258_talk_some_sense_to_me.html
+2026-05-25 00:10:59,143 [WARNING] 63144823_night_verses.html: could not parse author from <title>: 'Night Verses'
+2026-05-25 00:10:59,146 [INFO] Added manifest entry: 63144823_night_verses.html
+2026-05-25 00:10:59,307 [WARNING] 63145963_its_strictly_business.html: could not parse author from <title>: 'It's strictly business'
+2026-05-25 00:10:59,486 [INFO] Added manifest entry: 63145963_its_strictly_business.html
+2026-05-25 00:10:59,489 [WARNING] 63196099_take_it_easy.html: could not parse author from <title>: 'Take It Easy'
+2026-05-25 00:10:59,493 [INFO] Added manifest entry: 63196099_take_it_easy.html
+2026-05-25 00:10:59,533 [WARNING] 63244063_catch_me_when_i_fall_for_you.html: could not parse author from <title>: 'Catch Me When I Fall for You'
+2026-05-25 00:10:59,580 [INFO] Added manifest entry: 63244063_catch_me_when_i_fall_for_you.html
+2026-05-25 00:10:59,631 [WARNING] 63309742_guilty_as_sin.html: could not parse author from <title>: 'guilty as sin'
+2026-05-25 00:10:59,676 [INFO] Added manifest entry: 63309742_guilty_as_sin.html
+2026-05-25 00:10:59,730 [WARNING] 63343102_wicked_game.html: could not parse author from <title>: 'Wicked Game'
+2026-05-25 00:10:59,795 [INFO] Added manifest entry: 63343102_wicked_game.html
+2026-05-25 00:10:59,800 [WARNING] 63349309_now_we_drop_our_composure.html: could not parse author from <title>: 'Now We Drop Our Composure'
+2026-05-25 00:10:59,806 [INFO] Added manifest entry: 63349309_now_we_drop_our_composure.html
+2026-05-25 00:10:59,830 [WARNING] 63360778_all_the_things_we_could_do.html: could not parse author from <title>: 'All the Things We Could Do'
+2026-05-25 00:10:59,863 [INFO] Added manifest entry: 63360778_all_the_things_we_could_do.html
+2026-05-25 00:10:59,963 [WARNING] 63384415_rio_vidal_does_not_give_a_damn.html: could not parse author from <title>: 'Rio Vidal Does Not Give a Damn'
+2026-05-25 00:11:00,072 [INFO] Added manifest entry: 63384415_rio_vidal_does_not_give_a_damn.html
+2026-05-25 00:11:00,089 [WARNING] 63423910_its_just_in_my_nature.html: could not parse author from <title>: 'It's Just in My Nature'
+2026-05-25 00:11:00,112 [INFO] Added manifest entry: 63423910_its_just_in_my_nature.html
+2026-05-25 00:11:00,132 [WARNING] 63442861_what_if_my_heart_belongs_to_you.html: could not parse author from <title>: 'what if my heart belongs to you?'
+2026-05-25 00:11:00,155 [INFO] Added manifest entry: 63442861_what_if_my_heart_belongs_to_you.html
+2026-05-25 00:11:00,201 [WARNING] 63473356_accidental_add.html: could not parse author from <title>: 'Accidental Add'
+2026-05-25 00:11:00,242 [INFO] Added manifest entry: 63473356_accidental_add.html
+2026-05-25 00:11:00,376 [WARNING] 63543898_a_tentative_ellipsis_the_parting_of_your_lips_and.html: could not parse author from <title>: 'A Tentative'
+2026-05-25 00:11:00,525 [INFO] Added manifest entry: 63543898_a_tentative_ellipsis_the_parting_of_your_lips_and.html
+2026-05-25 00:11:00,785 [WARNING] 63598684_second_chances.html: could not parse author from <title>: 'Second Chances'
+2026-05-25 00:11:01,053 [INFO] Added manifest entry: 63598684_second_chances.html
+2026-05-25 00:11:01,169 [WARNING] 63616156_when_heartbreak_meets_jealousy.html: could not parse author from <title>: 'When Heartbreak Meets Jealousy'
+2026-05-25 00:11:01,298 [INFO] Added manifest entry: 63616156_when_heartbreak_meets_jealousy.html
+2026-05-25 00:11:01,401 [WARNING] 63637597_the_space_between_notes.html: could not parse author from <title>: 'The Space Between Notes'
+2026-05-25 00:11:01,525 [INFO] Added manifest entry: 63637597_the_space_between_notes.html
+2026-05-25 00:11:01,622 [WARNING] 63638671_number_13.html: could not parse author from <title>: 'Number 13'
+2026-05-25 00:11:01,700 [INFO] Added manifest entry: 63638671_number_13.html
+2026-05-25 00:11:01,802 [WARNING] 63639295_the_best_medicine.html: could not parse author from <title>: 'The Best Medicine'
+2026-05-25 00:11:01,907 [INFO] Added manifest entry: 63639295_the_best_medicine.html
+2026-05-25 00:11:01,913 [WARNING] 63647167_all_the_time_in_the_world.html: could not parse author from <title>: 'All The Time In The World'
+2026-05-25 00:11:01,920 [INFO] Added manifest entry: 63647167_all_the_time_in_the_world.html
+2026-05-25 00:11:01,940 [WARNING] 63694918_i_wonder_which_cup_youll_drink_from_i_hope_its.html: could not parse author from <title>: 'i wonder which cup you'll drink from (i hope it's mine)'
+2026-05-25 00:11:01,964 [INFO] Added manifest entry: 63694918_i_wonder_which_cup_youll_drink_from_i_hope_its.html
+2026-05-25 00:11:01,998 [WARNING] 63772108_i_still_shut_my_eyes.html: could not parse author from <title>: 'I Still Shut My Eyes'
+2026-05-25 00:11:02,037 [INFO] Added manifest entry: 63772108_i_still_shut_my_eyes.html
+2026-05-25 00:11:02,203 [WARNING] 63813619_we_found_each_other_in_the_dark.html: could not parse author from <title>: 'We Found Each Other in the Dark'
+2026-05-25 00:11:02,379 [INFO] Added manifest entry: 63813619_we_found_each_other_in_the_dark.html
+2026-05-25 00:11:02,411 [WARNING] 63873262_the_tales_of_new_salem.html: could not parse author from <title>: 'The Tales of New Salem'
+2026-05-25 00:11:02,437 [INFO] Added manifest entry: 63873262_the_tales_of_new_salem.html
+2026-05-25 00:11:02,501 [WARNING] 63879877_why_dont_you_want_me.html: could not parse author from <title>: 'why don't you want me?'
+2026-05-25 00:11:02,576 [INFO] Added manifest entry: 63879877_why_dont_you_want_me.html
+2026-05-25 00:11:02,580 [WARNING] 63911329_we_dont_fit_in_the_grand_design.html: could not parse author from <title>: 'We Don't Fit In The Grand Design'
+2026-05-25 00:11:02,584 [INFO] Added manifest entry: 63911329_we_dont_fit_in_the_grand_design.html
+2026-05-25 00:11:02,588 [WARNING] 63967093_ask_me_nicely_from_your_knees.html: could not parse author from <title>: 'ask me nicely from your knees'
+2026-05-25 00:11:02,593 [INFO] Added manifest entry: 63967093_ask_me_nicely_from_your_knees.html
+2026-05-25 00:11:02,780 [WARNING] 63986338_chance_to_fix.html: could not parse author from <title>: 'Chance to Fix'
+2026-05-25 00:11:02,972 [INFO] Added manifest entry: 63986338_chance_to_fix.html
+2026-05-25 00:11:03,029 [WARNING] 63999277_reaching_out_for_more.html: could not parse author from <title>: 'Reaching Out For More'
+2026-05-25 00:11:03,096 [INFO] Added manifest entry: 63999277_reaching_out_for_more.html
+2026-05-25 00:11:03,195 [WARNING] 64036210_cant_be_a_good_girl_even_if_i_tried.html: could not parse author from <title>: 'Can't Be a Good Girl, Even If I Tried'
+2026-05-25 00:11:03,291 [INFO] Added manifest entry: 64036210_cant_be_a_good_girl_even_if_i_tried.html
+2026-05-25 00:11:03,295 [WARNING] 64068667_cause_nobody_knows_you_better.html: could not parse author from <title>: ''Cause Nobody Knows You Better'
+2026-05-25 00:11:03,298 [INFO] Added manifest entry: 64068667_cause_nobody_knows_you_better.html
+2026-05-25 00:11:03,353 [WARNING] 64133626_honey_youre_familiar.html: could not parse author from <title>: 'honey, you're familiar'
+2026-05-25 00:11:03,417 [INFO] Added manifest entry: 64133626_honey_youre_familiar.html
+2026-05-25 00:11:03,488 [WARNING] 64167130_illicit_affairs.html: could not parse author from <title>: 'illicit affairs'
+2026-05-25 00:11:03,552 [INFO] Added manifest entry: 64167130_illicit_affairs.html
+2026-05-25 00:11:03,556 [WARNING] 64176607_whos_going_to_tell_me_no.html: could not parse author from <title>: 'who's going to tell me no?'
+2026-05-25 00:11:03,560 [INFO] Added manifest entry: 64176607_whos_going_to_tell_me_no.html
+2026-05-25 00:11:03,605 [WARNING] 64272802_feel_the_love_of_her.html: could not parse author from <title>: 'feel the love of her caress (she will be your living end)'
+2026-05-25 00:11:03,662 [INFO] Added manifest entry: 64272802_feel_the_love_of_her.html
+2026-05-25 00:11:03,691 [WARNING] 64291306_pushing_it_down_and_praying.html: could not parse author from <title>: 'Pushing It Down and Praying'
+2026-05-25 00:11:03,725 [INFO] Added manifest entry: 64291306_pushing_it_down_and_praying.html
+2026-05-25 00:11:03,729 [WARNING] 64491997_ill_be_your_distraction.html: could not parse author from <title>: 'I'll Be Your Distraction'
+2026-05-25 00:11:03,734 [INFO] Added manifest entry: 64491997_ill_be_your_distraction.html
+2026-05-25 00:11:03,846 [WARNING] 64539574_god_knows_you_need_it.html: could not parse author from <title>: 'God Knows You Need It'
+2026-05-25 00:11:03,961 [INFO] Added manifest entry: 64539574_god_knows_you_need_it.html
+2026-05-25 00:11:04,011 [WARNING] 64543360_she_looks_like_the_real_thing_she_tastes_like_the.html: could not parse author from <title>: 'she looks like the real thing (she tastes like the real thing)'
+2026-05-25 00:11:04,071 [INFO] Added manifest entry: 64543360_she_looks_like_the_real_thing_she_tastes_like_the.html
+2026-05-25 00:11:04,220 [WARNING] 64573144_i_tore_you_apart_in_my_head.html: could not parse author from <title>: 'I Tore You Apart In My Head'
+2026-05-25 00:11:04,375 [INFO] Added manifest entry: 64573144_i_tore_you_apart_in_my_head.html
+2026-05-25 00:11:04,448 [WARNING] 64578517_how_it_started.html: could not parse author from <title>: 'How It Started'
+2026-05-25 00:11:04,541 [INFO] Added manifest entry: 64578517_how_it_started.html
+2026-05-25 00:11:04,758 [WARNING] 64589716_but_we_cant.html: could not parse author from <title>: 'But We Can't'
+2026-05-25 00:11:04,973 [INFO] Added manifest entry: 64589716_but_we_cant.html
+2026-05-25 00:11:05,048 [WARNING] 64606348_god_is_a_woman.html: could not parse author from <title>: 'God is a woman'
+2026-05-25 00:11:05,137 [INFO] Added manifest entry: 64606348_god_is_a_woman.html
+2026-05-25 00:11:05,155 [WARNING] 64617655_beneath_the_scars.html: could not parse author from <title>: 'Beneath the scars'
+2026-05-25 00:11:05,177 [INFO] Added manifest entry: 64617655_beneath_the_scars.html
+2026-05-25 00:11:05,221 [WARNING] 64656664_the_case_of_the_robbery_gone_wrong.html: could not parse author from <title>: 'the case of the robbery gone wrong'
+2026-05-25 00:11:05,243 [INFO] Added manifest entry: 64656664_the_case_of_the_robbery_gone_wrong.html
+2026-05-25 00:11:05,285 [WARNING] 64663663_tempus_voluntas_spatium.html: could not parse author from <title>: 'Tempus, Voluntas, Spatium'
+2026-05-25 00:11:05,335 [INFO] Added manifest entry: 64663663_tempus_voluntas_spatium.html
+2026-05-25 00:11:05,505 [WARNING] 64684756_falling_for_the_enemy.html: could not parse author from <title>: 'Falling for the Enemy'
+2026-05-25 00:11:05,701 [INFO] Added manifest entry: 64684756_falling_for_the_enemy.html
+2026-05-25 00:11:05,708 [WARNING] 64714843_five_days_four_nights.html: could not parse author from <title>: 'Five Days, Four Nights'
+2026-05-25 00:11:05,716 [INFO] Added manifest entry: 64714843_five_days_four_nights.html
+2026-05-25 00:11:05,833 [WARNING] 64778476_by_blood_and_bloom.html: could not parse author from <title>: 'By Blood and Bloom'
+2026-05-25 00:11:05,957 [INFO] Added manifest entry: 64778476_by_blood_and_bloom.html
+2026-05-25 00:11:05,970 [WARNING] 64803190_astonishment_and_joy.html: could not parse author from <title>: 'astonishment and joy'
+2026-05-25 00:11:05,984 [INFO] Added manifest entry: 64803190_astonishment_and_joy.html
+2026-05-25 00:11:06,078 [WARNING] 64807855_in_the_shadows_of_the_pines.html: could not parse author from <title>: 'In The Shadows of the Pines'
+2026-05-25 00:11:06,178 [INFO] Added manifest entry: 64807855_in_the_shadows_of_the_pines.html
+2026-05-25 00:11:06,194 [WARNING] 64835218_udon_know_how_much_i_crave_you.html: could not parse author from <title>: 'udon know how much I crave you'
+2026-05-25 00:11:06,213 [INFO] Added manifest entry: 64835218_udon_know_how_much_i_crave_you.html
+2026-05-25 00:11:06,219 [WARNING] 64844032_garden_of_eden.html: could not parse author from <title>: 'garden of eden'
+2026-05-25 00:11:06,226 [INFO] Added manifest entry: 64844032_garden_of_eden.html
+2026-05-25 00:11:06,326 [WARNING] 64941802_work_and_play_ball.html: could not parse author from <title>: 'Work and (Play Ball)'
+2026-05-25 00:11:06,432 [INFO] Added manifest entry: 64941802_work_and_play_ball.html
+2026-05-25 00:11:06,450 [WARNING] 64985122_the_heat_is_on.html: could not parse author from <title>: 'The Heat Is On'
+2026-05-25 00:11:06,472 [INFO] Added manifest entry: 64985122_the_heat_is_on.html
+2026-05-25 00:11:06,480 [WARNING] 65003722_i_dont_care_that_youre_a_stoner_fall_right_into_me.html: could not parse author from <title>: 'i don’t care that you’re a stoner (fall right into me)'
+2026-05-25 00:11:06,490 [INFO] Added manifest entry: 65003722_i_dont_care_that_youre_a_stoner_fall_right_into_me.html
+2026-05-25 00:11:06,508 [WARNING] 65056900_ill_be_your_garbage_man.html: could not parse author from <title>: 'I'll Be Your Garbage Man'
+2026-05-25 00:11:06,530 [INFO] Added manifest entry: 65056900_ill_be_your_garbage_man.html
+2026-05-25 00:11:06,647 [WARNING] 65129329_rented_hearts.html: could not parse author from <title>: 'Rented Hearts'
+2026-05-25 00:11:06,772 [INFO] Added manifest entry: 65129329_rented_hearts.html
+2026-05-25 00:11:06,775 [WARNING] 65243767_green_is_the_colour_of_her_kind.html: could not parse author from <title>: 'green is the colour of her kind'
+2026-05-25 00:11:06,779 [INFO] Added manifest entry: 65243767_green_is_the_colour_of_her_kind.html
+2026-05-25 00:11:06,978 [WARNING] 65268397_night_shift.html: could not parse author from <title>: 'night shift'
+2026-05-25 00:11:07,195 [INFO] Added manifest entry: 65268397_night_shift.html
+2026-05-25 00:11:07,210 [WARNING] 65301250_obsessed.html: could not parse author from <title>: 'Obsessed'
+2026-05-25 00:11:07,226 [INFO] Added manifest entry: 65301250_obsessed.html
+2026-05-25 00:11:07,229 [WARNING] 65426791_baby_its_fate_not_luck.html: could not parse author from <title>: 'baby, it's fate, not luck'
+2026-05-25 00:11:07,233 [INFO] Added manifest entry: 65426791_baby_its_fate_not_luck.html
+2026-05-25 00:11:07,236 [WARNING] 65451649_she_depends_on_you.html: could not parse author from <title>: 'She Depends on You'
+2026-05-25 00:11:07,241 [INFO] Added manifest entry: 65451649_she_depends_on_you.html
+2026-05-25 00:11:07,272 [WARNING] 65476798_family_line.html: could not parse author from <title>: 'family line'
+2026-05-25 00:11:07,309 [INFO] Added manifest entry: 65476798_family_line.html
+2026-05-25 00:11:07,326 [WARNING] 65557984_ill_hear_you_even_when_you_cant_speak.html: could not parse author from <title>: 'I’ll hear you even when you can’t speak'
+2026-05-25 00:11:07,344 [INFO] Added manifest entry: 65557984_ill_hear_you_even_when_you_cant_speak.html
+2026-05-25 00:11:07,354 [WARNING] 65671351_the_devil_you_know.html: could not parse author from <title>: 'the devil you know'
+2026-05-25 00:11:07,367 [INFO] Added manifest entry: 65671351_the_devil_you_know.html
+2026-05-25 00:11:07,424 [WARNING] 65671972_agatha_all_along_week_2025.html: could not parse author from <title>: 'Agatha All Along Week 2025'
+2026-05-25 00:11:07,454 [INFO] Added manifest entry: 65671972_agatha_all_along_week_2025.html
+2026-05-25 00:11:07,458 [WARNING] 65679964_and_well_be_together_forever_ampamp_ever_more.html: could not parse author from <title>: 'And We'll Be Together (Forever &amp; Ever More)'
+2026-05-25 00:11:07,463 [INFO] Added manifest entry: 65679964_and_well_be_together_forever_ampamp_ever_more.html
+2026-05-25 00:11:07,467 [WARNING] 65690266_certified_preowned.html: could not parse author from <title>: 'Certified Pre-Owned'
+2026-05-25 00:11:07,473 [INFO] Added manifest entry: 65690266_certified_preowned.html
+2026-05-25 00:11:07,478 [WARNING] 65706430_you_make_loving_fun.html: could not parse author from <title>: 'You Make Loving Fun'
+2026-05-25 00:11:07,484 [INFO] Added manifest entry: 65706430_you_make_loving_fun.html
+2026-05-25 00:11:07,511 [WARNING] 65710069_cool_about_it.html: could not parse author from <title>: 'Cool About it'
+2026-05-25 00:11:07,544 [INFO] Added manifest entry: 65710069_cool_about_it.html
+2026-05-25 00:11:07,555 [WARNING] 65733055_blade_of_grass.html: could not parse author from <title>: 'blade of grass'
+2026-05-25 00:11:07,568 [INFO] Added manifest entry: 65733055_blade_of_grass.html
+2026-05-25 00:11:07,576 [WARNING] 65733829_juxtaposition_in_fate.html: could not parse author from <title>: 'juxtaposition in fate'
+2026-05-25 00:11:07,585 [INFO] Added manifest entry: 65733829_juxtaposition_in_fate.html
+2026-05-25 00:11:07,594 [WARNING] 65740978_let_me_wrap_my_teeth_around_the_world.html: could not parse author from <title>: 'Let me wrap my teeth around the world'
+2026-05-25 00:11:07,605 [INFO] Added manifest entry: 65740978_let_me_wrap_my_teeth_around_the_world.html
+2026-05-25 00:11:07,644 [WARNING] 65761876_love_me_tender.html: could not parse author from <title>: 'Love me tender'
+2026-05-25 00:11:07,690 [INFO] Added manifest entry: 65761876_love_me_tender.html
+2026-05-25 00:11:07,720 [WARNING] 65764210_The_Teacher_Trap.html: could not parse author from <title>: 'The Teacher Trap'
+2026-05-25 00:11:07,746 [INFO] Added manifest entry: 65764210_The_Teacher_Trap.html
+2026-05-25 00:11:07,753 [WARNING] 65781208_this_time_you_wont_leave.html: could not parse author from <title>: 'this time you won’t leave me sinking'
+2026-05-25 00:11:07,763 [INFO] Added manifest entry: 65781208_this_time_you_wont_leave.html
+2026-05-25 00:11:07,775 [WARNING] 65781856_just_hold_on.html: could not parse author from <title>: 'just hold on'
+2026-05-25 00:11:07,790 [INFO] Added manifest entry: 65781856_just_hold_on.html
+2026-05-25 00:11:07,808 [WARNING] 65811607_ill_give_what_i_get.html: could not parse author from <title>: 'I'll Give What I Get'
+2026-05-25 00:11:07,829 [INFO] Added manifest entry: 65811607_ill_give_what_i_get.html
+2026-05-25 00:11:07,836 [WARNING] 65819008_kiss_my_petals_weave_me_through_a_dream.html: could not parse author from <title>: 'kiss my petals, weave me through a dream'
+2026-05-25 00:11:07,844 [INFO] Added manifest entry: 65819008_kiss_my_petals_weave_me_through_a_dream.html
+2026-05-25 00:11:07,851 [WARNING] 65824672_Nightmare_of_a_Dream.html: could not parse author from <title>: 'Nightmare of a Dream Girl'
+2026-05-25 00:11:07,859 [INFO] Added manifest entry: 65824672_Nightmare_of_a_Dream.html
+2026-05-25 00:11:07,863 [WARNING] 65825197_its_bloody_and_raw_but_i_swear_it_is_sweet.html: could not parse author from <title>: 'It's bloody and raw, but I swear it is sweet'
+2026-05-25 00:11:07,868 [INFO] Added manifest entry: 65825197_its_bloody_and_raw_but_i_swear_it_is_sweet.html
+2026-05-25 00:11:07,874 [WARNING] 65827327_bewitched.html: could not parse author from <title>: 'Bewitched'
+2026-05-25 00:11:07,881 [INFO] Added manifest entry: 65827327_bewitched.html
+2026-05-25 00:11:07,890 [WARNING] 65829805_dea_pascit_corvos.html: could not parse author from <title>: 'dea pascit corvos'
+2026-05-25 00:11:07,901 [INFO] Added manifest entry: 65829805_dea_pascit_corvos.html
+2026-05-25 00:11:07,908 [WARNING] 65873035_im_yours.html: could not parse author from <title>: 'I'm Yours'
+2026-05-25 00:11:07,917 [INFO] Added manifest entry: 65873035_im_yours.html
+2026-05-25 00:11:07,926 [WARNING] 65882953_a_drunken_menace.html: could not parse author from <title>: 'A drunken menace'
+2026-05-25 00:11:07,936 [INFO] Added manifest entry: 65882953_a_drunken_menace.html
+2026-05-25 00:11:07,944 [WARNING] 65895589_the_dare.html: could not parse author from <title>: 'The Dare'
+2026-05-25 00:11:07,954 [INFO] Added manifest entry: 65895589_the_dare.html
+2026-05-25 00:11:07,958 [WARNING] 66081787_oh_the_sunlit_haze.html: could not parse author from <title>: 'Oh, The Sunlit Haze'
+2026-05-25 00:11:07,963 [INFO] Added manifest entry: 66081787_oh_the_sunlit_haze.html
+2026-05-25 00:11:08,026 [WARNING] 66087052_you_may_not_be_mine_but_i_could_be_yours.html: could not parse author from <title>: 'you may not be mine (but i could be yours)'
+2026-05-25 00:11:08,085 [INFO] Added manifest entry: 66087052_you_may_not_be_mine_but_i_could_be_yours.html
+2026-05-25 00:11:08,108 [WARNING] 66106753_bound_by_oath_undone_by_you.html: could not parse author from <title>: 'Bound By Oath, Undone by You'
+2026-05-25 00:11:08,136 [INFO] Added manifest entry: 66106753_bound_by_oath_undone_by_you.html
+2026-05-25 00:11:08,175 [WARNING] 66114247_bush_league.html: could not parse author from <title>: 'Bush League'
+2026-05-25 00:11:08,221 [INFO] Added manifest entry: 66114247_bush_league.html
+2026-05-25 00:11:08,241 [WARNING] 66234415_where_art_thou_why_not.html: could not parse author from <title>: 'where art thou, why not uponeth me?'
+2026-05-25 00:11:08,267 [INFO] Added manifest entry: 66234415_where_art_thou_why_not.html
+2026-05-25 00:11:08,294 [WARNING] 66257017_the_beach_house.html: could not parse author from <title>: 'The Beach House'
+2026-05-25 00:11:08,316 [INFO] Added manifest entry: 66257017_the_beach_house.html
+2026-05-25 00:11:08,329 [WARNING] 66258856_i_follow_your_perfume.html: could not parse author from <title>: 'I follow your perfume'
+2026-05-25 00:11:08,346 [INFO] Added manifest entry: 66258856_i_follow_your_perfume.html
+2026-05-25 00:11:08,381 [WARNING] 66314887_wrong_number.html: could not parse author from <title>: 'Wrong Number'
+2026-05-25 00:11:08,422 [INFO] Added manifest entry: 66314887_wrong_number.html
+2026-05-25 00:11:08,465 [WARNING] 66586843_eight.html: could not parse author from <title>: 'Eight'
+2026-05-25 00:11:08,515 [INFO] Added manifest entry: 66586843_eight.html
+2026-05-25 00:11:08,554 [WARNING] 66656089_The_Poison_Im_Drawn_to.html: could not parse author from <title>: 'The Poison I'm Drawn to'
+2026-05-25 00:11:08,589 [INFO] Added manifest entry: 66656089_The_Poison_Im_Drawn_to.html
+2026-05-25 00:11:08,632 [WARNING] 66675667_youll_find_me_on_my_tallest_tiptoes.html: could not parse author from <title>: 'you’ll find me on my tallest tiptoes'
+2026-05-25 00:11:08,682 [INFO] Added manifest entry: 66675667_youll_find_me_on_my_tallest_tiptoes.html
+2026-05-25 00:11:08,690 [WARNING] 66676834_what_to_do_when_you_are_dead.html: could not parse author from <title>: 'What to Do When You Are Dead'
+2026-05-25 00:11:08,699 [INFO] Added manifest entry: 66676834_what_to_do_when_you_are_dead.html
+2026-05-25 00:11:08,728 [WARNING] 66783133_that_which_is_not_common.html: could not parse author from <title>: 'That Which is Not Common'
+2026-05-25 00:11:08,765 [INFO] Added manifest entry: 66783133_that_which_is_not_common.html
+2026-05-25 00:11:08,874 [WARNING] 66895519_harkness_pathology.html: could not parse author from <title>: 'Harkness Pathology'
+2026-05-25 00:11:08,989 [INFO] Added manifest entry: 66895519_harkness_pathology.html
+2026-05-25 00:11:09,002 [WARNING] 66930835_theres_something_just_a_little_more_than_ecstasy.html: could not parse author from <title>: 'There's Something Just a Little More Than Ecstasy'
+2026-05-25 00:11:09,018 [INFO] Added manifest entry: 66930835_theres_something_just_a_little_more_than_ecstasy.html
+2026-05-25 00:11:09,045 [WARNING] 66937096_what_a_terrifying_work_of_art.html: could not parse author from <title>: 'what a terrifying work of art'
+2026-05-25 00:11:09,081 [INFO] Added manifest entry: 66937096_what_a_terrifying_work_of_art.html
+2026-05-25 00:11:09,120 [WARNING] 67054015_you_got_me_looking_so_crazy_right_now.html: could not parse author from <title>: 'you got me looking so crazy right now'
+2026-05-25 00:11:09,153 [INFO] Added manifest entry: 67054015_you_got_me_looking_so_crazy_right_now.html
+2026-05-25 00:11:09,155 [WARNING] 67106170_over_a_bridge_and_into_love.html: could not parse author from <title>: 'Over a Bridge and Into Love'
+2026-05-25 00:11:09,158 [INFO] Added manifest entry: 67106170_over_a_bridge_and_into_love.html
+2026-05-25 00:11:09,160 [WARNING] 67106680_stay_small.html: could not parse author from <title>: 'Stay Small'
+2026-05-25 00:11:09,163 [INFO] Added manifest entry: 67106680_stay_small.html
+2026-05-25 00:11:09,223 [WARNING] 67126099_going_viral.html: could not parse author from <title>: 'Going Viral'
+2026-05-25 00:11:09,295 [INFO] Added manifest entry: 67126099_going_viral.html
+2026-05-25 00:11:09,307 [WARNING] 67155280_start_me_up.html: could not parse author from <title>: 'start me up'
+2026-05-25 00:11:09,322 [INFO] Added manifest entry: 67155280_start_me_up.html
+2026-05-25 00:11:09,381 [WARNING] 67222777_oh_but_she_burns.html: could not parse author from <title>: 'oh, but she burns'
+2026-05-25 00:11:09,439 [INFO] Added manifest entry: 67222777_oh_but_she_burns.html
+2026-05-25 00:11:09,477 [WARNING] 67250692_you_arent_mine_for_the_taking.html: could not parse author from <title>: 'you aren’t mine for the taking'
+2026-05-25 00:11:09,523 [INFO] Added manifest entry: 67250692_you_arent_mine_for_the_taking.html
+2026-05-25 00:11:09,546 [WARNING] 67291498_meet_me_at_the_end.html: could not parse author from <title>: 'Meet Me At The End'
+2026-05-25 00:11:09,574 [INFO] Added manifest entry: 67291498_meet_me_at_the_end.html
+2026-05-25 00:11:09,578 [WARNING] 67383873_secrets_ampamp_suspenders.html: could not parse author from <title>: 'Secrets &amp; Suspenders'
+2026-05-25 00:11:09,583 [INFO] Added manifest entry: 67383873_secrets_ampamp_suspenders.html
+2026-05-25 00:11:09,628 [WARNING] 67661881_the_road_not_taken_among.html: could not parse author from <title>: 'the road not taken (among the wildflowers)'
+2026-05-25 00:11:09,683 [INFO] Added manifest entry: 67661881_the_road_not_taken_among.html
+2026-05-25 00:11:09,714 [WARNING] 67739596_between_the_flames_and_her_eyes.html: could not parse author from <title>: 'Between the Flames and Her Eyes'
+2026-05-25 00:11:09,737 [INFO] Added manifest entry: 67739596_between_the_flames_and_her_eyes.html
+2026-05-25 00:11:09,781 [WARNING] 67757766_were_never_done.html: could not parse author from <title>: 'We're Never Done'
+2026-05-25 00:11:09,834 [INFO] Added manifest entry: 67757766_were_never_done.html
+2026-05-25 00:11:09,837 [WARNING] 67826836_wanna_take_a_chance.html: could not parse author from <title>: 'Wanna Take a Chance?'
+2026-05-25 00:11:09,842 [INFO] Added manifest entry: 67826836_wanna_take_a_chance.html
+2026-05-25 00:11:09,883 [WARNING] 67969351_alambre_púa.html: could not parse author from <title>: 'alambre púa'
+2026-05-25 00:11:09,932 [INFO] Added manifest entry: 67969351_alambre_púa.html
+2026-05-25 00:11:09,943 [WARNING] 67991716_Do_I_Cross_Your_Mind.html: could not parse author from <title>: 'Do I Cross Your Mind? ('Cause You've Always Been  On Mine)'
+2026-05-25 00:11:09,957 [INFO] Added manifest entry: 67991716_Do_I_Cross_Your_Mind.html
+2026-05-25 00:11:09,992 [WARNING] 68063521_what_the_body_knows.html: could not parse author from <title>: 'What the Body Knows'
+2026-05-25 00:11:10,018 [INFO] Added manifest entry: 68063521_what_the_body_knows.html
+2026-05-25 00:11:10,080 [WARNING] 68695086_the_witch_and_the_wolf.html: could not parse author from <title>: 'The Witch and The Wolf'
+2026-05-25 00:11:10,155 [INFO] Added manifest entry: 68695086_the_witch_and_the_wolf.html
+2026-05-25 00:11:10,189 [WARNING] 68905561_put_it_on_the_line.html: could not parse author from <title>: 'Put It On The Line'
+2026-05-25 00:11:10,231 [INFO] Added manifest entry: 68905561_put_it_on_the_line.html
+2026-05-25 00:11:10,241 [WARNING] 68983171_Would_You_Stay_By_My.html: could not parse author from <title>: 'Would You Stay By My Side...'
+2026-05-25 00:11:10,254 [INFO] Added manifest entry: 68983171_Would_You_Stay_By_My.html
+2026-05-25 00:11:10,264 [WARNING] 68983746_when_im_working_on_me.html: could not parse author from <title>: '...When I'm Working On Me'
+2026-05-25 00:11:10,279 [INFO] Added manifest entry: 68983746_when_im_working_on_me.html
+2026-05-25 00:11:10,428 [WARNING] 69039461_Rawr_Means_I_Love_You_in.html: could not parse author from <title>: 'Rawr! Means I Love You in Dinosaur'
+2026-05-25 00:11:10,588 [INFO] Added manifest entry: 69039461_Rawr_Means_I_Love_You_in.html
+2026-05-25 00:11:10,629 [WARNING] 69117076_the_winner_takes_it_all.html: could not parse author from <title>: 'the winner takes it all'
+2026-05-25 00:11:10,679 [INFO] Added manifest entry: 69117076_the_winner_takes_it_all.html
+2026-05-25 00:11:10,704 [WARNING] 69250446_I_Wanna_Be_YoursYoure.html: could not parse author from <title>: 'I Wanna Be Yours///You're All I Want'
+2026-05-25 00:11:10,731 [INFO] Added manifest entry: 69250446_I_Wanna_Be_YoursYoure.html
+2026-05-25 00:11:10,768 [WARNING] 69317051_i_let_my_head_spin_take_all_the_weight_off_my.html: could not parse author from <title>: 'i let my head spin (take all the weight off my shoulders)'
+2026-05-25 00:11:10,811 [INFO] Added manifest entry: 69317051_i_let_my_head_spin_take_all_the_weight_off_my.html
+2026-05-25 00:11:10,826 [WARNING] 69409446_rules_for_coparenting_with_your_witch_of_an_ex.html: could not parse author from <title>: 'Rules for Co-Parenting With Your Witch of an Ex'
+2026-05-25 00:11:10,845 [INFO] Added manifest entry: 69409446_rules_for_coparenting_with_your_witch_of_an_ex.html
+2026-05-25 00:11:10,946 [WARNING] 69689251_1111.html: could not parse author from <title>: '11:11'
+2026-05-25 00:11:11,042 [INFO] Added manifest entry: 69689251_1111.html
+2026-05-25 00:11:11,084 [WARNING] 69922756_Mirrorball.html: could not parse author from <title>: 'Mirrorball'
+2026-05-25 00:11:11,134 [INFO] Added manifest entry: 69922756_Mirrorball.html
+2026-05-25 00:11:11,384 [WARNING] 69930041_for_your_consideration.html: could not parse author from <title>: 'For Your Consideration'
+2026-05-25 00:11:11,663 [INFO] Added manifest entry: 69930041_for_your_consideration.html
+2026-05-25 00:11:11,693 [WARNING] 70115376_shatter_your_illusions.html: could not parse author from <title>: 'Shatter Your Illusions'
+2026-05-25 00:11:11,712 [INFO] Added manifest entry: 70115376_shatter_your_illusions.html
+2026-05-25 00:11:11,742 [WARNING] 70120581_one_happy_camper.html: could not parse author from <title>: 'One Happy Camper'
+2026-05-25 00:11:11,778 [INFO] Added manifest entry: 70120581_one_happy_camper.html
+2026-05-25 00:11:11,862 [WARNING] 70415451_the_witches_bodyguard.html: could not parse author from <title>: 'The Witches Bodyguard'
+2026-05-25 00:11:11,960 [INFO] Added manifest entry: 70415451_the_witches_bodyguard.html
+2026-05-25 00:11:12,012 [WARNING] 70538266_Rented_Hearts_Keep.html: could not parse author from <title>: 'Rented Hearts (Keep Beating)'
+2026-05-25 00:11:12,045 [INFO] Added manifest entry: 70538266_Rented_Hearts_Keep.html
+2026-05-25 00:11:12,073 [WARNING] 70550446_We_Go_Again.html: could not parse author from <title>: 'We Go Again'
+2026-05-25 00:11:12,149 [INFO] Added manifest entry: 70550446_We_Go_Again.html
+2026-05-25 00:11:12,245 [WARNING] 70740846_softballs_a_witch.html: could not parse author from <title>: 'Softball's A Witch'
+2026-05-25 00:11:12,342 [INFO] Added manifest entry: 70740846_softballs_a_witch.html
+2026-05-25 00:11:12,384 [WARNING] 71054176_somebody_to_hold.html: could not parse author from <title>: 'Somebody to Hold'
+2026-05-25 00:11:12,433 [INFO] Added manifest entry: 71054176_somebody_to_hold.html
+2026-05-25 00:11:12,442 [WARNING] 71416136_the_strawberry_thief.html: could not parse author from <title>: 'The Strawberry Thief'
+2026-05-25 00:11:12,453 [INFO] Added manifest entry: 71416136_the_strawberry_thief.html
+2026-05-25 00:11:12,458 [WARNING] 72357056_the_birthday_gift.html: could not parse author from <title>: 'The Birthday Gift'
+2026-05-25 00:11:12,465 [INFO] Added manifest entry: 72357056_the_birthday_gift.html
+2026-05-25 00:11:12,520 [WARNING] 72701616_war_of_hearts.html: could not parse author from <title>: 'War of Hearts'
+2026-05-25 00:11:12,588 [INFO] Added manifest entry: 72701616_war_of_hearts.html
+2026-05-25 00:11:12,620 [WARNING] 73047636_everlong.html: could not parse author from <title>: 'Everlong'
+2026-05-25 00:11:12,641 [INFO] Added manifest entry: 73047636_everlong.html
+2026-05-25 00:11:12,687 [WARNING] 73152711_youre_welcome_to_try_you_wouldnt_be_the_first_one.html: could not parse author from <title>: 'You're Welcome to Try (You Wouldn't Be the First One to Fail)'
+2026-05-25 00:11:12,743 [INFO] Added manifest entry: 73152711_youre_welcome_to_try_you_wouldnt_be_the_first_one.html
+2026-05-25 00:11:12,889 [WARNING] 73212906_Triage_of_the_Heart.html: could not parse author from <title>: 'Triage of the Heart'
+2026-05-25 00:11:13,059 [INFO] Added manifest entry: 73212906_Triage_of_the_Heart.html
+2026-05-25 00:11:13,073 [WARNING] 73680001_feel_it_burnwatch_it_glow.html: could not parse author from <title>: 'Feel it Burn//Watch it Glow'
+2026-05-25 00:11:13,089 [INFO] Added manifest entry: 73680001_feel_it_burnwatch_it_glow.html
+2026-05-25 00:11:13,092 [WARNING] 73728966_i_want_you_on_me_with_both_your_hands.html: could not parse author from <title>: 'I Want You on Me With Both Your Hands'
+2026-05-25 00:11:13,096 [INFO] Added manifest entry: 73728966_i_want_you_on_me_with_both_your_hands.html
+2026-05-25 00:11:13,194 [WARNING] 73783561_stuck_in_orbit.html: could not parse author from <title>: 'Stuck In Orbit'
+2026-05-25 00:11:13,291 [INFO] Added manifest entry: 73783561_stuck_in_orbit.html
+2026-05-25 00:11:13,305 [WARNING] 73832301_the_bartender_and_the_nerd.html: could not parse author from <title>: 'The bartender and the nerd.'
+2026-05-25 00:11:13,323 [INFO] Added manifest entry: 73832301_the_bartender_and_the_nerd.html
+2026-05-25 00:11:13,370 [WARNING] 74505286_nothing_shameful.html: could not parse author from <title>: 'Nothing Shameful'
+2026-05-25 00:11:13,426 [INFO] Added manifest entry: 74505286_nothing_shameful.html
+2026-05-25 00:11:13,456 [WARNING] 74518501_it_had_to_be_you.html: could not parse author from <title>: 'it had to be you'
+2026-05-25 00:11:13,482 [INFO] Added manifest entry: 74518501_it_had_to_be_you.html
+2026-05-25 00:11:13,505 [WARNING] 74682496_a_decade_between_us.html: could not parse author from <title>: 'a decade between us'
+2026-05-25 00:11:13,534 [INFO] Added manifest entry: 74682496_a_decade_between_us.html
+2026-05-25 00:11:13,594 [WARNING] 74999331_in_the_mirror_of_your_eyes.html: could not parse author from <title>: 'in the mirror of your eyes'
+2026-05-25 00:11:13,664 [INFO] Added manifest entry: 74999331_in_the_mirror_of_your_eyes.html
+2026-05-25 00:11:13,683 [WARNING] 75050276_next_time_you_call_ill_be_your_girl.html: could not parse author from <title>: 'Next time you call, I'll be your girl'
+2026-05-25 00:11:13,705 [INFO] Added manifest entry: 75050276_next_time_you_call_ill_be_your_girl.html
+2026-05-25 00:11:13,784 [WARNING] 75076376_the_happiest_season.html: could not parse author from <title>: 'The Happiest Season'
+2026-05-25 00:11:13,865 [INFO] Added manifest entry: 75076376_the_happiest_season.html
+2026-05-25 00:11:13,872 [WARNING] 75155551_circling_around_the_same.html: could not parse author from <title>: 'circling around the same star'
+2026-05-25 00:11:13,880 [INFO] Added manifest entry: 75155551_circling_around_the_same.html
+2026-05-25 00:11:13,899 [WARNING] 75201581_lost_for_words.html: could not parse author from <title>: 'lost for words'
+2026-05-25 00:11:13,921 [INFO] Added manifest entry: 75201581_lost_for_words.html
+2026-05-25 00:11:13,929 [WARNING] 75396556_dont_handle_me_with_care.html: could not parse author from <title>: 'Don't Handle Me with Care'
+2026-05-25 00:11:13,938 [INFO] Added manifest entry: 75396556_dont_handle_me_with_care.html
+2026-05-25 00:11:13,952 [WARNING] 75614091_i_see_you_youre_walking_cross_the_campus.html: could not parse author from <title>: 'I see you, you're walking 'cross the campus'
+2026-05-25 00:11:13,969 [INFO] Added manifest entry: 75614091_i_see_you_youre_walking_cross_the_campus.html
+2026-05-25 00:11:14,016 [WARNING] 75907071_Late_Night_with_the.html: could not parse author from <title>: 'Late Night with the Devil'
+2026-05-25 00:11:14,063 [INFO] Added manifest entry: 75907071_Late_Night_with_the.html
+2026-05-25 00:11:14,100 [WARNING] 76014136_material_substance.html: could not parse author from <title>: 'material substance'
+2026-05-25 00:11:14,146 [INFO] Added manifest entry: 76014136_material_substance.html
+2026-05-25 00:11:14,164 [WARNING] 76093411_a_different_way_to_be.html: could not parse author from <title>: 'a different way to be'
+2026-05-25 00:11:14,187 [INFO] Added manifest entry: 76093411_a_different_way_to_be.html
+2026-05-25 00:11:14,192 [WARNING] 76260996_its_clichéd_to_be_cynical_at_christmas.html: could not parse author from <title>: 'It's Clichéd to be Cynical at Christmas'
+2026-05-25 00:11:14,198 [INFO] Added manifest entry: 76260996_its_clichéd_to_be_cynical_at_christmas.html
+2026-05-25 00:11:14,223 [WARNING] 76775496_breathe_into_me_and_make.html: could not parse author from <title>: 'breathe into me and make me real'
+2026-05-25 00:11:14,259 [INFO] Added manifest entry: 76775496_breathe_into_me_and_make.html
+2026-05-25 00:11:14,262 [WARNING] 76893881_all_in_paradise.html: could not parse author from <title>: 'All In Paradise'
+2026-05-25 00:11:14,266 [INFO] Added manifest entry: 76893881_all_in_paradise.html
+2026-05-25 00:11:14,313 [WARNING] 77249811_i_didnt_ask_for_this.html: could not parse author from <title>: 'I Didn't Ask For This'
+2026-05-25 00:11:14,355 [INFO] Added manifest entry: 77249811_i_didnt_ask_for_this.html
+2026-05-25 00:11:14,360 [WARNING] 77303721_to_be_known_well.html: could not parse author from <title>: 'to be known well'
+2026-05-25 00:11:14,367 [INFO] Added manifest entry: 77303721_to_be_known_well.html
+2026-05-25 00:11:14,412 [WARNING] 77737251_Primadonna.html: could not parse author from <title>: 'Primadonna'
+2026-05-25 00:11:14,467 [INFO] Added manifest entry: 77737251_Primadonna.html
+2026-05-25 00:11:14,503 [WARNING] 77936761_Ill_keep_you_safe_you.html: could not parse author from <title>: 'I'll keep you safe, you have my word'
+2026-05-25 00:11:14,546 [INFO] Added manifest entry: 77936761_Ill_keep_you_safe_you.html
+2026-05-25 00:11:14,556 [WARNING] 78965396_youre_my_burial_ground.html: could not parse author from <title>: 'You're My Burial Ground'
+2026-05-25 00:11:14,569 [INFO] Added manifest entry: 78965396_youre_my_burial_ground.html
+2026-05-25 00:11:14,584 [WARNING] 79316676_serpents_stone.html: could not parse author from <title>: 'Serpent's Stone'
+2026-05-25 00:11:14,601 [INFO] Added manifest entry: 79316676_serpents_stone.html
+2026-05-25 00:11:14,605 [WARNING] 79317116_you_dont_need_a_revelation_youll_be_fine_with.html: could not parse author from <title>: 'you don't need a revelation (you'll be fine with being lost)'
+2026-05-25 00:11:14,609 [INFO] Added manifest entry: 79317116_you_dont_need_a_revelation_youll_be_fine_with.html
+2026-05-25 00:11:14,628 [WARNING] 79671146_Perfect_Catch.html: could not parse author from <title>: 'Perfect Catch'
+2026-05-25 00:11:14,636 [INFO] Added manifest entry: 79671146_Perfect_Catch.html
+2026-05-25 00:11:14,666 [WARNING] 79774441_I_Am_No_Mother_I_Am_No.html: could not parse author from <title>: 'I Am No Mother, I Am No Bride'
+2026-05-25 00:11:14,703 [INFO] Added manifest entry: 79774441_I_Am_No_Mother_I_Am_No.html
+2026-05-25 00:11:14,713 [WARNING] 80139521_love_poetry_biology.html: could not parse author from <title>: 'love = poetry + biology'
+2026-05-25 00:11:14,726 [INFO] Added manifest entry: 80139521_love_poetry_biology.html
+2026-05-25 00:11:14,738 [WARNING] 80219316_cake_by_the_pound.html: could not parse author from <title>: 'cake by the pound'
+2026-05-25 00:11:14,753 [INFO] Added manifest entry: 80219316_cake_by_the_pound.html
+2026-05-25 00:11:14,773 [WARNING] 80258711_Ri-0.html: could not parse author from <title>: 'Ri-0'
+2026-05-25 00:11:14,799 [INFO] Added manifest entry: 80258711_Ri-0.html
+2026-05-25 00:11:14,805 [WARNING] 80271671_Help_Im_Alive.html: could not parse author from <title>: 'Help I’m Alive'
+2026-05-25 00:11:14,813 [INFO] Added manifest entry: 80271671_Help_Im_Alive.html
+2026-05-25 00:11:14,820 [WARNING] 80705996_Too_Sweet.html: could not parse author from <title>: 'Too Sweet'
+2026-05-25 00:11:14,829 [INFO] Added manifest entry: 80705996_Too_Sweet.html
+2026-05-25 00:11:14,953 [WARNING] 80975496_Ibiza.html: could not parse author from <title>: 'Ibiza'
+2026-05-25 00:11:15,096 [INFO] Added manifest entry: 80975496_Ibiza.html
+2026-05-25 00:11:15,213 [WARNING] 81450586_Talk_Me_Through_It.html: could not parse author from <title>: 'Talk Me Through It'
+2026-05-25 00:11:15,350 [INFO] Added manifest entry: 81450586_Talk_Me_Through_It.html
+2026-05-25 00:11:15,378 [WARNING] 82204656_life_as_we_know_it.html: could not parse author from <title>: 'Life As We Know It'
+2026-05-25 00:11:15,413 [INFO] Added manifest entry: 82204656_life_as_we_know_it.html
+2026-05-25 00:11:15,433 [WARNING] 82208311_Women_Like_You_Women.html: could not parse author from <title>: 'Women Like You / Women Like Me'
+2026-05-25 00:11:15,459 [INFO] Added manifest entry: 82208311_Women_Like_You_Women.html
+2026-05-25 00:11:15,467 [WARNING] 82835526_The_Promise_of_Always.html: could not parse author from <title>: 'The Promise of Always'
+2026-05-25 00:11:15,477 [INFO] Added manifest entry: 82835526_The_Promise_of_Always.html
+2026-05-25 00:11:15,524 [WARNING] 82934246_when_i_kissed_the.html: could not parse author from <title>: 'when i kissed the teacher'
+2026-05-25 00:11:15,553 [INFO] Added manifest entry: 82934246_when_i_kissed_the.html
+2026-05-25 00:11:15,556 [WARNING] 83001466_Turn_Them_In_Turn_Them.html: could not parse author from <title>: 'Turn Them In, Turn Them In Now! (You're A Traitor!)'
+2026-05-25 00:11:15,560 [INFO] Added manifest entry: 83001466_Turn_Them_In_Turn_Them.html
+2026-05-25 00:11:15,583 [WARNING] 83643571_Lost_Time.html: could not parse author from <title>: 'Lost Time'
+2026-05-25 00:11:15,611 [INFO] Added manifest entry: 83643571_Lost_Time.html
+2026-05-25 00:11:15,633 [WARNING] 83988876_Ill_Bring_Out_The_Worst.html: could not parse author from <title>: 'I'll Bring Out The Worst In You... Promise'
+2026-05-25 00:11:15,661 [INFO] Added manifest entry: 83988876_Ill_Bring_Out_The_Worst.html
+2026-05-25 00:11:15,676 [WARNING] 84248671_All_The_Time_In_The.html: could not parse author from <title>: 'All The Time In The World'
+2026-05-25 00:11:15,695 [INFO] Added manifest entry: 84248671_All_The_Time_In_The.html
+2026-05-25 00:11:15,710 [WARNING] 84752066_Wouldnt_You_Love_to_Love.html: could not parse author from <title>: 'Wouldn't You Love to Love Her'
+2026-05-25 00:11:15,728 [INFO] Added manifest entry: 84752066_Wouldnt_You_Love_to_Love.html
+2026-05-25 00:11:15,731 [INFO] Manifest saved to fic_data.json
+2026-05-25 00:11:15,732 [INFO] index.html rebuilt (339 fics)
