@@ -194,6 +194,12 @@ def extract_metadata(soup: BeautifulSoup, source_filename: str) -> dict:
 
     # --- Rating ---
     rating_tag = soup.select_one("dd.rating")
+    if not rating_tag:
+        for dt in soup.find_all("dt"):
+            if dt.get_text(strip=True).lower() == "rating:":
+                rating_tag = dt.find_next_sibling("dd")
+                if rating_tag:
+                    break
     if rating_tag:
         meta["rating"] = rating_tag.get_text(strip=True)
 
@@ -710,8 +716,8 @@ INDEX_TEMPLATE = """\
 <div class="sort-row">
   <span class="chip-label">Sort:</span>
   <button class="chip active" data-sort="default">Default</button>
-  <button class="chip" data-sort="wc_desc">Most words</button>
-  <button class="chip" data-sort="updated">Last updated</button>
+  <button class="chip" data-sort="wc_desc">Word count</button>
+  <button class="chip" data-sort="updated">Updated</button>
   <button class="chip" data-sort="alpha">A–Z</button>
 </div>
 
