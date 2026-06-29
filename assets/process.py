@@ -336,6 +336,8 @@ def clean_html(soup: BeautifulSoup, meta: dict) -> BeautifulSoup:
         link.decompose()
     for script in soup.find_all("script"):
         script.decompose()
+    for style in soup.find_all("style"):
+        style.decompose()
 
     # --- Ensure <head> exists ---
     if not soup.head:
