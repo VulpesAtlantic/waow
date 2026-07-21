@@ -39,7 +39,8 @@
     const blob = new Blob([csv], { type: 'text/csv' });
     const a    = document.createElement('a');
     a.href     = URL.createObjectURL(blob);
-    a.download = 'phase1_bookmarks.csv';
+    const stamp = new Date().toISOString().slice(0, 16).replace(/[-T:]/g, ''); // YYYYMMDDHHMM
+    a.download = `phase1_bookmarks_${stamp}.csv`;
     a.click();
     console.log(`📥 CSV downloaded: ${rows.length} rows`);
   }
