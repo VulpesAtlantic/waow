@@ -9111,3 +9111,7 @@
 2026-08-14 23:58:56,465 [INFO] index.html rebuilt (419 fics)
 2026-08-14 23:58:56,465 [INFO] Done. 188 processed, 0 failed.
 2026-08-14 23:58:56,465 [INFO] ============================================================
+2026-08-15 00:42:02,910 [WARNING] 60133222_heavy_is_the_crown.html: could not parse author from <title>: 'Heavy is the Crown'
+2026-08-15 00:42:03,026 [WARNING] 60277843_blossoms_and_birds.html: could not parse author from <title>: 'Blossoms and Birds'
+2026-08-15 00:42:03,038 [INFO] Manifest saved to fic_data.json
+2026-08-15 00:42:03,040 [INFO] index.html rebuilt (418 fics)

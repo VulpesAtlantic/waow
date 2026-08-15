@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Read custom_tags from a CSV and write them into fic_data.json,
-then rebuild index.html using process.py's build_index logic.
+then rebuild index.html using phase4_process.py's build_index logic.
 
 CSV format: filename, title, additional_tags, custom_tags
 custom_tags column is pipe-delimited; stored in JSON as a list.
@@ -16,9 +16,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 ASSETS_DIR = BASE_DIR / "assets"
 FIC_DATA = BASE_DIR / "fic_data.json"
 
-# Pull build_index (and everything it needs) from process.py
+# Pull build_index (and everything it needs) from phase4_process.py
 sys.path.insert(0, str(ASSETS_DIR))
-import process  # noqa: E402
+import phase4_process as process  # noqa: E402
 
 
 def main():

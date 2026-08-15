@@ -4,7 +4,7 @@ assets/reprocess.py
 Re-extract metadata from every file already in archive/, update their
 <meta> tags in place, rebuild fic_data.json, and regenerate index.html.
 
-Run this any time you update the parsing or cleaning logic in process.py
+Run this any time you update the parsing or cleaning logic in phase4_process.py
 and want to backfill the change across all existing fics:
 
     python assets/reprocess.py
@@ -18,9 +18,9 @@ from pathlib import Path
 
 from bs4 import BeautifulSoup
 
-# Import shared logic from process.py (same directory)
+# Import shared logic from phase4_process.py (same directory)
 sys.path.insert(0, str(Path(__file__).parent))
-from process import (
+from phase4_process import (
     ARCHIVE_DIR,
     apply_custom_tags,
     build_index,
