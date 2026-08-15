@@ -48,6 +48,7 @@ import os
 import re
 import shutil
 import sys
+from contextlib import contextmanager
 from datetime import datetime
 from pathlib import Path
 
@@ -65,6 +66,7 @@ ASSETS_DIR    = BASE_DIR / "assets"
 INDEX_FILE    = BASE_DIR / "index.html"
 DATA_FILE     = BASE_DIR / "fic_data.json"
 LOG_FILE      = BASE_DIR / "process.log"
+LOCK_FILE     = BASE_DIR / ".phase4.lock"
 
 # ---------------------------------------------------------------------------
 # Logging
@@ -426,6 +428,39 @@ def _word_count_from_file(filepath: Path) -> int:
         pass
     return 0
 
+def enforce_filename_case(directory: Path, intended: str) -> bool:
+    """
+    Make the on-disk entry match `intended` exactly, including case.
+
+    macOS/Windows filesystems are case-insensitive, so writing to
+    'archive/foo.html' when 'archive/Foo.html' already exists silently
+    overwrites the old file and keeps the old name. Git (core.ignorecase=true)
+    never notices, so the committed name drifts from the manifest and every
+    link 404s on a case-sensitive server like GitHub Pages.
+
+    Returns True if a repair was made.
+    """
+    actual = next(
+        (p.name for p in directory.glob("*.html")
+         if p.name.lower() == intended.lower() and p.name != intended),
+        None,
+    )
+    if not actual:
+        return False
+
+    # Two-step rename: a direct move is a no-op on a case-insensitive volume.
+    tmp = directory / f".case-fix-{os.getpid()}-{intended}"
+    (directory / actual).rename(tmp)
+    tmp.rename(directory / intended)
+    log.warning(
+        f"{intended}: case mismatch in {directory.name}/ — "
+        f"renamed '{actual}' to match the manifest. "
+        f"Commit this rename or the live link will 404."
+    )
+    print(f"  [CASE] {directory.name}/{actual} -> {intended}")
+    return True
+
+
 def find_existing_by_workid(filename: str) -> Path | None:
     """Return the first archive file that shares the same workID prefix, if different name."""
     wid = _work_id(filename)
@@ -449,11 +484,27 @@ def load_manifest() -> dict:
             log.error(f"Could not parse fic_data.json: {e} — starting fresh manifest.")
     return {"fics": [], "last_updated": ""}
 
-def save_manifest(manifest: dict):
+def save_manifest(manifest: dict, quiet: bool = False):
+    """
+    Write fic_data.json atomically.
+
+    Serialise to a temp file in the same directory, then os.replace() it over
+    the real one — a rename within a filesystem is atomic, so a crash or an
+    interrupt can never leave a half-written manifest behind.
+    """
     manifest["last_updated"] = datetime.now().isoformat()
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(manifest, f, indent=2, ensure_ascii=False)
-    log.info("Manifest saved to fic_data.json")
+    tmp = DATA_FILE.with_name(DATA_FILE.name + f".tmp-{os.getpid()}")
+    try:
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump(manifest, f, indent=2, ensure_ascii=False)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp, DATA_FILE)
+    finally:
+        if tmp.exists():
+            tmp.unlink()
+    if not quiet:
+        log.info("Manifest saved to fic_data.json")
 
 def upsert_fic(manifest: dict, fic_entry: dict) -> dict:
     """Add or update a fic entry in the manifest, matched on 'filename'."""
@@ -942,6 +993,7 @@ def process_file(filepath: Path, manifest: dict) -> bool:
         log.info(f"{filename}: backed up to originals/")
     else:
         log.info(f"{filename}: original backup already exists, skipping copy")
+    enforce_filename_case(ORIGINALS_DIR, filename)
 
     # --- Clean HTML ---
     soup = clean_html(soup, meta)
@@ -954,6 +1006,9 @@ def process_file(filepath: Path, manifest: dict) -> bool:
     except Exception as e:
         log.error(f"{filename}: failed to write to archive: {e}")
         return False
+
+    # The write above may have landed in a differently-cased existing file.
+    enforce_filename_case(ARCHIVE_DIR, filename)
 
     # --- Update manifest ---
     fic_entry = {
@@ -977,6 +1032,42 @@ def process_file(filepath: Path, manifest: dict) -> bool:
     log.info(f"{filename}: removed from staging/")
 
     return True
+
+@contextmanager
+def run_lock():
+    """
+    Refuse to run while another phase-4 process is working.
+
+    Two concurrent runs both load fic_data.json, both mutate their own copy,
+    and whichever saves last wins — silently discarding the other's entries
+    while its file moves stay on disk. That is exactly how the manifest and
+    archive/ drifted apart on 2026-07-22.
+    """
+    try:
+        fd = os.open(LOCK_FILE, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+    except FileExistsError:
+        try:
+            holder = LOCK_FILE.read_text(encoding="utf-8").strip()
+        except Exception:
+            holder = "unknown"
+        msg = (
+            f"Another run appears to be in progress (lock held by pid {holder}).\n"
+            f"  If that process is gone, delete {LOCK_FILE} and try again."
+        )
+        log.error(msg.replace("\n", " "))
+        print(f"\n[ABORT] {msg}")
+        sys.exit(1)
+
+    try:
+        os.write(fd, str(os.getpid()).encode())
+        os.close(fd)
+        yield
+    finally:
+        try:
+            LOCK_FILE.unlink()
+        except FileNotFoundError:
+            pass
+
 
 def main():
     ensure_dirs()
@@ -1003,6 +1094,9 @@ def main():
             success_count += 1
         else:
             fail_count += 1
+        # Persist after every file: process_file has already moved things on
+        # disk, so an interrupt here must not lose the matching manifest edit.
+        save_manifest(manifest, quiet=True)
 
     save_manifest(manifest)
     build_index(manifest)
@@ -1015,4 +1109,5 @@ def main():
     log.info("=" * 60)
 
 if __name__ == "__main__":
-    main()
+    with run_lock():
+        main()
