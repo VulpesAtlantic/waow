@@ -47,11 +47,12 @@
     const lines  = rows.map(r =>
       `"${r.work_url}","${r.download_url}","${r.collected_at}","${r.status}"`
     );
-    const csv  = [header, ...lines].join('\n');
-    const blob = new Blob([csv], { type: 'text/csv' });
-    const a    = document.createElement('a');
-    a.href     = URL.createObjectURL(blob);
-    a.download = 'phase2_download_links.csv';
+    const csv   = [header, ...lines].join('\n');
+    const blob  = new Blob([csv], { type: 'text/csv' });
+    const stamp = new Date().toISOString().slice(0, 16).replace(/[-T:]/g, ''); // YYYYMMDDHHMM
+    const a     = document.createElement('a');
+    a.href      = URL.createObjectURL(blob);
+    a.download  = `phase2_download_links_${stamp}.csv`;
     a.click();
     console.log(`📥 CSV downloaded: ${rows.length} rows`);
   }

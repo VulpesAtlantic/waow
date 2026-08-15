@@ -7611,3 +7611,1503 @@
 2026-07-22 16:32:55,554 [INFO] index.html rebuilt (388 fics)
 2026-07-22 16:32:55,554 [INFO] Done. 231 processed, 0 failed.
 2026-07-22 16:32:55,554 [INFO] ============================================================
+2026-08-12 19:09:39,454 [INFO] ============================================================
+2026-08-12 19:09:39,457 [INFO] Run started: 2026-08-12T19:09:39.457581
+2026-08-12 19:09:39,457 [INFO] No HTML files found in staging/. Nothing to do.
+2026-08-12 19:11:01,262 [INFO] ============================================================
+2026-08-12 19:11:01,265 [INFO] Run started: 2026-08-12T19:11:01.265302
+2026-08-12 19:11:01,265 [INFO] Found 59 file(s) to process
+2026-08-12 19:11:01,266 [INFO] --- Processing: 60017602_the_witchy_ceo.html
+2026-08-12 19:11:01,320 [INFO] 60017602_the_witchy_ceo.html: extracted — title='the witchy CEO' author='riccioriccio' status='Complete' lastUpdated='2024-12-19' words='58881'
+2026-08-12 19:11:01,320 [INFO] 60017602_the_witchy_ceo.html: original backup already exists, skipping copy
+2026-08-12 19:11:01,357 [INFO] 60017602_the_witchy_ceo.html: written to archive/
+2026-08-12 19:11:01,357 [INFO] Updated manifest entry: 60017602_the_witchy_ceo.html
+2026-08-12 19:11:01,357 [INFO] 60017602_the_witchy_ceo.html: removed from staging/
+2026-08-12 19:11:01,357 [INFO] --- Processing: 60667915_you_look_so_pretty_when.html
+2026-08-12 19:11:01,363 [INFO] 60667915_you_look_so_pretty_when.html: extracted — title='you look so pretty when you're on your knees' author='ArtemisiaXIII' status='Complete' lastUpdated='2024-11-18' words='8504'
+2026-08-12 19:11:01,364 [INFO] 60667915_you_look_so_pretty_when.html: original backup already exists, skipping copy
+2026-08-12 19:11:01,368 [INFO] 60667915_you_look_so_pretty_when.html: written to archive/
+2026-08-12 19:11:01,368 [INFO] Added manifest entry: 60667915_you_look_so_pretty_when.html
+2026-08-12 19:11:01,368 [INFO] 60667915_you_look_so_pretty_when.html: removed from staging/
+2026-08-12 19:11:01,368 [INFO] --- Processing: 61403194_kaleidoscope.html
+2026-08-12 19:11:01,380 [INFO] 61403194_kaleidoscope.html: extracted — title='kaleidoscope' author='violetandthevoid' status='Complete' lastUpdated='2025-01-06' words='11335'
+2026-08-12 19:11:01,381 [INFO] 61403194_kaleidoscope.html: original backup already exists, skipping copy
+2026-08-12 19:11:01,390 [INFO] 61403194_kaleidoscope.html: written to archive/
+2026-08-12 19:11:01,390 [INFO] Updated manifest entry: 61403194_kaleidoscope.html
+2026-08-12 19:11:01,390 [INFO] 61403194_kaleidoscope.html: removed from staging/
+2026-08-12 19:11:01,390 [INFO] --- Processing: 62078056_everybody_knows_that_im.html
+2026-08-12 19:11:01,416 [INFO] 62078056_everybody_knows_that_im.html: extracted — title='everybody knows that i'm a good girl, officer' author='alilbitgay' status='Complete' lastUpdated='2025-03-24' words='36804'
+2026-08-12 19:11:01,417 [INFO] 62078056_everybody_knows_that_im.html: backed up to originals/
+2026-08-12 19:11:01,433 [INFO] 62078056_everybody_knows_that_im.html: written to archive/
+2026-08-12 19:11:01,433 [INFO] Added manifest entry: 62078056_everybody_knows_that_im.html
+2026-08-12 19:11:01,433 [INFO] 62078056_everybody_knows_that_im.html: removed from staging/
+2026-08-12 19:11:01,433 [INFO] --- Processing: 62248085_so_my_mother-in-law_is.html
+2026-08-12 19:11:01,441 [INFO] 62248085_so_my_mother-in-law_is.html: extracted — title='so, my mother-in-law is god?' author='villhag' status='Complete' lastUpdated='2025-01-21' words='7443'
+2026-08-12 19:11:01,442 [INFO] 62248085_so_my_mother-in-law_is.html: original backup already exists, skipping copy
+2026-08-12 19:11:01,448 [INFO] 62248085_so_my_mother-in-law_is.html: written to archive/
+2026-08-12 19:11:01,448 [INFO] Updated manifest entry: 62248085_so_my_mother-in-law_is.html
+2026-08-12 19:11:01,448 [INFO] 62248085_so_my_mother-in-law_is.html: removed from staging/
+2026-08-12 19:11:01,448 [INFO] --- Processing: 62265849_all_half_things.html
+2026-08-12 19:11:01,461 [INFO] 62265849_all_half_things.html: extracted — title='all half things' author='seabiscuit' status='Complete' lastUpdated='2025-02-03' words='20223'
+2026-08-12 19:11:01,461 [INFO] 62265849_all_half_things.html: original backup already exists, skipping copy
+2026-08-12 19:11:01,470 [INFO] 62265849_all_half_things.html: written to archive/
+2026-08-12 19:11:01,470 [INFO] Updated manifest entry: 62265849_all_half_things.html
+2026-08-12 19:11:01,470 [INFO] 62265849_all_half_things.html: removed from staging/
+2026-08-12 19:11:01,470 [INFO] --- Processing: 62356414_if_youre_not_falling.html
+2026-08-12 19:11:01,498 [INFO] 62356414_if_youre_not_falling.html: extracted — title='If you’re not falling, you’re not trying' author='StraightUpNot' status='Complete' lastUpdated='2025-03-30' words='43133'
+2026-08-12 19:11:01,498 [INFO] 62356414_if_youre_not_falling.html: original backup already exists, skipping copy
+2026-08-12 19:11:01,518 [INFO] 62356414_if_youre_not_falling.html: written to archive/
+2026-08-12 19:11:01,518 [INFO] Updated manifest entry: 62356414_if_youre_not_falling.html
+2026-08-12 19:11:01,518 [INFO] 62356414_if_youre_not_falling.html: removed from staging/
+2026-08-12 19:11:01,518 [INFO] --- Processing: 62615323_questions.html
+2026-08-12 19:11:01,535 [INFO] 62615323_questions.html: extracted — title='Questions' author='kbpe_7150' status='Complete' lastUpdated='2025-03-05' words='21051'
+2026-08-12 19:11:01,536 [INFO] 62615323_questions.html: original backup already exists, skipping copy
+2026-08-12 19:11:01,548 [INFO] 62615323_questions.html: written to archive/
+2026-08-12 19:11:01,548 [INFO] Updated manifest entry: 62615323_questions.html
+2026-08-12 19:11:01,548 [INFO] 62615323_questions.html: removed from staging/
+2026-08-12 19:11:01,548 [INFO] --- Processing: 63293833_scratch_an_itch.html
+2026-08-12 19:11:01,554 [INFO] 63293833_scratch_an_itch.html: extracted — title='Scratch an itch' author='Echolux' status='Complete' lastUpdated='2025-02-22' words='3608'
+2026-08-12 19:11:01,555 [INFO] 63293833_scratch_an_itch.html: backed up to originals/
+2026-08-12 19:11:01,559 [INFO] 63293833_scratch_an_itch.html: written to archive/
+2026-08-12 19:11:01,559 [INFO] Added manifest entry: 63293833_scratch_an_itch.html
+2026-08-12 19:11:01,559 [INFO] 63293833_scratch_an_itch.html: removed from staging/
+2026-08-12 19:11:01,559 [INFO] --- Processing: 64803190_astonishment_and_joy.html
+2026-08-12 19:11:01,578 [INFO] 64803190_astonishment_and_joy.html: extracted — title='astonishment and joy' author='cruuuelsummer' status='Complete' lastUpdated='2025-04-27' words='18620'
+2026-08-12 19:11:01,578 [INFO] 64803190_astonishment_and_joy.html: original backup already exists, skipping copy
+2026-08-12 19:11:01,591 [INFO] 64803190_astonishment_and_joy.html: written to archive/
+2026-08-12 19:11:01,592 [INFO] Updated manifest entry: 64803190_astonishment_and_joy.html
+2026-08-12 19:11:01,592 [INFO] 64803190_astonishment_and_joy.html: removed from staging/
+2026-08-12 19:11:01,592 [INFO] --- Processing: 64941802_work_and_play_ball.html
+2026-08-12 19:11:01,733 [INFO] 64941802_work_and_play_ball.html: extracted — title='Work and (Play Ball)' author='WitchHeartsRunFree' status='Complete' lastUpdated='2025-10-23' words='124648'
+2026-08-12 19:11:01,734 [INFO] 64941802_work_and_play_ball.html: original backup already exists, skipping copy
+2026-08-12 19:11:01,832 [INFO] 64941802_work_and_play_ball.html: written to archive/
+2026-08-12 19:11:01,832 [INFO] Updated manifest entry: 64941802_work_and_play_ball.html
+2026-08-12 19:11:01,832 [INFO] 64941802_work_and_play_ball.html: removed from staging/
+2026-08-12 19:11:01,832 [INFO] --- Processing: 65003722_i_dont_care_that_youre_a.html
+2026-08-12 19:11:01,844 [INFO] 65003722_i_dont_care_that_youre_a.html: extracted — title='i don’t care that you’re a stoner (fall right into me)' author='saturnreturn' status='Complete' lastUpdated='2025-04-25' words='10447'
+2026-08-12 19:11:01,844 [INFO] 65003722_i_dont_care_that_youre_a.html: original backup already exists, skipping copy
+2026-08-12 19:11:01,852 [INFO] 65003722_i_dont_care_that_youre_a.html: written to archive/
+2026-08-12 19:11:01,852 [INFO] Updated manifest entry: 65003722_i_dont_care_that_youre_a.html
+2026-08-12 19:11:01,852 [INFO] 65003722_i_dont_care_that_youre_a.html: removed from staging/
+2026-08-12 19:11:01,852 [INFO] --- Processing: 65696449_waste_the_night.html
+2026-08-12 19:11:01,867 [INFO] 65696449_waste_the_night.html: extracted — title='waste the night' author='empathyhoodie' status='Complete' lastUpdated='2025-05-19' words='16305'
+2026-08-12 19:11:01,867 [INFO] 65696449_waste_the_night.html: original backup already exists, skipping copy
+2026-08-12 19:11:01,878 [INFO] 65696449_waste_the_night.html: written to archive/
+2026-08-12 19:11:01,878 [INFO] Updated manifest entry: 65696449_waste_the_night.html
+2026-08-12 19:11:01,878 [INFO] 65696449_waste_the_night.html: removed from staging/
+2026-08-12 19:11:01,878 [INFO] --- Processing: 65697490_i_now_pronounce_you.html
+2026-08-12 19:11:01,905 [INFO] 65697490_i_now_pronounce_you.html: extracted — title='I Now Pronounce You....' author='Cassie_Bones' status='Complete' lastUpdated='2025-05-19' words='12680'
+2026-08-12 19:11:01,905 [INFO] 65697490_i_now_pronounce_you.html: original backup already exists, skipping copy
+2026-08-12 19:11:01,923 [INFO] 65697490_i_now_pronounce_you.html: written to archive/
+2026-08-12 19:11:01,923 [INFO] Updated manifest entry: 65697490_i_now_pronounce_you.html
+2026-08-12 19:11:01,923 [INFO] 65697490_i_now_pronounce_you.html: removed from staging/
+2026-08-12 19:11:01,924 [INFO] --- Processing: 65764210_the_teacher_trap.html
+2026-08-12 19:11:01,953 [INFO] 65764210_the_teacher_trap.html: extracted — title='The Teacher Trap' author='Cassie_Bones' status='Complete' lastUpdated='2025-05-21' words='14106'
+2026-08-12 19:11:01,954 [INFO] 65764210_the_teacher_trap.html: original backup already exists, skipping copy
+2026-08-12 19:11:01,976 [INFO] 65764210_the_teacher_trap.html: written to archive/
+2026-08-12 19:11:01,976 [INFO] Updated manifest entry: 65764210_the_teacher_trap.html
+2026-08-12 19:11:01,976 [INFO] 65764210_the_teacher_trap.html: removed from staging/
+2026-08-12 19:11:01,976 [INFO] --- Processing: 65811607_ill_give_what_i_get.html
+2026-08-12 19:11:02,002 [INFO] 65811607_ill_give_what_i_get.html: extracted — title='I'll Give What I Get' author='Adimnos' status='Complete' lastUpdated='2025-05-23' words='15717'
+2026-08-12 19:11:02,003 [INFO] 65811607_ill_give_what_i_get.html: original backup already exists, skipping copy
+2026-08-12 19:11:02,023 [INFO] 65811607_ill_give_what_i_get.html: written to archive/
+2026-08-12 19:11:02,023 [INFO] Updated manifest entry: 65811607_ill_give_what_i_get.html
+2026-08-12 19:11:02,023 [INFO] 65811607_ill_give_what_i_get.html: removed from staging/
+2026-08-12 19:11:02,023 [INFO] --- Processing: 65886910_a_refusal_of_endings.html
+2026-08-12 19:11:02,034 [INFO] 65886910_a_refusal_of_endings.html: extracted — title='A Refusal of Endings' author='got_it_hahndled' status='Complete' lastUpdated='2025-05-25' words='13032'
+2026-08-12 19:11:02,035 [INFO] 65886910_a_refusal_of_endings.html: original backup already exists, skipping copy
+2026-08-12 19:11:02,043 [INFO] 65886910_a_refusal_of_endings.html: written to archive/
+2026-08-12 19:11:02,043 [INFO] Updated manifest entry: 65886910_a_refusal_of_endings.html
+2026-08-12 19:11:02,043 [INFO] 65886910_a_refusal_of_endings.html: removed from staging/
+2026-08-12 19:11:02,043 [INFO] --- Processing: 66258856_i_follow_your_perfume.html
+2026-08-12 19:11:02,076 [INFO] 66258856_i_follow_your_perfume.html: extracted — title='I follow your perfume' author='MidnightHazeMeow, RevLeftShark' status='Complete' lastUpdated='2025-06-14' words='36783'
+2026-08-12 19:11:02,076 [INFO] 66258856_i_follow_your_perfume.html: original backup already exists, skipping copy
+2026-08-12 19:11:02,091 [INFO] 66258856_i_follow_your_perfume.html: written to archive/
+2026-08-12 19:11:02,091 [INFO] Updated manifest entry: 66258856_i_follow_your_perfume.html
+2026-08-12 19:11:02,091 [INFO] 66258856_i_follow_your_perfume.html: removed from staging/
+2026-08-12 19:11:02,091 [INFO] --- Processing: 66656089_the_poison_im_drawn_to.html
+2026-08-12 19:11:02,135 [INFO] 66656089_the_poison_im_drawn_to.html: extracted — title='The Poison I'm Drawn to' author='fandomwhirlwind' status='In Progress' lastUpdated='2026-04-04' words='28224'
+2026-08-12 19:11:02,135 [INFO] 66656089_the_poison_im_drawn_to.html: original backup already exists, skipping copy
+2026-08-12 19:11:02,165 [INFO] 66656089_the_poison_im_drawn_to.html: written to archive/
+2026-08-12 19:11:02,165 [INFO] Updated manifest entry: 66656089_the_poison_im_drawn_to.html
+2026-08-12 19:11:02,165 [INFO] 66656089_the_poison_im_drawn_to.html: removed from staging/
+2026-08-12 19:11:02,165 [INFO] --- Processing: 67991716_do_i_cross_your_mind.html
+2026-08-12 19:11:02,183 [INFO] 67991716_do_i_cross_your_mind.html: extracted — title='Do I Cross Your Mind? ('Cause You've Always Been  On Mine)' author='karadxnvers' status='In Progress' lastUpdated='2026-04-01' words='16813'
+2026-08-12 19:11:02,183 [INFO] 67991716_do_i_cross_your_mind.html: original backup already exists, skipping copy
+2026-08-12 19:11:02,195 [INFO] 67991716_do_i_cross_your_mind.html: written to archive/
+2026-08-12 19:11:02,195 [INFO] Updated manifest entry: 67991716_do_i_cross_your_mind.html
+2026-08-12 19:11:02,195 [INFO] 67991716_do_i_cross_your_mind.html: removed from staging/
+2026-08-12 19:11:02,195 [INFO] --- Processing: 68055376_rios_instagram.html
+2026-08-12 19:11:02,201 [INFO] 68055376_rios_instagram.html: extracted — title='Rio's instagram' author='3v1lb4byh4g' status='Complete' lastUpdated='2025-07-24' words='3193'
+2026-08-12 19:11:02,201 [INFO] 68055376_rios_instagram.html: backed up to originals/
+2026-08-12 19:11:02,205 [INFO] 68055376_rios_instagram.html: written to archive/
+2026-08-12 19:11:02,205 [INFO] Added manifest entry: 68055376_rios_instagram.html
+2026-08-12 19:11:02,205 [INFO] 68055376_rios_instagram.html: removed from staging/
+2026-08-12 19:11:02,205 [INFO] --- Processing: 68063521_what_the_body_knows.html
+2026-08-12 19:11:02,238 [INFO] 68063521_what_the_body_knows.html: extracted — title='What the Body Knows' author='1willump' status='Complete' lastUpdated='2025-09-17' words='34356'
+2026-08-12 19:11:02,238 [INFO] 68063521_what_the_body_knows.html: original backup already exists, skipping copy
+2026-08-12 19:11:02,260 [INFO] 68063521_what_the_body_knows.html: written to archive/
+2026-08-12 19:11:02,260 [INFO] Updated manifest entry: 68063521_what_the_body_knows.html
+2026-08-12 19:11:02,260 [INFO] 68063521_what_the_body_knows.html: removed from staging/
+2026-08-12 19:11:02,261 [INFO] --- Processing: 71054176_somebody_to_hold.html
+2026-08-12 19:11:02,329 [INFO] 71054176_somebody_to_hold.html: extracted — title='Somebody to Hold' author='How_Deep_the_Grave' status='Complete' lastUpdated='2026-07-10' words='55043'
+2026-08-12 19:11:02,329 [INFO] 71054176_somebody_to_hold.html: original backup already exists, skipping copy
+2026-08-12 19:11:02,377 [INFO] 71054176_somebody_to_hold.html: written to archive/
+2026-08-12 19:11:02,377 [INFO] Updated manifest entry: 71054176_somebody_to_hold.html
+2026-08-12 19:11:02,377 [INFO] 71054176_somebody_to_hold.html: removed from staging/
+2026-08-12 19:11:02,377 [INFO] --- Processing: 72791546_baby_whats_mine_is_now.html
+2026-08-12 19:11:02,382 [INFO] 72791546_baby_whats_mine_is_now.html: extracted — title='baby, what’s mine is now yours' author='quinnking' status='Complete' lastUpdated='2025-10-28' words='5346'
+2026-08-12 19:11:02,382 [INFO] 72791546_baby_whats_mine_is_now.html: original backup already exists, skipping copy
+2026-08-12 19:11:02,386 [INFO] 72791546_baby_whats_mine_is_now.html: written to archive/
+2026-08-12 19:11:02,386 [INFO] Updated manifest entry: 72791546_baby_whats_mine_is_now.html
+2026-08-12 19:11:02,386 [INFO] 72791546_baby_whats_mine_is_now.html: removed from staging/
+2026-08-12 19:11:02,386 [INFO] --- Processing: 73047636_everlong.html
+2026-08-12 19:11:02,420 [INFO] 73047636_everlong.html: extracted — title='Everlong' author='annadelamico' status='Complete' lastUpdated='2025-11-01' words='32750'
+2026-08-12 19:11:02,421 [INFO] 73047636_everlong.html: original backup already exists, skipping copy
+2026-08-12 19:11:02,438 [INFO] 73047636_everlong.html: written to archive/
+2026-08-12 19:11:02,438 [INFO] Updated manifest entry: 73047636_everlong.html
+2026-08-12 19:11:02,439 [INFO] 73047636_everlong.html: removed from staging/
+2026-08-12 19:11:02,439 [INFO] --- Processing: 73152711_youre_welcome_to_try_you.html
+2026-08-12 19:11:02,510 [INFO] 73152711_youre_welcome_to_try_you.html: extracted — title='You're Welcome to Try (You Wouldn't Be the First One to Fail)' author='Lexus (Beautiful_Ruin)' status='Complete' lastUpdated='2026-05-21' words='98316'
+2026-08-12 19:11:02,511 [INFO] 73152711_youre_welcome_to_try_you.html: original backup already exists, skipping copy
+2026-08-12 19:11:02,560 [INFO] 73152711_youre_welcome_to_try_you.html: written to archive/
+2026-08-12 19:11:02,560 [INFO] Updated manifest entry: 73152711_youre_welcome_to_try_you.html
+2026-08-12 19:11:02,560 [INFO] 73152711_youre_welcome_to_try_you.html: removed from staging/
+2026-08-12 19:11:02,560 [INFO] --- Processing: 74247931_growth_decay.html
+2026-08-12 19:11:02,656 [INFO] 74247931_growth_decay.html: extracted — title='Growth &amp; Decay' author='greysaspire' status='In Progress' lastUpdated='2026-06-14' words='107920'
+2026-08-12 19:11:02,656 [INFO] 74247931_growth_decay.html: original backup already exists, skipping copy
+2026-08-12 19:11:02,718 [INFO] 74247931_growth_decay.html: written to archive/
+2026-08-12 19:11:02,719 [INFO] Updated manifest entry: 74247931_growth_decay.html
+2026-08-12 19:11:02,719 [INFO] 74247931_growth_decay.html: removed from staging/
+2026-08-12 19:11:02,719 [INFO] --- Processing: 74518501_it_had_to_be_you.html
+2026-08-12 19:11:02,771 [INFO] 74518501_it_had_to_be_you.html: extracted — title='it had to be you' author='agnesofwestview' status='In Progress' lastUpdated='2026-07-13' words='58545'
+2026-08-12 19:11:02,772 [INFO] 74518501_it_had_to_be_you.html: original backup already exists, skipping copy
+2026-08-12 19:11:02,801 [INFO] 74518501_it_had_to_be_you.html: written to archive/
+2026-08-12 19:11:02,801 [INFO] Updated manifest entry: 74518501_it_had_to_be_you.html
+2026-08-12 19:11:02,801 [INFO] 74518501_it_had_to_be_you.html: removed from staging/
+2026-08-12 19:11:02,801 [INFO] --- Processing: 75050276_next_time_you_call_ill.html
+2026-08-12 19:11:02,829 [INFO] 75050276_next_time_you_call_ill.html: extracted — title='Next time you call, I'll be your girl' author='lluthordanverss' status='In Progress' lastUpdated='2026-03-24' words='31542'
+2026-08-12 19:11:02,829 [INFO] 75050276_next_time_you_call_ill.html: original backup already exists, skipping copy
+2026-08-12 19:11:02,849 [INFO] 75050276_next_time_you_call_ill.html: written to archive/
+2026-08-12 19:11:02,849 [INFO] Updated manifest entry: 75050276_next_time_you_call_ill.html
+2026-08-12 19:11:02,849 [INFO] 75050276_next_time_you_call_ill.html: removed from staging/
+2026-08-12 19:11:02,849 [INFO] --- Processing: 75201581_lost_for_words.html
+2026-08-12 19:11:02,877 [INFO] 75201581_lost_for_words.html: extracted — title='lost for words' author='fayevalent1ne' status='Complete' lastUpdated='2026-03-04' words='36356'
+2026-08-12 19:11:02,877 [INFO] 75201581_lost_for_words.html: original backup already exists, skipping copy
+2026-08-12 19:11:02,897 [INFO] 75201581_lost_for_words.html: written to archive/
+2026-08-12 19:11:02,897 [INFO] Updated manifest entry: 75201581_lost_for_words.html
+2026-08-12 19:11:02,897 [INFO] 75201581_lost_for_words.html: removed from staging/
+2026-08-12 19:11:02,897 [INFO] --- Processing: 75907071_late_night_with_the.html
+2026-08-12 19:11:02,936 [INFO] 75907071_late_night_with_the.html: extracted — title='Late Night with the Devil' author='moonmotels' status='In Progress' lastUpdated='2026-08-02' words='58330'
+2026-08-12 19:11:02,936 [INFO] 75907071_late_night_with_the.html: original backup already exists, skipping copy
+2026-08-12 19:11:02,963 [INFO] 75907071_late_night_with_the.html: written to archive/
+2026-08-12 19:11:02,963 [INFO] Updated manifest entry: 75907071_late_night_with_the.html
+2026-08-12 19:11:02,963 [INFO] 75907071_late_night_with_the.html: removed from staging/
+2026-08-12 19:11:02,963 [INFO] --- Processing: 76014136_material_substance.html
+2026-08-12 19:11:03,021 [INFO] 76014136_material_substance.html: extracted — title='material substance' author='feral_streep' status='Complete' lastUpdated='2026-03-08' words='67887'
+2026-08-12 19:11:03,022 [INFO] 76014136_material_substance.html: original backup already exists, skipping copy
+2026-08-12 19:11:03,058 [INFO] 76014136_material_substance.html: written to archive/
+2026-08-12 19:11:03,059 [INFO] Updated manifest entry: 76014136_material_substance.html
+2026-08-12 19:11:03,059 [INFO] 76014136_material_substance.html: removed from staging/
+2026-08-12 19:11:03,059 [INFO] --- Processing: 76093411_a_different_way_to_be.html
+2026-08-12 19:11:03,096 [INFO] 76093411_a_different_way_to_be.html: extracted — title='a different way to be' author='flcv' status='Complete' lastUpdated='2026-03-25' words='30591'
+2026-08-12 19:11:03,096 [INFO] 76093411_a_different_way_to_be.html: original backup already exists, skipping copy
+2026-08-12 19:11:03,114 [INFO] 76093411_a_different_way_to_be.html: written to archive/
+2026-08-12 19:11:03,115 [INFO] Updated manifest entry: 76093411_a_different_way_to_be.html
+2026-08-12 19:11:03,115 [INFO] 76093411_a_different_way_to_be.html: removed from staging/
+2026-08-12 19:11:03,115 [INFO] --- Processing: 77303721_to_be_known_well.html
+2026-08-12 19:11:03,122 [INFO] 77303721_to_be_known_well.html: extracted — title='to be known well' author='thetroublewithwanting' status='In Progress' lastUpdated='2026-03-17' words='19104'
+2026-08-12 19:11:03,123 [INFO] 77303721_to_be_known_well.html: original backup already exists, skipping copy
+2026-08-12 19:11:03,128 [INFO] 77303721_to_be_known_well.html: written to archive/
+2026-08-12 19:11:03,128 [INFO] Updated manifest entry: 77303721_to_be_known_well.html
+2026-08-12 19:11:03,128 [INFO] 77303721_to_be_known_well.html: removed from staging/
+2026-08-12 19:11:03,128 [INFO] --- Processing: 77737251_primadonna.html
+2026-08-12 19:11:03,198 [INFO] 77737251_primadonna.html: extracted — title='Primadonna' author='LovettBlack' status='In Progress' lastUpdated='2026-04-06' words='53034'
+2026-08-12 19:11:03,198 [INFO] 77737251_primadonna.html: original backup already exists, skipping copy
+2026-08-12 19:11:03,242 [INFO] 77737251_primadonna.html: written to archive/
+2026-08-12 19:11:03,242 [INFO] Updated manifest entry: 77737251_primadonna.html
+2026-08-12 19:11:03,242 [INFO] 77737251_primadonna.html: removed from staging/
+2026-08-12 19:11:03,242 [INFO] --- Processing: 78965396_youre_my_burial_ground.html
+2026-08-12 19:11:03,261 [INFO] 78965396_youre_my_burial_ground.html: extracted — title='You're My Burial Ground' author='midwestprincess_01' status='In Progress' lastUpdated='2026-07-08' words='25774'
+2026-08-12 19:11:03,262 [INFO] 78965396_youre_my_burial_ground.html: original backup already exists, skipping copy
+2026-08-12 19:11:03,275 [INFO] 78965396_youre_my_burial_ground.html: written to archive/
+2026-08-12 19:11:03,275 [INFO] Updated manifest entry: 78965396_youre_my_burial_ground.html
+2026-08-12 19:11:03,275 [INFO] 78965396_youre_my_burial_ground.html: removed from staging/
+2026-08-12 19:11:03,275 [INFO] --- Processing: 79774441_i_am_no_mother_i_am_no.html
+2026-08-12 19:11:03,320 [INFO] 79774441_i_am_no_mother_i_am_no.html: extracted — title='I Am No Mother, I Am No Bride' author='midwestprincess_01' status='In Progress' lastUpdated='2026-05-08' words='71735'
+2026-08-12 19:11:03,321 [INFO] 79774441_i_am_no_mother_i_am_no.html: original backup already exists, skipping copy
+2026-08-12 19:11:03,352 [INFO] 79774441_i_am_no_mother_i_am_no.html: written to archive/
+2026-08-12 19:11:03,352 [INFO] Updated manifest entry: 79774441_i_am_no_mother_i_am_no.html
+2026-08-12 19:11:03,352 [INFO] 79774441_i_am_no_mother_i_am_no.html: removed from staging/
+2026-08-12 19:11:03,352 [INFO] --- Processing: 80219316_cake_by_the_pound.html
+2026-08-12 19:11:03,370 [INFO] 80219316_cake_by_the_pound.html: extracted — title='cake by the pound' author='saturnreturn' status='Complete' lastUpdated='2026-04-27' words='14581'
+2026-08-12 19:11:03,371 [INFO] 80219316_cake_by_the_pound.html: original backup already exists, skipping copy
+2026-08-12 19:11:03,384 [INFO] 80219316_cake_by_the_pound.html: written to archive/
+2026-08-12 19:11:03,384 [INFO] Updated manifest entry: 80219316_cake_by_the_pound.html
+2026-08-12 19:11:03,384 [INFO] 80219316_cake_by_the_pound.html: removed from staging/
+2026-08-12 19:11:03,384 [INFO] --- Processing: 81943761_the_bells.html
+2026-08-12 19:11:03,418 [INFO] 81943761_the_bells.html: extracted — title='The Bells' author='Salong3' status='Complete' lastUpdated='2026-04-19' words='29184'
+2026-08-12 19:11:03,418 [INFO] 81943761_the_bells.html: backed up to originals/
+2026-08-12 19:11:03,436 [INFO] 81943761_the_bells.html: written to archive/
+2026-08-12 19:11:03,436 [INFO] Added manifest entry: 81943761_the_bells.html
+2026-08-12 19:11:03,436 [INFO] 81943761_the_bells.html: removed from staging/
+2026-08-12 19:11:03,436 [INFO] --- Processing: 82208311_women_like_you_women.html
+2026-08-12 19:11:03,483 [INFO] 82208311_women_like_you_women.html: extracted — title='Women Like You / Women Like Me' author='witchwine' status='In Progress' lastUpdated='2026-06-06' words='45837'
+2026-08-12 19:11:03,483 [INFO] 82208311_women_like_you_women.html: original backup already exists, skipping copy
+2026-08-12 19:11:03,514 [INFO] 82208311_women_like_you_women.html: written to archive/
+2026-08-12 19:11:03,514 [INFO] Updated manifest entry: 82208311_women_like_you_women.html
+2026-08-12 19:11:03,514 [INFO] 82208311_women_like_you_women.html: removed from staging/
+2026-08-12 19:11:03,514 [INFO] --- Processing: 82347061_count_every_beautiful.html
+2026-08-12 19:11:03,521 [INFO] 82347061_count_every_beautiful.html: extracted — title='Count Every Beautiful Thing We Can See' author='BuffyBot3000' status='Complete' lastUpdated='2026-07-28' words='6996'
+2026-08-12 19:11:03,522 [INFO] 82347061_count_every_beautiful.html: original backup already exists, skipping copy
+2026-08-12 19:11:03,527 [INFO] 82347061_count_every_beautiful.html: written to archive/
+2026-08-12 19:11:03,527 [INFO] Updated manifest entry: 82347061_count_every_beautiful.html
+2026-08-12 19:11:03,527 [INFO] 82347061_count_every_beautiful.html: removed from staging/
+2026-08-12 19:11:03,527 [INFO] --- Processing: 83001466_turn_them_in_turn_them.html
+2026-08-12 19:11:03,531 [INFO] 83001466_turn_them_in_turn_them.html: extracted — title='Turn Them In, Turn Them In Now! (You're A Traitor!)' author='Anonymous' status='In Progress' lastUpdated='2026-04-12' words='3015'
+2026-08-12 19:11:03,532 [INFO] 83001466_turn_them_in_turn_them.html: original backup already exists, skipping copy
+2026-08-12 19:11:03,535 [INFO] 83001466_turn_them_in_turn_them.html: written to archive/
+2026-08-12 19:11:03,535 [INFO] Updated manifest entry: 83001466_turn_them_in_turn_them.html
+2026-08-12 19:11:03,535 [INFO] 83001466_turn_them_in_turn_them.html: removed from staging/
+2026-08-12 19:11:03,535 [INFO] --- Processing: 83788211_the_oxwood.html
+2026-08-12 19:11:03,583 [INFO] 83788211_the_oxwood.html: extracted — title='The Oxwood' author='BanneAncroft69' status='Complete' lastUpdated='2026-07-23' words='38966'
+2026-08-12 19:11:03,584 [INFO] 83788211_the_oxwood.html: backed up to originals/
+2026-08-12 19:11:03,621 [INFO] 83788211_the_oxwood.html: written to archive/
+2026-08-12 19:11:03,621 [INFO] Added manifest entry: 83788211_the_oxwood.html
+2026-08-12 19:11:03,621 [INFO] 83788211_the_oxwood.html: removed from staging/
+2026-08-12 19:11:03,621 [INFO] --- Processing: 85089776_rescued.html
+2026-08-12 19:11:03,643 [INFO] 85089776_rescued.html: extracted — title='Rescued' author='pinkpillow19' status='Complete' lastUpdated='2026-06-04' words='14454'
+2026-08-12 19:11:03,643 [INFO] 85089776_rescued.html: original backup already exists, skipping copy
+2026-08-12 19:11:03,719 [INFO] 85089776_rescued.html: written to archive/
+2026-08-12 19:11:03,720 [INFO] Updated manifest entry: 85089776_rescued.html
+2026-08-12 19:11:03,720 [INFO] 85089776_rescued.html: removed from staging/
+2026-08-12 19:11:03,720 [INFO] --- Processing: 85272591_no_light_no_light.html
+2026-08-12 19:11:03,804 [INFO] 85272591_no_light_no_light.html: extracted — title='No Light, No Light' author='mychellio' status='Complete' lastUpdated='2026-06-07' words='32306'
+2026-08-12 19:11:03,805 [INFO] 85272591_no_light_no_light.html: original backup already exists, skipping copy
+2026-08-12 19:11:03,836 [INFO] 85272591_no_light_no_light.html: written to archive/
+2026-08-12 19:11:03,837 [INFO] Updated manifest entry: 85272591_no_light_no_light.html
+2026-08-12 19:11:03,837 [INFO] 85272591_no_light_no_light.html: removed from staging/
+2026-08-12 19:11:03,837 [INFO] --- Processing: 85534741_the_best_little.html
+2026-08-12 19:11:03,849 [INFO] 85534741_the_best_little.html: extracted — title='The Best Little Whorehouse in Westview' author='Lexus (Beautiful_Ruin)' status='Complete' lastUpdated='2026-06-02' words='19790'
+2026-08-12 19:11:03,849 [INFO] 85534741_the_best_little.html: original backup already exists, skipping copy
+2026-08-12 19:11:03,858 [INFO] 85534741_the_best_little.html: written to archive/
+2026-08-12 19:11:03,858 [INFO] Updated manifest entry: 85534741_the_best_little.html
+2026-08-12 19:11:03,858 [INFO] 85534741_the_best_little.html: removed from staging/
+2026-08-12 19:11:03,858 [INFO] --- Processing: 86294231_strangers_on_a_train.html
+2026-08-12 19:11:03,882 [INFO] 86294231_strangers_on_a_train.html: extracted — title='Strangers On A Train' author='Nowhere_near' status='Complete' lastUpdated='2026-06-23' words='28617'
+2026-08-12 19:11:03,883 [INFO] 86294231_strangers_on_a_train.html: original backup already exists, skipping copy
+2026-08-12 19:11:03,899 [INFO] 86294231_strangers_on_a_train.html: written to archive/
+2026-08-12 19:11:03,899 [INFO] Updated manifest entry: 86294231_strangers_on_a_train.html
+2026-08-12 19:11:03,900 [INFO] 86294231_strangers_on_a_train.html: removed from staging/
+2026-08-12 19:11:03,900 [INFO] --- Processing: 86306531_hoops_im_falling_for_you.html
+2026-08-12 19:11:03,919 [INFO] 86306531_hoops_im_falling_for_you.html: extracted — title='Hoops, I'm Falling for You' author='lesbianvinci, Queerenough' status='Complete' lastUpdated='2026-06-18' words='26503'
+2026-08-12 19:11:03,919 [INFO] 86306531_hoops_im_falling_for_you.html: original backup already exists, skipping copy
+2026-08-12 19:11:03,933 [INFO] 86306531_hoops_im_falling_for_you.html: written to archive/
+2026-08-12 19:11:03,933 [INFO] Updated manifest entry: 86306531_hoops_im_falling_for_you.html
+2026-08-12 19:11:03,933 [INFO] 86306531_hoops_im_falling_for_you.html: removed from staging/
+2026-08-12 19:11:03,933 [INFO] --- Processing: 86318591_flowers_in_the_water.html
+2026-08-12 19:11:03,999 [INFO] 86318591_flowers_in_the_water.html: extracted — title='Flowers in the Water' author='Cassie_Bones' status='Complete' lastUpdated='2026-06-21' words='83392'
+2026-08-12 19:11:04,000 [INFO] 86318591_flowers_in_the_water.html: original backup already exists, skipping copy
+2026-08-12 19:11:04,046 [INFO] 86318591_flowers_in_the_water.html: written to archive/
+2026-08-12 19:11:04,046 [INFO] Updated manifest entry: 86318591_flowers_in_the_water.html
+2026-08-12 19:11:04,046 [INFO] 86318591_flowers_in_the_water.html: removed from staging/
+2026-08-12 19:11:04,046 [INFO] --- Processing: 86354731_i_sure_know_mating_calls.html
+2026-08-12 19:11:04,075 [INFO] 86354731_i_sure_know_mating_calls.html: extracted — title='I Sure Know Mating Calls' author='AnonFandomBandit' status='Complete' lastUpdated='2026-06-26' words='56691'
+2026-08-12 19:11:04,076 [INFO] 86354731_i_sure_know_mating_calls.html: backed up to originals/
+2026-08-12 19:11:04,097 [INFO] 86354731_i_sure_know_mating_calls.html: written to archive/
+2026-08-12 19:11:04,097 [INFO] Added manifest entry: 86354731_i_sure_know_mating_calls.html
+2026-08-12 19:11:04,097 [INFO] 86354731_i_sure_know_mating_calls.html: removed from staging/
+2026-08-12 19:11:04,097 [INFO] --- Processing: 86378576_got_me_on_my_knees_have.html
+2026-08-12 19:11:04,137 [INFO] 86378576_got_me_on_my_knees_have.html: extracted — title='Got Me On My Knees (Have You Any Mercy?)' author='justanothertaurusmoon' status='Complete' lastUpdated='2026-06-15' words='54135'
+2026-08-12 19:11:04,137 [INFO] 86378576_got_me_on_my_knees_have.html: original backup already exists, skipping copy
+2026-08-12 19:11:04,163 [INFO] 86378576_got_me_on_my_knees_have.html: written to archive/
+2026-08-12 19:11:04,163 [INFO] Updated manifest entry: 86378576_got_me_on_my_knees_have.html
+2026-08-12 19:11:04,163 [INFO] 86378576_got_me_on_my_knees_have.html: removed from staging/
+2026-08-12 19:11:04,163 [INFO] --- Processing: 88006181_even_anxious_pups_need.html
+2026-08-12 19:11:04,179 [INFO] 88006181_even_anxious_pups_need.html: extracted — title='Even anxious pups need the moon' author='Queerenough' status='In Progress' lastUpdated='2026-07-05' words='4667'
+2026-08-12 19:11:04,180 [INFO] 88006181_even_anxious_pups_need.html: original backup already exists, skipping copy
+2026-08-12 19:11:04,184 [INFO] 88006181_even_anxious_pups_need.html: written to archive/
+2026-08-12 19:11:04,184 [INFO] Updated manifest entry: 88006181_even_anxious_pups_need.html
+2026-08-12 19:11:04,184 [INFO] 88006181_even_anxious_pups_need.html: removed from staging/
+2026-08-12 19:11:04,184 [INFO] --- Processing: 88966521_ice_chips.html
+2026-08-12 19:11:04,193 [INFO] 88966521_ice_chips.html: extracted — title='Ice Chips' author='Salong3' status='Complete' lastUpdated='2026-07-28' words='10207'
+2026-08-12 19:11:04,193 [INFO] 88966521_ice_chips.html: backed up to originals/
+2026-08-12 19:11:04,199 [INFO] 88966521_ice_chips.html: written to archive/
+2026-08-12 19:11:04,200 [INFO] Added manifest entry: 88966521_ice_chips.html
+2026-08-12 19:11:04,200 [INFO] 88966521_ice_chips.html: removed from staging/
+2026-08-12 19:11:04,200 [INFO] --- Processing: 89153226_it_made_me_think_of_you.html
+2026-08-12 19:11:04,204 [INFO] 89153226_it_made_me_think_of_you.html: extracted — title='it made me think of you' author='bitchywitchyboo' status='In Progress' lastUpdated='2026-07-31' words='3469'
+2026-08-12 19:11:04,204 [INFO] 89153226_it_made_me_think_of_you.html: backed up to originals/
+2026-08-12 19:11:04,207 [INFO] 89153226_it_made_me_think_of_you.html: written to archive/
+2026-08-12 19:11:04,207 [INFO] Added manifest entry: 89153226_it_made_me_think_of_you.html
+2026-08-12 19:11:04,207 [INFO] 89153226_it_made_me_think_of_you.html: removed from staging/
+2026-08-12 19:11:04,207 [INFO] --- Processing: 89275326_just_like_a_tattoo.html
+2026-08-12 19:11:04,216 [INFO] 89275326_just_like_a_tattoo.html: extracted — title='Just Like a Tattoo' author='Cassie_Bones' status='Complete' lastUpdated='2026-07-26' words='7704'
+2026-08-12 19:11:04,216 [INFO] 89275326_just_like_a_tattoo.html: backed up to originals/
+2026-08-12 19:11:04,222 [INFO] 89275326_just_like_a_tattoo.html: written to archive/
+2026-08-12 19:11:04,222 [INFO] Added manifest entry: 89275326_just_like_a_tattoo.html
+2026-08-12 19:11:04,222 [INFO] 89275326_just_like_a_tattoo.html: removed from staging/
+2026-08-12 19:11:04,222 [INFO] --- Processing: 89276181_fyc_what_if.html
+2026-08-12 19:11:04,229 [INFO] 89276181_fyc_what_if.html: extracted — title='FYC: What if?' author='Salong3' status='Complete' lastUpdated='2026-07-27' words='8755'
+2026-08-12 19:11:04,229 [INFO] 89276181_fyc_what_if.html: backed up to originals/
+2026-08-12 19:11:04,234 [INFO] 89276181_fyc_what_if.html: written to archive/
+2026-08-12 19:11:04,234 [INFO] Added manifest entry: 89276181_fyc_what_if.html
+2026-08-12 19:11:04,234 [INFO] 89276181_fyc_what_if.html: removed from staging/
+2026-08-12 19:11:04,234 [INFO] --- Processing: 89602846_pile_o_bones.html
+2026-08-12 19:11:04,237 [INFO] 89602846_pile_o_bones.html: extracted — title='Pile o Bones' author='Cassie_Bones' status='Complete' lastUpdated='2026-07-31' words='268'
+2026-08-12 19:11:04,237 [INFO] 89602846_pile_o_bones.html: backed up to originals/
+2026-08-12 19:11:04,239 [INFO] 89602846_pile_o_bones.html: written to archive/
+2026-08-12 19:11:04,239 [INFO] Added manifest entry: 89602846_pile_o_bones.html
+2026-08-12 19:11:04,239 [INFO] 89602846_pile_o_bones.html: removed from staging/
+2026-08-12 19:11:04,239 [INFO] --- Processing: 89659531_the_girl_next_door.html
+2026-08-12 19:11:04,256 [INFO] 89659531_the_girl_next_door.html: extracted — title='The Girl Next Door' author='Cassie_Bones' status='Complete' lastUpdated='2026-08-01' words='9033'
+2026-08-12 19:11:04,256 [INFO] 89659531_the_girl_next_door.html: backed up to originals/
+2026-08-12 19:11:04,266 [INFO] 89659531_the_girl_next_door.html: written to archive/
+2026-08-12 19:11:04,266 [INFO] Added manifest entry: 89659531_the_girl_next_door.html
+2026-08-12 19:11:04,266 [INFO] 89659531_the_girl_next_door.html: removed from staging/
+2026-08-12 19:11:04,266 [INFO] --- Processing: 89738371_feeling_kind_of_freaky.html
+2026-08-12 19:11:04,270 [INFO] 89738371_feeling_kind_of_freaky.html: extracted — title='feeling kind of freaky (maybe it's the moonlight)' author='alilbitgay' status='Complete' lastUpdated='2026-08-02' words='3368'
+2026-08-12 19:11:04,271 [INFO] 89738371_feeling_kind_of_freaky.html: backed up to originals/
+2026-08-12 19:11:04,273 [INFO] 89738371_feeling_kind_of_freaky.html: written to archive/
+2026-08-12 19:11:04,273 [INFO] Added manifest entry: 89738371_feeling_kind_of_freaky.html
+2026-08-12 19:11:04,273 [INFO] 89738371_feeling_kind_of_freaky.html: removed from staging/
+2026-08-12 19:11:04,277 [INFO] Manifest saved to fic_data.json
+2026-08-12 19:11:04,278 [INFO] index.html rebuilt (402 fics)
+2026-08-12 19:11:04,278 [INFO] Done. 59 processed, 0 failed.
+2026-08-12 19:11:04,278 [INFO] ============================================================
+2026-08-14 23:58:41,516 [INFO] ============================================================
+2026-08-14 23:58:41,523 [INFO] Run started: 2026-08-14T23:58:41.523604
+2026-08-14 23:58:41,524 [INFO] Found 188 file(s) to process
+2026-08-14 23:58:41,526 [INFO] --- Processing: 60017602_the_witchy_ceo.html
+2026-08-14 23:58:41,584 [INFO] 60017602_the_witchy_ceo.html: extracted — title='the witchy CEO' author='riccioriccio' status='Complete' lastUpdated='2024-12-19' words='58881'
+2026-08-14 23:58:41,584 [INFO] 60017602_the_witchy_ceo.html: original backup already exists, skipping copy
+2026-08-14 23:58:41,621 [INFO] 60017602_the_witchy_ceo.html: written to archive/
+2026-08-14 23:58:41,621 [INFO] Updated manifest entry: 60017602_the_witchy_ceo.html
+2026-08-14 23:58:41,622 [INFO] 60017602_the_witchy_ceo.html: removed from staging/
+2026-08-14 23:58:41,622 [INFO] --- Processing: 60208747_i_looked_to_the_children.html
+2026-08-14 23:58:41,629 [INFO] 60208747_i_looked_to_the_children.html: extracted — title='i looked to the children (i drank from the fountains)' author='seabiscuit' status='Complete' lastUpdated='2024-10-31' words='9939'
+2026-08-14 23:58:41,629 [INFO] 60208747_i_looked_to_the_children.html: original backup already exists, skipping copy
+2026-08-14 23:58:41,633 [INFO] 60208747_i_looked_to_the_children.html: written to archive/
+2026-08-14 23:58:41,633 [INFO] Updated manifest entry: 60208747_i_looked_to_the_children.html
+2026-08-14 23:58:41,634 [INFO] 60208747_i_looked_to_the_children.html: removed from staging/
+2026-08-14 23:58:41,634 [INFO] --- Processing: 60284566_behind_the_curtain.html
+2026-08-14 23:58:41,873 [INFO] 60284566_behind_the_curtain.html: extracted — title='Behind the Curtain' author='Cassie_Bones' status='In Progress' lastUpdated='2026-06-28' words='135680'
+2026-08-14 23:58:41,873 [INFO] 60284566_behind_the_curtain.html: original backup already exists, skipping copy
+2026-08-14 23:58:42,054 [INFO] 60284566_behind_the_curtain.html: written to archive/
+2026-08-14 23:58:42,054 [INFO] Updated manifest entry: 60284566_behind_the_curtain.html
+2026-08-14 23:58:42,054 [INFO] 60284566_behind_the_curtain.html: removed from staging/
+2026-08-14 23:58:42,054 [INFO] --- Processing: 60437284_hopeless_breathless.html
+2026-08-14 23:58:42,090 [INFO] 60437284_hopeless_breathless.html: extracted — title='hopeless (breathless) burning slow' author='AnonFandomBandit, orphan_account' status='In Progress' lastUpdated='2025-12-12' words='71392'
+2026-08-14 23:58:42,090 [INFO] 60437284_hopeless_breathless.html: original backup already exists, skipping copy
+2026-08-14 23:58:42,117 [INFO] 60437284_hopeless_breathless.html: written to archive/
+2026-08-14 23:58:42,117 [INFO] Updated manifest entry: 60437284_hopeless_breathless.html
+2026-08-14 23:58:42,117 [INFO] 60437284_hopeless_breathless.html: removed from staging/
+2026-08-14 23:58:42,117 [INFO] --- Processing: 60439222_ill_follow_you_down_til.html
+2026-08-14 23:58:42,164 [INFO] 60439222_ill_follow_you_down_til.html: extracted — title='I'll follow you down til' the sound of my voice will haunt you' author='Frozenfable' status='Complete' lastUpdated='2025-07-23' words='18417'
+2026-08-14 23:58:42,164 [INFO] 60439222_ill_follow_you_down_til.html: original backup already exists, skipping copy
+2026-08-14 23:58:42,198 [INFO] 60439222_ill_follow_you_down_til.html: written to archive/
+2026-08-14 23:58:42,198 [INFO] Added manifest entry: 60439222_ill_follow_you_down_til.html
+2026-08-14 23:58:42,198 [INFO] 60439222_ill_follow_you_down_til.html: removed from staging/
+2026-08-14 23:58:42,198 [INFO] --- Processing: 60667915_you_look_so_pretty_when.html
+2026-08-14 23:58:42,204 [INFO] 60667915_you_look_so_pretty_when.html: extracted — title='you look so pretty when you're on your knees' author='ArtemisiaXIII' status='Complete' lastUpdated='2024-11-18' words='8504'
+2026-08-14 23:58:42,204 [INFO] 60667915_you_look_so_pretty_when.html: original backup already exists, skipping copy
+2026-08-14 23:58:42,208 [INFO] 60667915_you_look_so_pretty_when.html: written to archive/
+2026-08-14 23:58:42,209 [INFO] Updated manifest entry: 60667915_you_look_so_pretty_when.html
+2026-08-14 23:58:42,209 [INFO] 60667915_you_look_so_pretty_when.html: removed from staging/
+2026-08-14 23:58:42,209 [INFO] --- Processing: 60739120_for_you_to_be_still.html
+2026-08-14 23:58:42,241 [INFO] 60739120_for_you_to_be_still.html: extracted — title='For You To Be Still' author='pleasanthell' status='Complete' lastUpdated='2024-11-21' words='27444'
+2026-08-14 23:58:42,241 [INFO] 60739120_for_you_to_be_still.html: original backup already exists, skipping copy
+2026-08-14 23:58:42,266 [INFO] 60739120_for_you_to_be_still.html: written to archive/
+2026-08-14 23:58:42,266 [INFO] Updated manifest entry: 60739120_for_you_to_be_still.html
+2026-08-14 23:58:42,266 [INFO] 60739120_for_you_to_be_still.html: removed from staging/
+2026-08-14 23:58:42,266 [INFO] --- Processing: 60768184_someday_we_will_all_be.html
+2026-08-14 23:58:42,278 [INFO] 60768184_someday_we_will_all_be.html: extracted — title='someday we will all be lying on our backs (free at last from income tax)' author='paddingtonfan69' status='Complete' lastUpdated='2024-11-30' words='13179'
+2026-08-14 23:58:42,278 [INFO] 60768184_someday_we_will_all_be.html: original backup already exists, skipping copy
+2026-08-14 23:58:42,287 [INFO] 60768184_someday_we_will_all_be.html: written to archive/
+2026-08-14 23:58:42,287 [INFO] Updated manifest entry: 60768184_someday_we_will_all_be.html
+2026-08-14 23:58:42,287 [INFO] 60768184_someday_we_will_all_be.html: removed from staging/
+2026-08-14 23:58:42,287 [INFO] --- Processing: 60780265_vidal_books.html
+2026-08-14 23:58:42,425 [INFO] 60780265_vidal_books.html: extracted — title='Vidal Books' author='PinkSugarSky' status='Complete' lastUpdated='2025-01-31' words='199503'
+2026-08-14 23:58:42,425 [INFO] 60780265_vidal_books.html: original backup already exists, skipping copy
+2026-08-14 23:58:42,508 [INFO] 60780265_vidal_books.html: written to archive/
+2026-08-14 23:58:42,508 [INFO] Updated manifest entry: 60780265_vidal_books.html
+2026-08-14 23:58:42,509 [INFO] 60780265_vidal_books.html: removed from staging/
+2026-08-14 23:58:42,509 [INFO] --- Processing: 60824317_let_loose_your_longing.html
+2026-08-14 23:58:42,547 [INFO] 60824317_let_loose_your_longing.html: extracted — title='let loose your longing' author='curiositysdarling' status='In Progress' lastUpdated='2025-01-26' words='27326'
+2026-08-14 23:58:42,547 [INFO] 60824317_let_loose_your_longing.html: original backup already exists, skipping copy
+2026-08-14 23:58:42,574 [INFO] 60824317_let_loose_your_longing.html: written to archive/
+2026-08-14 23:58:42,574 [INFO] Updated manifest entry: 60824317_let_loose_your_longing.html
+2026-08-14 23:58:42,575 [INFO] 60824317_let_loose_your_longing.html: removed from staging/
+2026-08-14 23:58:42,575 [INFO] --- Processing: 60961120_til_storm_breaks_loose.html
+2026-08-14 23:58:42,594 [INFO] 60961120_til_storm_breaks_loose.html: extracted — title=''til storm breaks loose' author='Palmarion' status='Complete' lastUpdated='2025-09-07' words='17549'
+2026-08-14 23:58:42,595 [INFO] 60961120_til_storm_breaks_loose.html: original backup already exists, skipping copy
+2026-08-14 23:58:42,608 [INFO] 60961120_til_storm_breaks_loose.html: written to archive/
+2026-08-14 23:58:42,608 [INFO] Updated manifest entry: 60961120_til_storm_breaks_loose.html
+2026-08-14 23:58:42,608 [INFO] 60961120_til_storm_breaks_loose.html: removed from staging/
+2026-08-14 23:58:42,608 [INFO] --- Processing: 61403194_kaleidoscope.html
+2026-08-14 23:58:42,621 [INFO] 61403194_kaleidoscope.html: extracted — title='kaleidoscope' author='violetandthevoid' status='Complete' lastUpdated='2025-01-06' words='11335'
+2026-08-14 23:58:42,622 [INFO] 61403194_kaleidoscope.html: original backup already exists, skipping copy
+2026-08-14 23:58:42,631 [INFO] 61403194_kaleidoscope.html: written to archive/
+2026-08-14 23:58:42,631 [INFO] Updated manifest entry: 61403194_kaleidoscope.html
+2026-08-14 23:58:42,631 [INFO] 61403194_kaleidoscope.html: removed from staging/
+2026-08-14 23:58:42,631 [INFO] --- Processing: 61419481_merry_christmas_i_think.html
+2026-08-14 23:58:42,637 [INFO] 61419481_merry_christmas_i_think.html: extracted — title='merry christmas (i think i'll miss this one this year)' author='alilbitgay' status='Complete' lastUpdated='2024-12-21' words='6878'
+2026-08-14 23:58:42,638 [INFO] 61419481_merry_christmas_i_think.html: original backup already exists, skipping copy
+2026-08-14 23:58:42,642 [INFO] 61419481_merry_christmas_i_think.html: written to archive/
+2026-08-14 23:58:42,642 [INFO] Added manifest entry: 61419481_merry_christmas_i_think.html
+2026-08-14 23:58:42,642 [INFO] 61419481_merry_christmas_i_think.html: removed from staging/
+2026-08-14 23:58:42,642 [INFO] --- Processing: 61448059_immovable_object.html
+2026-08-14 23:58:42,667 [INFO] 61448059_immovable_object.html: extracted — title='immovable object, unstoppable force' author='324b2fun' status='Complete' lastUpdated='2024-12-27' words='15487'
+2026-08-14 23:58:42,667 [INFO] 61448059_immovable_object.html: original backup already exists, skipping copy
+2026-08-14 23:58:42,679 [INFO] 61448059_immovable_object.html: written to archive/
+2026-08-14 23:58:42,679 [INFO] Added manifest entry: 61448059_immovable_object.html
+2026-08-14 23:58:42,679 [INFO] 61448059_immovable_object.html: removed from staging/
+2026-08-14 23:58:42,679 [INFO] --- Processing: 61650106_for_you_i_would_cross.html
+2026-08-14 23:58:42,697 [INFO] 61650106_for_you_i_would_cross.html: extracted — title='for you, i would cross the line' author='quinnking' status='In Progress' lastUpdated='2026-03-18' words='31255'
+2026-08-14 23:58:42,700 [INFO] 61650106_for_you_i_would_cross.html: original backup already exists, skipping copy
+2026-08-14 23:58:42,713 [INFO] 61650106_for_you_i_would_cross.html: written to archive/
+2026-08-14 23:58:42,713 [INFO] Updated manifest entry: 61650106_for_you_i_would_cross.html
+2026-08-14 23:58:42,713 [INFO] 61650106_for_you_i_would_cross.html: removed from staging/
+2026-08-14 23:58:42,713 [INFO] --- Processing: 61800187_care_of.html
+2026-08-14 23:58:42,725 [INFO] 61800187_care_of.html: extracted — title='care of' author='seabiscuit' status='Complete' lastUpdated='2025-01-03' words='18096'
+2026-08-14 23:58:42,725 [INFO] 61800187_care_of.html: original backup already exists, skipping copy
+2026-08-14 23:58:42,733 [INFO] 61800187_care_of.html: written to archive/
+2026-08-14 23:58:42,733 [INFO] Updated manifest entry: 61800187_care_of.html
+2026-08-14 23:58:42,734 [INFO] 61800187_care_of.html: removed from staging/
+2026-08-14 23:58:42,734 [INFO] --- Processing: 61850398_high_infidelity.html
+2026-08-14 23:58:42,837 [INFO] 61850398_high_infidelity.html: extracted — title='High Infidelity' author='hurricxneamelia, thetbone' status='Complete' lastUpdated='2026-01-14' words='126385'
+2026-08-14 23:58:42,838 [INFO] 61850398_high_infidelity.html: original backup already exists, skipping copy
+2026-08-14 23:58:42,914 [INFO] 61850398_high_infidelity.html: written to archive/
+2026-08-14 23:58:42,914 [INFO] Updated manifest entry: 61850398_high_infidelity.html
+2026-08-14 23:58:42,914 [INFO] 61850398_high_infidelity.html: removed from staging/
+2026-08-14 23:58:42,914 [INFO] --- Processing: 61961998_firewatch.html
+2026-08-14 23:58:42,928 [INFO] 61961998_firewatch.html: extracted — title='Firewatch' author='Miturny' status='Complete' lastUpdated='2025-01-04' words='11093'
+2026-08-14 23:58:42,928 [INFO] 61961998_firewatch.html: original backup already exists, skipping copy
+2026-08-14 23:58:42,939 [INFO] 61961998_firewatch.html: written to archive/
+2026-08-14 23:58:42,939 [INFO] Updated manifest entry: 61961998_firewatch.html
+2026-08-14 23:58:42,939 [INFO] 61961998_firewatch.html: removed from staging/
+2026-08-14 23:58:42,939 [INFO] --- Processing: 62024398_somewhere_only_we_know_a.html
+2026-08-14 23:58:43,173 [INFO] 62024398_somewhere_only_we_know_a.html: extracted — title='Somewhere Only We Know ~ A Professor AU' author='rioallalong_719' status='Complete' lastUpdated='2025-06-25' words='237847'
+2026-08-14 23:58:43,174 [INFO] 62024398_somewhere_only_we_know_a.html: original backup already exists, skipping copy
+2026-08-14 23:58:43,334 [INFO] 62024398_somewhere_only_we_know_a.html: written to archive/
+2026-08-14 23:58:43,334 [INFO] Updated manifest entry: 62024398_somewhere_only_we_know_a.html
+2026-08-14 23:58:43,335 [INFO] 62024398_somewhere_only_we_know_a.html: removed from staging/
+2026-08-14 23:58:43,335 [INFO] --- Processing: 62078056_everybody_knows_that_im.html
+2026-08-14 23:58:43,359 [INFO] 62078056_everybody_knows_that_im.html: extracted — title='everybody knows that i'm a good girl, officer' author='alilbitgay' status='Complete' lastUpdated='2025-03-24' words='36804'
+2026-08-14 23:58:43,359 [INFO] 62078056_everybody_knows_that_im.html: original backup already exists, skipping copy
+2026-08-14 23:58:43,376 [INFO] 62078056_everybody_knows_that_im.html: written to archive/
+2026-08-14 23:58:43,376 [INFO] Updated manifest entry: 62078056_everybody_knows_that_im.html
+2026-08-14 23:58:43,377 [INFO] 62078056_everybody_knows_that_im.html: removed from staging/
+2026-08-14 23:58:43,377 [INFO] --- Processing: 62107414_crimson.html
+2026-08-14 23:58:43,388 [INFO] 62107414_crimson.html: extracted — title='Crimson' author='324b2fun' status='Complete' lastUpdated='2025-01-18' words='20686'
+2026-08-14 23:58:43,389 [INFO] 62107414_crimson.html: original backup already exists, skipping copy
+2026-08-14 23:58:43,397 [INFO] 62107414_crimson.html: written to archive/
+2026-08-14 23:58:43,397 [INFO] Updated manifest entry: 62107414_crimson.html
+2026-08-14 23:58:43,397 [INFO] 62107414_crimson.html: removed from staging/
+2026-08-14 23:58:43,397 [INFO] --- Processing: 62248085_so_my_mother-in-law_is.html
+2026-08-14 23:58:43,405 [INFO] 62248085_so_my_mother-in-law_is.html: extracted — title='so, my mother-in-law is god?' author='villhag' status='Complete' lastUpdated='2025-01-21' words='7443'
+2026-08-14 23:58:43,406 [INFO] 62248085_so_my_mother-in-law_is.html: original backup already exists, skipping copy
+2026-08-14 23:58:43,413 [INFO] 62248085_so_my_mother-in-law_is.html: written to archive/
+2026-08-14 23:58:43,413 [INFO] Updated manifest entry: 62248085_so_my_mother-in-law_is.html
+2026-08-14 23:58:43,413 [INFO] 62248085_so_my_mother-in-law_is.html: removed from staging/
+2026-08-14 23:58:43,413 [INFO] --- Processing: 62265849_all_half_things.html
+2026-08-14 23:58:43,426 [INFO] 62265849_all_half_things.html: extracted — title='all half things' author='seabiscuit' status='Complete' lastUpdated='2025-02-03' words='20223'
+2026-08-14 23:58:43,426 [INFO] 62265849_all_half_things.html: original backup already exists, skipping copy
+2026-08-14 23:58:43,440 [INFO] 62265849_all_half_things.html: written to archive/
+2026-08-14 23:58:43,440 [INFO] Updated manifest entry: 62265849_all_half_things.html
+2026-08-14 23:58:43,440 [INFO] 62265849_all_half_things.html: removed from staging/
+2026-08-14 23:58:43,442 [INFO] --- Processing: 62269809_youre_awful_i_love_you.html
+2026-08-14 23:58:43,511 [INFO] 62269809_youre_awful_i_love_you.html: extracted — title='You're awful. I love you!' author='Fixy' status='Complete' lastUpdated='2026-03-17' words='52802'
+2026-08-14 23:58:43,512 [INFO] 62269809_youre_awful_i_love_you.html: original backup already exists, skipping copy
+2026-08-14 23:58:43,561 [INFO] 62269809_youre_awful_i_love_you.html: written to archive/
+2026-08-14 23:58:43,561 [INFO] Updated manifest entry: 62269809_youre_awful_i_love_you.html
+2026-08-14 23:58:43,561 [INFO] 62269809_youre_awful_i_love_you.html: removed from staging/
+2026-08-14 23:58:43,561 [INFO] --- Processing: 62356414_if_youre_not_falling.html
+2026-08-14 23:58:43,590 [INFO] 62356414_if_youre_not_falling.html: extracted — title='If you’re not falling, you’re not trying' author='StraightUpNot' status='Complete' lastUpdated='2025-03-30' words='43133'
+2026-08-14 23:58:43,590 [INFO] 62356414_if_youre_not_falling.html: original backup already exists, skipping copy
+2026-08-14 23:58:43,611 [INFO] 62356414_if_youre_not_falling.html: written to archive/
+2026-08-14 23:58:43,611 [INFO] Updated manifest entry: 62356414_if_youre_not_falling.html
+2026-08-14 23:58:43,611 [INFO] 62356414_if_youre_not_falling.html: removed from staging/
+2026-08-14 23:58:43,611 [INFO] --- Processing: 62368990_written_in_the_stars.html
+2026-08-14 23:58:43,617 [INFO] 62368990_written_in_the_stars.html: extracted — title='Written in the Stars' author='324b2fun' status='Complete' lastUpdated='2025-01-20' words='4095'
+2026-08-14 23:58:43,617 [INFO] 62368990_written_in_the_stars.html: original backup already exists, skipping copy
+2026-08-14 23:58:43,622 [INFO] 62368990_written_in_the_stars.html: written to archive/
+2026-08-14 23:58:43,622 [INFO] Updated manifest entry: 62368990_written_in_the_stars.html
+2026-08-14 23:58:43,622 [INFO] 62368990_written_in_the_stars.html: removed from staging/
+2026-08-14 23:58:43,622 [INFO] --- Processing: 62385640_want_take_have.html
+2026-08-14 23:58:43,634 [INFO] 62385640_want_take_have.html: extracted — title='want, take, have' author='curiositysdarling' status='Complete' lastUpdated='2025-01-21' words='6212'
+2026-08-14 23:58:43,634 [INFO] 62385640_want_take_have.html: original backup already exists, skipping copy
+2026-08-14 23:58:43,642 [INFO] 62385640_want_take_have.html: written to archive/
+2026-08-14 23:58:43,642 [INFO] Updated manifest entry: 62385640_want_take_have.html
+2026-08-14 23:58:43,642 [INFO] 62385640_want_take_have.html: removed from staging/
+2026-08-14 23:58:43,642 [INFO] --- Processing: 62486611_if_we_stay_swimming_here.html
+2026-08-14 23:58:43,813 [INFO] 62486611_if_we_stay_swimming_here.html: extracted — title='if we stay swimming here forever we will never be free' author='leftlanden' status='Complete' lastUpdated='2026-05-26' words='92596'
+2026-08-14 23:58:43,813 [INFO] 62486611_if_we_stay_swimming_here.html: original backup already exists, skipping copy
+2026-08-14 23:58:43,914 [INFO] 62486611_if_we_stay_swimming_here.html: written to archive/
+2026-08-14 23:58:43,914 [INFO] Updated manifest entry: 62486611_if_we_stay_swimming_here.html
+2026-08-14 23:58:43,914 [INFO] 62486611_if_we_stay_swimming_here.html: removed from staging/
+2026-08-14 23:58:43,914 [INFO] --- Processing: 62615323_questions.html
+2026-08-14 23:58:43,932 [INFO] 62615323_questions.html: extracted — title='Questions' author='kbpe_7150' status='Complete' lastUpdated='2025-03-05' words='21051'
+2026-08-14 23:58:43,933 [INFO] 62615323_questions.html: original backup already exists, skipping copy
+2026-08-14 23:58:43,946 [INFO] 62615323_questions.html: written to archive/
+2026-08-14 23:58:43,946 [INFO] Updated manifest entry: 62615323_questions.html
+2026-08-14 23:58:43,946 [INFO] 62615323_questions.html: removed from staging/
+2026-08-14 23:58:43,946 [INFO] --- Processing: 62675485_get_you_where_you_wanna.html
+2026-08-14 23:58:43,988 [INFO] 62675485_get_you_where_you_wanna.html: extracted — title='get you where you wanna go, if you know what i mean' author='sobercatnip' status='Complete' lastUpdated='2025-03-30' words='45705'
+2026-08-14 23:58:43,989 [INFO] 62675485_get_you_where_you_wanna.html: original backup already exists, skipping copy
+2026-08-14 23:58:44,013 [INFO] 62675485_get_you_where_you_wanna.html: written to archive/
+2026-08-14 23:58:44,013 [INFO] Updated manifest entry: 62675485_get_you_where_you_wanna.html
+2026-08-14 23:58:44,013 [INFO] 62675485_get_you_where_you_wanna.html: removed from staging/
+2026-08-14 23:58:44,013 [INFO] --- Processing: 62832373_if_i_cant_reach_you_let.html
+2026-08-14 23:58:44,137 [INFO] 62832373_if_i_cant_reach_you_let.html: extracted — title='If I Can’t Reach You, Let My Song Teach You' author='mychellio' status='Complete' lastUpdated='2025-03-12' words='64399'
+2026-08-14 23:58:44,137 [INFO] 62832373_if_i_cant_reach_you_let.html: original backup already exists, skipping copy
+2026-08-14 23:58:44,224 [INFO] 62832373_if_i_cant_reach_you_let.html: written to archive/
+2026-08-14 23:58:44,224 [INFO] Updated manifest entry: 62832373_if_i_cant_reach_you_let.html
+2026-08-14 23:58:44,225 [INFO] 62832373_if_i_cant_reach_you_let.html: removed from staging/
+2026-08-14 23:58:44,225 [INFO] --- Processing: 62935369_love_offline.html
+2026-08-14 23:58:44,234 [INFO] 62935369_love_offline.html: extracted — title='love, offline' author='curiositysdarling' status='Complete' lastUpdated='2025-02-10' words='5260'
+2026-08-14 23:58:44,234 [INFO] 62935369_love_offline.html: original backup already exists, skipping copy
+2026-08-14 23:58:44,241 [INFO] 62935369_love_offline.html: written to archive/
+2026-08-14 23:58:44,241 [INFO] Updated manifest entry: 62935369_love_offline.html
+2026-08-14 23:58:44,241 [INFO] 62935369_love_offline.html: removed from staging/
+2026-08-14 23:58:44,241 [INFO] --- Processing: 63145963_its_strictly_business.html
+2026-08-14 23:58:44,525 [INFO] 63145963_its_strictly_business.html: extracted — title='It's strictly business' author='Wefwar' status='In Progress' lastUpdated='2026-07-30' words='411282'
+2026-08-14 23:58:44,526 [INFO] 63145963_its_strictly_business.html: original backup already exists, skipping copy
+2026-08-14 23:58:44,715 [INFO] 63145963_its_strictly_business.html: written to archive/
+2026-08-14 23:58:44,715 [INFO] Updated manifest entry: 63145963_its_strictly_business.html
+2026-08-14 23:58:44,715 [INFO] 63145963_its_strictly_business.html: removed from staging/
+2026-08-14 23:58:44,715 [INFO] --- Processing: 63212776_inexplicable.html
+2026-08-14 23:58:44,788 [INFO] 63212776_inexplicable.html: extracted — title='Inexplicable' author='OmegathaHarklez (Queerenough)' status='Complete' lastUpdated='2025-04-09' words='50967'
+2026-08-14 23:58:44,788 [INFO] 63212776_inexplicable.html: original backup already exists, skipping copy
+2026-08-14 23:58:44,838 [INFO] 63212776_inexplicable.html: written to archive/
+2026-08-14 23:58:44,838 [INFO] Updated manifest entry: 63212776_inexplicable.html
+2026-08-14 23:58:44,838 [INFO] 63212776_inexplicable.html: removed from staging/
+2026-08-14 23:58:44,838 [INFO] --- Processing: 63293833_scratch_an_itch.html
+2026-08-14 23:58:44,845 [INFO] 63293833_scratch_an_itch.html: extracted — title='Scratch an itch' author='Echolux' status='Complete' lastUpdated='2025-02-22' words='3608'
+2026-08-14 23:58:44,845 [INFO] 63293833_scratch_an_itch.html: original backup already exists, skipping copy
+2026-08-14 23:58:44,850 [INFO] 63293833_scratch_an_itch.html: written to archive/
+2026-08-14 23:58:44,850 [INFO] Updated manifest entry: 63293833_scratch_an_itch.html
+2026-08-14 23:58:44,850 [INFO] 63293833_scratch_an_itch.html: removed from staging/
+2026-08-14 23:58:44,850 [INFO] --- Processing: 63343102_wicked_game.html
+2026-08-14 23:58:44,955 [INFO] 63343102_wicked_game.html: extracted — title='Wicked Game' author='annadelamico' status='In Progress' lastUpdated='2026-07-21' words='95689'
+2026-08-14 23:58:44,956 [INFO] 63343102_wicked_game.html: original backup already exists, skipping copy
+2026-08-14 23:58:45,015 [INFO] 63343102_wicked_game.html: written to archive/
+2026-08-14 23:58:45,015 [INFO] Updated manifest entry: 63343102_wicked_game.html
+2026-08-14 23:58:45,015 [INFO] 63343102_wicked_game.html: removed from staging/
+2026-08-14 23:58:45,015 [INFO] --- Processing: 63442861_what_if_my_heart_belongs.html
+2026-08-14 23:58:45,045 [INFO] 63442861_what_if_my_heart_belongs.html: extracted — title='what if my heart belongs to you?' author='xpinksparkles' status='In Progress' lastUpdated='2025-03-09' words='21595'
+2026-08-14 23:58:45,046 [INFO] 63442861_what_if_my_heart_belongs.html: original backup already exists, skipping copy
+2026-08-14 23:58:45,067 [INFO] 63442861_what_if_my_heart_belongs.html: written to archive/
+2026-08-14 23:58:45,067 [INFO] Updated manifest entry: 63442861_what_if_my_heart_belongs.html
+2026-08-14 23:58:45,067 [INFO] 63442861_what_if_my_heart_belongs.html: removed from staging/
+2026-08-14 23:58:45,067 [INFO] --- Processing: 63598684_second_chances.html
+2026-08-14 23:58:45,470 [INFO] 63598684_second_chances.html: extracted — title='Second Chances' author='Tiddiewitch' status='Complete' lastUpdated='2025-11-22' words='270807'
+2026-08-14 23:58:45,471 [INFO] 63598684_second_chances.html: original backup already exists, skipping copy
+2026-08-14 23:58:45,733 [INFO] 63598684_second_chances.html: written to archive/
+2026-08-14 23:58:45,733 [INFO] Updated manifest entry: 63598684_second_chances.html
+2026-08-14 23:58:45,733 [INFO] 63598684_second_chances.html: removed from staging/
+2026-08-14 23:58:45,733 [INFO] --- Processing: 63986338_chance_to_fix.html
+2026-08-14 23:58:45,998 [INFO] 63986338_chance_to_fix.html: extracted — title='Chance to Fix' author='Haeyongsshi (BiancaValin)' status='Complete' lastUpdated='2025-05-24' words='167360'
+2026-08-14 23:58:45,999 [INFO] 63986338_chance_to_fix.html: original backup already exists, skipping copy
+2026-08-14 23:58:46,174 [INFO] 63986338_chance_to_fix.html: written to archive/
+2026-08-14 23:58:46,174 [INFO] Updated manifest entry: 63986338_chance_to_fix.html
+2026-08-14 23:58:46,174 [INFO] 63986338_chance_to_fix.html: removed from staging/
+2026-08-14 23:58:46,174 [INFO] --- Processing: 64272802_feel_the_love_of_her.html
+2026-08-14 23:58:46,257 [INFO] 64272802_feel_the_love_of_her.html: extracted — title='feel the love of her caress (she will be your living end)' author='charmyquark' status='In Progress' lastUpdated='2026-04-11' words='30813'
+2026-08-14 23:58:46,257 [INFO] 64272802_feel_the_love_of_her.html: original backup already exists, skipping copy
+2026-08-14 23:58:46,306 [INFO] 64272802_feel_the_love_of_her.html: written to archive/
+2026-08-14 23:58:46,306 [INFO] Updated manifest entry: 64272802_feel_the_love_of_her.html
+2026-08-14 23:58:46,306 [INFO] 64272802_feel_the_love_of_her.html: removed from staging/
+2026-08-14 23:58:46,306 [INFO] --- Processing: 64291306_pushing_it_down_and.html
+2026-08-14 23:58:46,351 [INFO] 64291306_pushing_it_down_and.html: extracted — title='Pushing It Down and Praying' author='shaywritesthings' status='Complete' lastUpdated='2026-02-17' words='44080'
+2026-08-14 23:58:46,351 [INFO] 64291306_pushing_it_down_and.html: original backup already exists, skipping copy
+2026-08-14 23:58:46,380 [INFO] 64291306_pushing_it_down_and.html: written to archive/
+2026-08-14 23:58:46,381 [INFO] Updated manifest entry: 64291306_pushing_it_down_and.html
+2026-08-14 23:58:46,381 [INFO] 64291306_pushing_it_down_and.html: removed from staging/
+2026-08-14 23:58:46,381 [INFO] --- Processing: 64606348_god_is_a_woman.html
+2026-08-14 23:58:46,494 [INFO] 64606348_god_is_a_woman.html: extracted — title='God is a woman' author='NightsLikeThis' status='Complete' lastUpdated='2026-02-08' words='130795'
+2026-08-14 23:58:46,494 [INFO] 64606348_god_is_a_woman.html: original backup already exists, skipping copy
+2026-08-14 23:58:46,573 [INFO] 64606348_god_is_a_woman.html: written to archive/
+2026-08-14 23:58:46,573 [INFO] Updated manifest entry: 64606348_god_is_a_woman.html
+2026-08-14 23:58:46,573 [INFO] 64606348_god_is_a_woman.html: removed from staging/
+2026-08-14 23:58:46,573 [INFO] --- Processing: 64714843_five_days_four_nights.html
+2026-08-14 23:58:46,583 [INFO] 64714843_five_days_four_nights.html: extracted — title='Five Days, Four Nights' author='sssweetdisposition' status='Complete' lastUpdated='2025-04-15' words='14592'
+2026-08-14 23:58:46,584 [INFO] 64714843_five_days_four_nights.html: original backup already exists, skipping copy
+2026-08-14 23:58:46,591 [INFO] 64714843_five_days_four_nights.html: written to archive/
+2026-08-14 23:58:46,591 [INFO] Updated manifest entry: 64714843_five_days_four_nights.html
+2026-08-14 23:58:46,591 [INFO] 64714843_five_days_four_nights.html: removed from staging/
+2026-08-14 23:58:46,591 [INFO] --- Processing: 64778476_by_blood_and_bloom.html
+2026-08-14 23:58:46,747 [INFO] 64778476_by_blood_and_bloom.html: extracted — title='By Blood and Bloom' author='Anonymous' status='In Progress' lastUpdated='2025-07-24' words='108134'
+2026-08-14 23:58:46,747 [INFO] 64778476_by_blood_and_bloom.html: original backup already exists, skipping copy
+2026-08-14 23:58:46,849 [INFO] 64778476_by_blood_and_bloom.html: written to archive/
+2026-08-14 23:58:46,849 [INFO] Updated manifest entry: 64778476_by_blood_and_bloom.html
+2026-08-14 23:58:46,850 [INFO] 64778476_by_blood_and_bloom.html: removed from staging/
+2026-08-14 23:58:46,850 [INFO] --- Processing: 64803190_astonishment_and_joy.html
+2026-08-14 23:58:46,868 [INFO] 64803190_astonishment_and_joy.html: extracted — title='astonishment and joy' author='cruuuelsummer' status='Complete' lastUpdated='2025-04-27' words='18620'
+2026-08-14 23:58:46,868 [INFO] 64803190_astonishment_and_joy.html: original backup already exists, skipping copy
+2026-08-14 23:58:46,882 [INFO] 64803190_astonishment_and_joy.html: written to archive/
+2026-08-14 23:58:46,882 [INFO] Updated manifest entry: 64803190_astonishment_and_joy.html
+2026-08-14 23:58:46,882 [INFO] 64803190_astonishment_and_joy.html: removed from staging/
+2026-08-14 23:58:46,882 [INFO] --- Processing: 64844032_garden_of_eden.html
+2026-08-14 23:58:46,891 [INFO] 64844032_garden_of_eden.html: extracted — title='garden of eden' author='advilrio' status='Complete' lastUpdated='2025-04-19' words='6880'
+2026-08-14 23:58:46,891 [INFO] 64844032_garden_of_eden.html: original backup already exists, skipping copy
+2026-08-14 23:58:46,897 [INFO] 64844032_garden_of_eden.html: written to archive/
+2026-08-14 23:58:46,897 [INFO] Updated manifest entry: 64844032_garden_of_eden.html
+2026-08-14 23:58:46,897 [INFO] 64844032_garden_of_eden.html: removed from staging/
+2026-08-14 23:58:46,897 [INFO] --- Processing: 64941802_work_and_play_ball.html
+2026-08-14 23:58:47,041 [INFO] 64941802_work_and_play_ball.html: extracted — title='Work and (Play Ball)' author='WitchHeartsRunFree' status='Complete' lastUpdated='2025-10-23' words='124648'
+2026-08-14 23:58:47,041 [INFO] 64941802_work_and_play_ball.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,137 [INFO] 64941802_work_and_play_ball.html: written to archive/
+2026-08-14 23:58:47,137 [INFO] Updated manifest entry: 64941802_work_and_play_ball.html
+2026-08-14 23:58:47,137 [INFO] 64941802_work_and_play_ball.html: removed from staging/
+2026-08-14 23:58:47,137 [INFO] --- Processing: 65003722_i_dont_care_that_youre_a.html
+2026-08-14 23:58:47,149 [INFO] 65003722_i_dont_care_that_youre_a.html: extracted — title='i don’t care that you’re a stoner (fall right into me)' author='saturnreturn' status='Complete' lastUpdated='2025-04-25' words='10447'
+2026-08-14 23:58:47,149 [INFO] 65003722_i_dont_care_that_youre_a.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,157 [INFO] 65003722_i_dont_care_that_youre_a.html: written to archive/
+2026-08-14 23:58:47,157 [INFO] Updated manifest entry: 65003722_i_dont_care_that_youre_a.html
+2026-08-14 23:58:47,157 [INFO] 65003722_i_dont_care_that_youre_a.html: removed from staging/
+2026-08-14 23:58:47,157 [INFO] --- Processing: 65690266_certified_pre-owned.html
+2026-08-14 23:58:47,164 [INFO] 65690266_certified_pre-owned.html: extracted — title='Certified Pre-Owned' author='Emilia_Rowan' status='Complete' lastUpdated='2025-05-19' words='3675'
+2026-08-14 23:58:47,164 [INFO] 65690266_certified_pre-owned.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,168 [INFO] 65690266_certified_pre-owned.html: written to archive/
+2026-08-14 23:58:47,169 [INFO] Updated manifest entry: 65690266_certified_pre-owned.html
+2026-08-14 23:58:47,169 [INFO] 65690266_certified_pre-owned.html: removed from staging/
+2026-08-14 23:58:47,169 [INFO] --- Processing: 65696449_waste_the_night.html
+2026-08-14 23:58:47,183 [INFO] 65696449_waste_the_night.html: extracted — title='waste the night' author='empathyhoodie' status='Complete' lastUpdated='2025-05-19' words='16305'
+2026-08-14 23:58:47,184 [INFO] 65696449_waste_the_night.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,194 [INFO] 65696449_waste_the_night.html: written to archive/
+2026-08-14 23:58:47,194 [INFO] Updated manifest entry: 65696449_waste_the_night.html
+2026-08-14 23:58:47,194 [INFO] 65696449_waste_the_night.html: removed from staging/
+2026-08-14 23:58:47,194 [INFO] --- Processing: 65697490_i_now_pronounce_you.html
+2026-08-14 23:58:47,218 [INFO] 65697490_i_now_pronounce_you.html: extracted — title='I Now Pronounce You....' author='Cassie_Bones' status='Complete' lastUpdated='2025-05-19' words='12680'
+2026-08-14 23:58:47,218 [INFO] 65697490_i_now_pronounce_you.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,236 [INFO] 65697490_i_now_pronounce_you.html: written to archive/
+2026-08-14 23:58:47,236 [INFO] Updated manifest entry: 65697490_i_now_pronounce_you.html
+2026-08-14 23:58:47,236 [INFO] 65697490_i_now_pronounce_you.html: removed from staging/
+2026-08-14 23:58:47,236 [INFO] --- Processing: 65733829_juxtaposition_in_fate.html
+2026-08-14 23:58:47,257 [INFO] 65733829_juxtaposition_in_fate.html: extracted — title='juxtaposition in fate' author='vwoolf' status='Complete' lastUpdated='2025-06-07' words='11680'
+2026-08-14 23:58:47,257 [INFO] 65733829_juxtaposition_in_fate.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,265 [INFO] 65733829_juxtaposition_in_fate.html: written to archive/
+2026-08-14 23:58:47,265 [INFO] Updated manifest entry: 65733829_juxtaposition_in_fate.html
+2026-08-14 23:58:47,265 [INFO] 65733829_juxtaposition_in_fate.html: removed from staging/
+2026-08-14 23:58:47,265 [INFO] --- Processing: 65764210_the_teacher_trap.html
+2026-08-14 23:58:47,295 [INFO] 65764210_the_teacher_trap.html: extracted — title='The Teacher Trap' author='Cassie_Bones' status='Complete' lastUpdated='2025-05-21' words='14106'
+2026-08-14 23:58:47,295 [INFO] 65764210_the_teacher_trap.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,318 [INFO] 65764210_the_teacher_trap.html: written to archive/
+2026-08-14 23:58:47,318 [INFO] Updated manifest entry: 65764210_the_teacher_trap.html
+2026-08-14 23:58:47,319 [INFO] 65764210_the_teacher_trap.html: removed from staging/
+2026-08-14 23:58:47,319 [INFO] --- Processing: 65781208_this_time_you_wont_leave.html
+2026-08-14 23:58:47,330 [INFO] 65781208_this_time_you_wont_leave.html: extracted — title='this time you won’t leave me sinking' author='saturnreturn' status='Complete' lastUpdated='2025-05-22' words='8845'
+2026-08-14 23:58:47,330 [INFO] 65781208_this_time_you_wont_leave.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,339 [INFO] 65781208_this_time_you_wont_leave.html: written to archive/
+2026-08-14 23:58:47,339 [INFO] Updated manifest entry: 65781208_this_time_you_wont_leave.html
+2026-08-14 23:58:47,339 [INFO] 65781208_this_time_you_wont_leave.html: removed from staging/
+2026-08-14 23:58:47,339 [INFO] --- Processing: 65781856_just_hold_on.html
+2026-08-14 23:58:47,358 [INFO] 65781856_just_hold_on.html: extracted — title='just hold on' author='goofball46' status='Complete' lastUpdated='2025-05-22' words='15865'
+2026-08-14 23:58:47,358 [INFO] 65781856_just_hold_on.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,372 [INFO] 65781856_just_hold_on.html: written to archive/
+2026-08-14 23:58:47,372 [INFO] Updated manifest entry: 65781856_just_hold_on.html
+2026-08-14 23:58:47,372 [INFO] 65781856_just_hold_on.html: removed from staging/
+2026-08-14 23:58:47,372 [INFO] --- Processing: 65811607_ill_give_what_i_get.html
+2026-08-14 23:58:47,398 [INFO] 65811607_ill_give_what_i_get.html: extracted — title='I'll Give What I Get' author='Adimnos' status='Complete' lastUpdated='2025-05-23' words='15717'
+2026-08-14 23:58:47,399 [INFO] 65811607_ill_give_what_i_get.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,418 [INFO] 65811607_ill_give_what_i_get.html: written to archive/
+2026-08-14 23:58:47,418 [INFO] Updated manifest entry: 65811607_ill_give_what_i_get.html
+2026-08-14 23:58:47,418 [INFO] 65811607_ill_give_what_i_get.html: removed from staging/
+2026-08-14 23:58:47,418 [INFO] --- Processing: 65819008_kiss_my_petals_weave_me.html
+2026-08-14 23:58:47,428 [INFO] 65819008_kiss_my_petals_weave_me.html: extracted — title='kiss my petals, weave me through a dream' author='lluthordanverss' status='Complete' lastUpdated='2025-06-12' words='13110'
+2026-08-14 23:58:47,428 [INFO] 65819008_kiss_my_petals_weave_me.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,435 [INFO] 65819008_kiss_my_petals_weave_me.html: written to archive/
+2026-08-14 23:58:47,435 [INFO] Updated manifest entry: 65819008_kiss_my_petals_weave_me.html
+2026-08-14 23:58:47,435 [INFO] 65819008_kiss_my_petals_weave_me.html: removed from staging/
+2026-08-14 23:58:47,435 [INFO] --- Processing: 65824672_nightmare_of_a_dream.html
+2026-08-14 23:58:47,445 [INFO] 65824672_nightmare_of_a_dream.html: extracted — title='Nightmare of a Dream Girl' author='visadero' status='Complete' lastUpdated='2025-05-23' words='9541'
+2026-08-14 23:58:47,445 [INFO] 65824672_nightmare_of_a_dream.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,452 [INFO] 65824672_nightmare_of_a_dream.html: written to archive/
+2026-08-14 23:58:47,452 [INFO] Updated manifest entry: 65824672_nightmare_of_a_dream.html
+2026-08-14 23:58:47,452 [INFO] 65824672_nightmare_of_a_dream.html: removed from staging/
+2026-08-14 23:58:47,452 [INFO] --- Processing: 65829805_dea_pascit_corvos.html
+2026-08-14 23:58:47,462 [INFO] 65829805_dea_pascit_corvos.html: extracted — title='dea pascit corvos' author='AnonFandomBandit' status='In Progress' lastUpdated='2026-03-06' words='19418'
+2026-08-14 23:58:47,462 [INFO] 65829805_dea_pascit_corvos.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,469 [INFO] 65829805_dea_pascit_corvos.html: written to archive/
+2026-08-14 23:58:47,469 [INFO] Updated manifest entry: 65829805_dea_pascit_corvos.html
+2026-08-14 23:58:47,469 [INFO] 65829805_dea_pascit_corvos.html: removed from staging/
+2026-08-14 23:58:47,469 [INFO] --- Processing: 65873035_im_yours.html
+2026-08-14 23:58:47,480 [INFO] 65873035_im_yours.html: extracted — title='I'm Yours' author='Emilia_Rowan' status='Complete' lastUpdated='2025-05-25' words='8374'
+2026-08-14 23:58:47,480 [INFO] 65873035_im_yours.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,488 [INFO] 65873035_im_yours.html: written to archive/
+2026-08-14 23:58:47,488 [INFO] Updated manifest entry: 65873035_im_yours.html
+2026-08-14 23:58:47,488 [INFO] 65873035_im_yours.html: removed from staging/
+2026-08-14 23:58:47,488 [INFO] --- Processing: 65886910_a_refusal_of_endings.html
+2026-08-14 23:58:47,500 [INFO] 65886910_a_refusal_of_endings.html: extracted — title='A Refusal of Endings' author='got_it_hahndled' status='Complete' lastUpdated='2025-05-25' words='13032'
+2026-08-14 23:58:47,500 [INFO] 65886910_a_refusal_of_endings.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,508 [INFO] 65886910_a_refusal_of_endings.html: written to archive/
+2026-08-14 23:58:47,508 [INFO] Updated manifest entry: 65886910_a_refusal_of_endings.html
+2026-08-14 23:58:47,508 [INFO] 65886910_a_refusal_of_endings.html: removed from staging/
+2026-08-14 23:58:47,508 [INFO] --- Processing: 66234415_where_art_thou_why_not.html
+2026-08-14 23:58:47,539 [INFO] 66234415_where_art_thou_why_not.html: extracted — title='where art thou, why not uponeth me?' author='saturnreturn' status='Complete' lastUpdated='2026-02-03' words='32047'
+2026-08-14 23:58:47,539 [INFO] 66234415_where_art_thou_why_not.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,561 [INFO] 66234415_where_art_thou_why_not.html: written to archive/
+2026-08-14 23:58:47,561 [INFO] Updated manifest entry: 66234415_where_art_thou_why_not.html
+2026-08-14 23:58:47,561 [INFO] 66234415_where_art_thou_why_not.html: removed from staging/
+2026-08-14 23:58:47,561 [INFO] --- Processing: 66258856_i_follow_your_perfume.html
+2026-08-14 23:58:47,588 [INFO] 66258856_i_follow_your_perfume.html: extracted — title='I follow your perfume' author='MidnightHazeMeow, RevLeftShark' status='Complete' lastUpdated='2025-06-14' words='36783'
+2026-08-14 23:58:47,589 [INFO] 66258856_i_follow_your_perfume.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,603 [INFO] 66258856_i_follow_your_perfume.html: written to archive/
+2026-08-14 23:58:47,603 [INFO] Updated manifest entry: 66258856_i_follow_your_perfume.html
+2026-08-14 23:58:47,603 [INFO] 66258856_i_follow_your_perfume.html: removed from staging/
+2026-08-14 23:58:47,603 [INFO] --- Processing: 66586843_eight.html
+2026-08-14 23:58:47,667 [INFO] 66586843_eight.html: extracted — title='Eight' author='Alexis_Payton' status='Complete' lastUpdated='2025-12-02' words='100175'
+2026-08-14 23:58:47,668 [INFO] 66586843_eight.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,711 [INFO] 66586843_eight.html: written to archive/
+2026-08-14 23:58:47,711 [INFO] Updated manifest entry: 66586843_eight.html
+2026-08-14 23:58:47,711 [INFO] 66586843_eight.html: removed from staging/
+2026-08-14 23:58:47,711 [INFO] --- Processing: 66656089_the_poison_im_drawn_to.html
+2026-08-14 23:58:47,755 [INFO] 66656089_the_poison_im_drawn_to.html: extracted — title='The Poison I'm Drawn to' author='fandomwhirlwind' status='In Progress' lastUpdated='2026-04-04' words='28224'
+2026-08-14 23:58:47,755 [INFO] 66656089_the_poison_im_drawn_to.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,784 [INFO] 66656089_the_poison_im_drawn_to.html: written to archive/
+2026-08-14 23:58:47,785 [INFO] Updated manifest entry: 66656089_the_poison_im_drawn_to.html
+2026-08-14 23:58:47,785 [INFO] 66656089_the_poison_im_drawn_to.html: removed from staging/
+2026-08-14 23:58:47,785 [INFO] --- Processing: 66675667_youll_find_me_on_my.html
+2026-08-14 23:58:47,850 [INFO] 66675667_youll_find_me_on_my.html: extracted — title='you’ll find me on my tallest tiptoes' author='sobercatnip' status='Complete' lastUpdated='2025-09-18' words='111722'
+2026-08-14 23:58:47,850 [INFO] 66675667_youll_find_me_on_my.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,896 [INFO] 66675667_youll_find_me_on_my.html: written to archive/
+2026-08-14 23:58:47,896 [INFO] Updated manifest entry: 66675667_youll_find_me_on_my.html
+2026-08-14 23:58:47,896 [INFO] 66675667_youll_find_me_on_my.html: removed from staging/
+2026-08-14 23:58:47,896 [INFO] --- Processing: 66783133_that_which_is_not_common.html
+2026-08-14 23:58:47,950 [INFO] 66783133_that_which_is_not_common.html: extracted — title='That Which is Not Common' author='the_girl_in_green' status='Complete' lastUpdated='2026-04-27' words='39595'
+2026-08-14 23:58:47,951 [INFO] 66783133_that_which_is_not_common.html: original backup already exists, skipping copy
+2026-08-14 23:58:47,981 [INFO] 66783133_that_which_is_not_common.html: written to archive/
+2026-08-14 23:58:47,981 [INFO] Updated manifest entry: 66783133_that_which_is_not_common.html
+2026-08-14 23:58:47,981 [INFO] 66783133_that_which_is_not_common.html: removed from staging/
+2026-08-14 23:58:47,981 [INFO] --- Processing: 66930835_theres_something_just_a.html
+2026-08-14 23:58:48,003 [INFO] 66930835_theres_something_just_a.html: extracted — title='There's Something Just a Little More Than Ecstasy' author='ThisRandomBoi' status='Complete' lastUpdated='2025-12-25' words='40592'
+2026-08-14 23:58:48,003 [INFO] 66930835_theres_something_just_a.html: original backup already exists, skipping copy
+2026-08-14 23:58:48,018 [INFO] 66930835_theres_something_just_a.html: written to archive/
+2026-08-14 23:58:48,018 [INFO] Updated manifest entry: 66930835_theres_something_just_a.html
+2026-08-14 23:58:48,019 [INFO] 66930835_theres_something_just_a.html: removed from staging/
+2026-08-14 23:58:48,019 [INFO] --- Processing: 67155280_start_me_up.html
+2026-08-14 23:58:48,036 [INFO] 67155280_start_me_up.html: extracted — title='start me up' author='advilrio' status='Complete' lastUpdated='2025-07-04' words='22246'
+2026-08-14 23:58:48,037 [INFO] 67155280_start_me_up.html: original backup already exists, skipping copy
+2026-08-14 23:58:48,049 [INFO] 67155280_start_me_up.html: written to archive/
+2026-08-14 23:58:48,049 [INFO] Updated manifest entry: 67155280_start_me_up.html
+2026-08-14 23:58:48,049 [INFO] 67155280_start_me_up.html: removed from staging/
+2026-08-14 23:58:48,049 [INFO] --- Processing: 67222777_oh_but_she_burns.html
+2026-08-14 23:58:48,123 [INFO] 67222777_oh_but_she_burns.html: extracted — title='oh, but she burns' author='thiswildernessismyhome' status='In Progress' lastUpdated='2026-08-05' words='88338'
+2026-08-14 23:58:48,123 [INFO] 67222777_oh_but_she_burns.html: original backup already exists, skipping copy
+2026-08-14 23:58:48,172 [INFO] 67222777_oh_but_she_burns.html: written to archive/
+2026-08-14 23:58:48,172 [INFO] Updated manifest entry: 67222777_oh_but_she_burns.html
+2026-08-14 23:58:48,172 [INFO] 67222777_oh_but_she_burns.html: removed from staging/
+2026-08-14 23:58:48,172 [INFO] --- Processing: 67661881_the_road_not_taken_among.html
+2026-08-14 23:58:48,261 [INFO] 67661881_the_road_not_taken_among.html: extracted — title='the road not taken (among the wildflowers)' author='greatwarsenal' status='In Progress' lastUpdated='2026-07-26' words='175162'
+2026-08-14 23:58:48,261 [INFO] 67661881_the_road_not_taken_among.html: original backup already exists, skipping copy
+2026-08-14 23:58:48,317 [INFO] 67661881_the_road_not_taken_among.html: written to archive/
+2026-08-14 23:58:48,317 [INFO] Updated manifest entry: 67661881_the_road_not_taken_among.html
+2026-08-14 23:58:48,317 [INFO] 67661881_the_road_not_taken_among.html: removed from staging/
+2026-08-14 23:58:48,317 [INFO] --- Processing: 67991716_do_i_cross_your_mind.html
+2026-08-14 23:58:48,334 [INFO] 67991716_do_i_cross_your_mind.html: extracted — title='Do I Cross Your Mind? ('Cause You've Always Been  On Mine)' author='karadxnvers' status='In Progress' lastUpdated='2026-04-01' words='16813'
+2026-08-14 23:58:48,334 [INFO] 67991716_do_i_cross_your_mind.html: original backup already exists, skipping copy
+2026-08-14 23:58:48,346 [INFO] 67991716_do_i_cross_your_mind.html: written to archive/
+2026-08-14 23:58:48,346 [INFO] Updated manifest entry: 67991716_do_i_cross_your_mind.html
+2026-08-14 23:58:48,346 [INFO] 67991716_do_i_cross_your_mind.html: removed from staging/
+2026-08-14 23:58:48,346 [INFO] --- Processing: 68055376_rios_instagram.html
+2026-08-14 23:58:48,352 [INFO] 68055376_rios_instagram.html: extracted — title='Rio's instagram' author='3v1lb4byh4g' status='Complete' lastUpdated='2025-07-24' words='3193'
+2026-08-14 23:58:48,352 [INFO] 68055376_rios_instagram.html: original backup already exists, skipping copy
+2026-08-14 23:58:48,356 [INFO] 68055376_rios_instagram.html: written to archive/
+2026-08-14 23:58:48,356 [INFO] Updated manifest entry: 68055376_rios_instagram.html
+2026-08-14 23:58:48,356 [INFO] 68055376_rios_instagram.html: removed from staging/
+2026-08-14 23:58:48,356 [INFO] --- Processing: 68063521_what_the_body_knows.html
+2026-08-14 23:58:48,387 [INFO] 68063521_what_the_body_knows.html: extracted — title='What the Body Knows' author='1willump' status='Complete' lastUpdated='2025-09-17' words='34356'
+2026-08-14 23:58:48,388 [INFO] 68063521_what_the_body_knows.html: original backup already exists, skipping copy
+2026-08-14 23:58:48,410 [INFO] 68063521_what_the_body_knows.html: written to archive/
+2026-08-14 23:58:48,410 [INFO] Updated manifest entry: 68063521_what_the_body_knows.html
+2026-08-14 23:58:48,410 [INFO] 68063521_what_the_body_knows.html: removed from staging/
+2026-08-14 23:58:48,410 [INFO] --- Processing: 68983171_would_you_stay_by_my.html
+2026-08-14 23:58:48,424 [INFO] 68983171_would_you_stay_by_my.html: extracted — title='Would You Stay By My Side...' author='Anonymous' status='In Progress' lastUpdated='2026-04-15' words='23219'
+2026-08-14 23:58:48,424 [INFO] 68983171_would_you_stay_by_my.html: original backup already exists, skipping copy
+2026-08-14 23:58:48,434 [INFO] 68983171_would_you_stay_by_my.html: written to archive/
+2026-08-14 23:58:48,434 [INFO] Updated manifest entry: 68983171_would_you_stay_by_my.html
+2026-08-14 23:58:48,434 [INFO] 68983171_would_you_stay_by_my.html: removed from staging/
+2026-08-14 23:58:48,434 [INFO] --- Processing: 68983746_when_im_working_on_me.html
+2026-08-14 23:58:48,449 [INFO] 68983746_when_im_working_on_me.html: extracted — title='...When I'm Working On Me' author='Anonymous' status='In Progress' lastUpdated='2026-04-15' words='23507'
+2026-08-14 23:58:48,450 [INFO] 68983746_when_im_working_on_me.html: original backup already exists, skipping copy
+2026-08-14 23:58:48,460 [INFO] 68983746_when_im_working_on_me.html: written to archive/
+2026-08-14 23:58:48,460 [INFO] Updated manifest entry: 68983746_when_im_working_on_me.html
+2026-08-14 23:58:48,460 [INFO] 68983746_when_im_working_on_me.html: removed from staging/
+2026-08-14 23:58:48,461 [INFO] --- Processing: 69039461_rawr_means_i_love_you_in.html
+2026-08-14 23:58:48,680 [INFO] 69039461_rawr_means_i_love_you_in.html: extracted — title='Rawr! Means I Love You in Dinosaur' author='AgathaLovesRio' status='Complete' lastUpdated='2026-05-10' words='168436'
+2026-08-14 23:58:48,680 [INFO] 69039461_rawr_means_i_love_you_in.html: original backup already exists, skipping copy
+2026-08-14 23:58:48,807 [INFO] 69039461_rawr_means_i_love_you_in.html: written to archive/
+2026-08-14 23:58:48,807 [INFO] Updated manifest entry: 69039461_rawr_means_i_love_you_in.html
+2026-08-14 23:58:48,807 [INFO] 69039461_rawr_means_i_love_you_in.html: removed from staging/
+2026-08-14 23:58:48,807 [INFO] --- Processing: 69250446_i_wanna_be_yoursyoure.html
+2026-08-14 23:58:48,840 [INFO] 69250446_i_wanna_be_yoursyoure.html: extracted — title='I Wanna Be Yours///You're All I Want' author='rioallalong_719' status='Complete' lastUpdated='2025-09-12' words='36543'
+2026-08-14 23:58:48,841 [INFO] 69250446_i_wanna_be_yoursyoure.html: original backup already exists, skipping copy
+2026-08-14 23:58:48,864 [INFO] 69250446_i_wanna_be_yoursyoure.html: written to archive/
+2026-08-14 23:58:48,864 [INFO] Updated manifest entry: 69250446_i_wanna_be_yoursyoure.html
+2026-08-14 23:58:48,864 [INFO] 69250446_i_wanna_be_yoursyoure.html: removed from staging/
+2026-08-14 23:58:48,864 [INFO] --- Processing: 69317051_i_let_my_head_spin_take.html
+2026-08-14 23:58:48,929 [INFO] 69317051_i_let_my_head_spin_take.html: extracted — title='i let my head spin (take all the weight off my shoulders)' author='empathyhoodie' status='Complete' lastUpdated='2026-02-14' words='63807'
+2026-08-14 23:58:48,929 [INFO] 69317051_i_let_my_head_spin_take.html: original backup already exists, skipping copy
+2026-08-14 23:58:48,967 [INFO] 69317051_i_let_my_head_spin_take.html: written to archive/
+2026-08-14 23:58:48,967 [INFO] Updated manifest entry: 69317051_i_let_my_head_spin_take.html
+2026-08-14 23:58:48,967 [INFO] 69317051_i_let_my_head_spin_take.html: removed from staging/
+2026-08-14 23:58:48,967 [INFO] --- Processing: 69922756_mirrorball.html
+2026-08-14 23:58:49,034 [INFO] 69922756_mirrorball.html: extracted — title='Mirrorball' author='drkhold' status='In Progress' lastUpdated='2026-05-31' words='65591'
+2026-08-14 23:58:49,034 [INFO] 69922756_mirrorball.html: original backup already exists, skipping copy
+2026-08-14 23:58:49,076 [INFO] 69922756_mirrorball.html: written to archive/
+2026-08-14 23:58:49,076 [INFO] Updated manifest entry: 69922756_mirrorball.html
+2026-08-14 23:58:49,076 [INFO] 69922756_mirrorball.html: removed from staging/
+2026-08-14 23:58:49,076 [INFO] --- Processing: 70120581_one_happy_camper.html
+2026-08-14 23:58:49,121 [INFO] 70120581_one_happy_camper.html: extracted — title='One Happy Camper' author='Magnolie' status='Complete' lastUpdated='2026-02-13' words='37700'
+2026-08-14 23:58:49,121 [INFO] 70120581_one_happy_camper.html: original backup already exists, skipping copy
+2026-08-14 23:58:49,151 [INFO] 70120581_one_happy_camper.html: written to archive/
+2026-08-14 23:58:49,152 [INFO] Updated manifest entry: 70120581_one_happy_camper.html
+2026-08-14 23:58:49,152 [INFO] 70120581_one_happy_camper.html: removed from staging/
+2026-08-14 23:58:49,152 [INFO] --- Processing: 70538266_rented_hearts_keep.html
+2026-08-14 23:58:49,199 [INFO] 70538266_rented_hearts_keep.html: extracted — title='Rented Hearts (Keep Beating)' author='Salong3' status='Complete' lastUpdated='2026-01-28' words='53004'
+2026-08-14 23:58:49,200 [INFO] 70538266_rented_hearts_keep.html: replacing 70538266_Rented_Hearts_Keep.html (new: 53004 words >= old: 53004 words)
+2026-08-14 23:58:49,201 [INFO] 70538266_rented_hearts_keep.html: original backup already exists, skipping copy
+2026-08-14 23:58:49,229 [INFO] 70538266_rented_hearts_keep.html: written to archive/
+2026-08-14 23:58:49,229 [INFO] Updated manifest entry: 70538266_rented_hearts_keep.html
+2026-08-14 23:58:49,230 [INFO] 70538266_rented_hearts_keep.html: removed from staging/
+2026-08-14 23:58:49,230 [INFO] --- Processing: 70550446_we_go_again.html
+2026-08-14 23:58:49,285 [INFO] 70550446_we_go_again.html: extracted — title='We Go Again' author='forestgreentrees' status='In Progress' lastUpdated='2026-07-17' words='49958'
+2026-08-14 23:58:49,285 [INFO] 70550446_we_go_again.html: original backup already exists, skipping copy
+2026-08-14 23:58:49,321 [INFO] 70550446_we_go_again.html: written to archive/
+2026-08-14 23:58:49,321 [INFO] Updated manifest entry: 70550446_we_go_again.html
+2026-08-14 23:58:49,321 [INFO] 70550446_we_go_again.html: removed from staging/
+2026-08-14 23:58:49,321 [INFO] --- Processing: 70740846_softballs_a_witch.html
+2026-08-14 23:58:49,448 [INFO] 70740846_softballs_a_witch.html: extracted — title='Softball's A Witch' author='HarknessHottie' status='Complete' lastUpdated='2025-09-15' words='137508'
+2026-08-14 23:58:49,449 [INFO] 70740846_softballs_a_witch.html: original backup already exists, skipping copy
+2026-08-14 23:58:49,532 [INFO] 70740846_softballs_a_witch.html: written to archive/
+2026-08-14 23:58:49,532 [INFO] Updated manifest entry: 70740846_softballs_a_witch.html
+2026-08-14 23:58:49,532 [INFO] 70740846_softballs_a_witch.html: removed from staging/
+2026-08-14 23:58:49,532 [INFO] --- Processing: 71054176_somebody_to_hold.html
+2026-08-14 23:58:49,612 [INFO] 71054176_somebody_to_hold.html: extracted — title='Somebody to Hold' author='How_Deep_the_Grave' status='Complete' lastUpdated='2026-07-10' words='55043'
+2026-08-14 23:58:49,613 [INFO] 71054176_somebody_to_hold.html: original backup already exists, skipping copy
+2026-08-14 23:58:49,659 [INFO] 71054176_somebody_to_hold.html: written to archive/
+2026-08-14 23:58:49,659 [INFO] Updated manifest entry: 71054176_somebody_to_hold.html
+2026-08-14 23:58:49,659 [INFO] 71054176_somebody_to_hold.html: removed from staging/
+2026-08-14 23:58:49,659 [INFO] --- Processing: 71416136_the_strawberry_thief.html
+2026-08-14 23:58:49,676 [INFO] 71416136_the_strawberry_thief.html: extracted — title='The Strawberry Thief' author='Magnolie' status='In Progress' lastUpdated='2026-07-05' words='21791'
+2026-08-14 23:58:49,676 [INFO] 71416136_the_strawberry_thief.html: original backup already exists, skipping copy
+2026-08-14 23:58:49,687 [INFO] 71416136_the_strawberry_thief.html: written to archive/
+2026-08-14 23:58:49,687 [INFO] Updated manifest entry: 71416136_the_strawberry_thief.html
+2026-08-14 23:58:49,687 [INFO] 71416136_the_strawberry_thief.html: removed from staging/
+2026-08-14 23:58:49,687 [INFO] --- Processing: 72357056_the_birthday_gift.html
+2026-08-14 23:58:49,702 [INFO] 72357056_the_birthday_gift.html: extracted — title='The Birthday Gift' author='Salong3' status='Complete' lastUpdated='2026-07-08' words='26481'
+2026-08-14 23:58:49,703 [INFO] 72357056_the_birthday_gift.html: backed up to originals/
+2026-08-14 23:58:49,713 [INFO] 72357056_the_birthday_gift.html: written to archive/
+2026-08-14 23:58:49,713 [INFO] Updated manifest entry: 72357056_the_birthday_gift.html
+2026-08-14 23:58:49,713 [INFO] 72357056_the_birthday_gift.html: removed from staging/
+2026-08-14 23:58:49,713 [INFO] --- Processing: 72701616_war_of_hearts.html
+2026-08-14 23:58:49,807 [INFO] 72701616_war_of_hearts.html: extracted — title='War of Hearts' author='sapphix_ssana' status='In Progress' lastUpdated='2026-05-20' words='81663'
+2026-08-14 23:58:49,807 [INFO] 72701616_war_of_hearts.html: original backup already exists, skipping copy
+2026-08-14 23:58:49,871 [INFO] 72701616_war_of_hearts.html: written to archive/
+2026-08-14 23:58:49,871 [INFO] Updated manifest entry: 72701616_war_of_hearts.html
+2026-08-14 23:58:49,871 [INFO] 72701616_war_of_hearts.html: removed from staging/
+2026-08-14 23:58:49,871 [INFO] --- Processing: 72791061_youre_gonna_kill_me_if.html
+2026-08-14 23:58:49,886 [INFO] 72791061_youre_gonna_kill_me_if.html: extracted — title='you're gonna kill me if you kiss it like that' author='quinnking' status='Complete' lastUpdated='2025-10-24' words='4013'
+2026-08-14 23:58:49,886 [INFO] 72791061_youre_gonna_kill_me_if.html: original backup already exists, skipping copy
+2026-08-14 23:58:49,889 [INFO] 72791061_youre_gonna_kill_me_if.html: written to archive/
+2026-08-14 23:58:49,889 [INFO] Updated manifest entry: 72791061_youre_gonna_kill_me_if.html
+2026-08-14 23:58:49,890 [INFO] 72791061_youre_gonna_kill_me_if.html: removed from staging/
+2026-08-14 23:58:49,890 [INFO] --- Processing: 72791546_baby_whats_mine_is_now.html
+2026-08-14 23:58:49,895 [INFO] 72791546_baby_whats_mine_is_now.html: extracted — title='baby, what’s mine is now yours' author='quinnking' status='Complete' lastUpdated='2025-10-28' words='5346'
+2026-08-14 23:58:49,895 [INFO] 72791546_baby_whats_mine_is_now.html: original backup already exists, skipping copy
+2026-08-14 23:58:49,899 [INFO] 72791546_baby_whats_mine_is_now.html: written to archive/
+2026-08-14 23:58:49,899 [INFO] Updated manifest entry: 72791546_baby_whats_mine_is_now.html
+2026-08-14 23:58:49,899 [INFO] 72791546_baby_whats_mine_is_now.html: removed from staging/
+2026-08-14 23:58:49,899 [INFO] --- Processing: 73047636_everlong.html
+2026-08-14 23:58:49,924 [INFO] 73047636_everlong.html: extracted — title='Everlong' author='annadelamico' status='Complete' lastUpdated='2025-11-01' words='32750'
+2026-08-14 23:58:49,924 [INFO] 73047636_everlong.html: original backup already exists, skipping copy
+2026-08-14 23:58:49,943 [INFO] 73047636_everlong.html: written to archive/
+2026-08-14 23:58:49,943 [INFO] Updated manifest entry: 73047636_everlong.html
+2026-08-14 23:58:49,943 [INFO] 73047636_everlong.html: removed from staging/
+2026-08-14 23:58:49,943 [INFO] --- Processing: 73152711_youre_welcome_to_try_you.html
+2026-08-14 23:58:50,016 [INFO] 73152711_youre_welcome_to_try_you.html: extracted — title='You're Welcome to Try (You Wouldn't Be the First One to Fail)' author='Lexus (Beautiful_Ruin)' status='Complete' lastUpdated='2026-05-21' words='98316'
+2026-08-14 23:58:50,017 [INFO] 73152711_youre_welcome_to_try_you.html: original backup already exists, skipping copy
+2026-08-14 23:58:50,066 [INFO] 73152711_youre_welcome_to_try_you.html: written to archive/
+2026-08-14 23:58:50,066 [INFO] Updated manifest entry: 73152711_youre_welcome_to_try_you.html
+2026-08-14 23:58:50,066 [INFO] 73152711_youre_welcome_to_try_you.html: removed from staging/
+2026-08-14 23:58:50,066 [INFO] --- Processing: 73680001_feel_it_burnwatch_it.html
+2026-08-14 23:58:50,087 [INFO] 73680001_feel_it_burnwatch_it.html: extracted — title='Feel it Burn//Watch it Glow' author='callahahns' status='Complete' lastUpdated='2026-01-08' words='28185'
+2026-08-14 23:58:50,087 [INFO] 73680001_feel_it_burnwatch_it.html: original backup already exists, skipping copy
+2026-08-14 23:58:50,100 [INFO] 73680001_feel_it_burnwatch_it.html: written to archive/
+2026-08-14 23:58:50,100 [INFO] Updated manifest entry: 73680001_feel_it_burnwatch_it.html
+2026-08-14 23:58:50,100 [INFO] 73680001_feel_it_burnwatch_it.html: removed from staging/
+2026-08-14 23:58:50,100 [INFO] --- Processing: 73832301_the_bartender_and_the.html
+2026-08-14 23:58:50,122 [INFO] 73832301_the_bartender_and_the.html: extracted — title='The bartender and the nerd.' author='KingGregII' status='Complete' lastUpdated='2025-12-12' words='19602'
+2026-08-14 23:58:50,122 [INFO] 73832301_the_bartender_and_the.html: original backup already exists, skipping copy
+2026-08-14 23:58:50,137 [INFO] 73832301_the_bartender_and_the.html: written to archive/
+2026-08-14 23:58:50,137 [INFO] Updated manifest entry: 73832301_the_bartender_and_the.html
+2026-08-14 23:58:50,137 [INFO] 73832301_the_bartender_and_the.html: removed from staging/
+2026-08-14 23:58:50,137 [INFO] --- Processing: 74247931_growth_decay.html
+2026-08-14 23:58:50,240 [INFO] 74247931_growth_decay.html: extracted — title='Growth &amp; Decay' author='greysaspire' status='In Progress' lastUpdated='2026-06-14' words='107920'
+2026-08-14 23:58:50,240 [INFO] 74247931_growth_decay.html: original backup already exists, skipping copy
+2026-08-14 23:58:50,301 [INFO] 74247931_growth_decay.html: written to archive/
+2026-08-14 23:58:50,301 [INFO] Updated manifest entry: 74247931_growth_decay.html
+2026-08-14 23:58:50,301 [INFO] 74247931_growth_decay.html: removed from staging/
+2026-08-14 23:58:50,301 [INFO] --- Processing: 74518501_it_had_to_be_you.html
+2026-08-14 23:58:50,344 [INFO] 74518501_it_had_to_be_you.html: extracted — title='it had to be you' author='agnesofwestview' status='In Progress' lastUpdated='2026-07-13' words='58545'
+2026-08-14 23:58:50,344 [INFO] 74518501_it_had_to_be_you.html: original backup already exists, skipping copy
+2026-08-14 23:58:50,373 [INFO] 74518501_it_had_to_be_you.html: written to archive/
+2026-08-14 23:58:50,373 [INFO] Updated manifest entry: 74518501_it_had_to_be_you.html
+2026-08-14 23:58:50,373 [INFO] 74518501_it_had_to_be_you.html: removed from staging/
+2026-08-14 23:58:50,373 [INFO] --- Processing: 75050276_next_time_you_call_ill.html
+2026-08-14 23:58:50,401 [INFO] 75050276_next_time_you_call_ill.html: extracted — title='Next time you call, I'll be your girl' author='lluthordanverss' status='In Progress' lastUpdated='2026-03-24' words='31542'
+2026-08-14 23:58:50,401 [INFO] 75050276_next_time_you_call_ill.html: original backup already exists, skipping copy
+2026-08-14 23:58:50,420 [INFO] 75050276_next_time_you_call_ill.html: written to archive/
+2026-08-14 23:58:50,420 [INFO] Updated manifest entry: 75050276_next_time_you_call_ill.html
+2026-08-14 23:58:50,420 [INFO] 75050276_next_time_you_call_ill.html: removed from staging/
+2026-08-14 23:58:50,420 [INFO] --- Processing: 75155551_circling_around_the_same.html
+2026-08-14 23:58:50,430 [INFO] 75155551_circling_around_the_same.html: extracted — title='circling around the same star' author='thetroublewithwanting' status='Complete' lastUpdated='2025-12-03' words='26062'
+2026-08-14 23:58:50,430 [INFO] 75155551_circling_around_the_same.html: original backup already exists, skipping copy
+2026-08-14 23:58:50,437 [INFO] 75155551_circling_around_the_same.html: written to archive/
+2026-08-14 23:58:50,437 [INFO] Updated manifest entry: 75155551_circling_around_the_same.html
+2026-08-14 23:58:50,437 [INFO] 75155551_circling_around_the_same.html: removed from staging/
+2026-08-14 23:58:50,437 [INFO] --- Processing: 75201581_lost_for_words.html
+2026-08-14 23:58:50,465 [INFO] 75201581_lost_for_words.html: extracted — title='lost for words' author='fayevalent1ne' status='Complete' lastUpdated='2026-03-04' words='36356'
+2026-08-14 23:58:50,465 [INFO] 75201581_lost_for_words.html: original backup already exists, skipping copy
+2026-08-14 23:58:50,484 [INFO] 75201581_lost_for_words.html: written to archive/
+2026-08-14 23:58:50,484 [INFO] Updated manifest entry: 75201581_lost_for_words.html
+2026-08-14 23:58:50,484 [INFO] 75201581_lost_for_words.html: removed from staging/
+2026-08-14 23:58:50,484 [INFO] --- Processing: 75370761_leaning_out_for_love.html
+2026-08-14 23:58:50,513 [INFO] 75370761_leaning_out_for_love.html: extracted — title='Leaning Out for Love' author='How_Deep_the_Grave' status='In Progress' lastUpdated='2026-07-28' words='31282'
+2026-08-14 23:58:50,514 [INFO] 75370761_leaning_out_for_love.html: backed up to originals/
+2026-08-14 23:58:50,533 [INFO] 75370761_leaning_out_for_love.html: written to archive/
+2026-08-14 23:58:50,533 [INFO] Added manifest entry: 75370761_leaning_out_for_love.html
+2026-08-14 23:58:50,533 [INFO] 75370761_leaning_out_for_love.html: removed from staging/
+2026-08-14 23:58:50,533 [INFO] --- Processing: 75396556_dont_handle_me_with_care.html
+2026-08-14 23:58:50,555 [INFO] 75396556_dont_handle_me_with_care.html: extracted — title='Don't Handle Me with Care' author='midwestprincess_01' status='Complete' lastUpdated='2026-01-30' words='12688'
+2026-08-14 23:58:50,555 [INFO] 75396556_dont_handle_me_with_care.html: original backup already exists, skipping copy
+2026-08-14 23:58:50,563 [INFO] 75396556_dont_handle_me_with_care.html: written to archive/
+2026-08-14 23:58:50,563 [INFO] Updated manifest entry: 75396556_dont_handle_me_with_care.html
+2026-08-14 23:58:50,563 [INFO] 75396556_dont_handle_me_with_care.html: removed from staging/
+2026-08-14 23:58:50,563 [INFO] --- Processing: 75614091_i_see_you_youre_walking.html
+2026-08-14 23:58:50,588 [INFO] 75614091_i_see_you_youre_walking.html: extracted — title='I see you, you're walking 'cross the campus' author='OmegathaHarklez (Queerenough)' status='In Progress' lastUpdated='2026-04-10' words='16410'
+2026-08-14 23:58:50,588 [INFO] 75614091_i_see_you_youre_walking.html: original backup already exists, skipping copy
+2026-08-14 23:58:50,606 [INFO] 75614091_i_see_you_youre_walking.html: written to archive/
+2026-08-14 23:58:50,606 [INFO] Updated manifest entry: 75614091_i_see_you_youre_walking.html
+2026-08-14 23:58:50,606 [INFO] 75614091_i_see_you_youre_walking.html: removed from staging/
+2026-08-14 23:58:50,606 [INFO] --- Processing: 75907071_late_night_with_the.html
+2026-08-14 23:58:50,645 [INFO] 75907071_late_night_with_the.html: extracted — title='Late Night with the Devil' author='moonmotels' status='In Progress' lastUpdated='2026-08-02' words='58330'
+2026-08-14 23:58:50,646 [INFO] 75907071_late_night_with_the.html: original backup already exists, skipping copy
+2026-08-14 23:58:50,673 [INFO] 75907071_late_night_with_the.html: written to archive/
+2026-08-14 23:58:50,673 [INFO] Updated manifest entry: 75907071_late_night_with_the.html
+2026-08-14 23:58:50,673 [INFO] 75907071_late_night_with_the.html: removed from staging/
+2026-08-14 23:58:50,673 [INFO] --- Processing: 76014136_material_substance.html
+2026-08-14 23:58:50,730 [INFO] 76014136_material_substance.html: extracted — title='material substance' author='feral_streep' status='Complete' lastUpdated='2026-03-08' words='67887'
+2026-08-14 23:58:50,731 [INFO] 76014136_material_substance.html: original backup already exists, skipping copy
+2026-08-14 23:58:50,767 [INFO] 76014136_material_substance.html: written to archive/
+2026-08-14 23:58:50,767 [INFO] Updated manifest entry: 76014136_material_substance.html
+2026-08-14 23:58:50,768 [INFO] 76014136_material_substance.html: removed from staging/
+2026-08-14 23:58:50,768 [INFO] --- Processing: 76093411_a_different_way_to_be.html
+2026-08-14 23:58:50,795 [INFO] 76093411_a_different_way_to_be.html: extracted — title='a different way to be' author='flcv' status='Complete' lastUpdated='2026-03-25' words='30591'
+2026-08-14 23:58:50,796 [INFO] 76093411_a_different_way_to_be.html: original backup already exists, skipping copy
+2026-08-14 23:58:50,814 [INFO] 76093411_a_different_way_to_be.html: written to archive/
+2026-08-14 23:58:50,814 [INFO] Updated manifest entry: 76093411_a_different_way_to_be.html
+2026-08-14 23:58:50,814 [INFO] 76093411_a_different_way_to_be.html: removed from staging/
+2026-08-14 23:58:50,814 [INFO] --- Processing: 76775496_breathe_into_me_and_make.html
+2026-08-14 23:58:50,861 [INFO] 76775496_breathe_into_me_and_make.html: extracted — title='breathe into me and make me real' author='Anonymous' status='In Progress' lastUpdated='2026-04-21' words='36693'
+2026-08-14 23:58:50,862 [INFO] 76775496_breathe_into_me_and_make.html: original backup already exists, skipping copy
+2026-08-14 23:58:50,888 [INFO] 76775496_breathe_into_me_and_make.html: written to archive/
+2026-08-14 23:58:50,888 [INFO] Updated manifest entry: 76775496_breathe_into_me_and_make.html
+2026-08-14 23:58:50,888 [INFO] 76775496_breathe_into_me_and_make.html: removed from staging/
+2026-08-14 23:58:50,888 [INFO] --- Processing: 77249811_i_didnt_ask_for_this.html
+2026-08-14 23:58:50,952 [INFO] 77249811_i_didnt_ask_for_this.html: extracted — title='I Didn't Ask For This' author='Lexus (Beautiful_Ruin)' status='In Progress' lastUpdated='2026-05-28' words='81695'
+2026-08-14 23:58:50,952 [INFO] 77249811_i_didnt_ask_for_this.html: original backup already exists, skipping copy
+2026-08-14 23:58:50,997 [INFO] 77249811_i_didnt_ask_for_this.html: written to archive/
+2026-08-14 23:58:50,997 [INFO] Updated manifest entry: 77249811_i_didnt_ask_for_this.html
+2026-08-14 23:58:50,997 [INFO] 77249811_i_didnt_ask_for_this.html: removed from staging/
+2026-08-14 23:58:50,997 [INFO] --- Processing: 77303721_to_be_known_well.html
+2026-08-14 23:58:51,005 [INFO] 77303721_to_be_known_well.html: extracted — title='to be known well' author='thetroublewithwanting' status='In Progress' lastUpdated='2026-03-17' words='19104'
+2026-08-14 23:58:51,005 [INFO] 77303721_to_be_known_well.html: original backup already exists, skipping copy
+2026-08-14 23:58:51,011 [INFO] 77303721_to_be_known_well.html: written to archive/
+2026-08-14 23:58:51,011 [INFO] Updated manifest entry: 77303721_to_be_known_well.html
+2026-08-14 23:58:51,011 [INFO] 77303721_to_be_known_well.html: removed from staging/
+2026-08-14 23:58:51,011 [INFO] --- Processing: 77353221_rules_of_the_game.html
+2026-08-14 23:58:51,047 [INFO] 77353221_rules_of_the_game.html: extracted — title='Rules of the Game' author='RhodiumDark' status='In Progress' lastUpdated='2026-07-13' words='25438'
+2026-08-14 23:58:51,047 [INFO] 77353221_rules_of_the_game.html: original backup already exists, skipping copy
+2026-08-14 23:58:51,069 [INFO] 77353221_rules_of_the_game.html: written to archive/
+2026-08-14 23:58:51,069 [INFO] Updated manifest entry: 77353221_rules_of_the_game.html
+2026-08-14 23:58:51,069 [INFO] 77353221_rules_of_the_game.html: removed from staging/
+2026-08-14 23:58:51,069 [INFO] --- Processing: 77737251_primadonna.html
+2026-08-14 23:58:51,138 [INFO] 77737251_primadonna.html: extracted — title='Primadonna' author='LovettBlack' status='In Progress' lastUpdated='2026-04-06' words='53034'
+2026-08-14 23:58:51,138 [INFO] 77737251_primadonna.html: original backup already exists, skipping copy
+2026-08-14 23:58:51,182 [INFO] 77737251_primadonna.html: written to archive/
+2026-08-14 23:58:51,182 [INFO] Updated manifest entry: 77737251_primadonna.html
+2026-08-14 23:58:51,182 [INFO] 77737251_primadonna.html: removed from staging/
+2026-08-14 23:58:51,182 [INFO] --- Processing: 77936761_ill_keep_you_safe_you.html
+2026-08-14 23:58:51,263 [INFO] 77936761_ill_keep_you_safe_you.html: extracted — title='I'll keep you safe, you have my word' author='Echolux' status='Complete' lastUpdated='2026-01-30' words='32888'
+2026-08-14 23:58:51,263 [INFO] 77936761_ill_keep_you_safe_you.html: original backup already exists, skipping copy
+2026-08-14 23:58:51,299 [INFO] 77936761_ill_keep_you_safe_you.html: written to archive/
+2026-08-14 23:58:51,299 [INFO] Updated manifest entry: 77936761_ill_keep_you_safe_you.html
+2026-08-14 23:58:51,299 [INFO] 77936761_ill_keep_you_safe_you.html: removed from staging/
+2026-08-14 23:58:51,299 [INFO] --- Processing: 78965396_youre_my_burial_ground.html
+2026-08-14 23:58:51,318 [INFO] 78965396_youre_my_burial_ground.html: extracted — title='You're My Burial Ground' author='midwestprincess_01' status='In Progress' lastUpdated='2026-07-08' words='25774'
+2026-08-14 23:58:51,319 [INFO] 78965396_youre_my_burial_ground.html: original backup already exists, skipping copy
+2026-08-14 23:58:51,333 [INFO] 78965396_youre_my_burial_ground.html: written to archive/
+2026-08-14 23:58:51,333 [INFO] Updated manifest entry: 78965396_youre_my_burial_ground.html
+2026-08-14 23:58:51,333 [INFO] 78965396_youre_my_burial_ground.html: removed from staging/
+2026-08-14 23:58:51,333 [INFO] --- Processing: 79316676_serpents_stone.html
+2026-08-14 23:58:51,355 [INFO] 79316676_serpents_stone.html: extracted — title='Serpent's Stone' author='visadero' status='In Progress' lastUpdated='2026-02-18' words='15119'
+2026-08-14 23:58:51,355 [INFO] 79316676_serpents_stone.html: original backup already exists, skipping copy
+2026-08-14 23:58:51,369 [INFO] 79316676_serpents_stone.html: written to archive/
+2026-08-14 23:58:51,369 [INFO] Updated manifest entry: 79316676_serpents_stone.html
+2026-08-14 23:58:51,369 [INFO] 79316676_serpents_stone.html: removed from staging/
+2026-08-14 23:58:51,369 [INFO] --- Processing: 79317116_you_dont_need_a.html
+2026-08-14 23:58:51,380 [INFO] 79317116_you_dont_need_a.html: extracted — title='you don't need a revelation (you'll be fine with being lost)' author='alilbitgay' status='Complete' lastUpdated='2026-08-10' words='17359'
+2026-08-14 23:58:51,381 [INFO] 79317116_you_dont_need_a.html: original backup already exists, skipping copy
+2026-08-14 23:58:51,388 [INFO] 79317116_you_dont_need_a.html: written to archive/
+2026-08-14 23:58:51,388 [INFO] Updated manifest entry: 79317116_you_dont_need_a.html
+2026-08-14 23:58:51,388 [INFO] 79317116_you_dont_need_a.html: removed from staging/
+2026-08-14 23:58:51,388 [INFO] --- Processing: 79671146_perfect_catch.html
+2026-08-14 23:58:51,398 [INFO] 79671146_perfect_catch.html: extracted — title='Perfect Catch' author='visadero' status='Complete' lastUpdated='2026-02-16' words='6160'
+2026-08-14 23:58:51,398 [INFO] 79671146_perfect_catch.html: original backup already exists, skipping copy
+2026-08-14 23:58:51,404 [INFO] 79671146_perfect_catch.html: written to archive/
+2026-08-14 23:58:51,404 [INFO] Updated manifest entry: 79671146_perfect_catch.html
+2026-08-14 23:58:51,404 [INFO] 79671146_perfect_catch.html: removed from staging/
+2026-08-14 23:58:51,404 [INFO] --- Processing: 79774441_i_am_no_mother_i_am_no.html
+2026-08-14 23:58:51,449 [INFO] 79774441_i_am_no_mother_i_am_no.html: extracted — title='I Am No Mother, I Am No Bride' author='midwestprincess_01' status='In Progress' lastUpdated='2026-05-08' words='71735'
+2026-08-14 23:58:51,449 [INFO] 79774441_i_am_no_mother_i_am_no.html: original backup already exists, skipping copy
+2026-08-14 23:58:51,481 [INFO] 79774441_i_am_no_mother_i_am_no.html: written to archive/
+2026-08-14 23:58:51,481 [INFO] Updated manifest entry: 79774441_i_am_no_mother_i_am_no.html
+2026-08-14 23:58:51,481 [INFO] 79774441_i_am_no_mother_i_am_no.html: removed from staging/
+2026-08-14 23:58:51,481 [INFO] --- Processing: 79932611_knock_me_out_and_kiss_it.html
+2026-08-14 23:58:51,492 [INFO] 79932611_knock_me_out_and_kiss_it.html: extracted — title='Knock Me Out (And Kiss it Better)' author='Shipping_marvelous_things' status='Complete' lastUpdated='2026-05-26' words='9210'
+2026-08-14 23:58:51,492 [INFO] 79932611_knock_me_out_and_kiss_it.html: original backup already exists, skipping copy
+2026-08-14 23:58:51,500 [INFO] 79932611_knock_me_out_and_kiss_it.html: written to archive/
+2026-08-14 23:58:51,500 [INFO] Updated manifest entry: 79932611_knock_me_out_and_kiss_it.html
+2026-08-14 23:58:51,500 [INFO] 79932611_knock_me_out_and_kiss_it.html: removed from staging/
+2026-08-14 23:58:51,500 [INFO] --- Processing: 80139521_love_poetry_biology.html
+2026-08-14 23:58:51,513 [INFO] 80139521_love_poetry_biology.html: extracted — title='love = poetry + biology' author='AnonFandomBandit' status='In Progress' lastUpdated='2026-03-30' words='24491'
+2026-08-14 23:58:51,514 [INFO] 80139521_love_poetry_biology.html: original backup already exists, skipping copy
+2026-08-14 23:58:51,522 [INFO] 80139521_love_poetry_biology.html: written to archive/
+2026-08-14 23:58:51,522 [INFO] Updated manifest entry: 80139521_love_poetry_biology.html
+2026-08-14 23:58:51,523 [INFO] 80139521_love_poetry_biology.html: removed from staging/
+2026-08-14 23:58:51,523 [INFO] --- Processing: 80219316_cake_by_the_pound.html
+2026-08-14 23:58:51,550 [INFO] 80219316_cake_by_the_pound.html: extracted — title='cake by the pound' author='saturnreturn' status='Complete' lastUpdated='2026-04-27' words='14581'
+2026-08-14 23:58:51,550 [INFO] 80219316_cake_by_the_pound.html: original backup already exists, skipping copy
+2026-08-14 23:58:51,563 [INFO] 80219316_cake_by_the_pound.html: written to archive/
+2026-08-14 23:58:51,563 [INFO] Updated manifest entry: 80219316_cake_by_the_pound.html
+2026-08-14 23:58:51,563 [INFO] 80219316_cake_by_the_pound.html: removed from staging/
+2026-08-14 23:58:51,563 [INFO] --- Processing: 80258711_ri-0.html
+2026-08-14 23:58:51,629 [INFO] 80258711_ri-0.html: extracted — title='Ri-0' author='Coven_crafted' status='Complete' lastUpdated='2026-06-30' words='48493'
+2026-08-14 23:58:51,630 [INFO] 80258711_ri-0.html: original backup already exists, skipping copy
+2026-08-14 23:58:51,675 [INFO] 80258711_ri-0.html: written to archive/
+2026-08-14 23:58:51,675 [INFO] Updated manifest entry: 80258711_ri-0.html
+2026-08-14 23:58:51,675 [INFO] 80258711_ri-0.html: removed from staging/
+2026-08-14 23:58:51,675 [INFO] --- Processing: 80271671_help_im_alive.html
+2026-08-14 23:58:51,684 [INFO] 80271671_help_im_alive.html: extracted — title='Help I’m Alive' author='paddingtonfan69' status='In Progress' lastUpdated='2026-03-31' words='11118'
+2026-08-14 23:58:51,685 [INFO] 80271671_help_im_alive.html: original backup already exists, skipping copy
+2026-08-14 23:58:51,691 [INFO] 80271671_help_im_alive.html: written to archive/
+2026-08-14 23:58:51,691 [INFO] Updated manifest entry: 80271671_help_im_alive.html
+2026-08-14 23:58:51,691 [INFO] 80271671_help_im_alive.html: removed from staging/
+2026-08-14 23:58:51,691 [INFO] --- Processing: 80705996_too_sweet.html
+2026-08-14 23:58:51,702 [INFO] 80705996_too_sweet.html: extracted — title='Too Sweet' author='midwestprincess_01' status='Complete' lastUpdated='2026-04-07' words='12364'
+2026-08-14 23:58:51,702 [INFO] 80705996_too_sweet.html: original backup already exists, skipping copy
+2026-08-14 23:58:51,710 [INFO] 80705996_too_sweet.html: written to archive/
+2026-08-14 23:58:51,710 [INFO] Updated manifest entry: 80705996_too_sweet.html
+2026-08-14 23:58:51,710 [INFO] 80705996_too_sweet.html: removed from staging/
+2026-08-14 23:58:51,710 [INFO] --- Processing: 80711091_dont_delete_the_kisses.html
+2026-08-14 23:58:51,740 [INFO] 80711091_dont_delete_the_kisses.html: extracted — title='don’t delete the kisses' author='shaywritesthings' status='In Progress' lastUpdated='2026-07-06' words='35788'
+2026-08-14 23:58:51,740 [INFO] 80711091_dont_delete_the_kisses.html: original backup already exists, skipping copy
+2026-08-14 23:58:51,761 [INFO] 80711091_dont_delete_the_kisses.html: written to archive/
+2026-08-14 23:58:51,761 [INFO] Updated manifest entry: 80711091_dont_delete_the_kisses.html
+2026-08-14 23:58:51,761 [INFO] 80711091_dont_delete_the_kisses.html: removed from staging/
+2026-08-14 23:58:51,761 [INFO] --- Processing: 80827576_lotus_flower.html
+2026-08-14 23:58:51,796 [INFO] 80827576_lotus_flower.html: extracted — title='Lotus flower' author='advilrio' status='In Progress' lastUpdated='2026-04-28' words='34737'
+2026-08-14 23:58:51,796 [INFO] 80827576_lotus_flower.html: original backup already exists, skipping copy
+2026-08-14 23:58:51,820 [INFO] 80827576_lotus_flower.html: written to archive/
+2026-08-14 23:58:51,820 [INFO] Updated manifest entry: 80827576_lotus_flower.html
+2026-08-14 23:58:51,820 [INFO] 80827576_lotus_flower.html: removed from staging/
+2026-08-14 23:58:51,820 [INFO] --- Processing: 80975496_ibiza.html
+2026-08-14 23:58:52,127 [INFO] 80975496_ibiza.html: extracted — title='Ibiza' author='LovettBlack' status='In Progress' lastUpdated='2026-07-26' words='190969'
+2026-08-14 23:58:52,128 [INFO] 80975496_ibiza.html: original backup already exists, skipping copy
+2026-08-14 23:58:52,315 [INFO] 80975496_ibiza.html: written to archive/
+2026-08-14 23:58:52,315 [INFO] Updated manifest entry: 80975496_ibiza.html
+2026-08-14 23:58:52,315 [INFO] 80975496_ibiza.html: removed from staging/
+2026-08-14 23:58:52,315 [INFO] --- Processing: 81450586_talk_me_through_it.html
+2026-08-14 23:58:52,507 [INFO] 81450586_talk_me_through_it.html: extracted — title='Talk Me Through It' author='SageandViolet' status='Complete' lastUpdated='2026-07-18' words='110131'
+2026-08-14 23:58:52,507 [INFO] 81450586_talk_me_through_it.html: original backup already exists, skipping copy
+2026-08-14 23:58:52,613 [INFO] 81450586_talk_me_through_it.html: written to archive/
+2026-08-14 23:58:52,613 [INFO] Updated manifest entry: 81450586_talk_me_through_it.html
+2026-08-14 23:58:52,613 [INFO] 81450586_talk_me_through_it.html: removed from staging/
+2026-08-14 23:58:52,613 [INFO] --- Processing: 81561916_rumors_fly.html
+2026-08-14 23:58:52,651 [INFO] 81561916_rumors_fly.html: extracted — title='rumors fly' author='toomanysongsabout_u' status='In Progress' lastUpdated='2026-08-08' words='46232'
+2026-08-14 23:58:52,651 [INFO] 81561916_rumors_fly.html: original backup already exists, skipping copy
+2026-08-14 23:58:52,674 [INFO] 81561916_rumors_fly.html: written to archive/
+2026-08-14 23:58:52,674 [INFO] Updated manifest entry: 81561916_rumors_fly.html
+2026-08-14 23:58:52,674 [INFO] 81561916_rumors_fly.html: removed from staging/
+2026-08-14 23:58:52,674 [INFO] --- Processing: 81943761_the_bells.html
+2026-08-14 23:58:52,698 [INFO] 81943761_the_bells.html: extracted — title='The Bells' author='Salong3' status='Complete' lastUpdated='2026-04-19' words='29184'
+2026-08-14 23:58:52,699 [INFO] 81943761_the_bells.html: original backup already exists, skipping copy
+2026-08-14 23:58:52,715 [INFO] 81943761_the_bells.html: written to archive/
+2026-08-14 23:58:52,715 [INFO] Updated manifest entry: 81943761_the_bells.html
+2026-08-14 23:58:52,715 [INFO] 81943761_the_bells.html: removed from staging/
+2026-08-14 23:58:52,715 [INFO] --- Processing: 82204656_life_as_we_know_it.html
+2026-08-14 23:58:52,792 [INFO] 82204656_life_as_we_know_it.html: extracted — title='Life As We Know It' author='Jellybean96' status='In Progress' lastUpdated='2026-08-06' words='70784'
+2026-08-14 23:58:52,792 [INFO] 82204656_life_as_we_know_it.html: original backup already exists, skipping copy
+2026-08-14 23:58:52,839 [INFO] 82204656_life_as_we_know_it.html: written to archive/
+2026-08-14 23:58:52,839 [INFO] Updated manifest entry: 82204656_life_as_we_know_it.html
+2026-08-14 23:58:52,839 [INFO] 82204656_life_as_we_know_it.html: removed from staging/
+2026-08-14 23:58:52,840 [INFO] --- Processing: 82208311_women_like_you_women.html
+2026-08-14 23:58:52,903 [INFO] 82208311_women_like_you_women.html: extracted — title='Women Like You / Women Like Me' author='witchwine' status='In Progress' lastUpdated='2026-06-06' words='45837'
+2026-08-14 23:58:52,903 [INFO] 82208311_women_like_you_women.html: original backup already exists, skipping copy
+2026-08-14 23:58:52,932 [INFO] 82208311_women_like_you_women.html: written to archive/
+2026-08-14 23:58:52,932 [INFO] Updated manifest entry: 82208311_women_like_you_women.html
+2026-08-14 23:58:52,933 [INFO] 82208311_women_like_you_women.html: removed from staging/
+2026-08-14 23:58:52,933 [INFO] --- Processing: 82347061_count_every_beautiful.html
+2026-08-14 23:58:52,939 [INFO] 82347061_count_every_beautiful.html: extracted — title='Count Every Beautiful Thing We Can See' author='BuffyBot3000' status='Complete' lastUpdated='2026-07-28' words='6996'
+2026-08-14 23:58:52,940 [INFO] 82347061_count_every_beautiful.html: original backup already exists, skipping copy
+2026-08-14 23:58:52,945 [INFO] 82347061_count_every_beautiful.html: written to archive/
+2026-08-14 23:58:52,945 [INFO] Updated manifest entry: 82347061_count_every_beautiful.html
+2026-08-14 23:58:52,945 [INFO] 82347061_count_every_beautiful.html: removed from staging/
+2026-08-14 23:58:52,945 [INFO] --- Processing: 82835526_the_promise_of_always.html
+2026-08-14 23:58:52,967 [INFO] 82835526_the_promise_of_always.html: extracted — title='The Promise of Always' author='Coven_crafted' status='In Progress' lastUpdated='2026-08-07' words='19794'
+2026-08-14 23:58:52,968 [INFO] 82835526_the_promise_of_always.html: original backup already exists, skipping copy
+2026-08-14 23:58:52,983 [INFO] 82835526_the_promise_of_always.html: written to archive/
+2026-08-14 23:58:52,983 [INFO] Updated manifest entry: 82835526_the_promise_of_always.html
+2026-08-14 23:58:52,983 [INFO] 82835526_the_promise_of_always.html: removed from staging/
+2026-08-14 23:58:52,983 [INFO] --- Processing: 82934246_when_i_kissed_the.html
+2026-08-14 23:58:53,040 [INFO] 82934246_when_i_kissed_the.html: extracted — title='when i kissed the teacher' author='beethernuts' status='In Progress' lastUpdated='2026-07-11' words='74088'
+2026-08-14 23:58:53,040 [INFO] 82934246_when_i_kissed_the.html: original backup already exists, skipping copy
+2026-08-14 23:58:53,079 [INFO] 82934246_when_i_kissed_the.html: written to archive/
+2026-08-14 23:58:53,079 [INFO] Updated manifest entry: 82934246_when_i_kissed_the.html
+2026-08-14 23:58:53,079 [INFO] 82934246_when_i_kissed_the.html: removed from staging/
+2026-08-14 23:58:53,079 [INFO] --- Processing: 83001466_turn_them_in_turn_them.html
+2026-08-14 23:58:53,083 [INFO] 83001466_turn_them_in_turn_them.html: extracted — title='Turn Them In, Turn Them In Now! (You're A Traitor!)' author='Anonymous' status='In Progress' lastUpdated='2026-04-12' words='3015'
+2026-08-14 23:58:53,084 [INFO] 83001466_turn_them_in_turn_them.html: original backup already exists, skipping copy
+2026-08-14 23:58:53,087 [INFO] 83001466_turn_them_in_turn_them.html: written to archive/
+2026-08-14 23:58:53,087 [INFO] Updated manifest entry: 83001466_turn_them_in_turn_them.html
+2026-08-14 23:58:53,087 [INFO] 83001466_turn_them_in_turn_them.html: removed from staging/
+2026-08-14 23:58:53,087 [INFO] --- Processing: 83292511_calleth_you_cometh_i.html
+2026-08-14 23:58:53,110 [INFO] 83292511_calleth_you_cometh_i.html: extracted — title='calleth you, cometh i' author='mondaychild' status='In Progress' lastUpdated='2026-07-25' words='25412'
+2026-08-14 23:58:53,110 [INFO] 83292511_calleth_you_cometh_i.html: original backup already exists, skipping copy
+2026-08-14 23:58:53,127 [INFO] 83292511_calleth_you_cometh_i.html: written to archive/
+2026-08-14 23:58:53,127 [INFO] Updated manifest entry: 83292511_calleth_you_cometh_i.html
+2026-08-14 23:58:53,127 [INFO] 83292511_calleth_you_cometh_i.html: removed from staging/
+2026-08-14 23:58:53,127 [INFO] --- Processing: 83643571_lost_time.html
+2026-08-14 23:58:53,169 [INFO] 83643571_lost_time.html: extracted — title='Lost Time' author='MegPiper' status='In Progress' lastUpdated='2026-06-04' words='39934'
+2026-08-14 23:58:53,170 [INFO] 83643571_lost_time.html: original backup already exists, skipping copy
+2026-08-14 23:58:53,198 [INFO] 83643571_lost_time.html: written to archive/
+2026-08-14 23:58:53,198 [INFO] Updated manifest entry: 83643571_lost_time.html
+2026-08-14 23:58:53,198 [INFO] 83643571_lost_time.html: removed from staging/
+2026-08-14 23:58:53,198 [INFO] --- Processing: 83788211_the_oxwood.html
+2026-08-14 23:58:53,257 [INFO] 83788211_the_oxwood.html: extracted — title='The Oxwood' author='BanneAncroft69' status='Complete' lastUpdated='2026-07-23' words='38966'
+2026-08-14 23:58:53,258 [INFO] 83788211_the_oxwood.html: original backup already exists, skipping copy
+2026-08-14 23:58:53,290 [INFO] 83788211_the_oxwood.html: written to archive/
+2026-08-14 23:58:53,290 [INFO] Updated manifest entry: 83788211_the_oxwood.html
+2026-08-14 23:58:53,290 [INFO] 83788211_the_oxwood.html: removed from staging/
+2026-08-14 23:58:53,290 [INFO] --- Processing: 83988876_ill_bring_out_the_worst.html
+2026-08-14 23:58:53,362 [INFO] 83988876_ill_bring_out_the_worst.html: extracted — title='I'll Bring Out The Worst In You... Promise' author='infinite_euphemism' status='In Progress' lastUpdated='2026-07-13' words='56418'
+2026-08-14 23:58:53,362 [INFO] 83988876_ill_bring_out_the_worst.html: original backup already exists, skipping copy
+2026-08-14 23:58:53,413 [INFO] 83988876_ill_bring_out_the_worst.html: written to archive/
+2026-08-14 23:58:53,413 [INFO] Updated manifest entry: 83988876_ill_bring_out_the_worst.html
+2026-08-14 23:58:53,413 [INFO] 83988876_ill_bring_out_the_worst.html: removed from staging/
+2026-08-14 23:58:53,413 [INFO] --- Processing: 84072761_symposium.html
+2026-08-14 23:58:53,425 [INFO] 84072761_symposium.html: extracted — title='Symposium' author='Salong3' status='In Progress' lastUpdated='2026-05-31' words='15686'
+2026-08-14 23:58:53,425 [INFO] 84072761_symposium.html: original backup already exists, skipping copy
+2026-08-14 23:58:53,434 [INFO] 84072761_symposium.html: written to archive/
+2026-08-14 23:58:53,434 [INFO] Updated manifest entry: 84072761_symposium.html
+2026-08-14 23:58:53,434 [INFO] 84072761_symposium.html: removed from staging/
+2026-08-14 23:58:53,434 [INFO] --- Processing: 84248671_all_the_time_in_the.html
+2026-08-14 23:58:53,491 [INFO] 84248671_all_the_time_in_the.html: extracted — title='All The Time In The World' author='ialaska' status='Complete' lastUpdated='2026-06-12' words='68260'
+2026-08-14 23:58:53,492 [INFO] 84248671_all_the_time_in_the.html: original backup already exists, skipping copy
+2026-08-14 23:58:53,534 [INFO] 84248671_all_the_time_in_the.html: written to archive/
+2026-08-14 23:58:53,534 [INFO] Updated manifest entry: 84248671_all_the_time_in_the.html
+2026-08-14 23:58:53,534 [INFO] 84248671_all_the_time_in_the.html: removed from staging/
+2026-08-14 23:58:53,534 [INFO] --- Processing: 84453726_when_the_wolfbane_blooms.html
+2026-08-14 23:58:53,549 [INFO] 84453726_when_the_wolfbane_blooms.html: extracted — title='When the Wolfbane Blooms' author='LabyrinthQuestor' status='Complete' lastUpdated='2026-05-07' words='15046'
+2026-08-14 23:58:53,550 [INFO] 84453726_when_the_wolfbane_blooms.html: backed up to originals/
+2026-08-14 23:58:53,559 [INFO] 84453726_when_the_wolfbane_blooms.html: written to archive/
+2026-08-14 23:58:53,559 [INFO] Added manifest entry: 84453726_when_the_wolfbane_blooms.html
+2026-08-14 23:58:53,559 [INFO] 84453726_when_the_wolfbane_blooms.html: removed from staging/
+2026-08-14 23:58:53,559 [INFO] --- Processing: 84752066_wouldnt_you_love_to_love.html
+2026-08-14 23:58:53,610 [INFO] 84752066_wouldnt_you_love_to_love.html: extracted — title='Wouldn't You Love to Love Her' author='midwestprincess_01' status='Complete' lastUpdated='2026-07-27' words='55220'
+2026-08-14 23:58:53,611 [INFO] 84752066_wouldnt_you_love_to_love.html: original backup already exists, skipping copy
+2026-08-14 23:58:53,639 [INFO] 84752066_wouldnt_you_love_to_love.html: written to archive/
+2026-08-14 23:58:53,639 [INFO] Updated manifest entry: 84752066_wouldnt_you_love_to_love.html
+2026-08-14 23:58:53,639 [INFO] 84752066_wouldnt_you_love_to_love.html: removed from staging/
+2026-08-14 23:58:53,639 [INFO] --- Processing: 85089776_rescued.html
+2026-08-14 23:58:53,657 [INFO] 85089776_rescued.html: extracted — title='Rescued' author='pinkpillow19' status='Complete' lastUpdated='2026-06-04' words='14454'
+2026-08-14 23:58:53,657 [INFO] 85089776_rescued.html: original backup already exists, skipping copy
+2026-08-14 23:58:53,669 [INFO] 85089776_rescued.html: written to archive/
+2026-08-14 23:58:53,669 [INFO] Updated manifest entry: 85089776_rescued.html
+2026-08-14 23:58:53,669 [INFO] 85089776_rescued.html: removed from staging/
+2026-08-14 23:58:53,669 [INFO] --- Processing: 85098241_farewell_to_the.html
+2026-08-14 23:58:53,727 [INFO] 85098241_farewell_to_the.html: extracted — title='Farewell To The Fairground' author='bitchywitchyboo' status='Complete' lastUpdated='2026-06-12' words='70000'
+2026-08-14 23:58:53,727 [INFO] 85098241_farewell_to_the.html: original backup already exists, skipping copy
+2026-08-14 23:58:53,766 [INFO] 85098241_farewell_to_the.html: written to archive/
+2026-08-14 23:58:53,766 [INFO] Updated manifest entry: 85098241_farewell_to_the.html
+2026-08-14 23:58:53,766 [INFO] 85098241_farewell_to_the.html: removed from staging/
+2026-08-14 23:58:53,766 [INFO] --- Processing: 85272591_no_light_no_light.html
+2026-08-14 23:58:53,829 [INFO] 85272591_no_light_no_light.html: extracted — title='No Light, No Light' author='mychellio' status='Complete' lastUpdated='2026-06-07' words='32306'
+2026-08-14 23:58:53,829 [INFO] 85272591_no_light_no_light.html: original backup already exists, skipping copy
+2026-08-14 23:58:53,860 [INFO] 85272591_no_light_no_light.html: written to archive/
+2026-08-14 23:58:53,860 [INFO] Updated manifest entry: 85272591_no_light_no_light.html
+2026-08-14 23:58:53,861 [INFO] 85272591_no_light_no_light.html: removed from staging/
+2026-08-14 23:58:53,861 [INFO] --- Processing: 85322471_crystalline_knowledge_of.html
+2026-08-14 23:58:53,884 [INFO] 85322471_crystalline_knowledge_of.html: extracted — title='Crystalline Knowledge of You' author='evgar, Salong3' status='Complete' lastUpdated='2026-06-14' words='31573'
+2026-08-14 23:58:53,885 [INFO] 85322471_crystalline_knowledge_of.html: original backup already exists, skipping copy
+2026-08-14 23:58:53,903 [INFO] 85322471_crystalline_knowledge_of.html: written to archive/
+2026-08-14 23:58:53,903 [INFO] Updated manifest entry: 85322471_crystalline_knowledge_of.html
+2026-08-14 23:58:53,903 [INFO] 85322471_crystalline_knowledge_of.html: removed from staging/
+2026-08-14 23:58:53,903 [INFO] --- Processing: 85495916_you_dont_know_what_youve.html
+2026-08-14 23:58:53,962 [INFO] 85495916_you_dont_know_what_youve.html: extracted — title='you don't know what you've got' author='LMK_writes' status='Complete' lastUpdated='2026-06-03' words='35600'
+2026-08-14 23:58:53,962 [INFO] 85495916_you_dont_know_what_youve.html: original backup already exists, skipping copy
+2026-08-14 23:58:53,996 [INFO] 85495916_you_dont_know_what_youve.html: written to archive/
+2026-08-14 23:58:53,996 [INFO] Updated manifest entry: 85495916_you_dont_know_what_youve.html
+2026-08-14 23:58:53,996 [INFO] 85495916_you_dont_know_what_youve.html: removed from staging/
+2026-08-14 23:58:53,996 [INFO] --- Processing: 85522181_on_call.html
+2026-08-14 23:58:54,011 [INFO] 85522181_on_call.html: extracted — title='On Call' author='feral_streep' status='Complete' lastUpdated='2026-05-30' words='16521'
+2026-08-14 23:58:54,011 [INFO] 85522181_on_call.html: original backup already exists, skipping copy
+2026-08-14 23:58:54,021 [INFO] 85522181_on_call.html: written to archive/
+2026-08-14 23:58:54,021 [INFO] Updated manifest entry: 85522181_on_call.html
+2026-08-14 23:58:54,021 [INFO] 85522181_on_call.html: removed from staging/
+2026-08-14 23:58:54,021 [INFO] --- Processing: 85534741_the_best_little.html
+2026-08-14 23:58:54,033 [INFO] 85534741_the_best_little.html: extracted — title='The Best Little Whorehouse in Westview' author='Lexus (Beautiful_Ruin)' status='Complete' lastUpdated='2026-06-02' words='19790'
+2026-08-14 23:58:54,034 [INFO] 85534741_the_best_little.html: original backup already exists, skipping copy
+2026-08-14 23:58:54,042 [INFO] 85534741_the_best_little.html: written to archive/
+2026-08-14 23:58:54,042 [INFO] Updated manifest entry: 85534741_the_best_little.html
+2026-08-14 23:58:54,043 [INFO] 85534741_the_best_little.html: removed from staging/
+2026-08-14 23:58:54,043 [INFO] --- Processing: 85583441_two_left_feet.html
+2026-08-14 23:58:54,061 [INFO] 85583441_two_left_feet.html: extracted — title='Two Left Feet' author='MarnieMichaelsApologist' status='Complete' lastUpdated='2026-06-06' words='20111'
+2026-08-14 23:58:54,061 [INFO] 85583441_two_left_feet.html: original backup already exists, skipping copy
+2026-08-14 23:58:54,074 [INFO] 85583441_two_left_feet.html: written to archive/
+2026-08-14 23:58:54,074 [INFO] Updated manifest entry: 85583441_two_left_feet.html
+2026-08-14 23:58:54,074 [INFO] 85583441_two_left_feet.html: removed from staging/
+2026-08-14 23:58:54,074 [INFO] --- Processing: 85646976_find_yourself_in_someone.html
+2026-08-14 23:58:54,125 [INFO] 85646976_find_yourself_in_someone.html: extracted — title='find yourself in someone (you were there all along)' author='empathyhoodie, evgar, mondaychild' status='Complete' lastUpdated='2026-06-16' words='53235'
+2026-08-14 23:58:54,125 [INFO] 85646976_find_yourself_in_someone.html: original backup already exists, skipping copy
+2026-08-14 23:58:54,159 [INFO] 85646976_find_yourself_in_someone.html: written to archive/
+2026-08-14 23:58:54,160 [INFO] Updated manifest entry: 85646976_find_yourself_in_someone.html
+2026-08-14 23:58:54,160 [INFO] 85646976_find_yourself_in_someone.html: removed from staging/
+2026-08-14 23:58:54,160 [INFO] --- Processing: 85903136_you_know_ill_take_my.html
+2026-08-14 23:58:54,174 [INFO] 85903136_you_know_ill_take_my.html: extracted — title='you know i'll take my heart clean apart if it helps yours beat' author='quinnking' status='Complete' lastUpdated='2026-06-13' words='27330'
+2026-08-14 23:58:54,175 [INFO] 85903136_you_know_ill_take_my.html: original backup already exists, skipping copy
+2026-08-14 23:58:54,185 [INFO] 85903136_you_know_ill_take_my.html: written to archive/
+2026-08-14 23:58:54,185 [INFO] Updated manifest entry: 85903136_you_know_ill_take_my.html
+2026-08-14 23:58:54,185 [INFO] 85903136_you_know_ill_take_my.html: removed from staging/
+2026-08-14 23:58:54,185 [INFO] --- Processing: 85952646_master_of_restraint_with.html
+2026-08-14 23:58:54,242 [INFO] 85952646_master_of_restraint_with.html: extracted — title='Master of Restraint (with notable exceptions)' author='RhodiumDark' status='Complete' lastUpdated='2026-06-10' words='57472'
+2026-08-14 23:58:54,243 [INFO] 85952646_master_of_restraint_with.html: original backup already exists, skipping copy
+2026-08-14 23:58:54,275 [INFO] 85952646_master_of_restraint_with.html: written to archive/
+2026-08-14 23:58:54,275 [INFO] Updated manifest entry: 85952646_master_of_restraint_with.html
+2026-08-14 23:58:54,275 [INFO] 85952646_master_of_restraint_with.html: removed from staging/
+2026-08-14 23:58:54,275 [INFO] --- Processing: 85956276_grave_mistakes.html
+2026-08-14 23:58:54,327 [INFO] 85956276_grave_mistakes.html: extracted — title='Grave Mistakes' author='forestgreentrees' status='In Progress' lastUpdated='2026-08-09' words='44139'
+2026-08-14 23:58:54,327 [INFO] 85956276_grave_mistakes.html: original backup already exists, skipping copy
+2026-08-14 23:58:54,362 [INFO] 85956276_grave_mistakes.html: written to archive/
+2026-08-14 23:58:54,362 [INFO] Updated manifest entry: 85956276_grave_mistakes.html
+2026-08-14 23:58:54,362 [INFO] 85956276_grave_mistakes.html: removed from staging/
+2026-08-14 23:58:54,362 [INFO] --- Processing: 86294231_strangers_on_a_train.html
+2026-08-14 23:58:54,385 [INFO] 86294231_strangers_on_a_train.html: extracted — title='Strangers On A Train' author='Nowhere_near' status='Complete' lastUpdated='2026-06-23' words='28617'
+2026-08-14 23:58:54,385 [INFO] 86294231_strangers_on_a_train.html: original backup already exists, skipping copy
+2026-08-14 23:58:54,401 [INFO] 86294231_strangers_on_a_train.html: written to archive/
+2026-08-14 23:58:54,401 [INFO] Updated manifest entry: 86294231_strangers_on_a_train.html
+2026-08-14 23:58:54,401 [INFO] 86294231_strangers_on_a_train.html: removed from staging/
+2026-08-14 23:58:54,401 [INFO] --- Processing: 86306531_hoops_im_falling_for_you.html
+2026-08-14 23:58:54,419 [INFO] 86306531_hoops_im_falling_for_you.html: extracted — title='Hoops, I'm Falling for You' author='lesbianvinci, Queerenough' status='Complete' lastUpdated='2026-06-18' words='26503'
+2026-08-14 23:58:54,420 [INFO] 86306531_hoops_im_falling_for_you.html: original backup already exists, skipping copy
+2026-08-14 23:58:54,433 [INFO] 86306531_hoops_im_falling_for_you.html: written to archive/
+2026-08-14 23:58:54,433 [INFO] Updated manifest entry: 86306531_hoops_im_falling_for_you.html
+2026-08-14 23:58:54,433 [INFO] 86306531_hoops_im_falling_for_you.html: removed from staging/
+2026-08-14 23:58:54,433 [INFO] --- Processing: 86314591_emergency_contact.html
+2026-08-14 23:58:54,574 [INFO] 86314591_emergency_contact.html: extracted — title='Emergency Contact' author='SageandViolet' status='In Progress' lastUpdated='2026-07-07' words='69817'
+2026-08-14 23:58:54,575 [INFO] 86314591_emergency_contact.html: original backup already exists, skipping copy
+2026-08-14 23:58:54,656 [INFO] 86314591_emergency_contact.html: written to archive/
+2026-08-14 23:58:54,656 [INFO] Updated manifest entry: 86314591_emergency_contact.html
+2026-08-14 23:58:54,656 [INFO] 86314591_emergency_contact.html: removed from staging/
+2026-08-14 23:58:54,656 [INFO] --- Processing: 86318591_flowers_in_the_water.html
+2026-08-14 23:58:54,722 [INFO] 86318591_flowers_in_the_water.html: extracted — title='Flowers in the Water' author='Cassie_Bones' status='Complete' lastUpdated='2026-06-21' words='83392'
+2026-08-14 23:58:54,722 [INFO] 86318591_flowers_in_the_water.html: original backup already exists, skipping copy
+2026-08-14 23:58:54,767 [INFO] 86318591_flowers_in_the_water.html: written to archive/
+2026-08-14 23:58:54,767 [INFO] Updated manifest entry: 86318591_flowers_in_the_water.html
+2026-08-14 23:58:54,767 [INFO] 86318591_flowers_in_the_water.html: removed from staging/
+2026-08-14 23:58:54,767 [INFO] --- Processing: 86354731_i_sure_know_mating_calls.html
+2026-08-14 23:58:54,795 [INFO] 86354731_i_sure_know_mating_calls.html: extracted — title='I Sure Know Mating Calls' author='AnonFandomBandit' status='Complete' lastUpdated='2026-06-26' words='56691'
+2026-08-14 23:58:54,796 [INFO] 86354731_i_sure_know_mating_calls.html: original backup already exists, skipping copy
+2026-08-14 23:58:54,816 [INFO] 86354731_i_sure_know_mating_calls.html: written to archive/
+2026-08-14 23:58:54,816 [INFO] Updated manifest entry: 86354731_i_sure_know_mating_calls.html
+2026-08-14 23:58:54,816 [INFO] 86354731_i_sure_know_mating_calls.html: removed from staging/
+2026-08-14 23:58:54,816 [INFO] --- Processing: 86378576_got_me_on_my_knees_have.html
+2026-08-14 23:58:54,855 [INFO] 86378576_got_me_on_my_knees_have.html: extracted — title='Got Me On My Knees (Have You Any Mercy?)' author='justanothertaurusmoon' status='Complete' lastUpdated='2026-06-15' words='54135'
+2026-08-14 23:58:54,855 [INFO] 86378576_got_me_on_my_knees_have.html: original backup already exists, skipping copy
+2026-08-14 23:58:54,880 [INFO] 86378576_got_me_on_my_knees_have.html: written to archive/
+2026-08-14 23:58:54,881 [INFO] Updated manifest entry: 86378576_got_me_on_my_knees_have.html
+2026-08-14 23:58:54,881 [INFO] 86378576_got_me_on_my_knees_have.html: removed from staging/
+2026-08-14 23:58:54,881 [INFO] --- Processing: 86390816_all_the_wild_horses.html
+2026-08-14 23:58:54,979 [INFO] 86390816_all_the_wild_horses.html: extracted — title='All the Wild Horses' author='Emilia_Rowan' status='Complete' lastUpdated='2026-06-27' words='120935'
+2026-08-14 23:58:54,979 [INFO] 86390816_all_the_wild_horses.html: original backup already exists, skipping copy
+2026-08-14 23:58:55,035 [INFO] 86390816_all_the_wild_horses.html: written to archive/
+2026-08-14 23:58:55,035 [INFO] Updated manifest entry: 86390816_all_the_wild_horses.html
+2026-08-14 23:58:55,036 [INFO] 86390816_all_the_wild_horses.html: removed from staging/
+2026-08-14 23:58:55,036 [INFO] --- Processing: 86537896_a_thing_with_feathers.html
+2026-08-14 23:58:55,056 [INFO] 86537896_a_thing_with_feathers.html: extracted — title='A Thing With Feathers' author='Moominlesbian2' status='Complete' lastUpdated='2026-06-29' words='34547'
+2026-08-14 23:58:55,056 [INFO] 86537896_a_thing_with_feathers.html: backed up to originals/
+2026-08-14 23:58:55,071 [INFO] 86537896_a_thing_with_feathers.html: written to archive/
+2026-08-14 23:58:55,071 [INFO] Added manifest entry: 86537896_a_thing_with_feathers.html
+2026-08-14 23:58:55,071 [INFO] 86537896_a_thing_with_feathers.html: removed from staging/
+2026-08-14 23:58:55,071 [INFO] --- Processing: 86744236_the_forgeries_of_fools.html
+2026-08-14 23:58:55,108 [INFO] 86744236_the_forgeries_of_fools.html: extracted — title='The Forgeries of Fools' author='evilpete' status='Complete' lastUpdated='2026-06-22' words='33965'
+2026-08-14 23:58:55,109 [INFO] 86744236_the_forgeries_of_fools.html: original backup already exists, skipping copy
+2026-08-14 23:58:55,131 [INFO] 86744236_the_forgeries_of_fools.html: written to archive/
+2026-08-14 23:58:55,132 [INFO] Updated manifest entry: 86744236_the_forgeries_of_fools.html
+2026-08-14 23:58:55,132 [INFO] 86744236_the_forgeries_of_fools.html: removed from staging/
+2026-08-14 23:58:55,132 [INFO] --- Processing: 86829131_i_tore_you_apart_in_my.html
+2026-08-14 23:58:55,425 [INFO] 86829131_i_tore_you_apart_in_my.html: extracted — title='I Tore You Apart In My Head' author='kayniiine' status='Complete' lastUpdated='2026-07-27' words='348581'
+2026-08-14 23:58:55,426 [INFO] 86829131_i_tore_you_apart_in_my.html: original backup already exists, skipping copy
+2026-08-14 23:58:55,615 [INFO] 86829131_i_tore_you_apart_in_my.html: written to archive/
+2026-08-14 23:58:55,615 [INFO] Updated manifest entry: 86829131_i_tore_you_apart_in_my.html
+2026-08-14 23:58:55,615 [INFO] 86829131_i_tore_you_apart_in_my.html: removed from staging/
+2026-08-14 23:58:55,615 [INFO] --- Processing: 87086406_ill_be_your_reason.html
+2026-08-14 23:58:55,646 [INFO] 87086406_ill_be_your_reason.html: extracted — title='I'll Be Your Reason' author='ialaska' status='Complete' lastUpdated='2026-07-13' words='33602'
+2026-08-14 23:58:55,646 [INFO] 87086406_ill_be_your_reason.html: original backup already exists, skipping copy
+2026-08-14 23:58:55,668 [INFO] 87086406_ill_be_your_reason.html: written to archive/
+2026-08-14 23:58:55,668 [INFO] Updated manifest entry: 87086406_ill_be_your_reason.html
+2026-08-14 23:58:55,668 [INFO] 87086406_ill_be_your_reason.html: removed from staging/
+2026-08-14 23:58:55,668 [INFO] --- Processing: 87219796_through_fortune_and.html
+2026-08-14 23:58:55,742 [INFO] 87219796_through_fortune_and.html: extracted — title='through fortune and flame, we fall' author='saturnreturn' status='Complete' lastUpdated='2026-06-28' words='66041'
+2026-08-14 23:58:55,742 [INFO] 87219796_through_fortune_and.html: original backup already exists, skipping copy
+2026-08-14 23:58:55,788 [INFO] 87219796_through_fortune_and.html: written to archive/
+2026-08-14 23:58:55,788 [INFO] Updated manifest entry: 87219796_through_fortune_and.html
+2026-08-14 23:58:55,788 [INFO] 87219796_through_fortune_and.html: removed from staging/
+2026-08-14 23:58:55,788 [INFO] --- Processing: 87610031_couples_retreat.html
+2026-08-14 23:58:55,899 [INFO] 87610031_couples_retreat.html: extracted — title='Couples Retreat' author='SageandViolet' status='In Progress' lastUpdated='2026-08-12' words='81694'
+2026-08-14 23:58:55,900 [INFO] 87610031_couples_retreat.html: original backup already exists, skipping copy
+2026-08-14 23:58:55,959 [INFO] 87610031_couples_retreat.html: written to archive/
+2026-08-14 23:58:55,959 [INFO] Updated manifest entry: 87610031_couples_retreat.html
+2026-08-14 23:58:55,959 [INFO] 87610031_couples_retreat.html: removed from staging/
+2026-08-14 23:58:55,959 [INFO] --- Processing: 88006181_even_anxious_pups_need.html
+2026-08-14 23:58:55,966 [INFO] 88006181_even_anxious_pups_need.html: extracted — title='Even anxious pups need the moon' author='Queerenough' status='In Progress' lastUpdated='2026-07-05' words='4667'
+2026-08-14 23:58:55,966 [INFO] 88006181_even_anxious_pups_need.html: original backup already exists, skipping copy
+2026-08-14 23:58:55,971 [INFO] 88006181_even_anxious_pups_need.html: written to archive/
+2026-08-14 23:58:55,971 [INFO] Updated manifest entry: 88006181_even_anxious_pups_need.html
+2026-08-14 23:58:55,971 [INFO] 88006181_even_anxious_pups_need.html: removed from staging/
+2026-08-14 23:58:55,971 [INFO] --- Processing: 88164286_chances_taken.html
+2026-08-14 23:58:55,979 [INFO] 88164286_chances_taken.html: extracted — title='Chances Taken' author='How_Deep_the_Grave' status='In Progress' lastUpdated='2026-07-25' words='5670'
+2026-08-14 23:58:55,980 [INFO] 88164286_chances_taken.html: backed up to originals/
+2026-08-14 23:58:55,985 [INFO] 88164286_chances_taken.html: written to archive/
+2026-08-14 23:58:55,986 [INFO] Added manifest entry: 88164286_chances_taken.html
+2026-08-14 23:58:55,986 [INFO] 88164286_chances_taken.html: removed from staging/
+2026-08-14 23:58:55,986 [INFO] --- Processing: 88182451_orbiter.html
+2026-08-14 23:58:56,039 [INFO] 88182451_orbiter.html: extracted — title='Orbiter' author='SageandViolet' status='In Progress' lastUpdated='2026-08-12' words='51278'
+2026-08-14 23:58:56,040 [INFO] 88182451_orbiter.html: original backup already exists, skipping copy
+2026-08-14 23:58:56,067 [INFO] 88182451_orbiter.html: written to archive/
+2026-08-14 23:58:56,067 [INFO] Updated manifest entry: 88182451_orbiter.html
+2026-08-14 23:58:56,067 [INFO] 88182451_orbiter.html: removed from staging/
+2026-08-14 23:58:56,067 [INFO] --- Processing: 88386426_time_cast_a_spell_on_you.html
+2026-08-14 23:58:56,094 [INFO] 88386426_time_cast_a_spell_on_you.html: extracted — title='Time cast a spell on you, but you won't forget me (or will you?)' author='AAAdcrv' status='In Progress' lastUpdated='2026-08-07' words='26582'
+2026-08-14 23:58:56,095 [INFO] 88386426_time_cast_a_spell_on_you.html: backed up to originals/
+2026-08-14 23:58:56,113 [INFO] 88386426_time_cast_a_spell_on_you.html: written to archive/
+2026-08-14 23:58:56,113 [INFO] Added manifest entry: 88386426_time_cast_a_spell_on_you.html
+2026-08-14 23:58:56,114 [INFO] 88386426_time_cast_a_spell_on_you.html: removed from staging/
+2026-08-14 23:58:56,114 [INFO] --- Processing: 88778761_like_a_queen_in_days_of.html
+2026-08-14 23:58:56,123 [INFO] 88778761_like_a_queen_in_days_of.html: extracted — title='Like a queen in days of old' author='Echolux' status='In Progress' lastUpdated='2026-08-08' words='7609'
+2026-08-14 23:58:56,123 [INFO] 88778761_like_a_queen_in_days_of.html: original backup already exists, skipping copy
+2026-08-14 23:58:56,130 [INFO] 88778761_like_a_queen_in_days_of.html: written to archive/
+2026-08-14 23:58:56,130 [INFO] Updated manifest entry: 88778761_like_a_queen_in_days_of.html
+2026-08-14 23:58:56,130 [INFO] 88778761_like_a_queen_in_days_of.html: removed from staging/
+2026-08-14 23:58:56,130 [INFO] --- Processing: 88966521_ice_chips.html
+2026-08-14 23:58:56,139 [INFO] 88966521_ice_chips.html: extracted — title='Ice Chips' author='Salong3' status='Complete' lastUpdated='2026-07-28' words='10207'
+2026-08-14 23:58:56,139 [INFO] 88966521_ice_chips.html: original backup already exists, skipping copy
+2026-08-14 23:58:56,145 [INFO] 88966521_ice_chips.html: written to archive/
+2026-08-14 23:58:56,145 [INFO] Updated manifest entry: 88966521_ice_chips.html
+2026-08-14 23:58:56,145 [INFO] 88966521_ice_chips.html: removed from staging/
+2026-08-14 23:58:56,145 [INFO] --- Processing: 89153226_it_made_me_think_of_you.html
+2026-08-14 23:58:56,149 [INFO] 89153226_it_made_me_think_of_you.html: extracted — title='it made me think of you' author='bitchywitchyboo' status='In Progress' lastUpdated='2026-07-31' words='3469'
+2026-08-14 23:58:56,150 [INFO] 89153226_it_made_me_think_of_you.html: original backup already exists, skipping copy
+2026-08-14 23:58:56,153 [INFO] 89153226_it_made_me_think_of_you.html: written to archive/
+2026-08-14 23:58:56,153 [INFO] Updated manifest entry: 89153226_it_made_me_think_of_you.html
+2026-08-14 23:58:56,153 [INFO] 89153226_it_made_me_think_of_you.html: removed from staging/
+2026-08-14 23:58:56,153 [INFO] --- Processing: 89275326_just_like_a_tattoo.html
+2026-08-14 23:58:56,161 [INFO] 89275326_just_like_a_tattoo.html: extracted — title='Just Like a Tattoo' author='Cassie_Bones' status='Complete' lastUpdated='2026-07-26' words='7704'
+2026-08-14 23:58:56,161 [INFO] 89275326_just_like_a_tattoo.html: original backup already exists, skipping copy
+2026-08-14 23:58:56,167 [INFO] 89275326_just_like_a_tattoo.html: written to archive/
+2026-08-14 23:58:56,167 [INFO] Updated manifest entry: 89275326_just_like_a_tattoo.html
+2026-08-14 23:58:56,167 [INFO] 89275326_just_like_a_tattoo.html: removed from staging/
+2026-08-14 23:58:56,167 [INFO] --- Processing: 89276181_fyc_what_if.html
+2026-08-14 23:58:56,174 [INFO] 89276181_fyc_what_if.html: extracted — title='FYC: What if?' author='Salong3' status='Complete' lastUpdated='2026-07-27' words='8755'
+2026-08-14 23:58:56,174 [INFO] 89276181_fyc_what_if.html: original backup already exists, skipping copy
+2026-08-14 23:58:56,179 [INFO] 89276181_fyc_what_if.html: written to archive/
+2026-08-14 23:58:56,179 [INFO] Updated manifest entry: 89276181_fyc_what_if.html
+2026-08-14 23:58:56,179 [INFO] 89276181_fyc_what_if.html: removed from staging/
+2026-08-14 23:58:56,179 [INFO] --- Processing: 89289786_a_kiss_with_a_fist_is.html
+2026-08-14 23:58:56,184 [INFO] 89289786_a_kiss_with_a_fist_is.html: extracted — title='a kiss with a fist is better than none' author='alilbitgay' status='Complete' lastUpdated='2026-07-26' words='5483'
+2026-08-14 23:58:56,184 [INFO] 89289786_a_kiss_with_a_fist_is.html: backed up to originals/
+2026-08-14 23:58:56,188 [INFO] 89289786_a_kiss_with_a_fist_is.html: written to archive/
+2026-08-14 23:58:56,188 [INFO] Added manifest entry: 89289786_a_kiss_with_a_fist_is.html
+2026-08-14 23:58:56,188 [INFO] 89289786_a_kiss_with_a_fist_is.html: removed from staging/
+2026-08-14 23:58:56,188 [INFO] --- Processing: 89303531_agathas_body.html
+2026-08-14 23:58:56,192 [INFO] 89303531_agathas_body.html: extracted — title='Agatha's Body' author='SageandViolet' status='In Progress' lastUpdated='2026-07-27' words='3316'
+2026-08-14 23:58:56,192 [INFO] 89303531_agathas_body.html: backed up to originals/
+2026-08-14 23:58:56,195 [INFO] 89303531_agathas_body.html: written to archive/
+2026-08-14 23:58:56,195 [INFO] Added manifest entry: 89303531_agathas_body.html
+2026-08-14 23:58:56,195 [INFO] 89303531_agathas_body.html: removed from staging/
+2026-08-14 23:58:56,195 [INFO] --- Processing: 89389816_tell_me_all_the_ways.html
+2026-08-14 23:58:56,199 [INFO] 89389816_tell_me_all_the_ways.html: extracted — title='Tell Me All the Ways' author='Lexus (Beautiful_Ruin)' status='In Progress' lastUpdated='2026-08-05' words='2829'
+2026-08-14 23:58:56,199 [INFO] 89389816_tell_me_all_the_ways.html: backed up to originals/
+2026-08-14 23:58:56,202 [INFO] 89389816_tell_me_all_the_ways.html: written to archive/
+2026-08-14 23:58:56,202 [INFO] Added manifest entry: 89389816_tell_me_all_the_ways.html
+2026-08-14 23:58:56,202 [INFO] 89389816_tell_me_all_the_ways.html: removed from staging/
+2026-08-14 23:58:56,202 [INFO] --- Processing: 89602846_pile_o_bones.html
+2026-08-14 23:58:56,204 [INFO] 89602846_pile_o_bones.html: extracted — title='Pile o Bones' author='Cassie_Bones' status='Complete' lastUpdated='2026-07-31' words='268'
+2026-08-14 23:58:56,204 [INFO] 89602846_pile_o_bones.html: original backup already exists, skipping copy
+2026-08-14 23:58:56,206 [INFO] 89602846_pile_o_bones.html: written to archive/
+2026-08-14 23:58:56,206 [INFO] Updated manifest entry: 89602846_pile_o_bones.html
+2026-08-14 23:58:56,206 [INFO] 89602846_pile_o_bones.html: removed from staging/
+2026-08-14 23:58:56,206 [INFO] --- Processing: 89628531_the_easiest_part_has.html
+2026-08-14 23:58:56,218 [INFO] 89628531_the_easiest_part_has.html: extracted — title='The Easiest Part Has Always Been You' author='sapphicspiral' status='Complete' lastUpdated='2026-07-31' words='7737'
+2026-08-14 23:58:56,219 [INFO] 89628531_the_easiest_part_has.html: backed up to originals/
+2026-08-14 23:58:56,227 [INFO] 89628531_the_easiest_part_has.html: written to archive/
+2026-08-14 23:58:56,227 [INFO] Added manifest entry: 89628531_the_easiest_part_has.html
+2026-08-14 23:58:56,227 [INFO] 89628531_the_easiest_part_has.html: removed from staging/
+2026-08-14 23:58:56,227 [INFO] --- Processing: 89659531_the_girl_next_door.html
+2026-08-14 23:58:56,242 [INFO] 89659531_the_girl_next_door.html: extracted — title='The Girl Next Door' author='Cassie_Bones' status='Complete' lastUpdated='2026-08-01' words='9033'
+2026-08-14 23:58:56,242 [INFO] 89659531_the_girl_next_door.html: original backup already exists, skipping copy
+2026-08-14 23:58:56,252 [INFO] 89659531_the_girl_next_door.html: written to archive/
+2026-08-14 23:58:56,252 [INFO] Updated manifest entry: 89659531_the_girl_next_door.html
+2026-08-14 23:58:56,252 [INFO] 89659531_the_girl_next_door.html: removed from staging/
+2026-08-14 23:58:56,252 [INFO] --- Processing: 89678621_how_could_i_ever_be_so.html
+2026-08-14 23:58:56,258 [INFO] 89678621_how_could_i_ever_be_so.html: extracted — title='how could i ever be so dumb to believe i'd be the one you would adore' author='alilbitgay' status='Complete' lastUpdated='2026-08-01' words='7519'
+2026-08-14 23:58:56,258 [INFO] 89678621_how_could_i_ever_be_so.html: backed up to originals/
+2026-08-14 23:58:56,263 [INFO] 89678621_how_could_i_ever_be_so.html: written to archive/
+2026-08-14 23:58:56,263 [INFO] Added manifest entry: 89678621_how_could_i_ever_be_so.html
+2026-08-14 23:58:56,263 [INFO] 89678621_how_could_i_ever_be_so.html: removed from staging/
+2026-08-14 23:58:56,263 [INFO] --- Processing: 89727896_thats_not_my_name.html
+2026-08-14 23:58:56,270 [INFO] 89727896_thats_not_my_name.html: extracted — title='That's Not My Name' author='Cassie_Bones' status='Complete' lastUpdated='2026-08-02' words='2375'
+2026-08-14 23:58:56,271 [INFO] 89727896_thats_not_my_name.html: backed up to originals/
+2026-08-14 23:58:56,276 [INFO] 89727896_thats_not_my_name.html: written to archive/
+2026-08-14 23:58:56,276 [INFO] Added manifest entry: 89727896_thats_not_my_name.html
+2026-08-14 23:58:56,276 [INFO] 89727896_thats_not_my_name.html: removed from staging/
+2026-08-14 23:58:56,276 [INFO] --- Processing: 89738371_feeling_kind_of_freaky.html
+2026-08-14 23:58:56,280 [INFO] 89738371_feeling_kind_of_freaky.html: extracted — title='feeling kind of freaky (maybe it's the moonlight)' author='alilbitgay' status='Complete' lastUpdated='2026-08-02' words='3368'
+2026-08-14 23:58:56,280 [INFO] 89738371_feeling_kind_of_freaky.html: original backup already exists, skipping copy
+2026-08-14 23:58:56,283 [INFO] 89738371_feeling_kind_of_freaky.html: written to archive/
+2026-08-14 23:58:56,283 [INFO] Updated manifest entry: 89738371_feeling_kind_of_freaky.html
+2026-08-14 23:58:56,283 [INFO] 89738371_feeling_kind_of_freaky.html: removed from staging/
+2026-08-14 23:58:56,283 [INFO] --- Processing: 89748311_instantaneously.html
+2026-08-14 23:58:56,296 [INFO] 89748311_instantaneously.html: extracted — title='Instantaneously' author='forestgreentrees' status='In Progress' lastUpdated='2026-08-04' words='10039'
+2026-08-14 23:58:56,297 [INFO] 89748311_instantaneously.html: backed up to originals/
+2026-08-14 23:58:56,305 [INFO] 89748311_instantaneously.html: written to archive/
+2026-08-14 23:58:56,305 [INFO] Added manifest entry: 89748311_instantaneously.html
+2026-08-14 23:58:56,305 [INFO] 89748311_instantaneously.html: removed from staging/
+2026-08-14 23:58:56,305 [INFO] --- Processing: 89849366_i_want_your_desire.html
+2026-08-14 23:58:56,353 [INFO] 89849366_i_want_your_desire.html: extracted — title='I Want Your Desire' author='WillowWander' status='In Progress' lastUpdated='2026-08-12' words='50885'
+2026-08-14 23:58:56,367 [INFO] 89849366_i_want_your_desire.html: backed up to originals/
+2026-08-14 23:58:56,447 [INFO] 89849366_i_want_your_desire.html: written to archive/
+2026-08-14 23:58:56,447 [INFO] Added manifest entry: 89849366_i_want_your_desire.html
+2026-08-14 23:58:56,447 [INFO] 89849366_i_want_your_desire.html: removed from staging/
+2026-08-14 23:58:56,447 [INFO] --- Processing: 89902311_peonies_to_violets.html
+2026-08-14 23:58:56,455 [INFO] 89902311_peonies_to_violets.html: extracted — title='Peonies to Violets' author='DragonBinx' status='Complete' lastUpdated='2026-08-05' words='6000'
+2026-08-14 23:58:56,456 [INFO] 89902311_peonies_to_violets.html: backed up to originals/
+2026-08-14 23:58:56,460 [INFO] 89902311_peonies_to_violets.html: written to archive/
+2026-08-14 23:58:56,460 [INFO] Added manifest entry: 89902311_peonies_to_violets.html
+2026-08-14 23:58:56,461 [INFO] 89902311_peonies_to_violets.html: removed from staging/
+2026-08-14 23:58:56,464 [INFO] Manifest saved to fic_data.json
+2026-08-14 23:58:56,465 [INFO] index.html rebuilt (419 fics)
+2026-08-14 23:58:56,465 [INFO] Done. 188 processed, 0 failed.
+2026-08-14 23:58:56,465 [INFO] ============================================================

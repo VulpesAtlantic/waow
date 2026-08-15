@@ -19,8 +19,10 @@
   const MAX_429_TOTAL     = 5;       // abort if we hit this many 429s total
   // --------------------------------------------------------------------------
 
-  const results = [];       // { url, collected_at, status }
-  let total429s  = 0;
+  const results = [];         // { url, title, author_name, author_url, collected_at, status }
+  const seenIds = new Set();  // work IDs already collected, across every page
+  let total429s       = 0;
+  let skippedNonWorks = 0;
 
   function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -30,23 +32,33 @@
     return new Date().toISOString();
   }
 
+  // Quote a value for CSV, doubling embedded quotes and flattening whitespace
+  // (titles can contain commas, quotes, and the occasional stray newline).
+  function csvField(value) {
+    return `"${String(value ?? '').replace(/\s+/g, ' ').replaceAll('"', '""')}"`;
+  }
+
   function downloadCSV(rows) {
-    const header = 'work_url,collected_at,status';
+    // work_url stays the first column — Phase 2 reads only the first quoted field.
+    const header = 'work_url,title,author_name,author_url,collected_at,status';
     const lines  = rows.map(r =>
-      `"${r.url}","${r.collected_at}","${r.status}"`
+      [r.url, r.title, r.author_name, r.author_url, r.collected_at, r.status]
+        .map(csvField)
+        .join(',')
     );
-    const csv  = [header, ...lines].join('\n');
-    const blob = new Blob([csv], { type: 'text/csv' });
-    const a    = document.createElement('a');
-    a.href     = URL.createObjectURL(blob);
+    const csv   = [header, ...lines].join('\n');
+    const blob  = new Blob([csv], { type: 'text/csv' });
     const stamp = new Date().toISOString().slice(0, 16).replace(/[-T:]/g, ''); // YYYYMMDDHHMM
-    a.download = `phase1_bookmarks_${stamp}.csv`;
+    const a     = document.createElement('a');
+    a.href      = URL.createObjectURL(blob);
+    a.download  = `phase1_bookmarks_${stamp}.csv`;
     a.click();
     console.log(`📥 CSV downloaded: ${rows.length} rows`);
   }
 
-  // Fetch a bookmarks page and extract work URLs.
-  // Returns { urls: string[], status: 'success'|'not_found'|'rate_limited'|'error' }
+  // Fetch a bookmarks page and extract one record per bookmarked work.
+  // Returns { works: {url,title,author_name,author_url}[],
+  //           status: 'success'|'not_found'|'rate_limited_fatal'|'error'|'http_NNN' }
   async function fetchPage(pageNum) {
     const url = `https://archiveofourown.org/users/${USERNAME}/bookmarks?page=${pageNum}`;
     console.log(`→ Fetching page ${pageNum}: ${url}`);
@@ -58,7 +70,7 @@
         response = await fetch(url, { credentials: 'include' });
       } catch (err) {
         console.error(`  Network error on page ${pageNum}:`, err);
-        return { urls: [], status: 'error' };
+        return { works: [], status: 'error' };
       }
 
       if (response.ok) {
@@ -70,18 +82,53 @@
         const items = doc.querySelectorAll('li.bookmark');
         if (items.length === 0) {
           console.log(`  Page ${pageNum} has no bookmarks — looks like we've hit the end.`);
-          return { urls: [], status: 'not_found' };
+          return { works: [], status: 'not_found' };
         }
 
-        const links = [...doc.querySelectorAll('h4 a[href^="/works/"]')]
-          .map(a => a.href.startsWith('http') ? a.href : `https://archiveofourown.org${a.getAttribute('href')}`)
-          // filter out series links that sneak in
-          .filter(href => /\/works\/\d+/.test(href))
-          // dedupe within the page
-          .filter((v, i, arr) => arr.indexOf(v) === i);
+        // Walk each blurb so title/author stay paired with the right work.
+        const works = [...items].flatMap(item => {
+          const titleLink = item.querySelector('h4 a[href]');
+          if (!titleLink) return []; // shouldn't happen, but skip rather than crash
 
-        console.log(`  Found ${links.length} work links on page ${pageNum}`);
-        return { urls: links, status: 'success' };
+          const href   = titleLink.getAttribute('href');
+          const idHit  = href.match(/^\/works\/(\d+)/);
+
+          // Bookmarks can point at series or external works — skip those, but
+          // say so rather than dropping them silently.
+          if (!idHit) {
+            skippedNonWorks++;
+            console.log(`  ↷ Skipping non-work bookmark: ${href}`);
+            return [];
+          }
+
+          // Dedupe on work ID, globally. Pagination shifts if a bookmark is
+          // added mid-run, which can show the same work on two pages.
+          const workId = idHit[1];
+          if (seenIds.has(workId)) {
+            console.log(`  ↷ Already collected, skipping duplicate: /works/${workId}`);
+            return [];
+          }
+          seenIds.add(workId);
+
+          // Anonymous works have no rel="author" link; co-authored works have several
+          const authorLinks = [...item.querySelectorAll('h4 a[rel="author"]')];
+          const authorName  = authorLinks.length
+            ? authorLinks.map(a => a.textContent.trim()).join('; ')
+            : 'Anonymous';
+          const authorUrl   = authorLinks
+            .map(a => a.getAttribute('href'))
+            .join('; ');
+
+          return [{
+            url:         `https://archiveofourown.org/works/${workId}`,
+            title:       titleLink.textContent.trim(),
+            author_name: authorName,
+            author_url:  authorUrl,
+          }];
+        });
+
+        console.log(`  Found ${works.length} new works on page ${pageNum} (${items.length} bookmarks on page)`);
+        return { works, status: 'success' };
 
       } else if (response.status === 429) {
         total429s++;
@@ -90,7 +137,7 @@
 
         if (total429s >= MAX_429_TOTAL) {
           console.error(`  Hit ${MAX_429_TOTAL} total 429 errors — saving and exiting.`);
-          return { urls: [], status: 'rate_limited_fatal' };
+          return { works: [], status: 'rate_limited_fatal' };
         }
 
         const wait = attempt === 1 ? RETRY_WAIT_1 : RETRY_WAIT_2;
@@ -99,13 +146,13 @@
 
       } else {
         console.error(`  HTTP ${response.status} on page ${pageNum}`);
-        return { urls: [], status: `http_${response.status}` };
+        return { works: [], status: `http_${response.status}` };
       }
     }
 
     // Three 429s on the same page
     console.error(`  Three consecutive 429s on page ${pageNum} — saving and exiting.`);
-    return { urls: [], status: 'rate_limited_fatal' };
+    return { works: [], status: 'rate_limited_fatal' };
   }
 
   // --------------------------------------------------------------------------
@@ -117,7 +164,7 @@
   await sleep(2000);
 
   for (let page = START_PAGE; page <= END_PAGE; page++) {
-    const { urls, status } = await fetchPage(page);
+    const { works, status } = await fetchPage(page);
 
     if (status === 'not_found') {
       console.log(`✅ Reached end of bookmarks at page ${page - 1}.`);
@@ -125,15 +172,15 @@
     }
 
     if (status === 'rate_limited_fatal') {
-      urls.forEach(url => results.push({ url, collected_at: timestamp(), status: 'success' }));
-      results.push({ url: `[ABORTED on page ${page}]`, collected_at: timestamp(), status: 'rate_limited_fatal' });
+      // Everything collected on earlier pages is already in `results`.
+      results.push({ url: `[ABORTED on page ${page}]`, title: '', author_name: '', author_url: '', collected_at: timestamp(), status: 'rate_limited_fatal' });
       console.error('🛑 Aborting — saving CSV now.');
       downloadCSV(results);
       return;
     }
 
     const ts = timestamp();
-    urls.forEach(url => results.push({ url, collected_at: ts, status }));
+    works.forEach(w => results.push({ ...w, collected_at: ts, status }));
 
     if (page < END_PAGE) {
       console.log(`  ⏳ Waiting ${DELAY_MS / 1000}s before next page...`);
@@ -146,6 +193,9 @@
   // --------------------------------------------------------------------------
   const successes = results.filter(r => r.status === 'success').length;
   console.log(`\n✅ Phase 1 complete. Collected ${successes} work URLs across ${results.length} rows.`);
+  if (skippedNonWorks) {
+    console.log(`   ↷ Skipped ${skippedNonWorks} non-work bookmarks (series / external works).`);
+  }
   console.log('Waiting 5 seconds then downloading CSV...');
   await sleep(5000);
   downloadCSV(results);
