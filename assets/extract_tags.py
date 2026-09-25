@@ -4,6 +4,7 @@
 import csv
 import glob
 import os
+import re
 from html.parser import HTMLParser
 
 
@@ -64,17 +65,24 @@ def extract_from_file(filepath):
     return parser.title, parser.additional_tags
 
 
+def work_key(filename):
+    """Match fics by workID so custom tags survive a filename change."""
+    m = re.match(r"^(\d+)_", filename)
+    return m.group(1) if m else filename
+
+
 def load_existing_custom_tags(custom_csv_path):
-    """Return a dict of filename -> custom_tags string from an existing tags_review_custom.csv."""
+    """Return a dict of workID -> custom_tags string from an existing tags_review_custom.csv."""
     existing = {}
     if not os.path.exists(custom_csv_path):
         return existing
-    with open(custom_csv_path, newline="", encoding="utf-8") as f:
+    # utf-8-sig tolerates the BOM Excel adds when saving
+    with open(custom_csv_path, newline="", encoding="utf-8-sig") as f:
         for row in csv.DictReader(f):
             fname = row.get("filename", "").strip()
             tags = row.get("custom_tags", "").strip()
             if fname:
-                existing[fname] = tags
+                existing[work_key(fname)] = tags
     return existing
 
 
@@ -98,10 +106,10 @@ def main():
             filename = os.path.basename(filepath)
             title, tags = extract_from_file(filepath)
             tags_str = " | ".join(tags)
-            custom_tags = existing_custom.get(filename, "")
+            custom_tags = existing_custom.get(work_key(filename), "")
             writer.writerow([filename, title, tags_str, custom_tags])
 
-    carried = sum(1 for f in [os.path.basename(p) for p in html_files] if f in existing_custom)
+    carried = sum(1 for p in html_files if existing_custom.get(work_key(os.path.basename(p))))
     print(f"Wrote {len(html_files)} rows to {output_path} ({carried} with existing custom tags carried over)")
 
 

@@ -1,10 +1,10 @@
 """
-fic-archive/assets/process.py
-==============================
+fic-archive/assets/phase4_process.py
+====================================
 Personal AO3 fic archive processor.
 
 Usage (from project root):
-    python assets/process.py
+    python assets/phase4_process.py
 
 What it does:
   1. Scans staging/ for .html files
@@ -25,7 +25,7 @@ Folder structure expected:
   ├── originals/      ← untouched backups of downloads
   ├── assets/
   │   ├── darkMode.css
-  │   └── process.py  ← this script
+  │   └── phase4_process.py  ← this script
   ├── index.html      ← auto-generated, do not edit manually
   ├── fic_data.json   ← metadata manifest, do not edit manually
   └── process.log
@@ -35,13 +35,17 @@ Date & status extraction:
   - lastUpdated: uses Completed date if present, else Updated, else Published
   - status: "Complete" if a Completed date exists; otherwise "In Progress"
 
-Custom tags (angst, fluff, etc.):
-  See CUSTOM_TAGS section below. Currently a stub — hooks are in place
-  but no tags are applied automatically yet.
+Custom tags & summaries (hand-edited, survive reprocessing):
+  - assets/tags_review_custom.csv — custom_tags column, pipe-delimited
+  - assets/custom_summaries.csv  — fill in custom_summary to replace the AO3
+    summary on the index; leave blank to use AO3's. The file is refreshed with
+    every fic after each run (your custom_summary text is kept).
+  Both are matched to fics by workID, so renamed files keep their overrides.
 """
 
 from __future__ import annotations
 
+import csv
 import json
 import logging
 import os
@@ -50,6 +54,7 @@ import shutil
 import sys
 from contextlib import contextmanager
 from datetime import datetime
+from functools import lru_cache
 from pathlib import Path
 
 from bs4 import BeautifulSoup, Comment
@@ -67,6 +72,8 @@ INDEX_FILE    = BASE_DIR / "index.html"
 DATA_FILE     = BASE_DIR / "fic_data.json"
 LOG_FILE      = BASE_DIR / "process.log"
 LOCK_FILE     = BASE_DIR / ".phase4.lock"
+CUSTOM_TAGS_FILE      = ASSETS_DIR / "tags_review_custom.csv"
+CUSTOM_SUMMARIES_FILE = ASSETS_DIR / "custom_summaries.csv"
 
 # ---------------------------------------------------------------------------
 # Logging
@@ -96,11 +103,86 @@ log = setup_logging()
 
 CUSTOM_TAG_RULES = {}
 
+def _read_override_csv(path: Path) -> dict:
+    """Load an override CSV into {workID: row}. Missing file → empty dict."""
+    rows = {}
+    if not path.exists():
+        return rows
+    # utf-8-sig tolerates the BOM Excel adds when saving
+    with open(path, encoding="utf-8-sig", newline="") as f:
+        for row in csv.DictReader(f):
+            fname = (row.get("filename") or "").strip()
+            if fname:
+                rows[_work_id(fname) or fname] = row
+    return rows
+
+@lru_cache(maxsize=None)
+def _custom_tag_overrides() -> dict:
+    """{workID: [tag, ...]} from tags_review_custom.csv (pipe-delimited column)."""
+    out = {}
+    for key, row in _read_override_csv(CUSTOM_TAGS_FILE).items():
+        raw = (row.get("custom_tags") or "").strip()
+        out[key] = [t.strip() for t in raw.split("|") if t.strip()]
+    return out
+
+@lru_cache(maxsize=None)
+def _custom_summary_overrides() -> dict:
+    """{workID: summary} for rows with a non-blank custom_summary."""
+    out = {}
+    for key, row in _read_override_csv(CUSTOM_SUMMARIES_FILE).items():
+        text = re.sub(r"\s+", " ", row.get("custom_summary") or "").strip()
+        if text:
+            out[key] = text
+    return out
+
+def apply_custom_summary(meta: dict) -> str:
+    """Return the hand-written summary for this fic if there is one, else the AO3 summary."""
+    fname = meta["source_file"]
+    return _custom_summary_overrides().get(_work_id(fname) or fname, meta["summary"])
+
+def sync_custom_summaries_csv(manifest: dict):
+    """
+    Rewrite custom_summaries.csv so it lists every fic in the manifest with its
+    current AO3 summary. The custom_summary column is carried over untouched;
+    rows for fics no longer in the manifest are kept at the end so no
+    hand-written text is ever dropped.
+    """
+    existing = _read_override_csv(CUSTOM_SUMMARIES_FILE)
+    fieldnames = ["filename", "title", "summary_words", "ao3_summary", "custom_summary"]
+    rows = []
+    for fic in sorted(manifest["fics"], key=lambda f: f["filename"]):
+        key = _work_id(fic["filename"]) or fic["filename"]
+        ao3 = fic.get("ao3_summary", fic.get("summary", ""))
+        rows.append({
+            "filename":       fic["filename"],
+            "title":          fic["title"],
+            "summary_words":  len(ao3.split()),
+            "ao3_summary":    ao3,
+            "custom_summary": (existing.pop(key, {}).get("custom_summary") or "").strip(),
+        })
+    for row in existing.values():
+        if (row.get("custom_summary") or "").strip():
+            rows.append({k: row.get(k, "") for k in fieldnames})
+
+    tmp = CUSTOM_SUMMARIES_FILE.with_name(CUSTOM_SUMMARIES_FILE.name + f".tmp-{os.getpid()}")
+    try:
+        with open(tmp, "w", encoding="utf-8-sig", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(rows)
+        os.replace(tmp, CUSTOM_SUMMARIES_FILE)
+    except PermissionError:
+        log.warning("custom_summaries.csv is open in another program — not refreshed this run")
+    finally:
+        if tmp.exists():
+            tmp.unlink()
+
 def apply_custom_tags(meta: dict) -> list:
-    matched = []
+    fname = meta["source_file"]
+    matched = list(_custom_tag_overrides().get(_work_id(fname) or fname, []))
     for tag_name, rule_fn in CUSTOM_TAG_RULES.items():
         try:
-            if rule_fn(meta):
+            if rule_fn(meta) and tag_name not in matched:
                 matched.append(tag_name)
         except Exception as e:
             log.warning(f"Custom tag rule '{tag_name}' raised an error: {e}")
@@ -299,8 +381,16 @@ def extract_metadata(soup: BeautifulSoup, source_filename: str) -> dict:
 
     # --- Summary ---
     summary_tag = soup.select_one("div.summary blockquote") or soup.select_one("blockquote.userstuff")
+    if not summary_tag:
+        # Legacy downloads: unclassed <p>Summary</p> followed by a bare <blockquote>
+        for p in soup.find_all("p"):
+            if p.get_text(strip=True) == "Summary":
+                sib = p.find_next_sibling()
+                if sib and sib.name == "blockquote":
+                    summary_tag = sib
+                break
     if summary_tag:
-        meta["summary"] = summary_tag.get_text(separator=" ", strip=True)
+        meta["summary"] = re.sub(r"\s+", " ", summary_tag.get_text(separator=" ", strip=True))
 
     # --- AO3 freeform tags (for future custom tag rules) ---
     tags_dd = soup.select_one("dd.freeform")
@@ -531,7 +621,10 @@ INDEX_TEMPLATE = """\
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fic Archive</title>
+  <title>Agathario Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
 
@@ -549,11 +642,31 @@ INDEX_TEMPLATE = """\
       border-bottom: 1px solid #1e1838;
       margin-bottom: 2rem;
     }}
+    /* Title: Cinzel caps in Agatha purple → Rio green (falls back to Georgia offline) */
     .archive-header h1 {{
-      font-size: 1.6rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      color: #c4a8ff;
+      font-family: "Cinzel", Georgia, serif;
+      font-size: clamp(1.15rem, 6vw, 1.55rem); /* stays on one line on small phones */
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      padding-left: 0.18em; /* balance trailing letter-spacing */
+      background: linear-gradient(90deg, #c4a8ff, #7fc98f);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }}
+    .header-stars {{
+      font-size: 0.8rem;
+      letter-spacing: 0.6em;
+      padding-left: 0.6em; /* balance trailing letter-spacing */
+      color: #5a4a8a;
+      margin-bottom: 0.4rem;
+    }}
+    .header-rule {{
+      height: 1px;
+      width: 180px;
+      margin: 0.7rem auto 0;
+      background: linear-gradient(90deg, transparent, #c4a8ff, #7fc98f, transparent);
+      opacity: 0.7;
     }}
     .archive-header p {{
       margin-top: 0.35rem;
@@ -742,12 +855,37 @@ INDEX_TEMPLATE = """\
       text-align: center;
       padding-bottom: 0.75rem;
     }}
+
+    /* ---- Back to top ---- */
+    .to-top {{
+      position: fixed;
+      right: 1.25rem;
+      bottom: 1.25rem;
+      width: 2.6rem;
+      height: 2.6rem;
+      border-radius: 50%;
+      border: 1px solid #4a34a0;
+      background: #1e1540;
+      color: #c4a8ff;
+      font-size: 1.1rem;
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s, background 0.15s;
+    }}
+    .to-top.visible {{
+      opacity: 0.9;
+      pointer-events: auto;
+    }}
+    .to-top:hover {{ background: #2a1f50; opacity: 1; }}
   </style>
 </head>
 <body>
 
 <div class="archive-header">
-  <h1>✦ fic archive</h1>
+  <div class="header-stars" aria-hidden="true">✦ ⋆ ☾ ⋆ ✦</div>
+  <h1>Agathario Archive</h1>
+  <div class="header-rule"></div>
   <p id="fic-count"></p>
   <p class="last-updated">last updated {last_updated}</p>
 </div>
@@ -756,7 +894,7 @@ INDEX_TEMPLATE = """\
   <summary class="filter-toggle">Filter &amp; search ▾</summary>
   <div class="filter-bar">
     <input class="search-input" type="search" id="search"
-           placeholder="Search title, author, ship, summary…" autocomplete="off">
+           placeholder="Search title, author, ship, summary, tags…" autocomplete="off">
     <div class="chip-row" id="rating-chips">
       <span class="chip-label">Rating:</span>
     </div>
@@ -769,13 +907,15 @@ INDEX_TEMPLATE = """\
 <div class="sort-row">
   <span class="chip-label">Sort:</span>
   <button class="chip active" data-sort="default">Default</button>
-  <button class="chip" data-sort="wc_desc">Word count</button>
+  <button class="chip" data-sort="wc_desc">Words</button>
   <button class="chip" data-sort="updated">Updated</button>
   <button class="chip" data-sort="alpha">A–Z</button>
 </div>
 
 <div class="count-label" id="visible-count"></div>
 <div class="card-grid" id="card-grid"></div>
+
+<button class="to-top" id="to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
 
 <script>
 const FICS = {fics_json};
@@ -819,12 +959,26 @@ function statusClass(s) {{
   return "";
 }}
 
-function buildChips(containerId, values, key) {{
+// Short chip labels for ratings, in AO3's order (unlisted ratings go last, A–Z)
+const RATING_LABELS = {{
+  "general audiences":     "GA",
+  "teen and up audiences": "T",
+  "mature":                "M",
+  "explicit":              "E",
+  "not rated":             "NR",
+}};
+
+function buildChips(containerId, values, key, labels = {{}}) {{
   const container = document.getElementById(containerId);
-  [...new Set(values.filter(Boolean))].sort().forEach(val => {{
+  const order = Object.keys(labels);
+  const rank = v => {{ const i = order.indexOf(v.toLowerCase()); return i === -1 ? order.length : i; }};
+  [...new Set(values.filter(Boolean))]
+    .sort((a, b) => rank(a) - rank(b) || a.localeCompare(b))
+    .forEach(val => {{
     const chip = document.createElement("button");
     chip.className = "chip";
-    chip.textContent = val;
+    chip.textContent = labels[val.toLowerCase()] || val;
+    chip.title = val;
     chip.dataset.key = key;
     chip.dataset.val = val.toLowerCase();
     chip.addEventListener("click", () => {{
@@ -850,7 +1004,7 @@ function render() {{
 
   let visible = 0;
   getSortedFics().forEach(fic => {{
-    const searchable = [fic.title, fic.author, fic.ship, fic.summary].join(" ").toLowerCase();
+    const searchable = [fic.title, fic.author, fic.ship, fic.summary, ...(fic.custom_tags || [])].join(" ").toLowerCase();
     if (query && !searchable.includes(query)) return;
     if (ratingFilters.length && !ratingFilters.includes((fic.rating || "").toLowerCase())) return;
     if (statusFilters.length && !statusFilters.includes((fic.status || "").toLowerCase())) return;
@@ -899,10 +1053,17 @@ document.querySelectorAll(".sort-row .chip").forEach(chip => {{
   }});
 }});
 
-buildChips("rating-chips", FICS.map(f => f.rating), "rating");
+buildChips("rating-chips", FICS.map(f => f.rating), "rating", RATING_LABELS);
 buildChips("status-chips", FICS.map(f => f.status), "status");
 
 document.getElementById("search").addEventListener("input", render);
+
+const toTop = document.getElementById("to-top");
+window.addEventListener("scroll", () => {{
+  toTop.classList.toggle("visible", window.scrollY > 600);
+}}, {{ passive: true }});
+toTop.addEventListener("click", () => window.scrollTo({{ top: 0, behavior: "smooth" }}));
+
 render();
 </script>
 </body>
@@ -1018,7 +1179,8 @@ def process_file(filepath: Path, manifest: dict) -> bool:
         "ship":        meta["ship"],
         "rating":      meta["rating"],
         "status":      meta["status"],
-        "summary":     meta["summary"],
+        "summary":     apply_custom_summary(meta),
+        "ao3_summary": meta["summary"],
         "lastUpdated": meta["lastUpdated"],
         "word_count":  meta["word_count"],
         "custom_tags": meta["custom_tags"],
@@ -1099,6 +1261,7 @@ def main():
         save_manifest(manifest, quiet=True)
 
     save_manifest(manifest)
+    sync_custom_summaries_csv(manifest)
     build_index(manifest)
 
     summary = f"Done. {success_count} processed, {fail_count} failed."

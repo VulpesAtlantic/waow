@@ -1,3 +1,6 @@
 .DS_Store
 .phase4.lock
 fic_data.json.tmp-*
+
+# AO3 login cookies — never commit
+assets/cookies.json

@@ -26,13 +26,13 @@ from urllib.parse import urlparse, parse_qs, unquote
 
 
 # ==============================================================================
-# CONFIGURATION — edit these paths before running
+# CONFIGURATION — edit these paths before running (relative to assets/)
 # ==============================================================================
 
-PHASE2_CSV    = 'phase2_download_links (4).csv'   # path to your Phase 2 CSV
+PHASE2_CSV    = 'phase2_download_links_202609250133.csv'   # path to your Phase 2 CSV
 COOKIES_FILE  = 'cookies.json'                # path to your exported cookies JSON
 OUTPUT_DIR    = '../staging'               # folder where .html files will be saved
-SUMMARY_CSV   = 'phase3_summary29260721.csv'          # output summary
+SUMMARY_CSV   = 'phase3_summary202609250133.csv'          # output summary
 
 DELAY_SECONDS      = 10     # seconds between downloads
 RETRY_WAIT_1       = 60     # first retry wait (seconds) after 429
@@ -153,6 +153,10 @@ def download_file(session, download_url: str, output_path: Path) -> tuple[bool, 
 
 def main():
     import requests  # import here so the error is clear if not installed
+
+    # Config paths are relative to assets/, so run from here no matter where
+    # the script was launched from (otherwise '../staging' lands outside the repo).
+    os.chdir(Path(__file__).resolve().parent)
 
     # -------------------------------------------------------------------------
     # Validate inputs

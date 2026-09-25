@@ -22,11 +22,13 @@ from bs4 import BeautifulSoup
 sys.path.insert(0, str(Path(__file__).parent))
 from phase4_process import (
     ARCHIVE_DIR,
+    apply_custom_summary,
     apply_custom_tags,
     build_index,
     clean_html,
     extract_metadata,
     save_manifest,
+    sync_custom_summaries_csv,
     upsert_fic,
 )
 
@@ -66,7 +68,8 @@ def reprocess():
                 "ship":        meta["ship"],
                 "rating":      meta["rating"],
                 "status":      meta["status"],
-                "summary":     meta["summary"],
+                "summary":     apply_custom_summary(meta),
+                "ao3_summary": meta["summary"],
                 "lastUpdated": meta["lastUpdated"],
                 "word_count":  meta["word_count"],
                 "custom_tags": meta["custom_tags"],
@@ -81,6 +84,7 @@ def reprocess():
             err_count += 1
 
     save_manifest(manifest)
+    sync_custom_summaries_csv(manifest)
     build_index(manifest)
 
     print(f"Done. {ok_count} reprocessed, {err_count} errors.")

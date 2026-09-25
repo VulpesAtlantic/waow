@@ -1,6 +1,6 @@
 # AO3 Bookmark Downloader — Setup & Usage
 
-A three-phase pipeline for archiving your AO3 bookmarks as HTML files.
+A pipeline for archiving your AO3 bookmarks as HTML files: Phases 1–3 collect and download them into `staging/`, then Phase 4 (`phase4_process.py`) processes them into `archive/`.
 
 ---
 
@@ -10,7 +10,7 @@ A three-phase pipeline for archiving your AO3 bookmarks as HTML files.
 |---|---|
 | `phase1_bookmarks.js` | Collects work URLs from your bookmarks pages |
 | `phase2_download_links.js` | Visits each work and grabs the HTML download link |
-| `phase3_download.py` | Downloads the HTML files using your exported cookies |
+| `phase3_download.py` | Downloads the HTML files into `staging/` using your exported cookies |
 
 ---
 
@@ -30,11 +30,13 @@ https://chromewebstore.google.com/detail/cookie-editor/hlkenndednhfkekhgcdicdfdd
 
 > You'll need to re-export cookies if your session expires between runs.
 
-### 3. Install Python dependency
+### 3. Install Python dependencies
 
 ```bash
-pip install requests
+pip install requests beautifulsoup4
 ```
+
+(`requests` is for Phase 3 downloads; `beautifulsoup4` is for processing.)
 
 ---
 
@@ -71,16 +73,20 @@ pip install requests
 
 ### Phase 3 — Download HTML files
 
-1. Make sure `phase2_download_links.csv` and `cookies.json` are in the same folder as `phase3_download.py`.
-2. Edit the config at the top of `phase3_download.py` if needed (paths, output folder name).
-3. Run:
+1. Put your Phase 2 CSV and `cookies.json` in `assets/` (next to `phase3_download.py`).
+2. Edit the config at the top of `phase3_download.py`. All paths are relative to `assets/`:
+   - `PHASE2_CSV` — the Phase 2 CSV for this batch (e.g. `phase2_download_links (4).csv`)
+   - `SUMMARY_CSV` — name for this run's summary (give each run its own name so you don't overwrite the last one)
+   - `OUTPUT_DIR` — leave as `../staging` so downloads go straight into the project's `staging/` folder
+3. Run it (works from any folder):
    ```bash
-   python phase3_download.py
+   python assets/phase3_download.py
    ```
-4. Files are saved to `ao3_downloads/` with names like `12345678_Some_Title.html`.
-5. A summary CSV is written to `phase3_summary.csv`.
+4. Files are saved **directly to `staging/`**, already in the archive's naming format: `{workID}_{slug}.html`, all lowercase (e.g. `62107414_crimson.html`). No renaming step needed.
+5. A summary CSV is written to `assets/` under the `SUMMARY_CSV` name.
+6. Go straight to **Step 1 — Process new fics** below.
 
-**Resuming Phase 3:** Just re-run the script. It checks which files already exist in `ao3_downloads/` and skips them automatically.
+**Resuming Phase 3:** Just re-run the script. It skips files that are already in `staging/`. Once `phase4_process.py` has moved them into `archive/`, they're no longer in `staging/`, so re-running the same CSV after processing will download them again. That's harmless: processing keeps whichever copy has the higher word count.
 
 ---
 
@@ -90,8 +96,8 @@ pip install requests
 |---|---|
 | `phase1_bookmarks.csv` | `work_url`, `collected_at`, `status` |
 | `phase2_download_links.csv` | `work_url`, `download_url`, `collected_at`, `status` |
-| `phase3_summary.csv` | `work_url`, `download_url`, `filename`, `updated_at`, `attempted_at`, `status` |
-| `ao3_downloads/*.html` | The actual fic files, named `{work_id}_{Title}.html` |
+| `phase3_summary*.csv` (name set in config) | `work_url`, `download_url`, `filename`, `updated_at`, `attempted_at`, `status` |
+| `../staging/*.html` | The downloaded fic files, named `{workID}_{slug}.html`, waiting for processing |
 
 The `updated_at` column in the Phase 3 summary contains the Unix timestamp from AO3's download URL — this is the last time the work was updated, and is useful for detecting new chapters on future runs.
 
@@ -99,63 +105,94 @@ The `updated_at` column in the Phase 3 summary contains the Unix timestamp from 
 
 ## Processing & archiving downloaded fics
 
-After Phase 3 you have raw AO3 HTML files in `ao3_downloads/`. The scripts below live in `assets/` and turn those into a clean, browsable archive.
+After Phase 3 you have raw AO3 HTML files in `staging/`. The scripts below live in `assets/` and turn those into a clean, browsable archive.
+
+### Which file does what
+
+| File | What it is | Edit by hand? |
+|---|---|---|
+| `phase4_process.py` | Processes new fics from `staging/` into `archive/` | No (code) |
+| `reprocess.py` | Re-runs the processing on everything already in `archive/` | No (code) |
+| `extract_tags.py` | Builds `tags_review.csv` so you can review AO3 tags and assign custom tags | No (code) |
+| `tags_review.csv` | Generated worksheet: AO3 tags + your current custom tags | Work in it, then save as `tags_review_custom.csv` |
+| `tags_review_custom.csv` | **Source of truth for custom tags** | **Yes** |
+| `custom_summaries.csv` | **Source of truth for custom summaries**; auto-refreshed on every run | **Yes** (only the `custom_summary` column) |
+| `../fic_data.json` | Manifest the index reads from. Rebuilt on every run | **No** — edits get overwritten |
+| `../index.html` | The archive homepage. Rebuilt on every run | **No** — edits get overwritten |
+
+Both override CSVs are matched to fics by **work ID** (the number at the start of the filename), so renaming a file doesn't lose its custom tags or summary.
+
+> **Retired:** `apply_custom_tags.py` (the pipeline reads `tags_review_custom.csv` itself now) and `extract_summaries.py` (replaced by `custom_summaries.csv`). They're harmless but no longer needed.
 
 ---
 
 ### Step 1 — Process new fics
 
-Drop the downloaded files into the `staging/` folder at the project root, then run:
+Phase 3 already puts downloads in `staging/` (you can also drop AO3 HTML files in by hand), then run:
 
 ```bash
-python assets/process.py
+python assets/phase4_process.py
 ```
 
 For each file in `staging/` it will:
 - Extract metadata (title, author, ship, rating, status, word count, summary) from the AO3 HTML
+- Apply your custom tags (`tags_review_custom.csv`) and custom summary (`custom_summaries.csv`), if any
 - Back up the original to `originals/`
 - Strip AO3 styles/scripts, inject `darkMode.css`
 - Handle duplicate work IDs — keeps whichever version has the higher word count
 - Write the cleaned file to `archive/`
-- Update `fic_data.json` and rebuild `index.html`
+- Update `fic_data.json`, refresh `custom_summaries.csv`, and rebuild `index.html`
 
 Files are left in `staging/` only if processing fails. Processed files are moved to `archive/` automatically.
 
 ---
 
-### Step 2 — Tag your fics
+### Step 2 — Custom tags
 
-#### Extract AO3 tags
+1. Build the worksheet:
+   ```bash
+   python assets/extract_tags.py
+   ```
+   Scans `archive/` and writes `assets/tags_review.csv` — one row per fic with its title, AO3 additional tags, and any custom tags you've already assigned (carried over from `tags_review_custom.csv`).
+2. Open `tags_review.csv`, fill in / edit the `custom_tags` column (pipe-delimited, e.g. `Angst|Slow Burn`), and **save it as `tags_review_custom.csv`** (overwrite the old one).
+3. Apply the changes:
+   ```bash
+   python assets/reprocess.py
+   ```
 
-```bash
-python assets/extract_tags.py
-```
+New fics that don't have a row in `tags_review_custom.csv` yet just get no custom tags until you run through this again.
 
-Scans `archive/` and writes `assets/tags_review.csv` with each fic's filename, title, and AO3 additional tags. If `tags_review_custom.csv` already exists, any custom tags you previously assigned are carried over to matching filenames automatically.
+---
 
-#### Add custom tags
+### Step 3 — Custom summaries
 
-Open `tags_review.csv`, fill in the `custom_tags` column for any fics you want to tag (pipe-delimited, e.g. `angst | slow burn`), and save it as `tags_review_custom.csv`.
+`custom_summaries.csv` is kept up to date automatically — every run of `phase4_process.py` or `reprocess.py` rewrites it with every fic in the archive. No extract step needed.
 
-#### Apply custom tags to the archive
+1. Open `assets/custom_summaries.csv`. Columns: `filename`, `title`, `summary_words`, `ao3_summary`, `custom_summary`.
+2. Sort by `summary_words` to find the wordy ones. Write your shorter version in `custom_summary`. Leave it blank to keep AO3's summary.
+3. Save (keep it as CSV), close the file, and run:
+   ```bash
+   python assets/reprocess.py
+   ```
 
-```bash
-python assets/apply_custom_tags.py
-```
+Only the `custom_summary` column is yours — the other columns are overwritten on each run. The original AO3 text is always kept in `ao3_summary` (here and in `fic_data.json`), so clearing a custom summary brings the original back. If a fic leaves the archive, its row is kept at the bottom as long as it has a custom summary.
 
-Reads `tags_review_custom.csv`, writes the `custom_tags` into `fic_data.json`, and rebuilds `index.html`. Safe to re-run any time you update the CSV.
+> Close the CSV before running the scripts. If it's open elsewhere and can't be rewritten, the run still works but prints a warning that the CSV wasn't refreshed.
 
 ---
 
 ### Reprocessing existing fics
 
-If you update the parsing or cleaning logic in `process.py` and want to backfill the change across everything already in `archive/`:
-
 ```bash
 python assets/reprocess.py
 ```
 
-This re-extracts metadata and re-injects meta tags for every file in `archive/`, then rebuilds `fic_data.json` and `index.html` from scratch. Safe to re-run as many times as needed. Note: run `apply_custom_tags.py` afterward to restore your custom tags, since reprocess rebuilds the manifest fresh.
+Re-extracts metadata for every file in `archive/`, re-injects meta tags, re-applies custom tags and summaries from the two CSVs, then rebuilds `fic_data.json` and `index.html` from scratch. Run it after:
+- editing `tags_review_custom.csv` or `custom_summaries.csv`
+- changing the parsing/cleaning logic in `phase4_process.py`
+- hand-fixing an archive file (e.g. wrapping a summary in `<blockquote>` so it gets picked up)
+
+Safe to re-run as many times as needed. It rewrites every archive file, so expect a big git diff; the story text itself doesn't change.
 
 ---
 

@@ -3,24 +3,34 @@
    ========================= */
 @font-face {
     font-family: "Lucida";
-    src: url("assets/Lucida-Grande/lucidagrande.ttf") format("truetype");
+    /* relative to this CSS file, which lives in assets/ */
+    src: url("Lucida-Grande/lucidagrande.ttf") format("truetype");
     font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Lucida";
+    src: url("Lucida-Grande/lucidagrande_bold.ttf") format("truetype");
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
 /* =========================
-   2) Tokens (mobile-first, match index)
+   2) Tokens (match index.html's purple-black palette)
+   Purple + green = Agatha + Rio. Green is tuned to the same brightness as
+   the lavender so they read as a pair; it's used sparingly (title,
+   scene breaks, accent bars) so purple stays the main highlight.
    ========================= */
 :root {
-    --bg: #333;
-    --bg-soft: #0b0f19;
-    --bg-card: #363842;
-    --border-subtle: #2f3640;
-    --accent: #b67ff9;
-    --accent-soft: rgba(187, 134, 252, 0.1);
-    --text: #f9fafbd9;
-    --muted: #9ca3af;
+    --bg: #141122;            /* purple-tinted near-black, a step lighter than the index */
+    --bg-card: #1c1733;       /* raised panels: preface, summaries, notes */
+    --border-subtle: #2c2450;
+    --accent: #c4a8ff;        /* same lavender as index titles/chips */
+    --green: #7fc98f;         /* Rio green — same contrast as --accent */
+    --text: #ddd6ee;          /* soft lavender off-white, ~13:1 on --bg */
+    --muted: #9d93bd;         /* ~6:1 on --bg-card */
 
     --radius-sm: 6px;
     --radius-md: 10px;
@@ -34,20 +44,19 @@
     --space-6: 1.5rem;
     --space-8: 2rem;
 
-    --shadow-soft: 0 8px 20px rgba(0, 0, 0, 0.6);
+    --shadow-soft: 0 6px 18px rgba(0, 0, 0, 0.45);
 
-    /* Reading width hint (not enforced w/ max-width for mobile) */
-    --measure: 70ch;
+    --measure: 68ch;          /* comfortable line length on wide screens */
 }
 
 /* =========================
    3) Base
    ========================= */
 html {
-  box-sizing: border-box;
-  font-size: 14px; /* bump base size for mobile */
-  -webkit-text-size-adjust: 100%; /* prevents Chrome from auto-shrinking */
-  text-size-adjust: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 *, *::before, *::after {
@@ -55,28 +64,29 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: var(--space-5) var(--space-4) var(--space-6);
-    background:
-        radial-gradient(circle at top, rgba(187,134,252,0.06), transparent 55%),
-        var(--bg);
+    margin: 0 auto;
+    max-width: calc(var(--measure) + 2 * var(--space-4));
+    padding: var(--space-5) var(--space-4) var(--space-8);
+    background-color: var(--bg);
     color: var(--text);
     font-family: "Lucida", "Lucida Grande", system-ui, -apple-system,
         "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
         "Liberation Sans", sans-serif;
-     line-height: 1.7;
-     font-size: 1rem; /* equals 18px now */
+    line-height: 1.65;
+    font-size: 1rem;
     text-rendering: optimizeLegibility;
 }
 
-/* We don’t bother with special desktop layout;
-   this will just scale if opened on a bigger screen. */
+/* keep the background full-bleed even though body is centred */
+html {
+    background-color: var(--bg);
+}
 
 /* =========================
    4) Headings
    ========================= */
 h1, h2, h3 {
-    color: #5c9e51;
+    color: var(--accent);
     line-height: 1.3;
     margin-block: var(--space-4) var(--space-2);
     font-weight: 600;
@@ -85,13 +95,13 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--green);
     margin-top: 0;
 }
 
 h2 {
-    font-size: 1.2rem;
-    color: var(--accent);
+    font-size: 1.25rem;
 }
 
 h3 {
@@ -114,21 +124,22 @@ table {
 p,
 li {
     overflow-wrap: break-word;
-    font-size: 0.94rem;
 }
 
 /* Gentle scene-break style for common fanfic separators */
 hr {
     border: none;
-    margin: var(--space-5) auto;
+    margin: var(--space-6) auto;
     height: 1px;
     max-width: 40%;
     background: linear-gradient(
         to right,
         transparent,
-        var(--accent-soft),
+        var(--accent),
+        var(--green),
         transparent
     );
+    opacity: 0.6;
 }
 
 /* =========================
@@ -139,7 +150,6 @@ a {
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: border-color 0.18s ease-out, color 0.18s ease-out;
-    text-underline-offset: 3px;
 }
 
 a:hover {
@@ -152,29 +162,29 @@ a:focus-visible {
 }
 
 /* =========================
-   7) Blockquotes
+   7) Preface list & blockquotes
    ========================= */
 dl {
-  display: grid;
-  grid-template-columns: max-content 1fr; /* Left col fits text, right col fills space */
-  gap: 10px 20px; /* Rows spacing, Columns spacing */
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px 20px;
+    font-size: 0.85rem;
 }
 
 dt {
-  font-weight: bold;
-  grid-column: 1; /* Forces terms to the left column */
+    font-weight: bold;
+    grid-column: 1;
 }
 
 dd {
-  margin: 0; /* Clears default browser indent */
-  grid-column: 2; /* Forces descriptions to the right column */
+    margin: 0;
+    grid-column: 2;
 }
 
-   dl, 
+dl,
 blockquote {
     margin-inline: 0;
-    padding: var(--space-3);
-    padding-left: var(--space-3);
+    padding: var(--space-3) var(--space-4);
     background: var(--bg-card);
     border-radius: var(--radius-xl);
     border: 1px solid var(--border-subtle);
@@ -183,17 +193,22 @@ blockquote {
     position: relative;
 }
 
+blockquote {
+    padding-left: var(--space-6);  /* clear the accent bar */
+}
+
 blockquote::before {
     content: "";
     position: absolute;
-    left: 0.6rem;
-    top: 0.7rem;
-    bottom: 0.7rem;
+    left: 0.7rem;
+    top: 0.8rem;
+    bottom: 0.8rem;
     width: 2px;
     border-radius: 999px;
     background: linear-gradient(
         to bottom,
         var(--accent),
+        var(--green) 70%,
         transparent
     );
 }
@@ -223,7 +238,7 @@ table {
 th,
 td {
     padding: 0.5rem 0.6rem;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     border-bottom: 1px solid var(--border-subtle);
 }
 
@@ -248,32 +263,31 @@ pre {
     overflow-x: auto;
     white-space: pre;
     border: 1px solid var(--border-subtle);
-    font-size: 0.78rem;
+    font-size: 0.8rem;
     box-shadow: var(--shadow-soft);
 }
 
 code {
-    background: rgba(15, 23, 42, 0.9);
+    background: var(--bg-card);
     padding: 0.1rem 0.35rem;
     border-radius: 4px;
-    font-size: 0.8rem;
-    border: 1px solid rgba(148, 163, 253, 0.12);
+    font-size: 0.85rem;
+    border: 1px solid var(--border-subtle);
 }
 
 /* =========================
    10) Misc utility bits
    ========================= */
 
-/* If you use .notes or .meta sections in fic pages */
+/* chapter headers, notes, preface */
 .meta,
 .notes,
 .header {
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     color: var(--muted);
     margin-bottom: var(--space-2);
 }
 
-/* Give any .card-like containers a matching feel if present */
 .card {
     background-color: var(--bg-card);
     border-radius: var(--radius-xl);
@@ -286,7 +300,7 @@ code {
    11) Selection color
    ========================= */
 ::selection {
-    background: #bb86fc55;
+    background: rgba(196, 168, 255, 0.35);
     color: #ffffff;
 }
 
