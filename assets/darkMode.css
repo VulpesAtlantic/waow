@@ -29,7 +29,7 @@
     --border-subtle: #2c2450;
     --accent: #c4a8ff;        /* same lavender as index titles/chips */
     --green: #7fc98f;         /* Rio green — same contrast as --accent */
-    --text: #ddd6ee;          /* soft lavender off-white, ~13:1 on --bg */
+    --text: #bdb4d6;          /* soft lavender, halfway to --muted; ~9:1 on --bg */
     --muted: #9d93bd;         /* ~6:1 on --bg-card */
 
     --radius-sm: 6px;
@@ -54,7 +54,7 @@
    ========================= */
 html {
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 14px;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
 }
@@ -124,6 +124,7 @@ table {
 p,
 li {
     overflow-wrap: break-word;
+    font-size: 0.94rem; /* ~13px story text */
 }
 
 /* Gentle scene-break style for common fanfic separators */
