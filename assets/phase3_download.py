@@ -29,16 +29,21 @@ from urllib.parse import urlparse, parse_qs, unquote
 # CONFIGURATION — edit these paths before running (relative to assets/)
 # ==============================================================================
 
-PHASE2_CSV    = 'phase2_download_links_202609250133.csv'   # path to your Phase 2 CSV
+PHASE2_CSV    = 'phase2_download_links_202609251440.csv'   # path to your Phase 2 CSV
 COOKIES_FILE  = 'cookies.json'                # path to your exported cookies JSON
 OUTPUT_DIR    = '../staging'               # folder where .html files will be saved
-SUMMARY_CSV   = 'phase3_summary202609250133.csv'          # output summary
+SUMMARY_CSV   = 'phase3_summary202609251440.csv'          # output summary
 
 DELAY_SECONDS      = 10     # seconds between downloads
 RETRY_WAIT_1       = 60     # first retry wait (seconds) after 429
 RETRY_WAIT_2       = 120    # second retry wait after 429
 MAX_429_TOTAL      = 5      # abort if we hit this many 429s total
 REQUEST_TIMEOUT    = 30     # seconds before a request times out
+
+# AO3 overload errors (Cloudflare 52x, 5xx, timeouts) are usually temporary,
+# so wait and retry these instead of failing the fic straight away.
+TRANSIENT_WAITS    = [30, 90]   # waits before the 2nd and 3rd tries
+MAX_FAILS_IN_A_ROW = 10         # stop early if this many fics fail back-to-back (AO3 is down)
 
 # ==============================================================================
 
@@ -121,34 +126,45 @@ def safe_filename(work_id: str, original_name: str) -> str:
 def download_file(session, download_url: str, output_path: Path) -> tuple[bool, str]:
     """
     Download a single file. Returns (success: bool, status: str).
-    Handles 429 retries internally.
+    Handles 429 and transient server/network retries internally.
     """
-    attempt = 0
-    while attempt < 3:
+    rate_limit_tries = 0
+    transient_tries = 0
+    while True:
         try:
             response = session.get(download_url, timeout=REQUEST_TIMEOUT, stream=True)
+            code = response.status_code
+            if code == 200:
+                with open(output_path, 'wb') as f:
+                    for chunk in response.iter_content(chunk_size=8192):
+                        f.write(chunk)
+                return True, 'success'
         except Exception as e:
-            return False, f'network_error: {e}'
-
-        if response.status_code == 200:
-            with open(output_path, 'wb') as f:
-                for chunk in response.iter_content(chunk_size=8192):
-                    f.write(chunk)
-            return True, 'success'
-
-        elif response.status_code == 429:
-            attempt += 1
-            wait = RETRY_WAIT_1 if attempt == 1 else RETRY_WAIT_2
-            print(f"  ⚠️  429 Too Many Requests (attempt {attempt}) — waiting {wait}s...")
-            time.sleep(wait)
-
-        elif response.status_code in (403, 404):
-            return False, f'http_{response.status_code}'
-
+            # Timeouts / dropped connections, including mid-download
+            if output_path.exists():
+                output_path.unlink()
+            status, reason = f'network_error: {e}', type(e).__name__
         else:
-            return False, f'http_{response.status_code}'
+            if code == 429:
+                rate_limit_tries += 1
+                wait = RETRY_WAIT_1 if rate_limit_tries == 1 else RETRY_WAIT_2
+                print(f"  ⚠️  429 Too Many Requests (attempt {rate_limit_tries}) — waiting {wait}s...")
+                time.sleep(wait)
+                if rate_limit_tries >= 3:
+                    return False, 'rate_limited_fatal'
+                continue
+            # 5xx and Cloudflare 52x (e.g. 525 SSL handshake failed) = AO3 overloaded
+            if code < 500:
+                return False, f'http_{code}'
+            status, reason = f'http_{code}', f'HTTP {code}'
 
-    return False, 'rate_limited_fatal'
+        if transient_tries >= len(TRANSIENT_WAITS):
+            return False, status
+        wait = TRANSIENT_WAITS[transient_tries]
+        transient_tries += 1
+        print(f"  ⚠️  {reason} — AO3 may be overloaded, retrying in {wait}s "
+              f"(retry {transient_tries}/{len(TRANSIENT_WAITS)})...")
+        time.sleep(wait)
 
 
 def main():
@@ -208,6 +224,7 @@ def main():
     # -------------------------------------------------------------------------
     summary = []   # list of dicts for the final CSV
     total_429s = 0
+    fails_in_a_row = 0
 
     for i, row in enumerate(rows):
         work_url     = row['work_url']
@@ -258,6 +275,12 @@ def main():
 
         if total_429s >= MAX_429_TOTAL:
             print(f"\n🛑 Hit {MAX_429_TOTAL} fatal rate limit events — aborting.")
+            break
+
+        fails_in_a_row = 0 if success else fails_in_a_row + 1
+        if fails_in_a_row >= MAX_FAILS_IN_A_ROW:
+            print(f"\n🛑 {MAX_FAILS_IN_A_ROW} fics failed in a row — AO3 looks down. "
+                  f"Stopping; re-run later to pick up the rest.")
             break
 
         if i < len(rows) - 1:

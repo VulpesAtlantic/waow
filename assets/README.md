@@ -86,6 +86,8 @@ pip install requests beautifulsoup4
 5. A summary CSV is written to `assets/` under the `SUMMARY_CSV` name.
 6. Go straight to **Step 1 — Process new fics** below.
 
+**Errors while downloading:** `525` (Cloudflare "SSL handshake failed"), other 5xx errors and timeouts mean AO3's servers are overloaded, not that anything's wrong on your end. The script waits and retries those twice (30s, then 90s) before giving up on a fic, and stops the run early if 10 fics in a row fail (AO3 is probably down). A `429` means you're being rate-limited; the script backs off for 1–2 minutes. `403`/`404` fail immediately (locked or deleted work).
+
 **Resuming Phase 3:** Just re-run the script. It skips files that are already in `staging/`. Once `phase4_process.py` has moved them into `archive/`, they're no longer in `staging/`, so re-running the same CSV after processing will download them again. That's harmless: processing keeps whichever copy has the higher word count.
 
 ---
@@ -116,6 +118,10 @@ After Phase 3 you have raw AO3 HTML files in `staging/`. The scripts below live 
 | `extract_tags.py` | Builds `tags_review.csv` so you can review AO3 tags and assign custom tags | No (code) |
 | `tags_review.csv` | Generated worksheet: AO3 tags + your current custom tags | Work in it, then save as `tags_review_custom.csv` |
 | `tags_review_custom.csv` | **Source of truth for custom tags** | **Yes** |
+| `tag_mappings.json` | Rules that turn AO3 tags into custom tags (`exact`, `keyword`, `ignore`) | **Yes** |
+| `tag_mapper.py` | Applies `tag_mappings.json`; used by the scripts above | No (code) |
+| `tags_unmapped.csv` | Generated: AO3 tags on 2+ fics that no rule maps or ignores | No — review it, then edit `tag_mappings.json` |
+| `tags_unmapped_singles.csv` | Generated: the one-off unmapped tags, for laughs | No |
 | `custom_summaries.csv` | **Source of truth for custom summaries**; auto-refreshed on every run | **Yes** (only the `custom_summary` column) |
 | `../fic_data.json` | Manifest the index reads from. Rebuilt on every run | **No** — edits get overwritten |
 | `../index.html` | The archive homepage. Rebuilt on every run | **No** — edits get overwritten |
@@ -160,7 +166,13 @@ Files are left in `staging/` only if processing fails. Processed files are moved
    python assets/reprocess.py
    ```
 
-New fics that don't have a row in `tags_review_custom.csv` yet just get no custom tags until you run through this again.
+**Auto tags.** A fic with nothing in `custom_tags` gets tags mapped automatically from its AO3 tags using `tag_mappings.json`, so new fics are tagged without any hand work. The `auto_tags` column in `tags_review.csv` shows what each fic would get. Once you fill in `custom_tags` for a fic, those are used *exactly* and auto tags are ignored for it. Everything is lowercase.
+
+**Growing the mappings.** `extract_tags.py` also writes `tags_unmapped.csv`: every AO3 tag on 2+ fics that no rule maps or ignores, most common first. For each one, either:
+- add it to `exact` (whole tag → custom tag), or `keyword` (any tag containing that word → custom tag), or
+- add it to `ignore` if it's not worth mapping, so it stops showing up.
+
+Then re-run `extract_tags.py` and the list gets shorter. Rules are checked in the order ignore → exact → keyword.
 
 ---
 

@@ -36,7 +36,9 @@ Date & status extraction:
   - status: "Complete" if a Completed date exists; otherwise "In Progress"
 
 Custom tags & summaries (hand-edited, survive reprocessing):
-  - assets/tags_review_custom.csv — custom_tags column, pipe-delimited
+  - assets/tags_review_custom.csv — custom_tags column, pipe-delimited. A fic
+    with custom tags uses exactly those; a fic without gets auto tags mapped
+    from its AO3 tags via assets/tag_mappings.json (see tag_mapper.py).
   - assets/custom_summaries.csv  — fill in custom_summary to replace the AO3
     summary on the index; leave blank to use AO3's. The file is refreshed with
     every fic after each run (your custom_summary text is kept).
@@ -58,6 +60,8 @@ from functools import lru_cache
 from pathlib import Path
 
 from bs4 import BeautifulSoup, Comment
+
+from tag_mapper import auto_tags, norm
 
 # ---------------------------------------------------------------------------
 # Paths  (process.py lives in assets/, project root is one level up)
@@ -98,10 +102,8 @@ def setup_logging():
 log = setup_logging()
 
 # ---------------------------------------------------------------------------
-# CUSTOM TAGS  (stub — expand later)
+# CUSTOM TAGS
 # ---------------------------------------------------------------------------
-
-CUSTOM_TAG_RULES = {}
 
 def _read_override_csv(path: Path) -> dict:
     """Load an override CSV into {workID: row}. Missing file → empty dict."""
@@ -122,7 +124,7 @@ def _custom_tag_overrides() -> dict:
     out = {}
     for key, row in _read_override_csv(CUSTOM_TAGS_FILE).items():
         raw = (row.get("custom_tags") or "").strip()
-        out[key] = [t.strip() for t in raw.split("|") if t.strip()]
+        out[key] = [norm(t) for t in raw.split("|") if t.strip()]
     return out
 
 @lru_cache(maxsize=None)
@@ -178,15 +180,12 @@ def sync_custom_summaries_csv(manifest: dict):
             tmp.unlink()
 
 def apply_custom_tags(meta: dict) -> list:
+    """Hand-written tags from tags_review_custom.csv win outright; otherwise map the AO3 tags."""
     fname = meta["source_file"]
-    matched = list(_custom_tag_overrides().get(_work_id(fname) or fname, []))
-    for tag_name, rule_fn in CUSTOM_TAG_RULES.items():
-        try:
-            if rule_fn(meta) and tag_name not in matched:
-                matched.append(tag_name)
-        except Exception as e:
-            log.warning(f"Custom tag rule '{tag_name}' raised an error: {e}")
-    return matched
+    override = _custom_tag_overrides().get(_work_id(fname) or fname)
+    if override:
+        return override
+    return auto_tags(meta["ao3_tags"])
 
 # ---------------------------------------------------------------------------
 # Ship priority
@@ -243,7 +242,7 @@ def extract_metadata(soup: BeautifulSoup, source_filename: str) -> dict:
         "status":      "",
         "summary":     "",
         "lastUpdated": "",
-        "ao3_tags":    "",
+        "ao3_tags":    [],
         "word_count":  "",
         "source_file": source_filename,
     }
@@ -392,13 +391,17 @@ def extract_metadata(soup: BeautifulSoup, source_filename: str) -> dict:
     if summary_tag:
         meta["summary"] = re.sub(r"\s+", " ", summary_tag.get_text(separator=" ", strip=True))
 
-    # --- AO3 freeform tags (for future custom tag rules) ---
+    # --- AO3 additional (freeform) tags, feeds auto tagging ---
     tags_dd = soup.select_one("dd.freeform")
+    if not tags_dd:
+        for dt in soup.find_all("dt"):
+            if dt.get_text(strip=True) == "Additional Tags:":
+                tags_dd = dt.find_next_sibling("dd")
+                break
     if tags_dd:
-        tag_list = [li.get_text(strip=True) for li in tags_dd.find_all("li")]
-        if not tag_list:
-            tag_list = [tags_dd.get_text(strip=True)]
-        meta["ao3_tags"] = ", ".join(tag_list)
+        meta["ao3_tags"] = [a.get_text(strip=True) for a in tags_dd.find_all("a")] or [
+            t.strip() for t in tags_dd.get_text().split(",") if t.strip()
+        ]
 
     return meta
 
@@ -878,11 +881,190 @@ INDEX_TEMPLATE = """\
       pointer-events: auto;
     }}
     .to-top:hover {{ background: #2a1f50; opacity: 1; }}
+
+    /* ---- Stats link + dialog ---- */
+    .archive-header {{ position: relative; }}
+    .stats-link {{
+      position: absolute;
+      top: 0.9rem;
+      right: 1rem;
+      background: none;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      color: #3d3560;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      padding: 0.25rem 0.5rem;
+      cursor: pointer;
+      transition: color 0.15s, border-color 0.15s;
+    }}
+    .stats-link:hover, .stats-link:focus-visible {{
+      color: #c4a8ff;
+      border-color: #2a2248;
+      outline: none;
+    }}
+    .stats-dialog {{
+      width: min(560px, calc(100vw - 2rem));
+      max-height: 85vh;
+      margin: auto;
+      padding: 0;
+      background: #13102a;
+      color: #d8cff0;
+      border: 1px solid #2a2248;
+      border-radius: 12px;
+    }}
+    .stats-dialog::backdrop {{ background: rgba(5, 3, 12, 0.75); }}
+    .stats-inner {{ padding: 1.4rem 1.4rem 1.6rem; }}
+    .stats-head {{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.1rem;
+    }}
+    .stats-head h2 {{
+      font-family: "Cinzel", Georgia, serif;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      color: #c4a8ff;
+    }}
+    .stats-close {{
+      background: none;
+      border: none;
+      color: #6a5e8a;
+      font-size: 1.4rem;
+      line-height: 1;
+      cursor: pointer;
+    }}
+    .stats-close:hover {{ color: #c4a8ff; }}
+    .stat-tiles {{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.6rem;
+    }}
+    @media (min-width: 480px) {{
+      .stat-tiles {{ grid-template-columns: repeat(4, 1fr); }}
+    }}
+    .stat-tile {{
+      background: #0f0c22;
+      border: 1px solid #221a40;
+      border-radius: 8px;
+      padding: 0.7rem 0.75rem;
+    }}
+    .stat-num {{
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #e4dcff;
+      font-variant-numeric: tabular-nums;
+    }}
+    .stat-cap {{
+      font-size: 0.66rem;
+      color: #6a5e8a;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 0.15rem;
+    }}
+    .stat-fun {{
+      font-size: 0.8rem;
+      color: #8878b0;
+      line-height: 1.5;
+      margin-top: 0.8rem;
+    }}
+    .stat-fun b {{ color: #cbb8ff; font-weight: 600; }}
+    .stats-section {{ margin-top: 1.5rem; }}
+    .stats-section h3 {{
+      font-size: 0.68rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #5a5078;
+      margin-bottom: 0.55rem;
+    }}
+    .stat-fic {{
+      font-size: 0.8rem;
+      color: #7a6da0;
+      line-height: 1.5;
+      margin-bottom: 0.35rem;
+    }}
+    .stat-fic a {{ color: #cbb8ff; text-decoration: none; }}
+    .stat-fic a:hover {{ text-decoration: underline; }}
+    .bar-row {{
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) 1fr 2.4rem;
+      gap: 0.6rem;
+      align-items: center;
+      font-size: 0.78rem;
+      padding: 0.16rem 0;
+    }}
+    .bar-label {{
+      color: #b8a8e0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }}
+    button.bar-label {{
+      background: none;
+      border: none;
+      padding: 0;
+      font: inherit;
+      text-align: left;
+      cursor: pointer;
+    }}
+    button.bar-label:hover {{ color: #c4a8ff; text-decoration: underline; }}
+    .bar-track {{
+      height: 6px;
+      background: #1a1638;
+      border-radius: 999px;
+      overflow: hidden;
+    }}
+    .bar-fill {{
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #8a6ae0, #7fc98f);
+    }}
+    .bar-val {{
+      text-align: right;
+      color: #7a6da0;
+      font-variant-numeric: tabular-nums;
+    }}
+    .split-bar {{
+      display: flex;
+      gap: 2px;
+      height: 8px;
+      border-radius: 999px;
+      overflow: hidden;
+    }}
+    .split-legend {{
+      display: flex;
+      gap: 1.1rem;
+      font-size: 0.76rem;
+      color: #8878b0;
+      margin-top: 0.45rem;
+    }}
+    .split-legend i {{
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 0.35rem;
+    }}
+    .stats-hint {{
+      font-size: 0.7rem;
+      color: #4a4068;
+      margin-top: 1.4rem;
+      text-align: center;
+    }}
+    .pinned-filter {{
+      text-align: center;
+      margin-bottom: 0.75rem;
+    }}
+    .pinned-filter:empty {{ display: none; }}
   </style>
 </head>
 <body>
 
 <div class="archive-header">
+  <button class="stats-link" id="stats-open" type="button" title="Archive stats">✦ stats</button>
   <div class="header-stars" aria-hidden="true">✦ ⋆ ☾ ⋆ ✦</div>
   <h1>Agathario Archive</h1>
   <div class="header-rule"></div>
@@ -912,10 +1094,22 @@ INDEX_TEMPLATE = """\
   <button class="chip" data-sort="alpha">A–Z</button>
 </div>
 
+<div class="pinned-filter" id="pinned-filter"></div>
 <div class="count-label" id="visible-count"></div>
 <div class="card-grid" id="card-grid"></div>
 
 <button class="to-top" id="to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
+
+<dialog class="stats-dialog" id="stats-dialog" aria-labelledby="stats-title">
+  <div class="stats-inner">
+    <div class="stats-head">
+      <h2 id="stats-title">Archive Stats</h2>
+      <button class="stats-close" id="stats-close" type="button" aria-label="Close">×</button>
+    </div>
+    <div id="stats-body"></div>
+    <p class="stats-hint">tap a tag or author to filter the archive</p>
+  </div>
+</dialog>
 
 <script>
 const FICS = {fics_json};
@@ -1008,6 +1202,9 @@ function render() {{
     if (query && !searchable.includes(query)) return;
     if (ratingFilters.length && !ratingFilters.includes((fic.rating || "").toLowerCase())) return;
     if (statusFilters.length && !statusFilters.includes((fic.status || "").toLowerCase())) return;
+    if (pinned && (pinned.key === "tag"
+        ? !(fic.custom_tags || []).includes(pinned.val)
+        : fic.author !== pinned.val)) return;
 
     visible++;
     const card = document.createElement("a");
@@ -1038,6 +1235,9 @@ function render() {{
     grid.innerHTML = '<p class="no-results">No fics match your filters.</p>';
   }}
 
+  document.getElementById("pinned-filter").innerHTML = pinned
+    ? `<button class="chip active" type="button" title="Clear filter">${{pinned.key === "tag" ? "Tag" : "Author"}}: ${{esc(pinned.val)}} ✕</button>`
+    : "";
   document.getElementById("visible-count").textContent =
     visible === FICS.length ? "" : `Showing ${{visible}} of ${{FICS.length}}`;
   document.getElementById("fic-count").textContent =
@@ -1063,6 +1263,140 @@ window.addEventListener("scroll", () => {{
   toTop.classList.toggle("visible", window.scrollY > 600);
 }}, {{ passive: true }});
 toTop.addEventListener("click", () => window.scrollTo({{ top: 0, behavior: "smooth" }}));
+
+// ---- Archive stats ----
+// Tags too common to be interesting on their own; gets a second "the rest" list
+const BIG_THREE_TAGS = ["Smut", "Fluff", "Angst"];
+const RATING_COLORS = {{
+  "general audiences":     "#72cc80",
+  "teen and up audiences": "#d4b86a",
+  "mature":                "#d48860",
+  "explicit":              "#d46880",
+}};
+
+function esc(s) {{
+  return String(s).replace(/[&<>"']/g, c => ({{ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }})[c]);
+}}
+
+function fmtBig(n) {{
+  if (n >= 1e6) return (n / 1e6).toFixed(1) + "M";
+  if (n >= 1e4) return Math.round(n / 1e3) + "k";
+  return n.toLocaleString();
+}}
+
+function topCounts(values, n = Infinity) {{
+  const counts = new Map();
+  values.forEach(v => {{ if (v) counts.set(v, (counts.get(v) || 0) + 1); }});
+  return [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, n);
+}}
+
+// Horizontal bar list. With `key`, labels are buttons that pin a filter on the index.
+function barRows(rows, {{ key, colors = {{}} }} = {{}}) {{
+  const max = Math.max(1, ...rows.map(r => r[1]));
+  return rows.map(([label, count]) => {{
+    const lbl = key
+      ? `<button class="bar-label" type="button" data-key="${{key}}" data-val="${{esc(label)}}" title="${{esc(label)}}">${{esc(label)}}</button>`
+      : `<span class="bar-label" title="${{esc(label)}}">${{esc(label)}}</span>`;
+    const color = colors[label.toLowerCase()];
+    const style = `width:${{(count / max * 100).toFixed(1)}}%` + (color ? `;background:${{color}}` : "");
+    return `<div class="bar-row">${{lbl}}<div class="bar-track"><div class="bar-fill" style="${{style}}"></div></div><span class="bar-val">${{count}}</span></div>`;
+  }}).join("");
+}}
+
+function ficLine(label, fic) {{
+  if (!fic) return "";
+  return `<p class="stat-fic">${{label}}: <a href="archive/${{esc(fic.filename)}}">${{esc(fic.title || "Untitled")}}</a>
+    by ${{esc(fic.author || "Unknown")}} · ${{parseWordCount(fic.word_count).toLocaleString()}} words</p>`;
+}}
+
+function buildStats() {{
+  const withWords = FICS.filter(f => parseWordCount(f.word_count) > 0)
+    .sort((a, b) => parseWordCount(b.word_count) - parseWordCount(a.word_count));
+  const total = withWords.reduce((sum, f) => sum + parseWordCount(f.word_count), 0);
+  const avg = withWords.length ? Math.round(total / withWords.length) : 0;
+  const authors = new Set(FICS.map(f => f.author).filter(Boolean)).size;
+  const complete = FICS.filter(f => statusClass(f.status) === "complete").length;
+  const wip = FICS.filter(f => statusClass(f.status) === "wip").length;
+  const donePct = complete + wip ? complete / (complete + wip) * 100 : 0;
+
+  const ratingOrder = Object.keys(RATING_LABELS);
+  const rank = r => {{ const i = ratingOrder.indexOf(r.toLowerCase()); return i === -1 ? ratingOrder.length : i; }};
+  const ratings = topCounts(FICS.map(f => f.rating)).sort((a, b) => rank(a[0]) - rank(b[0]));
+
+  const allTags = FICS.flatMap(f => f.custom_tags || []);
+  const otherTags = allTags.filter(t => !BIG_THREE_TAGS.includes(t));
+
+  document.getElementById("stats-body").innerHTML = `
+    <div class="stat-tiles">
+      <div class="stat-tile" title="${{total.toLocaleString()}} words"><div class="stat-num">${{fmtBig(total)}}</div><div class="stat-cap">words</div></div>
+      <div class="stat-tile"><div class="stat-num">${{FICS.length}}</div><div class="stat-cap">fics</div></div>
+      <div class="stat-tile"><div class="stat-num">${{authors}}</div><div class="stat-cap">authors</div></div>
+      <div class="stat-tile" title="${{avg.toLocaleString()}} words"><div class="stat-num">${{fmtBig(avg)}}</div><div class="stat-cap">avg length</div></div>
+    </div>
+    <p class="stat-fun">That's about <b>${{Math.round(total / 90000).toLocaleString()}}</b> novels' worth, or
+      <b>${{Math.round(total / 250 / 60 / 24)}}</b> days of nonstop reading at 250 words a minute.</p>
+
+    <div class="stats-section">
+      <h3>Longest &amp; shortest</h3>
+      ${{ficLine("Longest", withWords[0])}}
+      ${{ficLine("Shortest", withWords[withWords.length - 1])}}
+    </div>
+
+    <div class="stats-section">
+      <h3>Status</h3>
+      <div class="split-bar">
+        <div style="width:${{donePct.toFixed(1)}}%;background:#60b4cc"></div>
+        <div style="flex:1;background:#a888d8"></div>
+      </div>
+      <div class="split-legend">
+        <span><i style="background:#60b4cc"></i>Complete ${{complete}}</span>
+        <span><i style="background:#a888d8"></i>In progress ${{wip}}</span>
+      </div>
+    </div>
+
+    <div class="stats-section">
+      <h3>Ratings</h3>
+      ${{barRows(ratings, {{ colors: RATING_COLORS }})}}
+    </div>
+
+    <div class="stats-section">
+      <h3>Most common tags</h3>
+      ${{barRows(topCounts(allTags, 10), {{ key: "tag" }})}}
+    </div>
+
+    <div class="stats-section">
+      <h3>Most common tags that aren't smut, fluff, or angst</h3>
+      ${{barRows(topCounts(otherTags, 10), {{ key: "tag" }})}}
+    </div>
+
+    <div class="stats-section">
+      <h3>Most archived authors</h3>
+      ${{barRows(topCounts(FICS.map(f => f.author), 10), {{ key: "author" }})}}
+    </div>
+  `;
+}}
+
+let pinned = null;  // {{ key: "tag" | "author", val }}, set by clicking a label in the stats dialog
+const statsDialog = document.getElementById("stats-dialog");
+
+document.getElementById("stats-open").addEventListener("click", () => {{
+  buildStats();
+  statsDialog.showModal();
+}});
+document.getElementById("stats-close").addEventListener("click", () => statsDialog.close());
+statsDialog.addEventListener("click", e => {{
+  if (e.target === statsDialog) {{ statsDialog.close(); return; }}  // backdrop click
+  const btn = e.target.closest("button.bar-label[data-key]");
+  if (!btn) return;
+  pinned = {{ key: btn.dataset.key, val: btn.dataset.val }};
+  statsDialog.close();
+  render();
+  window.scrollTo({{ top: 0, behavior: "smooth" }});
+}});
+document.getElementById("pinned-filter").addEventListener("click", () => {{
+  pinned = null;
+  render();
+}});
 
 render();
 </script>
