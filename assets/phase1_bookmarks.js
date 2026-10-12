@@ -13,11 +13,22 @@
   const START_PAGE = 1;               // page to start on (change if resuming)
   const END_PAGE   = 999;             // set to the last page you want to collect
                                       // (check your bookmarks page for total count)
+  const SORT       = 'bookmarked';    // 'bookmarked' = newest bookmarks first
+                                      // 'updated'    = most recently updated fics first
+                                      // (run once each way to catch updates to old bookmarks)
+  const CHARACTER_IDS = ['596859'];   // only bookmarks tagged with these characters
+                                      // (596859 = Agatha); [] for no filter
   const DELAY_MS          = 10_000;  // 10 seconds between pages
   const RETRY_WAIT_1      = 60_000;  // first retry wait after 429
   const RETRY_WAIT_2      = 120_000; // second retry wait after 429
   const MAX_429_TOTAL     = 5;       // abort if we hit this many 429s total
   // --------------------------------------------------------------------------
+
+  const SORT_COLUMNS = { bookmarked: 'created_at', updated: 'bookmarkable_date' };
+  if (!SORT_COLUMNS[SORT]) {
+    console.error(`Unknown SORT '${SORT}' — use one of: ${Object.keys(SORT_COLUMNS).join(', ')}`);
+    return;
+  }
 
   const results = [];         // { url, title, author_name, author_url, collected_at, status }
   const seenIds = new Set();  // work IDs already collected, across every page
@@ -51,7 +62,7 @@
     const stamp = new Date().toISOString().slice(0, 16).replace(/[-T:]/g, ''); // YYYYMMDDHHMM
     const a     = document.createElement('a');
     a.href      = URL.createObjectURL(blob);
-    a.download  = `phase1_bookmarks_${stamp}.csv`;
+    a.download  = `phase1_bookmarks_${SORT}_${stamp}.csv`;
     a.click();
     console.log(`📥 CSV downloaded: ${rows.length} rows`);
   }
@@ -60,7 +71,14 @@
   // Returns { works: {url,title,author_name,author_url}[],
   //           status: 'success'|'not_found'|'rate_limited_fatal'|'error'|'http_NNN' }
   async function fetchPage(pageNum) {
-    const url = `https://archiveofourown.org/users/${USERNAME}/bookmarks?page=${pageNum}`;
+    const params = new URLSearchParams({
+      commit: 'Sort and Filter',
+      'bookmark_search[sort_column]': SORT_COLUMNS[SORT],
+      user_id: USERNAME,
+      page: pageNum,
+    });
+    CHARACTER_IDS.forEach(id => params.append('include_bookmark_search[character_ids][]', id));
+    const url = `https://archiveofourown.org/bookmarks?${params}`;
     console.log(`→ Fetching page ${pageNum}: ${url}`);
 
     let attempt = 0;
@@ -159,7 +177,7 @@
   // Main loop
   // --------------------------------------------------------------------------
   console.log(`🔖 AO3 Bookmark Collector — Phase 1`);
-  console.log(`   User: ${USERNAME} | Pages: ${START_PAGE}–${END_PAGE}`);
+  console.log(`   User: ${USERNAME} | Pages: ${START_PAGE}–${END_PAGE} | Sort: ${SORT}`);
   console.log('   Starting in 2 seconds...');
   await sleep(2000);
 

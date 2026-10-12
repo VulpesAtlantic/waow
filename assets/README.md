@@ -50,8 +50,10 @@ pip install requests beautifulsoup4
 3. **Edit the config at the top of `phase1_bookmarks.js`:**
    - `START_PAGE` — which page to start on (use `1` for a fresh run, or whatever page you left off on)
    - `END_PAGE` — the last page number you want to collect. Check your bookmarks page for the total page count; set this to that number. The script will also stop automatically when it finds an empty page.
+   - `SORT` — `'bookmarked'` (newest bookmarks first, AO3's default) or `'updated'` (most recently updated fics first). Old bookmarks that get new chapters won't show up on the first few pages of the `'bookmarked'` sort, so for a routine refresh run the first few pages once with each sort.
+   - `CHARACTER_IDS` — only collect bookmarks tagged with these character IDs (`596859` = Agatha). Use `[]` for no filter.
 4. Paste the entire script into the console and press Enter.
-5. Let it run. It will log progress and auto-download **`phase1_bookmarks.csv`** when done (or if it has to abort).
+5. Let it run. It will log progress and auto-download **`phase1_bookmarks_<sort>_<timestamp>.csv`** when done (or if it has to abort).
 
 **Resuming Phase 1:** Set `START_PAGE` to the page after the last successful one in your CSV.
 

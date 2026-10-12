@@ -898,6 +898,8 @@ INDEX_TEMPLATE = """\
       cursor: pointer;
       transition: color 0.15s, border-color 0.15s;
     }}
+    .random-chip {{ margin-left: auto; }}
+    .random-chip:hover {{ border-color: #2a4a34; color: #7fc98f; }}
     .rank-link {{
       position: absolute;
       top: 0.9rem;
@@ -1107,6 +1109,7 @@ INDEX_TEMPLATE = """\
   <button class="chip" data-sort="wc_desc">Words</button>
   <button class="chip" data-sort="updated">Updated</button>
   <button class="chip" data-sort="alpha">A–Z</button>
+  <button class="chip random-chip" id="random-fic" type="button" title="Open a random fic from the ones showing">⚄ Random</button>
 </div>
 
 <div class="pinned-filter" id="pinned-filter"></div>
@@ -1259,9 +1262,9 @@ function render() {{
     `${{FICS.length}} fic${{FICS.length !== 1 ? "s" : ""}} archived`;
 }}
 
-document.querySelectorAll(".sort-row .chip").forEach(chip => {{
+document.querySelectorAll(".sort-row .chip[data-sort]").forEach(chip => {{
   chip.addEventListener("click", () => {{
-    document.querySelectorAll(".sort-row .chip").forEach(c => c.classList.remove("active"));
+    document.querySelectorAll(".sort-row .chip[data-sort]").forEach(c => c.classList.remove("active"));
     chip.classList.add("active");
     sortMode = chip.dataset.sort;
     render();
@@ -1393,6 +1396,13 @@ function buildStats() {{
 
 let pinned = null;  // {{ key: "tag" | "author", val }}, set by clicking a label in the stats dialog
 const statsDialog = document.getElementById("stats-dialog");
+
+// Random: picks from the cards currently showing, so it respects search/filters
+document.getElementById("random-fic").addEventListener("click", () => {{
+  const cards = document.querySelectorAll("#card-grid a.fic-card");
+  if (!cards.length) return;
+  window.location.href = cards[Math.floor(Math.random() * cards.length)].href;
+}});
 
 document.getElementById("stats-open").addEventListener("click", () => {{
   buildStats();
