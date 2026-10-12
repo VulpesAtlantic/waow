@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Top 25 Ranker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0b0917;
+      color: #d8cff0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      min-height: 100vh;
+    }
+    a { color: #c4a8ff; }
+
+    /* ---- Header ---- */
+    .archive-header {
+      position: relative;
+      padding: 2.5rem 1rem 1.25rem;
+      text-align: center;
+      border-bottom: 1px solid #1e1838;
+      margin-bottom: 1.25rem;
+    }
+    .archive-header h1 {
+      font-family: "Cinzel", Georgia, serif;
+      font-size: clamp(1.15rem, 6vw, 1.55rem);
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      padding-left: 0.18em;
+      background: linear-gradient(90deg, #c4a8ff, #7fc98f);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .header-stars {
+      font-size: 0.8rem;
+      letter-spacing: 0.6em;
+      padding-left: 0.6em;
+      color: #5a4a8a;
+      margin-bottom: 0.4rem;
+    }
+    .header-rule {
+      height: 1px;
+      width: 180px;
+      margin: 0.7rem auto 0;
+      background: linear-gradient(90deg, transparent, #c4a8ff, #7fc98f, transparent);
+      opacity: 0.7;
+    }
+    .back-link {
+      position: absolute;
+      top: 0.9rem;
+      left: 1rem;
+      color: #3d3560;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      padding: 0.25rem 0.5rem;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .back-link:hover, .back-link:focus-visible { color: #c4a8ff; border-color: #2a2248; outline: none; }
+
+    /* ---- Tabs ---- */
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 0.4rem;
+      max-width: 660px;
+      margin: 0 auto 1.25rem;
+      padding: 0 1rem;
+    }
+    .tab {
+      flex: 1;
+      padding: 0.5rem 0.4rem;
+      border-radius: 8px;
+      border: 1px solid #1e1838;
+      background: transparent;
+      color: #6a5e8a;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .tab .n { display: block; font-size: 0.68rem; opacity: 0.75; margin-top: 0.1rem; }
+    .tab.active { background: #2a1f50; border-color: #5030a8; color: #c4a8ff; }
+
+    main { max-width: 660px; margin: 0 auto; padding: 0 1rem 4rem; }
+    main.wide { max-width: 980px; }
+    .view[hidden] { display: none; }
+
+    .intro {
+      font-size: 0.8rem;
+      color: #6a5e8a;
+      line-height: 1.55;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .intro kbd, .hint kbd {
+      font-family: inherit;
+      font-size: 0.7rem;
+      padding: 0.05rem 0.35rem;
+      border: 1px solid #2a2248;
+      border-radius: 4px;
+      color: #9080c0;
+    }
+
+    /* ---- Progress ---- */
+    .progress { margin-bottom: 1rem; }
+    .progress-bar {
+      height: 4px;
+      background: #1a1638;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, #c4a8ff, #7fc98f);
+      transition: width 0.2s;
+    }
+    .progress-text {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.72rem;
+      color: #5a5078;
+      margin-top: 0.35rem;
+    }
+
+    /* ---- Fic card ---- */
+    .fic-card {
+      background: #13102a;
+      border: 1px solid #221a40;
+      border-radius: 10px;
+      padding: 1rem 1.2rem 0.9rem;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #cbb8ff;
+      line-height: 1.3;
+      margin-bottom: 0.2rem;
+    }
+    .card-author { font-size: 0.8rem; color: #7a6da0; margin-bottom: 0.55rem; }
+    .card-meta, .card-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.35rem; }
+    .badge {
+      font-size: 0.7rem;
+      padding: 0.18rem 0.55rem;
+      border-radius: 999px;
+      border: 1px solid #2a2248;
+      background: #1a1638;
+      color: #9080c0;
+      white-space: nowrap;
+    }
+    .badge.rating-G { color: #72cc80; border-color: #2a4030; background: #111e18; }
+    .badge.rating-T { color: #d4b86a; border-color: #3a3018; background: #1c1a10; }
+    .badge.rating-M { color: #d48860; border-color: #3a2418; background: #1c1310; }
+    .badge.rating-E { color: #d46880; border-color: #3a1828; background: #1c1018; }
+    .badge.complete { color: #60b4cc; border-color: #1c3a48; background: #0e1e28; }
+    .badge.wip      { color: #a888d8; border-color: #2a1e48; background: #150e28; }
+    .badge.words    { color: #6a6090; border-color: #201c38; background: transparent; }
+    .badge.tag      { color: #7a70a0; border-color: #1e1a36; background: transparent; }
+    .card-summary {
+      font-size: 0.8rem;
+      color: #8878b0;
+      line-height: 1.55;
+      margin-top: 0.3rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .card-summary.open { -webkit-line-clamp: unset; display: block; }
+    .card-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: auto;
+      padding-top: 0.6rem;
+      font-size: 0.72rem;
+    }
+    .card-foot a { color: #6a5e8a; text-decoration: none; }
+    .card-foot a:hover { color: #c4a8ff; }
+    .more-btn {
+      background: none;
+      border: none;
+      color: #5a5078;
+      font-size: 0.72rem;
+      cursor: pointer;
+      padding: 0;
+    }
+    .more-btn:hover { color: #c4a8ff; }
+
+    /* ---- Buttons ---- */
+    .btn-row { display: flex; gap: 0.5rem; margin-top: 0.9rem; }
+    .btn {
+      flex: 1;
+      padding: 0.7rem 0.5rem;
+      border-radius: 8px;
+      border: 1px solid #2a2248;
+      background: #17112b;
+      color: #9080c0;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .btn:hover { border-color: #5030a8; color: #c4a8ff; }
+    .btn:disabled { opacity: 0.35; cursor: default; }
+    .btn.yes { border-color: #2a4a34; color: #7fc98f; background: #0f1d15; }
+    .btn.yes:hover { border-color: #7fc98f; }
+    .btn.no  { border-color: #3a1828; color: #d46880; background: #1a0f16; }
+    .btn.no:hover { border-color: #d46880; }
+    .btn.small { flex: 0 0 auto; padding: 0.45rem 0.8rem; font-size: 0.75rem; }
+    .hint { font-size: 0.7rem; color: #3d3560; text-align: center; margin-top: 0.6rem; }
+
+    .done-box {
+      text-align: center;
+      padding: 2rem 1rem;
+      border: 1px dashed #2a2248;
+      border-radius: 10px;
+      color: #8878b0;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    .done-box .btn { flex: none; display: inline-block; margin-top: 0.9rem; padding: 0.6rem 1.4rem; }
+
+    /* ---- Duel ---- */
+    .duel {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 0.75rem;
+      align-items: stretch;
+    }
+    .duel .vs {
+      align-self: center;
+      font-family: "Cinzel", Georgia, serif;
+      color: #3d3560;
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+    }
+    .duel .fic-card { cursor: pointer; transition: border-color 0.15s, background 0.15s; }
+    .duel .fic-card:hover, .duel .fic-card:focus-visible {
+      border-color: #7fc98f;
+      background: #151a2a;
+      outline: none;
+    }
+    .pick-label {
+      font-size: 0.7rem;
+      color: #3d3560;
+      text-align: center;
+      margin-top: 0.5rem;
+      letter-spacing: 0.06em;
+    }
+    .duel .fic-card:hover .pick-label { color: #7fc98f; }
+    @media (max-width: 640px) {
+      .duel { grid-template-columns: 1fr; }
+      .duel .vs { justify-self: center; }
+      .duel .card-summary { -webkit-line-clamp: 3; }
+    }
+
+    /* ---- Ranking list ---- */
+    .rank-tools { display: flex; flex-wrap: wrap; gap: 0.4rem; justify-content: center; margin-bottom: 1rem; }
+    .chip {
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid #1e1838;
+      background: transparent;
+      color: #6a5e8a;
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .chip:hover { border-color: #5030a8; color: #c4a8ff; }
+    .chip.active { background: #2a1f50; border-color: #5030a8; color: #c4a8ff; }
+    .rank-list { list-style: none; display: flex; flex-direction: column; gap: 0.35rem; }
+    .rank-row {
+      display: grid;
+      grid-template-columns: 2.2rem 1fr auto;
+      gap: 0.6rem;
+      align-items: center;
+      padding: 0.55rem 0.75rem;
+      background: #13102a;
+      border: 1px solid #1e1838;
+      border-radius: 8px;
+    }
+    .rank-row.cut { border-top: 2px solid #5030a8; margin-top: 0.6rem; }
+    .rank-row.below { opacity: 0.55; }
+    .rank-num {
+      font-family: "Cinzel", Georgia, serif;
+      color: #6a5e8a;
+      text-align: right;
+      font-size: 0.9rem;
+    }
+    .rank-row:nth-child(-n+3) .rank-num { color: #c4a8ff; }
+    .rank-title { font-size: 0.88rem; color: #cbb8ff; text-decoration: none; line-height: 1.3; }
+    .rank-title:hover { text-decoration: underline; }
+    .rank-sub { font-size: 0.7rem; color: #5a5078; margin-top: 0.1rem; }
+    .rank-sub .shaky { color: #d4b86a; }
+    .x-btn {
+      background: none;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      color: #3d3560;
+      cursor: pointer;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.45rem;
+    }
+    .x-btn:hover { color: #d46880; border-color: #3a1828; }
+    .x-btn.add:hover { color: #7fc98f; border-color: #2a4a34; }
+
+    .settled {
+      font-size: 0.75rem;
+      color: #6a5e8a;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    /* ---- Footer tools ---- */
+    .data-tools {
+      max-width: 660px;
+      margin: 2.5rem auto 0;
+      padding: 1rem 1rem 3rem;
+      border-top: 1px solid #1e1838;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      justify-content: center;
+    }
+    .data-tools .chip.danger:hover { border-color: #3a1828; color: #d46880; }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 1.5rem;
+      transform: translateX(-50%) translateY(1rem);
+      background: #2a1f50;
+      border: 1px solid #5030a8;
+      color: #d8cff0;
+      font-size: 0.8rem;
+      padding: 0.55rem 1rem;
+      border-radius: 8px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s, transform 0.2s;
+      z-index: 10;
+    }
+    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+    .toast button {
+      background: none;
+      border: none;
+      color: #7fc98f;
+      margin-left: 0.6rem;
+      cursor: pointer;
+      font-size: 0.8rem;
+      pointer-events: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="archive-header">
+  <a class="back-link" href="index.html">← archive</a>
+  <div class="header-stars" aria-hidden="true">✦ ⋆ ♛ ⋆ ✦</div>
+  <h1>Top 25</h1>
+  <div class="header-rule"></div>
+</div>
+
+<nav class="tabs" role="tablist">
+  <button class="tab" data-view="shortlist" role="tab">1 · Shortlist<span class="n" id="tab-n-shortlist"></span></button>
+  <button class="tab" data-view="duel" role="tab">2 · Matchups<span class="n" id="tab-n-duel"></span></button>
+  <button class="tab" data-view="ranking" role="tab">3 · Top 25<span class="n" id="tab-n-ranking"></span></button>
+</nav>
+
+<main id="main">
+  <!-- Shortlist -->
+  <section class="view" id="view-shortlist">
+    <p class="intro">Go fast. Is this one even <em>in the running</em> for your top 25?<br>
+      <kbd>→</kbd> contender &nbsp; <kbd>←</kbd> nope &nbsp; <kbd>Z</kbd> undo</p>
+    <div class="progress">
+      <div class="progress-bar"><div class="progress-fill" id="sl-fill"></div></div>
+      <div class="progress-text"><span id="sl-progress"></span><span id="sl-yes"></span></div>
+    </div>
+    <div id="sl-body"></div>
+  </section>
+
+  <!-- Duel -->
+  <section class="view" id="view-duel">
+    <p class="intro">Which do you love more? Go with your gut.<br>
+      <kbd>←</kbd> left &nbsp; <kbd>→</kbd> right &nbsp; <kbd>↓</kbd> too close &nbsp; <kbd>S</kbd> skip &nbsp; <kbd>Z</kbd> undo</p>
+    <p class="settled" id="duel-settled"></p>
+    <div id="duel-body"></div>
+  </section>
+
+  <!-- Ranking -->
+  <section class="view" id="view-ranking">
+    <p class="settled" id="rank-settled"></p>
+    <div class="rank-tools">
+      <button class="chip" id="copy-list">Copy top 25</button>
+      <button class="chip" id="toggle-all">Show all contenders</button>
+    </div>
+    <ol class="rank-list" id="rank-list"></ol>
+  </section>
+</main>
+
+<div class="data-tools">
+  <button class="chip" id="export-btn">Back up progress</button>
+  <button class="chip" id="import-btn">Restore backup</button>
+  <input type="file" id="import-file" accept="application/json" hidden>
+  <button class="chip danger" id="reset-duels">Reset matchups</button>
+  <button class="chip danger" id="reset-all">Start over</button>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ======================================================================
+   State — everything lives in localStorage, keyed by AO3 workID
+   (filenames can change, workIDs don't).
+   ====================================================================== */
+const STORE_KEY = "ficRank.v1";
+const TOP_N = 25;
+
+let FICS = {};          // workID -> fic
+let ALL_IDS = [];       // every workID in the archive
+let state = {
+  order: [],            // shuffled shortlist queue
+  decisions: {},        // workID -> "yes" | "no"
+  slLog: [],            // shortlist decision order (for undo)
+  matches: [],          // {a, b, r} r: 1 = a wins, 0 = b wins, 0.5 = too close
+  view: "shortlist",
+};
+let showAll = false;
+let currentPair = null;
+let lastPairKey = null;
+
+const workId = f => (f.filename || "").split("_")[0];
+
+function load() {
+  try {
+    const raw = localStorage.getItem(STORE_KEY);
+    if (raw) state = Object.assign(state, JSON.parse(raw));
+  } catch (e) { /* private mode etc — start fresh */ }
+}
+function save() {
+  try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) {}
+}
+
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+/* Keep the queue in sync with the archive: drop removed fics,
+   append newly added ones (shuffled) so they show up for sorting. */
+function syncOrder() {
+  const known = new Set(ALL_IDS);
+  state.order = state.order.filter(id => known.has(id));
+  const inOrder = new Set(state.order);
+  const fresh = shuffle(ALL_IDS.filter(id => !inOrder.has(id)));
+  state.order.push(...fresh);
+  for (const id of Object.keys(state.decisions)) if (!known.has(id)) delete state.decisions[id];
+  state.slLog = state.slLog.filter(id => known.has(id));
+  state.matches = state.matches.filter(m => known.has(m.a) && known.has(m.b));
+}
+
+const contenders = () => ALL_IDS.filter(id => state.decisions[id] === "yes");
+const undecided  = () => state.order.filter(id => !state.decisions[id]);
+
+/* ======================================================================
+   Ranking model — Bradley-Terry fitted with the MM algorithm.
+   Order-independent (unlike Elo), so undo is just "pop the last match".
+   Every fic gets a virtual win + loss against an average opponent so
+   undefeated / winless fics don't run off to infinity.
+   ====================================================================== */
+function fit(ids) {
+  const idx = new Map(ids.map((id, i) => [id, i]));
+  const n = ids.length;
+  const wins = new Float64Array(n).fill(1);   // prior: 1 virtual win
+  const games = Array.from({ length: n }, () => new Map());
+  const played = new Float64Array(n);
+  const record = ids.map(() => ({ w: 0, l: 0, t: 0 }));
+
+  for (const m of state.matches) {
+    const i = idx.get(m.a), j = idx.get(m.b);
+    if (i === undefined || j === undefined) continue;
+    wins[i] += m.r; wins[j] += 1 - m.r;
+    games[i].set(j, (games[i].get(j) || 0) + 1);
+    games[j].set(i, (games[j].get(i) || 0) + 1);
+    played[i]++; played[j]++;
+    if (m.r === 1) { record[i].w++; record[j].l++; }
+    else if (m.r === 0) { record[i].l++; record[j].w++; }
+    else { record[i].t++; record[j].t++; }
+  }
+
+  let p = new Float64Array(n).fill(1);
+  for (let iter = 0; iter < 300; iter++) {
+    const next = new Float64Array(n);
+    let maxDelta = 0;
+    for (let i = 0; i < n; i++) {
+      let denom = 2 / (p[i] + 1);               // prior: 2 virtual games vs strength 1
+      for (const [j, c] of games[i]) denom += c / (p[i] + p[j]);
+      next[i] = wins[i] / denom;
+    }
+    // normalise to geometric mean 1
+    let logSum = 0;
+    for (let i = 0; i < n; i++) logSum += Math.log(next[i]);
+    const g = Math.exp(logSum / n);
+    for (let i = 0; i < n; i++) {
+      next[i] /= g;
+      maxDelta = Math.max(maxDelta, Math.abs(next[i] - p[i]));
+    }
+    p = next;
+    if (maxDelta < 1e-7) break;
+  }
+
+  return ids
+    .map((id, i) => ({ id, score: Math.log(p[i]), played: played[i], rec: record[i], opp: games[i], i }))
+    .sort((x, y) => y.score - x.score || y.played - x.played);
+}
+
+/* How many matchups a fic needs before we treat its spot as settled. */
+const SETTLE_AT = 6;
+
+/* Pick the next pair, focusing effort on the top of the list:
+   anything currently ranked in the top ~35, plus anything with too few
+   matchups to know where it belongs. */
+function nextPair() {
+  const ids = contenders();
+  if (ids.length < 2) return null;
+  const ranked = fit(ids);
+  const zone = Math.min(ranked.length, TOP_N + 10);
+  const relevant = ranked.filter((r, k) => k < zone || r.played < 3);
+
+  // Fic A: least-played in the relevant set (random among ties)
+  const minPlayed = Math.min(...relevant.map(r => r.played));
+  const pool = relevant.filter(r => r.played <= minPlayed + (minPlayed >= SETTLE_AT ? 2 : 0));
+  const A = pool[Math.floor(Math.random() * pool.length)];
+  const posA = ranked.indexOf(A);
+
+  // Fic B: a close neighbour by rank, preferring ones A hasn't met yet
+  const others = ranked.filter(r => r !== A);
+  others.sort((x, y) => {
+    const fresh = (A.opp.has(x.i) ? 1 : 0) - (A.opp.has(y.i) ? 1 : 0);
+    if (fresh) return fresh;
+    return Math.abs(ranked.indexOf(x) - posA) - Math.abs(ranked.indexOf(y) - posA);
+  });
+  let candidates = others.slice(0, 4);
+  const key = (a, b) => [a, b].sort().join("|");
+  const notRepeat = candidates.filter(c => key(A.id, c.id) !== lastPairKey);
+  if (notRepeat.length) candidates = notRepeat;
+  const B = candidates[Math.floor(Math.random() * candidates.length)];
+
+  return Math.random() < 0.5 ? [A.id, B.id] : [B.id, A.id];
+}
+
+/* ======================================================================
+   Rendering helpers
+   ====================================================================== */
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+function fmtWords(w) {
+  const n = parseInt(w, 10);
+  if (!n) return "";
+  return n >= 1000 ? `${Math.round(n / 1000)}k words` : `${n} words`;
+}
+
+function cardHTML(id, { pickLabel } = {}) {
+  const f = FICS[id];
+  const r = (f.rating || "")[0];
+  const tags = (f.custom_tags || []).slice(0, 6);
+  const complete = (f.status || "").toLowerCase() === "complete";
+  return `
+    <div class="card-title">${esc(f.title || "Untitled")}</div>
+    <div class="card-author">by ${esc(f.author || "Anonymous")}</div>
+    <div class="card-meta">
+      ${f.rating ? `<span class="badge rating-${esc(r)}">${esc(f.rating)}</span>` : ""}
+      ${f.status ? `<span class="badge ${complete ? "complete" : "wip"}">${esc(f.status)}</span>` : ""}
+      ${f.word_count ? `<span class="badge words">${fmtWords(f.word_count)}</span>` : ""}
+    </div>
+    ${tags.length ? `<div class="card-tags">${tags.map(t => `<span class="badge tag">${esc(t)}</span>`).join("")}</div>` : ""}
+    ${f.summary ? `<p class="card-summary">${esc(f.summary)}</p>` : ""}
+    <div class="card-foot">
+      ${f.summary && f.summary.length > 280 ? `<button class="more-btn" type="button">more ▾</button>` : "<span></span>"}
+      <a href="archive/${esc(f.filename)}" target="_blank" rel="noopener">open fic ↗</a>
+    </div>
+    ${pickLabel ? `<div class="pick-label">${pickLabel}</div>` : ""}`;
+}
+
+// summary expand / link clicks shouldn't count as picking the card
+document.addEventListener("click", e => {
+  const more = e.target.closest(".more-btn");
+  if (more) {
+    e.stopPropagation();
+    const s = more.closest(".fic-card").querySelector(".card-summary");
+    s.classList.toggle("open");
+    more.textContent = s.classList.contains("open") ? "less ▴" : "more ▾";
+  }
+}, true);
+
+let toastTimer;
+function toast(msg, undoFn) {
+  const t = document.getElementById("toast");
+  t.innerHTML = esc(msg) + (undoFn ? `<button type="button">undo</button>` : "");
+  if (undoFn) t.querySelector("button").onclick = () => { undoFn(); t.classList.remove("show"); };
+  t.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove("show"), 2600);
+}
+
+/* ======================================================================
+   Views
+   ====================================================================== */
+function renderTabs() {
+  const c = contenders().length;
+  const u = undecided().length;
+  document.getElementById("tab-n-shortlist").textContent = u ? `${u} left` : `${c} picked`;
+  document.getElementById("tab-n-duel").textContent = `${state.matches.length} done`;
+  document.getElementById("tab-n-ranking").textContent = c ? `${c} contenders` : "";
+  document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.view === state.view));
+  document.querySelectorAll(".view").forEach(v => v.hidden = v.id !== `view-${state.view}`);
+  document.getElementById("main").classList.toggle("wide", state.view === "duel");
+}
+
+function renderShortlist() {
+  const total = ALL_IDS.length;
+  const left = undecided();
+  const done = total - left.length;
+  const yes = contenders().length;
+  document.getElementById("sl-fill").style.width = `${(done / total) * 100}%`;
+  document.getElementById("sl-progress").textContent = `${done} / ${total} sorted`;
+  document.getElementById("sl-yes").textContent = `${yes} contender${yes === 1 ? "" : "s"}`;
+
+  const body = document.getElementById("sl-body");
+  if (!left.length) {
+    body.innerHTML = `<div class="done-box">
+      All ${total} sorted — you picked <strong>${yes}</strong> contenders.
+      ${yes < TOP_N ? `<br>That's fewer than ${TOP_N}, so some spots will be easy. You can still rank them.` : ""}
+      <br><button class="btn yes" type="button" id="go-duel">Start matchups →</button>
+      <div class="btn-row" style="justify-content:center"><button class="btn small" type="button" id="sl-undo-done" ${state.slLog.length ? "" : "disabled"}>Undo last</button></div>
+    </div>`;
+    document.getElementById("go-duel").onclick = () => setView("duel");
+    document.getElementById("sl-undo-done").onclick = undoShortlist;
+    return;
+  }
+  const id = left[0];
+  body.innerHTML = `
+    <div class="fic-card">${cardHTML(id)}</div>
+    <div class="btn-row">
+      <button class="btn no" type="button" id="sl-no">← Nope</button>
+      <button class="btn yes" type="button" id="sl-yes-btn">Contender →</button>
+    </div>
+    <div class="btn-row">
+      <button class="btn small" type="button" id="sl-undo" ${state.slLog.length ? "" : "disabled"}>Undo</button>
+      ${yes >= 2 ? `<button class="btn small" type="button" id="sl-skip-ahead" style="margin-left:auto">Start matchups now →</button>` : ""}
+    </div>
+    <p class="hint">Not sure? Lean <em>contender</em> — matchups will sort it out.</p>`;
+  document.getElementById("sl-no").onclick = () => decide(id, "no");
+  document.getElementById("sl-yes-btn").onclick = () => decide(id, "yes");
+  document.getElementById("sl-undo").onclick = undoShortlist;
+  const ahead = document.getElementById("sl-skip-ahead");
+  if (ahead) ahead.onclick = () => setView("duel");
+}
+
+function decide(id, v) {
+  state.decisions[id] = v;
+  state.slLog.push(id);
+  save(); render();
+}
+function undoShortlist() {
+  const id = state.slLog.pop();
+  if (!id) return;
+  delete state.decisions[id];
+  // put it back at the front of the queue
+  state.order = [id, ...state.order.filter(x => x !== id)];
+  save(); render();
+}
+
+function settledText(ranked) {
+  const top = ranked.slice(0, TOP_N);
+  if (!top.length) return "";
+  const settled = top.filter(r => r.played >= SETTLE_AT).length;
+  return `${state.matches.length} matchups · ${settled} of your top ${top.length} have ${SETTLE_AT}+ matchups` +
+    (settled === top.length ? " — looking solid ✦" : "");
+}
+
+function renderDuel() {
+  const body = document.getElementById("duel-body");
+  const ids = contenders();
+  if (ids.length < 2) {
+    currentPair = null;
+    document.getElementById("duel-settled").textContent = "";
+    body.innerHTML = `<div class="done-box">Pick at least two contenders in the Shortlist first.
+      <br><button class="btn" type="button" id="go-sl">← Shortlist</button></div>`;
+    document.getElementById("go-sl").onclick = () => setView("shortlist");
+    return;
+  }
+  document.getElementById("duel-settled").textContent = settledText(fit(ids));
+  if (!currentPair || !currentPair.every(id => state.decisions[id] === "yes")) currentPair = nextPair();
+  const [a, b] = currentPair;
+  body.innerHTML = `
+    <div class="duel">
+      <div class="fic-card" tabindex="0" data-pick="1">${cardHTML(a, { pickLabel: "pick this one" })}</div>
+      <div class="vs">vs</div>
+      <div class="fic-card" tabindex="0" data-pick="0">${cardHTML(b, { pickLabel: "pick this one" })}</div>
+    </div>
+    <div class="btn-row">
+      <button class="btn small" type="button" id="duel-undo" ${state.matches.length ? "" : "disabled"}>Undo</button>
+      <button class="btn" type="button" id="duel-tie">Too close to call</button>
+      <button class="btn small" type="button" id="duel-skip">Skip</button>
+    </div>`;
+  body.querySelectorAll("[data-pick]").forEach(card => {
+    card.addEventListener("click", e => {
+      if (e.target.closest("a, .more-btn")) return;
+      record(Number(card.dataset.pick));
+    });
+    card.addEventListener("keydown", e => { if (e.key === "Enter") record(Number(card.dataset.pick)); });
+  });
+  document.getElementById("duel-tie").onclick = () => record(0.5);
+  document.getElementById("duel-skip").onclick = skipPair;
+  document.getElementById("duel-undo").onclick = undoMatch;
+}
+
+function record(r) {
+  if (!currentPair) return;
+  const [a, b] = currentPair;
+  state.matches.push({ a, b, r });
+  lastPairKey = [a, b].sort().join("|");
+  currentPair = null;
+  save(); render();
+}
+function skipPair() {
+  if (currentPair) lastPairKey = [...currentPair].sort().join("|");
+  currentPair = null;
+  render();
+}
+function undoMatch() {
+  const m = state.matches.pop();
+  if (!m) return;
+  currentPair = [m.a, m.b];
+  save(); render();
+}
+
+function renderRanking() {
+  const ids = contenders();
+  const list = document.getElementById("rank-list");
+  const ranked = ids.length ? fit(ids) : [];
+  document.getElementById("rank-settled").textContent = ranked.length
+    ? settledText(ranked)
+    : "No contenders yet — start in the Shortlist.";
+  document.getElementById("toggle-all").textContent = showAll ? "Show top 25 only" : `Show all ${ranked.length} contenders`;
+  document.getElementById("toggle-all").hidden = ranked.length <= TOP_N;
+
+  const rows = showAll ? ranked : ranked.slice(0, TOP_N);
+  list.innerHTML = rows.map((r, k) => {
+    const f = FICS[r.id];
+    const { w, l, t } = r.rec;
+    const shaky = r.played < SETTLE_AT;
+    return `<li class="rank-row${k === TOP_N ? " cut" : ""}${k >= TOP_N ? " below" : ""}">
+      <span class="rank-num">${k + 1}</span>
+      <div>
+        <a class="rank-title" href="archive/${esc(f.filename)}" target="_blank" rel="noopener">${esc(f.title || "Untitled")}</a>
+        <div class="rank-sub">${esc(f.author || "")} · ${w}–${l}${t ? `–${t}` : ""}${shaky ? ` · <span class="shaky">needs more matchups</span>` : ""}</div>
+      </div>
+      <button class="x-btn" type="button" data-drop="${esc(r.id)}" title="Remove from contenders">✕</button>
+    </li>`;
+  }).join("");
+  list.querySelectorAll("[data-drop]").forEach(btn => btn.onclick = () => dropContender(btn.dataset.drop));
+}
+
+function dropContender(id) {
+  const prev = state.decisions[id];
+  state.decisions[id] = "no";
+  if (currentPair && currentPair.includes(id)) currentPair = null;
+  save(); render();
+  toast(`Removed “${FICS[id].title}”`, () => { state.decisions[id] = prev; save(); render(); });
+}
+
+function render() {
+  renderTabs();
+  if (state.view === "shortlist") renderShortlist();
+  else if (state.view === "duel") renderDuel();
+  else renderRanking();
+}
+function setView(v) {
+  state.view = v;
+  save(); render();
+  window.scrollTo({ top: 0 });
+}
+
+/* ======================================================================
+   Events
+   ====================================================================== */
+document.querySelectorAll(".tab").forEach(t => t.onclick = () => setView(t.dataset.view));
+
+document.addEventListener("keydown", e => {
+  if (e.metaKey || e.ctrlKey || e.altKey || e.target.closest?.("input, textarea")) return;
+  const k = e.key;
+  if (state.view === "shortlist") {
+    const id = undecided()[0];
+    if (k === "ArrowRight" && id) decide(id, "yes");
+    else if (k === "ArrowLeft" && id) decide(id, "no");
+    else if (k.toLowerCase() === "z") undoShortlist();
+    else return;
+  } else if (state.view === "duel" && currentPair) {
+    if (k === "ArrowLeft") record(1);
+    else if (k === "ArrowRight") record(0);
+    else if (k === "ArrowDown") record(0.5);
+    else if (k.toLowerCase() === "s") skipPair();
+    else if (k.toLowerCase() === "z") undoMatch();
+    else return;
+  } else return;
+  e.preventDefault();
+});
+
+document.getElementById("toggle-all").onclick = () => { showAll = !showAll; renderRanking(); };
+
+document.getElementById("copy-list").onclick = async () => {
+  const ranked = fit(contenders()).slice(0, TOP_N);
+  const text = ranked.map((r, k) => `${k + 1}. ${FICS[r.id].title} — ${FICS[r.id].author}`).join("\n");
+  try { await navigator.clipboard.writeText(text); toast("Copied top 25"); }
+  catch { toast("Couldn't access clipboard"); }
+};
+
+document.getElementById("export-btn").onclick = () => {
+  const blob = new Blob([JSON.stringify(state, null, 1)], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `fic-ranking-${new Date().toISOString().slice(0, 10)}.json`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+};
+document.getElementById("import-btn").onclick = () => document.getElementById("import-file").click();
+document.getElementById("import-file").onchange = async e => {
+  const file = e.target.files[0];
+  if (!file) return;
+  try {
+    const data = JSON.parse(await file.text());
+    if (!data.decisions || !Array.isArray(data.matches)) throw new Error("bad file");
+    state = Object.assign(state, data);
+    syncOrder(); currentPair = null; save(); render();
+    toast("Backup restored");
+  } catch { toast("That doesn't look like a ranking backup"); }
+  e.target.value = "";
+};
+document.getElementById("reset-duels").onclick = () => {
+  if (!confirm(`Clear all ${state.matches.length} matchups? Your shortlist stays.`)) return;
+  state.matches = []; currentPair = null; save(); render();
+};
+document.getElementById("reset-all").onclick = () => {
+  if (!confirm("Start completely over? This clears your shortlist and all matchups.")) return;
+  state = { order: shuffle([...ALL_IDS]), decisions: {}, slLog: [], matches: [], view: "shortlist" };
+  currentPair = null; save(); render();
+};
+
+/* ======================================================================
+   Boot
+   ====================================================================== */
+fetch("fic_data.json", { cache: "no-cache" })
+  .then(r => r.json())
+  .then(data => {
+    const fics = Array.isArray(data) ? data : data.fics;
+    for (const f of fics) {
+      const id = workId(f);
+      if (id) FICS[id] = f;
+    }
+    ALL_IDS = Object.keys(FICS);
+    load();
+    syncOrder();
+    save();
+    render();
+  })
+  .catch(() => {
+    document.getElementById("main").innerHTML =
+      `<div class="done-box">Couldn't load fic_data.json.<br>This page needs to be opened through the archive's web server, not as a local file.</div>`;
+  });
+</script>
+</body>
+</html>

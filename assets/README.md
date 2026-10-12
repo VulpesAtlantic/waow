@@ -11,6 +11,7 @@ A pipeline for archiving your AO3 bookmarks as HTML files: Phases 1–3 collect 
 | `phase1_bookmarks.js` | Collects work URLs from your bookmarks pages |
 | `phase2_download_links.js` | Visits each work and grabs the HTML download link |
 | `phase3_download.py` | Downloads the HTML files into `staging/` using your exported cookies |
+| `readings_history.js` | Standalone: collects your reading history (work, last visited, visit count) into a CSV |
 
 ---
 
@@ -205,6 +206,20 @@ Re-extracts metadata for every file in `archive/`, re-injects meta tags, re-appl
 - hand-fixing an archive file (e.g. wrapping a summary in `<blockquote>` so it gets picked up)
 
 Safe to re-run as many times as needed. It rewrites every archive file, so expect a big git diff; the story text itself doesn't change.
+
+---
+
+## Reading history (`readings_history.js`)
+
+Separate from the bookmark pipeline. One pass over `https://archiveofourown.org/users/willowphile/readings?page=N`, pulling each work's URL, title, last-visited date (as `YYYY-MM-DD`), and visit count. Same console workflow as Phase 1:
+
+1. While logged into AO3 in Chrome, set `START_PAGE` / `END_PAGE` at the top of the script.
+2. Paste the whole script into the DevTools console.
+3. It downloads `readings_p{start}-{end}_{timestamp}.csv` when done (it also stops on its own at the first empty page).
+
+**When it gives up** (too many 429s, or a page that still fails after the 1 min / 2 min / 5 min backoffs), it saves everything collected so far as `readings_p{start}-{last}_PARTIAL_resume_at_p{N}_….csv` and prints `▶ Next time, set START_PAGE = N`. Every page before N is complete. Run `window.stopReadings = true` in the console to stop early on purpose; it finishes the current page and saves the same way.
+
+Each row has a `page` column. Duplicates are removed within a run, but not across runs, so a work can show up in two partial CSVs if your history shifted between them. When merging, keep the first copy.
 
 ---
 

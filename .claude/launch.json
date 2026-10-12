@@ -5,6 +5,11 @@
       "name": "archive",
       "url": "http://localhost:8765",
       "port": 8765
+    },
+    {
+      "name": "wishlist",
+      "url": "http://localhost:8770",
+      "port": 8770
     }
   ]
 }

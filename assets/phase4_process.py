@@ -898,6 +898,20 @@ INDEX_TEMPLATE = """\
       cursor: pointer;
       transition: color 0.15s, border-color 0.15s;
     }}
+    .rank-link {{
+      position: absolute;
+      top: 0.9rem;
+      left: 1rem;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      color: #3d3560;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      padding: 0.25rem 0.5rem;
+      text-decoration: none;
+      transition: color 0.15s, border-color 0.15s;
+    }}
+    .rank-link:hover, .rank-link:focus-visible {{ color: #c4a8ff; border-color: #2a2248; outline: none; }}
     .stats-link:hover, .stats-link:focus-visible {{
       color: #c4a8ff;
       border-color: #2a2248;
@@ -1065,6 +1079,7 @@ INDEX_TEMPLATE = """\
 
 <div class="archive-header">
   <button class="stats-link" id="stats-open" type="button" title="Archive stats">✦ stats</button>
+  <a class="rank-link" href="rank.html" title="Rank your top 25">♛ top 25</a>
   <div class="header-stars" aria-hidden="true">✦ ⋆ ☾ ⋆ ✦</div>
   <h1>Agathario Archive</h1>
   <div class="header-rule"></div>
