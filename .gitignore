@@ -5,3 +5,10 @@ fic_data.json.tmp-*
 # AO3 login cookies — never commit
 assets/cookies.json
 assets/spicy fic notes.txt
+# Purged from history — keep local only
+assets/phase2_download_links_*.csv
+assets/zOldFiles/
+assets/automatedPullTests/
+assets/quote ideas.txt
+assets/googleDocConverter.py
+renamer.log
