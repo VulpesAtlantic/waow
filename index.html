@@ -61,6 +61,43 @@
       margin-top: 0.2rem;
     }
 
+    /* ---- Visitor banner ---- */
+    .visitor-banner {
+      max-width: 660px;
+      margin: -0.75rem auto 1.5rem;
+      padding: 0 1rem;
+    }
+    .visitor-banner summary {
+      list-style: none;
+      cursor: pointer;
+      user-select: none;
+      display: inline-block;
+      font-size: 0.78rem;
+      color: #8878b0;
+      background: #13102a;
+      border: 1px solid #221a40;
+      border-left: 3px solid #5030a8;
+      border-radius: 8px;
+      padding: 0.35rem 0.9rem;
+    }
+    .visitor-banner summary::-webkit-details-marker { display: none; }
+    .visitor-banner[open] summary {
+      color: #c4a8ff;
+      border-color: #5030a8;
+    }
+    .visitor-banner p + p { margin-top: 0.6rem; }
+    .visitor-body {
+      margin-top: 0.5rem;
+      font-size: 0.78rem;
+      line-height: 1.6;
+      color: #8878b0;
+      background: #13102a;
+      border: 1px solid #221a40;
+      border-left: 3px solid #5030a8;
+      border-radius: 8px;
+      padding: 0.7rem 1rem;
+    }
+
     /* ---- Collapsible filter/search ---- */
     .filter-section {
       max-width: 660px;
@@ -467,6 +504,14 @@
   <p id="fic-count"></p>
   <p class="last-updated">last updated October 11, 2026</p>
 </div>
+
+<details class="visitor-banner">
+  <summary>for people who aren't willow ▾</summary>
+  <div class="visitor-body">
+    <p>this is an archive of fics i have downloaded over the years. some are old, some are new, some may not exist on ao3 anymore. some have been accused of ai use and have been tagged accordingly. hope you like dark mode. ☾</p>
+    <p>feel free to use the top 25 feature at the top left if you get bored. it's local to whatever machine you're on.</p>
+  </div>
+</details>
 
 <details class="filter-section">
   <summary class="filter-toggle">Filter &amp; search ▾</summary>
