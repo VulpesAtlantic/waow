@@ -11,6 +11,7 @@ What it does:
   2. Backs up each original to originals/
   3. Parses AO3 HTML: extracts title, author, ship, rating, status, summary, lastUpdated, word_count
   4. Strips inline styles, rewrites stylesheet link to ../assets/darkMode.css
+     and injects the Pendo tracking snippet into <head>
   5. Injects/updates <meta> tags for all extracted fields
   6. If a file with the same workID already exists in archive/, keeps whichever has the higher word count
   7. Writes cleaned file to archive/ using the staged filename (no renaming)
@@ -62,6 +63,27 @@ from pathlib import Path
 from bs4 import BeautifulSoup, Comment
 
 from tag_mapper import auto_tags, norm
+
+# ---------------------------------------------------------------------------
+# Tracking  (injected into the <head> of every archive page and index.html;
+# assets/add_tracking.py backfills it into existing files)
+# ---------------------------------------------------------------------------
+
+PENDO_SNIPPET = """\
+<script>
+(function(publicAppId){
+    (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
+    v=['initialize','identify','updateOptions','pageLoad','track','trackAgent'];for(w=0,x=v.length;w<x;++w)(function(m){
+        o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+        y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+publicAppId+'/pendo.js';
+        z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+
+        pendo.initialize({
+            visitor: { id: "anonymous"},
+            account: { }
+        });
+})('2238e862-9499-45dd-85a4-23c98c0f6d92');
+</script>"""
 
 # ---------------------------------------------------------------------------
 # Paths  (process.py lives in assets/, project root is one level up)
@@ -485,6 +507,9 @@ def clean_html(soup: BeautifulSoup, meta: dict) -> BeautifulSoup:
         t = soup.new_tag("title")
         t.string = meta.get("title", "Untitled")
         head.append(t)
+
+    # --- Inject tracking (after AO3 scripts were stripped above) ---
+    head.append(BeautifulSoup(PENDO_SNIPPET, "html.parser"))
 
     return soup
 
@@ -1113,6 +1138,7 @@ INDEX_TEMPLATE = """\
     }}
     .pinned-filter:empty {{ display: none; }}
   </style>
+{pendo}
 </head>
 <body>
 
@@ -1482,7 +1508,7 @@ def build_index(manifest: dict):
         last_updated = dt.strftime(f"%B {dt.day}, %Y")
     except ValueError:
         last_updated = "unknown"
-    html = INDEX_TEMPLATE.format(fics_json=fics_json, last_updated=last_updated)
+    html = INDEX_TEMPLATE.format(fics_json=fics_json, last_updated=last_updated, pendo=PENDO_SNIPPET)
     with open(INDEX_FILE, "w", encoding="utf-8") as f:
         f.write(html)
     log.info(f"index.html rebuilt ({len(manifest['fics'])} fics)")
