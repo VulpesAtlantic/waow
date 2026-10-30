@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kudos List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0b0917;
+      color: #d8cff0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      min-height: 100vh;
+    }
+    a { color: #c4a8ff; }
+
+    /* ---- Header (same as rank.html) ---- */
+    .archive-header {
+      position: relative;
+      padding: 2.5rem 1rem 1.25rem;
+      text-align: center;
+      border-bottom: 1px solid #1e1838;
+      margin-bottom: 1.25rem;
+    }
+    .archive-header h1 {
+      font-family: "Cinzel", Georgia, serif;
+      font-size: clamp(1.15rem, 6vw, 1.55rem);
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      padding-left: 0.18em;
+      background: linear-gradient(90deg, #c4a8ff, #7fc98f);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .header-stars {
+      font-size: 0.8rem;
+      letter-spacing: 0.6em;
+      padding-left: 0.6em;
+      color: #5a4a8a;
+      margin-bottom: 0.4rem;
+    }
+    .header-rule {
+      height: 1px;
+      width: 180px;
+      margin: 0.7rem auto 0;
+      background: linear-gradient(90deg, transparent, #c4a8ff, #7fc98f, transparent);
+      opacity: 0.7;
+    }
+    .back-link {
+      position: absolute;
+      top: 0.9rem;
+      left: 1rem;
+      color: #3d3560;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      padding: 0.25rem 0.5rem;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .back-link:hover, .back-link:focus-visible { color: #c4a8ff; border-color: #2a2248; outline: none; }
+
+    /* ---- List ---- */
+    main { max-width: 660px; margin: 0 auto; padding: 0 1rem 3rem; }
+    .note { color: #5a4a8a; font-size: 0.8rem; text-align: center; margin-bottom: 1rem; }
+    .empty { color: #8a7fb0; text-align: center; padding: 2rem 0; }
+    ul { list-style: none; }
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.75rem 0.9rem;
+      border: 1px solid #1e1838;
+      border-radius: 10px;
+      background: #13102a;
+      margin-bottom: 0.5rem;
+    }
+    .info { flex: 1; min-width: 0; }
+    .title { font-weight: 600; text-decoration: none; }
+    .title:hover { text-decoration: underline; }
+    .author { color: #8a7fb0; font-size: 0.85rem; }
+    .ao3 { display: block; font-size: 0.8rem; color: #7fc98f; word-break: break-all; margin-top: 0.2rem; }
+    .remove {
+      background: none;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      color: #5a4a8a;
+      font-size: 0.75rem;
+      padding: 0.25rem 0.5rem;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .remove:hover, .remove:focus-visible { color: #7fc98f; border-color: #2a4a34; outline: none; }
+  </style>
+<script>
+(function(publicAppId){
+    (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
+    v=['initialize','identify','updateOptions','pageLoad','track','trackAgent'];for(w=0,x=v.length;w<x;++w)(function(m){
+        o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+        y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+publicAppId+'/pendo.js';
+        z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+
+        pendo.initialize({
+            visitor: { id: "anonymous"},
+            account: { }
+        });
+})('2238e862-9499-45dd-85a4-23c98c0f6d92');
+</script>
+</head>
+<body>
+
+<div class="archive-header">
+  <a class="back-link" href="index.html">← archive</a>
+  <div class="header-stars" aria-hidden="true">✦ ⋆ ♡ ⋆ ✦</div>
+  <h1>Kudos List</h1>
+  <div class="header-rule"></div>
+</div>
+
+<main>
+  <p class="note">fics to go leave kudos on. saved locally on this machine.</p>
+  <ul id="list"></ul>
+</main>
+
+<script>
+/* Same storage key as assets/kudos.js (the button on each fic page) */
+const STORE_KEY = "ficKudos.v1";
+
+function load() {
+  try {
+    const data = JSON.parse(localStorage.getItem(STORE_KEY));
+    return Array.isArray(data) ? data : [];
+  } catch (e) { return []; }
+}
+function save(list) {
+  try { localStorage.setItem(STORE_KEY, JSON.stringify(list)); } catch (e) {}
+}
+
+function render() {
+  const list = load();
+  const ul = document.getElementById("list");
+  ul.innerHTML = "";
+  if (!list.length) {
+    ul.innerHTML = '<p class="empty">nothing here yet — hit the kudos button at the bottom of a fic.</p>';
+    return;
+  }
+  for (const fic of list) {
+    const li = document.createElement("li");
+    const info = document.createElement("div");
+    info.className = "info";
+
+    const title = document.createElement("a");
+    title.className = "title";
+    title.textContent = fic.title;
+    title.href = "archive/" + encodeURIComponent(fic.file);
+    info.appendChild(title);
+
+    const author = document.createElement("div");
+    author.className = "author";
+    author.textContent = "by " + fic.author;
+    info.appendChild(author);
+
+    if (fic.url) {
+      const ao3 = document.createElement("a");
+      ao3.className = "ao3";
+      ao3.href = fic.url;
+      ao3.target = "_blank";
+      ao3.rel = "noopener";
+      ao3.textContent = fic.url;
+      info.appendChild(ao3);
+    }
+
+    const remove = document.createElement("button");
+    remove.type = "button";
+    remove.className = "remove";
+    remove.textContent = "✓ done";
+    remove.title = "Remove from list";
+    remove.addEventListener("click", () => {
+      save(load().filter(f => f.id !== fic.id));
+      render();
+    });
+
+    li.append(info, remove);
+    ul.appendChild(li);
+  }
+}
+
+render();
+</script>
+</body>
+</html>

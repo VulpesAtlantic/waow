@@ -85,6 +85,8 @@ PENDO_SNIPPET = """\
 })('2238e862-9499-45dd-85a4-23c98c0f6d92');
 </script>"""
 
+KUDOS_SCRIPT_SRC = "../assets/kudos.js"
+
 # ---------------------------------------------------------------------------
 # Paths  (process.py lives in assets/, project root is one level up)
 # ---------------------------------------------------------------------------
@@ -517,6 +519,9 @@ def clean_html(soup: BeautifulSoup, meta: dict) -> BeautifulSoup:
     # --- Inject tracking (after AO3 scripts were stripped above) ---
     head.append(BeautifulSoup(PENDO_SNIPPET, "html.parser"))
 
+    # --- Kudos reminder button (assets/kudos.js; list lives on kudos.html) ---
+    head.append(soup.new_tag("script", src=KUDOS_SCRIPT_SRC, defer=""))
+
     return soup
 
 # ---------------------------------------------------------------------------
@@ -749,6 +754,9 @@ INDEX_TEMPLATE = """\
       border-radius: 8px;
       padding: 0.7rem 1rem;
     }}
+    .visitor-body p + p, .visitor-body p + ul {{ margin-top: 0.5rem; }}
+    .visitor-body ul {{ padding-left: 1.2rem; }}
+    .visitor-body li + li {{ margin-top: 0.2rem; }}
 
     /* ---- Collapsible filter/search ---- */
     .filter-section {{
@@ -982,6 +990,7 @@ INDEX_TEMPLATE = """\
       transition: color 0.15s, border-color 0.15s;
     }}
     .rank-link:hover, .rank-link:focus-visible {{ color: #c4a8ff; border-color: #2a2248; outline: none; }}
+    .kudos-link {{ top: 2.6rem; }}
     .stats-link:hover, .stats-link:focus-visible {{
       color: #c4a8ff;
       border-color: #2a2248;
@@ -1151,6 +1160,7 @@ INDEX_TEMPLATE = """\
 <div class="archive-header">
   <button class="stats-link" id="stats-open" type="button" title="Archive stats">✦ stats</button>
   <a class="rank-link" href="rank.html" title="Rank your top 25">♛ top 25</a>
+  <a class="rank-link kudos-link" href="kudos.html" title="Kudos reminders">♡ kudos list</a>
   <div class="header-stars" aria-hidden="true">✦ ⋆ ☾ ⋆ ✦</div>
   <h1>Agathario Archive</h1>
   <div class="header-rule"></div>
@@ -1159,10 +1169,18 @@ INDEX_TEMPLATE = """\
 </div>
 
 <details class="visitor-banner">
-  <summary>for people who aren't willow ▾</summary>
+  <summary>PLEASE READ IF YOU AREN'T WILLOW ▾</summary>
   <div class="visitor-body">
-    <p>this is an archive of fics i have downloaded over the years. some are old, some are new, some may not exist on ao3 anymore. some have been accused of ai use and have been tagged accordingly. hope you like dark mode. ☾</p>
-    <p>feel free to use the top 25 feature at the top left if you get bored. it's local to whatever machine you're on.</p>
+    <p>this is an archive of fics i have downloaded over the years. some are old, some are new, some may not exist on ao3 anymore.</p>
+    <p>If you are an author and do NOT want your fics here, please reach out to agathariophile on twt. same if you have a fic that you DO want me to post here.</p>
+    <p>a few notes:</p>
+    <ul>
+      <li>i think some fics here have been accused of ai use and are tagged accordingly (were..they broke and i'm working on remembering which ones they were. i may just pull them.)</li>
+      <li>feel free to use the top 25 feature at the top left if you get bored. it's local to whatever machine you're on.</li>
+      <li>each fic has a kudos reminder button at the bottom. this saves a reminder locally and can be accessed at the link at the top left of this index page.</li>
+      <li>tags on the index page are truncated. all author's tags are still intact within the fic, so please check before you read.</li>
+      <li>hope you like dark mode. ☾</li>
+    </ul>
   </div>
 </details>
 

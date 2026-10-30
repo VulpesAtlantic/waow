@@ -311,3 +311,32 @@ code {
     margin-bottom: var(--space-2);
     text-align: center;
 }
+
+/* =========================
+   Kudos reminder button (added by assets/kudos.js)
+   ========================= */
+.kudos-reminder {
+    max-width: var(--measure);
+    margin: var(--space-8) auto var(--space-8);
+    padding: 0 var(--space-4);
+    text-align: center;
+}
+.kudos-btn {
+    font: inherit;
+    font-size: 0.95rem;
+    color: var(--accent);
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: var(--space-3) var(--space-5);
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+}
+.kudos-btn:hover, .kudos-btn:focus-visible {
+    border-color: var(--accent);
+    outline: none;
+}
+.kudos-btn.saved {
+    color: var(--green);
+    border-color: var(--green);
+}
