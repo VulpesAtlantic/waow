@@ -33,7 +33,9 @@
   }
 
   function init() {
-    var file = location.pathname.split("/").pop();
+    // archive/Starmora/x.html -> "Starmora/x.html"; archive/x.html -> "x.html"
+    var m = location.pathname.match(/\/archive\/(.+)$/);
+    var file = m ? decodeURIComponent(m[1]) : location.pathname.split("/").pop();
     var url = workUrl();
     var id = url ? url.split("/").pop() : file;
     var fic = {

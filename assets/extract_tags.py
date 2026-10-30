@@ -111,7 +111,7 @@ def write_unmapped(path, entries):
 def main():
     assets_dir = os.path.dirname(os.path.abspath(__file__))
     archive_dir = os.path.join(assets_dir, "..", "archive")
-    html_files = sorted(glob.glob(os.path.join(archive_dir, "*.html")))
+    html_files = sorted(glob.glob(os.path.join(archive_dir, "**", "*.html"), recursive=True))
 
     custom_csv_path = os.path.join(assets_dir, "tags_review_custom.csv")
     existing_custom = load_existing_custom_tags(custom_csv_path)

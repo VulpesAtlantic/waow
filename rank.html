@@ -364,20 +364,6 @@
       pointer-events: auto;
     }
   </style>
-<script>
-(function(publicAppId){
-    (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
-    v=['initialize','identify','updateOptions','pageLoad','track','trackAgent'];for(w=0,x=v.length;w<x;++w)(function(m){
-        o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
-        y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+publicAppId+'/pendo.js';
-        z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
-
-        pendo.initialize({
-            visitor: { id: "anonymous"},
-            account: { }
-        });
-})('2238e862-9499-45dd-85a4-23c98c0f6d92');
-</script>
 </head>
 <body>
 
@@ -608,7 +594,7 @@ function cardHTML(id, { pickLabel } = {}) {
     ${f.summary ? `<p class="card-summary">${esc(f.summary)}</p>` : ""}
     <div class="card-foot">
       ${f.summary && f.summary.length > 280 ? `<button class="more-btn" type="button">more ▾</button>` : "<span></span>"}
-      <a href="archive/${esc(f.filename)}" target="_blank" rel="noopener">open fic ↗</a>
+      <a href="archive/${esc(f.path || f.filename)}" target="_blank" rel="noopener">open fic ↗</a>
     </div>
     ${pickLabel ? `<div class="pick-label">${pickLabel}</div>` : ""}`;
 }
@@ -785,7 +771,7 @@ function renderRanking() {
     return `<li class="rank-row${k === TOP_N ? " cut" : ""}${k >= TOP_N ? " below" : ""}">
       <span class="rank-num">${k + 1}</span>
       <div>
-        <a class="rank-title" href="archive/${esc(f.filename)}" target="_blank" rel="noopener">${esc(f.title || "Untitled")}</a>
+        <a class="rank-title" href="archive/${esc(f.path || f.filename)}" target="_blank" rel="noopener">${esc(f.title || "Untitled")}</a>
         <div class="rank-sub">${esc(f.author || "")} · ${w}–${l}${t ? `–${t}` : ""}${shaky ? ` · <span class="shaky">needs more matchups</span>` : ""}</div>
       </div>
       <button class="x-btn" type="button" data-drop="${esc(r.id)}" title="Remove from contenders">✕</button>

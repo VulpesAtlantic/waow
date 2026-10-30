@@ -14,7 +14,9 @@ What it does:
      (no tracking script is injected)
   5. Injects/updates <meta> tags for all extracted fields
   6. If a file with the same workID already exists in archive/, keeps whichever has the higher word count
-  7. Writes cleaned file to archive/ using the staged filename (no renaming)
+  7. Writes cleaned file to archive/ using the staged filename (no renaming).
+     A file staged in a sub-folder keeps it: staging/Starmora/x.html -> archive/Starmora/x.html.
+     The index's ship buttons show exactly the fics inside the matching archive/ sub-folder.
   8. Updates fic_data.json manifest
   9. Rebuilds index.html from manifest
  10. Logs all actions to process.log; warnings/errors also printed to terminal
@@ -468,7 +470,11 @@ def clean_html(soup: BeautifulSoup, meta: dict) -> BeautifulSoup:
         head.append(vp)
 
     # --- Inject stylesheet link ---
-    css_link = soup.new_tag("link", rel="stylesheet", href="../assets/darkMode.css")
+    # pages in archive/ sit one level below the project root; pages in a
+    # sub-folder (archive/Starmora/) sit two levels below it
+    depth = len([p for p in (meta.get("folder") or "").split("/") if p])
+    up = "../" * (1 + depth)
+    css_link = soup.new_tag("link", rel="stylesheet", href=up + "assets/darkMode.css")
     head.append(css_link)
 
     # --- Inject/update archive meta tags ---
@@ -502,7 +508,7 @@ def clean_html(soup: BeautifulSoup, meta: dict) -> BeautifulSoup:
         head.append(t)
 
     # --- Kudos reminder button (assets/kudos.js; list lives on kudos.html) ---
-    head.append(soup.new_tag("script", src=KUDOS_SCRIPT_SRC, defer=""))
+    head.append(soup.new_tag("script", src=up + "assets/kudos.js", defer=""))
 
     return soup
 
@@ -577,7 +583,7 @@ def find_existing_by_workid(filename: str) -> Path | None:
     wid = _work_id(filename)
     if not wid:
         return None
-    for f in ARCHIVE_DIR.glob(f"{wid}_*.html"):
+    for f in ARCHIVE_DIR.rglob(f"{wid}_*.html"):
         if f.name != filename:
             return f
     return None
@@ -700,17 +706,19 @@ INDEX_TEMPLATE = """\
       margin-top: 0.2rem;
     }}
 
-    /* ---- Visitor banner ---- */
-    .visitor-banner {{
+    /* ---- Ship / folder buttons (sit where the old visitor banner was) ---- */
+    .ship-row {{
       max-width: 660px;
       margin: -0.75rem auto 1.5rem;
       padding: 0 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
     }}
-    .visitor-banner summary {{
-      list-style: none;
+    .ship-btn {{
+      font: inherit;
       cursor: pointer;
       user-select: none;
-      display: inline-block;
       font-size: 0.78rem;
       color: #8878b0;
       background: #13102a;
@@ -719,26 +727,12 @@ INDEX_TEMPLATE = """\
       border-radius: 8px;
       padding: 0.35rem 0.9rem;
     }}
-    .visitor-banner summary::-webkit-details-marker {{ display: none; }}
-    .visitor-banner[open] summary {{
+    .ship-btn:hover {{ color: #c4a8ff; }}
+    .ship-btn.active {{
       color: #c4a8ff;
       border-color: #5030a8;
+      background: #1c1640;
     }}
-    .visitor-banner p + p {{ margin-top: 0.6rem; }}
-    .visitor-body {{
-      margin-top: 0.5rem;
-      font-size: 0.78rem;
-      line-height: 1.6;
-      color: #8878b0;
-      background: #13102a;
-      border: 1px solid #221a40;
-      border-left: 3px solid #5030a8;
-      border-radius: 8px;
-      padding: 0.7rem 1rem;
-    }}
-    .visitor-body p + p, .visitor-body p + ul {{ margin-top: 0.5rem; }}
-    .visitor-body ul {{ padding-left: 1.2rem; }}
-    .visitor-body li + li {{ margin-top: 0.2rem; }}
 
     /* ---- Collapsible filter/search ---- */
     .filter-section {{
@@ -1150,21 +1144,7 @@ INDEX_TEMPLATE = """\
   <p class="last-updated">last updated {last_updated}</p>
 </div>
 
-<details class="visitor-banner">
-  <summary>PLEASE READ IF YOU AREN'T WILLOW ▾</summary>
-  <div class="visitor-body">
-    <p>this is an archive of fics i have downloaded over the years. some are old, some are new, some may not exist on ao3 anymore.</p>
-    <p>If you are an author and do NOT want your fics here, please reach out to agathariophile on twt. same if you have a fic that you DO want me to post here.</p>
-    <p>a few notes:</p>
-    <ul>
-      <li>i think some fics here have been accused of ai use and are tagged accordingly (were..they broke and i'm working on remembering which ones they were. i may just pull them.)</li>
-      <li>feel free to use the top 25 feature at the top left if you get bored. it's local to whatever machine you're on.</li>
-      <li>each fic has a kudos reminder button at the bottom. this saves a reminder locally and can be accessed at the link at the top left of this index page.</li>
-      <li>tags on the index page are truncated. all author's tags are still intact within the fic, so please check before you read.</li>
-      <li>hope you like dark mode. ☾</li>
-    </ul>
-  </div>
-</details>
+<div class="ship-row" id="ship-row"></div>
 
 <details class="filter-section">
   <summary class="filter-toggle">Filter &amp; search ▾</summary>
@@ -1208,8 +1188,17 @@ INDEX_TEMPLATE = """\
 
 <script>
 const FICS = {fics_json};
+const FOLDERS = {folders_json};
+let folderFilter = "";
+{{
+  const h = decodeURIComponent(location.hash.slice(1));
+  if (FOLDERS.includes(h)) folderFilter = h;
+}}
 
 let sortMode = "default";
+
+// archive/ page for a fic: archive/<folder>/<file>.html, or archive/<file>.html if unsorted
+function ficHref(fic) {{ return "archive/" + encodeURI(fic.path || fic.filename); }}
 
 function parseWordCount(wc) {{
   if (!wc) return 0;
@@ -1297,6 +1286,8 @@ function render() {{
     if (query && !searchable.includes(query)) return;
     if (ratingFilters.length && !ratingFilters.includes((fic.rating || "").toLowerCase())) return;
     if (statusFilters.length && !statusFilters.includes((fic.status || "").toLowerCase())) return;
+    // ship buttons: purely "is it in that archive/ folder", whatever the fic is tagged
+    if (folderFilter && !((fic.folder || "") === folderFilter || (fic.folder || "").startsWith(folderFilter + "/"))) return;
     if (pinned && (pinned.key === "tag"
         ? !(fic.custom_tags || []).includes(pinned.val)
         : fic.author !== pinned.val)) return;
@@ -1304,7 +1295,7 @@ function render() {{
     visible++;
     const card = document.createElement("a");
     card.className = "fic-card";
-    card.href = "archive/" + fic.filename;
+    card.href = ficHref(fic);
 
     const rc = ratingClass(fic.rating);
     const sc = statusClass(fic.status);
@@ -1350,6 +1341,26 @@ document.querySelectorAll(".sort-row .chip[data-sort]").forEach(chip => {{
 
 buildChips("rating-chips", FICS.map(f => f.rating), "rating", RATING_LABELS);
 buildChips("status-chips", FICS.map(f => f.status), "status");
+
+(function buildShipRow() {{
+  const row = document.getElementById("ship-row");
+  if (!FOLDERS.length) {{ row.remove(); return; }}
+  [["", "All"], ...FOLDERS.map(f => [f, f])].forEach(([val, label]) => {{
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "ship-btn" + (val === folderFilter ? " active" : "");
+    btn.textContent = label;
+    btn.dataset.folder = val;
+    btn.addEventListener("click", () => {{
+      folderFilter = val;
+      row.querySelectorAll(".ship-btn").forEach(b => b.classList.toggle("active", b === btn));
+      render();
+      // remember the choice in the address bar so Back from a fic returns to the same list
+      try {{ location.replace(val ? "#" + encodeURIComponent(val) : "#"); }} catch (e) {{}}
+    }});
+    row.appendChild(btn);
+  }});
+}})();
 
 document.getElementById("search").addEventListener("input", render);
 
@@ -1399,7 +1410,7 @@ function barRows(rows, {{ key, colors = {{}} }} = {{}}) {{
 
 function ficLine(label, fic) {{
   if (!fic) return "";
-  return `<p class="stat-fic">${{label}}: <a href="archive/${{esc(fic.filename)}}">${{esc(fic.title || "Untitled")}}</a>
+  return `<p class="stat-fic">${{label}}: <a href="${{esc(ficHref(fic))}}">${{esc(fic.title || "Untitled")}}</a>
     by ${{esc(fic.author || "Unknown")}} · ${{parseWordCount(fic.word_count).toLocaleString()}} words</p>`;
 }}
 
@@ -1508,7 +1519,14 @@ def build_index(manifest: dict):
         last_updated = dt.strftime(f"%B {dt.day}, %Y")
     except ValueError:
         last_updated = "unknown"
-    html = INDEX_TEMPLATE.format(fics_json=fics_json, last_updated=last_updated, pendo=PENDO_SNIPPET)
+    # every sub-folder of archive/ becomes a button (even while still empty)
+    folders = sorted(
+        (d.name for d in ARCHIVE_DIR.iterdir() if d.is_dir() and not d.name.startswith(".")),
+        key=str.lower,
+    ) if ARCHIVE_DIR.exists() else []
+    folders_json = json.dumps(folders, ensure_ascii=False)
+    html = INDEX_TEMPLATE.format(fics_json=fics_json, folders_json=folders_json,
+                                 last_updated=last_updated, pendo=PENDO_SNIPPET)
     with open(INDEX_FILE, "w", encoding="utf-8") as f:
         f.write(html)
     log.info(f"index.html rebuilt ({len(manifest['fics'])} fics)")
@@ -1527,6 +1545,18 @@ def process_file(filepath: Path, manifest: dict) -> bool:
     Returns True on success or intentional skip, False on error.
     """
     filename = filepath.name
+    # staging/Starmora/x.html -> folder "Starmora"; staging/x.html -> ""
+    try:
+        folder = filepath.parent.relative_to(STAGING_DIR).as_posix()
+    except ValueError:
+        folder = ""
+    folder = "" if folder == "." else folder
+    # re-staging a fic you already sorted (same filename) updates it in place
+    # instead of dropping a second copy into the archive/ root
+    if not folder:
+        same = next((f for f in ARCHIVE_DIR.rglob("*.html") if f.name == filename), None)
+        if same and same.parent != ARCHIVE_DIR:
+            folder = same.parent.relative_to(ARCHIVE_DIR).as_posix()
     log.info(f"--- Processing: {filename}")
 
     # --- Read ---
@@ -1567,6 +1597,9 @@ def process_file(filepath: Path, manifest: dict) -> bool:
             )
             print(f"  Replacing {existing.name} → {filename} ({old_wc} → {new_wc} words)")
             remove_fic_from_manifest(manifest, existing.name)
+            # an updated copy of a fic you already sorted stays in its folder
+            if not folder and existing.parent != ARCHIVE_DIR:
+                folder = existing.parent.relative_to(ARCHIVE_DIR).as_posix()
             existing.unlink()
         else:
             log.warning(
@@ -1587,10 +1620,13 @@ def process_file(filepath: Path, manifest: dict) -> bool:
     enforce_filename_case(ORIGINALS_DIR, filename)
 
     # --- Clean HTML ---
+    meta["folder"] = folder
     soup = clean_html(soup, meta)
 
     # --- Write to archive (keep staged filename — no renaming) ---
-    archive_dest = ARCHIVE_DIR / filename
+    archive_dir = ARCHIVE_DIR / folder if folder else ARCHIVE_DIR
+    archive_dir.mkdir(parents=True, exist_ok=True)
+    archive_dest = archive_dir / filename
     try:
         archive_dest.write_text(str(soup), encoding="utf-8")
         log.info(f"{filename}: written to archive/")
@@ -1599,11 +1635,13 @@ def process_file(filepath: Path, manifest: dict) -> bool:
         return False
 
     # The write above may have landed in a differently-cased existing file.
-    enforce_filename_case(ARCHIVE_DIR, filename)
+    enforce_filename_case(archive_dir, filename)
 
     # --- Update manifest ---
     fic_entry = {
         "filename":    filename,
+        "folder":      folder,
+        "path":        f"{folder}/{filename}" if folder else filename,
         "title":       meta["title"],
         "author":      meta["author"],
         "ship":        meta["ship"],
@@ -1666,7 +1704,7 @@ def main():
     log.info("=" * 60)
     log.info(f"Run started: {datetime.now().isoformat()}")
 
-    staged_files = sorted(STAGING_DIR.glob("*.html"))
+    staged_files = sorted(p for p in STAGING_DIR.rglob("*.html") if not p.name.startswith("."))
     if not staged_files:
         log.info("No HTML files found in staging/. Nothing to do.")
         print("No files found in staging/ — nothing to process.")

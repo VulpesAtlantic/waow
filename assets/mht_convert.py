@@ -215,7 +215,7 @@ Posted originally on the <a href="https://archiveofourown.org/">Archive of Our O
 def existing_ids() -> set[str]:
     ids = set()
     for d in (ARCHIVE_DIR, STAGING_DIR):
-        for p in d.glob("*.html"):
+        for p in d.rglob("*.html"):
             m = re.match(r"^(\d+)_", p.name)
             if m:
                 ids.add(m.group(1))

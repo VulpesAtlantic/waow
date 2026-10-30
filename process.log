@@ -21439,3 +21439,865 @@
 2026-10-30 02:49:13,585 [INFO] index.html rebuilt (21 fics)
 2026-10-30 02:49:13,585 [INFO] Done. 21 processed, 0 failed.
 2026-10-30 02:49:13,585 [INFO] ============================================================
+2026-10-30 03:29:18,793 [WARNING] 10849821_quiescent.html: could not parse author from <title>: 'Quiescent'
+2026-10-30 03:29:18,801 [INFO] Added manifest entry: 10849821_quiescent.html
+2026-10-30 03:29:18,804 [WARNING] 10870218_terran_heart.html: could not parse author from <title>: 'Terran Heart'
+2026-10-30 03:29:18,807 [INFO] Added manifest entry: 10870218_terran_heart.html
+2026-10-30 03:29:18,810 [WARNING] 11016942_take_my_mind_and_take_my.html: could not parse author from <title>: 'take my mind and take my pain'
+2026-10-30 03:29:18,812 [INFO] Added manifest entry: 11016942_take_my_mind_and_take_my.html
+2026-10-30 03:29:18,824 [WARNING] 11793225_you_and_me_and_this_joy.html: could not parse author from <title>: 'you and me and this joy of ours'
+2026-10-30 03:29:18,837 [INFO] Added manifest entry: 11793225_you_and_me_and_this_joy.html
+2026-10-30 03:29:18,840 [WARNING] 14631218_i_should_have_a_say.html: could not parse author from <title>: 'I Should Have a Say'
+2026-10-30 03:29:18,843 [INFO] Added manifest entry: 14631218_i_should_have_a_say.html
+2026-10-30 03:29:18,846 [WARNING] 15727905_little_bird_little_bird.html: could not parse author from <title>: 'Little bird, little bird'
+2026-10-30 03:29:18,849 [INFO] Added manifest entry: 15727905_little_bird_little_bird.html
+2026-10-30 03:29:18,851 [WARNING] 15920496_honey_honey_how_you.html: could not parse author from <title>: 'honey, honey (how you thrill me)'
+2026-10-30 03:29:18,855 [INFO] Added manifest entry: 15920496_honey_honey_how_you.html
+2026-10-30 03:29:18,857 [WARNING] 16899279_star_ghoul.html: could not parse author from <title>: 'Star Ghoul'
+2026-10-30 03:29:18,860 [INFO] Added manifest entry: 16899279_star_ghoul.html
+2026-10-30 03:29:18,862 [WARNING] 17947367_keep_me_warm_in_your.html: could not parse author from <title>: 'Keep Me Warm In Your Love'
+2026-10-30 03:29:18,865 [INFO] Added manifest entry: 17947367_keep_me_warm_in_your.html
+2026-10-30 03:29:18,868 [WARNING] 24203890_alien_dinner.html: could not parse author from <title>: 'Alien dinner'
+2026-10-30 03:29:18,873 [INFO] Added manifest entry: 24203890_alien_dinner.html
+2026-10-30 03:29:18,875 [WARNING] 24209905_satellites_gone_up_to.html: could not parse author from <title>: 'satellite's gone up to the skies'
+2026-10-30 03:29:18,876 [INFO] Added manifest entry: 24209905_satellites_gone_up_to.html
+2026-10-30 03:29:18,885 [WARNING] 38306224_anything_in_the_name_of.html: could not parse author from <title>: 'Anything in the name of love'
+2026-10-30 03:29:18,895 [INFO] Added manifest entry: 38306224_anything_in_the_name_of.html
+2026-10-30 03:29:18,910 [WARNING] 40542786_songs_that_make_sense.html: could not parse author from <title>: 'songs that make sense'
+2026-10-30 03:29:18,927 [INFO] Added manifest entry: 40542786_songs_that_make_sense.html
+2026-10-30 03:29:18,928 [WARNING] 48797209_safe_and_sound.html: could not parse author from <title>: 'safe and sound'
+2026-10-30 03:29:18,931 [INFO] Added manifest entry: 48797209_safe_and_sound.html
+2026-10-30 03:29:18,937 [WARNING] 49003321_take_pictures_in_your.html: could not parse author from <title>: 'take pictures in your mind of your childhood room'
+2026-10-30 03:29:18,943 [INFO] Added manifest entry: 49003321_take_pictures_in_your.html
+2026-10-30 03:29:18,945 [WARNING] 49087420_enough.html: could not parse author from <title>: 'Enough!'
+2026-10-30 03:29:18,948 [INFO] Added manifest entry: 49087420_enough.html
+2026-10-30 03:29:18,949 [WARNING] 49466953_if_things_were_different.html: could not parse author from <title>: 'If Things Were Different'
+2026-10-30 03:29:18,951 [INFO] Added manifest entry: 49466953_if_things_were_different.html
+2026-10-30 03:29:18,985 [WARNING] 55711639_mess_is_mine.html: could not parse author from <title>: 'mess is mine'
+2026-10-30 03:29:19,017 [INFO] Added manifest entry: 55711639_mess_is_mine.html
+2026-10-30 03:29:19,019 [WARNING] 56501476_got_lovesick_all_over_my.html: could not parse author from <title>: 'got lovesick (all over my bed)'
+2026-10-30 03:29:19,021 [INFO] Added manifest entry: 56501476_got_lovesick_all_over_my.html
+2026-10-30 03:29:19,023 [WARNING] 68941121_a_memory_like_home.html: could not parse author from <title>: 'A Memory Like Home'
+2026-10-30 03:29:19,026 [INFO] Added manifest entry: 68941121_a_memory_like_home.html
+2026-10-30 03:29:19,028 [WARNING] 72822851_the_strange_man_of.html: could not parse author from <title>: 'The strange man of Knowhere'
+2026-10-30 03:29:19,033 [INFO] Added manifest entry: 72822851_the_strange_man_of.html
+2026-10-30 03:29:19,036 [INFO] Manifest saved to fic_data.json
+2026-10-30 03:29:19,038 [INFO] index.html rebuilt (21 fics)
+2026-10-30 03:40:36,088 [WARNING] 10849821_quiescent.html: could not parse author from <title>: 'Quiescent'
+2026-10-30 03:40:36,097 [INFO] Added manifest entry: 10849821_quiescent.html
+2026-10-30 03:40:36,098 [WARNING] 10870218_terran_heart.html: could not parse author from <title>: 'Terran Heart'
+2026-10-30 03:40:36,101 [INFO] Added manifest entry: 10870218_terran_heart.html
+2026-10-30 03:40:36,105 [WARNING] 11016942_take_my_mind_and_take_my.html: could not parse author from <title>: 'take my mind and take my pain'
+2026-10-30 03:40:36,108 [INFO] Added manifest entry: 11016942_take_my_mind_and_take_my.html
+2026-10-30 03:40:36,120 [WARNING] 11793225_you_and_me_and_this_joy.html: could not parse author from <title>: 'you and me and this joy of ours'
+2026-10-30 03:40:36,133 [INFO] Added manifest entry: 11793225_you_and_me_and_this_joy.html
+2026-10-30 03:40:36,136 [WARNING] 14631218_i_should_have_a_say.html: could not parse author from <title>: 'I Should Have a Say'
+2026-10-30 03:40:36,140 [INFO] Added manifest entry: 14631218_i_should_have_a_say.html
+2026-10-30 03:40:36,143 [WARNING] 15727905_little_bird_little_bird.html: could not parse author from <title>: 'Little bird, little bird'
+2026-10-30 03:40:36,146 [INFO] Added manifest entry: 15727905_little_bird_little_bird.html
+2026-10-30 03:40:36,149 [WARNING] 15920496_honey_honey_how_you.html: could not parse author from <title>: 'honey, honey (how you thrill me)'
+2026-10-30 03:40:36,152 [INFO] Added manifest entry: 15920496_honey_honey_how_you.html
+2026-10-30 03:40:36,153 [WARNING] 16899279_star_ghoul.html: could not parse author from <title>: 'Star Ghoul'
+2026-10-30 03:40:36,157 [INFO] Added manifest entry: 16899279_star_ghoul.html
+2026-10-30 03:40:36,159 [WARNING] 17947367_keep_me_warm_in_your.html: could not parse author from <title>: 'Keep Me Warm In Your Love'
+2026-10-30 03:40:36,161 [INFO] Added manifest entry: 17947367_keep_me_warm_in_your.html
+2026-10-30 03:40:36,165 [WARNING] 24203890_alien_dinner.html: could not parse author from <title>: 'Alien dinner'
+2026-10-30 03:40:36,170 [INFO] Added manifest entry: 24203890_alien_dinner.html
+2026-10-30 03:40:36,171 [WARNING] 24209905_satellites_gone_up_to.html: could not parse author from <title>: 'satellite's gone up to the skies'
+2026-10-30 03:40:36,173 [INFO] Added manifest entry: 24209905_satellites_gone_up_to.html
+2026-10-30 03:40:36,182 [WARNING] 38306224_anything_in_the_name_of.html: could not parse author from <title>: 'Anything in the name of love'
+2026-10-30 03:40:36,193 [INFO] Added manifest entry: 38306224_anything_in_the_name_of.html
+2026-10-30 03:40:36,208 [WARNING] 40542786_songs_that_make_sense.html: could not parse author from <title>: 'songs that make sense'
+2026-10-30 03:40:36,225 [INFO] Added manifest entry: 40542786_songs_that_make_sense.html
+2026-10-30 03:40:36,227 [WARNING] 48797209_safe_and_sound.html: could not parse author from <title>: 'safe and sound'
+2026-10-30 03:40:36,227 [INFO] Added manifest entry: 48797209_safe_and_sound.html
+2026-10-30 03:40:36,234 [WARNING] 49003321_take_pictures_in_your.html: could not parse author from <title>: 'take pictures in your mind of your childhood room'
+2026-10-30 03:40:36,241 [INFO] Added manifest entry: 49003321_take_pictures_in_your.html
+2026-10-30 03:40:36,242 [WARNING] 49087420_enough.html: could not parse author from <title>: 'Enough!'
+2026-10-30 03:40:36,243 [INFO] Added manifest entry: 49087420_enough.html
+2026-10-30 03:40:36,245 [WARNING] 49466953_if_things_were_different.html: could not parse author from <title>: 'If Things Were Different'
+2026-10-30 03:40:36,247 [INFO] Added manifest entry: 49466953_if_things_were_different.html
+2026-10-30 03:40:36,277 [WARNING] 55711639_mess_is_mine.html: could not parse author from <title>: 'mess is mine'
+2026-10-30 03:40:36,308 [INFO] Added manifest entry: 55711639_mess_is_mine.html
+2026-10-30 03:40:36,309 [WARNING] 56501476_got_lovesick_all_over_my.html: could not parse author from <title>: 'got lovesick (all over my bed)'
+2026-10-30 03:40:36,311 [INFO] Added manifest entry: 56501476_got_lovesick_all_over_my.html
+2026-10-30 03:40:36,313 [WARNING] 68941121_a_memory_like_home.html: could not parse author from <title>: 'A Memory Like Home'
+2026-10-30 03:40:36,315 [INFO] Added manifest entry: 68941121_a_memory_like_home.html
+2026-10-30 03:40:36,317 [WARNING] 72822851_the_strange_man_of.html: could not parse author from <title>: 'The strange man of Knowhere'
+2026-10-30 03:40:36,320 [INFO] Added manifest entry: 72822851_the_strange_man_of.html
+2026-10-30 03:40:36,323 [INFO] Manifest saved to fic_data.json
+2026-10-30 03:40:36,327 [INFO] index.html rebuilt (21 fics)
+2026-10-30 03:43:31,887 [WARNING] 10849821_quiescent.html: could not parse author from <title>: 'Quiescent'
+2026-10-30 03:43:31,897 [INFO] Added manifest entry: 10849821_quiescent.html
+2026-10-30 03:43:31,906 [WARNING] 10870218_terran_heart.html: could not parse author from <title>: 'Terran Heart'
+2026-10-30 03:43:31,909 [INFO] Added manifest entry: 10870218_terran_heart.html
+2026-10-30 03:43:31,918 [WARNING] 11016942_take_my_mind_and_take_my.html: could not parse author from <title>: 'take my mind and take my pain'
+2026-10-30 03:43:31,921 [INFO] Added manifest entry: 11016942_take_my_mind_and_take_my.html
+2026-10-30 03:43:31,939 [WARNING] 11793225_you_and_me_and_this_joy.html: could not parse author from <title>: 'you and me and this joy of ours'
+2026-10-30 03:43:31,951 [INFO] Added manifest entry: 11793225_you_and_me_and_this_joy.html
+2026-10-30 03:43:31,962 [WARNING] 14631218_i_should_have_a_say.html: could not parse author from <title>: 'I Should Have a Say'
+2026-10-30 03:43:31,965 [INFO] Added manifest entry: 14631218_i_should_have_a_say.html
+2026-10-30 03:43:31,974 [WARNING] 15727905_little_bird_little_bird.html: could not parse author from <title>: 'Little bird, little bird'
+2026-10-30 03:43:31,978 [INFO] Added manifest entry: 15727905_little_bird_little_bird.html
+2026-10-30 03:43:31,989 [WARNING] 15920496_honey_honey_how_you.html: could not parse author from <title>: 'honey, honey (how you thrill me)'
+2026-10-30 03:43:31,993 [INFO] Added manifest entry: 15920496_honey_honey_how_you.html
+2026-10-30 03:43:32,001 [WARNING] 16899279_star_ghoul.html: could not parse author from <title>: 'Star Ghoul'
+2026-10-30 03:43:32,005 [INFO] Added manifest entry: 16899279_star_ghoul.html
+2026-10-30 03:43:32,012 [WARNING] 17947367_keep_me_warm_in_your.html: could not parse author from <title>: 'Keep Me Warm In Your Love'
+2026-10-30 03:43:32,015 [INFO] Added manifest entry: 17947367_keep_me_warm_in_your.html
+2026-10-30 03:43:32,025 [WARNING] 24203890_alien_dinner.html: could not parse author from <title>: 'Alien dinner'
+2026-10-30 03:43:32,030 [INFO] Added manifest entry: 24203890_alien_dinner.html
+2026-10-30 03:43:32,032 [WARNING] 24209905_satellites_gone_up_to.html: could not parse author from <title>: 'satellite's gone up to the skies'
+2026-10-30 03:43:32,033 [INFO] Added manifest entry: 24209905_satellites_gone_up_to.html
+2026-10-30 03:43:32,048 [WARNING] 38306224_anything_in_the_name_of.html: could not parse author from <title>: 'Anything in the name of love'
+2026-10-30 03:43:32,059 [INFO] Added manifest entry: 38306224_anything_in_the_name_of.html
+2026-10-30 03:43:32,079 [WARNING] 40542786_songs_that_make_sense.html: could not parse author from <title>: 'songs that make sense'
+2026-10-30 03:43:32,096 [INFO] Added manifest entry: 40542786_songs_that_make_sense.html
+2026-10-30 03:43:32,099 [WARNING] 48797209_safe_and_sound.html: could not parse author from <title>: 'safe and sound'
+2026-10-30 03:43:32,100 [INFO] Added manifest entry: 48797209_safe_and_sound.html
+2026-10-30 03:43:32,113 [WARNING] 49003321_take_pictures_in_your.html: could not parse author from <title>: 'take pictures in your mind of your childhood room'
+2026-10-30 03:43:32,120 [INFO] Added manifest entry: 49003321_take_pictures_in_your.html
+2026-10-30 03:43:32,123 [WARNING] 49087420_enough.html: could not parse author from <title>: 'Enough!'
+2026-10-30 03:43:32,125 [INFO] Added manifest entry: 49087420_enough.html
+2026-10-30 03:43:32,127 [WARNING] 49466953_if_things_were_different.html: could not parse author from <title>: 'If Things Were Different'
+2026-10-30 03:43:32,129 [INFO] Added manifest entry: 49466953_if_things_were_different.html
+2026-10-30 03:43:32,167 [WARNING] 55711639_mess_is_mine.html: could not parse author from <title>: 'mess is mine'
+2026-10-30 03:43:32,195 [INFO] Added manifest entry: 55711639_mess_is_mine.html
+2026-10-30 03:43:32,204 [WARNING] 56501476_got_lovesick_all_over_my.html: could not parse author from <title>: 'got lovesick (all over my bed)'
+2026-10-30 03:43:32,205 [INFO] Added manifest entry: 56501476_got_lovesick_all_over_my.html
+2026-10-30 03:43:32,214 [WARNING] 68941121_a_memory_like_home.html: could not parse author from <title>: 'A Memory Like Home'
+2026-10-30 03:43:32,216 [INFO] Added manifest entry: 68941121_a_memory_like_home.html
+2026-10-30 03:43:32,224 [WARNING] 72822851_the_strange_man_of.html: could not parse author from <title>: 'The strange man of Knowhere'
+2026-10-30 03:43:32,226 [INFO] Added manifest entry: 72822851_the_strange_man_of.html
+2026-10-30 03:43:32,230 [INFO] Manifest saved to fic_data.json
+2026-10-30 03:43:32,232 [INFO] index.html rebuilt (21 fics)
+2026-10-30 03:54:42,525 [INFO] ============================================================
+2026-10-30 03:54:42,525 [INFO] Run started: 2026-10-30T03:54:42.525299
+2026-10-30 03:54:42,525 [INFO] Found 10 file(s) to process
+2026-10-30 03:54:42,531 [INFO] --- Processing: 10875654_escape.html
+2026-10-30 03:54:42,541 [INFO] 10875654_escape.html: extracted — title='Escape' author='BirdOfHermes' status='Complete' lastUpdated='2017-05-10' words='1432'
+2026-10-30 03:54:42,548 [INFO] 10875654_escape.html: backed up to originals/
+2026-10-30 03:54:42,550 [INFO] 10875654_escape.html: written to archive/
+2026-10-30 03:54:42,551 [INFO] Added manifest entry: 10875654_escape.html
+2026-10-30 03:54:42,551 [INFO] 10875654_escape.html: removed from staging/
+2026-10-30 03:54:42,555 [INFO] --- Processing: 11166798_i_dont_need_you_to.html
+2026-10-30 03:54:42,563 [INFO] 11166798_i_dont_need_you_to.html: extracted — title='I Don't Need You to Protect Me/I Know' author='thegreenwomanswalkman' status='Complete' lastUpdated='2017-06-11' words='821'
+2026-10-30 03:54:42,564 [INFO] 11166798_i_dont_need_you_to.html: backed up to originals/
+2026-10-30 03:54:42,567 [INFO] 11166798_i_dont_need_you_to.html: written to archive/
+2026-10-30 03:54:42,567 [INFO] Added manifest entry: 11166798_i_dont_need_you_to.html
+2026-10-30 03:54:42,567 [INFO] 11166798_i_dont_need_you_to.html: removed from staging/
+2026-10-30 03:54:42,570 [INFO] --- Processing: 11930652_head_full_of_doubt.html
+2026-10-30 03:54:42,579 [INFO] 11930652_head_full_of_doubt.html: extracted — title='Head Full of Doubt' author='enigma731' status='Complete' lastUpdated='2017-08-28' words='2742'
+2026-10-30 03:54:42,581 [INFO] 11930652_head_full_of_doubt.html: backed up to originals/
+2026-10-30 03:54:42,584 [INFO] 11930652_head_full_of_doubt.html: written to archive/
+2026-10-30 03:54:42,584 [INFO] Added manifest entry: 11930652_head_full_of_doubt.html
+2026-10-30 03:54:42,584 [INFO] 11930652_head_full_of_doubt.html: removed from staging/
+2026-10-30 03:54:42,587 [INFO] --- Processing: 14673123_gamora_youre_a_fine_girl.html
+2026-10-30 03:54:42,596 [INFO] 14673123_gamora_youre_a_fine_girl.html: extracted — title='Gamora, You're a Fine Girl' author='Meraki_fics' status='Complete' lastUpdated='2018-05-15' words='4888'
+2026-10-30 03:54:42,598 [INFO] 14673123_gamora_youre_a_fine_girl.html: backed up to originals/
+2026-10-30 03:54:42,601 [INFO] 14673123_gamora_youre_a_fine_girl.html: written to archive/
+2026-10-30 03:54:42,601 [INFO] Added manifest entry: 14673123_gamora_youre_a_fine_girl.html
+2026-10-30 03:54:42,601 [INFO] 14673123_gamora_youre_a_fine_girl.html: removed from staging/
+2026-10-30 03:54:42,605 [INFO] --- Processing: 2271189_it_feels_so_right_being.html
+2026-10-30 03:54:42,617 [INFO] 2271189_it_feels_so_right_being.html: extracted — title='it feels so right (being here with you tonight)' author='orphan_account' status='In Progress' lastUpdated='2014-10-05' words='5516'
+2026-10-30 03:54:42,618 [INFO] 2271189_it_feels_so_right_being.html: backed up to originals/
+2026-10-30 03:54:42,623 [INFO] 2271189_it_feels_so_right_being.html: written to archive/
+2026-10-30 03:54:42,623 [INFO] Added manifest entry: 2271189_it_feels_so_right_being.html
+2026-10-30 03:54:42,623 [INFO] 2271189_it_feels_so_right_being.html: removed from staging/
+2026-10-30 03:54:42,627 [INFO] --- Processing: 47409586_alabama_arkansas.html
+2026-10-30 03:54:42,638 [INFO] 47409586_alabama_arkansas.html: extracted — title='alabama, arkansas' author='kalina16' status='Complete' lastUpdated='2023-05-25' words='4129'
+2026-10-30 03:54:42,639 [INFO] 47409586_alabama_arkansas.html: backed up to originals/
+2026-10-30 03:54:42,644 [INFO] 47409586_alabama_arkansas.html: written to archive/
+2026-10-30 03:54:42,644 [INFO] Added manifest entry: 47409586_alabama_arkansas.html
+2026-10-30 03:54:42,644 [INFO] 47409586_alabama_arkansas.html: removed from staging/
+2026-10-30 03:54:42,648 [INFO] --- Processing: 48778780_didnt_you_flash_your.html
+2026-10-30 03:54:42,661 [INFO] 48778780_didnt_you_flash_your.html: extracted — title='didn't you flash your green eyes at me?' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2023-07-22' words='638'
+2026-10-30 03:54:42,662 [INFO] 48778780_didnt_you_flash_your.html: backed up to originals/
+2026-10-30 03:54:42,664 [INFO] 48778780_didnt_you_flash_your.html: written to archive/
+2026-10-30 03:54:42,664 [INFO] Added manifest entry: 48778780_didnt_you_flash_your.html
+2026-10-30 03:54:42,665 [INFO] 48778780_didnt_you_flash_your.html: removed from staging/
+2026-10-30 03:54:42,669 [INFO] --- Processing: 49955668_he_must_like_me_for_me.html
+2026-10-30 03:54:42,681 [INFO] 49955668_he_must_like_me_for_me.html: extracted — title='he must like me for me' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2023-09-08' words='1202'
+2026-10-30 03:54:42,682 [INFO] 49955668_he_must_like_me_for_me.html: backed up to originals/
+2026-10-30 03:54:42,685 [INFO] 49955668_he_must_like_me_for_me.html: written to archive/
+2026-10-30 03:54:42,685 [INFO] Added manifest entry: 49955668_he_must_like_me_for_me.html
+2026-10-30 03:54:42,685 [INFO] 49955668_he_must_like_me_for_me.html: removed from staging/
+2026-10-30 03:54:42,690 [INFO] --- Processing: 50668903_something_else.html
+2026-10-30 03:54:42,700 [INFO] 50668903_something_else.html: extracted — title='Something Else' author='GlassAsphodels' status='Complete' lastUpdated='2023-10-08' words='4638'
+2026-10-30 03:54:42,702 [INFO] 50668903_something_else.html: backed up to originals/
+2026-10-30 03:54:42,705 [INFO] 50668903_something_else.html: written to archive/
+2026-10-30 03:54:42,705 [INFO] Added manifest entry: 50668903_something_else.html
+2026-10-30 03:54:42,705 [INFO] 50668903_something_else.html: removed from staging/
+2026-10-30 03:54:42,708 [INFO] --- Processing: 65616955_altered_breakfast.html
+2026-10-30 03:54:42,721 [INFO] 65616955_altered_breakfast.html: extracted — title='Altered breakfast' author='saxmartell' status='Complete' lastUpdated='2025-05-16' words='4152'
+2026-10-30 03:54:42,723 [INFO] 65616955_altered_breakfast.html: backed up to originals/
+2026-10-30 03:54:42,728 [INFO] 65616955_altered_breakfast.html: written to archive/
+2026-10-30 03:54:42,728 [INFO] Added manifest entry: 65616955_altered_breakfast.html
+2026-10-30 03:54:42,728 [INFO] 65616955_altered_breakfast.html: removed from staging/
+2026-10-30 03:54:42,735 [INFO] Manifest saved to fic_data.json
+2026-10-30 03:54:42,739 [INFO] index.html rebuilt (31 fics)
+2026-10-30 03:54:42,739 [INFO] Done. 10 processed, 0 failed.
+2026-10-30 03:54:42,739 [INFO] ============================================================
+2026-10-30 03:55:14,332 [WARNING] 10849821_quiescent.html: could not parse author from <title>: 'Quiescent'
+2026-10-30 03:55:14,351 [INFO] Added manifest entry: 10849821_quiescent.html
+2026-10-30 03:55:14,361 [WARNING] 10870218_terran_heart.html: could not parse author from <title>: 'Terran Heart'
+2026-10-30 03:55:14,364 [INFO] Added manifest entry: 10870218_terran_heart.html
+2026-10-30 03:55:14,373 [WARNING] 10875654_escape.html: could not parse author from <title>: 'Escape'
+2026-10-30 03:55:14,376 [INFO] Added manifest entry: 10875654_escape.html
+2026-10-30 03:55:14,386 [WARNING] 11016942_take_my_mind_and_take_my.html: could not parse author from <title>: 'take my mind and take my pain'
+2026-10-30 03:55:14,390 [INFO] Added manifest entry: 11016942_take_my_mind_and_take_my.html
+2026-10-30 03:55:14,400 [WARNING] 11166798_i_dont_need_you_to.html: could not parse author from <title>: 'I Don't Need You to Protect Me/I Know'
+2026-10-30 03:55:14,403 [INFO] Added manifest entry: 11166798_i_dont_need_you_to.html
+2026-10-30 03:55:14,425 [WARNING] 11793225_you_and_me_and_this_joy.html: could not parse author from <title>: 'you and me and this joy of ours'
+2026-10-30 03:55:14,442 [INFO] Added manifest entry: 11793225_you_and_me_and_this_joy.html
+2026-10-30 03:55:14,452 [WARNING] 11930652_head_full_of_doubt.html: could not parse author from <title>: 'Head Full of Doubt'
+2026-10-30 03:55:14,456 [INFO] Added manifest entry: 11930652_head_full_of_doubt.html
+2026-10-30 03:55:14,465 [WARNING] 14631218_i_should_have_a_say.html: could not parse author from <title>: 'I Should Have a Say'
+2026-10-30 03:55:14,468 [INFO] Added manifest entry: 14631218_i_should_have_a_say.html
+2026-10-30 03:55:14,477 [WARNING] 14673123_gamora_youre_a_fine_girl.html: could not parse author from <title>: 'Gamora, You're a Fine Girl'
+2026-10-30 03:55:14,480 [INFO] Added manifest entry: 14673123_gamora_youre_a_fine_girl.html
+2026-10-30 03:55:14,490 [WARNING] 15727905_little_bird_little_bird.html: could not parse author from <title>: 'Little bird, little bird'
+2026-10-30 03:55:14,494 [INFO] Added manifest entry: 15727905_little_bird_little_bird.html
+2026-10-30 03:55:14,503 [WARNING] 15920496_honey_honey_how_you.html: could not parse author from <title>: 'honey, honey (how you thrill me)'
+2026-10-30 03:55:14,508 [INFO] Added manifest entry: 15920496_honey_honey_how_you.html
+2026-10-30 03:55:14,516 [WARNING] 16899279_star_ghoul.html: could not parse author from <title>: 'Star Ghoul'
+2026-10-30 03:55:14,520 [INFO] Added manifest entry: 16899279_star_ghoul.html
+2026-10-30 03:55:14,529 [WARNING] 17947367_keep_me_warm_in_your.html: could not parse author from <title>: 'Keep Me Warm In Your Love'
+2026-10-30 03:55:14,533 [INFO] Added manifest entry: 17947367_keep_me_warm_in_your.html
+2026-10-30 03:55:14,544 [WARNING] 2271189_it_feels_so_right_being.html: could not parse author from <title>: 'it feels so right (being here with you tonight)'
+2026-10-30 03:55:14,550 [INFO] Added manifest entry: 2271189_it_feels_so_right_being.html
+2026-10-30 03:55:14,560 [WARNING] 24203890_alien_dinner.html: could not parse author from <title>: 'Alien dinner'
+2026-10-30 03:55:14,565 [INFO] Added manifest entry: 24203890_alien_dinner.html
+2026-10-30 03:55:14,573 [WARNING] 24209905_satellites_gone_up_to.html: could not parse author from <title>: 'satellite's gone up to the skies'
+2026-10-30 03:55:14,575 [INFO] Added manifest entry: 24209905_satellites_gone_up_to.html
+2026-10-30 03:55:14,594 [WARNING] 38306224_anything_in_the_name_of.html: could not parse author from <title>: 'Anything in the name of love'
+2026-10-30 03:55:14,604 [INFO] Added manifest entry: 38306224_anything_in_the_name_of.html
+2026-10-30 03:55:14,628 [WARNING] 40542786_songs_that_make_sense.html: could not parse author from <title>: 'songs that make sense'
+2026-10-30 03:55:14,646 [INFO] Added manifest entry: 40542786_songs_that_make_sense.html
+2026-10-30 03:55:14,655 [WARNING] 47409586_alabama_arkansas.html: could not parse author from <title>: 'alabama, arkansas'
+2026-10-30 03:55:14,662 [INFO] Added manifest entry: 47409586_alabama_arkansas.html
+2026-10-30 03:55:14,670 [WARNING] 48778780_didnt_you_flash_your.html: could not parse author from <title>: 'didn't you flash your green eyes at me?'
+2026-10-30 03:55:14,673 [INFO] Added manifest entry: 48778780_didnt_you_flash_your.html
+2026-10-30 03:55:14,683 [WARNING] 48797209_safe_and_sound.html: could not parse author from <title>: 'safe and sound'
+2026-10-30 03:55:14,684 [INFO] Added manifest entry: 48797209_safe_and_sound.html
+2026-10-30 03:55:14,698 [WARNING] 49003321_take_pictures_in_your.html: could not parse author from <title>: 'take pictures in your mind of your childhood room'
+2026-10-30 03:55:14,706 [INFO] Added manifest entry: 49003321_take_pictures_in_your.html
+2026-10-30 03:55:14,717 [WARNING] 49087420_enough.html: could not parse author from <title>: 'Enough!'
+2026-10-30 03:55:14,719 [INFO] Added manifest entry: 49087420_enough.html
+2026-10-30 03:55:14,728 [WARNING] 49466953_if_things_were_different.html: could not parse author from <title>: 'If Things Were Different'
+2026-10-30 03:55:14,731 [INFO] Added manifest entry: 49466953_if_things_were_different.html
+2026-10-30 03:55:14,740 [WARNING] 49955668_he_must_like_me_for_me.html: could not parse author from <title>: 'he must like me for me'
+2026-10-30 03:55:14,743 [INFO] Added manifest entry: 49955668_he_must_like_me_for_me.html
+2026-10-30 03:55:14,753 [WARNING] 50668903_something_else.html: could not parse author from <title>: 'Something Else'
+2026-10-30 03:55:14,757 [INFO] Added manifest entry: 50668903_something_else.html
+2026-10-30 03:55:14,796 [WARNING] 55711639_mess_is_mine.html: could not parse author from <title>: 'mess is mine'
+2026-10-30 03:55:14,833 [INFO] Added manifest entry: 55711639_mess_is_mine.html
+2026-10-30 03:55:14,843 [WARNING] 56501476_got_lovesick_all_over_my.html: could not parse author from <title>: 'got lovesick (all over my bed)'
+2026-10-30 03:55:14,847 [INFO] Added manifest entry: 56501476_got_lovesick_all_over_my.html
+2026-10-30 03:55:14,858 [WARNING] 65616955_altered_breakfast.html: could not parse author from <title>: 'Altered breakfast'
+2026-10-30 03:55:14,862 [INFO] Added manifest entry: 65616955_altered_breakfast.html
+2026-10-30 03:55:14,872 [WARNING] 68941121_a_memory_like_home.html: could not parse author from <title>: 'A Memory Like Home'
+2026-10-30 03:55:14,875 [INFO] Added manifest entry: 68941121_a_memory_like_home.html
+2026-10-30 03:55:14,887 [WARNING] 72822851_the_strange_man_of.html: could not parse author from <title>: 'The strange man of Knowhere'
+2026-10-30 03:55:14,890 [INFO] Added manifest entry: 72822851_the_strange_man_of.html
+2026-10-30 03:55:14,894 [INFO] Manifest saved to fic_data.json
+2026-10-30 03:55:14,897 [INFO] index.html rebuilt (31 fics)
+2026-10-30 04:00:34,892 [INFO] ============================================================
+2026-10-30 04:00:34,892 [INFO] Run started: 2026-10-30T04:00:34.892325
+2026-10-30 04:00:34,892 [INFO] Found 16 file(s) to process
+2026-10-30 04:00:34,897 [INFO] --- Processing: 11341593_all_the_good_love.html
+2026-10-30 04:00:34,907 [INFO] 11341593_all_the_good_love.html: extracted — title='all the good love' author='glorious_spoon' status='Complete' lastUpdated='2017-06-29' words='2626'
+2026-10-30 04:00:34,915 [INFO] 11341593_all_the_good_love.html: backed up to originals/
+2026-10-30 04:00:34,918 [INFO] 11341593_all_the_good_love.html: written to archive/
+2026-10-30 04:00:34,925 [INFO] Added manifest entry: 11341593_all_the_good_love.html
+2026-10-30 04:00:34,925 [INFO] 11341593_all_the_good_love.html: removed from staging/
+2026-10-30 04:00:34,929 [INFO] --- Processing: 14289849_that_doesnt_mean_you.html
+2026-10-30 04:00:34,961 [INFO] 14289849_that_doesnt_mean_you.html: extracted — title='That Doesn’t Mean You Mean That Much to Me' author='Polaris' status='Complete' lastUpdated='2018-04-16' words='28861'
+2026-10-30 04:00:34,963 [INFO] 14289849_that_doesnt_mean_you.html: backed up to originals/
+2026-10-30 04:00:34,981 [INFO] 14289849_that_doesnt_mean_you.html: written to archive/
+2026-10-30 04:00:34,981 [INFO] Added manifest entry: 14289849_that_doesnt_mean_you.html
+2026-10-30 04:00:34,982 [INFO] 14289849_that_doesnt_mean_you.html: removed from staging/
+2026-10-30 04:00:34,985 [INFO] --- Processing: 14762826_scars.html
+2026-10-30 04:00:34,993 [INFO] 14762826_scars.html: extracted — title='Scars' author='sharkinterviewee' status='Complete' lastUpdated='2018-05-26' words='1419'
+2026-10-30 04:00:34,994 [INFO] 14762826_scars.html: backed up to originals/
+2026-10-30 04:00:34,997 [INFO] 14762826_scars.html: written to archive/
+2026-10-30 04:00:34,997 [INFO] Added manifest entry: 14762826_scars.html
+2026-10-30 04:00:34,997 [INFO] 14762826_scars.html: removed from staging/
+2026-10-30 04:00:35,001 [INFO] --- Processing: 15214283_ruins.html
+2026-10-30 04:00:35,048 [INFO] 15214283_ruins.html: extracted — title='Ruins' author='TheFictionalMe' status='Complete' lastUpdated='2018-11-18' words='51301'
+2026-10-30 04:00:35,050 [INFO] 15214283_ruins.html: backed up to originals/
+2026-10-30 04:00:35,073 [INFO] 15214283_ruins.html: written to archive/
+2026-10-30 04:00:35,073 [INFO] Added manifest entry: 15214283_ruins.html
+2026-10-30 04:00:35,074 [INFO] 15214283_ruins.html: removed from staging/
+2026-10-30 04:00:35,078 [INFO] --- Processing: 15331935_the_sweet_smell_of_the.html
+2026-10-30 04:00:35,087 [INFO] 15331935_the_sweet_smell_of_the.html: extracted — title='The sweet smell of the sea' author='Nadine_044' status='In Progress' lastUpdated='2018-07-18' words='3249'
+2026-10-30 04:00:35,088 [INFO] 15331935_the_sweet_smell_of_the.html: backed up to originals/
+2026-10-30 04:00:35,092 [INFO] 15331935_the_sweet_smell_of_the.html: written to archive/
+2026-10-30 04:00:35,092 [INFO] Added manifest entry: 15331935_the_sweet_smell_of_the.html
+2026-10-30 04:00:35,093 [INFO] 15331935_the_sweet_smell_of_the.html: removed from staging/
+2026-10-30 04:00:35,096 [INFO] --- Processing: 18284294_creatures_in_the_night.html
+2026-10-30 04:00:35,107 [INFO] 18284294_creatures_in_the_night.html: extracted — title='Creatures in the night' author='sharkinterviewee' status='Complete' lastUpdated='2019-03-30' words='2860'
+2026-10-30 04:00:35,109 [INFO] 18284294_creatures_in_the_night.html: backed up to originals/
+2026-10-30 04:00:35,112 [INFO] 18284294_creatures_in_the_night.html: written to archive/
+2026-10-30 04:00:35,113 [INFO] Added manifest entry: 18284294_creatures_in_the_night.html
+2026-10-30 04:00:35,113 [INFO] 18284294_creatures_in_the_night.html: removed from staging/
+2026-10-30 04:00:35,116 [INFO] --- Processing: 18628393_dont_call_us_plucky.html
+2026-10-30 04:00:35,132 [INFO] 18628393_dont_call_us_plucky.html: extracted — title='Don't Call Us Plucky' author='aw marvel no (getoffmysheets)' status='Complete' lastUpdated='2019-05-21' words='10698'
+2026-10-30 04:00:35,134 [INFO] 18628393_dont_call_us_plucky.html: backed up to originals/
+2026-10-30 04:00:35,140 [INFO] 18628393_dont_call_us_plucky.html: written to archive/
+2026-10-30 04:00:35,141 [INFO] Added manifest entry: 18628393_dont_call_us_plucky.html
+2026-10-30 04:00:35,141 [INFO] 18628393_dont_call_us_plucky.html: removed from staging/
+2026-10-30 04:00:35,144 [INFO] --- Processing: 20057335_secrets_songs_and_stolen.html
+2026-10-30 04:00:35,153 [INFO] 20057335_secrets_songs_and_stolen.html: extracted — title='Secrets, songs and stolen moments' author='softcheesycheesejake' status='In Progress' lastUpdated='2019-07-31' words='1455'
+2026-10-30 04:00:35,154 [INFO] 20057335_secrets_songs_and_stolen.html: backed up to originals/
+2026-10-30 04:00:35,156 [INFO] 20057335_secrets_songs_and_stolen.html: written to archive/
+2026-10-30 04:00:35,157 [INFO] Added manifest entry: 20057335_secrets_songs_and_stolen.html
+2026-10-30 04:00:35,157 [INFO] 20057335_secrets_songs_and_stolen.html: removed from staging/
+2026-10-30 04:00:35,159 [INFO] --- Processing: 4255035_aside.html
+2026-10-30 04:00:35,169 [INFO] 4255035_aside.html: extracted — title='A-side' author='Ada_Loveless' status='Complete' lastUpdated='2015-07-02' words='2360'
+2026-10-30 04:00:35,171 [INFO] 4255035_aside.html: backed up to originals/
+2026-10-30 04:00:35,173 [INFO] 4255035_aside.html: written to archive/
+2026-10-30 04:00:35,173 [INFO] Added manifest entry: 4255035_aside.html
+2026-10-30 04:00:35,174 [INFO] 4255035_aside.html: removed from staging/
+2026-10-30 04:00:35,177 [INFO] --- Processing: 48496216_whats_mine_is_yours_to.html
+2026-10-30 04:00:35,187 [INFO] 48496216_whats_mine_is_yours_to.html: extracted — title='what's mine is yours (to some extent)' author='genesbolly' status='Complete' lastUpdated='2023-07-10' words='3016'
+2026-10-30 04:00:35,188 [INFO] 48496216_whats_mine_is_yours_to.html: backed up to originals/
+2026-10-30 04:00:35,192 [INFO] 48496216_whats_mine_is_yours_to.html: written to archive/
+2026-10-30 04:00:35,192 [INFO] Added manifest entry: 48496216_whats_mine_is_yours_to.html
+2026-10-30 04:00:35,192 [INFO] 48496216_whats_mine_is_yours_to.html: removed from staging/
+2026-10-30 04:00:35,195 [INFO] --- Processing: 49859935_i_couldve_spent_forever.html
+2026-10-30 04:00:35,204 [INFO] 49859935_i_couldve_spent_forever.html: extracted — title='i could've spent forever with your hands in my pockets' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2023-09-04' words='697'
+2026-10-30 04:00:35,205 [INFO] 49859935_i_couldve_spent_forever.html: backed up to originals/
+2026-10-30 04:00:35,208 [INFO] 49859935_i_couldve_spent_forever.html: written to archive/
+2026-10-30 04:00:35,208 [INFO] Added manifest entry: 49859935_i_couldve_spent_forever.html
+2026-10-30 04:00:35,208 [INFO] 49859935_i_couldve_spent_forever.html: removed from staging/
+2026-10-30 04:00:35,212 [INFO] --- Processing: 54634498_i_think_well_get_better.html
+2026-10-30 04:00:35,221 [INFO] 54634498_i_think_well_get_better.html: extracted — title='I Think We’ll Get Better at This' author='ZadieWrites' status='Complete' lastUpdated='2024-03-21' words='3155'
+2026-10-30 04:00:35,223 [INFO] 54634498_i_think_well_get_better.html: backed up to originals/
+2026-10-30 04:00:35,225 [INFO] 54634498_i_think_well_get_better.html: written to archive/
+2026-10-30 04:00:35,225 [INFO] Added manifest entry: 54634498_i_think_well_get_better.html
+2026-10-30 04:00:35,226 [INFO] 54634498_i_think_well_get_better.html: removed from staging/
+2026-10-30 04:00:35,229 [INFO] --- Processing: 59140138_untitled.html
+2026-10-30 04:00:35,231 [INFO] 59140138_untitled.html: extracted — title='Untitled' author='Anonymous' status='Complete' lastUpdated='2024-09-22' words='8966'
+2026-10-30 04:00:35,232 [INFO] 59140138_untitled.html: backed up to originals/
+2026-10-30 04:00:35,234 [INFO] 59140138_untitled.html: written to archive/
+2026-10-30 04:00:35,234 [INFO] Added manifest entry: 59140138_untitled.html
+2026-10-30 04:00:35,235 [INFO] 59140138_untitled.html: removed from staging/
+2026-10-30 04:00:35,238 [INFO] --- Processing: 60998935_i_care_a_lot.html
+2026-10-30 04:00:35,249 [INFO] 60998935_i_care_a_lot.html: extracted — title='i care a lot' author='Turning21' status='Complete' lastUpdated='2024-12-01' words='3867'
+2026-10-30 04:00:35,250 [INFO] 60998935_i_care_a_lot.html: backed up to originals/
+2026-10-30 04:00:35,254 [INFO] 60998935_i_care_a_lot.html: written to archive/
+2026-10-30 04:00:35,255 [INFO] Added manifest entry: 60998935_i_care_a_lot.html
+2026-10-30 04:00:35,255 [INFO] 60998935_i_care_a_lot.html: removed from staging/
+2026-10-30 04:00:35,258 [INFO] --- Processing: 61289911_hell_of_a_life.html
+2026-10-30 04:00:35,276 [INFO] 61289911_hell_of_a_life.html: extracted — title='Hell of A Life' author='Turning21' status='In Progress' lastUpdated='2024-12-16' words='13130'
+2026-10-30 04:00:35,278 [INFO] 61289911_hell_of_a_life.html: backed up to originals/
+2026-10-30 04:00:35,284 [INFO] 61289911_hell_of_a_life.html: written to archive/
+2026-10-30 04:00:35,285 [INFO] Added manifest entry: 61289911_hell_of_a_life.html
+2026-10-30 04:00:35,285 [INFO] 61289911_hell_of_a_life.html: removed from staging/
+2026-10-30 04:00:35,288 [INFO] --- Processing: 61533397_ill_answer_that.html
+2026-10-30 04:00:35,300 [INFO] 61533397_ill_answer_that.html: extracted — title='I'll Answer That' author='Turning21' status='Complete' lastUpdated='2024-12-22' words='5269'
+2026-10-30 04:00:35,302 [INFO] 61533397_ill_answer_that.html: backed up to originals/
+2026-10-30 04:00:35,306 [INFO] 61533397_ill_answer_that.html: written to archive/
+2026-10-30 04:00:35,306 [INFO] Added manifest entry: 61533397_ill_answer_that.html
+2026-10-30 04:00:35,306 [INFO] 61533397_ill_answer_that.html: removed from staging/
+2026-10-30 04:00:35,312 [INFO] Manifest saved to fic_data.json
+2026-10-30 04:00:35,317 [INFO] index.html rebuilt (47 fics)
+2026-10-30 04:00:35,317 [INFO] Done. 16 processed, 0 failed.
+2026-10-30 04:00:35,317 [INFO] ============================================================
+2026-10-30 04:02:30,776 [INFO] ============================================================
+2026-10-30 04:02:30,776 [INFO] Run started: 2026-10-30T04:02:30.776154
+2026-10-30 04:02:30,777 [INFO] Found 7 file(s) to process
+2026-10-30 04:02:30,782 [INFO] --- Processing: 13061922_oh_hey_there_mister_blue.html
+2026-10-30 04:02:30,853 [INFO] 13061922_oh_hey_there_mister_blue.html: extracted — title='Oh, Hey There, Mister Blue' author='iguessyouregonnamissthepantyraid' status='Complete' lastUpdated='2018-10-27' words='75793'
+2026-10-30 04:02:30,861 [INFO] 13061922_oh_hey_there_mister_blue.html: backed up to originals/
+2026-10-30 04:02:30,903 [INFO] 13061922_oh_hey_there_mister_blue.html: written to archive/
+2026-10-30 04:02:30,911 [INFO] Added manifest entry: 13061922_oh_hey_there_mister_blue.html
+2026-10-30 04:02:30,911 [INFO] 13061922_oh_hey_there_mister_blue.html: removed from staging/
+2026-10-30 04:02:30,914 [INFO] --- Processing: 16553135_a_supernatural_delight.html
+2026-10-30 04:02:30,924 [INFO] 16553135_a_supernatural_delight.html: extracted — title='A Supernatural Delight' author='iguessyouregonnamissthepantyraid' status='Complete' lastUpdated='2018-11-07' words='2566'
+2026-10-30 04:02:30,926 [INFO] 16553135_a_supernatural_delight.html: backed up to originals/
+2026-10-30 04:02:30,928 [INFO] 16553135_a_supernatural_delight.html: written to archive/
+2026-10-30 04:02:30,929 [INFO] Added manifest entry: 16553135_a_supernatural_delight.html
+2026-10-30 04:02:30,929 [INFO] 16553135_a_supernatural_delight.html: removed from staging/
+2026-10-30 04:02:30,932 [INFO] --- Processing: 18167813_ride_captain_ride.html
+2026-10-30 04:02:30,946 [INFO] 18167813_ride_captain_ride.html: extracted — title='Ride Captain Ride' author='iguessyouregonnamissthepantyraid' status='Complete' lastUpdated='2019-03-19' words='7224'
+2026-10-30 04:02:30,948 [INFO] 18167813_ride_captain_ride.html: backed up to originals/
+2026-10-30 04:02:30,956 [INFO] 18167813_ride_captain_ride.html: written to archive/
+2026-10-30 04:02:30,956 [INFO] Added manifest entry: 18167813_ride_captain_ride.html
+2026-10-30 04:02:30,957 [INFO] 18167813_ride_captain_ride.html: removed from staging/
+2026-10-30 04:02:30,960 [INFO] --- Processing: 19941199_aint_no_magic_aint_no.html
+2026-10-30 04:02:31,119 [INFO] 19941199_aint_no_magic_aint_no.html: extracted — title='Ain't No Magic, Ain't No Lie' author='iguessyouregonnamissthepantyraid' status='Complete' lastUpdated='2020-08-25' words='147430'
+2026-10-30 04:02:31,122 [INFO] 19941199_aint_no_magic_aint_no.html: backed up to originals/
+2026-10-30 04:02:31,225 [INFO] 19941199_aint_no_magic_aint_no.html: written to archive/
+2026-10-30 04:02:31,225 [INFO] Added manifest entry: 19941199_aint_no_magic_aint_no.html
+2026-10-30 04:02:31,226 [INFO] 19941199_aint_no_magic_aint_no.html: removed from staging/
+2026-10-30 04:02:31,229 [INFO] --- Processing: 31567826_keep_your_electric_eye.html
+2026-10-30 04:02:31,246 [INFO] 31567826_keep_your_electric_eye.html: extracted — title='Keep Your Electric Eye On Me, Babe' author='iguessyouregonnamissthepantyraid' status='Complete' lastUpdated='2021-05-27' words='11017'
+2026-10-30 04:02:31,248 [INFO] 31567826_keep_your_electric_eye.html: backed up to originals/
+2026-10-30 04:02:31,257 [INFO] 31567826_keep_your_electric_eye.html: written to archive/
+2026-10-30 04:02:31,257 [INFO] Added manifest entry: 31567826_keep_your_electric_eye.html
+2026-10-30 04:02:31,257 [INFO] 31567826_keep_your_electric_eye.html: removed from staging/
+2026-10-30 04:02:31,261 [INFO] --- Processing: 41982633_emotional_feedback_on.html
+2026-10-30 04:02:31,287 [INFO] 41982633_emotional_feedback_on.html: extracted — title='Emotional Feedback on Timeless Wavelength' author='iguessyouregonnamissthepantyraid' status='In Progress' lastUpdated='2023-04-10' words='23060'
+2026-10-30 04:02:31,289 [INFO] 41982633_emotional_feedback_on.html: backed up to originals/
+2026-10-30 04:02:31,305 [INFO] 41982633_emotional_feedback_on.html: written to archive/
+2026-10-30 04:02:31,306 [INFO] Added manifest entry: 41982633_emotional_feedback_on.html
+2026-10-30 04:02:31,306 [INFO] 41982633_emotional_feedback_on.html: removed from staging/
+2026-10-30 04:02:31,310 [INFO] --- Processing: 52118185_pick_up_the_pieces_and.html
+2026-10-30 04:02:31,325 [INFO] 52118185_pick_up_the_pieces_and.html: extracted — title='Pick Up The Pieces And Go Home' author='iguessyouregonnamissthepantyraid' status='Complete' lastUpdated='2023-12-08' words='12171'
+2026-10-30 04:02:31,326 [INFO] 52118185_pick_up_the_pieces_and.html: backed up to originals/
+2026-10-30 04:02:31,334 [INFO] 52118185_pick_up_the_pieces_and.html: written to archive/
+2026-10-30 04:02:31,334 [INFO] Added manifest entry: 52118185_pick_up_the_pieces_and.html
+2026-10-30 04:02:31,334 [INFO] 52118185_pick_up_the_pieces_and.html: removed from staging/
+2026-10-30 04:02:31,341 [INFO] Manifest saved to fic_data.json
+2026-10-30 04:02:31,343 [INFO] index.html rebuilt (54 fics)
+2026-10-30 04:02:31,343 [INFO] Done. 7 processed, 0 failed.
+2026-10-30 04:02:31,343 [INFO] ============================================================
+2026-10-30 04:07:17,224 [INFO] ============================================================
+2026-10-30 04:07:17,224 [INFO] Run started: 2026-10-30T04:07:17.224797
+2026-10-30 04:07:17,226 [INFO] Found 23 file(s) to process
+2026-10-30 04:07:17,232 [INFO] --- Processing: 34033477_voilà.html
+2026-10-30 04:07:17,268 [INFO] 34033477_voilà.html: extracted — title='Voilà' author='AParisianShakespearean' status='Complete' lastUpdated='2023-10-08' words='43339'
+2026-10-30 04:07:17,276 [INFO] 34033477_voilà.html: backed up to originals/
+2026-10-30 04:07:17,294 [INFO] 34033477_voilà.html: written to archive/
+2026-10-30 04:07:17,300 [INFO] Added manifest entry: 34033477_voilà.html
+2026-10-30 04:07:17,302 [INFO] 34033477_voilà.html: removed from staging/
+2026-10-30 04:07:17,305 [INFO] --- Processing: 79007196_shelter.html
+2026-10-30 04:07:17,333 [INFO] 79007196_shelter.html: extracted — title='Shelter' author='Alternate_UniverseDreams' status='Complete' lastUpdated='2026-03-30' words='73898'
+2026-10-30 04:07:17,334 [INFO] 79007196_shelter.html: backed up to originals/
+2026-10-30 04:07:17,349 [INFO] 79007196_shelter.html: written to archive/
+2026-10-30 04:07:17,350 [INFO] Added manifest entry: 79007196_shelter.html
+2026-10-30 04:07:17,350 [INFO] 79007196_shelter.html: removed from staging/
+2026-10-30 04:07:17,354 [INFO] --- Processing: 79056106_keep_your_embers.html
+2026-10-30 04:07:17,378 [INFO] 79056106_keep_your_embers.html: extracted — title='Keep your embers' author='call_me_K' status='Complete' lastUpdated='2026-03-08' words='29834'
+2026-10-30 04:07:17,380 [INFO] 79056106_keep_your_embers.html: backed up to originals/
+2026-10-30 04:07:17,393 [INFO] 79056106_keep_your_embers.html: written to archive/
+2026-10-30 04:07:17,394 [INFO] Added manifest entry: 79056106_keep_your_embers.html
+2026-10-30 04:07:17,394 [INFO] 79056106_keep_your_embers.html: removed from staging/
+2026-10-30 04:07:17,397 [INFO] --- Processing: 81334441_with_my_name_pressed.html
+2026-10-30 04:07:17,407 [INFO] 81334441_with_my_name_pressed.html: extracted — title='With my name pressed against your skin' author='aesukimx (trolldiscourse)' status='Complete' lastUpdated='2026-03-16' words='2247'
+2026-10-30 04:07:17,409 [INFO] 81334441_with_my_name_pressed.html: backed up to originals/
+2026-10-30 04:07:17,411 [INFO] 81334441_with_my_name_pressed.html: written to archive/
+2026-10-30 04:07:17,411 [INFO] Added manifest entry: 81334441_with_my_name_pressed.html
+2026-10-30 04:07:17,411 [INFO] 81334441_with_my_name_pressed.html: removed from staging/
+2026-10-30 04:07:17,416 [INFO] --- Processing: 81606876_requiem.html
+2026-10-30 04:07:17,426 [INFO] 81606876_requiem.html: extracted — title='Requiem' author='Resident_Idiot_Simp (Resident_Idiot_simp)' status='Complete' lastUpdated='2026-03-21' words='2087'
+2026-10-30 04:07:17,428 [INFO] 81606876_requiem.html: backed up to originals/
+2026-10-30 04:07:17,431 [INFO] 81606876_requiem.html: written to archive/
+2026-10-30 04:07:17,431 [INFO] Added manifest entry: 81606876_requiem.html
+2026-10-30 04:07:17,431 [INFO] 81606876_requiem.html: removed from staging/
+2026-10-30 04:07:17,434 [INFO] --- Processing: 81617706_slow_days_and_coffee.html
+2026-10-30 04:07:17,443 [INFO] 81617706_slow_days_and_coffee.html: extracted — title='Slow Days and Coffee Beans' author='lastdecembers' status='Complete' lastUpdated='2026-03-21' words='1698'
+2026-10-30 04:07:17,445 [INFO] 81617706_slow_days_and_coffee.html: backed up to originals/
+2026-10-30 04:07:17,446 [INFO] 81617706_slow_days_and_coffee.html: written to archive/
+2026-10-30 04:07:17,447 [INFO] Added manifest entry: 81617706_slow_days_and_coffee.html
+2026-10-30 04:07:17,447 [INFO] 81617706_slow_days_and_coffee.html: removed from staging/
+2026-10-30 04:07:17,451 [INFO] --- Processing: 81664956_i_have_no_other.html
+2026-10-30 04:07:17,459 [INFO] 81664956_i_have_no_other.html: extracted — title='i have no other alternative' author='dissonencia' status='Complete' lastUpdated='2026-03-22' words='1671'
+2026-10-30 04:07:17,460 [INFO] 81664956_i_have_no_other.html: backed up to originals/
+2026-10-30 04:07:17,461 [INFO] 81664956_i_have_no_other.html: written to archive/
+2026-10-30 04:07:17,463 [INFO] Added manifest entry: 81664956_i_have_no_other.html
+2026-10-30 04:07:17,463 [INFO] 81664956_i_have_no_other.html: removed from staging/
+2026-10-30 04:07:17,466 [INFO] --- Processing: 81666391_the_aftermath.html
+2026-10-30 04:07:17,474 [INFO] 81666391_the_aftermath.html: extracted — title='The Aftermath' author='Resident_Idiot_Simp (Resident_Idiot_simp)' status='Complete' lastUpdated='2026-03-22' words='2190'
+2026-10-30 04:07:17,476 [INFO] 81666391_the_aftermath.html: backed up to originals/
+2026-10-30 04:07:17,478 [INFO] 81666391_the_aftermath.html: written to archive/
+2026-10-30 04:07:17,478 [INFO] Added manifest entry: 81666391_the_aftermath.html
+2026-10-30 04:07:17,479 [INFO] 81666391_the_aftermath.html: removed from staging/
+2026-10-30 04:07:17,482 [INFO] --- Processing: 83656111_resolve.html
+2026-10-30 04:07:17,522 [INFO] 83656111_resolve.html: extracted — title='Resolve' author='Alternate_UniverseDreams' status='Complete' lastUpdated='2026-09-03' words='156193'
+2026-10-30 04:07:17,525 [INFO] 83656111_resolve.html: backed up to originals/
+2026-10-30 04:07:17,548 [INFO] 83656111_resolve.html: written to archive/
+2026-10-30 04:07:17,548 [INFO] Added manifest entry: 83656111_resolve.html
+2026-10-30 04:07:17,549 [INFO] 83656111_resolve.html: removed from staging/
+2026-10-30 04:07:17,553 [INFO] --- Processing: 84664856_domestic_by_osmosis.html
+2026-10-30 04:07:17,566 [INFO] 84664856_domestic_by_osmosis.html: extracted — title='Domestic by Osmosis' author='missiemoscato' status='Complete' lastUpdated='2026-05-11' words='7638'
+2026-10-30 04:07:17,567 [INFO] 84664856_domestic_by_osmosis.html: backed up to originals/
+2026-10-30 04:07:17,571 [INFO] 84664856_domestic_by_osmosis.html: written to archive/
+2026-10-30 04:07:17,571 [INFO] Added manifest entry: 84664856_domestic_by_osmosis.html
+2026-10-30 04:07:17,571 [INFO] 84664856_domestic_by_osmosis.html: removed from staging/
+2026-10-30 04:07:17,574 [INFO] --- Processing: 85015356_borrowing_tomorrow.html
+2026-10-30 04:07:17,590 [INFO] 85015356_borrowing_tomorrow.html: extracted — title='Borrowing Tomorrow' author='missiemoscato' status='Complete' lastUpdated='2026-05-17' words='14458'
+2026-10-30 04:07:17,592 [INFO] 85015356_borrowing_tomorrow.html: backed up to originals/
+2026-10-30 04:07:17,597 [INFO] 85015356_borrowing_tomorrow.html: written to archive/
+2026-10-30 04:07:17,598 [INFO] Added manifest entry: 85015356_borrowing_tomorrow.html
+2026-10-30 04:07:17,598 [INFO] 85015356_borrowing_tomorrow.html: removed from staging/
+2026-10-30 04:07:17,601 [INFO] --- Processing: 85407446_despite_the_odds.html
+2026-10-30 04:07:17,689 [INFO] 85407446_despite_the_odds.html: extracted — title='Despite the Odds' author='longlivefatalefemme' status='Complete' lastUpdated='2026-09-23' words='87889'
+2026-10-30 04:07:17,691 [INFO] 85407446_despite_the_odds.html: backed up to originals/
+2026-10-30 04:07:17,734 [INFO] 85407446_despite_the_odds.html: written to archive/
+2026-10-30 04:07:17,734 [INFO] Added manifest entry: 85407446_despite_the_odds.html
+2026-10-30 04:07:17,735 [INFO] 85407446_despite_the_odds.html: removed from staging/
+2026-10-30 04:07:17,740 [INFO] --- Processing: 85817336_living_for_the_knife.html
+2026-10-30 04:07:17,866 [INFO] 85817336_living_for_the_knife.html: extracted — title='Living For The Knife' author='ofriviq' status='In Progress' lastUpdated='2026-07-14' words='102960'
+2026-10-30 04:07:17,868 [INFO] 85817336_living_for_the_knife.html: backed up to originals/
+2026-10-30 04:07:17,942 [INFO] 85817336_living_for_the_knife.html: written to archive/
+2026-10-30 04:07:17,942 [INFO] Added manifest entry: 85817336_living_for_the_knife.html
+2026-10-30 04:07:17,943 [INFO] 85817336_living_for_the_knife.html: removed from staging/
+2026-10-30 04:07:17,947 [INFO] --- Processing: 87765116_too_many_steps_ahead.html
+2026-10-30 04:07:17,992 [INFO] 87765116_too_many_steps_ahead.html: extracted — title='Too Many Steps Ahead' author='Anonymous' status='Complete' lastUpdated='2026-09-29' words='40108'
+2026-10-30 04:07:17,995 [INFO] 87765116_too_many_steps_ahead.html: backed up to originals/
+2026-10-30 04:07:18,014 [INFO] 87765116_too_many_steps_ahead.html: written to archive/
+2026-10-30 04:07:18,014 [INFO] Added manifest entry: 87765116_too_many_steps_ahead.html
+2026-10-30 04:07:18,016 [INFO] 87765116_too_many_steps_ahead.html: removed from staging/
+2026-10-30 04:07:18,020 [INFO] --- Processing: 87939186_mission_is_personal.html
+2026-10-30 04:07:18,087 [INFO] 87939186_mission_is_personal.html: extracted — title='Mission is Personal' author='Red_Ink_Drop' status='Complete' lastUpdated='2026-07-21' words='64324'
+2026-10-30 04:07:18,089 [INFO] 87939186_mission_is_personal.html: backed up to originals/
+2026-10-30 04:07:18,129 [INFO] 87939186_mission_is_personal.html: written to archive/
+2026-10-30 04:07:18,130 [INFO] Added manifest entry: 87939186_mission_is_personal.html
+2026-10-30 04:07:18,130 [INFO] 87939186_mission_is_personal.html: removed from staging/
+2026-10-30 04:07:18,134 [INFO] --- Processing: 88159646_long_story_short.html
+2026-10-30 04:07:18,157 [INFO] 88159646_long_story_short.html: extracted — title='Long Story Short' author='Thefruitofpain' status='Complete' lastUpdated='2026-10-19' words='13725'
+2026-10-30 04:07:18,158 [INFO] 88159646_long_story_short.html: backed up to originals/
+2026-10-30 04:07:18,168 [INFO] 88159646_long_story_short.html: written to archive/
+2026-10-30 04:07:18,168 [INFO] Added manifest entry: 88159646_long_story_short.html
+2026-10-30 04:07:18,168 [INFO] 88159646_long_story_short.html: removed from staging/
+2026-10-30 04:07:18,173 [INFO] --- Processing: 89039256_inventing_something.html
+2026-10-30 04:07:18,190 [INFO] 89039256_inventing_something.html: extracted — title='Inventing Something' author='asleepyboy' status='Complete' lastUpdated='2026-07-23' words='10755'
+2026-10-30 04:07:18,193 [INFO] 89039256_inventing_something.html: backed up to originals/
+2026-10-30 04:07:18,200 [INFO] 89039256_inventing_something.html: written to archive/
+2026-10-30 04:07:18,200 [INFO] Added manifest entry: 89039256_inventing_something.html
+2026-10-30 04:07:18,202 [INFO] 89039256_inventing_something.html: removed from staging/
+2026-10-30 04:07:18,206 [INFO] --- Processing: 89069121_somewhere_between.html
+2026-10-30 04:07:18,292 [INFO] 89069121_somewhere_between.html: extracted — title='somewhere between gridiron and stardust' author='adasbearlover' status='Complete' lastUpdated='2026-07-23' words='90729'
+2026-10-30 04:07:18,294 [INFO] 89069121_somewhere_between.html: backed up to originals/
+2026-10-30 04:07:18,337 [INFO] 89069121_somewhere_between.html: written to archive/
+2026-10-30 04:07:18,337 [INFO] Added manifest entry: 89069121_somewhere_between.html
+2026-10-30 04:07:18,338 [INFO] 89069121_somewhere_between.html: removed from staging/
+2026-10-30 04:07:18,341 [INFO] --- Processing: 89290461_mission_is_personal.html
+2026-10-30 04:07:18,418 [INFO] 89290461_mission_is_personal.html: extracted — title='Mission is Personal: Family' author='Red_Ink_Drop' status='In Progress' lastUpdated='2026-08-26' words='39011'
+2026-10-30 04:07:18,420 [INFO] 89290461_mission_is_personal.html: backed up to originals/
+2026-10-30 04:07:18,452 [INFO] 89290461_mission_is_personal.html: written to archive/
+2026-10-30 04:07:18,453 [INFO] Added manifest entry: 89290461_mission_is_personal.html
+2026-10-30 04:07:18,453 [INFO] 89290461_mission_is_personal.html: removed from staging/
+2026-10-30 04:07:18,457 [INFO] --- Processing: 90946611_mr_mrs_resident_evil.html
+2026-10-30 04:07:18,487 [INFO] 90946611_mr_mrs_resident_evil.html: extracted — title='Mr. & Mrs. Resident Evil' author='Okeli77' status='Complete' lastUpdated='2026-08-22' words='53522'
+2026-10-30 04:07:18,489 [INFO] 90946611_mr_mrs_resident_evil.html: backed up to originals/
+2026-10-30 04:07:18,494 [INFO] 90946611_mr_mrs_resident_evil.html: written to archive/
+2026-10-30 04:07:18,496 [INFO] Added manifest entry: 90946611_mr_mrs_resident_evil.html
+2026-10-30 04:07:18,496 [INFO] 90946611_mr_mrs_resident_evil.html: removed from staging/
+2026-10-30 04:07:18,499 [INFO] --- Processing: 91672751_sex_education.html
+2026-10-30 04:07:18,532 [INFO] 91672751_sex_education.html: extracted — title='Sex Education' author='ofriviq' status='Complete' lastUpdated='2026-08-30' words='20973'
+2026-10-30 04:07:18,534 [INFO] 91672751_sex_education.html: backed up to originals/
+2026-10-30 04:07:18,552 [INFO] 91672751_sex_education.html: written to archive/
+2026-10-30 04:07:18,552 [INFO] Added manifest entry: 91672751_sex_education.html
+2026-10-30 04:07:18,552 [INFO] 91672751_sex_education.html: removed from staging/
+2026-10-30 04:07:18,557 [INFO] --- Processing: 92250416_not_like_this_18_aeon.html
+2026-10-30 04:07:18,569 [INFO] 92250416_not_like_this_18_aeon.html: extracted — title='Not Like This. +18. aeon. [Leon S. Kennedy x Ada Wong] Post Resident Evil 6. NSFW' author='aeoncanon' status='Complete' lastUpdated='2026-09-09' words='6440'
+2026-10-30 04:07:18,571 [INFO] 92250416_not_like_this_18_aeon.html: backed up to originals/
+2026-10-30 04:07:18,577 [INFO] 92250416_not_like_this_18_aeon.html: written to archive/
+2026-10-30 04:07:18,577 [INFO] Added manifest entry: 92250416_not_like_this_18_aeon.html
+2026-10-30 04:07:18,577 [INFO] 92250416_not_like_this_18_aeon.html: removed from staging/
+2026-10-30 04:07:18,582 [INFO] --- Processing: 92260411_whats_wrong_with.html
+2026-10-30 04:07:18,655 [INFO] 92260411_whats_wrong_with.html: extracted — title='What's Wrong With Secretary Wong?' author='adacuntybob' status='In Progress' lastUpdated='2026-10-20' words='66802'
+2026-10-30 04:07:18,658 [INFO] 92260411_whats_wrong_with.html: backed up to originals/
+2026-10-30 04:07:18,694 [INFO] 92260411_whats_wrong_with.html: written to archive/
+2026-10-30 04:07:18,695 [INFO] Added manifest entry: 92260411_whats_wrong_with.html
+2026-10-30 04:07:18,695 [INFO] 92260411_whats_wrong_with.html: removed from staging/
+2026-10-30 04:07:18,702 [INFO] Manifest saved to fic_data.json
+2026-10-30 04:07:18,706 [INFO] index.html rebuilt (77 fics)
+2026-10-30 04:07:18,706 [INFO] Done. 23 processed, 0 failed.
+2026-10-30 04:07:18,706 [INFO] ============================================================
+2026-10-30 04:21:36,714 [INFO] ============================================================
+2026-10-30 04:21:36,714 [INFO] Run started: 2026-10-30T04:21:36.714324
+2026-10-30 04:21:36,715 [INFO] Found 34 file(s) to process
+2026-10-30 04:21:36,721 [INFO] --- Processing: 10846809_what_do_i_do_about_this.html
+2026-10-30 04:21:36,730 [INFO] 10846809_what_do_i_do_about_this.html: extracted — title='What Do I Do About This Feeling In My Chest?' author='jojosbrazzeradventure' status='In Progress' lastUpdated='2017-05-14' words='1809'
+2026-10-30 04:21:36,738 [INFO] 10846809_what_do_i_do_about_this.html: backed up to originals/
+2026-10-30 04:21:36,740 [INFO] 10846809_what_do_i_do_about_this.html: written to archive/
+2026-10-30 04:21:36,748 [INFO] Added manifest entry: 10846809_what_do_i_do_about_this.html
+2026-10-30 04:21:36,748 [INFO] 10846809_what_do_i_do_about_this.html: removed from staging/
+2026-10-30 04:21:36,752 [INFO] --- Processing: 11108271_interfere.html
+2026-10-30 04:21:36,772 [INFO] 11108271_interfere.html: extracted — title='Interfere' author='Lastwaterbender' status='In Progress' lastUpdated='2017-09-17' words=''
+2026-10-30 04:21:36,774 [INFO] 11108271_interfere.html: backed up to originals/
+2026-10-30 04:21:36,782 [INFO] 11108271_interfere.html: written to archive/
+2026-10-30 04:21:36,782 [INFO] Added manifest entry: 11108271_interfere.html
+2026-10-30 04:21:36,784 [INFO] 11108271_interfere.html: removed from staging/
+2026-10-30 04:21:36,788 [INFO] --- Processing: 14485272_it_all_goes_to_hell_and.html
+2026-10-30 04:21:36,798 [INFO] 14485272_it_all_goes_to_hell_and.html: extracted — title='It All Goes To Hell And Somehow We Win' author='Araminia16' status='Complete' lastUpdated='2018-05-01' words='5192'
+2026-10-30 04:21:36,801 [INFO] 14485272_it_all_goes_to_hell_and.html: backed up to originals/
+2026-10-30 04:21:36,805 [INFO] 14485272_it_all_goes_to_hell_and.html: written to archive/
+2026-10-30 04:21:36,805 [INFO] Added manifest entry: 14485272_it_all_goes_to_hell_and.html
+2026-10-30 04:21:36,806 [INFO] 14485272_it_all_goes_to_hell_and.html: removed from staging/
+2026-10-30 04:21:36,810 [INFO] --- Processing: 14888297_stay_the_night.html
+2026-10-30 04:21:36,819 [INFO] 14888297_stay_the_night.html: extracted — title='Stay the Night' author='sharkinterviewee' status='In Progress' lastUpdated='2018-06-09' words='4354'
+2026-10-30 04:21:36,822 [INFO] 14888297_stay_the_night.html: backed up to originals/
+2026-10-30 04:21:36,824 [INFO] 14888297_stay_the_night.html: written to archive/
+2026-10-30 04:21:36,825 [INFO] Added manifest entry: 14888297_stay_the_night.html
+2026-10-30 04:21:36,825 [INFO] 14888297_stay_the_night.html: removed from staging/
+2026-10-30 04:21:36,829 [INFO] --- Processing: 15197825_please_me.html
+2026-10-30 04:21:36,839 [INFO] 15197825_please_me.html: extracted — title='Please Me?' author='Lady_Sheyera' status='Complete' lastUpdated='2018-07-07' words='1436'
+2026-10-30 04:21:36,841 [INFO] 15197825_please_me.html: backed up to originals/
+2026-10-30 04:21:36,843 [INFO] 15197825_please_me.html: written to archive/
+2026-10-30 04:21:36,843 [INFO] Added manifest entry: 15197825_please_me.html
+2026-10-30 04:21:36,844 [INFO] 15197825_please_me.html: removed from staging/
+2026-10-30 04:21:36,848 [INFO] --- Processing: 16262729_youre_my_reality.html
+2026-10-30 04:21:36,857 [INFO] 16262729_youre_my_reality.html: extracted — title='you're my reality' author='interabang' status='Complete' lastUpdated='2018-10-25' words='1582'
+2026-10-30 04:21:36,858 [INFO] 16262729_youre_my_reality.html: backed up to originals/
+2026-10-30 04:21:36,860 [INFO] 16262729_youre_my_reality.html: written to archive/
+2026-10-30 04:21:36,861 [INFO] Added manifest entry: 16262729_youre_my_reality.html
+2026-10-30 04:21:36,861 [INFO] 16262729_youre_my_reality.html: removed from staging/
+2026-10-30 04:21:36,865 [INFO] --- Processing: 18005357_the_invisible_man.html
+2026-10-30 04:21:36,876 [INFO] 18005357_the_invisible_man.html: extracted — title='The Invisible Man' author='LegoTea' status='Complete' lastUpdated='2019-03-05' words='3927'
+2026-10-30 04:21:36,878 [INFO] 18005357_the_invisible_man.html: backed up to originals/
+2026-10-30 04:21:36,881 [INFO] 18005357_the_invisible_man.html: written to archive/
+2026-10-30 04:21:36,882 [INFO] Added manifest entry: 18005357_the_invisible_man.html
+2026-10-30 04:21:36,882 [INFO] 18005357_the_invisible_man.html: removed from staging/
+2026-10-30 04:21:36,886 [INFO] --- Processing: 18026588_ive_got_you_deep_in_the.html
+2026-10-30 04:21:36,898 [INFO] 18026588_ive_got_you_deep_in_the.html: extracted — title='I've Got You Deep In the Heart Of Me' author='LegoTea' status='Complete' lastUpdated='2019-03-07' words='10381'
+2026-10-30 04:21:36,900 [INFO] 18026588_ive_got_you_deep_in_the.html: backed up to originals/
+2026-10-30 04:21:36,904 [INFO] 18026588_ive_got_you_deep_in_the.html: written to archive/
+2026-10-30 04:21:36,905 [INFO] Added manifest entry: 18026588_ive_got_you_deep_in_the.html
+2026-10-30 04:21:36,905 [INFO] 18026588_ive_got_you_deep_in_the.html: removed from staging/
+2026-10-30 04:21:36,908 [INFO] --- Processing: 18799918_negotiations.html
+2026-10-30 04:21:36,918 [INFO] 18799918_negotiations.html: extracted — title='Negotiations' author='zeroxfortyfive' status='Complete' lastUpdated='2019-05-12' words='3311'
+2026-10-30 04:21:36,920 [INFO] 18799918_negotiations.html: backed up to originals/
+2026-10-30 04:21:36,922 [INFO] 18799918_negotiations.html: written to archive/
+2026-10-30 04:21:36,922 [INFO] Added manifest entry: 18799918_negotiations.html
+2026-10-30 04:21:36,922 [INFO] 18799918_negotiations.html: removed from staging/
+2026-10-30 04:21:36,927 [INFO] --- Processing: 19175833_a_horrible_dye_job.html
+2026-10-30 04:21:36,939 [INFO] 19175833_a_horrible_dye_job.html: extracted — title='A Horrible Dye Job' author='kaaaaaaaos' status='Complete' lastUpdated='2019-06-25' words='8370'
+2026-10-30 04:21:36,940 [INFO] 19175833_a_horrible_dye_job.html: backed up to originals/
+2026-10-30 04:21:36,944 [INFO] 19175833_a_horrible_dye_job.html: written to archive/
+2026-10-30 04:21:36,945 [INFO] Added manifest entry: 19175833_a_horrible_dye_job.html
+2026-10-30 04:21:36,945 [INFO] 19175833_a_horrible_dye_job.html: removed from staging/
+2026-10-30 04:21:36,949 [INFO] --- Processing: 20766458_the_angel_from_my.html
+2026-10-30 04:21:36,958 [INFO] 20766458_the_angel_from_my.html: extracted — title='The angel from my nightmare' author='Renxzs' status='Complete' lastUpdated='2019-09-25' words='2039'
+2026-10-30 04:21:36,960 [INFO] 20766458_the_angel_from_my.html: backed up to originals/
+2026-10-30 04:21:36,962 [INFO] 20766458_the_angel_from_my.html: written to archive/
+2026-10-30 04:21:36,962 [INFO] Added manifest entry: 20766458_the_angel_from_my.html
+2026-10-30 04:21:36,963 [INFO] 20766458_the_angel_from_my.html: removed from staging/
+2026-10-30 04:21:36,966 [INFO] --- Processing: 20793008_fight_or_flight_or.html
+2026-10-30 04:21:36,974 [INFO] 20793008_fight_or_flight_or.html: extracted — title='Fight or flight or...' author='icantreallyfindausername' status='In Progress' lastUpdated='2019-09-27' words='950'
+2026-10-30 04:21:36,976 [INFO] 20793008_fight_or_flight_or.html: backed up to originals/
+2026-10-30 04:21:36,979 [INFO] 20793008_fight_or_flight_or.html: written to archive/
+2026-10-30 04:21:36,979 [INFO] Added manifest entry: 20793008_fight_or_flight_or.html
+2026-10-30 04:21:36,979 [INFO] 20793008_fight_or_flight_or.html: removed from staging/
+2026-10-30 04:21:36,983 [INFO] --- Processing: 2253087_oral_sorcery.html
+2026-10-30 04:21:36,994 [INFO] 2253087_oral_sorcery.html: extracted — title='Oral Sorcery' author='interabang' status='Complete' lastUpdated='2014-09-04' words='3900'
+2026-10-30 04:21:36,995 [INFO] 2253087_oral_sorcery.html: backed up to originals/
+2026-10-30 04:21:36,998 [INFO] 2253087_oral_sorcery.html: written to archive/
+2026-10-30 04:21:36,998 [INFO] Added manifest entry: 2253087_oral_sorcery.html
+2026-10-30 04:21:36,998 [INFO] 2253087_oral_sorcery.html: removed from staging/
+2026-10-30 04:21:37,001 [INFO] --- Processing: 23251819_running_on_serenity.html
+2026-10-30 04:21:37,009 [INFO] 23251819_running_on_serenity.html: extracted — title='Running on Serenity' author='sharkinterviewee' status='Complete' lastUpdated='2020-03-21' words='545'
+2026-10-30 04:21:37,011 [INFO] 23251819_running_on_serenity.html: backed up to originals/
+2026-10-30 04:21:37,012 [INFO] 23251819_running_on_serenity.html: written to archive/
+2026-10-30 04:21:37,013 [INFO] Added manifest entry: 23251819_running_on_serenity.html
+2026-10-30 04:21:37,013 [INFO] 23251819_running_on_serenity.html: removed from staging/
+2026-10-30 04:21:37,017 [INFO] --- Processing: 23567647_under_his_spell.html
+2026-10-30 04:21:37,024 [INFO] 23567647_under_his_spell.html: extracted — title='Under His Spell' author='articcat621' status='Complete' lastUpdated='2020-04-09' words='1172'
+2026-10-30 04:21:37,026 [INFO] 23567647_under_his_spell.html: backed up to originals/
+2026-10-30 04:21:37,028 [INFO] 23567647_under_his_spell.html: written to archive/
+2026-10-30 04:21:37,028 [INFO] Added manifest entry: 23567647_under_his_spell.html
+2026-10-30 04:21:37,028 [INFO] 23567647_under_his_spell.html: removed from staging/
+2026-10-30 04:21:37,032 [INFO] --- Processing: 2530985_root_and_branch.html
+2026-10-30 04:21:37,039 [INFO] 2530985_root_and_branch.html: extracted — title='Root and Branch' author='Murreleteer' status='Complete' lastUpdated='2014-10-30' words='1480'
+2026-10-30 04:21:37,040 [INFO] 2530985_root_and_branch.html: backed up to originals/
+2026-10-30 04:21:37,042 [INFO] 2530985_root_and_branch.html: written to archive/
+2026-10-30 04:21:37,043 [INFO] Added manifest entry: 2530985_root_and_branch.html
+2026-10-30 04:21:37,043 [INFO] 2530985_root_and_branch.html: removed from staging/
+2026-10-30 04:21:37,047 [INFO] --- Processing: 38565822_halves_of_perfection.html
+2026-10-30 04:21:37,055 [INFO] 38565822_halves_of_perfection.html: extracted — title='Halves of perfection' author='NightFox9' status='Complete' lastUpdated='2022-04-23' words='4834'
+2026-10-30 04:21:37,056 [INFO] 38565822_halves_of_perfection.html: backed up to originals/
+2026-10-30 04:21:37,061 [INFO] 38565822_halves_of_perfection.html: written to archive/
+2026-10-30 04:21:37,061 [INFO] Added manifest entry: 38565822_halves_of_perfection.html
+2026-10-30 04:21:37,061 [INFO] 38565822_halves_of_perfection.html: removed from staging/
+2026-10-30 04:21:37,065 [INFO] --- Processing: 41605848_alone_together.html
+2026-10-30 04:21:37,073 [INFO] 41605848_alone_together.html: extracted — title='alone together' author='quillsmora' status='In Progress' lastUpdated='2022-09-19' words='2406'
+2026-10-30 04:21:37,075 [INFO] 41605848_alone_together.html: backed up to originals/
+2026-10-30 04:21:37,078 [INFO] 41605848_alone_together.html: written to archive/
+2026-10-30 04:21:37,079 [INFO] Added manifest entry: 41605848_alone_together.html
+2026-10-30 04:21:37,079 [INFO] 41605848_alone_together.html: removed from staging/
+2026-10-30 04:21:37,083 [INFO] --- Processing: 4294179_h_y_p_n_o_t_i_c.html
+2026-10-30 04:21:37,092 [INFO] 4294179_h_y_p_n_o_t_i_c.html: extracted — title='H y p n o t i c' author='dormant_bender' status='In Progress' lastUpdated='2015-07-08' words='5950'
+2026-10-30 04:21:37,093 [INFO] 4294179_h_y_p_n_o_t_i_c.html: backed up to originals/
+2026-10-30 04:21:37,096 [INFO] 4294179_h_y_p_n_o_t_i_c.html: written to archive/
+2026-10-30 04:21:37,096 [INFO] Added manifest entry: 4294179_h_y_p_n_o_t_i_c.html
+2026-10-30 04:21:37,096 [INFO] 4294179_h_y_p_n_o_t_i_c.html: removed from staging/
+2026-10-30 04:21:37,101 [INFO] --- Processing: 44740549_wakeup_call.html
+2026-10-30 04:21:37,106 [INFO] 44740549_wakeup_call.html: extracted — title='wake-up call' author='quillsmora' status='Complete' lastUpdated='2023-02-14' words='730'
+2026-10-30 04:21:37,109 [INFO] 44740549_wakeup_call.html: backed up to originals/
+2026-10-30 04:21:37,111 [INFO] 44740549_wakeup_call.html: written to archive/
+2026-10-30 04:21:37,111 [INFO] Added manifest entry: 44740549_wakeup_call.html
+2026-10-30 04:21:37,111 [INFO] 44740549_wakeup_call.html: removed from staging/
+2026-10-30 04:21:37,115 [INFO] --- Processing: 47815498_i_fall_to_pieces_when_im.html
+2026-10-30 04:21:37,123 [INFO] 47815498_i_fall_to_pieces_when_im.html: extracted — title='i fall to pieces when i'm with you' author='quillsmora' status='Complete' lastUpdated='2023-06-27' words='1759'
+2026-10-30 04:21:37,125 [INFO] 47815498_i_fall_to_pieces_when_im.html: backed up to originals/
+2026-10-30 04:21:37,127 [INFO] 47815498_i_fall_to_pieces_when_im.html: written to archive/
+2026-10-30 04:21:37,128 [INFO] Added manifest entry: 47815498_i_fall_to_pieces_when_im.html
+2026-10-30 04:21:37,128 [INFO] 47815498_i_fall_to_pieces_when_im.html: removed from staging/
+2026-10-30 04:21:37,132 [INFO] --- Processing: 48342154_sunroof_top_and_a.html
+2026-10-30 04:21:37,138 [INFO] 48342154_sunroof_top_and_a.html: extracted — title='sunroof top and a gangster lean' author='time_breaker' status='Complete' lastUpdated='2023-07-04' words='1609'
+2026-10-30 04:21:37,139 [INFO] 48342154_sunroof_top_and_a.html: backed up to originals/
+2026-10-30 04:21:37,141 [INFO] 48342154_sunroof_top_and_a.html: written to archive/
+2026-10-30 04:21:37,142 [INFO] Added manifest entry: 48342154_sunroof_top_and_a.html
+2026-10-30 04:21:37,142 [INFO] 48342154_sunroof_top_and_a.html: removed from staging/
+2026-10-30 04:21:37,146 [INFO] --- Processing: 52523323_jingle_bell_rock.html
+2026-10-30 04:21:37,175 [INFO] 52523323_jingle_bell_rock.html: extracted — title='Jingle Bell Rock' author='NightFox9' status='Complete' lastUpdated='2023-12-25' words='29107'
+2026-10-30 04:21:37,177 [INFO] 52523323_jingle_bell_rock.html: backed up to originals/
+2026-10-30 04:21:37,193 [INFO] 52523323_jingle_bell_rock.html: written to archive/
+2026-10-30 04:21:37,193 [INFO] Added manifest entry: 52523323_jingle_bell_rock.html
+2026-10-30 04:21:37,194 [INFO] 52523323_jingle_bell_rock.html: removed from staging/
+2026-10-30 04:21:37,198 [INFO] --- Processing: 55541944_messy_toplip_kiss_how_i.html
+2026-10-30 04:21:37,206 [INFO] 55541944_messy_toplip_kiss_how_i.html: extracted — title='messy top-lip kiss, how i long for our trysts' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2024-04-28' words='1490'
+2026-10-30 04:21:37,208 [INFO] 55541944_messy_toplip_kiss_how_i.html: backed up to originals/
+2026-10-30 04:21:37,209 [INFO] 55541944_messy_toplip_kiss_how_i.html: written to archive/
+2026-10-30 04:21:37,211 [INFO] Added manifest entry: 55541944_messy_toplip_kiss_how_i.html
+2026-10-30 04:21:37,211 [INFO] 55541944_messy_toplip_kiss_how_i.html: removed from staging/
+2026-10-30 04:21:37,215 [INFO] --- Processing: 56055130_my_one_and_only_my.html
+2026-10-30 04:21:37,223 [INFO] 56055130_my_one_and_only_my.html: extracted — title='my one and only, my lifeline' author='moonlitwraith' status='Complete' lastUpdated='2024-05-20' words='2954'
+2026-10-30 04:21:37,224 [INFO] 56055130_my_one_and_only_my.html: backed up to originals/
+2026-10-30 04:21:37,228 [INFO] 56055130_my_one_and_only_my.html: written to archive/
+2026-10-30 04:21:37,228 [INFO] Added manifest entry: 56055130_my_one_and_only_my.html
+2026-10-30 04:21:37,228 [INFO] 56055130_my_one_and_only_my.html: removed from staging/
+2026-10-30 04:21:37,233 [INFO] --- Processing: 57780037_what_i_risk_to_be_close.html
+2026-10-30 04:21:37,260 [INFO] 57780037_what_i_risk_to_be_close.html: extracted — title='what i risk to be close to you' author='Turning21' status='In Progress' lastUpdated='2024-10-13' words='38439'
+2026-10-30 04:21:37,262 [INFO] 57780037_what_i_risk_to_be_close.html: backed up to originals/
+2026-10-30 04:21:37,275 [INFO] 57780037_what_i_risk_to_be_close.html: written to archive/
+2026-10-30 04:21:37,275 [INFO] Added manifest entry: 57780037_what_i_risk_to_be_close.html
+2026-10-30 04:21:37,275 [INFO] 57780037_what_i_risk_to_be_close.html: removed from staging/
+2026-10-30 04:21:37,280 [INFO] --- Processing: 57977290_a_love_that_burns_hot.html
+2026-10-30 04:21:37,292 [INFO] 57977290_a_love_that_burns_hot.html: extracted — title='A Love That Burns Hot Enough To Last' author='bloodfest' status='Complete' lastUpdated='2024-08-07' words='12283'
+2026-10-30 04:21:37,295 [INFO] 57977290_a_love_that_burns_hot.html: backed up to originals/
+2026-10-30 04:21:37,300 [INFO] 57977290_a_love_that_burns_hot.html: written to archive/
+2026-10-30 04:21:37,300 [INFO] Added manifest entry: 57977290_a_love_that_burns_hot.html
+2026-10-30 04:21:37,301 [INFO] 57977290_a_love_that_burns_hot.html: removed from staging/
+2026-10-30 04:21:37,305 [INFO] --- Processing: 61696654_spinning_on_that_dizzy.html
+2026-10-30 04:21:37,313 [INFO] 61696654_spinning_on_that_dizzy.html: extracted — title='spinning on that dizzy edge (i kissed her face and kissed her head) | starmora fics' author='simperoniandcheese' status='Complete' lastUpdated='2025-04-20' words='3414'
+2026-10-30 04:21:37,315 [INFO] 61696654_spinning_on_that_dizzy.html: backed up to originals/
+2026-10-30 04:21:37,317 [INFO] 61696654_spinning_on_that_dizzy.html: written to archive/
+2026-10-30 04:21:37,317 [INFO] Added manifest entry: 61696654_spinning_on_that_dizzy.html
+2026-10-30 04:21:37,318 [INFO] 61696654_spinning_on_that_dizzy.html: removed from staging/
+2026-10-30 04:21:37,322 [INFO] --- Processing: 65224780_love_meets_love_again.html
+2026-10-30 04:21:37,335 [INFO] 65224780_love_meets_love_again.html: extracted — title='Love Meets Love Again' author='ALSHAL01' status='Complete' lastUpdated='2025-05-03' words='2782'
+2026-10-30 04:21:37,336 [INFO] 65224780_love_meets_love_again.html: backed up to originals/
+2026-10-30 04:21:37,340 [INFO] 65224780_love_meets_love_again.html: written to archive/
+2026-10-30 04:21:37,341 [INFO] Added manifest entry: 65224780_love_meets_love_again.html
+2026-10-30 04:21:37,341 [INFO] 65224780_love_meets_love_again.html: removed from staging/
+2026-10-30 04:21:37,345 [INFO] --- Processing: 70628686_i_just_want_you_to_know.html
+2026-10-30 04:21:37,373 [INFO] 70628686_i_just_want_you_to_know.html: extracted — title='I Just Want You to Know Who I Am' author='OdeToFirstKisses' status='Complete' lastUpdated='2025-09-10' words='28079'
+2026-10-30 04:21:37,375 [INFO] 70628686_i_just_want_you_to_know.html: backed up to originals/
+2026-10-30 04:21:37,386 [INFO] 70628686_i_just_want_you_to_know.html: written to archive/
+2026-10-30 04:21:37,386 [INFO] Added manifest entry: 70628686_i_just_want_you_to_know.html
+2026-10-30 04:21:37,386 [INFO] 70628686_i_just_want_you_to_know.html: removed from staging/
+2026-10-30 04:21:37,391 [INFO] --- Processing: 86935121_a_sultry_tune.html
+2026-10-30 04:21:37,410 [INFO] 86935121_a_sultry_tune.html: extracted — title='A Sultry Tune' author='Anonymous' status='Complete' lastUpdated='2026-10-02' words='16455'
+2026-10-30 04:21:37,411 [INFO] 86935121_a_sultry_tune.html: backed up to originals/
+2026-10-30 04:21:37,421 [INFO] 86935121_a_sultry_tune.html: written to archive/
+2026-10-30 04:21:37,421 [INFO] Added manifest entry: 86935121_a_sultry_tune.html
+2026-10-30 04:21:37,421 [INFO] 86935121_a_sultry_tune.html: removed from staging/
+2026-10-30 04:21:37,426 [INFO] --- Processing: 87146656_pelvic_sorcery.html
+2026-10-30 04:21:37,433 [INFO] 87146656_pelvic_sorcery.html: extracted — title='Pelvic Sorcery' author='Anonymous' status='Complete' lastUpdated='2026-07-17' words='2246'
+2026-10-30 04:21:37,435 [INFO] 87146656_pelvic_sorcery.html: backed up to originals/
+2026-10-30 04:21:37,438 [INFO] 87146656_pelvic_sorcery.html: written to archive/
+2026-10-30 04:21:37,438 [INFO] Added manifest entry: 87146656_pelvic_sorcery.html
+2026-10-30 04:21:37,438 [INFO] 87146656_pelvic_sorcery.html: removed from staging/
+2026-10-30 04:21:37,442 [INFO] --- Processing: 95116781_chapter_1.html
+2026-10-30 04:21:37,450 [INFO] 95116781_chapter_1.html: extracted — title='Chapter 1' author='Anonymous' status='In Progress' lastUpdated='2026-10-22' words='12451'
+2026-10-30 04:21:37,452 [INFO] 95116781_chapter_1.html: backed up to originals/
+2026-10-30 04:21:37,455 [INFO] 95116781_chapter_1.html: written to archive/
+2026-10-30 04:21:37,455 [INFO] Added manifest entry: 95116781_chapter_1.html
+2026-10-30 04:21:37,455 [INFO] 95116781_chapter_1.html: removed from staging/
+2026-10-30 04:21:37,460 [INFO] --- Processing: 95182216_kept_fucking_until.html
+2026-10-30 04:21:37,468 [INFO] 95182216_kept_fucking_until.html: extracted — title='Kept fucking until…' author='Anonymous' status='Complete' lastUpdated='2026-10-22' words='8015'
+2026-10-30 04:21:37,469 [INFO] 95182216_kept_fucking_until.html: backed up to originals/
+2026-10-30 04:21:37,471 [INFO] 95182216_kept_fucking_until.html: written to archive/
+2026-10-30 04:21:37,471 [INFO] Added manifest entry: 95182216_kept_fucking_until.html
+2026-10-30 04:21:37,471 [INFO] 95182216_kept_fucking_until.html: removed from staging/
+2026-10-30 04:21:37,480 [INFO] Manifest saved to fic_data.json
+2026-10-30 04:21:37,484 [INFO] index.html rebuilt (111 fics)
+2026-10-30 04:21:37,484 [INFO] Done. 34 processed, 0 failed.
+2026-10-30 04:21:37,484 [INFO] ============================================================
+2026-10-30 04:22:33,632 [INFO] ============================================================
+2026-10-30 04:22:33,632 [INFO] Run started: 2026-10-30T04:22:33.632055
+2026-10-30 04:22:33,633 [INFO] Found 14 file(s) to process
+2026-10-30 04:22:33,639 [INFO] --- Processing: 48097609_i_need_your_fingerprints.html
+2026-10-30 04:22:33,650 [INFO] 48097609_i_need_your_fingerprints.html: extracted — title='i need your fingerprints (all over me)' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2023-06-24' words='1705'
+2026-10-30 04:22:33,657 [INFO] 48097609_i_need_your_fingerprints.html: backed up to originals/
+2026-10-30 04:22:33,660 [INFO] 48097609_i_need_your_fingerprints.html: written to archive/
+2026-10-30 04:22:33,668 [INFO] Added manifest entry: 48097609_i_need_your_fingerprints.html
+2026-10-30 04:22:33,669 [INFO] 48097609_i_need_your_fingerprints.html: removed from staging/
+2026-10-30 04:22:33,675 [INFO] --- Processing: 48121867_were_in_bed_were.html
+2026-10-30 04:22:33,687 [INFO] 48121867_were_in_bed_were.html: extracted — title='we're in bed, we're embedded in my mind' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2023-06-25' words='4198'
+2026-10-30 04:22:33,689 [INFO] 48121867_were_in_bed_were.html: backed up to originals/
+2026-10-30 04:22:33,694 [INFO] 48121867_were_in_bed_were.html: written to archive/
+2026-10-30 04:22:33,694 [INFO] Added manifest entry: 48121867_were_in_bed_were.html
+2026-10-30 04:22:33,694 [INFO] 48121867_were_in_bed_were.html: removed from staging/
+2026-10-30 04:22:33,699 [INFO] --- Processing: 48214156_getting_shivers_all_down.html
+2026-10-30 04:22:33,716 [INFO] 48214156_getting_shivers_all_down.html: extracted — title='getting shivers all down my spine' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2023-06-28' words='3466'
+2026-10-30 04:22:33,718 [INFO] 48214156_getting_shivers_all_down.html: backed up to originals/
+2026-10-30 04:22:33,721 [INFO] 48214156_getting_shivers_all_down.html: written to archive/
+2026-10-30 04:22:33,722 [INFO] Added manifest entry: 48214156_getting_shivers_all_down.html
+2026-10-30 04:22:33,722 [INFO] 48214156_getting_shivers_all_down.html: removed from staging/
+2026-10-30 04:22:33,727 [INFO] --- Processing: 48261817_rip_skin_on_this.html
+2026-10-30 04:22:33,738 [INFO] 48261817_rip_skin_on_this.html: extracted — title='rip skin on this original sin' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2023-07-01' words='1549'
+2026-10-30 04:22:33,739 [INFO] 48261817_rip_skin_on_this.html: backed up to originals/
+2026-10-30 04:22:33,743 [INFO] 48261817_rip_skin_on_this.html: written to archive/
+2026-10-30 04:22:33,744 [INFO] Added manifest entry: 48261817_rip_skin_on_this.html
+2026-10-30 04:22:33,744 [INFO] 48261817_rip_skin_on_this.html: removed from staging/
+2026-10-30 04:22:33,750 [INFO] --- Processing: 48312547_everything_i_know_brings.html
+2026-10-30 04:22:33,760 [INFO] 48312547_everything_i_know_brings.html: extracted — title='everything i know brings me back to us' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2023-07-03' words='818'
+2026-10-30 04:22:33,762 [INFO] 48312547_everything_i_know_brings.html: backed up to originals/
+2026-10-30 04:22:33,765 [INFO] 48312547_everything_i_know_brings.html: written to archive/
+2026-10-30 04:22:33,765 [INFO] Added manifest entry: 48312547_everything_i_know_brings.html
+2026-10-30 04:22:33,766 [INFO] 48312547_everything_i_know_brings.html: removed from staging/
+2026-10-30 04:22:33,771 [INFO] --- Processing: 48389140_im_captivated_by_you.html
+2026-10-30 04:22:33,784 [INFO] 48389140_im_captivated_by_you.html: extracted — title='i'm captivated by you, baby' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2023-07-06' words='3859'
+2026-10-30 04:22:33,786 [INFO] 48389140_im_captivated_by_you.html: backed up to originals/
+2026-10-30 04:22:33,790 [INFO] 48389140_im_captivated_by_you.html: written to archive/
+2026-10-30 04:22:33,791 [INFO] Added manifest entry: 48389140_im_captivated_by_you.html
+2026-10-30 04:22:33,791 [INFO] 48389140_im_captivated_by_you.html: removed from staging/
+2026-10-30 04:22:33,797 [INFO] --- Processing: 48561817_put_your_lips_on_my_skin.html
+2026-10-30 04:22:33,808 [INFO] 48561817_put_your_lips_on_my_skin.html: extracted — title='put your lips on my skin and you might ignite it' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2023-07-13' words='3815'
+2026-10-30 04:22:33,811 [INFO] 48561817_put_your_lips_on_my_skin.html: backed up to originals/
+2026-10-30 04:22:33,815 [INFO] 48561817_put_your_lips_on_my_skin.html: written to archive/
+2026-10-30 04:22:33,815 [INFO] Added manifest entry: 48561817_put_your_lips_on_my_skin.html
+2026-10-30 04:22:33,815 [INFO] 48561817_put_your_lips_on_my_skin.html: removed from staging/
+2026-10-30 04:22:33,820 [INFO] --- Processing: 48615052_and_i_could_see_you_up.html
+2026-10-30 04:22:33,831 [INFO] 48615052_and_i_could_see_you_up.html: extracted — title='and i could see you up against the wall with me' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2023-07-16' words='1612'
+2026-10-30 04:22:33,833 [INFO] 48615052_and_i_could_see_you_up.html: backed up to originals/
+2026-10-30 04:22:33,836 [INFO] 48615052_and_i_could_see_you_up.html: written to archive/
+2026-10-30 04:22:33,836 [INFO] Added manifest entry: 48615052_and_i_could_see_you_up.html
+2026-10-30 04:22:33,836 [INFO] 48615052_and_i_could_see_you_up.html: removed from staging/
+2026-10-30 04:22:33,842 [INFO] --- Processing: 48618613_a_chain_reaction_of.html
+2026-10-30 04:22:33,852 [INFO] 48618613_a_chain_reaction_of.html: extracted — title='a chain reaction of countermoves' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2023-07-16' words='1594'
+2026-10-30 04:22:33,854 [INFO] 48618613_a_chain_reaction_of.html: backed up to originals/
+2026-10-30 04:22:33,857 [INFO] 48618613_a_chain_reaction_of.html: written to archive/
+2026-10-30 04:22:33,857 [INFO] Added manifest entry: 48618613_a_chain_reaction_of.html
+2026-10-30 04:22:33,858 [INFO] 48618613_a_chain_reaction_of.html: removed from staging/
+2026-10-30 04:22:33,863 [INFO] --- Processing: 48660124_im_such_a_fool_to_pay.html
+2026-10-30 04:22:33,870 [INFO] 48660124_im_such_a_fool_to_pay.html: extracted — title='i'm such a fool to pay this price' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2023-07-17' words='736'
+2026-10-30 04:22:33,872 [INFO] 48660124_im_such_a_fool_to_pay.html: backed up to originals/
+2026-10-30 04:22:33,875 [INFO] 48660124_im_such_a_fool_to_pay.html: written to archive/
+2026-10-30 04:22:33,876 [INFO] Added manifest entry: 48660124_im_such_a_fool_to_pay.html
+2026-10-30 04:22:33,876 [INFO] 48660124_im_such_a_fool_to_pay.html: removed from staging/
+2026-10-30 04:22:33,881 [INFO] --- Processing: 48876304_im_haunted_by_your_love.html
+2026-10-30 04:22:33,893 [INFO] 48876304_im_haunted_by_your_love.html: extracted — title='i'm haunted by your love' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2023-07-26' words='1528'
+2026-10-30 04:22:33,894 [INFO] 48876304_im_haunted_by_your_love.html: backed up to originals/
+2026-10-30 04:22:33,897 [INFO] 48876304_im_haunted_by_your_love.html: written to archive/
+2026-10-30 04:22:33,898 [INFO] Added manifest entry: 48876304_im_haunted_by_your_love.html
+2026-10-30 04:22:33,898 [INFO] 48876304_im_haunted_by_your_love.html: removed from staging/
+2026-10-30 04:22:33,903 [INFO] --- Processing: 48988195_call_it_what_you_want.html
+2026-10-30 04:22:33,912 [INFO] 48988195_call_it_what_you_want.html: extracted — title='call it what you want' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2023-07-30' words='1075'
+2026-10-30 04:22:33,914 [INFO] 48988195_call_it_what_you_want.html: backed up to originals/
+2026-10-30 04:22:33,916 [INFO] 48988195_call_it_what_you_want.html: written to archive/
+2026-10-30 04:22:33,916 [INFO] Added manifest entry: 48988195_call_it_what_you_want.html
+2026-10-30 04:22:33,916 [INFO] 48988195_call_it_what_you_want.html: removed from staging/
+2026-10-30 04:22:33,922 [INFO] --- Processing: 50565598_i_destroy_you_like_i_am.html
+2026-10-30 04:22:33,932 [INFO] 50565598_i_destroy_you_like_i_am.html: extracted — title='i destroy you like i am' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2023-10-04' words='1317'
+2026-10-30 04:22:33,934 [INFO] 50565598_i_destroy_you_like_i_am.html: backed up to originals/
+2026-10-30 04:22:33,937 [INFO] 50565598_i_destroy_you_like_i_am.html: written to archive/
+2026-10-30 04:22:33,937 [INFO] Added manifest entry: 50565598_i_destroy_you_like_i_am.html
+2026-10-30 04:22:33,938 [INFO] 50565598_i_destroy_you_like_i_am.html: removed from staging/
+2026-10-30 04:22:33,944 [INFO] --- Processing: 50653525_that_ultrakind_of_love.html
+2026-10-30 04:22:33,952 [INFO] 50653525_that_ultrakind_of_love.html: extracted — title='that ultra-kind of love you never walk away from' author='gamorasgodslayer (flamebirds)' status='Complete' lastUpdated='2023-10-07' words='1151'
+2026-10-30 04:22:33,954 [INFO] 50653525_that_ultrakind_of_love.html: backed up to originals/
+2026-10-30 04:22:33,957 [INFO] 50653525_that_ultrakind_of_love.html: written to archive/
+2026-10-30 04:22:33,958 [INFO] Added manifest entry: 50653525_that_ultrakind_of_love.html
+2026-10-30 04:22:33,958 [INFO] 50653525_that_ultrakind_of_love.html: removed from staging/
+2026-10-30 04:22:33,966 [INFO] Manifest saved to fic_data.json
+2026-10-30 04:22:33,972 [INFO] index.html rebuilt (125 fics)
+2026-10-30 04:22:33,972 [INFO] Done. 14 processed, 0 failed.
+2026-10-30 04:22:33,972 [INFO] ============================================================

@@ -34,7 +34,7 @@ from phase4_process import (
 
 
 def reprocess():
-    files = sorted(ARCHIVE_DIR.glob("*.html"))
+    files = sorted(ARCHIVE_DIR.rglob("*.html"))
     if not files:
         print("No HTML files found in archive/ — nothing to do.")
         return
@@ -43,6 +43,7 @@ def reprocess():
     manifest = {"fics": [], "last_updated": ""}
     ok_count = 0
     err_count = 0
+    seen_names = {}
 
     for filepath in files:
         try:
@@ -51,6 +52,14 @@ def reprocess():
 
             meta = extract_metadata(soup, filepath.name)
             meta["custom_tags"] = apply_custom_tags(meta)
+
+            # archive/Starmora/x.html -> folder "Starmora"; archive/x.html -> ""
+            folder = filepath.parent.relative_to(ARCHIVE_DIR).as_posix()
+            folder = "" if folder == "." else folder
+            meta["folder"] = folder
+            if filepath.name in seen_names:
+                print(f"  [DUPLICATE] {filepath.name} is in both {seen_names[filepath.name] or 'archive/'} and {folder or 'archive/'} — only one will show on the index")
+            seen_names[filepath.name] = folder
 
             if not meta["title"]:
                 meta["title"] = filepath.stem
@@ -63,6 +72,8 @@ def reprocess():
 
             fic_entry = {
                 "filename":    filepath.name,
+                "folder":      folder,
+                "path":        f"{folder}/{filepath.name}" if folder else filepath.name,
                 "title":       meta["title"],
                 "author":      meta["author"],
                 "ship":        meta["ship"],

@@ -7,8 +7,9 @@ staging/ as {workID}_{slug}.html, ready for phase4_process.py.
 
 Needs pdfplumber (pip install pdfplumber).
 
+    python assets/pdf_convert.py                    # converts everything in original-pdfs/
+    python assets/pdf_convert.py --dry-run          # same, but writes nothing
     python assets/pdf_convert.py ~/Downloads/some_folder [more folders or .pdf files…]
-    python assets/pdf_convert.py --dry-run ~/Downloads/some_folder
 
 Skips any work ID already in archive/ or staging/ (and PDFs with no AO3
 work link, e.g. Google Docs exports). PDFs lose some formatting, so this
@@ -27,7 +28,11 @@ from pathlib import Path
 import pdfplumber
 
 sys.path.insert(0, str(Path(__file__).parent))
-from mht_convert import STAGING_DIR, existing_ids, slugify
+from mht_convert import BASE_DIR, STAGING_DIR, existing_ids, slugify
+
+# used when no folder is given on the command line
+DEFAULT_DIR = BASE_DIR / "original-pdfs"
+
 
 META_LABELS = (
     r"Rating|Archive Warnings?|Categor(?:y|ies)|Fandoms?|Relationships?|Characters?|"
@@ -378,15 +383,23 @@ def main():
     args = [a for a in sys.argv[1:] if a != "--dry-run"]
     dry = "--dry-run" in sys.argv
     if not args:
-        print(__doc__)
-        sys.exit(1)
-    files = []
+        # no folder given: use the project's usual drop folder
+        if not DEFAULT_DIR.is_dir():
+            print(f"{DEFAULT_DIR} doesn't exist. Create it and put your .pdf files in it, or pass a folder.")
+            sys.exit(1)
+        args = [str(DEFAULT_DIR)]
+    files = []   # (file, sub-folder it sat in, or "")
     for arg in args:
         p = Path(arg).expanduser()
-        files += sorted(p.glob("*.pdf")) if p.is_dir() else [p]
+        if p.is_dir():
+            for f in sorted(p.rglob("*.pdf")):
+                rel_dirs = f.parent.relative_to(p).parts
+                files.append((f, rel_dirs[0] if rel_dirs else ""))
+        else:
+            files.append((p, ""))
 
     have = existing_ids()
-    for path in files:
+    for path, folder in files:
         try:
             with pdfplumber.open(path) as pdf:
                 first = pdf.pages[0].extract_text() or ""
@@ -398,13 +411,14 @@ def main():
                 print(f"SKIP  {m.group(1)}: already in archive/ or staging/")
                 continue
             work_id, (doc, title, got, want, nch, chap_stat) = convert(path)
-            out = STAGING_DIR / slugify(work_id, title)
+            out = STAGING_DIR / folder / slugify(work_id, title)
             pct = f"{100 * got / want:.0f}%" if want else "?"
             flag = "" if want and 0.9 <= got / want <= 1.1 else "  ⚠ check"
             if not dry:
+                out.parent.mkdir(parents=True, exist_ok=True)
                 out.write_text(doc, encoding="utf-8")
             have.add(work_id)
-            print(f"OK    {out.name}  ({nch} ch, AO3 {chap_stat}; words {got}/{want} = {pct}){flag}")
+            print(f"OK    {folder + '/' if folder else ''}{out.name}  ({nch} ch, AO3 {chap_stat}; words {got}/{want} = {pct}){flag}")
         except Exception as e:
             print(f"FAIL  {path.name}: {type(e).__name__}: {e}")
 
