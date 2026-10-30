@@ -330,7 +330,7 @@ Posted originally on the <a href="https://archiveofourown.org/">Archive of Our O
 {chr(10).join(rows)}
 </dl>
 <h1>{t}</h1>
-<div class="byline">by {html.escape(author)}</div>
+<div class="byline">by <a rel="author" href="https://archiveofourown.org/users/{html.escape(author)}">{html.escape(author)}</a></div>
 {pre}</div>
 </div>
 

@@ -291,6 +291,12 @@ def extract_metadata(soup: BeautifulSoup, source_filename: str) -> dict:
         if byline:
             meta["author"] = byline.get_text(strip=True)
 
+    # --- Author fallback 1b: unlinked byline ("by Name"), e.g. converted PDFs ---
+    if not meta["author"]:
+        byline = soup.select_one("div.byline")
+        if byline:
+            meta["author"] = re.sub(r"^by\s+", "", byline.get_text(" ", strip=True))
+
     # --- Author fallback 2: legacy <meta name="author"> written by old scripts ---
     if not meta["author"]:
         legacy = soup.find("meta", attrs={"name": "author"})
