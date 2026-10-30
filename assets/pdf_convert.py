@@ -240,6 +240,13 @@ def build_structure(paras):
             st["author"] = text[3:].strip()
             state = "preface"
             continue
+        # Word-made PDFs sometimes glue the next label onto the end of the
+        # previous paragraph ("...with him. Notes"): split it off.
+        glued = re.match(r"^(.*\S)\s+(Summary|Notes)$", text, re.S)
+        if glued and text not in SECTION_LABELS and state in ("title", "preface") and section in ("summary", "notes"):
+            st[section].append(re.sub(r"\s+(Summary|Notes)$", "", p["html"]))
+            section = SECTION_LABELS[glued.group(2)]
+            continue
         if text in SECTION_LABELS:
             section = SECTION_LABELS[text]
             if section in ("ch_summary", "ch_notes") and (chapter is None or chapter["body"]):
