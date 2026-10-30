@@ -17,32 +17,33 @@
       min-height: 100vh;
     }
 
-    /* ---- Header ---- */
     .archive-header {
       padding: 2.5rem 1rem 1.25rem;
       text-align: center;
       border-bottom: 1px solid #1e1838;
       margin-bottom: 2rem;
     }
-    /* Title: Cinzel caps in Agatha purple → Rio green (falls back to Georgia offline) */
+
     .archive-header h1 {
       font-family: "Cinzel", Georgia, serif;
-      font-size: clamp(1.15rem, 6vw, 1.55rem); /* stays on one line on small phones */
+      font-size: clamp(1.15rem, 6vw, 1.55rem);
       font-weight: 500;
       letter-spacing: 0.18em;
-      padding-left: 0.18em; /* balance trailing letter-spacing */
+      padding-left: 0.18em;
       background: linear-gradient(90deg, #c4a8ff, #7fc98f);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
     }
+
     .header-stars {
       font-size: 0.8rem;
       letter-spacing: 0.6em;
-      padding-left: 0.6em; /* balance trailing letter-spacing */
+      padding-left: 0.6em;
       color: #5a4a8a;
       margin-bottom: 0.4rem;
     }
+
     .header-rule {
       height: 1px;
       width: 180px;
@@ -50,42 +51,59 @@
       background: linear-gradient(90deg, transparent, #c4a8ff, #7fc98f, transparent);
       opacity: 0.7;
     }
+
     .archive-header p {
       margin-top: 0.35rem;
       font-size: 0.8rem;
       color: #6a5e8a;
     }
+
     .last-updated {
       font-size: 0.72rem;
       color: #3d3560;
       margin-top: 0.2rem;
     }
 
-    /* ---- Visitor banner ---- */
+    .archive-header { position: relative; }
+    .stats-link {
+      position: absolute;
+      top: 0.9rem;
+      right: 1rem;
+      background: none;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      color: #3d3560;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      padding: 0.25rem 0.5rem;
+      cursor: pointer;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .rank-link {
+      position: absolute;
+      top: 0.9rem;
+      left: 1rem;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      color: #3d3560;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      padding: 0.25rem 0.5rem;
+      text-decoration: none;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .rank-link:hover, .rank-link:focus-visible, .stats-link:hover, .stats-link:focus-visible {
+      color: #c4a8ff;
+      border-color: #2a2248;
+      outline: none;
+    }
+    .kudos-link { top: 2.6rem; }
+
     .visitor-banner {
       max-width: 660px;
       margin: -0.75rem auto 1.5rem;
       padding: 0 1rem;
     }
-    .visitor-banner summary {
-      list-style: none;
-      cursor: pointer;
-      user-select: none;
-      display: inline-block;
-      font-size: 0.78rem;
-      color: #8878b0;
-      background: #13102a;
-      border: 1px solid #221a40;
-      border-left: 3px solid #5030a8;
-      border-radius: 8px;
-      padding: 0.35rem 0.9rem;
-    }
-    .visitor-banner summary::-webkit-details-marker { display: none; }
-    .visitor-banner[open] summary {
-      color: #c4a8ff;
-      border-color: #5030a8;
-    }
-    .visitor-banner p + p { margin-top: 0.6rem; }
     .visitor-body {
       margin-top: 0.5rem;
       font-size: 0.78rem;
@@ -97,9 +115,6 @@
       border-radius: 8px;
       padding: 0.7rem 1rem;
     }
-    .visitor-body p + p, .visitor-body p + ul { margin-top: 0.5rem; }
-    .visitor-body ul { padding-left: 1.2rem; }
-    .visitor-body li + li { margin-top: 0.2rem; }
     .ship-preset-row {
       display: flex;
       flex-wrap: wrap;
@@ -107,25 +122,28 @@
       align-items: center;
       justify-content: center;
     }
-    .ship-preset {
-      padding: 0.35rem 0.7rem;
-      font-size: 0.72rem;
-      line-height: 1.4;
+    .ship-preset, .chip {
+      padding: 0.25rem 0.7rem;
       border-radius: 999px;
       border: 1px solid #1e1838;
       background: transparent;
       color: #6a5e8a;
+      font-size: 0.75rem;
       cursor: pointer;
       transition: all 0.15s;
       white-space: nowrap;
     }
-    .ship-preset.active {
+    .ship-preset {
+      padding: 0.35rem 0.7rem;
+      font-size: 0.72rem;
+      line-height: 1.4;
+    }
+    .ship-preset.active, .chip.active {
       background: #2a1f50;
       border-color: #5030a8;
       color: #c4a8ff;
     }
 
-    /* ---- Collapsible filter/search ---- */
     .filter-section {
       max-width: 660px;
       margin: 0 auto 0.75rem;
@@ -179,24 +197,7 @@
       padding-right: 0.2rem;
       white-space: nowrap;
     }
-    .chip {
-      padding: 0.25rem 0.7rem;
-      border-radius: 999px;
-      border: 1px solid #1e1838;
-      background: transparent;
-      color: #6a5e8a;
-      font-size: 0.75rem;
-      cursor: pointer;
-      transition: all 0.15s;
-      white-space: nowrap;
-    }
-    .chip.active {
-      background: #2a1f50;
-      border-color: #5030a8;
-      color: #c4a8ff;
-    }
 
-    /* ---- Sort row ---- */
     .sort-row {
       display: flex;
       flex-wrap: wrap;
@@ -206,8 +207,9 @@
       margin: 0 auto 1.25rem;
       padding: 0 1rem;
     }
+    .random-chip { margin-left: auto; }
+    .random-chip:hover { border-color: #2a4a34; color: #7fc98f; }
 
-    /* ---- Card grid ---- */
     .card-grid {
       display: flex;
       flex-direction: column;
@@ -216,8 +218,6 @@
       max-width: 660px;
       margin: 0 auto;
     }
-
-    /* ---- Fic card ---- */
     .fic-card {
       background: #13102a;
       border: 1px solid #221a40;
@@ -244,23 +244,18 @@
       color: #7a6da0;
       margin-bottom: 0.55rem;
     }
-
-    /* meta row: ship / rating / status / words */
     .card-meta {
       display: flex;
       flex-wrap: wrap;
       gap: 0.3rem;
       margin-bottom: 0.35rem;
     }
-    /* extra custom tags row */
     .card-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 0.3rem;
       margin-bottom: 0.35rem;
     }
-
-    /* ---- Badges ---- */
     .badge {
       font-size: 0.7rem;
       padding: 0.18rem 0.55rem;
@@ -278,16 +273,13 @@
     .badge.complete { color: #60b4cc; border-color: #1c3a48; background: #0e1e28; }
     .badge.wip      { color: #a888d8; border-color: #2a1e48; background: #150e28; }
     .badge.words    { color: #6a6090; border-color: #201c38; background: transparent; }
-
     .card-summary {
       font-size: 0.8rem;
       color: #8878b0;
       line-height: 1.55;
       margin-top: 0.3rem;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
+      white-space: normal;
+      overflow-wrap: anywhere;
     }
     .no-results {
       text-align: center;
@@ -301,8 +293,12 @@
       text-align: center;
       padding-bottom: 0.75rem;
     }
+    .pinned-filter {
+      text-align: center;
+      margin-bottom: 0.75rem;
+    }
+    .pinned-filter:empty { display: none; }
 
-    /* ---- Back to top ---- */
     .to-top {
       position: fixed;
       right: 1.25rem;
@@ -325,44 +321,6 @@
     }
     .to-top:hover { background: #2a1f50; opacity: 1; }
 
-    /* ---- Stats link + dialog ---- */
-    .archive-header { position: relative; }
-    .stats-link {
-      position: absolute;
-      top: 0.9rem;
-      right: 1rem;
-      background: none;
-      border: 1px solid transparent;
-      border-radius: 6px;
-      color: #3d3560;
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      padding: 0.25rem 0.5rem;
-      cursor: pointer;
-      transition: color 0.15s, border-color 0.15s;
-    }
-    .random-chip { margin-left: auto; }
-    .random-chip:hover { border-color: #2a4a34; color: #7fc98f; }
-    .rank-link {
-      position: absolute;
-      top: 0.9rem;
-      left: 1rem;
-      border: 1px solid transparent;
-      border-radius: 6px;
-      color: #3d3560;
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      padding: 0.25rem 0.5rem;
-      text-decoration: none;
-      transition: color 0.15s, border-color 0.15s;
-    }
-    .rank-link:hover, .rank-link:focus-visible { color: #c4a8ff; border-color: #2a2248; outline: none; }
-    .kudos-link { top: 2.6rem; }
-    .stats-link:hover, .stats-link:focus-visible {
-      color: #c4a8ff;
-      border-color: #2a2248;
-      outline: none;
-    }
     .stats-dialog {
       width: min(560px, calc(100vw - 2rem));
       max-height: 85vh;
@@ -514,384 +472,378 @@
       margin-top: 1.4rem;
       text-align: center;
     }
-    .pinned-filter {
-      text-align: center;
-      margin-bottom: 0.75rem;
-    }
-    .pinned-filter:empty { display: none; }
   </style>
-
 </head>
 <body>
+  <div class="archive-header">
+    <button class="stats-link" id="stats-open" type="button" title="Archive stats">✦ stats</button>
+    <a class="rank-link" href="rank.html" title="Rank your top 25">♛ top 25</a>
+    <a class="rank-link kudos-link" href="kudos.html" title="Kudos reminders">♡ kudos list</a>
+    <div class="header-stars" aria-hidden="true">✦ ⋆ ☾ ⋆ ✦</div>
+    <h1>Fic Archive Previewer</h1>
+    <div class="header-rule"></div>
+    <p id="fic-count"></p>
+    <p class="last-updated">last updated October 30, 2026</p>
+  </div>
 
-<div class="archive-header">
-  <button class="stats-link" id="stats-open" type="button" title="Archive stats">✦ stats</button>
-  <a class="rank-link" href="rank.html" title="Rank your top 25">♛ top 25</a>
-  <a class="rank-link kudos-link" href="kudos.html" title="Kudos reminders">♡ kudos list</a>
-  <div class="header-stars" aria-hidden="true">✦ ⋆ ☾ ⋆ ✦</div>
-  <h1>Fic Archive Previewer</h1>
-  <div class="header-rule"></div>
-  <p id="fic-count"></p>
-  <p class="last-updated">last updated October 30, 2026</p>
-</div>
-
-<div class="visitor-banner">
-  <div class="visitor-body">
-    <div class="ship-preset-row">
-      <button class="ship-preset chip active" data-ship="" type="button">All ships</button>
-      <button class="ship-preset chip" data-ship="Gamora/Peter Quill" type="button">Gamora/Peter Quill</button>
-      <button class="ship-preset chip" data-ship="Gabriel Agreste | Papillon | Hawk Moth/Nathalie Sancoeur" type="button">Gabriel Agreste | Papillon | Hawk Moth/Nathalie Sancoeur</button>
-      <button class="ship-preset chip" data-ship="Leon S. Kennedy/Ada Wong" type="button">Leon S. Kennedy/Ada Wong</button>
+  <div class="visitor-banner">
+    <div class="visitor-body">
+      <div class="ship-preset-row">
+        <button class="ship-preset active" data-ship="" type="button">All ships</button>
+        <button class="ship-preset" data-ship="Gamora/Peter Quill" type="button">Gamora/Peter Quill</button>
+        <button class="ship-preset" data-ship="Gabriel Agreste | Papillon | Hawk Moth/Nathalie Sancoeur" type="button">Gabriel Agreste | Papillon | Hawk Moth/Nathalie Sancoeur</button>
+        <button class="ship-preset" data-ship="Leon S. Kennedy/Ada Wong" type="button">Leon S. Kennedy/Ada Wong</button>
+      </div>
     </div>
   </div>
-</div>
 
-<details class="filter-section">
-  <summary class="filter-toggle">Filter &amp; search ▾</summary>
-  <div class="filter-bar">
-    <input class="search-input" type="search" id="search"
-           placeholder="Search title, author, ship, summary, tags…" autocomplete="off">
-    <div class="chip-row" id="rating-chips">
-      <span class="chip-label">Rating:</span>
+  <details class="filter-section">
+    <summary class="filter-toggle">Filter &amp; search ▾</summary>
+    <div class="filter-bar">
+      <input class="search-input" type="search" id="search" placeholder="Search title, author, ship, summary, tags…" autocomplete="off">
+      <div class="chip-row" id="rating-chips">
+        <span class="chip-label">Rating:</span>
+      </div>
+      <div class="chip-row" id="status-chips">
+        <span class="chip-label">Status:</span>
+      </div>
     </div>
-    <div class="chip-row" id="status-chips">
-      <span class="chip-label">Status:</span>
-    </div>
+  </details>
+
+  <div class="sort-row">
+    <span class="chip-label">Sort:</span>
+    <button class="chip active" data-sort="default">Default</button>
+    <button class="chip" data-sort="wc_desc">Words</button>
+    <button class="chip" data-sort="updated">Updated</button>
+    <button class="chip" data-sort="alpha">A–Z</button>
+    <button class="chip random-chip" id="random-fic" type="button" title="Open a random fic from the ones showing">⚄ Random</button>
   </div>
-</details>
 
-<div class="sort-row">
-  <span class="chip-label">Sort:</span>
-  <button class="chip active" data-sort="default">Default</button>
-  <button class="chip" data-sort="wc_desc">Words</button>
-  <button class="chip" data-sort="updated">Updated</button>
-  <button class="chip" data-sort="alpha">A–Z</button>
-  <button class="chip random-chip" id="random-fic" type="button" title="Open a random fic from the ones showing">⚄ Random</button>
-</div>
+  <div class="pinned-filter" id="pinned-filter"></div>
+  <div class="count-label" id="visible-count"></div>
+  <div class="card-grid" id="card-grid"></div>
 
-<div class="pinned-filter" id="pinned-filter"></div>
-<div class="count-label" id="visible-count"></div>
-<div class="card-grid" id="card-grid"></div>
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
 
-<button class="to-top" id="to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
-
-<dialog class="stats-dialog" id="stats-dialog" aria-labelledby="stats-title">
-  <div class="stats-inner">
-    <div class="stats-head">
-      <h2 id="stats-title">Archive Stats</h2>
-      <button class="stats-close" id="stats-close" type="button" aria-label="Close">×</button>
+  <dialog class="stats-dialog" id="stats-dialog" aria-labelledby="stats-title">
+    <div class="stats-inner">
+      <div class="stats-head">
+        <h2 id="stats-title">Archive Stats</h2>
+        <button class="stats-close" id="stats-close" type="button" aria-label="Close">×</button>
+      </div>
+      <div id="stats-body"></div>
+      <p class="stats-hint">tap a tag or author to filter the archive</p>
     </div>
-    <div id="stats-body"></div>
-    <p class="stats-hint">tap a tag or author to filter the archive</p>
-  </div>
-</dialog>
+  </dialog>
 
-<script>
-const FICS = [{"filename": "10849821_quiescent.html", "title": "Quiescent", "author": "kalina16", "ship": "Gamora/Peter Quill", "rating": "General Audiences", "status": "Complete", "summary": "Af[..."}];
+  <script>
+    const FICS = [];
+    let sortMode = "default";
+    let shipFilter = null;
+    let pinned = null;
 
-let sortMode = "default";
-let shipFilter = null;
+    const RATING_LABELS = {
+      "general audiences": "GA",
+      "teen and up audiences": "T",
+      "mature": "M",
+      "explicit": "E",
+      "not rated": "NR"
+    };
 
-function parseWordCount(wc) {
-  if (!wc) return 0;
-  return parseInt(String(wc).replace(/,/g, ""), 10) || 0;
-}
+    function parseWordCount(wc) {
+      if (!wc) return 0;
+      return parseInt(String(wc).replace(/,/g, ""), 10) || 0;
+    }
 
-function fmtWordCount(wc) {
-  const n = parseWordCount(wc);
-  if (!n) return "";
-  if (n >= 1000) return (n / 1000).toFixed(n % 1000 === 0 ? 0 : 1) + "k";
-  return String(n);
-}
+    function fmtWordCount(wc) {
+      const n = parseWordCount(wc);
+      if (!n) return "";
+      if (n >= 1000) return (n / 1000).toFixed(n % 1000 === 0 ? 0 : 1) + "k";
+      return String(n);
+    }
 
-function normalizeShipValue(value) {
-  return String(value ?? "").toLowerCase().replace(/\s+/g, " ").trim();
-}
+    function normalizeShipValue(value) {
+      return String(value ?? "").toLowerCase().replace(/\s+/g, " ").trim();
+    }
 
-function getSortedFics() {
-  if (sortMode === "wc_desc")  return [...FICS].sort((a, b) => parseWordCount(b.word_count) - parseWordCount(a.word_count));
-  if (sortMode === "updated")  return [...FICS].sort((a, b) => (b.lastUpdated || "").localeCompare(a.lastUpdated || ""));
-  if (sortMode === "alpha")    return [...FICS].sort((a, b) => (a.title || "").toLowerCase().localeCompare((b.title || "").toLowerCase()));
-  return FICS;
-}
+    function getSortedFics() {
+      if (sortMode === "wc_desc") return [...FICS].sort((a, b) => parseWordCount(b.word_count) - parseWordCount(a.word_count));
+      if (sortMode === "updated") return [...FICS].sort((a, b) => (b.lastUpdated || "").localeCompare(a.lastUpdated || ""));
+      if (sortMode === "alpha") return [...FICS].sort((a, b) => (a.title || "").toLowerCase().localeCompare((b.title || "").toLowerCase()));
+      return FICS;
+    }
 
-function ratingClass(r) {
-  if (!r) return "";
-  const up = r.toUpperCase();
-  if (up.includes("GENERAL")) return "rating-G";
-  if (up.includes("TEEN"))    return "rating-T";
-  if (up.includes("MATURE"))  return "rating-M";
-  if (up.includes("EXPLICIT")) return "rating-E";
-  return "";
-}
+    function ratingClass(r) {
+      if (!r) return "";
+      const up = r.toUpperCase();
+      if (up.includes("GENERAL")) return "rating-G";
+      if (up.includes("TEEN")) return "rating-T";
+      if (up.includes("MATURE")) return "rating-M";
+      if (up.includes("EXPLICIT")) return "rating-E";
+      return "";
+    }
 
-function statusClass(s) {
-  if (!s) return "";
-  const sl = s.toLowerCase();
-  if (sl === "complete" || sl === "completed") return "complete";
-  if (sl.includes("progress")) return "wip";
-  return "";
-}
+    function statusClass(s) {
+      if (!s) return "";
+      const sl = s.toLowerCase();
+      if (sl === "complete" || sl === "completed") return "complete";
+      if (sl.includes("progress")) return "wip";
+      return "";
+    }
 
-// Short chip labels for ratings, in AO3's order (unlisted ratings go last, A–Z)
-const RATING_LABELS = {
-  "general audiences":     "GA",
-  "teen and up audiences": "T",
-  "mature":                "M",
-  "explicit":              "E",
-  "not rated":             "NR",
-};
+    function buildChips(containerId, values, key, labels = {}) {
+      const container = document.getElementById(containerId);
+      const order = Object.keys(labels);
+      const rank = v => {
+        const i = order.indexOf(v.toLowerCase());
+        return i === -1 ? order.length : i;
+      };
+      [...new Set(values.filter(Boolean))]
+        .sort((a, b) => rank(a) - rank(b) || a.localeCompare(b))
+        .forEach(val => {
+          const chip = document.createElement("button");
+          chip.className = "chip";
+          chip.textContent = labels[val.toLowerCase()] || val;
+          chip.title = val;
+          chip.dataset.key = key;
+          chip.dataset.val = val.toLowerCase();
+          chip.addEventListener("click", () => {
+            chip.classList.toggle("active");
+            render();
+          });
+          container.appendChild(chip);
+        });
+    }
 
-function buildChips(containerId, values, key, labels = {}) {
-  const container = document.getElementById(containerId);
-  const order = Object.keys(labels);
-  const rank = v => { const i = order.indexOf(v.toLowerCase()); return i === -1 ? order.length : i; };
-  [...new Set(values.filter(Boolean))]
-    .sort((a, b) => rank(a) - rank(b) || a.localeCompare(b))
-    .forEach(val => {
-    const chip = document.createElement("button");
-    chip.className = "chip";
-    chip.textContent = labels[val.toLowerCase()] || val;
-    chip.title = val;
-    chip.dataset.key = key;
-    chip.dataset.val = val.toLowerCase();
-    chip.addEventListener("click", () => {
-      chip.classList.toggle("active");
+    function activeFilters(containerId) {
+      return [...document.querySelectorAll(`#${containerId} .chip.active`)]
+        .map(c => c.dataset.val);
+    }
+
+    function render() {
+      const query = document.getElementById("search").value.toLowerCase().trim();
+      const ratingFilters = activeFilters("rating-chips");
+      const statusFilters = activeFilters("status-chips");
+      const grid = document.getElementById("card-grid");
+      grid.innerHTML = "";
+
+      let visible = 0;
+      getSortedFics().forEach(fic => {
+        const searchable = [fic.title, fic.author, fic.ship, fic.summary, ...(fic.custom_tags || [])].join(" ").toLowerCase();
+        if (query && !searchable.includes(query)) return;
+        if (ratingFilters.length && !ratingFilters.includes((fic.rating || "").toLowerCase())) return;
+        if (statusFilters.length && !statusFilters.includes((fic.status || "").toLowerCase())) return;
+        if (shipFilter !== null && normalizeShipValue(fic.ship || "") !== normalizeShipValue(shipFilter)) return;
+        if (pinned && (pinned.key === "tag" ? !(fic.custom_tags || []).includes(pinned.val) : fic.author !== pinned.val)) return;
+
+        visible++;
+        const card = document.createElement("a");
+        card.className = "fic-card";
+        card.href = "archive/" + fic.filename;
+
+        const rc = ratingClass(fic.rating);
+        const sc = statusClass(fic.status);
+        const wc = fmtWordCount(fic.word_count);
+        const extraTags = fic.custom_tags || [];
+
+        card.innerHTML = `
+          <div class="card-title">${fic.title || "Untitled"}</div>
+          <div class="card-author">by ${fic.author || "Unknown"}</div>
+          <div class="card-meta">
+            ${fic.ship ? `<span class="badge ship">${fic.ship}</span>` : ""}
+            ${rc ? `<span class="badge ${rc}">${fic.rating}</span>` : ""}
+            ${sc ? `<span class="badge ${sc}">${fic.status}</span>` : ""}
+            ${wc ? `<span class="badge words">${wc} words</span>` : ""}
+          </div>
+          ${extraTags.length ? `<div class="card-tags">${extraTags.map(tag => `<span class="badge">${tag}</span>`).join("")}</div>` : ""}
+          ${fic.summary ? `<p class="card-summary">${fic.summary}</p>` : ""}
+        `;
+        grid.appendChild(card);
+      });
+
+      if (visible === 0) {
+        grid.innerHTML = '<p class="no-results">No fics match your filters.</p>';
+      }
+
+      document.querySelectorAll(".ship-preset").forEach(button => {
+        const selected = shipFilter === null ? button.dataset.ship === "" : normalizeShipValue(button.dataset.ship) === normalizeShipValue(shipFilter);
+        button.classList.toggle("active", selected);
+      });
+
+      document.getElementById("pinned-filter").innerHTML = pinned
+        ? `<button class="chip active" type="button" title="Clear filter">${pinned.key === "tag" ? "Tag" : "Author"}: ${esc(pinned.val)} ✕</button>`
+        : "";
+      document.getElementById("visible-count").textContent = visible === FICS.length ? "" : `Showing ${visible} of ${FICS.length}`;
+      document.getElementById("fic-count").textContent = `${FICS.length} fic${FICS.length !== 1 ? "s" : ""} archived`;
+    }
+
+    document.querySelectorAll(".sort-row .chip[data-sort]").forEach(chip => {
+      chip.addEventListener("click", () => {
+        document.querySelectorAll(".sort-row .chip[data-sort]").forEach(c => c.classList.remove("active"));
+        chip.classList.add("active");
+        sortMode = chip.dataset.sort;
+        render();
+      });
+    });
+
+    document.querySelectorAll(".ship-preset").forEach(chip => {
+      chip.addEventListener("click", () => {
+        shipFilter = chip.dataset.ship ? chip.dataset.ship : null;
+        render();
+      });
+    });
+
+    document.getElementById("search").addEventListener("input", render);
+
+    const toTop = document.getElementById("to-top");
+    window.addEventListener("scroll", () => {
+      toTop.classList.toggle("visible", window.scrollY > 600);
+    }, { passive: true });
+    toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+    document.getElementById("random-fic").addEventListener("click", () => {
+      const cards = document.querySelectorAll("#card-grid a.fic-card");
+      if (!cards.length) return;
+      window.location.href = cards[Math.floor(Math.random() * cards.length)].href;
+    });
+
+    const statsDialog = document.getElementById("stats-dialog");
+    document.getElementById("stats-open").addEventListener("click", () => {
+      buildStats();
+      statsDialog.showModal();
+    });
+    document.getElementById("stats-close").addEventListener("click", () => statsDialog.close());
+    statsDialog.addEventListener("click", e => {
+      if (e.target === statsDialog) { statsDialog.close(); return; }
+      const btn = e.target.closest("button.bar-label[data-key]");
+      if (!btn) return;
+      pinned = { key: btn.dataset.key, val: btn.dataset.val };
+      statsDialog.close();
+      render();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    document.getElementById("pinned-filter").addEventListener("click", () => {
+      pinned = null;
       render();
     });
-    container.appendChild(chip);
-  });
-}
 
-function activeFilters(containerId) {
-  return [...document.querySelectorAll(`#${containerId} .chip.active`)]
-    .map(c => c.dataset.val);
-}
+    function topCounts(values, n = Infinity) {
+      const counts = new Map();
+      values.forEach(v => { if (v) counts.set(v, (counts.get(v) || 0) + 1); });
+      return [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, n);
+    }
 
-function render() {
-  const query = document.getElementById("search").value.toLowerCase().trim();
-  const ratingFilters = activeFilters("rating-chips");
-  const statusFilters = activeFilters("status-chips");
+    function esc(s) {
+      return String(s).replace(/[&<>\"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+    }
 
-  const grid = document.getElementById("card-grid");
-  grid.innerHTML = "";
+    function fmtBig(n) {
+      if (n >= 1e6) return (n / 1e6).toFixed(1) + "M";
+      if (n >= 1e4) return Math.round(n / 1e3) + "k";
+      return n.toLocaleString();
+    }
 
-  let visible = 0;
-  getSortedFics().forEach(fic => {
-    const searchable = [fic.title, fic.author, fic.ship, fic.summary, ...(fic.custom_tags || [])].join(" ").toLowerCase();
-    if (query && !searchable.includes(query)) return;
-    if (ratingFilters.length && !ratingFilters.includes((fic.rating || "").toLowerCase())) return;
-    if (statusFilters.length && !statusFilters.includes((fic.status || "").toLowerCase())) return;
-    if (shipFilter !== null && normalizeShipValue(fic.ship || "") !== normalizeShipValue(shipFilter)) return;
-    if (pinned && (pinned.key === "tag"
-        ? !(fic.custom_tags || []).includes(pinned.val)
-        : fic.author !== pinned.val)) return;
+    function barRows(rows, { key, colors = {} } = {}) {
+      const max = Math.max(1, ...rows.map(r => r[1]));
+      return rows.map(([label, count]) => {
+        const lbl = key
+          ? `<button class="bar-label" type="button" data-key="${key}" data-val="${esc(label)}" title="${esc(label)}">${esc(label)}</button>`
+          : `<span class="bar-label" title="${esc(label)}">${esc(label)}</span>`;
+        const color = colors[label.toLowerCase()];
+        const style = `width:${(count / max * 100).toFixed(1)}%` + (color ? `;background:${color}` : "");
+        return `<div class="bar-row">${lbl}<div class="bar-track"><div class="bar-fill" style="${style}"></div></div><span class="bar-val">${count}</span></div>`;
+      }).join("");
+    }
 
-    visible++;
-    const card = document.createElement("a");
-    card.className = "fic-card";
-    card.href = "archive/" + fic.filename;
+    function ficLine(label, fic) {
+      if (!fic) return "";
+      return `<p class="stat-fic">${label}: <a href="archive/${esc(fic.filename)}">${esc(fic.title || "Untitled")}</a>
+        by ${esc(fic.author || "Unknown")} · ${parseWordCount(fic.word_count).toLocaleString()} words</p>`;
+    }
 
-    const rc = ratingClass(fic.rating);
-    const sc = statusClass(fic.status);
-    const wc = fmtWordCount(fic.word_count);
-    const extraTags = (fic.custom_tags || []);
+    function buildStats() {
+      const withWords = FICS.filter(f => parseWordCount(f.word_count) > 0)
+        .sort((a, b) => parseWordCount(b.word_count) - parseWordCount(a.word_count));
+      const total = withWords.reduce((sum, f) => sum + parseWordCount(f.word_count), 0);
+      const avg = withWords.length ? Math.round(total / withWords.length) : 0;
+      const authors = new Set(FICS.map(f => f.author).filter(Boolean)).size;
+      const complete = FICS.filter(f => statusClass(f.status) === "complete").length;
+      const wip = FICS.filter(f => statusClass(f.status) === "wip").length;
+      const donePct = complete + wip ? (complete / (complete + wip)) * 100 : 0;
 
-    card.innerHTML = `
-      <div class="card-title">${fic.title || "Untitled"}</div>
-      <div class="card-author">by ${fic.author || "Unknown"}</div>
-      <div class="card-meta">
-        ${fic.ship   ? `<span class="badge ship">${fic.ship}</span>` : ""}
-        ${rc         ? `<span class="badge ${rc}">${fic.rating}</span>` : ""}
-        ${sc         ? `<span class="badge ${sc}">${fic.status}</span>` : ""}
-        ${wc         ? `<span class="badge words">${wc} words</span>` : ""}
-      </div>
-      ${extraTags.length ? `<div class="card-tags">${extraTags.map(t => `<span class="badge">${t}</span>`).join("")}</div>` : ""}
-      ${fic.summary ? `<p class="card-summary">${fic.summary}</p>` : ""}
-    `;
-    grid.appendChild(card);
-  });
+      const ratingOrder = Object.keys(RATING_LABELS);
+      const rank = r => {
+        const i = ratingOrder.indexOf(r.toLowerCase());
+        return i === -1 ? ratingOrder.length : i;
+      };
+      const ratings = topCounts(FICS.map(f => f.rating)).sort((a, b) => rank(a[0]) - rank(b[0]));
+      const allTags = FICS.flatMap(f => f.custom_tags || []);
 
-  if (visible === 0) {
-    grid.innerHTML = '<p class="no-results">No fics match your filters.</p>';
-  }
+      document.getElementById("stats-body").innerHTML = `
+        <div class="stat-tiles">
+          <div class="stat-tile" title="${total.toLocaleString()} words"><div class="stat-num">${fmtBig(total)}</div><div class="stat-cap">words</div></div>
+          <div class="stat-tile"><div class="stat-num">${FICS.length}</div><div class="stat-cap">fics</div></div>
+          <div class="stat-tile"><div class="stat-num">${authors}</div><div class="stat-cap">authors</div></div>
+          <div class="stat-tile" title="${avg.toLocaleString()} words"><div class="stat-num">${fmtBig(avg)}</div><div class="stat-cap">avg length</div></div>
+        </div>
+        <p class="stat-fun">That's about <b>${Math.round(total / 90000).toLocaleString()}</b> novels' worth, or
+          <b>${Math.round(total / 250 / 60 / 24)}</b> days of nonstop reading at 250 words a minute.</p>
 
-  document.querySelectorAll(".ship-preset").forEach(btn => {
-    btn.classList.toggle("active", shipFilter === null ? btn.dataset.ship === "" : normalizeShipValue(btn.dataset.ship) === normalizeShipValue(shipFilter));
-  });
+        <div class="stats-section">
+          <h3>Longest &amp; shortest</h3>
+          ${ficLine("Longest", withWords[0])}
+          ${ficLine("Shortest", withWords[withWords.length - 1])}
+        </div>
 
-  document.getElementById("pinned-filter").innerHTML = pinned
-    ? `<button class="chip active" type="button" title="Clear filter">${pinned.key === "tag" ? "Tag" : "Author"}: ${esc(pinned.val)} ✕</button>`
-    : "";
-  document.getElementById("visible-count").textContent =
-    visible === FICS.length ? "" : `Showing ${visible} of ${FICS.length}`;
-  document.getElementById("fic-count").textContent =
-    `${FICS.length} fic${FICS.length !== 1 ? "s" : ""} archived`;
-}
+        <div class="stats-section">
+          <h3>Status</h3>
+          <div class="split-bar">
+            <div style="width:${donePct.toFixed(1)}%;background:#60b4cc"></div>
+            <div style="flex:1;background:#a888d8"></div>
+          </div>
+          <div class="split-legend">
+            <span><i style="background:#60b4cc"></i>Complete ${complete}</span>
+            <span><i style="background:#a888d8"></i>In progress ${wip}</span>
+          </div>
+        </div>
 
-document.querySelectorAll(".sort-row .chip[data-sort]").forEach(chip => {
-  chip.addEventListener("click", () => {
-    document.querySelectorAll(".sort-row .chip[data-sort]").forEach(c => c.classList.remove("active"));
-    chip.classList.add("active");
-    sortMode = chip.dataset.sort;
-    render();
-  });
-});
+        <div class="stats-section">
+          <h3>Ratings</h3>
+          ${barRows(ratings, { colors: { "general audiences": "#72cc80", "teen and up audiences": "#d4b86a", "mature": "#d48860", "explicit": "#d46880" } })}
+        </div>
 
-document.querySelectorAll(".ship-preset").forEach(chip => {
-  chip.addEventListener("click", () => {
-    shipFilter = chip.dataset.ship ? chip.dataset.ship : null;
-    render();
-  });
-});
+        <div class="stats-section">
+          <h3>Most common tags</h3>
+          ${barRows(topCounts(allTags, 10), { key: "tag" })}
+        </div>
 
-buildChips("rating-chips", FICS.map(f => f.rating), "rating", RATING_LABELS);
-buildChips("status-chips", FICS.map(f => f.status), "status");
+        <div class="stats-section">
+          <h3>Most archived authors</h3>
+          ${barRows(topCounts(FICS.map(f => f.author), 10), { key: "author" })}
+        </div>
+      `;
+    }
 
-document.getElementById("search").addEventListener("input", render);
+    function loadFics() {
+      fetch("https://raw.githubusercontent.com/VulpesAtlantic/waow/main/fic_data.json")
+        .then(response => {
+          if (!response.ok) throw new Error("Failed to load fic_data.json");
+          return response.json();
+        })
+        .then(data => {
+          FICS.push(...(data.fics || []));
+          buildChips("rating-chips", FICS.map(f => f.rating), "rating", RATING_LABELS);
+          buildChips("status-chips", FICS.map(f => f.status), "status");
+          render();
+        })
+        .catch(error => {
+          console.error(error);
+          const grid = document.getElementById("card-grid");
+          grid.innerHTML = '<p class="no-results">Unable to load the archive data.</p>';
+        });
+    }
 
-const toTop = document.getElementById("to-top");
-window.addEventListener("scroll", () => {
-  toTop.classList.toggle("visible", window.scrollY > 600);
-}, { passive: true });
-toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-
-// ---- Archive stats ----
-// Tags too common to be interesting on their own; gets a second "the rest" list
-const RATING_COLORS = {
-  "general audiences":     "#72cc80",
-  "teen and up audiences": "#d4b86a",
-  "mature":                "#d48860",
-  "explicit":              "#d46880",
-};
-
-function esc(s) {
-  return String(s).replace(/[&<>\"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
-}
-
-function fmtBig(n) {
-  if (n >= 1e6) return (n / 1e6).toFixed(1) + "M";
-  if (n >= 1e4) return Math.round(n / 1e3) + "k";
-  return n.toLocaleString();
-}
-
-function topCounts(values, n = Infinity) {
-  const counts = new Map();
-  values.forEach(v => { if (v) counts.set(v, (counts.get(v) || 0) + 1); });
-  return [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, n);
-}
-
-// Horizontal bar list. With `key`, labels are buttons that pin a filter on the index.
-function barRows(rows, { key, colors = {} } = {}) {
-  const max = Math.max(1, ...rows.map(r => r[1]));
-  return rows.map(([label, count]) => {
-    const lbl = key
-      ? `<button class="bar-label" type="button" data-key="${key}" data-val="${esc(label)}" title="${esc(label)}">${esc(label)}</button>`
-      : `<span class="bar-label" title="${esc(label)}">${esc(label)}</span>`;
-    const color = colors[label.toLowerCase()];
-    const style = `width:${(count / max * 100).toFixed(1)}%` + (color ? `;background:${color}` : "");
-    return `<div class="bar-row">${lbl}<div class="bar-track"><div class="bar-fill" style="${style}"></div></div><span class="bar-val">${count}</span></div>`;
-  }).join("");
-}
-
-function ficLine(label, fic) {
-  if (!fic) return "";
-  return `<p class="stat-fic">${label}: <a href="archive/${esc(fic.filename)}">${esc(fic.title || "Untitled")}</a>
-    by ${esc(fic.author || "Unknown")} · ${parseWordCount(fic.word_count).toLocaleString()} words</p>`;
-}
-
-function buildStats() {
-  const withWords = FICS.filter(f => parseWordCount(f.word_count) > 0)
-    .sort((a, b) => parseWordCount(b.word_count) - parseWordCount(a.word_count));
-  const total = withWords.reduce((sum, f) => sum + parseWordCount(f.word_count), 0);
-  const avg = withWords.length ? Math.round(total / withWords.length) : 0;
-  const authors = new Set(FICS.map(f => f.author).filter(Boolean)).size;
-  const complete = FICS.filter(f => statusClass(f.status) === "complete").length;
-  const wip = FICS.filter(f => statusClass(f.status) === "wip").length;
-  const donePct = complete + wip ? complete / (complete + wip) * 100 : 0;
-
-  const ratingOrder = Object.keys(RATING_LABELS);
-  const rank = r => { const i = ratingOrder.indexOf(r.toLowerCase()); return i === -1 ? ratingOrder.length : i; };
-  const ratings = topCounts(FICS.map(f => f.rating)).sort((a, b) => rank(a[0]) - rank(b[0]));
-
-  const allTags = FICS.flatMap(f => f.custom_tags || []);
-
-  document.getElementById("stats-body").innerHTML = `
-    <div class="stat-tiles">
-      <div class="stat-tile" title="${total.toLocaleString()} words"><div class="stat-num">${fmtBig(total)}</div><div class="stat-cap">words</div></div>
-      <div class="stat-tile"><div class="stat-num">${FICS.length}</div><div class="stat-cap">fics</div></div>
-      <div class="stat-tile"><div class="stat-num">${authors}</div><div class="stat-cap">authors</div></div>
-      <div class="stat-tile" title="${avg.toLocaleString()} words"><div class="stat-num">${fmtBig(avg)}</div><div class="stat-cap">avg length</div></div>
-    </div>
-    <p class="stat-fun">That's about <b>${Math.round(total / 90000).toLocaleString()}</b> novels' worth, or
-      <b>${Math.round(total / 250 / 60 / 24)}</b> days of nonstop reading at 250 words a minute.</p>
-
-    <div class="stats-section">
-      <h3>Longest &amp; shortest</h3>
-      ${ficLine("Longest", withWords[0])}
-      ${ficLine("Shortest", withWords[withWords.length - 1])}
-    </div>
-
-    <div class="stats-section">
-      <h3>Status</h3>
-      <div class="split-bar">
-        <div style="width:${donePct.toFixed(1)}%;background:#60b4cc"></div>
-        <div style="flex:1;background:#a888d8"></div>
-      </div>
-      <div class="split-legend">
-        <span><i style="background:#60b4cc"></i>Complete ${complete}</span>
-        <span><i style="background:#a888d8"></i>In progress ${wip}</span>
-      </div>
-    </div>
-
-    <div class="stats-section">
-      <h3>Ratings</h3>
-      ${barRows(ratings, { colors: RATING_COLORS })}
-    </div>
-
-    <div class="stats-section">
-      <h3>Most common tags</h3>
-      ${barRows(topCounts(allTags, 10), { key: "tag" })}
-    </div>
-
-
-    <div class="stats-section">
-      <h3>Most archived authors</h3>
-      ${barRows(topCounts(FICS.map(f => f.author), 10), { key: "author" })}
-    </div>
-  `;
-}
-
-let pinned = null;  // { key: "tag" | "author", val }, set by clicking a label in the stats dialog
-const statsDialog = document.getElementById("stats-dialog");
-
-// Random: picks from the cards currently showing, so it respects search/filters
-document.getElementById("random-fic").addEventListener("click", () => {
-  const cards = document.querySelectorAll("#card-grid a.fic-card");
-  if (!cards.length) return;
-  window.location.href = cards[Math.floor(Math.random() * cards.length)].href;
-});
-
-document.getElementById("stats-open").addEventListener("click", () => {
-  buildStats();
-  statsDialog.showModal();
-});
-document.getElementById("stats-close").addEventListener("click", () => statsDialog.close());
-statsDialog.addEventListener("click", e => {
-  if (e.target === statsDialog) { statsDialog.close(); return; }  // backdrop click
-  const btn = e.target.closest("button.bar-label[data-key]");
-  if (!btn) return;
-  pinned = { key: btn.dataset.key, val: btn.dataset.val };
-  statsDialog.close();
-  render();
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
-document.getElementById("pinned-filter").addEventListener("click", () => {
-  pinned = null;
-  render();
-});
-
-render();
-</script>
+    loadFics();
+  </script>
 </body>
 </html>
