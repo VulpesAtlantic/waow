@@ -17,32 +17,33 @@
       min-height: 100vh;
     }
 
-    /* ---- Header ---- */
     .archive-header {
       padding: 2.5rem 1rem 1.25rem;
       text-align: center;
       border-bottom: 1px solid #1e1838;
       margin-bottom: 2rem;
     }
-    /* Title: Cinzel caps in Agatha purple → Rio green (falls back to Georgia offline) */
+
     .archive-header h1 {
       font-family: "Cinzel", Georgia, serif;
-      font-size: clamp(1.15rem, 6vw, 1.55rem); /* stays on one line on small phones */
+      font-size: clamp(1.15rem, 6vw, 1.55rem);
       font-weight: 500;
       letter-spacing: 0.18em;
-      padding-left: 0.18em; /* balance trailing letter-spacing */
+      padding-left: 0.18em;
       background: linear-gradient(90deg, #c4a8ff, #7fc98f);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
     }
+
     .header-stars {
       font-size: 0.8rem;
       letter-spacing: 0.6em;
-      padding-left: 0.6em; /* balance trailing letter-spacing */
+      padding-left: 0.6em;
       color: #5a4a8a;
       margin-bottom: 0.4rem;
     }
+
     .header-rule {
       height: 1px;
       width: 180px;
@@ -50,42 +51,59 @@
       background: linear-gradient(90deg, transparent, #c4a8ff, #7fc98f, transparent);
       opacity: 0.7;
     }
+
     .archive-header p {
       margin-top: 0.35rem;
       font-size: 0.8rem;
       color: #6a5e8a;
     }
+
     .last-updated {
       font-size: 0.72rem;
       color: #3d3560;
       margin-top: 0.2rem;
     }
 
-    /* ---- Visitor banner ---- */
+    .archive-header { position: relative; }
+    .stats-link {
+      position: absolute;
+      top: 0.9rem;
+      right: 1rem;
+      background: none;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      color: #3d3560;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      padding: 0.25rem 0.5rem;
+      cursor: pointer;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .rank-link {
+      position: absolute;
+      top: 0.9rem;
+      left: 1rem;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      color: #3d3560;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      padding: 0.25rem 0.5rem;
+      text-decoration: none;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .rank-link:hover, .rank-link:focus-visible, .stats-link:hover, .stats-link:focus-visible {
+      color: #c4a8ff;
+      border-color: #2a2248;
+      outline: none;
+    }
+    .kudos-link { top: 2.6rem; }
+
     .visitor-banner {
       max-width: 660px;
       margin: -0.75rem auto 1.5rem;
       padding: 0 1rem;
     }
-    .visitor-banner summary {
-      list-style: none;
-      cursor: pointer;
-      user-select: none;
-      display: inline-block;
-      font-size: 0.78rem;
-      color: #8878b0;
-      background: #13102a;
-      border: 1px solid #221a40;
-      border-left: 3px solid #5030a8;
-      border-radius: 8px;
-      padding: 0.35rem 0.9rem;
-    }
-    .visitor-banner summary::-webkit-details-marker { display: none; }
-    .visitor-banner[open] summary {
-      color: #c4a8ff;
-      border-color: #5030a8;
-    }
-    .visitor-banner p + p { margin-top: 0.6rem; }
     .visitor-body {
       margin-top: 0.5rem;
       font-size: 0.78rem;
@@ -97,11 +115,41 @@
       border-radius: 8px;
       padding: 0.7rem 1rem;
     }
+<<<<<<< HEAD
     .visitor-body p + p, .visitor-body p + ul { margin-top: 0.5rem; }
     .visitor-body ul { padding-left: 1.2rem; }
     .visitor-body li + li { margin-top: 0.2rem; }
+=======
+    .ship-preset-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      align-items: center;
+      justify-content: center;
+    }
+    .ship-preset, .chip {
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid #1e1838;
+      background: transparent;
+      color: #6a5e8a;
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .ship-preset {
+      padding: 0.35rem 0.7rem;
+      font-size: 0.72rem;
+      line-height: 1.4;
+    }
+    .ship-preset.active, .chip.active {
+      background: #2a1f50;
+      border-color: #5030a8;
+      color: #c4a8ff;
+    }
+>>>>>>> db00841a8cb6540ba8a0e4a8b779b45324def101
 
-    /* ---- Collapsible filter/search ---- */
     .filter-section {
       max-width: 660px;
       margin: 0 auto 0.75rem;
@@ -155,24 +203,7 @@
       padding-right: 0.2rem;
       white-space: nowrap;
     }
-    .chip {
-      padding: 0.25rem 0.7rem;
-      border-radius: 999px;
-      border: 1px solid #1e1838;
-      background: transparent;
-      color: #6a5e8a;
-      font-size: 0.75rem;
-      cursor: pointer;
-      transition: all 0.15s;
-      white-space: nowrap;
-    }
-    .chip.active {
-      background: #2a1f50;
-      border-color: #5030a8;
-      color: #c4a8ff;
-    }
 
-    /* ---- Sort row ---- */
     .sort-row {
       display: flex;
       flex-wrap: wrap;
@@ -182,8 +213,9 @@
       margin: 0 auto 1.25rem;
       padding: 0 1rem;
     }
+    .random-chip { margin-left: auto; }
+    .random-chip:hover { border-color: #2a4a34; color: #7fc98f; }
 
-    /* ---- Card grid ---- */
     .card-grid {
       display: flex;
       flex-direction: column;
@@ -192,8 +224,6 @@
       max-width: 660px;
       margin: 0 auto;
     }
-
-    /* ---- Fic card ---- */
     .fic-card {
       background: #13102a;
       border: 1px solid #221a40;
@@ -220,23 +250,18 @@
       color: #7a6da0;
       margin-bottom: 0.55rem;
     }
-
-    /* meta row: ship / rating / status / words */
     .card-meta {
       display: flex;
       flex-wrap: wrap;
       gap: 0.3rem;
       margin-bottom: 0.35rem;
     }
-    /* extra custom tags row */
     .card-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 0.3rem;
       margin-bottom: 0.35rem;
     }
-
-    /* ---- Badges ---- */
     .badge {
       font-size: 0.7rem;
       padding: 0.18rem 0.55rem;
@@ -254,16 +279,13 @@
     .badge.complete { color: #60b4cc; border-color: #1c3a48; background: #0e1e28; }
     .badge.wip      { color: #a888d8; border-color: #2a1e48; background: #150e28; }
     .badge.words    { color: #6a6090; border-color: #201c38; background: transparent; }
-
     .card-summary {
       font-size: 0.8rem;
       color: #8878b0;
       line-height: 1.55;
       margin-top: 0.3rem;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
+      white-space: normal;
+      overflow-wrap: anywhere;
     }
     .no-results {
       text-align: center;
@@ -277,8 +299,12 @@
       text-align: center;
       padding-bottom: 0.75rem;
     }
+    .pinned-filter {
+      text-align: center;
+      margin-bottom: 0.75rem;
+    }
+    .pinned-filter:empty { display: none; }
 
-    /* ---- Back to top ---- */
     .to-top {
       position: fixed;
       right: 1.25rem;
@@ -301,44 +327,6 @@
     }
     .to-top:hover { background: #2a1f50; opacity: 1; }
 
-    /* ---- Stats link + dialog ---- */
-    .archive-header { position: relative; }
-    .stats-link {
-      position: absolute;
-      top: 0.9rem;
-      right: 1rem;
-      background: none;
-      border: 1px solid transparent;
-      border-radius: 6px;
-      color: #3d3560;
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      padding: 0.25rem 0.5rem;
-      cursor: pointer;
-      transition: color 0.15s, border-color 0.15s;
-    }
-    .random-chip { margin-left: auto; }
-    .random-chip:hover { border-color: #2a4a34; color: #7fc98f; }
-    .rank-link {
-      position: absolute;
-      top: 0.9rem;
-      left: 1rem;
-      border: 1px solid transparent;
-      border-radius: 6px;
-      color: #3d3560;
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      padding: 0.25rem 0.5rem;
-      text-decoration: none;
-      transition: color 0.15s, border-color 0.15s;
-    }
-    .rank-link:hover, .rank-link:focus-visible { color: #c4a8ff; border-color: #2a2248; outline: none; }
-    .kudos-link { top: 2.6rem; }
-    .stats-link:hover, .stats-link:focus-visible {
-      color: #c4a8ff;
-      border-color: #2a2248;
-      outline: none;
-    }
     .stats-dialog {
       width: min(560px, calc(100vw - 2rem));
       max-height: 85vh;
@@ -490,16 +478,21 @@
       margin-top: 1.4rem;
       text-align: center;
     }
-    .pinned-filter {
-      text-align: center;
-      margin-bottom: 0.75rem;
-    }
-    .pinned-filter:empty { display: none; }
   </style>
-
 </head>
 <body>
+  <div class="archive-header">
+    <button class="stats-link" id="stats-open" type="button" title="Archive stats">✦ stats</button>
+    <a class="rank-link" href="rank.html" title="Rank your top 25">♛ top 25</a>
+    <a class="rank-link kudos-link" href="kudos.html" title="Kudos reminders">♡ kudos list</a>
+    <div class="header-stars" aria-hidden="true">✦ ⋆ ☾ ⋆ ✦</div>
+    <h1>Fic Archive Previewer</h1>
+    <div class="header-rule"></div>
+    <p id="fic-count"></p>
+    <p class="last-updated">last updated October 30, 2026</p>
+  </div>
 
+<<<<<<< HEAD
 <div class="archive-header">
   <button class="stats-link" id="stats-open" type="button" title="Archive stats">✦ stats</button>
   <a class="rank-link" href="rank.html" title="Rank your top 25">♛ top 25</a>
@@ -526,132 +519,282 @@
     </ul>
   </div>
 </details>
-
-<details class="filter-section">
-  <summary class="filter-toggle">Filter &amp; search ▾</summary>
-  <div class="filter-bar">
-    <input class="search-input" type="search" id="search"
-           placeholder="Search title, author, ship, summary, tags…" autocomplete="off">
-    <div class="chip-row" id="rating-chips">
-      <span class="chip-label">Rating:</span>
-    </div>
-    <div class="chip-row" id="status-chips">
-      <span class="chip-label">Status:</span>
+=======
+  <div class="visitor-banner">
+    <div class="visitor-body">
+      <div class="ship-preset-row">
+        <button class="ship-preset active" data-ship="" type="button">All ships</button>
+        <button class="ship-preset" data-ship="Gamora/Peter Quill" type="button">Gamora/Peter Quill</button>
+        <button class="ship-preset" data-ship="Gabriel Agreste | Papillon | Hawk Moth/Nathalie Sancoeur" type="button">Gabriel Agreste | Papillon | Hawk Moth/Nathalie Sancoeur</button>
+        <button class="ship-preset" data-ship="Leon S. Kennedy/Ada Wong" type="button">Leon S. Kennedy/Ada Wong</button>
+      </div>
     </div>
   </div>
-</details>
+>>>>>>> db00841a8cb6540ba8a0e4a8b779b45324def101
 
-<div class="sort-row">
-  <span class="chip-label">Sort:</span>
-  <button class="chip active" data-sort="default">Default</button>
-  <button class="chip" data-sort="wc_desc">Words</button>
-  <button class="chip" data-sort="updated">Updated</button>
-  <button class="chip" data-sort="alpha">A–Z</button>
-  <button class="chip random-chip" id="random-fic" type="button" title="Open a random fic from the ones showing">⚄ Random</button>
-</div>
-
-<div class="pinned-filter" id="pinned-filter"></div>
-<div class="count-label" id="visible-count"></div>
-<div class="card-grid" id="card-grid"></div>
-
-<button class="to-top" id="to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
-
-<dialog class="stats-dialog" id="stats-dialog" aria-labelledby="stats-title">
-  <div class="stats-inner">
-    <div class="stats-head">
-      <h2 id="stats-title">Archive Stats</h2>
-      <button class="stats-close" id="stats-close" type="button" aria-label="Close">×</button>
+  <details class="filter-section">
+    <summary class="filter-toggle">Filter &amp; search ▾</summary>
+    <div class="filter-bar">
+      <input class="search-input" type="search" id="search" placeholder="Search title, author, ship, summary, tags…" autocomplete="off">
+      <div class="chip-row" id="rating-chips">
+        <span class="chip-label">Rating:</span>
+      </div>
+      <div class="chip-row" id="status-chips">
+        <span class="chip-label">Status:</span>
+      </div>
     </div>
-    <div id="stats-body"></div>
-    <p class="stats-hint">tap a tag or author to filter the archive</p>
-  </div>
-</dialog>
+  </details>
 
+  <div class="sort-row">
+    <span class="chip-label">Sort:</span>
+    <button class="chip active" data-sort="default">Default</button>
+    <button class="chip" data-sort="wc_desc">Words</button>
+    <button class="chip" data-sort="updated">Updated</button>
+    <button class="chip" data-sort="alpha">A–Z</button>
+    <button class="chip random-chip" id="random-fic" type="button" title="Open a random fic from the ones showing">⚄ Random</button>
+  </div>
+
+  <div class="pinned-filter" id="pinned-filter"></div>
+  <div class="count-label" id="visible-count"></div>
+  <div class="card-grid" id="card-grid"></div>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
+
+  <dialog class="stats-dialog" id="stats-dialog" aria-labelledby="stats-title">
+    <div class="stats-inner">
+      <div class="stats-head">
+        <h2 id="stats-title">Archive Stats</h2>
+        <button class="stats-close" id="stats-close" type="button" aria-label="Close">×</button>
+      </div>
+      <div id="stats-body"></div>
+      <p class="stats-hint">tap a tag or author to filter the archive</p>
+    </div>
+  </dialog>
+
+<<<<<<< HEAD
 <script>
 const FICS = [{"filename": "10849821_quiescent.html", "title": "Quiescent", "author": "kalina16", "ship": "Gamora/Peter Quill", "rating": "General Audiences", "status": "Complete", "summary": "After everything - Nebula, Ego, those few awful minutes where she was sure Peter was dead - Gamora has a lot to think about. Preferably while using Peter as an exhausted but willing pillow.", "ao3_summary": "After everything - Nebula, Ego, those few awful minutes where she was sure Peter was dead - Gamora has a lot to think about. Preferably while using Peter as an exhausted but willing pillow.", "lastUpdated": "2017-05-07", "word_count": "1359", "custom_tags": [], "processed": "2026-10-30T02:49:13.133163", "source_file": "10849821_quiescent.html"}, {"filename": "10870218_terran_heart.html", "title": "Terran Heart", "author": "ValmureEld (InkSiren)", "ship": "", "rating": "Teen And Up Audiences", "status": "Complete", "summary": "Terran biology is confusing, especially half Terran. So are feelings.", "ao3_summary": "Terran biology is confusing, especially half Terran. So are feelings.", "lastUpdated": "2017-05-10", "word_count": "2603", "custom_tags": ["comedy"], "processed": "2026-10-30T02:49:13.149339", "source_file": "10870218_terran_heart.html"}, {"filename": "11016942_take_my_mind_and_take_my.html", "title": "take my mind and take my pain", "author": "gnatromanoff", "ship": "Gamora/Peter Quill", "rating": "Teen And Up Audiences", "status": "Complete", "summary": "Peter takes a deep breath, closing the door behind him and locking it. If Gamora doesn't want to talk about it right this second , he supposes she doesn't have to, but the longer she lets it all permeate within her, the worse it'll get. (He knows this from his own personal experience.) (But, in said personal experience, Gamora had been the one to pull him out and get him to open up and heal.)", "ao3_summary": "Peter takes a deep breath, closing the door behind him and locking it. If Gamora doesn't want to talk about it right this second , he supposes she doesn't have to, but the longer she lets it all permeate within her, the worse it'll get. (He knows this from his own personal experience.) (But, in said personal experience, Gamora had been the one to pull him out and get him to open up and heal.)", "lastUpdated": "2017-05-27", "word_count": "2543", "custom_tags": ["angst", "established relationship", "hurt/comfort"], "processed": "2026-10-30T02:49:13.165882", "source_file": "11016942_take_my_mind_and_take_my.html"}, {"filename": "11793225_you_and_me_and_this_joy.html", "title": "you and me and this joy of ours", "author": "philthestone", "ship": "Gamora/Peter Quill", "rating": "Teen And Up Audiences", "status": "Complete", "summary": "“Hey now,” says Peter. “We may be totally in over our heads, here, but we’re not alone. We got – we got Drax, and Groot – he’ll be great with a baby, I know he will – and Rocket, mostly sort of, and, uh, Mantis and – is your sister gonna drop by soon?” “Peter.” “Listen,” he says. “Gamora, listen – we’ll just … if everything else goes to shit, at least it’ll know that we love it. Okay?”", "ao3_summary": "“Hey now,” says Peter. “We may be totally in over our heads, here, but we’re not alone. We got – we got Drax, and Groot – he’ll be great with a baby, I know he will – and Rocket, mostly sort of, and, uh, Mantis and – is your sister gonna drop by soon?” “Peter.” “Listen,” he says. “Gamora, listen – we’ll just … if everything else goes to shit, at least it’ll know that we love it. Okay?”", "lastUpdated": "2017-08-13", "word_count": "19172", "custom_tags": [], "processed": "2026-10-30T02:49:13.205082", "source_file": "11793225_you_and_me_and_this_joy.html"}, {"filename": "14631218_i_should_have_a_say.html", "title": "I Should Have a Say", "author": "Peril_in_Peace", "ship": "Gamora/Peter Quill", "rating": "Teen And Up Audiences", "status": "Complete", "summary": "A detailed account of Gamora and Peter's first kiss... and the fight immediately following it.", "ao3_summary": "A detailed account of Gamora and Peter's first kiss... and the fight immediately following it.", "lastUpdated": "2018-05-13", "word_count": "2189", "custom_tags": ["hurt/comfort"], "processed": "2026-10-30T02:49:13.214113", "source_file": "14631218_i_should_have_a_say.html"}, {"filename": "15727905_little_bird_little_bird.html", "title": "Little bird, little bird", "author": "sharkinterviewee", "ship": "Gamora/Peter Quill", "rating": "General Audiences", "status": "Complete", "summary": "Gamora had no idea the kind of trouble it would get them into, the day their daughter was born looking just like her father.", "ao3_summary": "Gamora had no idea the kind of trouble it would get them into, the day their daughter was born looking just like her father.", "lastUpdated": "2018-08-19", "word_count": "3162", "custom_tags": ["angst", "fluff", "hurt/comfort"], "processed": "2026-10-30T02:49:13.231436", "source_file": "15727905_little_bird_little_bird.html"}, {"filename": "15920496_honey_honey_how_you.html", "title": "honey, honey (how you thrill me)", "author": "bevioletskies", "ship": "Gamora/Peter Quill", "rating": "Teen And Up Audiences", "status": "In Progress", "summary": "\"To put it nicely...these monarchs have a bit of a taste for unique individuals.\" \"And by ‘unique’, you mean - \" \"You.\" \"And by ‘taste’, you mean - \" \"...sexual interest.\" Gamora smiled apologetically. \"What can I say? A man of your reputation is somehow more desirable than he should be, Star-Lord.\" (Anonymous fic prompt: Peter is the honeypot for a mission gone wrong + jealous and badass Gamora)", "ao3_summary": "\"To put it nicely...these monarchs have a bit of a taste for unique individuals.\" \"And by ‘unique’, you mean - \" \"You.\" \"And by ‘taste’, you mean - \" \"...sexual interest.\" Gamora smiled apologetically. \"What can I say? A man of your reputation is somehow more desirable than he should be, Star-Lord.\" (Anonymous fic prompt: Peter is the honeypot for a mission gone wrong + jealous and badass Gamora)", "lastUpdated": "2018-09-07", "word_count": "5577", "custom_tags": ["comedy", "established relationship", "fluff", "jealousy"], "processed": "2026-10-30T02:49:13.249882", "source_file": "15920496_honey_honey_how_you.html"}, {"filename": "16899279_star_ghoul.html", "title": "Star Ghoul", "author": "Luki (KelpieCodyne)", "ship": "", "rating": "Mature", "status": "Complete", "summary": "Peter knows his father wasn't human. It's just not common knowledge that his mother wasn't either.", "ao3_summary": "Peter knows his father wasn't human. It's just not common knowledge that his mother wasn't either.", "lastUpdated": "2018-12-07", "word_count": "4264", "custom_tags": [], "processed": "2026-10-30T02:49:13.265894", "source_file": "16899279_star_ghoul.html"}, {"filename": "17947367_keep_me_warm_in_your.html", "title": "Keep Me Warm In Your Love", "author": "LegoTea", "ship": "Gamora/Peter Quill", "rating": "Teen And Up Audiences", "status": "Complete", "summary": "“There’s no need to apologize. I came here because I guess I.... I didn’t want to be alone.” Gamora ignored a sound that seemed like someone was hitting a metal pipe with a hammer, coming from Rocket’s room. She paused, then looked directly at Peter. “Could I spend the night here? With you?” (The Guardians get the Milano fixed and remodeled. The night before they get their ship back, Gamora asks to spend the night with Peter, just sleeping, but they're interrupted by a Kree radical, who nearly kills Gamora, but injures Peter instead.)", "ao3_summary": "“There’s no need to apologize. I came here because I guess I.... I didn’t want to be alone.” Gamora ignored a sound that seemed like someone was hitting a metal pipe with a hammer, coming from Rocket’s room. She paused, then looked directly at Peter. “Could I spend the night here? With you?” (The Guardians get the Milano fixed and remodeled. The night before they get their ship back, Gamora asks to spend the night with Peter, just sleeping, but they're interrupted by a Kree radical, who nearly kills Gamora, but injures Peter instead.)", "lastUpdated": "2019-02-28", "word_count": "3040", "custom_tags": ["angst", "hurt/comfort"], "processed": "2026-10-30T02:49:13.276698", "source_file": "17947367_keep_me_warm_in_your.html"}, {"filename": "24203890_alien_dinner.html", "title": "Alien dinner", "author": "Grays_Lament", "ship": "Gamora/Peter Quill", "rating": "Not Rated", "status": "In Progress", "summary": "Peter was born on earth, a small Terran boy who only got to spend 8 of his years learning the ways of his ancestors. In those years he learned two things. One, he wasn't human he was a ghoul. Two, cassette players are awesome, also outlaws are badass (but that's beside the point). When he was abducted by an actual intergalactic space ship ran by outlaws he learned another two things. One, When aliens threaten to eat you they're not being serious and you shouldn't eat them in retaliation. Two, being a ravager, outlaw, half-ghoul that travels space in search of treasure, women, and the finest of alien meats is considerably better than any outlaw he could imagine on earth. - Or, Peter Quill is a half-ghoul half-god in space. Hijinx and angst happen.", "ao3_summary": "Peter was born on earth, a small Terran boy who only got to spend 8 of his years learning the ways of his ancestors. In those years he learned two things. One, he wasn't human he was a ghoul. Two, cassette players are awesome, also outlaws are badass (but that's beside the point). When he was abducted by an actual intergalactic space ship ran by outlaws he learned another two things. One, When aliens threaten to eat you they're not being serious and you shouldn't eat them in retaliation. Two, being a ravager, outlaw, half-ghoul that travels space in search of treasure, women, and the finest of alien meats is considerably better than any outlaw he could imagine on earth. - Or, Peter Quill is a half-ghoul half-god in space. Hijinx and angst happen.", "lastUpdated": "2023-06-06", "word_count": "7518", "custom_tags": ["angst", "au", "hurt/comfort"], "processed": "2026-10-30T02:49:13.289959", "source_file": "24203890_alien_dinner.html"}, {"filename": "24209905_satellites_gone_up_to.html", "title": "satellite's gone up to the skies", "author": "philthestone", "ship": "Gamora/Peter Quill", "rating": "General Audiences", "status": "Complete", "summary": "If she were in an introspective mood just now, she’d puzzle it out, but she isn’t; she’s dressed for bed and scrolling through the team’s work datapad, idly looking for a job they could take to tide them over to the next solar cycle and humming a Lou Reed song very quietly. The little body wedged against her leg over the big bed’s comforter wriggles, turning towards her. “You smell nice, Mama.”", "ao3_summary": "If she were in an introspective mood just now, she’d puzzle it out, but she isn’t; she’s dressed for bed and scrolling through the team’s work datapad, idly looking for a job they could take to tide them over to the next solar cycle and humming a Lou Reed song very quietly. The little body wedged against her leg over the big bed’s comforter wriggles, turning towards her. “You smell nice, Mama.”", "lastUpdated": "2020-05-16", "word_count": "756", "custom_tags": ["canon divergence"], "processed": "2026-10-30T02:49:13.304809", "source_file": "24209905_satellites_gone_up_to.html"}, {"filename": "38306224_anything_in_the_name_of.html", "title": "Anything in the name of love", "author": "NightFox9", "ship": "Gamora/Peter Quill", "rating": "Teen And Up Audiences", "status": "Complete", "summary": "Simple task. Nothing suspicious. Until things went wrong and one of the guardians was kidnapped. Peter loosing his mind while Gamora was bleeding to death. >Included a new photo edit of Gamora!", "ao3_summary": "Simple task. Nothing suspicious. Until things went wrong and one of the guardians was kidnapped. Peter loosing his mind while Gamora was bleeding to death. >Included a new photo edit of Gamora!", "lastUpdated": "2022-04-11", "word_count": "13807", "custom_tags": ["angst"], "processed": "2026-10-30T02:49:13.339210", "source_file": "38306224_anything_in_the_name_of.html"}, {"filename": "40542786_songs_that_make_sense.html", "title": "songs that make sense", "author": "godblessgamora", "ship": "Gamora/Peter Quill", "rating": "Teen And Up Audiences", "status": "Complete", "summary": "she knows she’s to blame, but seeing him distance himself from her is the worst kind of torture. he’s everything, but she’s scared that now they’re nothing. post vol 2", "ao3_summary": "she knows she’s to blame, but seeing him distance himself from her is the worst kind of torture. he’s everything, but she’s scared that now they’re nothing. post vol 2", "lastUpdated": "2022-08-03", "word_count": "19629", "custom_tags": ["angst", "hurt/comfort"], "processed": "2026-10-30T02:49:13.386711", "source_file": "40542786_songs_that_make_sense.html"}, {"filename": "48797209_safe_and_sound.html", "title": "safe and sound", "author": "unspokenthing", "ship": "Gamora/Peter Quill", "rating": "General Audiences", "status": "Complete", "summary": "“Don’t tell me not to worry, because I’m going to do that anyway,” she says into his chest, her voice muffled.", "ao3_summary": "“Don’t tell me not to worry, because I’m going to do that anyway,” she says into his chest, her voice muffled.", "lastUpdated": "2023-07-23", "word_count": "355", "custom_tags": ["fluff"], "processed": "2026-10-30T02:49:13.400548", "source_file": "48797209_safe_and_sound.html"}, {"filename": "49003321_take_pictures_in_your.html", "title": "take pictures in your mind of your childhood room", "author": "18kiwis", "ship": "Gamora/Peter Quill", "rating": "Teen And Up Audiences", "status": "Complete", "summary": "Peter hasn’t been to Earth since he was abducted, so a vacation there is nerve-racking at best and terrifying at worst. Despite that, he wants nothing more than to share his heritage, his birthplace, with Gamora and their daughters.", "ao3_summary": "Peter hasn’t been to Earth since he was abducted, so a vacation there is nerve-racking at best and terrifying at worst. Despite that, he wants nothing more than to share his heritage, his birthplace, with Gamora and their daughters.", "lastUpdated": "2023-07-31", "word_count": "11801", "custom_tags": ["fluff"], "processed": "2026-10-30T02:49:13.425644", "source_file": "49003321_take_pictures_in_your.html"}, {"filename": "49087420_enough.html", "title": "Enough!", "author": "Tinkerbell2319", "ship": "Gamora/Peter Quill", "rating": "Teen And Up Audiences", "status": "Complete", "summary": "Rocket is trying to eat his breakfast, but Peter and Gamora are making him gag. Prompt: “Can you two cool it with the PDA?”", "ao3_summary": "Rocket is trying to eat his breakfast, but Peter and Gamora are making him gag. Prompt: “Can you two cool it with the PDA?”", "lastUpdated": "2023-08-03", "word_count": "194", "custom_tags": [], "processed": "2026-10-30T02:49:13.438710", "source_file": "49087420_enough.html"}, {"filename": "49466953_if_things_were_different.html", "title": "If Things Were Different", "author": "Tinkerbell2319", "ship": "Gamora/Peter Quill", "rating": "Teen And Up Audiences", "status": "Complete", "summary": "Peter finds information about Gamora's past and she worries this will be the end of their relationship Prompt: “You deserve so much better than what I can be.”", "ao3_summary": "Peter finds information about Gamora's past and she worries this will be the end of their relationship Prompt: “You deserve so much better than what I can be.”", "lastUpdated": "2023-08-19", "word_count": "567", "custom_tags": [], "processed": "2026-10-30T02:49:13.451849", "source_file": "49466953_if_things_were_different.html"}, {"filename": "55711639_mess_is_mine.html", "title": "mess is mine", "author": "godblessgamora", "ship": "Gamora/Peter Quill", "rating": "General Audiences", "status": "Complete", "summary": "He bites the inside of his cheek, almost like he’s debating something. “Gamora…” She steps around him without another word. “I begged to work with you.” His voice is urgent. Practically desperate. And it's that, together with the actual words, that strucks her to her core. A shiver of something dances up her spine. She slowly turns around. “What?” He pinches the bridge of his nose, looking embarrassed and defeated. He mutters under his nose, “This is not how… Dammit.”", "ao3_summary": "He bites the inside of his cheek, almost like he’s debating something. “Gamora…” She steps around him without another word. “I begged to work with you.” His voice is urgent. Practically desperate. And it's that, together with the actual words, that strucks her to her core. A shiver of something dances up her spine. She slowly turns around. “What?” He pinches the bridge of his nose, looking embarrassed and defeated. He mutters under his nose, “This is not how… Dammit.”", "lastUpdated": "2024-07-05", "word_count": "34647", "custom_tags": [], "processed": "2026-10-30T02:49:13.531867", "source_file": "55711639_mess_is_mine.html"}, {"filename": "56501476_got_lovesick_all_over_my.html", "title": "got lovesick (all over my bed)", "author": "strawbelli3", "ship": "Gamora/Peter Quill", "rating": "General Audiences", "status": "Complete", "summary": "in which Gamora realizes she is indeed in love with Peter Quill", "ao3_summary": "in which Gamora realizes she is indeed in love with Peter Quill", "lastUpdated": "2024-06-08", "word_count": "1454", "custom_tags": ["fluff", "pining"], "processed": "2026-10-30T02:49:13.545931", "source_file": "56501476_got_lovesick_all_over_my.html"}, {"filename": "68941121_a_memory_like_home.html", "title": "A Memory Like Home", "author": "evasmlp", "ship": "Gamora/Peter Quill", "rating": "Not Rated", "status": "Complete", "summary": "After months on Earth, Peter Quill is startled to see a familiar silhouette at the end of his driveway. As Gamora steps into the light, memories in her eyes, she closes the distance without a word. She runs into his arms, and their long lost love reignites with an unrestrained kiss. Peter Quill had learned a few things about Earth since he came back.", "ao3_summary": "After months on Earth, Peter Quill is startled to see a familiar silhouette at the end of his driveway. As Gamora steps into the light, memories in her eyes, she closes the distance without a word. She runs into his arms, and their long lost love reignites with an unrestrained kiss. Peter Quill had learned a few things about Earth since he came back.", "lastUpdated": "2025-08-29", "word_count": "1056", "custom_tags": [], "processed": "2026-10-30T02:49:13.560428", "source_file": "68941121_a_memory_like_home.html"}, {"filename": "72822851_the_strange_man_of.html", "title": "The strange man of Knowhere", "author": "Anonymous", "ship": "Gamora/Peter Quill", "rating": "Not Rated", "status": "Complete", "summary": "Peter is acting strange. Gamora is worried, and the Avengers are both confused and shocked. When they reached Knowhere his instincts were screaming at him that something wasn’t right. It was too quiet and he felt more on edge than usual. He noticed Gamora watching him and he ignored it. He had a feeling she’d noticed something was off about him. He wasn’t sure what it was, but something inside of him had shifted recently and even though he tried to push it down and ignore it. Whatever it was wanted out and he was scared to know what that meant.", "ao3_summary": "Peter is acting strange. Gamora is worried, and the Avengers are both confused and shocked. When they reached Knowhere his instincts were screaming at him that something wasn’t right. It was too quiet and he felt more on edge than usual. He noticed Gamora watching him and he ignored it. He had a feeling she’d noticed something was off about him. He wasn’t sure what it was, but something inside of him had shifted recently and even though he tried to push it down and ignore it. Whatever it was wanted out and he was scared to know what that meant.", "lastUpdated": "2025-10-20", "word_count": "2108", "custom_tags": [], "processed": "2026-10-30T02:49:13.575556", "source_file": "72822851_the_strange_man_of.html"}];
 
 let sortMode = "default";
+=======
+  <script>
+    const FICS = [];
+    let sortMode = "default";
+    let shipFilter = null;
+    let pinned = null;
 
-function parseWordCount(wc) {
-  if (!wc) return 0;
-  return parseInt(String(wc).replace(/,/g, ""), 10) || 0;
-}
+    const RATING_LABELS = {
+      "general audiences": "GA",
+      "teen and up audiences": "T",
+      "mature": "M",
+      "explicit": "E",
+      "not rated": "NR"
+    };
+>>>>>>> db00841a8cb6540ba8a0e4a8b779b45324def101
 
-function fmtWordCount(wc) {
-  const n = parseWordCount(wc);
-  if (!n) return "";
-  if (n >= 1000) return (n / 1000).toFixed(n % 1000 === 0 ? 0 : 1) + "k";
-  return String(n);
-}
+    function parseWordCount(wc) {
+      if (!wc) return 0;
+      return parseInt(String(wc).replace(/,/g, ""), 10) || 0;
+    }
 
+    function fmtWordCount(wc) {
+      const n = parseWordCount(wc);
+      if (!n) return "";
+      if (n >= 1000) return (n / 1000).toFixed(n % 1000 === 0 ? 0 : 1) + "k";
+      return String(n);
+    }
+
+<<<<<<< HEAD
 function getSortedFics() {
   if (sortMode === "wc_desc")  return [...FICS].sort((a, b) => parseWordCount(b.word_count) - parseWordCount(a.word_count));
   if (sortMode === "updated")  return [...FICS].sort((a, b) => (b.lastUpdated || "").localeCompare(a.lastUpdated || ""));
   if (sortMode === "alpha")    return [...FICS].sort((a, b) => (a.title || "").toLowerCase().localeCompare((b.title || "").toLowerCase()));
   return FICS;
 }
+=======
+    function normalizeShipValue(value) {
+      return String(value ?? "").toLowerCase().replace(/\s+/g, " ").trim();
+    }
 
-function ratingClass(r) {
-  if (!r) return "";
-  const up = r.toUpperCase();
-  if (up.includes("GENERAL")) return "rating-G";
-  if (up.includes("TEEN"))    return "rating-T";
-  if (up.includes("MATURE"))  return "rating-M";
-  if (up.includes("EXPLICIT")) return "rating-E";
-  return "";
-}
+    function getSortedFics() {
+      if (sortMode === "wc_desc") return [...FICS].sort((a, b) => parseWordCount(b.word_count) - parseWordCount(a.word_count));
+      if (sortMode === "updated") return [...FICS].sort((a, b) => (b.lastUpdated || "").localeCompare(a.lastUpdated || ""));
+      if (sortMode === "alpha") return [...FICS].sort((a, b) => (a.title || "").toLowerCase().localeCompare((b.title || "").toLowerCase()));
+      return FICS;
+    }
+>>>>>>> db00841a8cb6540ba8a0e4a8b779b45324def101
 
-function statusClass(s) {
-  if (!s) return "";
-  const sl = s.toLowerCase();
-  if (sl === "complete" || sl === "completed") return "complete";
-  if (sl.includes("progress")) return "wip";
-  return "";
-}
+    function ratingClass(r) {
+      if (!r) return "";
+      const up = r.toUpperCase();
+      if (up.includes("GENERAL")) return "rating-G";
+      if (up.includes("TEEN")) return "rating-T";
+      if (up.includes("MATURE")) return "rating-M";
+      if (up.includes("EXPLICIT")) return "rating-E";
+      return "";
+    }
 
-// Short chip labels for ratings, in AO3's order (unlisted ratings go last, A–Z)
-const RATING_LABELS = {
-  "general audiences":     "GA",
-  "teen and up audiences": "T",
-  "mature":                "M",
-  "explicit":              "E",
-  "not rated":             "NR",
-};
+    function statusClass(s) {
+      if (!s) return "";
+      const sl = s.toLowerCase();
+      if (sl === "complete" || sl === "completed") return "complete";
+      if (sl.includes("progress")) return "wip";
+      return "";
+    }
 
-function buildChips(containerId, values, key, labels = {}) {
-  const container = document.getElementById(containerId);
-  const order = Object.keys(labels);
-  const rank = v => { const i = order.indexOf(v.toLowerCase()); return i === -1 ? order.length : i; };
-  [...new Set(values.filter(Boolean))]
-    .sort((a, b) => rank(a) - rank(b) || a.localeCompare(b))
-    .forEach(val => {
-    const chip = document.createElement("button");
-    chip.className = "chip";
-    chip.textContent = labels[val.toLowerCase()] || val;
-    chip.title = val;
-    chip.dataset.key = key;
-    chip.dataset.val = val.toLowerCase();
-    chip.addEventListener("click", () => {
-      chip.classList.toggle("active");
+    function buildChips(containerId, values, key, labels = {}) {
+      const container = document.getElementById(containerId);
+      const order = Object.keys(labels);
+      const rank = v => {
+        const i = order.indexOf(v.toLowerCase());
+        return i === -1 ? order.length : i;
+      };
+      [...new Set(values.filter(Boolean))]
+        .sort((a, b) => rank(a) - rank(b) || a.localeCompare(b))
+        .forEach(val => {
+          const chip = document.createElement("button");
+          chip.className = "chip";
+          chip.textContent = labels[val.toLowerCase()] || val;
+          chip.title = val;
+          chip.dataset.key = key;
+          chip.dataset.val = val.toLowerCase();
+          chip.addEventListener("click", () => {
+            chip.classList.toggle("active");
+            render();
+          });
+          container.appendChild(chip);
+        });
+    }
+
+    function activeFilters(containerId) {
+      return [...document.querySelectorAll(`#${containerId} .chip.active`)]
+        .map(c => c.dataset.val);
+    }
+
+    function render() {
+      const query = document.getElementById("search").value.toLowerCase().trim();
+      const ratingFilters = activeFilters("rating-chips");
+      const statusFilters = activeFilters("status-chips");
+      const grid = document.getElementById("card-grid");
+      grid.innerHTML = "";
+
+      let visible = 0;
+      getSortedFics().forEach(fic => {
+        const searchable = [fic.title, fic.author, fic.ship, fic.summary, ...(fic.custom_tags || [])].join(" ").toLowerCase();
+        if (query && !searchable.includes(query)) return;
+        if (ratingFilters.length && !ratingFilters.includes((fic.rating || "").toLowerCase())) return;
+        if (statusFilters.length && !statusFilters.includes((fic.status || "").toLowerCase())) return;
+        if (shipFilter !== null && normalizeShipValue(fic.ship || "") !== normalizeShipValue(shipFilter)) return;
+        if (pinned && (pinned.key === "tag" ? !(fic.custom_tags || []).includes(pinned.val) : fic.author !== pinned.val)) return;
+
+        visible++;
+        const card = document.createElement("a");
+        card.className = "fic-card";
+        card.href = "archive/" + fic.filename;
+
+        const rc = ratingClass(fic.rating);
+        const sc = statusClass(fic.status);
+        const wc = fmtWordCount(fic.word_count);
+        const extraTags = fic.custom_tags || [];
+
+        card.innerHTML = `
+          <div class="card-title">${fic.title || "Untitled"}</div>
+          <div class="card-author">by ${fic.author || "Unknown"}</div>
+          <div class="card-meta">
+            ${fic.ship ? `<span class="badge ship">${fic.ship}</span>` : ""}
+            ${rc ? `<span class="badge ${rc}">${fic.rating}</span>` : ""}
+            ${sc ? `<span class="badge ${sc}">${fic.status}</span>` : ""}
+            ${wc ? `<span class="badge words">${wc} words</span>` : ""}
+          </div>
+          ${extraTags.length ? `<div class="card-tags">${extraTags.map(tag => `<span class="badge">${tag}</span>`).join("")}</div>` : ""}
+          ${fic.summary ? `<p class="card-summary">${fic.summary}</p>` : ""}
+        `;
+        grid.appendChild(card);
+      });
+
+      if (visible === 0) {
+        grid.innerHTML = '<p class="no-results">No fics match your filters.</p>';
+      }
+
+      document.querySelectorAll(".ship-preset").forEach(button => {
+        const selected = shipFilter === null ? button.dataset.ship === "" : normalizeShipValue(button.dataset.ship) === normalizeShipValue(shipFilter);
+        button.classList.toggle("active", selected);
+      });
+
+      document.getElementById("pinned-filter").innerHTML = pinned
+        ? `<button class="chip active" type="button" title="Clear filter">${pinned.key === "tag" ? "Tag" : "Author"}: ${esc(pinned.val)} ✕</button>`
+        : "";
+      document.getElementById("visible-count").textContent = visible === FICS.length ? "" : `Showing ${visible} of ${FICS.length}`;
+      document.getElementById("fic-count").textContent = `${FICS.length} fic${FICS.length !== 1 ? "s" : ""} archived`;
+    }
+
+    document.querySelectorAll(".sort-row .chip[data-sort]").forEach(chip => {
+      chip.addEventListener("click", () => {
+        document.querySelectorAll(".sort-row .chip[data-sort]").forEach(c => c.classList.remove("active"));
+        chip.classList.add("active");
+        sortMode = chip.dataset.sort;
+        render();
+      });
+    });
+
+    document.querySelectorAll(".ship-preset").forEach(chip => {
+      chip.addEventListener("click", () => {
+        shipFilter = chip.dataset.ship ? chip.dataset.ship : null;
+        render();
+      });
+    });
+
+    document.getElementById("search").addEventListener("input", render);
+
+    const toTop = document.getElementById("to-top");
+    window.addEventListener("scroll", () => {
+      toTop.classList.toggle("visible", window.scrollY > 600);
+    }, { passive: true });
+    toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+    document.getElementById("random-fic").addEventListener("click", () => {
+      const cards = document.querySelectorAll("#card-grid a.fic-card");
+      if (!cards.length) return;
+      window.location.href = cards[Math.floor(Math.random() * cards.length)].href;
+    });
+
+    const statsDialog = document.getElementById("stats-dialog");
+    document.getElementById("stats-open").addEventListener("click", () => {
+      buildStats();
+      statsDialog.showModal();
+    });
+    document.getElementById("stats-close").addEventListener("click", () => statsDialog.close());
+    statsDialog.addEventListener("click", e => {
+      if (e.target === statsDialog) { statsDialog.close(); return; }
+      const btn = e.target.closest("button.bar-label[data-key]");
+      if (!btn) return;
+      pinned = { key: btn.dataset.key, val: btn.dataset.val };
+      statsDialog.close();
+      render();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    document.getElementById("pinned-filter").addEventListener("click", () => {
+      pinned = null;
       render();
     });
-    container.appendChild(chip);
-  });
-}
 
-function activeFilters(containerId) {
-  return [...document.querySelectorAll(`#${containerId} .chip.active`)]
-    .map(c => c.dataset.val);
-}
+    function topCounts(values, n = Infinity) {
+      const counts = new Map();
+      values.forEach(v => { if (v) counts.set(v, (counts.get(v) || 0) + 1); });
+      return [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, n);
+    }
 
-function render() {
-  const query = document.getElementById("search").value.toLowerCase().trim();
-  const ratingFilters = activeFilters("rating-chips");
-  const statusFilters = activeFilters("status-chips");
+    function esc(s) {
+      return String(s).replace(/[&<>\"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+    }
 
-  const grid = document.getElementById("card-grid");
-  grid.innerHTML = "";
+    function fmtBig(n) {
+      if (n >= 1e6) return (n / 1e6).toFixed(1) + "M";
+      if (n >= 1e4) return Math.round(n / 1e3) + "k";
+      return n.toLocaleString();
+    }
 
+<<<<<<< HEAD
   let visible = 0;
   getSortedFics().forEach(fic => {
     const searchable = [fic.title, fic.author, fic.ship, fic.summary, ...(fic.custom_tags || [])].join(" ").toLowerCase();
@@ -661,36 +804,55 @@ function render() {
     if (pinned && (pinned.key === "tag"
         ? !(fic.custom_tags || []).includes(pinned.val)
         : fic.author !== pinned.val)) return;
+=======
+    function barRows(rows, { key, colors = {} } = {}) {
+      const max = Math.max(1, ...rows.map(r => r[1]));
+      return rows.map(([label, count]) => {
+        const lbl = key
+          ? `<button class="bar-label" type="button" data-key="${key}" data-val="${esc(label)}" title="${esc(label)}">${esc(label)}</button>`
+          : `<span class="bar-label" title="${esc(label)}">${esc(label)}</span>`;
+        const color = colors[label.toLowerCase()];
+        const style = `width:${(count / max * 100).toFixed(1)}%` + (color ? `;background:${color}` : "");
+        return `<div class="bar-row">${lbl}<div class="bar-track"><div class="bar-fill" style="${style}"></div></div><span class="bar-val">${count}</span></div>`;
+      }).join("");
+    }
+>>>>>>> db00841a8cb6540ba8a0e4a8b779b45324def101
 
-    visible++;
-    const card = document.createElement("a");
-    card.className = "fic-card";
-    card.href = "archive/" + fic.filename;
+    function ficLine(label, fic) {
+      if (!fic) return "";
+      return `<p class="stat-fic">${label}: <a href="archive/${esc(fic.filename)}">${esc(fic.title || "Untitled")}</a>
+        by ${esc(fic.author || "Unknown")} · ${parseWordCount(fic.word_count).toLocaleString()} words</p>`;
+    }
 
-    const rc = ratingClass(fic.rating);
-    const sc = statusClass(fic.status);
-    const wc = fmtWordCount(fic.word_count);
-    const extraTags = (fic.custom_tags || []);
+    function buildStats() {
+      const withWords = FICS.filter(f => parseWordCount(f.word_count) > 0)
+        .sort((a, b) => parseWordCount(b.word_count) - parseWordCount(a.word_count));
+      const total = withWords.reduce((sum, f) => sum + parseWordCount(f.word_count), 0);
+      const avg = withWords.length ? Math.round(total / withWords.length) : 0;
+      const authors = new Set(FICS.map(f => f.author).filter(Boolean)).size;
+      const complete = FICS.filter(f => statusClass(f.status) === "complete").length;
+      const wip = FICS.filter(f => statusClass(f.status) === "wip").length;
+      const donePct = complete + wip ? (complete / (complete + wip)) * 100 : 0;
 
-    card.innerHTML = `
-      <div class="card-title">${fic.title || "Untitled"}</div>
-      <div class="card-author">by ${fic.author || "Unknown"}</div>
-      <div class="card-meta">
-        ${fic.ship   ? `<span class="badge ship">${fic.ship}</span>` : ""}
-        ${rc         ? `<span class="badge ${rc}">${fic.rating}</span>` : ""}
-        ${sc         ? `<span class="badge ${sc}">${fic.status}</span>` : ""}
-        ${wc         ? `<span class="badge words">${wc} words</span>` : ""}
-      </div>
-      ${extraTags.length ? `<div class="card-tags">${extraTags.map(t => `<span class="badge">${t}</span>`).join("")}</div>` : ""}
-      ${fic.summary ? `<p class="card-summary">${fic.summary}</p>` : ""}
-    `;
-    grid.appendChild(card);
-  });
+      const ratingOrder = Object.keys(RATING_LABELS);
+      const rank = r => {
+        const i = ratingOrder.indexOf(r.toLowerCase());
+        return i === -1 ? ratingOrder.length : i;
+      };
+      const ratings = topCounts(FICS.map(f => f.rating)).sort((a, b) => rank(a[0]) - rank(b[0]));
+      const allTags = FICS.flatMap(f => f.custom_tags || []);
 
-  if (visible === 0) {
-    grid.innerHTML = '<p class="no-results">No fics match your filters.</p>';
-  }
+      document.getElementById("stats-body").innerHTML = `
+        <div class="stat-tiles">
+          <div class="stat-tile" title="${total.toLocaleString()} words"><div class="stat-num">${fmtBig(total)}</div><div class="stat-cap">words</div></div>
+          <div class="stat-tile"><div class="stat-num">${FICS.length}</div><div class="stat-cap">fics</div></div>
+          <div class="stat-tile"><div class="stat-num">${authors}</div><div class="stat-cap">authors</div></div>
+          <div class="stat-tile" title="${avg.toLocaleString()} words"><div class="stat-num">${fmtBig(avg)}</div><div class="stat-cap">avg length</div></div>
+        </div>
+        <p class="stat-fun">That's about <b>${Math.round(total / 90000).toLocaleString()}</b> novels' worth, or
+          <b>${Math.round(total / 250 / 60 / 24)}</b> days of nonstop reading at 250 words a minute.</p>
 
+<<<<<<< HEAD
   document.getElementById("pinned-filter").innerHTML = pinned
     ? `<button class="chip active" type="button" title="Clear filter">${pinned.key === "tag" ? "Tag" : "Author"}: ${esc(pinned.val)} ✕</button>`
     : "";
@@ -699,21 +861,68 @@ function render() {
   document.getElementById("fic-count").textContent =
     `${FICS.length} fic${FICS.length !== 1 ? "s" : ""} archived`;
 }
+=======
+        <div class="stats-section">
+          <h3>Longest &amp; shortest</h3>
+          ${ficLine("Longest", withWords[0])}
+          ${ficLine("Shortest", withWords[withWords.length - 1])}
+        </div>
 
-document.querySelectorAll(".sort-row .chip[data-sort]").forEach(chip => {
-  chip.addEventListener("click", () => {
-    document.querySelectorAll(".sort-row .chip[data-sort]").forEach(c => c.classList.remove("active"));
-    chip.classList.add("active");
-    sortMode = chip.dataset.sort;
-    render();
-  });
-});
+        <div class="stats-section">
+          <h3>Status</h3>
+          <div class="split-bar">
+            <div style="width:${donePct.toFixed(1)}%;background:#60b4cc"></div>
+            <div style="flex:1;background:#a888d8"></div>
+          </div>
+          <div class="split-legend">
+            <span><i style="background:#60b4cc"></i>Complete ${complete}</span>
+            <span><i style="background:#a888d8"></i>In progress ${wip}</span>
+          </div>
+        </div>
+>>>>>>> db00841a8cb6540ba8a0e4a8b779b45324def101
 
+        <div class="stats-section">
+          <h3>Ratings</h3>
+          ${barRows(ratings, { colors: { "general audiences": "#72cc80", "teen and up audiences": "#d4b86a", "mature": "#d48860", "explicit": "#d46880" } })}
+        </div>
+
+<<<<<<< HEAD
 buildChips("rating-chips", FICS.map(f => f.rating), "rating", RATING_LABELS);
 buildChips("status-chips", FICS.map(f => f.status), "status");
+=======
+        <div class="stats-section">
+          <h3>Most common tags</h3>
+          ${barRows(topCounts(allTags, 10), { key: "tag" })}
+        </div>
 
-document.getElementById("search").addEventListener("input", render);
+        <div class="stats-section">
+          <h3>Most archived authors</h3>
+          ${barRows(topCounts(FICS.map(f => f.author), 10), { key: "author" })}
+        </div>
+      `;
+    }
+>>>>>>> db00841a8cb6540ba8a0e4a8b779b45324def101
 
+    function loadFics() {
+      fetch("https://raw.githubusercontent.com/VulpesAtlantic/waow/main/fic_data.json")
+        .then(response => {
+          if (!response.ok) throw new Error("Failed to load fic_data.json");
+          return response.json();
+        })
+        .then(data => {
+          FICS.push(...(data.fics || []));
+          buildChips("rating-chips", FICS.map(f => f.rating), "rating", RATING_LABELS);
+          buildChips("status-chips", FICS.map(f => f.status), "status");
+          render();
+        })
+        .catch(error => {
+          console.error(error);
+          const grid = document.getElementById("card-grid");
+          grid.innerHTML = '<p class="no-results">Unable to load the archive data.</p>';
+        });
+    }
+
+<<<<<<< HEAD
 const toTop = document.getElementById("to-top");
 window.addEventListener("scroll", () => {
   toTop.classList.toggle("visible", window.scrollY > 600);
@@ -857,5 +1066,9 @@ document.getElementById("pinned-filter").addEventListener("click", () => {
 
 render();
 </script>
+=======
+    loadFics();
+  </script>
+>>>>>>> db00841a8cb6540ba8a0e4a8b779b45324def101
 </body>
 </html>
