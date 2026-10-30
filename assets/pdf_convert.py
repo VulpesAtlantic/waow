@@ -240,6 +240,13 @@ def build_structure(paras):
             st["author"] = text[3:].strip()
             state = "preface"
             continue
+        # Word-made PDFs sometimes glue the next label onto the end of the
+        # previous paragraph ("...with him. Notes"): split it off.
+        glued = re.match(r"^(.*\S)\s+(Summary|Notes)$", text, re.S)
+        if glued and text not in SECTION_LABELS and state in ("title", "preface") and section in ("summary", "notes"):
+            st[section].append(re.sub(r"\s+(Summary|Notes)$", "", p["html"]))
+            section = SECTION_LABELS[glued.group(2)]
+            continue
         if text in SECTION_LABELS:
             section = SECTION_LABELS[text]
             if section in ("ch_summary", "ch_notes") and (chapter is None or chapter["body"]):
@@ -365,6 +372,9 @@ def convert(path: Path):
 
 
 def main():
+    # Windows consoles default to cp1252, which can't print the "⚠" flag
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     args = [a for a in sys.argv[1:] if a != "--dry-run"]
     dry = "--dry-run" in sys.argv
     if not args:

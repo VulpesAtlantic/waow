@@ -11,7 +11,7 @@ What it does:
   2. Backs up each original to originals/
   3. Parses AO3 HTML: extracts title, author, ship, rating, status, summary, lastUpdated, word_count
   4. Strips inline styles, rewrites stylesheet link to ../assets/darkMode.css
-     and injects the Pendo tracking snippet into <head>
+     (no tracking script is injected)
   5. Injects/updates <meta> tags for all extracted fields
   6. If a file with the same workID already exists in archive/, keeps whichever has the higher word count
   7. Writes cleaned file to archive/ using the staged filename (no renaming)
@@ -65,25 +65,10 @@ from bs4 import BeautifulSoup, Comment
 from tag_mapper import auto_tags, norm
 
 # ---------------------------------------------------------------------------
-# Tracking  (injected into the <head> of every archive page and index.html;
-# assets/add_tracking.py backfills it into existing files)
+# Tracking  (removed: PENDO_SNIPPET is intentionally empty)
 # ---------------------------------------------------------------------------
 
-PENDO_SNIPPET = """\
-<script>
-(function(publicAppId){
-    (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
-    v=['initialize','identify','updateOptions','pageLoad','track','trackAgent'];for(w=0,x=v.length;w<x;++w)(function(m){
-        o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
-        y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+publicAppId+'/pendo.js';
-        z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
-
-        pendo.initialize({
-            visitor: { id: "anonymous"},
-            account: { }
-        });
-})('2238e862-9499-45dd-85a4-23c98c0f6d92');
-</script>"""
+PENDO_SNIPPET = ""  # tracking removed; name kept so add_tracking.py still imports
 
 KUDOS_SCRIPT_SRC = "../assets/kudos.js"
 
@@ -516,9 +501,6 @@ def clean_html(soup: BeautifulSoup, meta: dict) -> BeautifulSoup:
         t.string = meta.get("title", "Untitled")
         head.append(t)
 
-    # --- Inject tracking (after AO3 scripts were stripped above) ---
-    head.append(BeautifulSoup(PENDO_SNIPPET, "html.parser"))
-
     # --- Kudos reminder button (assets/kudos.js; list lives on kudos.html) ---
     head.append(soup.new_tag("script", src=KUDOS_SCRIPT_SRC, defer=""))
 
@@ -660,7 +642,7 @@ INDEX_TEMPLATE = """\
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Agathario Archive</title>
+  <title>Fic Archive Previewer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
@@ -1162,7 +1144,7 @@ INDEX_TEMPLATE = """\
   <a class="rank-link" href="rank.html" title="Rank your top 25">♛ top 25</a>
   <a class="rank-link kudos-link" href="kudos.html" title="Kudos reminders">♡ kudos list</a>
   <div class="header-stars" aria-hidden="true">✦ ⋆ ☾ ⋆ ✦</div>
-  <h1>Agathario Archive</h1>
+  <h1>Fic Archive Previewer</h1>
   <div class="header-rule"></div>
   <p id="fic-count"></p>
   <p class="last-updated">last updated {last_updated}</p>
