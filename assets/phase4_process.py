@@ -1355,7 +1355,6 @@ toTop.addEventListener("click", () => window.scrollTo({{ top: 0, behavior: "smoo
 
 // ---- Archive stats ----
 // Tags too common to be interesting on their own; gets a second "the rest" list
-const BIG_THREE_TAGS = ["Smut", "Fluff", "Angst"];
 const RATING_COLORS = {{
   "general audiences":     "#72cc80",
   "teen and up audiences": "#d4b86a",
@@ -1413,7 +1412,6 @@ function buildStats() {{
   const ratings = topCounts(FICS.map(f => f.rating)).sort((a, b) => rank(a[0]) - rank(b[0]));
 
   const allTags = FICS.flatMap(f => f.custom_tags || []);
-  const otherTags = allTags.filter(t => !BIG_THREE_TAGS.includes(t));
 
   document.getElementById("stats-body").innerHTML = `
     <div class="stat-tiles">
@@ -1453,10 +1451,6 @@ function buildStats() {{
       ${{barRows(topCounts(allTags, 10), {{ key: "tag" }})}}
     </div>
 
-    <div class="stats-section">
-      <h3>Most common tags that aren't smut, fluff, or angst</h3>
-      ${{barRows(topCounts(otherTags, 10), {{ key: "tag" }})}}
-    </div>
 
     <div class="stats-section">
       <h3>Most archived authors</h3>
